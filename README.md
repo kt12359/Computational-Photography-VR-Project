@@ -15,6 +15,6 @@ git checkout --track origin/development
 ## Working on a feature
 ```
 git checkout -b <some_feature> development
-git push origin <some_feature>
+git push --set-upstream origin <some_feature>
 ```
 Then: commit and push changes to `<some_feature>`, merge to `development`, everyone tests `development` locally, merge `development` to `master`.
