@@ -1266,6 +1266,7 @@ IL2CPP_EXTERN_C const uint32_t String_Compare_m208E4853037D81DD5C91DCA060C339DAD
 IL2CPP_EXTERN_C const uint32_t String_Compare_m29A66AA64873CB0F433088D4700402DBA0A01153_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t String_Compare_m4F7827906BB2FD00745D6A962DB23A7FF58BEB47_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t String_Compare_m5BD1EF8904C9B13BEDB7A876B122F117B317B442_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t String_Compare_m938570328DE9DAB5A5F1E5F4749DD66ECFBC97F1_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t String_Compare_m99CC35260CCF4E79928E1769863EBA747B44530B_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t String_Compare_mA1D43767F882FE677F238637A8785FCCEE7173D9_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t String_Concat_m232E857CA5107EA6AC52E7DD7018716C021F237B_MetadataUsageId;
@@ -37193,6 +37194,47 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t String_Compare_m29A66AA64873CB0F43308
 		NullCheck(L_1);
 		int32_t L_4 = VirtFuncInvoker3< int32_t, String_t*, String_t*, int32_t >::Invoke(7 /* System.Int32 System.Globalization.CompareInfo::Compare(System.String,System.String,System.Globalization.CompareOptions) */, L_1, L_2, L_3, 0);
 		return L_4;
+	}
+}
+// System.Int32 System.String::Compare(System.String,System.String,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t String_Compare_m938570328DE9DAB5A5F1E5F4749DD66ECFBC97F1 (String_t* ___strA0, String_t* ___strB1, bool ___ignoreCase2, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (String_Compare_m938570328DE9DAB5A5F1E5F4749DD66ECFBC97F1_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		bool L_0 = ___ignoreCase2;
+		if (!L_0)
+		{
+			goto IL_0016;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_il2cpp_TypeInfo_var);
+		CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F * L_1 = CultureInfo_get_CurrentCulture_mD86F3D8E5D332FB304F80D9B9CA4DE849C2A6831(/*hidden argument*/NULL);
+		NullCheck(L_1);
+		CompareInfo_tB9A071DBC11AC00AF2EA2066D0C2AE1DCB1865D1 * L_2 = VirtFuncInvoker0< CompareInfo_tB9A071DBC11AC00AF2EA2066D0C2AE1DCB1865D1 * >::Invoke(12 /* System.Globalization.CompareInfo System.Globalization.CultureInfo::get_CompareInfo() */, L_1);
+		String_t* L_3 = ___strA0;
+		String_t* L_4 = ___strB1;
+		NullCheck(L_2);
+		int32_t L_5 = VirtFuncInvoker3< int32_t, String_t*, String_t*, int32_t >::Invoke(7 /* System.Int32 System.Globalization.CompareInfo::Compare(System.String,System.String,System.Globalization.CompareOptions) */, L_2, L_3, L_4, 1);
+		return L_5;
+	}
+
+IL_0016:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F_il2cpp_TypeInfo_var);
+		CultureInfo_t345AC6924134F039ED9A11F3E03F8E91B6A3225F * L_6 = CultureInfo_get_CurrentCulture_mD86F3D8E5D332FB304F80D9B9CA4DE849C2A6831(/*hidden argument*/NULL);
+		NullCheck(L_6);
+		CompareInfo_tB9A071DBC11AC00AF2EA2066D0C2AE1DCB1865D1 * L_7 = VirtFuncInvoker0< CompareInfo_tB9A071DBC11AC00AF2EA2066D0C2AE1DCB1865D1 * >::Invoke(12 /* System.Globalization.CompareInfo System.Globalization.CultureInfo::get_CompareInfo() */, L_6);
+		String_t* L_8 = ___strA0;
+		String_t* L_9 = ___strB1;
+		NullCheck(L_7);
+		int32_t L_10 = VirtFuncInvoker3< int32_t, String_t*, String_t*, int32_t >::Invoke(7 /* System.Int32 System.Globalization.CompareInfo::Compare(System.String,System.String,System.Globalization.CompareOptions) */, L_7, L_8, L_9, 0);
+		return L_10;
 	}
 }
 // System.Int32 System.String::Compare(System.String,System.String,System.StringComparison)
