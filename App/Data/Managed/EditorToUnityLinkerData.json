@@ -6,7 +6,7 @@
             "fullManagedTypeName": "UnityEngine.Object",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Placenote/Examples/4_PaintBrush/PaintBrush.unity"
+                "Assets/Scenes/PaintBrush/PaintBrush.unity"
             ]
         },
         {
@@ -29,7 +29,7 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Placenote/Examples/4_PaintBrush/PaintBrush.unity"
+                "Assets/Scenes/PaintBrush/PaintBrush.unity"
             ]
         },
         {
@@ -38,7 +38,7 @@
             "fullManagedTypeName": "UnityEngine.Behaviour",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Placenote/Examples/4_PaintBrush/PaintBrush.unity"
+                "Assets/Scenes/PaintBrush/PaintBrush.unity"
             ]
         },
         {
@@ -61,7 +61,7 @@
             "fullManagedTypeName": "UnityEngine.MonoBehaviour",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Placenote/Examples/4_PaintBrush/PaintBrush.unity"
+                "Assets/Scenes/PaintBrush/PaintBrush.unity"
             ]
         },
         {
@@ -70,7 +70,7 @@
             "fullManagedTypeName": "UnityEngine.Material",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Placenote/Examples/4_PaintBrush/PaintBrush.unity"
+                "Assets/Scenes/PaintBrush/PaintBrush.unity"
             ]
         },
         {
@@ -79,7 +79,7 @@
             "fullManagedTypeName": "UnityEngine.Component",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Placenote/Examples/4_PaintBrush/PaintBrush.unity"
+                "Assets/Scenes/PaintBrush/PaintBrush.unity"
             ]
         },
         {
@@ -88,7 +88,7 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Placenote/Examples/4_PaintBrush/PaintBrush.unity"
+                "Assets/Scenes/PaintBrush/PaintBrush.unity"
             ]
         },
         {
@@ -97,7 +97,7 @@
             "fullManagedTypeName": "UnityEngine.TextAsset",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Placenote/Examples/4_PaintBrush/PaintBrush.unity"
+                "Assets/Scenes/PaintBrush/PaintBrush.unity"
             ]
         },
         {
@@ -106,7 +106,7 @@
             "fullManagedTypeName": "UnityEngine.Shader",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Placenote/Examples/4_PaintBrush/PaintBrush.unity"
+                "Assets/Scenes/PaintBrush/PaintBrush.unity"
             ]
         },
         {
@@ -115,7 +115,7 @@
             "fullManagedTypeName": "UnityEditor.MonoScript",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Placenote/Examples/4_PaintBrush/PaintBrush.unity"
+                "Assets/Scenes/PaintBrush/PaintBrush.unity"
             ]
         },
         {
@@ -124,7 +124,7 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Placenote/Examples/4_PaintBrush/PaintBrush.unity"
+                "Assets/Scenes/PaintBrush/PaintBrush.unity"
             ]
         },
         {
@@ -238,7 +238,7 @@
             "fullManagedTypeName": "UnityEngine.TrailRenderer",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Placenote/Examples/4_PaintBrush/PaintBrush.unity"
+                "Assets/Scenes/PaintBrush/PaintBrush.unity"
             ]
         },
         {
@@ -247,7 +247,7 @@
             "fullManagedTypeName": "UnityEngine.MeshRenderer",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Placenote/Examples/4_PaintBrush/PaintBrush.unity"
+                "Assets/Scenes/PaintBrush/PaintBrush.unity"
             ]
         },
         {
@@ -256,7 +256,7 @@
             "fullManagedTypeName": "UnityEngine.BoxCollider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Placenote/Examples/4_PaintBrush/PaintBrush.unity"
+                "Assets/Scenes/PaintBrush/PaintBrush.unity"
             ]
         },
         {
@@ -265,7 +265,7 @@
             "fullManagedTypeName": "UnityEngine.SphereCollider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Placenote/Examples/4_PaintBrush/PaintBrush.unity"
+                "Assets/Scenes/PaintBrush/PaintBrush.unity"
             ]
         },
         {
@@ -274,7 +274,7 @@
             "fullManagedTypeName": "UnityEngine.Canvas",
             "moduleName": "UI",
             "usedInScenes": [
-                "Assets/Placenote/Examples/4_PaintBrush/PaintBrush.unity"
+                "Assets/Scenes/PaintBrush/PaintBrush.unity"
             ]
         },
         {
@@ -283,7 +283,7 @@
             "fullManagedTypeName": "UnityEngine.RectTransform",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Placenote/Examples/4_PaintBrush/PaintBrush.unity"
+                "Assets/Scenes/PaintBrush/PaintBrush.unity"
             ]
         },
         {
@@ -292,7 +292,7 @@
             "fullManagedTypeName": "UnityEngine.LightmapSettings",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Placenote/Examples/4_PaintBrush/PaintBrush.unity"
+                "Assets/Scenes/PaintBrush/PaintBrush.unity"
             ]
         },
         {
@@ -301,7 +301,7 @@
             "fullManagedTypeName": "UnityEngine.Sprite",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Placenote/Examples/4_PaintBrush/PaintBrush.unity"
+                "Assets/Scenes/PaintBrush/PaintBrush.unity"
             ]
         },
         {
@@ -310,7 +310,7 @@
             "fullManagedTypeName": "UnityEngine.ParticleSystem",
             "moduleName": "ParticleSystem",
             "usedInScenes": [
-                "Assets/Placenote/Examples/4_PaintBrush/PaintBrush.unity"
+                "Assets/Scenes/PaintBrush/PaintBrush.unity"
             ]
         },
         {
@@ -319,7 +319,7 @@
             "fullManagedTypeName": "UnityEngine.Texture2D",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Placenote/Examples/4_PaintBrush/PaintBrush.unity"
+                "Assets/Scenes/PaintBrush/PaintBrush.unity"
             ]
         },
         {
@@ -328,7 +328,7 @@
             "fullManagedTypeName": "UnityEngine.Renderer",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Placenote/Examples/4_PaintBrush/PaintBrush.unity"
+                "Assets/Scenes/PaintBrush/PaintBrush.unity"
             ]
         },
         {
@@ -337,7 +337,7 @@
             "fullManagedTypeName": "UnityEngine.Transform",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Placenote/Examples/4_PaintBrush/PaintBrush.unity"
+                "Assets/Scenes/PaintBrush/PaintBrush.unity"
             ]
         },
         {
@@ -346,7 +346,7 @@
             "fullManagedTypeName": "UnityEngine.GameObject",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Placenote/Examples/4_PaintBrush/PaintBrush.unity"
+                "Assets/Scenes/PaintBrush/PaintBrush.unity"
             ]
         },
         {
@@ -355,7 +355,7 @@
             "fullManagedTypeName": "UnityEngine.RenderSettings",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Placenote/Examples/4_PaintBrush/PaintBrush.unity"
+                "Assets/Scenes/PaintBrush/PaintBrush.unity"
             ]
         },
         {
@@ -364,7 +364,7 @@
             "fullManagedTypeName": "UnityEngine.Collider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Placenote/Examples/4_PaintBrush/PaintBrush.unity"
+                "Assets/Scenes/PaintBrush/PaintBrush.unity"
             ]
         },
         {
@@ -373,7 +373,7 @@
             "fullManagedTypeName": "UnityEngine.Font",
             "moduleName": "TextRendering",
             "usedInScenes": [
-                "Assets/Placenote/Examples/4_PaintBrush/PaintBrush.unity"
+                "Assets/Scenes/PaintBrush/PaintBrush.unity"
             ]
         },
         {
@@ -382,7 +382,7 @@
             "fullManagedTypeName": "UnityEngine.CanvasRenderer",
             "moduleName": "UI",
             "usedInScenes": [
-                "Assets/Placenote/Examples/4_PaintBrush/PaintBrush.unity"
+                "Assets/Scenes/PaintBrush/PaintBrush.unity"
             ]
         },
         {
@@ -391,7 +391,7 @@
             "fullManagedTypeName": "UnityEngine.Light",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Placenote/Examples/4_PaintBrush/PaintBrush.unity"
+                "Assets/Scenes/PaintBrush/PaintBrush.unity"
             ]
         },
         {
@@ -400,7 +400,7 @@
             "fullManagedTypeName": "UnityEngine.Texture",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Placenote/Examples/4_PaintBrush/PaintBrush.unity"
+                "Assets/Scenes/PaintBrush/PaintBrush.unity"
             ]
         },
         {
@@ -409,7 +409,7 @@
             "fullManagedTypeName": "UnityEngine.Cubemap",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Placenote/Examples/4_PaintBrush/PaintBrush.unity"
+                "Assets/Scenes/PaintBrush/PaintBrush.unity"
             ]
         },
         {
@@ -418,7 +418,7 @@
             "fullManagedTypeName": "",
             "moduleName": "AI",
             "usedInScenes": [
-                "Assets/Placenote/Examples/4_PaintBrush/PaintBrush.unity"
+                "Assets/Scenes/PaintBrush/PaintBrush.unity"
             ]
         },
         {
@@ -427,7 +427,7 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Placenote/Examples/4_PaintBrush/PaintBrush.unity"
+                "Assets/Scenes/PaintBrush/PaintBrush.unity"
             ]
         },
         {
@@ -436,7 +436,7 @@
             "fullManagedTypeName": "UnityEngine.Camera",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Placenote/Examples/4_PaintBrush/PaintBrush.unity"
+                "Assets/Scenes/PaintBrush/PaintBrush.unity"
             ]
         },
         {
@@ -445,7 +445,7 @@
             "fullManagedTypeName": "UnityEngine.LightProbes",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Placenote/Examples/4_PaintBrush/PaintBrush.unity"
+                "Assets/Scenes/PaintBrush/PaintBrush.unity"
             ]
         },
         {
@@ -454,7 +454,7 @@
             "fullManagedTypeName": "UnityEngine.Mesh",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Placenote/Examples/4_PaintBrush/PaintBrush.unity"
+                "Assets/Scenes/PaintBrush/PaintBrush.unity"
             ]
         },
         {
@@ -463,7 +463,7 @@
             "fullManagedTypeName": "UnityEngine.MeshFilter",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Placenote/Examples/4_PaintBrush/PaintBrush.unity"
+                "Assets/Scenes/PaintBrush/PaintBrush.unity"
             ]
         },
         {
@@ -472,7 +472,7 @@
             "fullManagedTypeName": "UnityEngine.ParticleSystemRenderer",
             "moduleName": "ParticleSystem",
             "usedInScenes": [
-                "Assets/Placenote/Examples/4_PaintBrush/PaintBrush.unity"
+                "Assets/Scenes/PaintBrush/PaintBrush.unity"
             ]
         },
         {

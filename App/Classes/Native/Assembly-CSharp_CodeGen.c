@@ -31,353 +31,353 @@ IL2CPP_EXTERN_C_END
 
 
 
-// 0x00000001 System.Void DrawLineManager::setLineWidth(System.Single)
-extern void DrawLineManager_setLineWidth_mE930D4888EA541FAF25907B64D853968385ECA7C ();
-// 0x00000002 System.Void DrawLineManager::setLineColor(UnityEngine.Color)
-extern void DrawLineManager_setLineColor_mAD9644C0BACB176373370BB380DE8E33218DE53A ();
-// 0x00000003 System.Void DrawLineManager::OnColorChoiceClick(UnityEngine.UI.Image)
-extern void DrawLineManager_OnColorChoiceClick_mF5FBFF835CE076CED0790FC66780D9639F929F14 ();
-// 0x00000004 System.Void DrawLineManager::OnLineWidthSliderChanged()
-extern void DrawLineManager_OnLineWidthSliderChanged_m44ACCD7A979B3A95E24A34E1222C3269E034621F ();
-// 0x00000005 UnityEngine.Vector3 DrawLineManager::getRayEndPoint(System.Single)
-extern void DrawLineManager_getRayEndPoint_mCF00F8778219FD4DC6D35815F0ABE3FB25EBD342 ();
-// 0x00000006 System.Void DrawLineManager::Start()
-extern void DrawLineManager_Start_m0EEA60EE3ED4F65833E365CFE233ACEC0879F30F ();
-// 0x00000007 System.Void DrawLineManager::Update()
-extern void DrawLineManager_Update_m438F1279DF8B989843186F341E6D1663987AD2DD ();
-// 0x00000008 System.Void DrawLineManager::addReplayLineSegment(System.Boolean,System.Single,UnityEngine.Vector3,UnityEngine.Color)
-extern void DrawLineManager_addReplayLineSegment_mBBBD11AB05ADD61934D22245E9A6E8921DB89304 ();
-// 0x00000009 System.Void DrawLineManager::.ctor()
-extern void DrawLineManager__ctor_mBA26A37EF3E91317E671E4D24CC4214CC8095E6C ();
-// 0x0000000A System.Void DrawingHistoryManager::Start()
-extern void DrawingHistoryManager_Start_mBF78A56E9BF484C39CF050797FF872DA28E96D91 ();
-// 0x0000000B System.Void DrawingHistoryManager::Update()
-extern void DrawingHistoryManager_Update_mF368FE8C58E3348BA994AF3519BFEAD4419593F5 ();
-// 0x0000000C System.Void DrawingHistoryManager::resetHistory()
-extern void DrawingHistoryManager_resetHistory_m2C8CB1AF953BDF7D6930FAA9053BCB88BADC8C7E ();
-// 0x0000000D System.Void DrawingHistoryManager::addDrawingCommand(System.Int32,System.Int32,UnityEngine.Vector3,UnityEngine.Color,System.Single)
-extern void DrawingHistoryManager_addDrawingCommand_m57D40781CB938EE38A12812171FDC206B265C24A ();
-// 0x0000000E System.Collections.IEnumerator DrawingHistoryManager::replayDrawing()
-extern void DrawingHistoryManager_replayDrawing_m1F159403FEB85584A286831F3A1676A0C996FB44 ();
-// 0x0000000F System.Boolean DrawingHistoryManager::isDrawingHistoryEmpty()
-extern void DrawingHistoryManager_isDrawingHistoryEmpty_m7F3F20153656CE4CF9F34836657AE5C7B97F4948 ();
-// 0x00000010 System.Void DrawingHistoryManager::replayDrawingFast()
-extern void DrawingHistoryManager_replayDrawingFast_mC4652DEC7944310A35D3A4DBA435063B29F0327B ();
-// 0x00000011 System.Void DrawingHistoryManager::saveMapIDToFile(System.String)
-extern void DrawingHistoryManager_saveMapIDToFile_m2AF166E2DBCA5F1BC755015CBED6DC14ABB00CE2 ();
-// 0x00000012 System.String DrawingHistoryManager::loadMapIDFromFile()
-extern void DrawingHistoryManager_loadMapIDFromFile_mD32A66A4DBE6B67508B5A5432A8E5D1593D58B77 ();
-// 0x00000013 System.Void DrawingHistoryManager::saveDrawingHistory()
-extern void DrawingHistoryManager_saveDrawingHistory_m069DC45D698A10AC83283A7EA31BA6BC82B9A216 ();
-// 0x00000014 System.Void DrawingHistoryManager::loadFromDrawingHistory()
-extern void DrawingHistoryManager_loadFromDrawingHistory_m33CE51D3C2E643414071B4641689928A34CA7E2C ();
-// 0x00000015 DrawingHistoryManager_drawingcommand DrawingHistoryManager::parseSaveCmdLine(System.String)
-extern void DrawingHistoryManager_parseSaveCmdLine_m007F2FF6F9AE9F05780A498407BEBDAA17AD7C0E ();
-// 0x00000016 System.Void DrawingHistoryManager::.ctor()
-extern void DrawingHistoryManager__ctor_m52571A1343ED1F835F5159241E7C57BD77940576 ();
-// 0x00000017 System.Void GraphicsLineRenderer::Start()
-extern void GraphicsLineRenderer_Start_m238335DB2ECCFF663EB6D69834B9D26359E84492 ();
-// 0x00000018 System.Void GraphicsLineRenderer::SetWidth(System.Single)
-extern void GraphicsLineRenderer_SetWidth_m79FFEAE9CA81B9DDE01D9D50CC8ED4F4EB9095CD ();
-// 0x00000019 System.Void GraphicsLineRenderer::AddPoint(UnityEngine.Vector3)
-extern void GraphicsLineRenderer_AddPoint_m24839F21D1D1D040E72FFFA36B5D2D8E904E0BA3 ();
-// 0x0000001A UnityEngine.Vector3[] GraphicsLineRenderer::MakeQuad(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Boolean)
-extern void GraphicsLineRenderer_MakeQuad_m89E24F5B14BFF28904F557EEC7EF2C63EAD9132E ();
-// 0x0000001B System.Void GraphicsLineRenderer::AddLine(UnityEngine.Mesh,UnityEngine.Vector3[])
-extern void GraphicsLineRenderer_AddLine_mFE4B0A2E06F4FD7EDC435CBAFDC7CE42AC1C9F90 ();
-// 0x0000001C UnityEngine.Vector3[] GraphicsLineRenderer::resizeVertices(UnityEngine.Vector3[],System.Int32)
-extern void GraphicsLineRenderer_resizeVertices_m47D324C654E218AC79030985A27C76C38C30DC01 ();
-// 0x0000001D System.Int32[] GraphicsLineRenderer::resizeTraingles(System.Int32[],System.Int32)
-extern void GraphicsLineRenderer_resizeTraingles_m80309056030E0CA87D376CFAF1F3EFA8CABA327B ();
-// 0x0000001E UnityEngine.Vector2[] GraphicsLineRenderer::resizeUVs(UnityEngine.Vector2[],System.Int32)
-extern void GraphicsLineRenderer_resizeUVs_mBB5546995A5077CF3FB8503F7570FE9B15653D65 ();
-// 0x0000001F System.Void GraphicsLineRenderer::.ctor()
-extern void GraphicsLineRenderer__ctor_mAE3D25AB1FE02E28C2202679BC922446C73EFB7D ();
-// 0x00000020 System.Void PaintController::Start()
-extern void PaintController_Start_mBD017F5F71D3907C15E6FCC36BA387F03222877F ();
-// 0x00000021 System.Void PaintController::onClickEnablePointCloud()
-extern void PaintController_onClickEnablePointCloud_m14F1458DB71049392A3A2F53D3ED8146FFA44E2D ();
-// 0x00000022 System.Void PaintController::OnToggleColorPaletteClick()
-extern void PaintController_OnToggleColorPaletteClick_mDB712BA268FC0CDDEA17222A9B562B884E12F3B1 ();
-// 0x00000023 System.Void PaintController::Update()
-extern void PaintController_Update_mFB29ACDD5415EAE9E01B6C771121864084DE111E ();
-// 0x00000024 System.Void PaintController::onStartPaintingClick()
-extern void PaintController_onStartPaintingClick_m774EC81CDB90E468FD9B98412A6CD7007799C099 ();
-// 0x00000025 System.Void PaintController::OnSaveMapClick()
-extern void PaintController_OnSaveMapClick_mB134871077958BBD8E85ED4A423DDCDBDD4A403B ();
-// 0x00000026 System.Void PaintController::OnLoadMapClicked()
-extern void PaintController_OnLoadMapClicked_m2945985CE5946CC7CF0F395EBE10F61B47FC72BC ();
-// 0x00000027 System.Void PaintController::OnExitLoadedPaintingClick()
-extern void PaintController_OnExitLoadedPaintingClick_mD9373F22858D6AD94A381E99453D4C0DCF7253F5 ();
-// 0x00000028 System.Void PaintController::replayDrawing()
-extern void PaintController_replayDrawing_mD6F2BD63169E059800DA3A069CDF55211D225356 ();
-// 0x00000029 System.Void PaintController::deleteAllObjects()
-extern void PaintController_deleteAllObjects_mFD836503966ACEAA31B1CFFD3E2D0F7F849EA3E3 ();
-// 0x0000002A System.Void PaintController::onClearAllClick()
-extern void PaintController_onClearAllClick_mFDAED465A66A4B9D275F42A0C13B3F5C58DB5E8A ();
-// 0x0000002B System.Void PaintController::saveScene(System.String)
-extern void PaintController_saveScene_mBE0BD74A8F5CE0FF08B06144E04D04223F93037E ();
-// 0x0000002C System.Void PaintController::loadSavedScene()
-extern void PaintController_loadSavedScene_m7FBE8987A4992DAA66BC1D1F1E1932BB53ED7B00 ();
-// 0x0000002D System.Void PaintController::OnPose(UnityEngine.Matrix4x4,UnityEngine.Matrix4x4)
-extern void PaintController_OnPose_m6E58816B5786321B91C9EDB7A047BC342050501A ();
-// 0x0000002E System.Void PaintController::OnStatusChange(LibPlacenote_MappingStatus,LibPlacenote_MappingStatus)
-extern void PaintController_OnStatusChange_m935E882A373A8D6B0805181488E9A1170863C9EA ();
-// 0x0000002F System.Void PaintController::OnLocalized()
-extern void PaintController_OnLocalized_m5A0B4C5902F637A071F0963E2A4FE6E5C82F775A ();
-// 0x00000030 System.Void PaintController::.ctor()
-extern void PaintController__ctor_m818998C4946F96F96E83C961AF897F129CD0B884 ();
-// 0x00000031 System.Void PaintController::<Start>b__11_0(UnityEngine.Texture2D)
-extern void PaintController_U3CStartU3Eb__11_0_mF5BD6C8C80C6E123594EADC90DCB8ECFEFD6A1FF ();
-// 0x00000032 System.Void PaintController::<OnSaveMapClick>b__16_0(System.String)
-extern void PaintController_U3COnSaveMapClickU3Eb__16_0_m02511DF40C10517C95C20F808092C07E090B8DA4 ();
-// 0x00000033 System.Void PaintController::<OnSaveMapClick>b__16_1(System.Boolean,System.Boolean,System.Single)
-extern void PaintController_U3COnSaveMapClickU3Eb__16_1_mBA063FCC33AEA1434EE266F316A204AC6048F83D ();
-// 0x00000034 System.Void PaintController::<OnLoadMapClicked>b__17_0(System.Boolean,System.Boolean,System.Single)
-extern void PaintController_U3COnLoadMapClickedU3Eb__17_0_m6E0B881068FC69A839D6EBAA8C29D84918D48426 ();
-// 0x00000035 System.Void FeaturesVisualizer::Awake()
+// 0x00000001 System.Void FeaturesVisualizer::Awake()
 extern void FeaturesVisualizer_Awake_m8BA91E02F9E74B237F2C2017DFA2D37649965669 ();
-// 0x00000036 System.Void FeaturesVisualizer::Start()
+// 0x00000002 System.Void FeaturesVisualizer::Start()
 extern void FeaturesVisualizer_Start_m88A9850C01DFE4F10448EF8DA72884237B4C5858 ();
-// 0x00000037 System.Void FeaturesVisualizer::Update()
+// 0x00000003 System.Void FeaturesVisualizer::Update()
 extern void FeaturesVisualizer_Update_m5501078849CE130E76108A818198C29B6FC331FE ();
-// 0x00000038 System.Void FeaturesVisualizer::EnablePointcloud(System.Nullable`1<UnityEngine.Color>,System.Nullable`1<UnityEngine.Color>)
+// 0x00000004 System.Void FeaturesVisualizer::EnablePointcloud(System.Nullable`1<UnityEngine.Color>,System.Nullable`1<UnityEngine.Color>)
 extern void FeaturesVisualizer_EnablePointcloud_mAB94C8FFCB1A2F78B86F4D8229986B4DD5C8FB95 ();
-// 0x00000039 System.Void FeaturesVisualizer::DisablePointcloud()
+// 0x00000005 System.Void FeaturesVisualizer::DisablePointcloud()
 extern void FeaturesVisualizer_DisablePointcloud_mBEAEEAB9DBC688E9A02A388FDBCEA46E7B3A6777 ();
-// 0x0000003A System.Void FeaturesVisualizer::ClearPointcloud()
+// 0x00000006 System.Void FeaturesVisualizer::ClearPointcloud()
 extern void FeaturesVisualizer_ClearPointcloud_m54521596B0D09B2816A16E137F72870AB3B3F44E ();
-// 0x0000003B System.Void FeaturesVisualizer::OnPose(UnityEngine.Matrix4x4,UnityEngine.Matrix4x4)
+// 0x00000007 System.Void FeaturesVisualizer::OnPose(UnityEngine.Matrix4x4,UnityEngine.Matrix4x4)
 extern void FeaturesVisualizer_OnPose_m51EF445315A4659776396939A825E8A7FE4BFB2E ();
-// 0x0000003C System.Void FeaturesVisualizer::OnStatusChange(LibPlacenote_MappingStatus,LibPlacenote_MappingStatus)
+// 0x00000008 System.Void FeaturesVisualizer::OnStatusChange(LibPlacenote_MappingStatus,LibPlacenote_MappingStatus)
 extern void FeaturesVisualizer_OnStatusChange_mAC2616181FB472CE1A103E7E1D4A457795ECEC59 ();
-// 0x0000003D System.Void FeaturesVisualizer::SetPointCloudTexture(UnityEngine.Texture2D)
+// 0x00000009 System.Void FeaturesVisualizer::SetPointCloudTexture(UnityEngine.Texture2D)
 extern void FeaturesVisualizer_SetPointCloudTexture_mAB99BD5E5C075F800A79D17352045EB5A2C98757 ();
-// 0x0000003E System.Void FeaturesVisualizer::DrawPointCloud()
+// 0x0000000A System.Void FeaturesVisualizer::DrawPointCloud()
 extern void FeaturesVisualizer_DrawPointCloud_mE1A1E9603811BFC96BB55E09976CCCEA7361B5FB ();
-// 0x0000003F System.Collections.Generic.List`1<UnityEngine.Vector3> FeaturesVisualizer::GetPointCloud()
+// 0x0000000B System.Collections.Generic.List`1<UnityEngine.Vector3> FeaturesVisualizer::GetPointCloud()
 extern void FeaturesVisualizer_GetPointCloud_m85640E19DE06D1D98C5B38D132DFF21B420AAFB3 ();
-// 0x00000040 System.Void FeaturesVisualizer::SetVisible(System.Boolean)
+// 0x0000000C System.Void FeaturesVisualizer::SetVisible(System.Boolean)
 extern void FeaturesVisualizer_SetVisible_mCC233DD9CF7FA9BEB9000E5766516CFE452DFE6F ();
-// 0x00000041 System.Void FeaturesVisualizer::OnLocalized()
+// 0x0000000D System.Void FeaturesVisualizer::OnLocalized()
 extern void FeaturesVisualizer_OnLocalized_m905658C34DBD53A4DE97E95FA02C989A4F706751 ();
-// 0x00000042 System.Void FeaturesVisualizer::.ctor()
+// 0x0000000E System.Void FeaturesVisualizer::.ctor()
 extern void FeaturesVisualizer__ctor_m20F79DAC54671210E0D08FCEFAA3E338B6408B6B ();
-// 0x00000043 System.Void UnityARImageFrameData::.ctor()
+// 0x0000000F System.Void UnityARImageFrameData::.ctor()
 extern void UnityARImageFrameData__ctor_m49B47CAAD277184F65A93BE133B4447F168D70DB ();
-// 0x00000044 LibPlacenote LibPlacenote::get_Instance()
+// 0x00000010 LibPlacenote LibPlacenote::get_Instance()
 extern void LibPlacenote_get_Instance_m4B48688267CB660E91B04C94F6D5870148A97C07 ();
-// 0x00000045 System.Void LibPlacenote::Awake()
+// 0x00000011 System.Void LibPlacenote::Awake()
 extern void LibPlacenote_Awake_mB96AB1070A4AF98B15E7C5B9E9A752E02131E364 ();
-// 0x00000046 System.Void LibPlacenote::OnEnable()
+// 0x00000012 System.Void LibPlacenote::OnEnable()
 extern void LibPlacenote_OnEnable_m0208F09472DAF363FA3697667EDCB5864EBC5C38 ();
-// 0x00000047 System.Void LibPlacenote::OnDisable()
+// 0x00000013 System.Void LibPlacenote::OnDisable()
 extern void LibPlacenote_OnDisable_mC8496A68D1C76A1EE491862AF7BFB392B97CB607 ();
-// 0x00000048 System.Void LibPlacenote::Start()
+// 0x00000014 System.Void LibPlacenote::Start()
 extern void LibPlacenote_Start_m9E7BBA2469BCEDAA54D4D6CE329DAD36517A8EE2 ();
-// 0x00000049 System.Void LibPlacenote::OnCameraFrameReceived(UnityEngine.XR.ARFoundation.ARCameraFrameEventArgs)
+// 0x00000015 System.Void LibPlacenote::OnCameraFrameReceived(UnityEngine.XR.ARFoundation.ARCameraFrameEventArgs)
 extern void LibPlacenote_OnCameraFrameReceived_mEB85CB58797AAE351137683415E61DA0B3610D39 ();
-// 0x0000004A System.Void LibPlacenote::StopSendingFrames()
+// 0x00000016 System.Void LibPlacenote::StopSendingFrames()
 extern void LibPlacenote_StopSendingFrames_m48BE3BB402DD1E9662531B745BD6C436330FDBDF ();
-// 0x0000004B System.Void LibPlacenote::RestartSendingFrames()
+// 0x00000017 System.Void LibPlacenote::RestartSendingFrames()
 extern void LibPlacenote_RestartSendingFrames_mDA8C89DA1AC7D69200FC37BDB6C748D6DB0F3AA2 ();
-// 0x0000004C System.Void LibPlacenote::RegisterListener(PlacenoteListener)
+// 0x00000018 System.Void LibPlacenote::RegisterListener(PlacenoteListener)
 extern void LibPlacenote_RegisterListener_m07D6EFDD07551454C1466DF7BC2C8921F92C9E68 ();
-// 0x0000004D System.Void LibPlacenote::RemoveListener(PlacenoteListener)
+// 0x00000019 System.Void LibPlacenote::RemoveListener(PlacenoteListener)
 extern void LibPlacenote_RemoveListener_mAA82AE17FF32EF13554FC88D6CD991F7218104EA ();
-// 0x0000004E System.Void LibPlacenote::OnInitialized(LibPlacenote_PNCallbackResultUnity&,System.IntPtr)
+// 0x0000001A System.Void LibPlacenote::OnInitialized(LibPlacenote_PNCallbackResultUnity&,System.IntPtr)
 extern void LibPlacenote_OnInitialized_m730D29DBDB00A30791BF7645F38C5AEDFCE16BEB ();
-// 0x0000004F System.Void LibPlacenote::Init()
+// 0x0000001B System.Void LibPlacenote::Init()
 extern void LibPlacenote_Init_m691212ECCB5E67E5E3253E166C04BA3F21D77EF7 ();
-// 0x00000050 System.Void LibPlacenote::Shutdown()
+// 0x0000001C System.Void LibPlacenote::Shutdown()
 extern void LibPlacenote_Shutdown_m9C8BF92D49FAE767D812688B7D90A4A000BC5424 ();
-// 0x00000051 System.Boolean LibPlacenote::Initialized()
+// 0x0000001D System.Boolean LibPlacenote::Initialized()
 extern void LibPlacenote_Initialized_mE3E6A240E50C274448420681AE683D8293BB7BEB ();
-// 0x00000052 System.Void LibPlacenote::SendARFrame(UnityARImageFrameData,UnityEngine.Vector3,UnityEngine.Quaternion,System.Int32)
+// 0x0000001E System.Void LibPlacenote::SendARFrame(UnityARImageFrameData,UnityEngine.Vector3,UnityEngine.Quaternion,System.Int32)
 extern void LibPlacenote_SendARFrame_m83F2B9F26A716692F4AC273420F8FCBA96E6AC26 ();
-// 0x00000053 LibPlacenote_PNTransformUnity LibPlacenote::GetPose()
+// 0x0000001F LibPlacenote_PNTransformUnity LibPlacenote::GetPose()
 extern void LibPlacenote_GetPose_m3FE00D39AB94F83B21650B5D9D51680E1190A8A6 ();
-// 0x00000054 LibPlacenote_MappingStatus LibPlacenote::GetStatus()
+// 0x00000020 LibPlacenote_MappingStatus LibPlacenote::GetStatus()
 extern void LibPlacenote_GetStatus_m719CF79530AC6869C8D50B9D605FFA73835CD0EF ();
-// 0x00000055 LibPlacenote_MappingMode LibPlacenote::GetMode()
+// 0x00000021 LibPlacenote_MappingMode LibPlacenote::GetMode()
 extern void LibPlacenote_GetMode_m2E9943552EEC9D4C4CAE5E3487ADD482FF27C39E ();
-// 0x00000056 LibPlacenote_MappingQuality LibPlacenote::GetMappingQuality()
+// 0x00000022 LibPlacenote_MappingQuality LibPlacenote::GetMappingQuality()
 extern void LibPlacenote_GetMappingQuality_m6267948BE1BE28182EE182BC5CC89B0FE3189441 ();
-// 0x00000057 System.Void LibPlacenote::OnPose(LibPlacenote_PNTransformUnity&,LibPlacenote_PNTransformUnity&,System.IntPtr)
+// 0x00000023 System.Void LibPlacenote::OnPose(LibPlacenote_PNTransformUnity&,LibPlacenote_PNTransformUnity&,System.IntPtr)
 extern void LibPlacenote_OnPose_mF6384D6517CF20EAE51E4C22355BE631ABC16CA3 ();
-// 0x00000058 System.Void LibPlacenote::StartSession(System.Boolean)
+// 0x00000024 System.Void LibPlacenote::StartSession(System.Boolean)
 extern void LibPlacenote_StartSession_mECC7EFD37E0293A9856930395D819EE8E064EA77 ();
-// 0x00000059 System.Collections.IEnumerator LibPlacenote::OnPoseInvokeRepeat()
+// 0x00000025 System.Collections.IEnumerator LibPlacenote::OnPoseInvokeRepeat()
 extern void LibPlacenote_OnPoseInvokeRepeat_mA5095675F752DA999E60ED716A14D5A338905CB3 ();
-// 0x0000005A System.Void LibPlacenote::SaveCameraPose()
+// 0x00000026 System.Void LibPlacenote::SaveCameraPose()
 extern void LibPlacenote_SaveCameraPose_m9FDCCB6D882A58593F9C1F9A4A9C7C9070C556F4 ();
-// 0x0000005B System.Void LibPlacenote::CheckLocalization()
+// 0x00000027 System.Void LibPlacenote::CheckLocalization()
 extern void LibPlacenote_CheckLocalization_m38EBAB1FF4BD74067B365AE33CC6F4C5FB3783CF ();
-// 0x0000005C System.Void LibPlacenote::StopSession()
+// 0x00000028 System.Void LibPlacenote::StopSession()
 extern void LibPlacenote_StopSession_m51C7D3C432423A9F417D46A8D34D7558377DA5EB ();
-// 0x0000005D System.Void LibPlacenote::OnDatasetUpload(LibPlacenote_PNTransferStatusUnity&,System.IntPtr)
+// 0x00000029 System.Void LibPlacenote::OnDatasetUpload(LibPlacenote_PNTransferStatusUnity&,System.IntPtr)
 extern void LibPlacenote_OnDatasetUpload_m79F8DFEB08F8EBC525ED76DB70338E8B07BA8295 ();
-// 0x0000005E System.Void LibPlacenote::StartRecordDataset(System.Action`3<System.Boolean,System.Boolean,System.Single>)
+// 0x0000002A System.Void LibPlacenote::StartRecordDataset(System.Action`3<System.Boolean,System.Boolean,System.Single>)
 extern void LibPlacenote_StartRecordDataset_m641B29CCBACFE02549C8EEF324CF9849BDC29D92 ();
-// 0x0000005F System.Void LibPlacenote::OnGetMetadata(LibPlacenote_PNCallbackResultUnity&,System.IntPtr)
+// 0x0000002B System.Void LibPlacenote::OnGetMetadata(LibPlacenote_PNCallbackResultUnity&,System.IntPtr)
 extern void LibPlacenote_OnGetMetadata_m9BC6A244C8682A6675E078C15EBD77FF55D9C364 ();
-// 0x00000060 System.Boolean LibPlacenote::GetMetadata(System.String,System.Action`1<LibPlacenote_MapMetadata>)
+// 0x0000002C System.Boolean LibPlacenote::GetMetadata(System.String,System.Action`1<LibPlacenote_MapMetadata>)
 extern void LibPlacenote_GetMetadata_m3970325C405851F848986A064BC8C3D763C9724F ();
-// 0x00000061 System.Void LibPlacenote::OnSetMetadata(LibPlacenote_PNCallbackResultUnity&,System.IntPtr)
+// 0x0000002D System.Void LibPlacenote::OnSetMetadata(LibPlacenote_PNCallbackResultUnity&,System.IntPtr)
 extern void LibPlacenote_OnSetMetadata_m3ADE0B7AD095246F0105260C0048621DE077F0F6 ();
-// 0x00000062 System.Boolean LibPlacenote::SetMetadata(System.String,LibPlacenote_MapMetadataSettable,System.Action`1<System.Boolean>)
+// 0x0000002E System.Boolean LibPlacenote::SetMetadata(System.String,LibPlacenote_MapMetadataSettable,System.Action`1<System.Boolean>)
 extern void LibPlacenote_SetMetadata_mC0CF261D4E6FE4874625D1B2C1D6A8039E90089F ();
-// 0x00000063 System.Void LibPlacenote::OnMapList(LibPlacenote_PNCallbackResultUnity&,System.IntPtr)
+// 0x0000002F System.Void LibPlacenote::OnMapList(LibPlacenote_PNCallbackResultUnity&,System.IntPtr)
 extern void LibPlacenote_OnMapList_m72602EDA0EBC4DB9D04BEE844681E27D92F943D9 ();
-// 0x00000064 System.Void LibPlacenote::ListMaps(System.Action`1<LibPlacenote_MapInfo[]>)
+// 0x00000030 System.Void LibPlacenote::ListMaps(System.Action`1<LibPlacenote_MapInfo[]>)
 extern void LibPlacenote_ListMaps_mDE7477C352E91D14F96E1345649B191ABB4F4A9E ();
-// 0x00000065 System.Void LibPlacenote::SearchMaps(System.String,System.Action`1<LibPlacenote_MapInfo[]>)
+// 0x00000031 System.Void LibPlacenote::SearchMaps(System.String,System.Action`1<LibPlacenote_MapInfo[]>)
 extern void LibPlacenote_SearchMaps_m84D908625AA52C37BAD26B80BC437E2AE72536BE ();
-// 0x00000066 System.Void LibPlacenote::SearchMaps(System.Single,System.Single,System.Single,System.Action`1<LibPlacenote_MapInfo[]>)
+// 0x00000032 System.Void LibPlacenote::SearchMaps(System.Single,System.Single,System.Single,System.Action`1<LibPlacenote_MapInfo[]>)
 extern void LibPlacenote_SearchMaps_m98D04B2527079421A295A2BF1EEEB2D8D0D0ABEF ();
-// 0x00000067 System.Void LibPlacenote::SearchMaps(System.DateTime,System.DateTime,System.Action`1<LibPlacenote_MapInfo[]>)
+// 0x00000033 System.Void LibPlacenote::SearchMaps(System.DateTime,System.DateTime,System.Action`1<LibPlacenote_MapInfo[]>)
 extern void LibPlacenote_SearchMaps_m51FE4C796C00075835D1EC852325B362CCFBE021 ();
-// 0x00000068 System.Void LibPlacenote::SearchMapsByUserData(System.String,System.Action`1<LibPlacenote_MapInfo[]>)
+// 0x00000034 System.Void LibPlacenote::SearchMapsByUserData(System.String,System.Action`1<LibPlacenote_MapInfo[]>)
 extern void LibPlacenote_SearchMapsByUserData_m7BB5DA481711AA4F1FE38EE0CA0257095B2EC9B0 ();
-// 0x00000069 System.Void LibPlacenote::SearchMaps(LibPlacenote_MapSearch,System.Action`1<LibPlacenote_MapInfo[]>)
+// 0x00000035 System.Void LibPlacenote::SearchMaps(LibPlacenote_MapSearch,System.Action`1<LibPlacenote_MapInfo[]>)
 extern void LibPlacenote_SearchMaps_m2FDAD496E6AAD665F70F539314BDB38AB2CEA7B4 ();
-// 0x0000006A System.Void LibPlacenote::SetLocalizationThumbnail(UnityEngine.Texture2D)
+// 0x00000036 System.Void LibPlacenote::SetLocalizationThumbnail(UnityEngine.Texture2D)
 extern void LibPlacenote_SetLocalizationThumbnail_m5B30A293384076A96F5BBE6C2C5350E68D26673F ();
-// 0x0000006B System.Void LibPlacenote::GetLocalizationThumbnail(System.Action`1<UnityEngine.Texture2D>)
+// 0x00000037 System.Void LibPlacenote::GetLocalizationThumbnail(System.Action`1<UnityEngine.Texture2D>)
 extern void LibPlacenote_GetLocalizationThumbnail_m7DB976D7BEF0BA05C0570E1706CDE548279125EF ();
-// 0x0000006C System.Void LibPlacenote::UploadThumbnail(System.String)
+// 0x00000038 System.Void LibPlacenote::UploadThumbnail(System.String)
 extern void LibPlacenote_UploadThumbnail_m52FEFAE46C711D6E3913CB3500559B8C804F0732 ();
-// 0x0000006D System.Void LibPlacenote::DownloadThumbnail(System.String,System.Action`1<UnityEngine.Texture2D>)
+// 0x00000039 System.Void LibPlacenote::DownloadThumbnail(System.String,System.Action`1<UnityEngine.Texture2D>)
 extern void LibPlacenote_DownloadThumbnail_mFE6987538ADB735742A9361426066F6860D9AA90 ();
-// 0x0000006E System.Void LibPlacenote::OnMapUploaded(LibPlacenote_PNTransferStatusUnity&,System.IntPtr)
+// 0x0000003A System.Void LibPlacenote::OnMapUploaded(LibPlacenote_PNTransferStatusUnity&,System.IntPtr)
 extern void LibPlacenote_OnMapUploaded_m5BDC9ACA0AFE0B5321E4C973FAE0A4BC9CEB861A ();
-// 0x0000006F System.Void LibPlacenote::OnMapAdded(LibPlacenote_PNCallbackResultUnity&,System.IntPtr)
+// 0x0000003B System.Void LibPlacenote::OnMapAdded(LibPlacenote_PNCallbackResultUnity&,System.IntPtr)
 extern void LibPlacenote_OnMapAdded_mA1EA93A5FC54CA99DDB2D8E3E85B06AC464A756D ();
-// 0x00000070 System.Void LibPlacenote::SaveMap(System.Action`1<System.String>,System.Action`3<System.Boolean,System.Boolean,System.Single>)
+// 0x0000003C System.Void LibPlacenote::SaveMap(System.Action`1<System.String>,System.Action`3<System.Boolean,System.Boolean,System.Single>)
 extern void LibPlacenote_SaveMap_mE14AD838B52D1EE6A7E2B6133B17FF40D413D9DF ();
-// 0x00000071 System.Void LibPlacenote::OnMapLoaded(LibPlacenote_PNTransferStatusUnity&,System.IntPtr)
+// 0x0000003D System.Void LibPlacenote::OnMapLoaded(LibPlacenote_PNTransferStatusUnity&,System.IntPtr)
 extern void LibPlacenote_OnMapLoaded_m1CE6880C5C653BFA2CF74BC1EF957B5BAC3B3D96 ();
-// 0x00000072 System.Void LibPlacenote::LoadMap(System.String,System.Action`3<System.Boolean,System.Boolean,System.Single>)
+// 0x0000003E System.Void LibPlacenote::LoadMap(System.String,System.Action`3<System.Boolean,System.Boolean,System.Single>)
 extern void LibPlacenote_LoadMap_m510776866A15F7F5D0A92ACEFD76161DE112D0C1 ();
-// 0x00000073 System.Void LibPlacenote::OnMapDeleted(LibPlacenote_PNCallbackResultUnity&,System.IntPtr)
+// 0x0000003F System.Void LibPlacenote::OnMapDeleted(LibPlacenote_PNCallbackResultUnity&,System.IntPtr)
 extern void LibPlacenote_OnMapDeleted_m4761D7C39FBABDD0D343A2BAF79501AC26F0BF26 ();
-// 0x00000074 System.Void LibPlacenote::DeleteMap(System.String,System.Action`2<System.Boolean,System.String>)
+// 0x00000040 System.Void LibPlacenote::DeleteMap(System.String,System.Action`2<System.Boolean,System.String>)
 extern void LibPlacenote_DeleteMap_m076B1B658162327DDF3DC87D6F7415433E5B085A ();
-// 0x00000075 System.Void LibPlacenote::OnThumbnailSyncProgress(LibPlacenote_PNTransferStatusUnity&,System.IntPtr)
+// 0x00000041 System.Void LibPlacenote::OnThumbnailSyncProgress(LibPlacenote_PNTransferStatusUnity&,System.IntPtr)
 extern void LibPlacenote_OnThumbnailSyncProgress_m4BD8F064069F6C7CC2A834A5BB35F34B6EA5A571 ();
-// 0x00000076 System.Void LibPlacenote::SyncLocalizationThumbnail(System.String,System.String,System.Action`3<System.Boolean,System.Boolean,System.Single>)
+// 0x00000042 System.Void LibPlacenote::SyncLocalizationThumbnail(System.String,System.String,System.Action`3<System.Boolean,System.Boolean,System.Single>)
 extern void LibPlacenote_SyncLocalizationThumbnail_m50BD260046A1C38B68C0CDD13DBC2A29F579871F ();
-// 0x00000077 LibPlacenote_PNFeaturePointUnity[] LibPlacenote::GetMap(System.Int32)
+// 0x00000043 LibPlacenote_PNFeaturePointUnity[] LibPlacenote::GetMap(System.Int32)
 extern void LibPlacenote_GetMap_mDBA25AF0F93575C802887444986E60E07BED0633 ();
-// 0x00000078 System.Void LibPlacenote::OnApplicationQuit()
+// 0x00000044 System.Void LibPlacenote::OnApplicationQuit()
 extern void LibPlacenote_OnApplicationQuit_m9F4C4A1E47A54473ED902C4C7A14DA5FD90F1C76 ();
-// 0x00000079 LibPlacenote_PNFeaturePointUnity[] LibPlacenote::GetTrackedFeatures(System.Int32)
+// 0x00000045 LibPlacenote_PNFeaturePointUnity[] LibPlacenote::GetTrackedFeatures(System.Int32)
 extern void LibPlacenote_GetTrackedFeatures_m2564716C62847F339CA0D3541E12EA37C3FA8565 ();
-// 0x0000007A System.Int32 LibPlacenote::PNInitialize(LibPlacenote_PNInitParamsUnity&,LibPlacenote_PNResultCallback,System.IntPtr)
+// 0x00000046 System.Int32 LibPlacenote::PNInitialize(LibPlacenote_PNInitParamsUnity&,LibPlacenote_PNResultCallback,System.IntPtr)
 extern void LibPlacenote_PNInitialize_mE5D9CF45D6831D0799DE7A1255D177B7AF1528D0 ();
-// 0x0000007B System.Int32 LibPlacenote::PNGetStatus()
+// 0x00000047 System.Int32 LibPlacenote::PNGetStatus()
 extern void LibPlacenote_PNGetStatus_m7FC31C40A91ACED173DAA7A1F26DC7A4E6DE28A4 ();
-// 0x0000007C System.Void LibPlacenote::PNSetFrame(LibPlacenote_PNImagePlaneUnity&,LibPlacenote_PNImagePlaneUnity&,LibPlacenote_PNTransformUnity&)
+// 0x00000048 System.Void LibPlacenote::PNSetFrame(LibPlacenote_PNImagePlaneUnity&,LibPlacenote_PNImagePlaneUnity&,LibPlacenote_PNTransformUnity&)
 extern void LibPlacenote_PNSetFrame_mF31C87D152E98CCE53A8A0617EEE172A049B2B2D ();
-// 0x0000007D System.Int32 LibPlacenote::PNListMaps(LibPlacenote_PNResultCallback,System.IntPtr)
+// 0x00000049 System.Int32 LibPlacenote::PNListMaps(LibPlacenote_PNResultCallback,System.IntPtr)
 extern void LibPlacenote_PNListMaps_m6E885701B6F7E035127B2FC3E710BAC26435FA42 ();
-// 0x0000007E System.Int32 LibPlacenote::PNSearchMaps(System.String,LibPlacenote_PNResultCallback,System.IntPtr)
+// 0x0000004A System.Int32 LibPlacenote::PNSearchMaps(System.String,LibPlacenote_PNResultCallback,System.IntPtr)
 extern void LibPlacenote_PNSearchMaps_m01B3BA48FC7941F6731037B1600442381A4E7640 ();
-// 0x0000007F System.Int32 LibPlacenote::PNAddMap(LibPlacenote_PNResultCallback,System.IntPtr)
+// 0x0000004B System.Int32 LibPlacenote::PNAddMap(LibPlacenote_PNResultCallback,System.IntPtr)
 extern void LibPlacenote_PNAddMap_m6B646F5EA673A3C5E4D0386C1B40ED0011454EEC ();
-// 0x00000080 System.Int32 LibPlacenote::PNSaveMap(System.String,LibPlacenote_PNTransferMapCallback,System.IntPtr)
+// 0x0000004C System.Int32 LibPlacenote::PNSaveMap(System.String,LibPlacenote_PNTransferMapCallback,System.IntPtr)
 extern void LibPlacenote_PNSaveMap_m5BE372C92E0212D59ECF31D57DA694FC9E5F8728 ();
-// 0x00000081 System.Int32 LibPlacenote::PNLoadMap(System.String,LibPlacenote_PNTransferMapCallback,System.IntPtr)
+// 0x0000004D System.Int32 LibPlacenote::PNLoadMap(System.String,LibPlacenote_PNTransferMapCallback,System.IntPtr)
 extern void LibPlacenote_PNLoadMap_m09E6A239F7920FD34A631AEF32F1487785613258 ();
-// 0x00000082 System.Int32 LibPlacenote::PNDeleteMap(System.String,LibPlacenote_PNResultCallback,System.IntPtr)
+// 0x0000004E System.Int32 LibPlacenote::PNDeleteMap(System.String,LibPlacenote_PNResultCallback,System.IntPtr)
 extern void LibPlacenote_PNDeleteMap_m94778E24E3703C67FBCA0931EF83AEDA01EF4695 ();
-// 0x00000083 System.Int32 LibPlacenote::PNSyncThumbnail(System.String,System.String,LibPlacenote_PNTransferMapCallback,System.IntPtr)
+// 0x0000004F System.Int32 LibPlacenote::PNSyncThumbnail(System.String,System.String,LibPlacenote_PNTransferMapCallback,System.IntPtr)
 extern void LibPlacenote_PNSyncThumbnail_m34A679F305DE8E94597769A959B751902FE66026 ();
-// 0x00000084 System.Int32 LibPlacenote::PNGetTrackedLandmarks(LibPlacenote_PNFeaturePointUnity[],System.Int32)
+// 0x00000050 System.Int32 LibPlacenote::PNGetTrackedLandmarks(LibPlacenote_PNFeaturePointUnity[],System.Int32)
 extern void LibPlacenote_PNGetTrackedLandmarks_m4E028A291F04099043E4B4D4D533C6C3D1545F68 ();
-// 0x00000085 System.Int32 LibPlacenote::PNGetAllLandmarks(LibPlacenote_PNFeaturePointUnity[],System.Int32)
+// 0x00000051 System.Int32 LibPlacenote::PNGetAllLandmarks(LibPlacenote_PNFeaturePointUnity[],System.Int32)
 extern void LibPlacenote_PNGetAllLandmarks_m8B91B480B9A9D8E8E1ED0AFE8D0E36388A740480 ();
-// 0x00000086 System.Int32 LibPlacenote::PNGetPose(LibPlacenote_PNTransformUnity&)
+// 0x00000052 System.Int32 LibPlacenote::PNGetPose(LibPlacenote_PNTransformUnity&)
 extern void LibPlacenote_PNGetPose_m7FB6647F5EDD0A7625B46D2135586AD40EEE9EE6 ();
-// 0x00000087 System.Int32 LibPlacenote::PNSetIntrinsics(LibPlacenote_PNCameraIntrinsicsUnity&)
+// 0x00000053 System.Int32 LibPlacenote::PNSetIntrinsics(LibPlacenote_PNCameraIntrinsicsUnity&)
 extern void LibPlacenote_PNSetIntrinsics_mE4A66926C133B0EAAF7898C03E727E8E2B2324B8 ();
-// 0x00000088 System.Int32 LibPlacenote::PNStartSession(LibPlacenote_PNPoseCallback,System.Boolean,System.IntPtr)
+// 0x00000054 System.Int32 LibPlacenote::PNStartSession(LibPlacenote_PNPoseCallback,System.Boolean,System.IntPtr)
 extern void LibPlacenote_PNStartSession_m309443A58B0F3392F38C4673625585F478147D97 ();
-// 0x00000089 System.Int32 LibPlacenote::PNStopSession()
+// 0x00000055 System.Int32 LibPlacenote::PNStopSession()
 extern void LibPlacenote_PNStopSession_m98A4A71D33EB056EF09D16A25399B00768303D4B ();
-// 0x0000008A System.Int32 LibPlacenote::PNStartRecordDataset(LibPlacenote_PNTransferMapCallback,System.IntPtr)
+// 0x00000056 System.Int32 LibPlacenote::PNStartRecordDataset(LibPlacenote_PNTransferMapCallback,System.IntPtr)
 extern void LibPlacenote_PNStartRecordDataset_m7E7A716F30E8BE898672B2F344D54A316AD0806D ();
-// 0x0000008B System.Int32 LibPlacenote::PNGetMetadata(System.String,LibPlacenote_PNResultCallback,System.IntPtr)
+// 0x00000057 System.Int32 LibPlacenote::PNGetMetadata(System.String,LibPlacenote_PNResultCallback,System.IntPtr)
 extern void LibPlacenote_PNGetMetadata_mB8C353904B33042D0FF5FAA059369C1F22335B9C ();
-// 0x0000008C System.Int32 LibPlacenote::PNSetMetadata(System.String,System.String,LibPlacenote_PNResultCallback,System.IntPtr)
+// 0x00000058 System.Int32 LibPlacenote::PNSetMetadata(System.String,System.String,LibPlacenote_PNResultCallback,System.IntPtr)
 extern void LibPlacenote_PNSetMetadata_mC69103164E50816FE4D0D9CD0C5905925187BC0B ();
-// 0x0000008D System.Int32 LibPlacenote::PNShutdown()
+// 0x00000059 System.Int32 LibPlacenote::PNShutdown()
 extern void LibPlacenote_PNShutdown_m0F56F301283FF5E7B09F331AEBC5D920F84FDD21 ();
-// 0x0000008E System.Void LibPlacenote::.ctor()
+// 0x0000005A System.Void LibPlacenote::.ctor()
 extern void LibPlacenote__ctor_mA1E47B22C08E7321F5D1A175C560CE4EECE17BC4 ();
-// 0x0000008F System.Void LibPlacenote::.cctor()
+// 0x0000005B System.Void LibPlacenote::.cctor()
 extern void LibPlacenote__cctor_mE8EE2FFD6D3E5D2A61C1FCBEB49062DFF6CF1593 ();
-// 0x00000090 System.Void LibPlacenote::<StopSession>b__73_0()
+// 0x0000005C System.Void LibPlacenote::<StopSession>b__73_0()
 extern void LibPlacenote_U3CStopSessionU3Eb__73_0_mE87FD0D5F3334CA72BC12B9E0F7AD43187F174C5 ();
-// 0x00000091 LocalizationThumbnailSelector LocalizationThumbnailSelector::get_Instance()
+// 0x0000005D LocalizationThumbnailSelector LocalizationThumbnailSelector::get_Instance()
 extern void LocalizationThumbnailSelector_get_Instance_m887A17E6DD1276F15747BF9C7D19B9B15F2BA82B ();
-// 0x00000092 System.Action`1<UnityEngine.Texture2D> LocalizationThumbnailSelector::get_TextureEvent()
+// 0x0000005E System.Action`1<UnityEngine.Texture2D> LocalizationThumbnailSelector::get_TextureEvent()
 extern void LocalizationThumbnailSelector_get_TextureEvent_m170EF2A50C5FF25DEC5613F5F8266FE8F8415347 ();
-// 0x00000093 System.Void LocalizationThumbnailSelector::set_TextureEvent(System.Action`1<UnityEngine.Texture2D>)
+// 0x0000005F System.Void LocalizationThumbnailSelector::set_TextureEvent(System.Action`1<UnityEngine.Texture2D>)
 extern void LocalizationThumbnailSelector_set_TextureEvent_mEF75A916344382ABE8BD35AB9CC1952720E634ED ();
-// 0x00000094 System.Void LocalizationThumbnailSelector::Awake()
+// 0x00000060 System.Void LocalizationThumbnailSelector::Awake()
 extern void LocalizationThumbnailSelector_Awake_mE3B8BE702659FB64819292C985F0EC822BEE2F6E ();
-// 0x00000095 System.Void LocalizationThumbnailSelector::Update()
+// 0x00000061 System.Void LocalizationThumbnailSelector::Update()
 extern void LocalizationThumbnailSelector_Update_m24DCDD232B13CBC4AADD9C6ADA7D9FFB35B5AA6F ();
-// 0x00000096 System.Void LocalizationThumbnailSelector::Start()
+// 0x00000062 System.Void LocalizationThumbnailSelector::Start()
 extern void LocalizationThumbnailSelector_Start_m85FF1E9E545B7C169EEBFBDD0FC462573EC2D1DE ();
-// 0x00000097 System.Void LocalizationThumbnailSelector::OnPose(UnityEngine.Matrix4x4,UnityEngine.Matrix4x4)
+// 0x00000063 System.Void LocalizationThumbnailSelector::OnPose(UnityEngine.Matrix4x4,UnityEngine.Matrix4x4)
 extern void LocalizationThumbnailSelector_OnPose_m4AED9D18E31CA5E3BF8BBEED7725D09F2CDAC723 ();
-// 0x00000098 System.Void LocalizationThumbnailSelector::SetCurrentImageAsThumbnail()
+// 0x00000064 System.Void LocalizationThumbnailSelector::SetCurrentImageAsThumbnail()
 extern void LocalizationThumbnailSelector_SetCurrentImageAsThumbnail_mAAE98FBE5E38E93E0C223A8D1B3524AD26D4FE9D ();
-// 0x00000099 System.Void LocalizationThumbnailSelector::OnStatusChange(LibPlacenote_MappingStatus,LibPlacenote_MappingStatus)
+// 0x00000065 System.Void LocalizationThumbnailSelector::OnStatusChange(LibPlacenote_MappingStatus,LibPlacenote_MappingStatus)
 extern void LocalizationThumbnailSelector_OnStatusChange_m3D90D4781302DF4B13C1D28615B7A4795EDE5CCA ();
-// 0x0000009A System.Void LocalizationThumbnailSelector::OnLocalized()
+// 0x00000066 System.Void LocalizationThumbnailSelector::OnLocalized()
 extern void LocalizationThumbnailSelector_OnLocalized_mDFC066E01185C541A4B6FC3A72A6E199594FCF60 ();
-// 0x0000009B System.Void LocalizationThumbnailSelector::.ctor()
+// 0x00000067 System.Void LocalizationThumbnailSelector::.ctor()
 extern void LocalizationThumbnailSelector__ctor_mAB0A36CCB6045589718307C9EBFF87C52E6037C6 ();
-// 0x0000009C System.Void LocalizationThumbnailSelector::<OnStatusChange>b__17_0(UnityEngine.Texture2D)
+// 0x00000068 System.Void LocalizationThumbnailSelector::<OnStatusChange>b__17_0(UnityEngine.Texture2D)
 extern void LocalizationThumbnailSelector_U3COnStatusChangeU3Eb__17_0_m7D27B28FFC981C41797273E1C1646F3767427B16 ();
-// 0x0000009D System.Void MainThreadTaskQueue::Awake()
+// 0x00000069 System.Void MainThreadTaskQueue::Awake()
 extern void MainThreadTaskQueue_Awake_mF52AB9CFE82183AAFC1BEDCF03FBAF7671022A4B ();
-// 0x0000009E System.Void MainThreadTaskQueue::Update()
+// 0x0000006A System.Void MainThreadTaskQueue::Update()
 extern void MainThreadTaskQueue_Update_mBC98F2D3D2C4A74D147731119D75746BEA707191 ();
-// 0x0000009F System.Void MainThreadTaskQueue::InvokeOnMainThread(MainThreadTaskQueue_Delegate)
+// 0x0000006B System.Void MainThreadTaskQueue::InvokeOnMainThread(MainThreadTaskQueue_Delegate)
 extern void MainThreadTaskQueue_InvokeOnMainThread_m7C52E27F8C4C0C7FEE346259B86E3A2A2BD46992 ();
-// 0x000000A0 System.Void MainThreadTaskQueue::.ctor()
+// 0x0000006C System.Void MainThreadTaskQueue::.ctor()
 extern void MainThreadTaskQueue__ctor_mD3EAA231A124612D5D724DB09931110B4B15A815 ();
-// 0x000000A1 System.Void PlacenoteCameraManager::Start()
+// 0x0000006D System.Void PlacenoteCameraManager::Start()
 extern void PlacenoteCameraManager_Start_m53956023C93B3CE0B0C6BC90FEC7164F3189D166 ();
-// 0x000000A2 System.Void PlacenoteCameraManager::OnPose(UnityEngine.Matrix4x4,UnityEngine.Matrix4x4)
+// 0x0000006E System.Void PlacenoteCameraManager::OnPose(UnityEngine.Matrix4x4,UnityEngine.Matrix4x4)
 extern void PlacenoteCameraManager_OnPose_mA9A570943DE5810937B79E2CB984DA15265EC89F ();
-// 0x000000A3 System.Void PlacenoteCameraManager::OnStatusChange(LibPlacenote_MappingStatus,LibPlacenote_MappingStatus)
+// 0x0000006F System.Void PlacenoteCameraManager::OnStatusChange(LibPlacenote_MappingStatus,LibPlacenote_MappingStatus)
 extern void PlacenoteCameraManager_OnStatusChange_m70F021536BCF904DCF3822620804F376700EDC50 ();
-// 0x000000A4 System.Void PlacenoteCameraManager::OnLocalized()
+// 0x00000070 System.Void PlacenoteCameraManager::OnLocalized()
 extern void PlacenoteCameraManager_OnLocalized_m0FB88E8F9E0BC137168556DE7F0215D7B350411D ();
-// 0x000000A5 System.Void PlacenoteCameraManager::.ctor()
+// 0x00000071 System.Void PlacenoteCameraManager::.ctor()
 extern void PlacenoteCameraManager__ctor_mCF6B51CEC502BAAE267581FE1D913DFB1072F695 ();
-// 0x000000A6 System.Void PlacenoteListener::OnPose(UnityEngine.Matrix4x4,UnityEngine.Matrix4x4)
-// 0x000000A7 System.Void PlacenoteListener::OnStatusChange(LibPlacenote_MappingStatus,LibPlacenote_MappingStatus)
-// 0x000000A8 System.Void PlacenoteListener::OnLocalized()
-// 0x000000A9 System.Void KeyboardMover::Awake()
+// 0x00000072 System.Void PlacenoteListener::OnPose(UnityEngine.Matrix4x4,UnityEngine.Matrix4x4)
+// 0x00000073 System.Void PlacenoteListener::OnStatusChange(LibPlacenote_MappingStatus,LibPlacenote_MappingStatus)
+// 0x00000074 System.Void PlacenoteListener::OnLocalized()
+// 0x00000075 System.Void KeyboardMover::Awake()
 extern void KeyboardMover_Awake_m9EE2F7AEB8C95A7933B94ED3F2997E9215FB9276 ();
-// 0x000000AA System.Void KeyboardMover::Update()
+// 0x00000076 System.Void KeyboardMover::Update()
 extern void KeyboardMover_Update_m5E02556F70BF0E08C9D13A1A093CA10D68EA7160 ();
-// 0x000000AB System.Void KeyboardMover::.ctor()
+// 0x00000077 System.Void KeyboardMover::.ctor()
 extern void KeyboardMover__ctor_m1CC6F52DB60D5146DACE08A0F2909C63975ABD61 ();
-// 0x000000AC System.Void PlacenoteSampleTerrain::Awake()
+// 0x00000078 System.Void PlacenoteSampleTerrain::Awake()
 extern void PlacenoteSampleTerrain_Awake_m80C61739A97C825F29360A1320D540A3C582C58B ();
-// 0x000000AD System.Void PlacenoteSampleTerrain::.ctor()
+// 0x00000079 System.Void PlacenoteSampleTerrain::.ctor()
 extern void PlacenoteSampleTerrain__ctor_mC5D881CE2A675AAACF85D7BFDF0DFF8A95508605 ();
-// 0x000000AE System.Void SimulatorSetSkybox::Start()
+// 0x0000007A System.Void SimulatorSetSkybox::Start()
 extern void SimulatorSetSkybox_Start_mC476BA8C700DAFF3580B7CAB9D7D54ED0985D730 ();
-// 0x000000AF System.Void SimulatorSetSkybox::.ctor()
+// 0x0000007B System.Void SimulatorSetSkybox::.ctor()
 extern void SimulatorSetSkybox__ctor_m715189ECDEC087DD36AAE7497816BD7D5041FDA3 ();
+// 0x0000007C System.Void DrawLineManager::setLineWidth(System.Single)
+extern void DrawLineManager_setLineWidth_mE930D4888EA541FAF25907B64D853968385ECA7C ();
+// 0x0000007D System.Void DrawLineManager::setLineColor(UnityEngine.Color)
+extern void DrawLineManager_setLineColor_mAD9644C0BACB176373370BB380DE8E33218DE53A ();
+// 0x0000007E System.Void DrawLineManager::OnColorChoiceClick(UnityEngine.UI.Image)
+extern void DrawLineManager_OnColorChoiceClick_mF5FBFF835CE076CED0790FC66780D9639F929F14 ();
+// 0x0000007F System.Void DrawLineManager::OnLineWidthSliderChanged()
+extern void DrawLineManager_OnLineWidthSliderChanged_m44ACCD7A979B3A95E24A34E1222C3269E034621F ();
+// 0x00000080 UnityEngine.Vector3 DrawLineManager::getRayEndPoint(System.Single)
+extern void DrawLineManager_getRayEndPoint_mCF00F8778219FD4DC6D35815F0ABE3FB25EBD342 ();
+// 0x00000081 System.Void DrawLineManager::Start()
+extern void DrawLineManager_Start_m0EEA60EE3ED4F65833E365CFE233ACEC0879F30F ();
+// 0x00000082 System.Void DrawLineManager::Update()
+extern void DrawLineManager_Update_m438F1279DF8B989843186F341E6D1663987AD2DD ();
+// 0x00000083 System.Void DrawLineManager::addReplayLineSegment(System.Boolean,System.Single,UnityEngine.Vector3,UnityEngine.Color)
+extern void DrawLineManager_addReplayLineSegment_mBBBD11AB05ADD61934D22245E9A6E8921DB89304 ();
+// 0x00000084 System.Void DrawLineManager::.ctor()
+extern void DrawLineManager__ctor_mBA26A37EF3E91317E671E4D24CC4214CC8095E6C ();
+// 0x00000085 System.Void DrawingHistoryManager::Start()
+extern void DrawingHistoryManager_Start_mBF78A56E9BF484C39CF050797FF872DA28E96D91 ();
+// 0x00000086 System.Void DrawingHistoryManager::Update()
+extern void DrawingHistoryManager_Update_mF368FE8C58E3348BA994AF3519BFEAD4419593F5 ();
+// 0x00000087 System.Void DrawingHistoryManager::resetHistory()
+extern void DrawingHistoryManager_resetHistory_m2C8CB1AF953BDF7D6930FAA9053BCB88BADC8C7E ();
+// 0x00000088 System.Void DrawingHistoryManager::addDrawingCommand(System.Int32,System.Int32,UnityEngine.Vector3,UnityEngine.Color,System.Single)
+extern void DrawingHistoryManager_addDrawingCommand_m57D40781CB938EE38A12812171FDC206B265C24A ();
+// 0x00000089 System.Collections.IEnumerator DrawingHistoryManager::replayDrawing()
+extern void DrawingHistoryManager_replayDrawing_m1F159403FEB85584A286831F3A1676A0C996FB44 ();
+// 0x0000008A System.Boolean DrawingHistoryManager::isDrawingHistoryEmpty()
+extern void DrawingHistoryManager_isDrawingHistoryEmpty_m7F3F20153656CE4CF9F34836657AE5C7B97F4948 ();
+// 0x0000008B System.Void DrawingHistoryManager::replayDrawingFast()
+extern void DrawingHistoryManager_replayDrawingFast_mC4652DEC7944310A35D3A4DBA435063B29F0327B ();
+// 0x0000008C System.Void DrawingHistoryManager::saveMapIDToFile(System.String)
+extern void DrawingHistoryManager_saveMapIDToFile_m2AF166E2DBCA5F1BC755015CBED6DC14ABB00CE2 ();
+// 0x0000008D System.String DrawingHistoryManager::loadMapIDFromFile()
+extern void DrawingHistoryManager_loadMapIDFromFile_mD32A66A4DBE6B67508B5A5432A8E5D1593D58B77 ();
+// 0x0000008E System.Void DrawingHistoryManager::saveDrawingHistory()
+extern void DrawingHistoryManager_saveDrawingHistory_m069DC45D698A10AC83283A7EA31BA6BC82B9A216 ();
+// 0x0000008F System.Void DrawingHistoryManager::loadFromDrawingHistory()
+extern void DrawingHistoryManager_loadFromDrawingHistory_m33CE51D3C2E643414071B4641689928A34CA7E2C ();
+// 0x00000090 DrawingHistoryManager_drawingcommand DrawingHistoryManager::parseSaveCmdLine(System.String)
+extern void DrawingHistoryManager_parseSaveCmdLine_m007F2FF6F9AE9F05780A498407BEBDAA17AD7C0E ();
+// 0x00000091 System.Void DrawingHistoryManager::.ctor()
+extern void DrawingHistoryManager__ctor_m52571A1343ED1F835F5159241E7C57BD77940576 ();
+// 0x00000092 System.Void GraphicsLineRenderer::Start()
+extern void GraphicsLineRenderer_Start_m238335DB2ECCFF663EB6D69834B9D26359E84492 ();
+// 0x00000093 System.Void GraphicsLineRenderer::SetWidth(System.Single)
+extern void GraphicsLineRenderer_SetWidth_m79FFEAE9CA81B9DDE01D9D50CC8ED4F4EB9095CD ();
+// 0x00000094 System.Void GraphicsLineRenderer::AddPoint(UnityEngine.Vector3)
+extern void GraphicsLineRenderer_AddPoint_m24839F21D1D1D040E72FFFA36B5D2D8E904E0BA3 ();
+// 0x00000095 UnityEngine.Vector3[] GraphicsLineRenderer::MakeQuad(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Boolean)
+extern void GraphicsLineRenderer_MakeQuad_m89E24F5B14BFF28904F557EEC7EF2C63EAD9132E ();
+// 0x00000096 System.Void GraphicsLineRenderer::AddLine(UnityEngine.Mesh,UnityEngine.Vector3[])
+extern void GraphicsLineRenderer_AddLine_mFE4B0A2E06F4FD7EDC435CBAFDC7CE42AC1C9F90 ();
+// 0x00000097 UnityEngine.Vector3[] GraphicsLineRenderer::resizeVertices(UnityEngine.Vector3[],System.Int32)
+extern void GraphicsLineRenderer_resizeVertices_m47D324C654E218AC79030985A27C76C38C30DC01 ();
+// 0x00000098 System.Int32[] GraphicsLineRenderer::resizeTraingles(System.Int32[],System.Int32)
+extern void GraphicsLineRenderer_resizeTraingles_m80309056030E0CA87D376CFAF1F3EFA8CABA327B ();
+// 0x00000099 UnityEngine.Vector2[] GraphicsLineRenderer::resizeUVs(UnityEngine.Vector2[],System.Int32)
+extern void GraphicsLineRenderer_resizeUVs_mBB5546995A5077CF3FB8503F7570FE9B15653D65 ();
+// 0x0000009A System.Void GraphicsLineRenderer::.ctor()
+extern void GraphicsLineRenderer__ctor_mAE3D25AB1FE02E28C2202679BC922446C73EFB7D ();
+// 0x0000009B System.Void PaintController::Start()
+extern void PaintController_Start_mBD017F5F71D3907C15E6FCC36BA387F03222877F ();
+// 0x0000009C System.Void PaintController::onClickEnablePointCloud()
+extern void PaintController_onClickEnablePointCloud_m14F1458DB71049392A3A2F53D3ED8146FFA44E2D ();
+// 0x0000009D System.Void PaintController::OnToggleColorPaletteClick()
+extern void PaintController_OnToggleColorPaletteClick_mDB712BA268FC0CDDEA17222A9B562B884E12F3B1 ();
+// 0x0000009E System.Void PaintController::Update()
+extern void PaintController_Update_mFB29ACDD5415EAE9E01B6C771121864084DE111E ();
+// 0x0000009F System.Void PaintController::onStartPaintingClick()
+extern void PaintController_onStartPaintingClick_m774EC81CDB90E468FD9B98412A6CD7007799C099 ();
+// 0x000000A0 System.Void PaintController::OnSaveMapClick()
+extern void PaintController_OnSaveMapClick_mB134871077958BBD8E85ED4A423DDCDBDD4A403B ();
+// 0x000000A1 System.Void PaintController::OnLoadMapClicked()
+extern void PaintController_OnLoadMapClicked_m2945985CE5946CC7CF0F395EBE10F61B47FC72BC ();
+// 0x000000A2 System.Void PaintController::OnExitLoadedPaintingClick()
+extern void PaintController_OnExitLoadedPaintingClick_mD9373F22858D6AD94A381E99453D4C0DCF7253F5 ();
+// 0x000000A3 System.Void PaintController::replayDrawing()
+extern void PaintController_replayDrawing_mD6F2BD63169E059800DA3A069CDF55211D225356 ();
+// 0x000000A4 System.Void PaintController::deleteAllObjects()
+extern void PaintController_deleteAllObjects_mFD836503966ACEAA31B1CFFD3E2D0F7F849EA3E3 ();
+// 0x000000A5 System.Void PaintController::onClearAllClick()
+extern void PaintController_onClearAllClick_mFDAED465A66A4B9D275F42A0C13B3F5C58DB5E8A ();
+// 0x000000A6 System.Void PaintController::saveScene(System.String)
+extern void PaintController_saveScene_mBE0BD74A8F5CE0FF08B06144E04D04223F93037E ();
+// 0x000000A7 System.Void PaintController::loadSavedScene()
+extern void PaintController_loadSavedScene_m7FBE8987A4992DAA66BC1D1F1E1932BB53ED7B00 ();
+// 0x000000A8 System.Void PaintController::OnPose(UnityEngine.Matrix4x4,UnityEngine.Matrix4x4)
+extern void PaintController_OnPose_m6E58816B5786321B91C9EDB7A047BC342050501A ();
+// 0x000000A9 System.Void PaintController::OnStatusChange(LibPlacenote_MappingStatus,LibPlacenote_MappingStatus)
+extern void PaintController_OnStatusChange_m935E882A373A8D6B0805181488E9A1170863C9EA ();
+// 0x000000AA System.Void PaintController::OnLocalized()
+extern void PaintController_OnLocalized_m5A0B4C5902F637A071F0963E2A4FE6E5C82F775A ();
+// 0x000000AB System.Void PaintController::.ctor()
+extern void PaintController__ctor_m818998C4946F96F96E83C961AF897F129CD0B884 ();
+// 0x000000AC System.Void PaintController::<Start>b__11_0(UnityEngine.Texture2D)
+extern void PaintController_U3CStartU3Eb__11_0_mF5BD6C8C80C6E123594EADC90DCB8ECFEFD6A1FF ();
+// 0x000000AD System.Void PaintController::<OnSaveMapClick>b__16_0(System.String)
+extern void PaintController_U3COnSaveMapClickU3Eb__16_0_m02511DF40C10517C95C20F808092C07E090B8DA4 ();
+// 0x000000AE System.Void PaintController::<OnSaveMapClick>b__16_1(System.Boolean,System.Boolean,System.Single)
+extern void PaintController_U3COnSaveMapClickU3Eb__16_1_mBA063FCC33AEA1434EE266F316A204AC6048F83D ();
+// 0x000000AF System.Void PaintController::<OnLoadMapClicked>b__17_0(System.Boolean,System.Boolean,System.Single)
+extern void PaintController_U3COnLoadMapClickedU3Eb__17_0_m6E0B881068FC69A839D6EBAA8C29D84918D48426 ();
 // 0x000000B0 System.Void WanzyeeStudio.JsonNetUtility::Initialize()
 extern void JsonNetUtility_Initialize_m38B6895657DB0B03DEE5923BE28EE2F4484EB778 ();
 // 0x000000B1 System.Collections.Generic.List`1<Newtonsoft.Json.JsonConverter> WanzyeeStudio.JsonNetUtility::CreateConverters()
@@ -666,150 +666,150 @@ extern void ReticleController_ContinuousHittest_mD78BF932572342C976238C2EDB88D5B
 extern void ReticleController__ctor_m2C01C83546D25D57C73472505DFB15CC0D6E5895 ();
 // 0x00000145 System.Void HelloWorld.ReticleController::.cctor()
 extern void ReticleController__cctor_m99FB802E66C55A89E6AB96F94024ED613CA17CFE ();
-// 0x00000146 System.Void DrawingHistoryManager_drawingcommand::.ctor(System.Int32,System.Int32,UnityEngine.Vector3,UnityEngine.Color,System.Single)
-extern void drawingcommand__ctor_m7ABB0E1C6CD36EB33054192D5D9F0F91427D3D08 ();
-// 0x00000147 System.Void DrawingHistoryManager_<replayDrawing>d__7::.ctor(System.Int32)
-extern void U3CreplayDrawingU3Ed__7__ctor_mB7DEE84E677D11E4E3D0E0941E9AF7EA682B6356 ();
-// 0x00000148 System.Void DrawingHistoryManager_<replayDrawing>d__7::System.IDisposable.Dispose()
-extern void U3CreplayDrawingU3Ed__7_System_IDisposable_Dispose_mEC7A78E95066E95C298D2D89DC589DD0BA3A0EB6 ();
-// 0x00000149 System.Boolean DrawingHistoryManager_<replayDrawing>d__7::MoveNext()
-extern void U3CreplayDrawingU3Ed__7_MoveNext_m3EB02095411C68629C192F3674A628552F3B66CA ();
-// 0x0000014A System.Void DrawingHistoryManager_<replayDrawing>d__7::<>m__Finally1()
-extern void U3CreplayDrawingU3Ed__7_U3CU3Em__Finally1_mEA5D9E6EF50E2652D2047780A11A1F04FC9571B3 ();
-// 0x0000014B System.Object DrawingHistoryManager_<replayDrawing>d__7::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CreplayDrawingU3Ed__7_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m42FC4BCA8EA66A6C69EF184B519D8CA9D482E828 ();
-// 0x0000014C System.Void DrawingHistoryManager_<replayDrawing>d__7::System.Collections.IEnumerator.Reset()
-extern void U3CreplayDrawingU3Ed__7_System_Collections_IEnumerator_Reset_m3C8325C24A72F1A7219A8E1A5724AD8D83653A12 ();
-// 0x0000014D System.Object DrawingHistoryManager_<replayDrawing>d__7::System.Collections.IEnumerator.get_Current()
-extern void U3CreplayDrawingU3Ed__7_System_Collections_IEnumerator_get_Current_m95532B5CCAC9F3D06D64871847D71A87F67BD838 ();
-// 0x0000014E System.Void LibPlacenote_PNResultCallback::.ctor(System.Object,System.IntPtr)
+// 0x00000146 System.Void LibPlacenote_PNResultCallback::.ctor(System.Object,System.IntPtr)
 extern void PNResultCallback__ctor_m4369F95C48FE127E9506B5EC5BF51FE3C663F192 ();
-// 0x0000014F System.Void LibPlacenote_PNResultCallback::Invoke(LibPlacenote_PNCallbackResultUnity&,System.IntPtr)
+// 0x00000147 System.Void LibPlacenote_PNResultCallback::Invoke(LibPlacenote_PNCallbackResultUnity&,System.IntPtr)
 extern void PNResultCallback_Invoke_mC4EE7D07BF6CBEB4A641CE36893BC0D3D6B5DA2F ();
-// 0x00000150 System.IAsyncResult LibPlacenote_PNResultCallback::BeginInvoke(LibPlacenote_PNCallbackResultUnity&,System.IntPtr,System.AsyncCallback,System.Object)
+// 0x00000148 System.IAsyncResult LibPlacenote_PNResultCallback::BeginInvoke(LibPlacenote_PNCallbackResultUnity&,System.IntPtr,System.AsyncCallback,System.Object)
 extern void PNResultCallback_BeginInvoke_mBF46BCB602C0D3FB2FF68D53105FD41C6DFD6F2D ();
-// 0x00000151 System.Void LibPlacenote_PNResultCallback::EndInvoke(LibPlacenote_PNCallbackResultUnity&,System.IAsyncResult)
+// 0x00000149 System.Void LibPlacenote_PNResultCallback::EndInvoke(LibPlacenote_PNCallbackResultUnity&,System.IAsyncResult)
 extern void PNResultCallback_EndInvoke_m4F5EE608E4E8E2F49C82232561C49C9313513C84 ();
-// 0x00000152 System.Void LibPlacenote_PNTransferMapCallback::.ctor(System.Object,System.IntPtr)
+// 0x0000014A System.Void LibPlacenote_PNTransferMapCallback::.ctor(System.Object,System.IntPtr)
 extern void PNTransferMapCallback__ctor_m3BB8793621CEF7395BE2D016321FFF256756234B ();
-// 0x00000153 System.Void LibPlacenote_PNTransferMapCallback::Invoke(LibPlacenote_PNTransferStatusUnity&,System.IntPtr)
+// 0x0000014B System.Void LibPlacenote_PNTransferMapCallback::Invoke(LibPlacenote_PNTransferStatusUnity&,System.IntPtr)
 extern void PNTransferMapCallback_Invoke_mC3844F9A7C72BA8CDCB5692BE0F712BDE240D076 ();
-// 0x00000154 System.IAsyncResult LibPlacenote_PNTransferMapCallback::BeginInvoke(LibPlacenote_PNTransferStatusUnity&,System.IntPtr,System.AsyncCallback,System.Object)
+// 0x0000014C System.IAsyncResult LibPlacenote_PNTransferMapCallback::BeginInvoke(LibPlacenote_PNTransferStatusUnity&,System.IntPtr,System.AsyncCallback,System.Object)
 extern void PNTransferMapCallback_BeginInvoke_m09EA3C64B28CA083EB6174F0321CC56BCFB0EBB2 ();
-// 0x00000155 System.Void LibPlacenote_PNTransferMapCallback::EndInvoke(LibPlacenote_PNTransferStatusUnity&,System.IAsyncResult)
+// 0x0000014D System.Void LibPlacenote_PNTransferMapCallback::EndInvoke(LibPlacenote_PNTransferStatusUnity&,System.IAsyncResult)
 extern void PNTransferMapCallback_EndInvoke_mC290CE1AF710A4A774984779AAF74E77BD657BEA ();
-// 0x00000156 System.Void LibPlacenote_PNPoseCallback::.ctor(System.Object,System.IntPtr)
+// 0x0000014E System.Void LibPlacenote_PNPoseCallback::.ctor(System.Object,System.IntPtr)
 extern void PNPoseCallback__ctor_m8387795FDE52517C4F2EC91437571B4C00A339AC ();
-// 0x00000157 System.Void LibPlacenote_PNPoseCallback::Invoke(LibPlacenote_PNTransformUnity&,LibPlacenote_PNTransformUnity&,System.IntPtr)
+// 0x0000014F System.Void LibPlacenote_PNPoseCallback::Invoke(LibPlacenote_PNTransformUnity&,LibPlacenote_PNTransformUnity&,System.IntPtr)
 extern void PNPoseCallback_Invoke_mE7B761A4A92B247740A6D12BB409E1EE40A7714B ();
-// 0x00000158 System.IAsyncResult LibPlacenote_PNPoseCallback::BeginInvoke(LibPlacenote_PNTransformUnity&,LibPlacenote_PNTransformUnity&,System.IntPtr,System.AsyncCallback,System.Object)
+// 0x00000150 System.IAsyncResult LibPlacenote_PNPoseCallback::BeginInvoke(LibPlacenote_PNTransformUnity&,LibPlacenote_PNTransformUnity&,System.IntPtr,System.AsyncCallback,System.Object)
 extern void PNPoseCallback_BeginInvoke_m762A62C595A563EC67446AEAA20C7A7746D21B1F ();
-// 0x00000159 System.Void LibPlacenote_PNPoseCallback::EndInvoke(LibPlacenote_PNTransformUnity&,LibPlacenote_PNTransformUnity&,System.IAsyncResult)
+// 0x00000151 System.Void LibPlacenote_PNPoseCallback::EndInvoke(LibPlacenote_PNTransformUnity&,LibPlacenote_PNTransformUnity&,System.IAsyncResult)
 extern void PNPoseCallback_EndInvoke_mFC793E5DE7225D584DAAE1C53AF5B4489AB91F7E ();
-// 0x0000015A System.Void LibPlacenote_MapLocation::.ctor()
+// 0x00000152 System.Void LibPlacenote_MapLocation::.ctor()
 extern void MapLocation__ctor_m7DDC9B7DCD7804D04750BDDFDB88CE9D4D06B902 ();
-// 0x0000015B System.Void LibPlacenote_MapLocationSearch::.ctor()
+// 0x00000153 System.Void LibPlacenote_MapLocationSearch::.ctor()
 extern void MapLocationSearch__ctor_m63C0AFF63B116E9BC5CA8795CA275E94DE81A21E ();
-// 0x0000015C System.Void LibPlacenote_MapMetadataSettable::.ctor()
+// 0x00000154 System.Void LibPlacenote_MapMetadataSettable::.ctor()
 extern void MapMetadataSettable__ctor_m9F76CE0DE30EB06FD9A040DD1995A422E1D0D953 ();
-// 0x0000015D System.DateTime LibPlacenote_MapMetadata::Created()
+// 0x00000155 System.DateTime LibPlacenote_MapMetadata::Created()
 extern void MapMetadata_Created_m45C8A2A4A0EBB01363D3C1533B03DFD2F82CB066 ();
-// 0x0000015E System.Void LibPlacenote_MapMetadata::.ctor()
+// 0x00000156 System.Void LibPlacenote_MapMetadata::.ctor()
 extern void MapMetadata__ctor_m366F19738FCFAA3ED175646CC584AF6763FBE1BE ();
-// 0x0000015F System.Void LibPlacenote_MapInfo::.ctor()
+// 0x00000157 System.Void LibPlacenote_MapInfo::.ctor()
 extern void MapInfo__ctor_mBCB010F91AC012C78C006BDB0AC728B0FADED1DD ();
-// 0x00000160 System.Void LibPlacenote_MapList::.ctor()
+// 0x00000158 System.Void LibPlacenote_MapList::.ctor()
 extern void MapList__ctor_mCD469B9505097A8C040D198C301B66D3ED1DA65E ();
-// 0x00000161 System.Void LibPlacenote_MapSearch::SetNewerThan(System.DateTime)
+// 0x00000159 System.Void LibPlacenote_MapSearch::SetNewerThan(System.DateTime)
 extern void MapSearch_SetNewerThan_mDDE221A693D93DFB235D9BAB300A7918E4C3DA05 ();
-// 0x00000162 System.Void LibPlacenote_MapSearch::SetOlderThan(System.DateTime)
+// 0x0000015A System.Void LibPlacenote_MapSearch::SetOlderThan(System.DateTime)
 extern void MapSearch_SetOlderThan_m96C9784476A07ECA52409A90AA336A5A3DAA331E ();
-// 0x00000163 System.Void LibPlacenote_MapSearch::.ctor()
+// 0x0000015B System.Void LibPlacenote_MapSearch::.ctor()
 extern void MapSearch__ctor_m76D00E27602A59B2515F355201466944B9073845 ();
-// 0x00000164 System.Void LibPlacenote_SaveLoadContext::.ctor()
+// 0x0000015C System.Void LibPlacenote_SaveLoadContext::.ctor()
 extern void SaveLoadContext__ctor_m111E694167962AEFA3F384532A92A7519758C538 ();
-// 0x00000165 System.Void LibPlacenote_<>c__DisplayClass57_0::.ctor()
+// 0x0000015D System.Void LibPlacenote_<>c__DisplayClass57_0::.ctor()
 extern void U3CU3Ec__DisplayClass57_0__ctor_m50FC6CBB4A180AEFF849B34089A33E251480054C ();
-// 0x00000166 System.Void LibPlacenote_<>c__DisplayClass57_0::<RegisterListener>b__0()
+// 0x0000015E System.Void LibPlacenote_<>c__DisplayClass57_0::<RegisterListener>b__0()
 extern void U3CU3Ec__DisplayClass57_0_U3CRegisterListenerU3Eb__0_m0006670C892E2D60A0B39078ACC5EE92B91F5270 ();
-// 0x00000167 System.Void LibPlacenote_<>c__DisplayClass68_0::.ctor()
+// 0x0000015F System.Void LibPlacenote_<>c__DisplayClass68_0::.ctor()
 extern void U3CU3Ec__DisplayClass68_0__ctor_m0B3076E54BEBD14F4725B50BE3BC94D66F0FE463 ();
-// 0x00000168 System.Void LibPlacenote_<>c__DisplayClass68_0::<OnPose>b__0()
+// 0x00000160 System.Void LibPlacenote_<>c__DisplayClass68_0::<OnPose>b__0()
 extern void U3CU3Ec__DisplayClass68_0_U3COnPoseU3Eb__0_m4485DA5F23D31108A1080E51FF00CC5ECCFEB469 ();
-// 0x00000169 System.Void LibPlacenote_<>c__DisplayClass68_0::<OnPose>b__1()
+// 0x00000161 System.Void LibPlacenote_<>c__DisplayClass68_0::<OnPose>b__1()
 extern void U3CU3Ec__DisplayClass68_0_U3COnPoseU3Eb__1_mBF3FF62AA41A5A7BF4B8880869F0701341170A85 ();
-// 0x0000016A System.Void LibPlacenote_<>c__DisplayClass68_0::<OnPose>b__2()
+// 0x00000162 System.Void LibPlacenote_<>c__DisplayClass68_0::<OnPose>b__2()
 extern void U3CU3Ec__DisplayClass68_0_U3COnPoseU3Eb__2_m22963EAD64F36ACB3AFC8E981D04BF312FA51D8E ();
-// 0x0000016B System.Void LibPlacenote_<OnPoseInvokeRepeat>d__70::.ctor(System.Int32)
+// 0x00000163 System.Void LibPlacenote_<OnPoseInvokeRepeat>d__70::.ctor(System.Int32)
 extern void U3COnPoseInvokeRepeatU3Ed__70__ctor_m3193A8ED0C39DB8D71D0DAE53C1F280758C9F181 ();
-// 0x0000016C System.Void LibPlacenote_<OnPoseInvokeRepeat>d__70::System.IDisposable.Dispose()
+// 0x00000164 System.Void LibPlacenote_<OnPoseInvokeRepeat>d__70::System.IDisposable.Dispose()
 extern void U3COnPoseInvokeRepeatU3Ed__70_System_IDisposable_Dispose_m07A1A00054E60A5E711F8250365E31D663DBBBB6 ();
-// 0x0000016D System.Boolean LibPlacenote_<OnPoseInvokeRepeat>d__70::MoveNext()
+// 0x00000165 System.Boolean LibPlacenote_<OnPoseInvokeRepeat>d__70::MoveNext()
 extern void U3COnPoseInvokeRepeatU3Ed__70_MoveNext_mDF387B34A8AA0E15D3E3FC40DA6B137783DF3BF0 ();
-// 0x0000016E System.Object LibPlacenote_<OnPoseInvokeRepeat>d__70::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x00000166 System.Object LibPlacenote_<OnPoseInvokeRepeat>d__70::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3COnPoseInvokeRepeatU3Ed__70_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mCE2A417CDF06152EE10BADFB31AC299FE399C781 ();
-// 0x0000016F System.Void LibPlacenote_<OnPoseInvokeRepeat>d__70::System.Collections.IEnumerator.Reset()
+// 0x00000167 System.Void LibPlacenote_<OnPoseInvokeRepeat>d__70::System.Collections.IEnumerator.Reset()
 extern void U3COnPoseInvokeRepeatU3Ed__70_System_Collections_IEnumerator_Reset_m796154FD78C26B3F56B53B9BFC17561FFA6CFF70 ();
-// 0x00000170 System.Object LibPlacenote_<OnPoseInvokeRepeat>d__70::System.Collections.IEnumerator.get_Current()
+// 0x00000168 System.Object LibPlacenote_<OnPoseInvokeRepeat>d__70::System.Collections.IEnumerator.get_Current()
 extern void U3COnPoseInvokeRepeatU3Ed__70_System_Collections_IEnumerator_get_Current_m07F13B4B1B10834E6C374F8ECAA859ED9B2C8E80 ();
-// 0x00000171 System.Void LibPlacenote_<>c__DisplayClass74_0::.ctor()
+// 0x00000169 System.Void LibPlacenote_<>c__DisplayClass74_0::.ctor()
 extern void U3CU3Ec__DisplayClass74_0__ctor_mA50DC64EB02F4498A88534392B3C30E54BCD313E ();
-// 0x00000172 System.Void LibPlacenote_<>c__DisplayClass74_0::<OnDatasetUpload>b__0()
+// 0x0000016A System.Void LibPlacenote_<>c__DisplayClass74_0::<OnDatasetUpload>b__0()
 extern void U3CU3Ec__DisplayClass74_0_U3COnDatasetUploadU3Eb__0_m5FA19F2CC6B9146A39679E9881DA90C10C41B7E2 ();
-// 0x00000173 System.Void LibPlacenote_<>c__DisplayClass76_0::.ctor()
+// 0x0000016B System.Void LibPlacenote_<>c__DisplayClass76_0::.ctor()
 extern void U3CU3Ec__DisplayClass76_0__ctor_mBC883B39B0A27EEE69DE51A29FA6ABBD5BA24665 ();
-// 0x00000174 System.Void LibPlacenote_<>c__DisplayClass76_0::<OnGetMetadata>b__0()
+// 0x0000016C System.Void LibPlacenote_<>c__DisplayClass76_0::<OnGetMetadata>b__0()
 extern void U3CU3Ec__DisplayClass76_0_U3COnGetMetadataU3Eb__0_m9AE31242E6808B83169E32007FFAAB4319A3BE94 ();
-// 0x00000175 System.Void LibPlacenote_<>c__DisplayClass78_0::.ctor()
+// 0x0000016D System.Void LibPlacenote_<>c__DisplayClass78_0::.ctor()
 extern void U3CU3Ec__DisplayClass78_0__ctor_m1816FEB356AF4CDDEB25775BA6D926F825DE4A6B ();
-// 0x00000176 System.Void LibPlacenote_<>c__DisplayClass78_0::<OnSetMetadata>b__0()
+// 0x0000016E System.Void LibPlacenote_<>c__DisplayClass78_0::<OnSetMetadata>b__0()
 extern void U3CU3Ec__DisplayClass78_0_U3COnSetMetadataU3Eb__0_mACBC1EC190A64FEFA8BA740F07FFC09F1DA610EC ();
-// 0x00000177 System.Void LibPlacenote_<>c__DisplayClass80_0::.ctor()
+// 0x0000016F System.Void LibPlacenote_<>c__DisplayClass80_0::.ctor()
 extern void U3CU3Ec__DisplayClass80_0__ctor_mC96DED440A301C7A97AFEED91A1C48101E3996C5 ();
-// 0x00000178 System.Void LibPlacenote_<>c__DisplayClass80_0::<OnMapList>b__0()
+// 0x00000170 System.Void LibPlacenote_<>c__DisplayClass80_0::<OnMapList>b__0()
 extern void U3CU3Ec__DisplayClass80_0_U3COnMapListU3Eb__0_m23A18D0A9F6192A55B9ED4E7E1E0B48D4BA43C77 ();
-// 0x00000179 System.Void LibPlacenote_<>c__DisplayClass90_0::.ctor()
+// 0x00000171 System.Void LibPlacenote_<>c__DisplayClass90_0::.ctor()
 extern void U3CU3Ec__DisplayClass90_0__ctor_mB89B223A0CB8DCD6C34F5B68DB97804F5C922B96 ();
-// 0x0000017A System.Void LibPlacenote_<>c__DisplayClass90_0::<UploadThumbnail>b__0(System.Boolean,System.Boolean,System.Single)
+// 0x00000172 System.Void LibPlacenote_<>c__DisplayClass90_0::<UploadThumbnail>b__0(System.Boolean,System.Boolean,System.Single)
 extern void U3CU3Ec__DisplayClass90_0_U3CUploadThumbnailU3Eb__0_m5367D2BF9D73377A13912FFC853C21BB628BE05B ();
-// 0x0000017B System.Void LibPlacenote_<>c__DisplayClass91_0::.ctor()
+// 0x00000173 System.Void LibPlacenote_<>c__DisplayClass91_0::.ctor()
 extern void U3CU3Ec__DisplayClass91_0__ctor_m445A6E8207766B3D6DC015819405CCECCA8BE762 ();
-// 0x0000017C System.Void LibPlacenote_<>c__DisplayClass91_0::<DownloadThumbnail>b__0(System.Boolean,System.Boolean,System.Single)
+// 0x00000174 System.Void LibPlacenote_<>c__DisplayClass91_0::<DownloadThumbnail>b__0(System.Boolean,System.Boolean,System.Single)
 extern void U3CU3Ec__DisplayClass91_0_U3CDownloadThumbnailU3Eb__0_m67B9CC874FBBE43D90F5324A6C7B04099E71E8C4 ();
-// 0x0000017D System.Void LibPlacenote_<>c__DisplayClass92_0::.ctor()
+// 0x00000175 System.Void LibPlacenote_<>c__DisplayClass92_0::.ctor()
 extern void U3CU3Ec__DisplayClass92_0__ctor_mAFA09CE63BBEA2CA85AFD52C88323752B5DB461D ();
-// 0x0000017E System.Void LibPlacenote_<>c__DisplayClass92_0::<OnMapUploaded>b__0()
+// 0x00000176 System.Void LibPlacenote_<>c__DisplayClass92_0::<OnMapUploaded>b__0()
 extern void U3CU3Ec__DisplayClass92_0_U3COnMapUploadedU3Eb__0_mFDDDF6CF68DEA474EF67CDEC1B5DCE9236EEFD14 ();
-// 0x0000017F System.Void LibPlacenote_<>c__DisplayClass93_0::.ctor()
+// 0x00000177 System.Void LibPlacenote_<>c__DisplayClass93_0::.ctor()
 extern void U3CU3Ec__DisplayClass93_0__ctor_m85C4677005C405B8287E20258FCFDCC5D331E5B0 ();
-// 0x00000180 System.Void LibPlacenote_<>c__DisplayClass93_0::<OnMapAdded>b__0()
+// 0x00000178 System.Void LibPlacenote_<>c__DisplayClass93_0::<OnMapAdded>b__0()
 extern void U3CU3Ec__DisplayClass93_0_U3COnMapAddedU3Eb__0_m09EBF5B5295B5F9691DF3E94606A3697B19AA7B0 ();
-// 0x00000181 System.Void LibPlacenote_<>c__DisplayClass95_0::.ctor()
+// 0x00000179 System.Void LibPlacenote_<>c__DisplayClass95_0::.ctor()
 extern void U3CU3Ec__DisplayClass95_0__ctor_mB40CAA7134DDBBD775272F54A8BC70DE840CB8FC ();
-// 0x00000182 System.Void LibPlacenote_<>c__DisplayClass95_0::<OnMapLoaded>b__0()
+// 0x0000017A System.Void LibPlacenote_<>c__DisplayClass95_0::<OnMapLoaded>b__0()
 extern void U3CU3Ec__DisplayClass95_0_U3COnMapLoadedU3Eb__0_m3AF46BB6512AE4219A4FF820D5CAD1CA362D53E5 ();
-// 0x00000183 System.Void LibPlacenote_<>c__DisplayClass97_0::.ctor()
+// 0x0000017B System.Void LibPlacenote_<>c__DisplayClass97_0::.ctor()
 extern void U3CU3Ec__DisplayClass97_0__ctor_m94CDE009F29DD13059F5A949F77DB786E1C89EF2 ();
-// 0x00000184 System.Void LibPlacenote_<>c__DisplayClass97_0::<OnMapDeleted>b__0()
+// 0x0000017C System.Void LibPlacenote_<>c__DisplayClass97_0::<OnMapDeleted>b__0()
 extern void U3CU3Ec__DisplayClass97_0_U3COnMapDeletedU3Eb__0_mECED8DF2713FBD1D7D9A8D9D97359107127A652A ();
-// 0x00000185 System.Void LibPlacenote_<>c__DisplayClass99_0::.ctor()
+// 0x0000017D System.Void LibPlacenote_<>c__DisplayClass99_0::.ctor()
 extern void U3CU3Ec__DisplayClass99_0__ctor_mEE37EDDE7C650D205AED7678D06265D070DD5AFE ();
-// 0x00000186 System.Void LibPlacenote_<>c__DisplayClass99_0::<OnThumbnailSyncProgress>b__0()
+// 0x0000017E System.Void LibPlacenote_<>c__DisplayClass99_0::<OnThumbnailSyncProgress>b__0()
 extern void U3CU3Ec__DisplayClass99_0_U3COnThumbnailSyncProgressU3Eb__0_m3734E03EA69DACB8D842594648BD30D4376D873C ();
-// 0x00000187 System.Void LocalizationThumbnailSelector_<>c::.cctor()
+// 0x0000017F System.Void LocalizationThumbnailSelector_<>c::.cctor()
 extern void U3CU3Ec__cctor_m3AC8F1862BA02AAD87D5736055ECFECA20C8247B ();
-// 0x00000188 System.Void LocalizationThumbnailSelector_<>c::.ctor()
+// 0x00000180 System.Void LocalizationThumbnailSelector_<>c::.ctor()
 extern void U3CU3Ec__ctor_mC5FED4EBB8CD5BD14DA926A34138AA85635BCCAD ();
-// 0x00000189 System.Void LocalizationThumbnailSelector_<>c::<.ctor>b__19_0(UnityEngine.Texture2D)
+// 0x00000181 System.Void LocalizationThumbnailSelector_<>c::<.ctor>b__19_0(UnityEngine.Texture2D)
 extern void U3CU3Ec_U3C_ctorU3Eb__19_0_m25251CF76F2B2921E8B68D5B937B33CB2AD1F145 ();
-// 0x0000018A System.Void MainThreadTaskQueue_Delegate::.ctor(System.Object,System.IntPtr)
+// 0x00000182 System.Void MainThreadTaskQueue_Delegate::.ctor(System.Object,System.IntPtr)
 extern void Delegate__ctor_m1ECE12F777682B3A63AD9CA20C1051F323413754 ();
-// 0x0000018B System.Void MainThreadTaskQueue_Delegate::Invoke()
+// 0x00000183 System.Void MainThreadTaskQueue_Delegate::Invoke()
 extern void Delegate_Invoke_m1BB14045147C6629DB596268278F03D203118BF7 ();
-// 0x0000018C System.IAsyncResult MainThreadTaskQueue_Delegate::BeginInvoke(System.AsyncCallback,System.Object)
+// 0x00000184 System.IAsyncResult MainThreadTaskQueue_Delegate::BeginInvoke(System.AsyncCallback,System.Object)
 extern void Delegate_BeginInvoke_m28026098E32C1B6E6DB7FBA97B986F0C44333802 ();
-// 0x0000018D System.Void MainThreadTaskQueue_Delegate::EndInvoke(System.IAsyncResult)
+// 0x00000185 System.Void MainThreadTaskQueue_Delegate::EndInvoke(System.IAsyncResult)
 extern void Delegate_EndInvoke_m058B924F03A3300145D2C8A0404E1CA9CDB9D369 ();
+// 0x00000186 System.Void DrawingHistoryManager_drawingcommand::.ctor(System.Int32,System.Int32,UnityEngine.Vector3,UnityEngine.Color,System.Single)
+extern void drawingcommand__ctor_m7ABB0E1C6CD36EB33054192D5D9F0F91427D3D08 ();
+// 0x00000187 System.Void DrawingHistoryManager_<replayDrawing>d__7::.ctor(System.Int32)
+extern void U3CreplayDrawingU3Ed__7__ctor_mB7DEE84E677D11E4E3D0E0941E9AF7EA682B6356 ();
+// 0x00000188 System.Void DrawingHistoryManager_<replayDrawing>d__7::System.IDisposable.Dispose()
+extern void U3CreplayDrawingU3Ed__7_System_IDisposable_Dispose_mEC7A78E95066E95C298D2D89DC589DD0BA3A0EB6 ();
+// 0x00000189 System.Boolean DrawingHistoryManager_<replayDrawing>d__7::MoveNext()
+extern void U3CreplayDrawingU3Ed__7_MoveNext_m3EB02095411C68629C192F3674A628552F3B66CA ();
+// 0x0000018A System.Void DrawingHistoryManager_<replayDrawing>d__7::<>m__Finally1()
+extern void U3CreplayDrawingU3Ed__7_U3CU3Em__Finally1_mEA5D9E6EF50E2652D2047780A11A1F04FC9571B3 ();
+// 0x0000018B System.Object DrawingHistoryManager_<replayDrawing>d__7::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CreplayDrawingU3Ed__7_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m42FC4BCA8EA66A6C69EF184B519D8CA9D482E828 ();
+// 0x0000018C System.Void DrawingHistoryManager_<replayDrawing>d__7::System.Collections.IEnumerator.Reset()
+extern void U3CreplayDrawingU3Ed__7_System_Collections_IEnumerator_Reset_m3C8325C24A72F1A7219A8E1A5724AD8D83653A12 ();
+// 0x0000018D System.Object DrawingHistoryManager_<replayDrawing>d__7::System.Collections.IEnumerator.get_Current()
+extern void U3CreplayDrawingU3Ed__7_System_Collections_IEnumerator_get_Current_m95532B5CCAC9F3D06D64871847D71A87F67BD838 ();
 // 0x0000018E System.Void WanzyeeStudio.JsonNetUtility_<>c::.cctor()
 extern void U3CU3Ec__cctor_m82CB7C9DEA257CBA40DDFF79031F73AEAE5A2F6E ();
 // 0x0000018F System.Void WanzyeeStudio.JsonNetUtility_<>c::.ctor()
@@ -903,58 +903,6 @@ extern void U3CContinuousHittestU3Ed__8_System_Collections_IEnumerator_Reset_m5A
 extern void U3CContinuousHittestU3Ed__8_System_Collections_IEnumerator_get_Current_m2F14735D15449D25AFFC6871435DAAE91B17295C ();
 static Il2CppMethodPointer s_methodPointers[445] = 
 {
-	DrawLineManager_setLineWidth_mE930D4888EA541FAF25907B64D853968385ECA7C,
-	DrawLineManager_setLineColor_mAD9644C0BACB176373370BB380DE8E33218DE53A,
-	DrawLineManager_OnColorChoiceClick_mF5FBFF835CE076CED0790FC66780D9639F929F14,
-	DrawLineManager_OnLineWidthSliderChanged_m44ACCD7A979B3A95E24A34E1222C3269E034621F,
-	DrawLineManager_getRayEndPoint_mCF00F8778219FD4DC6D35815F0ABE3FB25EBD342,
-	DrawLineManager_Start_m0EEA60EE3ED4F65833E365CFE233ACEC0879F30F,
-	DrawLineManager_Update_m438F1279DF8B989843186F341E6D1663987AD2DD,
-	DrawLineManager_addReplayLineSegment_mBBBD11AB05ADD61934D22245E9A6E8921DB89304,
-	DrawLineManager__ctor_mBA26A37EF3E91317E671E4D24CC4214CC8095E6C,
-	DrawingHistoryManager_Start_mBF78A56E9BF484C39CF050797FF872DA28E96D91,
-	DrawingHistoryManager_Update_mF368FE8C58E3348BA994AF3519BFEAD4419593F5,
-	DrawingHistoryManager_resetHistory_m2C8CB1AF953BDF7D6930FAA9053BCB88BADC8C7E,
-	DrawingHistoryManager_addDrawingCommand_m57D40781CB938EE38A12812171FDC206B265C24A,
-	DrawingHistoryManager_replayDrawing_m1F159403FEB85584A286831F3A1676A0C996FB44,
-	DrawingHistoryManager_isDrawingHistoryEmpty_m7F3F20153656CE4CF9F34836657AE5C7B97F4948,
-	DrawingHistoryManager_replayDrawingFast_mC4652DEC7944310A35D3A4DBA435063B29F0327B,
-	DrawingHistoryManager_saveMapIDToFile_m2AF166E2DBCA5F1BC755015CBED6DC14ABB00CE2,
-	DrawingHistoryManager_loadMapIDFromFile_mD32A66A4DBE6B67508B5A5432A8E5D1593D58B77,
-	DrawingHistoryManager_saveDrawingHistory_m069DC45D698A10AC83283A7EA31BA6BC82B9A216,
-	DrawingHistoryManager_loadFromDrawingHistory_m33CE51D3C2E643414071B4641689928A34CA7E2C,
-	DrawingHistoryManager_parseSaveCmdLine_m007F2FF6F9AE9F05780A498407BEBDAA17AD7C0E,
-	DrawingHistoryManager__ctor_m52571A1343ED1F835F5159241E7C57BD77940576,
-	GraphicsLineRenderer_Start_m238335DB2ECCFF663EB6D69834B9D26359E84492,
-	GraphicsLineRenderer_SetWidth_m79FFEAE9CA81B9DDE01D9D50CC8ED4F4EB9095CD,
-	GraphicsLineRenderer_AddPoint_m24839F21D1D1D040E72FFFA36B5D2D8E904E0BA3,
-	GraphicsLineRenderer_MakeQuad_m89E24F5B14BFF28904F557EEC7EF2C63EAD9132E,
-	GraphicsLineRenderer_AddLine_mFE4B0A2E06F4FD7EDC435CBAFDC7CE42AC1C9F90,
-	GraphicsLineRenderer_resizeVertices_m47D324C654E218AC79030985A27C76C38C30DC01,
-	GraphicsLineRenderer_resizeTraingles_m80309056030E0CA87D376CFAF1F3EFA8CABA327B,
-	GraphicsLineRenderer_resizeUVs_mBB5546995A5077CF3FB8503F7570FE9B15653D65,
-	GraphicsLineRenderer__ctor_mAE3D25AB1FE02E28C2202679BC922446C73EFB7D,
-	PaintController_Start_mBD017F5F71D3907C15E6FCC36BA387F03222877F,
-	PaintController_onClickEnablePointCloud_m14F1458DB71049392A3A2F53D3ED8146FFA44E2D,
-	PaintController_OnToggleColorPaletteClick_mDB712BA268FC0CDDEA17222A9B562B884E12F3B1,
-	PaintController_Update_mFB29ACDD5415EAE9E01B6C771121864084DE111E,
-	PaintController_onStartPaintingClick_m774EC81CDB90E468FD9B98412A6CD7007799C099,
-	PaintController_OnSaveMapClick_mB134871077958BBD8E85ED4A423DDCDBDD4A403B,
-	PaintController_OnLoadMapClicked_m2945985CE5946CC7CF0F395EBE10F61B47FC72BC,
-	PaintController_OnExitLoadedPaintingClick_mD9373F22858D6AD94A381E99453D4C0DCF7253F5,
-	PaintController_replayDrawing_mD6F2BD63169E059800DA3A069CDF55211D225356,
-	PaintController_deleteAllObjects_mFD836503966ACEAA31B1CFFD3E2D0F7F849EA3E3,
-	PaintController_onClearAllClick_mFDAED465A66A4B9D275F42A0C13B3F5C58DB5E8A,
-	PaintController_saveScene_mBE0BD74A8F5CE0FF08B06144E04D04223F93037E,
-	PaintController_loadSavedScene_m7FBE8987A4992DAA66BC1D1F1E1932BB53ED7B00,
-	PaintController_OnPose_m6E58816B5786321B91C9EDB7A047BC342050501A,
-	PaintController_OnStatusChange_m935E882A373A8D6B0805181488E9A1170863C9EA,
-	PaintController_OnLocalized_m5A0B4C5902F637A071F0963E2A4FE6E5C82F775A,
-	PaintController__ctor_m818998C4946F96F96E83C961AF897F129CD0B884,
-	PaintController_U3CStartU3Eb__11_0_mF5BD6C8C80C6E123594EADC90DCB8ECFEFD6A1FF,
-	PaintController_U3COnSaveMapClickU3Eb__16_0_m02511DF40C10517C95C20F808092C07E090B8DA4,
-	PaintController_U3COnSaveMapClickU3Eb__16_1_mBA063FCC33AEA1434EE266F316A204AC6048F83D,
-	PaintController_U3COnLoadMapClickedU3Eb__17_0_m6E0B881068FC69A839D6EBAA8C29D84918D48426,
 	FeaturesVisualizer_Awake_m8BA91E02F9E74B237F2C2017DFA2D37649965669,
 	FeaturesVisualizer_Start_m88A9850C01DFE4F10448EF8DA72884237B4C5858,
 	FeaturesVisualizer_Update_m5501078849CE130E76108A818198C29B6FC331FE,
@@ -1078,6 +1026,58 @@ static Il2CppMethodPointer s_methodPointers[445] =
 	PlacenoteSampleTerrain__ctor_mC5D881CE2A675AAACF85D7BFDF0DFF8A95508605,
 	SimulatorSetSkybox_Start_mC476BA8C700DAFF3580B7CAB9D7D54ED0985D730,
 	SimulatorSetSkybox__ctor_m715189ECDEC087DD36AAE7497816BD7D5041FDA3,
+	DrawLineManager_setLineWidth_mE930D4888EA541FAF25907B64D853968385ECA7C,
+	DrawLineManager_setLineColor_mAD9644C0BACB176373370BB380DE8E33218DE53A,
+	DrawLineManager_OnColorChoiceClick_mF5FBFF835CE076CED0790FC66780D9639F929F14,
+	DrawLineManager_OnLineWidthSliderChanged_m44ACCD7A979B3A95E24A34E1222C3269E034621F,
+	DrawLineManager_getRayEndPoint_mCF00F8778219FD4DC6D35815F0ABE3FB25EBD342,
+	DrawLineManager_Start_m0EEA60EE3ED4F65833E365CFE233ACEC0879F30F,
+	DrawLineManager_Update_m438F1279DF8B989843186F341E6D1663987AD2DD,
+	DrawLineManager_addReplayLineSegment_mBBBD11AB05ADD61934D22245E9A6E8921DB89304,
+	DrawLineManager__ctor_mBA26A37EF3E91317E671E4D24CC4214CC8095E6C,
+	DrawingHistoryManager_Start_mBF78A56E9BF484C39CF050797FF872DA28E96D91,
+	DrawingHistoryManager_Update_mF368FE8C58E3348BA994AF3519BFEAD4419593F5,
+	DrawingHistoryManager_resetHistory_m2C8CB1AF953BDF7D6930FAA9053BCB88BADC8C7E,
+	DrawingHistoryManager_addDrawingCommand_m57D40781CB938EE38A12812171FDC206B265C24A,
+	DrawingHistoryManager_replayDrawing_m1F159403FEB85584A286831F3A1676A0C996FB44,
+	DrawingHistoryManager_isDrawingHistoryEmpty_m7F3F20153656CE4CF9F34836657AE5C7B97F4948,
+	DrawingHistoryManager_replayDrawingFast_mC4652DEC7944310A35D3A4DBA435063B29F0327B,
+	DrawingHistoryManager_saveMapIDToFile_m2AF166E2DBCA5F1BC755015CBED6DC14ABB00CE2,
+	DrawingHistoryManager_loadMapIDFromFile_mD32A66A4DBE6B67508B5A5432A8E5D1593D58B77,
+	DrawingHistoryManager_saveDrawingHistory_m069DC45D698A10AC83283A7EA31BA6BC82B9A216,
+	DrawingHistoryManager_loadFromDrawingHistory_m33CE51D3C2E643414071B4641689928A34CA7E2C,
+	DrawingHistoryManager_parseSaveCmdLine_m007F2FF6F9AE9F05780A498407BEBDAA17AD7C0E,
+	DrawingHistoryManager__ctor_m52571A1343ED1F835F5159241E7C57BD77940576,
+	GraphicsLineRenderer_Start_m238335DB2ECCFF663EB6D69834B9D26359E84492,
+	GraphicsLineRenderer_SetWidth_m79FFEAE9CA81B9DDE01D9D50CC8ED4F4EB9095CD,
+	GraphicsLineRenderer_AddPoint_m24839F21D1D1D040E72FFFA36B5D2D8E904E0BA3,
+	GraphicsLineRenderer_MakeQuad_m89E24F5B14BFF28904F557EEC7EF2C63EAD9132E,
+	GraphicsLineRenderer_AddLine_mFE4B0A2E06F4FD7EDC435CBAFDC7CE42AC1C9F90,
+	GraphicsLineRenderer_resizeVertices_m47D324C654E218AC79030985A27C76C38C30DC01,
+	GraphicsLineRenderer_resizeTraingles_m80309056030E0CA87D376CFAF1F3EFA8CABA327B,
+	GraphicsLineRenderer_resizeUVs_mBB5546995A5077CF3FB8503F7570FE9B15653D65,
+	GraphicsLineRenderer__ctor_mAE3D25AB1FE02E28C2202679BC922446C73EFB7D,
+	PaintController_Start_mBD017F5F71D3907C15E6FCC36BA387F03222877F,
+	PaintController_onClickEnablePointCloud_m14F1458DB71049392A3A2F53D3ED8146FFA44E2D,
+	PaintController_OnToggleColorPaletteClick_mDB712BA268FC0CDDEA17222A9B562B884E12F3B1,
+	PaintController_Update_mFB29ACDD5415EAE9E01B6C771121864084DE111E,
+	PaintController_onStartPaintingClick_m774EC81CDB90E468FD9B98412A6CD7007799C099,
+	PaintController_OnSaveMapClick_mB134871077958BBD8E85ED4A423DDCDBDD4A403B,
+	PaintController_OnLoadMapClicked_m2945985CE5946CC7CF0F395EBE10F61B47FC72BC,
+	PaintController_OnExitLoadedPaintingClick_mD9373F22858D6AD94A381E99453D4C0DCF7253F5,
+	PaintController_replayDrawing_mD6F2BD63169E059800DA3A069CDF55211D225356,
+	PaintController_deleteAllObjects_mFD836503966ACEAA31B1CFFD3E2D0F7F849EA3E3,
+	PaintController_onClearAllClick_mFDAED465A66A4B9D275F42A0C13B3F5C58DB5E8A,
+	PaintController_saveScene_mBE0BD74A8F5CE0FF08B06144E04D04223F93037E,
+	PaintController_loadSavedScene_m7FBE8987A4992DAA66BC1D1F1E1932BB53ED7B00,
+	PaintController_OnPose_m6E58816B5786321B91C9EDB7A047BC342050501A,
+	PaintController_OnStatusChange_m935E882A373A8D6B0805181488E9A1170863C9EA,
+	PaintController_OnLocalized_m5A0B4C5902F637A071F0963E2A4FE6E5C82F775A,
+	PaintController__ctor_m818998C4946F96F96E83C961AF897F129CD0B884,
+	PaintController_U3CStartU3Eb__11_0_mF5BD6C8C80C6E123594EADC90DCB8ECFEFD6A1FF,
+	PaintController_U3COnSaveMapClickU3Eb__16_0_m02511DF40C10517C95C20F808092C07E090B8DA4,
+	PaintController_U3COnSaveMapClickU3Eb__16_1_mBA063FCC33AEA1434EE266F316A204AC6048F83D,
+	PaintController_U3COnLoadMapClickedU3Eb__17_0_m6E0B881068FC69A839D6EBAA8C29D84918D48426,
 	JsonNetUtility_Initialize_m38B6895657DB0B03DEE5923BE28EE2F4484EB778,
 	JsonNetUtility_CreateConverters_m1ED94579A6BEF0C43EE64C8E4D39838188F24734,
 	JsonNetUtility_CreateConverter_m45216D8A3CB93723832DE0755E5D9AD3E59C4804,
@@ -1228,14 +1228,6 @@ static Il2CppMethodPointer s_methodPointers[445] =
 	ReticleController_ContinuousHittest_mD78BF932572342C976238C2EDB88D5BF0BAD8F46,
 	ReticleController__ctor_m2C01C83546D25D57C73472505DFB15CC0D6E5895,
 	ReticleController__cctor_m99FB802E66C55A89E6AB96F94024ED613CA17CFE,
-	drawingcommand__ctor_m7ABB0E1C6CD36EB33054192D5D9F0F91427D3D08,
-	U3CreplayDrawingU3Ed__7__ctor_mB7DEE84E677D11E4E3D0E0941E9AF7EA682B6356,
-	U3CreplayDrawingU3Ed__7_System_IDisposable_Dispose_mEC7A78E95066E95C298D2D89DC589DD0BA3A0EB6,
-	U3CreplayDrawingU3Ed__7_MoveNext_m3EB02095411C68629C192F3674A628552F3B66CA,
-	U3CreplayDrawingU3Ed__7_U3CU3Em__Finally1_mEA5D9E6EF50E2652D2047780A11A1F04FC9571B3,
-	U3CreplayDrawingU3Ed__7_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m42FC4BCA8EA66A6C69EF184B519D8CA9D482E828,
-	U3CreplayDrawingU3Ed__7_System_Collections_IEnumerator_Reset_m3C8325C24A72F1A7219A8E1A5724AD8D83653A12,
-	U3CreplayDrawingU3Ed__7_System_Collections_IEnumerator_get_Current_m95532B5CCAC9F3D06D64871847D71A87F67BD838,
 	PNResultCallback__ctor_m4369F95C48FE127E9506B5EC5BF51FE3C663F192,
 	PNResultCallback_Invoke_mC4EE7D07BF6CBEB4A641CE36893BC0D3D6B5DA2F,
 	PNResultCallback_BeginInvoke_mBF46BCB602C0D3FB2FF68D53105FD41C6DFD6F2D,
@@ -1300,6 +1292,14 @@ static Il2CppMethodPointer s_methodPointers[445] =
 	Delegate_Invoke_m1BB14045147C6629DB596268278F03D203118BF7,
 	Delegate_BeginInvoke_m28026098E32C1B6E6DB7FBA97B986F0C44333802,
 	Delegate_EndInvoke_m058B924F03A3300145D2C8A0404E1CA9CDB9D369,
+	drawingcommand__ctor_m7ABB0E1C6CD36EB33054192D5D9F0F91427D3D08,
+	U3CreplayDrawingU3Ed__7__ctor_mB7DEE84E677D11E4E3D0E0941E9AF7EA682B6356,
+	U3CreplayDrawingU3Ed__7_System_IDisposable_Dispose_mEC7A78E95066E95C298D2D89DC589DD0BA3A0EB6,
+	U3CreplayDrawingU3Ed__7_MoveNext_m3EB02095411C68629C192F3674A628552F3B66CA,
+	U3CreplayDrawingU3Ed__7_U3CU3Em__Finally1_mEA5D9E6EF50E2652D2047780A11A1F04FC9571B3,
+	U3CreplayDrawingU3Ed__7_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m42FC4BCA8EA66A6C69EF184B519D8CA9D482E828,
+	U3CreplayDrawingU3Ed__7_System_Collections_IEnumerator_Reset_m3C8325C24A72F1A7219A8E1A5724AD8D83653A12,
+	U3CreplayDrawingU3Ed__7_System_Collections_IEnumerator_get_Current_m95532B5CCAC9F3D06D64871847D71A87F67BD838,
 	U3CU3Ec__cctor_m82CB7C9DEA257CBA40DDFF79031F73AEAE5A2F6E,
 	U3CU3Ec__ctor_m0F0315ACDA5C7D58B7C209CDA2904A9372428C86,
 	U3CU3Ec_U3CInitializeU3Eb__1_0_m13F11664D8DA44DFCE1C16F5604FA9F772DD79FE,
@@ -1351,65 +1351,13 @@ static Il2CppMethodPointer s_methodPointers[445] =
 };
 static const int32_t s_InvokerIndices[445] = 
 {
-	307,
-	1181,
-	26,
 	23,
-	1159,
 	23,
 	23,
 	1968,
-	23,
-	23,
-	23,
-	23,
+	3,
+	3,
 	1969,
-	14,
-	114,
-	23,
-	26,
-	14,
-	23,
-	23,
-	28,
-	23,
-	23,
-	307,
-	1153,
-	1970,
-	27,
-	58,
-	58,
-	58,
-	23,
-	23,
-	23,
-	23,
-	23,
-	23,
-	23,
-	23,
-	23,
-	23,
-	23,
-	23,
-	26,
-	23,
-	1971,
-	169,
-	23,
-	23,
-	26,
-	26,
-	1972,
-	1972,
-	23,
-	23,
-	23,
-	1973,
-	3,
-	3,
-	1971,
 	169,
 	122,
 	23,
@@ -1428,69 +1376,69 @@ static const int32_t s_InvokerIndices[445] =
 	23,
 	26,
 	26,
-	1974,
+	1970,
 	23,
 	23,
 	114,
-	1975,
-	1976,
+	1971,
+	1972,
 	10,
 	10,
 	10,
-	1977,
+	1973,
 	31,
 	14,
 	23,
 	23,
 	23,
-	1974,
+	1970,
 	26,
-	1974,
+	1970,
 	115,
-	1974,
+	1970,
 	887,
-	1974,
-	26,
-	27,
-	1978,
-	1979,
-	27,
-	27,
-	26,
-	26,
+	1970,
 	26,
 	27,
 	1974,
-	1974,
+	1975,
 	27,
-	1974,
 	27,
-	1974,
+	26,
+	26,
+	26,
 	27,
-	1974,
+	1970,
+	1970,
+	27,
+	1970,
+	27,
+	1970,
+	27,
+	1970,
 	168,
 	34,
 	23,
 	34,
-	1980,
+	1976,
 	131,
 	1262,
-	1981,
-	1982,
-	1981,
-	1982,
-	1982,
-	1982,
-	1983,
+	1977,
+	1978,
+	1977,
+	1978,
+	1978,
+	1978,
+	1979,
 	182,
 	182,
 	468,
 	468,
-	1984,
+	1980,
 	131,
-	1981,
-	1982,
-	1983,
+	1977,
+	1978,
+	1979,
 	131,
 	23,
 	3,
@@ -1501,7 +1449,7 @@ static const int32_t s_InvokerIndices[445] =
 	23,
 	23,
 	23,
-	1971,
+	1969,
 	23,
 	169,
 	23,
@@ -1512,11 +1460,11 @@ static const int32_t s_InvokerIndices[445] =
 	122,
 	23,
 	23,
-	1971,
+	1969,
 	169,
 	23,
 	23,
-	1971,
+	1969,
 	169,
 	23,
 	23,
@@ -1526,6 +1474,58 @@ static const int32_t s_InvokerIndices[445] =
 	23,
 	23,
 	23,
+	307,
+	1181,
+	26,
+	23,
+	1159,
+	23,
+	23,
+	1986,
+	23,
+	23,
+	23,
+	23,
+	1987,
+	14,
+	114,
+	23,
+	26,
+	14,
+	23,
+	23,
+	28,
+	23,
+	23,
+	307,
+	1153,
+	1988,
+	27,
+	58,
+	58,
+	58,
+	23,
+	23,
+	23,
+	23,
+	23,
+	23,
+	23,
+	23,
+	23,
+	23,
+	23,
+	23,
+	26,
+	23,
+	1969,
+	169,
+	23,
+	23,
+	26,
+	26,
+	1985,
+	1985,
 	3,
 	4,
 	0,
@@ -1608,12 +1608,12 @@ static const int32_t s_InvokerIndices[445] =
 	23,
 	23,
 	23,
-	1971,
+	1969,
 	169,
 	23,
 	26,
 	26,
-	1972,
+	1985,
 	1042,
 	31,
 	23,
@@ -1622,16 +1622,16 @@ static const int32_t s_InvokerIndices[445] =
 	14,
 	23,
 	23,
-	1971,
+	1969,
 	169,
 	23,
 	26,
 	14,
 	23,
 	26,
-	1972,
+	1985,
 	31,
-	1972,
+	1985,
 	26,
 	23,
 	23,
@@ -1660,7 +1660,7 @@ static const int32_t s_InvokerIndices[445] =
 	23,
 	26,
 	23,
-	1971,
+	1969,
 	23,
 	23,
 	23,
@@ -1668,33 +1668,25 @@ static const int32_t s_InvokerIndices[445] =
 	23,
 	23,
 	26,
-	1972,
-	1972,
+	1985,
+	1985,
 	23,
 	23,
 	23,
 	14,
 	23,
 	3,
-	1969,
-	32,
-	23,
-	114,
-	23,
-	14,
-	23,
-	14,
 	102,
-	1985,
-	1986,
+	1981,
+	1982,
 	105,
 	102,
-	1985,
-	1986,
+	1981,
+	1982,
 	105,
 	102,
-	1987,
-	1988,
+	1983,
+	1984,
 	385,
 	23,
 	23,
@@ -1728,9 +1720,9 @@ static const int32_t s_InvokerIndices[445] =
 	23,
 	23,
 	23,
-	1972,
+	1985,
 	23,
-	1972,
+	1985,
 	23,
 	23,
 	23,
@@ -1748,6 +1740,14 @@ static const int32_t s_InvokerIndices[445] =
 	23,
 	113,
 	26,
+	1987,
+	32,
+	23,
+	114,
+	23,
+	14,
+	23,
+	14,
 	3,
 	23,
 	14,
@@ -1774,7 +1774,7 @@ static const int32_t s_InvokerIndices[445] =
 	31,
 	23,
 	26,
-	1972,
+	1985,
 	3,
 	23,
 	31,
@@ -1799,17 +1799,17 @@ static const int32_t s_InvokerIndices[445] =
 };
 static const Il2CppTokenIndexMethodTuple s_reversePInvokeIndices[11] = 
 {
-	{ 0x0600004E, 4,  (void**)&LibPlacenote_OnInitialized_m730D29DBDB00A30791BF7645F38C5AEDFCE16BEB_RuntimeMethod_var, 0 },
-	{ 0x06000057, 5,  (void**)&LibPlacenote_OnPose_mF6384D6517CF20EAE51E4C22355BE631ABC16CA3_RuntimeMethod_var, 0 },
-	{ 0x0600005D, 6,  (void**)&LibPlacenote_OnDatasetUpload_m79F8DFEB08F8EBC525ED76DB70338E8B07BA8295_RuntimeMethod_var, 0 },
-	{ 0x0600005F, 7,  (void**)&LibPlacenote_OnGetMetadata_m9BC6A244C8682A6675E078C15EBD77FF55D9C364_RuntimeMethod_var, 0 },
-	{ 0x06000061, 8,  (void**)&LibPlacenote_OnSetMetadata_m3ADE0B7AD095246F0105260C0048621DE077F0F6_RuntimeMethod_var, 0 },
-	{ 0x06000063, 9,  (void**)&LibPlacenote_OnMapList_m72602EDA0EBC4DB9D04BEE844681E27D92F943D9_RuntimeMethod_var, 0 },
-	{ 0x0600006E, 10,  (void**)&LibPlacenote_OnMapUploaded_m5BDC9ACA0AFE0B5321E4C973FAE0A4BC9CEB861A_RuntimeMethod_var, 0 },
-	{ 0x0600006F, 11,  (void**)&LibPlacenote_OnMapAdded_mA1EA93A5FC54CA99DDB2D8E3E85B06AC464A756D_RuntimeMethod_var, 0 },
-	{ 0x06000071, 12,  (void**)&LibPlacenote_OnMapLoaded_m1CE6880C5C653BFA2CF74BC1EF957B5BAC3B3D96_RuntimeMethod_var, 0 },
-	{ 0x06000073, 13,  (void**)&LibPlacenote_OnMapDeleted_m4761D7C39FBABDD0D343A2BAF79501AC26F0BF26_RuntimeMethod_var, 0 },
-	{ 0x06000075, 14,  (void**)&LibPlacenote_OnThumbnailSyncProgress_m4BD8F064069F6C7CC2A834A5BB35F34B6EA5A571_RuntimeMethod_var, 0 },
+	{ 0x0600001A, 4,  (void**)&LibPlacenote_OnInitialized_m730D29DBDB00A30791BF7645F38C5AEDFCE16BEB_RuntimeMethod_var, 0 },
+	{ 0x06000023, 5,  (void**)&LibPlacenote_OnPose_mF6384D6517CF20EAE51E4C22355BE631ABC16CA3_RuntimeMethod_var, 0 },
+	{ 0x06000029, 6,  (void**)&LibPlacenote_OnDatasetUpload_m79F8DFEB08F8EBC525ED76DB70338E8B07BA8295_RuntimeMethod_var, 0 },
+	{ 0x0600002B, 7,  (void**)&LibPlacenote_OnGetMetadata_m9BC6A244C8682A6675E078C15EBD77FF55D9C364_RuntimeMethod_var, 0 },
+	{ 0x0600002D, 8,  (void**)&LibPlacenote_OnSetMetadata_m3ADE0B7AD095246F0105260C0048621DE077F0F6_RuntimeMethod_var, 0 },
+	{ 0x0600002F, 9,  (void**)&LibPlacenote_OnMapList_m72602EDA0EBC4DB9D04BEE844681E27D92F943D9_RuntimeMethod_var, 0 },
+	{ 0x0600003A, 10,  (void**)&LibPlacenote_OnMapUploaded_m5BDC9ACA0AFE0B5321E4C973FAE0A4BC9CEB861A_RuntimeMethod_var, 0 },
+	{ 0x0600003B, 11,  (void**)&LibPlacenote_OnMapAdded_mA1EA93A5FC54CA99DDB2D8E3E85B06AC464A756D_RuntimeMethod_var, 0 },
+	{ 0x0600003D, 12,  (void**)&LibPlacenote_OnMapLoaded_m1CE6880C5C653BFA2CF74BC1EF957B5BAC3B3D96_RuntimeMethod_var, 0 },
+	{ 0x0600003F, 13,  (void**)&LibPlacenote_OnMapDeleted_m4761D7C39FBABDD0D343A2BAF79501AC26F0BF26_RuntimeMethod_var, 0 },
+	{ 0x06000041, 14,  (void**)&LibPlacenote_OnThumbnailSyncProgress_m4BD8F064069F6C7CC2A834A5BB35F34B6EA5A571_RuntimeMethod_var, 0 },
 };
 static const Il2CppTokenRangePair s_rgctxIndices[2] = 
 {
