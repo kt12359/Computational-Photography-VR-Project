@@ -3335,13 +3335,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1071744468}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88e068caf6d474d87ba62470a8c71fce, type: 3}
+  m_Script: {fileID: 11500000, guid: 89a0f288b588f4218850ee665316b77b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lMat: {fileID: 2100000, guid: 4b9d9e0f723e14a5389210544b6c9395, type: 2}
+  lMat: {fileID: 2100000, guid: 61bbf8aca7d4d49768de91f7bbd2a355, type: 2}
   paintPanel: {fileID: 515051211}
   textLabel: {fileID: 1661929572}
-  brushTrailMaterial: {fileID: 2100000, guid: ee9d20f82f68b40e19dac5970ee57615, type: 2}
+  brushTrailMaterial: {fileID: 2100000, guid: 5ff593af5d9464939a19a27dfc5ee11e, type: 2}
   slider: {fileID: 610553879}
   eventSystemManager: {fileID: 64395692}
   drawingRootSceneObject: {fileID: 1647997329}
@@ -3370,7 +3370,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1071744468}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4431e0b14f3954a098e1acb0c2a12ffc, type: 3}
+  m_Script: {fileID: 11500000, guid: b5e64115be87a4b3abec222b74461149, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   paintBrushSceneObject: {fileID: 1071744468}
@@ -3383,7 +3383,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1071744468}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 355dc7099598c4086bce8a5933f36c8c, type: 3}
+  m_Script: {fileID: 11500000, guid: 681d11766f2de49bf9830df590c946ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   drawingRootSceneObject: {fileID: 1647997329}
