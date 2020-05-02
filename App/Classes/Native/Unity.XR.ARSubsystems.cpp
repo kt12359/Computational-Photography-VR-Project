@@ -14344,7 +14344,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRCameraSubsystem__ctor_m494821143D51BD2
 		// public XRCameraSubsystem()
 		Subsystem_1__ctor_m9F8A9007BF28585C15DE12347F575EE49951D434(__this, /*hidden argument*/Subsystem_1__ctor_m9F8A9007BF28585C15DE12347F575EE49951D434_RuntimeMethod_var);
 		// m_Provider = CreateProvider();
-		IProvider_t5D7A855308E0C5E8F9175CA7CDEE91F929A5185C * L_0 = VirtFuncInvoker0< IProvider_t5D7A855308E0C5E8F9175CA7CDEE91F929A5185C * >::Invoke(11 /* UnityEngine.XR.ARSubsystems.XRCameraSubsystem/IProvider UnityEngine.XR.ARSubsystems.XRCameraSubsystem::CreateProvider() */, __this);
+		IProvider_t5D7A855308E0C5E8F9175CA7CDEE91F929A5185C * L_0 = VirtFuncInvoker0< IProvider_t5D7A855308E0C5E8F9175CA7CDEE91F929A5185C * >::Invoke(13 /* UnityEngine.XR.ARSubsystems.XRCameraSubsystem/IProvider UnityEngine.XR.ARSubsystems.XRCameraSubsystem::CreateProvider() */, __this);
 		__this->set_m_Provider_2(L_0);
 		// Debug.Assert(m_Provider != null, "camera functionality provider cannot be null");
 		IProvider_t5D7A855308E0C5E8F9175CA7CDEE91F929A5185C * L_1 = __this->get_m_Provider_2();
@@ -14495,7 +14495,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRCameraSubsystem_OnDestroy_m3D8D3D96C98
 {
 	{
 		// Stop();
-		VirtActionInvoker0::Invoke(5 /* System.Void UnityEngine.Subsystem::Stop() */, __this);
+		VirtActionInvoker0::Invoke(8 /* System.Void UnityEngine.Subsystem::Stop() */, __this);
 		// m_Provider.Destroy();
 		IProvider_t5D7A855308E0C5E8F9175CA7CDEE91F929A5185C * L_0 = __this->get_m_Provider_2();
 		NullCheck(L_0);
@@ -16995,7 +16995,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRDepthSubsystem__ctor_m1374F0D0EDEA2302
 		// protected XRDepthSubsystem()
 		TrackingSubsystem_2__ctor_mE15D10B872FFB07B4F0F3D14B16C97FED3F698A3(__this, /*hidden argument*/TrackingSubsystem_2__ctor_mE15D10B872FFB07B4F0F3D14B16C97FED3F698A3_RuntimeMethod_var);
 		// m_Interface = GetInterface();
-		IDepthApi_t7CEE33C76911E53220D0242D5E38503D64736BE4 * L_1 = VirtFuncInvoker0< IDepthApi_t7CEE33C76911E53220D0242D5E38503D64736BE4 * >::Invoke(10 /* UnityEngine.XR.ARSubsystems.XRDepthSubsystem/IDepthApi UnityEngine.XR.ARSubsystems.XRDepthSubsystem::GetInterface() */, __this);
+		IDepthApi_t7CEE33C76911E53220D0242D5E38503D64736BE4 * L_1 = VirtFuncInvoker0< IDepthApi_t7CEE33C76911E53220D0242D5E38503D64736BE4 * >::Invoke(12 /* UnityEngine.XR.ARSubsystems.XRDepthSubsystem/IDepthApi UnityEngine.XR.ARSubsystems.XRDepthSubsystem::GetInterface() */, __this);
 		__this->set_m_Interface_2(L_1);
 		// m_DefaultPointCloud = XRPointCloud.GetDefault();
 		XRPointCloud_tA4A412DE503530E1B2953919F1463B9B48504ED0  L_2 = XRPointCloud_GetDefault_m217CAB3C5FEF4FF479DFDE0D019B806EB2BB2FE8(/*hidden argument*/NULL);
@@ -17055,7 +17055,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRDepthSubsystem_OnDestroy_m9531B7360A4C
 	}
 	{
 		// Stop();
-		VirtActionInvoker0::Invoke(5 /* System.Void UnityEngine.Subsystem::Stop() */, __this);
+		VirtActionInvoker0::Invoke(8 /* System.Void UnityEngine.Subsystem::Stop() */, __this);
 	}
 
 IL_0012:
@@ -18382,7 +18382,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XREnvironmentProbeSubsystem__ctor_mD5858
 		// public XREnvironmentProbeSubsystem()
 		TrackingSubsystem_2__ctor_m947FB08506A5D6B1CE116ED032D88CBC257FEDEF(__this, /*hidden argument*/TrackingSubsystem_2__ctor_m947FB08506A5D6B1CE116ED032D88CBC257FEDEF_RuntimeMethod_var);
 		// m_Provider = CreateProvider();
-		IProvider_t7797038399918EB76F36AF28BE8FF7DFA4A82241 * L_0 = VirtFuncInvoker0< IProvider_t7797038399918EB76F36AF28BE8FF7DFA4A82241 * >::Invoke(10 /* UnityEngine.XR.ARSubsystems.XREnvironmentProbeSubsystem/IProvider UnityEngine.XR.ARSubsystems.XREnvironmentProbeSubsystem::CreateProvider() */, __this);
+		IProvider_t7797038399918EB76F36AF28BE8FF7DFA4A82241 * L_0 = VirtFuncInvoker0< IProvider_t7797038399918EB76F36AF28BE8FF7DFA4A82241 * >::Invoke(12 /* UnityEngine.XR.ARSubsystems.XREnvironmentProbeSubsystem/IProvider UnityEngine.XR.ARSubsystems.XREnvironmentProbeSubsystem::CreateProvider() */, __this);
 		__this->set_m_Provider_3(L_0);
 		// }
 		return;
@@ -18594,7 +18594,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XREnvironmentProbeSubsystem_OnDestroy_m3
 {
 	{
 		// Stop();
-		VirtActionInvoker0::Invoke(5 /* System.Void UnityEngine.Subsystem::Stop() */, __this);
+		VirtActionInvoker0::Invoke(8 /* System.Void UnityEngine.Subsystem::Stop() */, __this);
 		// m_Provider.Destroy();
 		IProvider_t7797038399918EB76F36AF28BE8FF7DFA4A82241 * L_0 = __this->get_m_Provider_3();
 		NullCheck(L_0);
@@ -20427,7 +20427,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRFaceSubsystem__ctor_m848121C59971872F1
 		// public XRFaceSubsystem()
 		TrackingSubsystem_2__ctor_m99F7F2301A648E15EC7B7B673E674FD481BA0712(__this, /*hidden argument*/TrackingSubsystem_2__ctor_m99F7F2301A648E15EC7B7B673E674FD481BA0712_RuntimeMethod_var);
 		// m_Provider = CreateProvider();
-		IProvider_t7B064D81E20EE0044470073AC7EABCD30910FEFB * L_1 = VirtFuncInvoker0< IProvider_t7B064D81E20EE0044470073AC7EABCD30910FEFB * >::Invoke(11 /* UnityEngine.XR.ARSubsystems.XRFaceSubsystem/IProvider UnityEngine.XR.ARSubsystems.XRFaceSubsystem::CreateProvider() */, __this);
+		IProvider_t7B064D81E20EE0044470073AC7EABCD30910FEFB * L_1 = VirtFuncInvoker0< IProvider_t7B064D81E20EE0044470073AC7EABCD30910FEFB * >::Invoke(13 /* UnityEngine.XR.ARSubsystems.XRFaceSubsystem/IProvider UnityEngine.XR.ARSubsystems.XRFaceSubsystem::CreateProvider() */, __this);
 		__this->set_m_Provider_2(L_1);
 		// m_DefaultFace = XRFace.GetDefault();
 		XRFace_tF2B2E9B06813BA74F5DAFD527FD249DD1002B7C7  L_2 = XRFace_GetDefault_m769DBA5C20BEF8E9F2C7B197AFBAA92527946E3C(/*hidden argument*/NULL);
@@ -20481,7 +20481,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRFaceSubsystem_OnDestroy_mF9F73C0220077
 	}
 	{
 		// Stop();
-		VirtActionInvoker0::Invoke(5 /* System.Void UnityEngine.Subsystem::Stop() */, __this);
+		VirtActionInvoker0::Invoke(8 /* System.Void UnityEngine.Subsystem::Stop() */, __this);
 	}
 
 IL_0012:
@@ -20760,7 +20760,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRImageTrackingSubsystem__ctor_m32B2EFB9
 		// public XRImageTrackingSubsystem()
 		TrackingSubsystem_2__ctor_m117BEE2EC4207EF9BA98439AB0AB87F4CF65B627(__this, /*hidden argument*/TrackingSubsystem_2__ctor_m117BEE2EC4207EF9BA98439AB0AB87F4CF65B627_RuntimeMethod_var);
 		// m_Provider = CreateProvider();
-		IProvider_t7463EA752A2B2BCE8B6D256E89A24C48FE593D91 * L_1 = VirtFuncInvoker0< IProvider_t7463EA752A2B2BCE8B6D256E89A24C48FE593D91 * >::Invoke(10 /* UnityEngine.XR.ARSubsystems.XRImageTrackingSubsystem/IProvider UnityEngine.XR.ARSubsystems.XRImageTrackingSubsystem::CreateProvider() */, __this);
+		IProvider_t7463EA752A2B2BCE8B6D256E89A24C48FE593D91 * L_1 = VirtFuncInvoker0< IProvider_t7463EA752A2B2BCE8B6D256E89A24C48FE593D91 * >::Invoke(12 /* UnityEngine.XR.ARSubsystems.XRImageTrackingSubsystem/IProvider UnityEngine.XR.ARSubsystems.XRImageTrackingSubsystem::CreateProvider() */, __this);
 		__this->set_m_Provider_3(L_1);
 		// }
 		return;
@@ -20880,7 +20880,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRImageTrackingSubsystem_OnDestroy_m60E7
 	}
 	{
 		// Stop();
-		VirtActionInvoker0::Invoke(5 /* System.Void UnityEngine.Subsystem::Stop() */, __this);
+		VirtActionInvoker0::Invoke(8 /* System.Void UnityEngine.Subsystem::Stop() */, __this);
 	}
 
 IL_0012:
@@ -21543,7 +21543,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRPlaneSubsystem__ctor_mD446FA374A919AF2
 		// public XRPlaneSubsystem()
 		TrackingSubsystem_2__ctor_mFC39B7350AB7CABBA957518F6BD2E16FF410E33C(__this, /*hidden argument*/TrackingSubsystem_2__ctor_mFC39B7350AB7CABBA957518F6BD2E16FF410E33C_RuntimeMethod_var);
 		// m_Provider = CreateProvider();
-		IProvider_t40982CEC3244CC0C726CED2C27336E95321F7469 * L_1 = VirtFuncInvoker0< IProvider_t40982CEC3244CC0C726CED2C27336E95321F7469 * >::Invoke(10 /* UnityEngine.XR.ARSubsystems.XRPlaneSubsystem/IProvider UnityEngine.XR.ARSubsystems.XRPlaneSubsystem::CreateProvider() */, __this);
+		IProvider_t40982CEC3244CC0C726CED2C27336E95321F7469 * L_1 = VirtFuncInvoker0< IProvider_t40982CEC3244CC0C726CED2C27336E95321F7469 * >::Invoke(12 /* UnityEngine.XR.ARSubsystems.XRPlaneSubsystem/IProvider UnityEngine.XR.ARSubsystems.XRPlaneSubsystem::CreateProvider() */, __this);
 		__this->set_m_Provider_2(L_1);
 		// m_DefaultPlane = BoundedPlane.GetDefault();
 		BoundedPlane_t5FBCC289E172852D4A9C51F6581B3C7EEE17A227  L_2 = BoundedPlane_GetDefault_mDC1F2DC14F5C53295558B28FA102CE5CD774660A(/*hidden argument*/NULL);
@@ -21597,7 +21597,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRPlaneSubsystem_OnDestroy_mAF59B2043C57
 	}
 	{
 		// Stop();
-		VirtActionInvoker0::Invoke(5 /* System.Void UnityEngine.Subsystem::Stop() */, __this);
+		VirtActionInvoker0::Invoke(8 /* System.Void UnityEngine.Subsystem::Stop() */, __this);
 	}
 
 IL_0012:
@@ -23496,7 +23496,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRRaycastSubsystem__ctor_mE8BD2BFB3AFD44
 		// public XRRaycastSubsystem()
 		Subsystem_1__ctor_mBFD41A4C9554CE0B1E2C2B2F0C5B34EF92137DA5(__this, /*hidden argument*/Subsystem_1__ctor_mBFD41A4C9554CE0B1E2C2B2F0C5B34EF92137DA5_RuntimeMethod_var);
 		// m_Provider = CreateProvider();
-		IProvider_tB9DFB2CA3241B1F6107D01753C0F00628994A3ED * L_0 = VirtFuncInvoker0< IProvider_tB9DFB2CA3241B1F6107D01753C0F00628994A3ED * >::Invoke(9 /* UnityEngine.XR.ARSubsystems.XRRaycastSubsystem/IProvider UnityEngine.XR.ARSubsystems.XRRaycastSubsystem::CreateProvider() */, __this);
+		IProvider_tB9DFB2CA3241B1F6107D01753C0F00628994A3ED * L_0 = VirtFuncInvoker0< IProvider_tB9DFB2CA3241B1F6107D01753C0F00628994A3ED * >::Invoke(11 /* UnityEngine.XR.ARSubsystems.XRRaycastSubsystem/IProvider UnityEngine.XR.ARSubsystems.XRRaycastSubsystem::CreateProvider() */, __this);
 		__this->set_m_Provider_2(L_0);
 		// m_DefaultRaycastHit = XRRaycastHit.GetDefault();
 		XRRaycastHit_t2DE122E601B75E2070D4A542A13E2486DEE60E82  L_1 = XRRaycastHit_GetDefault_mB7D3A8CFE226FD38DDDA4B1C2DE3162FD3B6BE2F(/*hidden argument*/NULL);
@@ -23579,7 +23579,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRRaycastSubsystem_OnDestroy_mA3EAACE9CF
 	}
 	{
 		// Stop();
-		VirtActionInvoker0::Invoke(5 /* System.Void UnityEngine.Subsystem::Stop() */, __this);
+		VirtActionInvoker0::Invoke(8 /* System.Void UnityEngine.Subsystem::Stop() */, __this);
 	}
 
 IL_0012:
@@ -25118,7 +25118,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRReferencePointSubsystem__ctor_mD93381D
 		// public XRReferencePointSubsystem()
 		TrackingSubsystem_2__ctor_mC69AD6AEF92FA2B9D7D5B83C79A418BAB05D0F76(__this, /*hidden argument*/TrackingSubsystem_2__ctor_mC69AD6AEF92FA2B9D7D5B83C79A418BAB05D0F76_RuntimeMethod_var);
 		// m_Provider = CreateProvider();
-		IProvider_tA80639246D0ED291E8332BE2FBC3FE3EA13A4459 * L_1 = VirtFuncInvoker0< IProvider_tA80639246D0ED291E8332BE2FBC3FE3EA13A4459 * >::Invoke(10 /* UnityEngine.XR.ARSubsystems.XRReferencePointSubsystem/IProvider UnityEngine.XR.ARSubsystems.XRReferencePointSubsystem::CreateProvider() */, __this);
+		IProvider_tA80639246D0ED291E8332BE2FBC3FE3EA13A4459 * L_1 = VirtFuncInvoker0< IProvider_tA80639246D0ED291E8332BE2FBC3FE3EA13A4459 * >::Invoke(12 /* UnityEngine.XR.ARSubsystems.XRReferencePointSubsystem/IProvider UnityEngine.XR.ARSubsystems.XRReferencePointSubsystem::CreateProvider() */, __this);
 		__this->set_m_Provider_2(L_1);
 		// m_DefaultReferencePoint = XRReferencePoint.GetDefault();
 		XRReferencePoint_tA8592C08A27EC91D9B1FB3B083C95C5D372FF1F9  L_2 = XRReferencePoint_GetDefault_m2C8B9BC8378BD9F7C636DCD1C90D4793F9C80BF8(/*hidden argument*/NULL);
@@ -25190,7 +25190,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRReferencePointSubsystem_OnDestroy_mCA0
 {
 	{
 		// Stop();
-		VirtActionInvoker0::Invoke(5 /* System.Void UnityEngine.Subsystem::Stop() */, __this);
+		VirtActionInvoker0::Invoke(8 /* System.Void UnityEngine.Subsystem::Stop() */, __this);
 		// m_Provider.Destroy();
 		IProvider_tA80639246D0ED291E8332BE2FBC3FE3EA13A4459 * L_0 = __this->get_m_Provider_2();
 		NullCheck(L_0);
@@ -25936,7 +25936,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRSessionSubsystem__ctor_m2817E6FDD97418
 		// public XRSessionSubsystem()
 		Subsystem_1__ctor_m1E5A720D54A5B9236E00A2A44956686EA1EA8F95(__this, /*hidden argument*/Subsystem_1__ctor_m1E5A720D54A5B9236E00A2A44956686EA1EA8F95_RuntimeMethod_var);
 		// m_Provider = CreateProvider();
-		IProvider_tCE3A36B52F24E47DF8D9945EAB79493A822E9428 * L_0 = VirtFuncInvoker0< IProvider_tCE3A36B52F24E47DF8D9945EAB79493A822E9428 * >::Invoke(9 /* UnityEngine.XR.ARSubsystems.XRSessionSubsystem/IProvider UnityEngine.XR.ARSubsystems.XRSessionSubsystem::CreateProvider() */, __this);
+		IProvider_tCE3A36B52F24E47DF8D9945EAB79493A822E9428 * L_0 = VirtFuncInvoker0< IProvider_tCE3A36B52F24E47DF8D9945EAB79493A822E9428 * >::Invoke(11 /* UnityEngine.XR.ARSubsystems.XRSessionSubsystem/IProvider UnityEngine.XR.ARSubsystems.XRSessionSubsystem::CreateProvider() */, __this);
 		__this->set_m_Provider_2(L_0);
 		// }
 		return;
@@ -26017,7 +26017,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRSessionSubsystem_OnDestroy_m2DA115CF41
 {
 	{
 		// Stop();
-		VirtActionInvoker0::Invoke(5 /* System.Void UnityEngine.Subsystem::Stop() */, __this);
+		VirtActionInvoker0::Invoke(8 /* System.Void UnityEngine.Subsystem::Stop() */, __this);
 		// m_Provider.Destroy();
 		IProvider_tCE3A36B52F24E47DF8D9945EAB79493A822E9428 * L_0 = __this->get_m_Provider_2();
 		NullCheck(L_0);

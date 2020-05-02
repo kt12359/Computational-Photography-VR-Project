@@ -265,9 +265,9 @@ struct HashSet_1_t6DB46DFBF6B02394A6A0A6ACB5EAFE2D8FB2DC58;
 // System.Collections.Generic.HashSet`1<UnityEngine.XR.MeshId>
 struct HashSet_1_tC884B9B50E4545B6F9417C96CE9A6F7416283B16;
 // System.Collections.Generic.ICollectionDebugView`1<System.Object>
-struct ICollectionDebugView_1_tD1D98F2CFECA8921317EC16A7F265BE697F11BCD;
-// System.Collections.Generic.ICollectionDebugView`1<System.Object>
 struct ICollectionDebugView_1_tDB6BE6BBE12633D368C4DE0585A35483E361A97E;
+// System.Collections.Generic.ICollectionDebugView`1<System.Object>
+struct ICollectionDebugView_1_tD1D98F2CFECA8921317EC16A7F265BE697F11BCD;
 // System.Collections.Generic.ICollection`1<System.Object>
 struct ICollection_1_tF82AFC7066FBC34EA5DF873F29905AE026B9C4DF;
 // System.Collections.Generic.IDictionaryDebugView`2<System.Object,System.Object>
@@ -1797,14 +1797,14 @@ public:
 
 
 // System.Collections.Generic.ICollectionDebugView`1<System.Object>
-struct  ICollectionDebugView_1_tD1D98F2CFECA8921317EC16A7F265BE697F11BCD  : public RuntimeObject
+struct  ICollectionDebugView_1_tDB6BE6BBE12633D368C4DE0585A35483E361A97E  : public RuntimeObject
 {
 public:
 	// System.Collections.Generic.ICollection`1<T> System.Collections.Generic.ICollectionDebugView`1::_collection
 	RuntimeObject* ____collection_0;
 
 public:
-	inline static int32_t get_offset_of__collection_0() { return static_cast<int32_t>(offsetof(ICollectionDebugView_1_tD1D98F2CFECA8921317EC16A7F265BE697F11BCD, ____collection_0)); }
+	inline static int32_t get_offset_of__collection_0() { return static_cast<int32_t>(offsetof(ICollectionDebugView_1_tDB6BE6BBE12633D368C4DE0585A35483E361A97E, ____collection_0)); }
 	inline RuntimeObject* get__collection_0() const { return ____collection_0; }
 	inline RuntimeObject** get_address_of__collection_0() { return &____collection_0; }
 	inline void set__collection_0(RuntimeObject* value)
@@ -1816,14 +1816,14 @@ public:
 
 
 // System.Collections.Generic.ICollectionDebugView`1<System.Object>
-struct  ICollectionDebugView_1_tDB6BE6BBE12633D368C4DE0585A35483E361A97E  : public RuntimeObject
+struct  ICollectionDebugView_1_tD1D98F2CFECA8921317EC16A7F265BE697F11BCD  : public RuntimeObject
 {
 public:
 	// System.Collections.Generic.ICollection`1<T> System.Collections.Generic.ICollectionDebugView`1::_collection
 	RuntimeObject* ____collection_0;
 
 public:
-	inline static int32_t get_offset_of__collection_0() { return static_cast<int32_t>(offsetof(ICollectionDebugView_1_tDB6BE6BBE12633D368C4DE0585A35483E361A97E, ____collection_0)); }
+	inline static int32_t get_offset_of__collection_0() { return static_cast<int32_t>(offsetof(ICollectionDebugView_1_tD1D98F2CFECA8921317EC16A7F265BE697F11BCD, ____collection_0)); }
 	inline RuntimeObject* get__collection_0() const { return ____collection_0; }
 	inline RuntimeObject** get_address_of__collection_0() { return &____collection_0; }
 	inline void set__collection_0(RuntimeObject* value)
@@ -27127,63 +27127,6 @@ IL_000a:
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void System.Collections.Generic.ICollectionDebugView`1<System.Object>::.ctor(System.Collections.Generic.ICollection`1<T>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ICollectionDebugView_1__ctor_m990F49947C51DA47EF294A1F331764884F3F3DE8_gshared (ICollectionDebugView_1_tD1D98F2CFECA8921317EC16A7F265BE697F11BCD * __this, RuntimeObject* ___collection0, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (ICollectionDebugView_1__ctor_m990F49947C51DA47EF294A1F331764884F3F3DE8_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		NullCheck((RuntimeObject *)__this);
-		Object__ctor_m925ECA5E85CA100E3FB86A4F9E15C120E9A184C0((RuntimeObject *)__this, /*hidden argument*/NULL);
-		RuntimeObject* L_0 = ___collection0;
-		if (L_0)
-		{
-			goto IL_0014;
-		}
-	}
-	{
-		ArgumentNullException_t581DF992B1F3E0EC6EFB30CC5DC43519A79B27AD * L_1 = (ArgumentNullException_t581DF992B1F3E0EC6EFB30CC5DC43519A79B27AD *)il2cpp_codegen_object_new(ArgumentNullException_t581DF992B1F3E0EC6EFB30CC5DC43519A79B27AD_il2cpp_TypeInfo_var);
-		ArgumentNullException__ctor_mEE0C0D6FCB2D08CD7967DBB1329A0854BBED49ED(L_1, (String_t*)_stringLiteral2037DE437C80264CCBCE8A8B61D0BF9F593D2322, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1, ICollectionDebugView_1__ctor_m990F49947C51DA47EF294A1F331764884F3F3DE8_RuntimeMethod_var);
-	}
-
-IL_0014:
-	{
-		RuntimeObject* L_2 = ___collection0;
-		__this->set__collection_0(L_2);
-		return;
-	}
-}
-// T[] System.Collections.Generic.ICollectionDebugView`1<System.Object>::get_Items()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* ICollectionDebugView_1_get_Items_mCF0EECCF226B5F06C0FCE878E15930FE65FCD6AB_gshared (ICollectionDebugView_1_tD1D98F2CFECA8921317EC16A7F265BE697F11BCD * __this, const RuntimeMethod* method)
-{
-	ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* V_0 = NULL;
-	{
-		RuntimeObject* L_0 = (RuntimeObject*)__this->get__collection_0();
-		NullCheck((RuntimeObject*)L_0);
-		int32_t L_1 = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.ICollection`1<System.Object>::get_Count() */, IL2CPP_RGCTX_DATA(method->klass->rgctx_data, 0), (RuntimeObject*)L_0);
-		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_2 = (ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A*)(ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A*)SZArrayNew(IL2CPP_RGCTX_DATA(method->klass->rgctx_data, 1), (uint32_t)L_1);
-		V_0 = (ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A*)L_2;
-		RuntimeObject* L_3 = (RuntimeObject*)__this->get__collection_0();
-		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_4 = V_0;
-		NullCheck((RuntimeObject*)L_3);
-		InterfaceActionInvoker2< ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A*, int32_t >::Invoke(5 /* System.Void System.Collections.Generic.ICollection`1<System.Object>::CopyTo(!0[],System.Int32) */, IL2CPP_RGCTX_DATA(method->klass->rgctx_data, 0), (RuntimeObject*)L_3, (ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A*)L_4, (int32_t)0);
-		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_5 = V_0;
-		return L_5;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void System.Collections.Generic.ICollectionDebugView`1<System.Object>::.ctor(System.Collections.Generic.ICollection`1<T>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ICollectionDebugView_1__ctor_m727ABA182C4F8EFA07147DE8DE432CF5B8D66416_gshared (ICollectionDebugView_1_tDB6BE6BBE12633D368C4DE0585A35483E361A97E * __this, RuntimeObject* ___collection0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -27216,6 +27159,63 @@ IL_0014:
 }
 // T[] System.Collections.Generic.ICollectionDebugView`1<System.Object>::get_Items()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* ICollectionDebugView_1_get_Items_m8BDFD1F3412E518D48D0E5DCBCB4413B19E9583F_gshared (ICollectionDebugView_1_tDB6BE6BBE12633D368C4DE0585A35483E361A97E * __this, const RuntimeMethod* method)
+{
+	ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* V_0 = NULL;
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->get__collection_0();
+		NullCheck((RuntimeObject*)L_0);
+		int32_t L_1 = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.ICollection`1<System.Object>::get_Count() */, IL2CPP_RGCTX_DATA(method->klass->rgctx_data, 0), (RuntimeObject*)L_0);
+		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_2 = (ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A*)(ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A*)SZArrayNew(IL2CPP_RGCTX_DATA(method->klass->rgctx_data, 1), (uint32_t)L_1);
+		V_0 = (ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A*)L_2;
+		RuntimeObject* L_3 = (RuntimeObject*)__this->get__collection_0();
+		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_4 = V_0;
+		NullCheck((RuntimeObject*)L_3);
+		InterfaceActionInvoker2< ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A*, int32_t >::Invoke(5 /* System.Void System.Collections.Generic.ICollection`1<System.Object>::CopyTo(!0[],System.Int32) */, IL2CPP_RGCTX_DATA(method->klass->rgctx_data, 0), (RuntimeObject*)L_3, (ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A*)L_4, (int32_t)0);
+		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_5 = V_0;
+		return L_5;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void System.Collections.Generic.ICollectionDebugView`1<System.Object>::.ctor(System.Collections.Generic.ICollection`1<T>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ICollectionDebugView_1__ctor_m990F49947C51DA47EF294A1F331764884F3F3DE8_gshared (ICollectionDebugView_1_tD1D98F2CFECA8921317EC16A7F265BE697F11BCD * __this, RuntimeObject* ___collection0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (ICollectionDebugView_1__ctor_m990F49947C51DA47EF294A1F331764884F3F3DE8_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		NullCheck((RuntimeObject *)__this);
+		Object__ctor_m925ECA5E85CA100E3FB86A4F9E15C120E9A184C0((RuntimeObject *)__this, /*hidden argument*/NULL);
+		RuntimeObject* L_0 = ___collection0;
+		if (L_0)
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		ArgumentNullException_t581DF992B1F3E0EC6EFB30CC5DC43519A79B27AD * L_1 = (ArgumentNullException_t581DF992B1F3E0EC6EFB30CC5DC43519A79B27AD *)il2cpp_codegen_object_new(ArgumentNullException_t581DF992B1F3E0EC6EFB30CC5DC43519A79B27AD_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_mEE0C0D6FCB2D08CD7967DBB1329A0854BBED49ED(L_1, (String_t*)_stringLiteral2037DE437C80264CCBCE8A8B61D0BF9F593D2322, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1, ICollectionDebugView_1__ctor_m990F49947C51DA47EF294A1F331764884F3F3DE8_RuntimeMethod_var);
+	}
+
+IL_0014:
+	{
+		RuntimeObject* L_2 = ___collection0;
+		__this->set__collection_0(L_2);
+		return;
+	}
+}
+// T[] System.Collections.Generic.ICollectionDebugView`1<System.Object>::get_Items()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* ICollectionDebugView_1_get_Items_mCF0EECCF226B5F06C0FCE878E15930FE65FCD6AB_gshared (ICollectionDebugView_1_tD1D98F2CFECA8921317EC16A7F265BE697F11BCD * __this, const RuntimeMethod* method)
 {
 	ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* V_0 = NULL;
 	{
