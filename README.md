@@ -6,6 +6,20 @@ Computational Photography VR final project
 brew install git-lfs
 git lfs install
 ```
+## Building and Running
+```
+First build in Unity for iOS:
+    - Save as "App"
+    - Select Append **Do NOT select Replace
+Open Computational-Photography-VR-Project Folder
+Open App folder
+Open Unity-iPhone xcode project
+Set up signing and capabilities:
+    - Select Automatically Manage Signing
+    - Choose your apple account as the developer account
+Build project for running
+Run
+```
 
 ## Getting Setup for Development
 ```
