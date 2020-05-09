@@ -10,6 +10,7 @@ public class DrawingHistoryManager : MonoBehaviour {
 
 	public GameObject paintBrushSceneObject;
 
+	private ColorWheelControl cw = new ColorWheelControl();
 	public class drawingcommand{
 		public int index;
 		public int objType;
@@ -234,7 +235,8 @@ public class DrawingHistoryManager : MonoBehaviour {
 		int _index = Int32.Parse (values [0]);
 		int _objType = Int32.Parse (values [1]);
 		Vector3 _position = new Vector3 (Convert.ToSingle (values [2]), Convert.ToSingle (values [3]), Convert.ToSingle (values [4]));
-		Color _color = new Color (Convert.ToSingle (values [5]), Convert.ToSingle (values [6]), Convert.ToSingle (values [7]));
+		//Color _color = new Color (Convert.ToSingle (values [5]), Convert.ToSingle (values [6]), Convert.ToSingle (values [7]));
+		Color _color = cw.GetColor();
 		float _lineWidth = Convert.ToSingle (values [8]);
 
 		drawingcommand theCmd = new drawingcommand (_index, _objType, _position, _color, _lineWidth);

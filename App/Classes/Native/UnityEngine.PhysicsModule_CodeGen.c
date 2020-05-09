@@ -203,8 +203,8 @@ static Il2CppMethodPointer s_methodPointers[59] =
 static const int32_t s_InvokerIndices[59] = 
 {
 	14,
-	1152,
-	1152,
+	1149,
+	1149,
 	706,
 	14,
 	14,
@@ -215,7 +215,6 @@ static const int32_t s_InvokerIndices[59] =
 	14,
 	10,
 	9,
-	1366,
 	1367,
 	1368,
 	1369,
@@ -229,8 +228,8 @@ static const int32_t s_InvokerIndices[59] =
 	1377,
 	1378,
 	1379,
-	1250,
 	1380,
+	1251,
 	1381,
 	1382,
 	1383,
@@ -259,8 +258,9 @@ static const int32_t s_InvokerIndices[59] =
 	1406,
 	1407,
 	1408,
-	17,
 	1409,
+	17,
+	1410,
 };
 extern const Il2CppCodeGenModule g_UnityEngine_PhysicsModuleCodeGenModule;
 const Il2CppCodeGenModule g_UnityEngine_PhysicsModuleCodeGenModule = 
