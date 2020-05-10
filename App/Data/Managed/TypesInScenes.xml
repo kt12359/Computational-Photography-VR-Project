@@ -46,6 +46,7 @@
 		<type fullname="UnityEngine.ParticleSystemRenderer" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Assembly-CSharp">
+		<type fullname="ColorWheelControl" preserve="nothing"/>
 		<type fullname="DrawLineManager" preserve="nothing"/>
 		<type fullname="DrawingHistoryManager" preserve="nothing"/>
 		<type fullname="FCP_SpriteMeshEditor" preserve="nothing"/>
