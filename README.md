@@ -24,7 +24,7 @@ git checkout --track origin/development
   - Connect your phone to your laptop
   - Open iTunes on your laptop (yes, this is strange)
   - Select your device
-  - Find the UUID
+  - Find the UDID
   - Add that to the Developer Portal
 - Add to Profile
   - Open our Profile in the Developer Portal
