@@ -23,7 +23,8 @@ public class DrawLineManager : MonoBehaviour {
 
 	private Vector3 prevPaintPoint;
     private float paintLineThickness;
-    private Color paintLineColor;
+    //private Color paintLineColor;
+	private Color paintLineColor;
 
     [SerializeField] Material brushTrailMaterial;
 
@@ -36,6 +37,8 @@ public class DrawLineManager : MonoBehaviour {
 	public GameObject paintBrushSceneObject;
 
     [SerializeField] GameObject brushTipObject;
+
+	public FlexibleColorPicker colorPicker;
 
 
     public void setLineWidth(float thickness)
@@ -59,7 +62,9 @@ public class DrawLineManager : MonoBehaviour {
     public void OnColorChoiceClick(Image buttonImage)
     {
         // set line color to match color of the button
-        setLineColor(buttonImage.color);
+		buttonImage.color = colorPicker.GetColor();
+		setLineColor(buttonImage.color);
+        //setLineColor(buttonImage.color);
     }
 
     public void OnLineWidthSliderChanged()
@@ -79,6 +84,7 @@ public class DrawLineManager : MonoBehaviour {
 	void Start () {
 
         paintLineColor = new Color();
+		//cw = new ColorWheelControl();
         setLineColor(Color.red);
 
         setLineWidth(slider.value);
@@ -90,6 +96,7 @@ public class DrawLineManager : MonoBehaviour {
 
 
 		Vector3 endPoint = getRayEndPoint (rayDist);
+		paintLineColor = colorPicker.GetColor();//cw.updateColor();
 
 		//renderSphereAsBrushTip (endPoint);
 
@@ -128,10 +135,10 @@ public class DrawLineManager : MonoBehaviour {
 			currLine.SetWidth (paintLineThickness);
 
 
-            //Color newColor = new Color(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f));
+            Color newColor = paintLineColor;//new Color(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f));
 
-            currLine.lmat.color = paintLineColor;
-			//currLine.lmat.color = newColor;
+            //currLine.lmat.color = paintLineColor;
+			currLine.lmat.color = colorPicker.GetColor();//newColor;
 
 			numClicks = 0;
 
