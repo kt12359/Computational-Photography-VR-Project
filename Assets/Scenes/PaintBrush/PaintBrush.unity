@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.5748171, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465934, g: 0.49642956, b: 0.5748249, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3036,8 +3036,7 @@ MonoBehaviour:
   drawingRootSceneObject: {fileID: 1647997329}
   paintBrushSceneObject: {fileID: 1071744468}
   brushTipObject: {fileID: 1027955612}
-  cw: {fileID: 0}
-  colorPicker: {fileID: 0}
+  colorPicker: {fileID: 1200291344}
 --- !u!4 &1071744470
 Transform:
   m_ObjectHideFlags: 0
@@ -3528,6 +3527,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1200291344 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2130943084915617136, guid: 4214b57e615806c448ba9d993d629531,
+    type: 3}
+  m_PrefabInstance: {fileID: 1200291339}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200291341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31629c56f6f83234a90f6296f902f9c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1351275811
 GameObject:
   m_ObjectHideFlags: 0
