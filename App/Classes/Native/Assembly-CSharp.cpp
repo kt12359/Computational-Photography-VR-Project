@@ -15791,6 +15791,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material_set_color_m127EAC5D3CC68359E72D
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  FlexibleColorPicker_GetColor_mA0F6E7F764D91FF679E13F61CDE4F7367ED9C88A (FlexibleColorPicker_tD1D4032D819D7F35A043E41291E52F6F2C093572 * __this, const RuntimeMethod* method);
 // System.Void DrawLineManager::setLineColor(UnityEngine.Color)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DrawLineManager_setLineColor_mAD9644C0BACB176373370BB380DE8E33218DE53A (DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC * __this, Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  ___lineColor0, const RuntimeMethod* method);
+// System.Void DrawLineManager::setBrushMaterial(UnityEngine.Material)
+IL2CPP_EXTERN_C inline  IL2CPP_METHOD_ATTR void DrawLineManager_setBrushMaterial_mDAF26AEFCA5C1653A810ABBD50FF92A2D5E53989_inline (DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC * __this, Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * ___selectedMaterial0, const RuntimeMethod* method);
 // System.Void DrawLineManager::setLineWidth(System.Single)
 IL2CPP_EXTERN_C inline  IL2CPP_METHOD_ATTR void DrawLineManager_setLineWidth_mE930D4888EA541FAF25907B64D853968385ECA7C_inline (DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC * __this, float ___thickness0, const RuntimeMethod* method);
 // UnityEngine.Ray UnityEngine.Camera::ViewportPointToRay(UnityEngine.Vector3)
@@ -19476,6 +19478,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DrawLineManager_setLineColor_mAD9644C0BA
 		return;
 	}
 }
+// System.Void DrawLineManager::setBrushMaterial(UnityEngine.Material)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DrawLineManager_setBrushMaterial_mDAF26AEFCA5C1653A810ABBD50FF92A2D5E53989 (DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC * __this, Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * ___selectedMaterial0, const RuntimeMethod* method)
+{
+	{
+		// lMat = selectedMaterial;
+		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_0 = ___selectedMaterial0;
+		__this->set_lMat_5(L_0);
+		// }
+		return;
+	}
+}
 // System.Void DrawLineManager::OnColorChoiceClick(UnityEngine.UI.Image)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DrawLineManager_OnColorChoiceClick_mF5FBFF835CE076CED0790FC66780D9639F929F14 (DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC * __this, Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E * ___buttonImage0, const RuntimeMethod* method)
 {
@@ -19492,6 +19505,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DrawLineManager_OnColorChoiceClick_mF5FB
 		NullCheck(L_3);
 		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_4 = VirtFuncInvoker0< Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  >::Invoke(22 /* UnityEngine.Color UnityEngine.UI.Graphic::get_color() */, L_3);
 		DrawLineManager_setLineColor_mAD9644C0BACB176373370BB380DE8E33218DE53A(__this, L_4, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+// System.Void DrawLineManager::OnPaintBrushTypeClick(UnityEngine.Material)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DrawLineManager_OnPaintBrushTypeClick_m7D0AA5DEA870BE39469DC6F7BB6906C8E6EA73B5 (DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC * __this, Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * ___selectedMaterial0, const RuntimeMethod* method)
+{
+	{
+		// setBrushMaterial(selectedMaterial);
+		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_0 = ___selectedMaterial0;
+		DrawLineManager_setBrushMaterial_mDAF26AEFCA5C1653A810ABBD50FF92A2D5E53989_inline(__this, L_0, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -19688,7 +19712,7 @@ IL_006c:
 		GraphicsLineRenderer_SetWidth_m79FFEAE9CA81B9DDE01D9D50CC8ED4F4EB9095CD_inline(L_30, L_31, /*hidden argument*/NULL);
 		// Color newColor = paintLineColor;//new Color(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f));
 		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_32 = __this->get_paintLineColor_13();
-		// currLine.lmat.color = colorPicker.GetColor();//newColor;
+		// currLine.lmat.color = colorPicker.GetColor();
 		GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * L_33 = __this->get_currLine_8();
 		NullCheck(L_33);
 		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_34 = L_33->get_lmat_5();
@@ -37861,6 +37885,16 @@ IL2CPP_EXTERN_C inline  IL2CPP_METHOD_ATTR bool LibPlacenote_Initialized_mE3E6A2
 		// return mInitialized;
 		bool L_0 = __this->get_mInitialized_8();
 		return L_0;
+	}
+}
+IL2CPP_EXTERN_C inline  IL2CPP_METHOD_ATTR void DrawLineManager_setBrushMaterial_mDAF26AEFCA5C1653A810ABBD50FF92A2D5E53989_inline (DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC * __this, Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * ___selectedMaterial0, const RuntimeMethod* method)
+{
+	{
+		// lMat = selectedMaterial;
+		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_0 = ___selectedMaterial0;
+		__this->set_lMat_5(L_0);
+		// }
+		return;
 	}
 }
 IL2CPP_EXTERN_C inline  IL2CPP_METHOD_ATTR void DrawLineManager_setLineWidth_mE930D4888EA541FAF25907B64D853968385ECA7C_inline (DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC * __this, float ___thickness0, const RuntimeMethod* method)

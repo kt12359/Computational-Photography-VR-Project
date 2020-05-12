@@ -59,13 +59,22 @@ public class DrawLineManager : MonoBehaviour {
 
 	}
 
+	public void setBrushMaterial(Material selectedMaterial)
+	{
+		lMat = selectedMaterial;
+	}
+
     public void OnColorChoiceClick(Image buttonImage)
     {
         // set line color to match color of the button
 		buttonImage.color = colorPicker.GetColor();
 		setLineColor(buttonImage.color);
-        //setLineColor(buttonImage.color);
     }
+
+	public void OnPaintBrushTypeClick(Material selectedMaterial)
+	{
+		setBrushMaterial(selectedMaterial);
+	}
 
     public void OnLineWidthSliderChanged()
     {
@@ -84,7 +93,6 @@ public class DrawLineManager : MonoBehaviour {
 	void Start () {
 
         paintLineColor = new Color();
-		//cw = new ColorWheelControl();
         setLineColor(Color.red);
 
         setLineWidth(slider.value);
@@ -138,7 +146,7 @@ public class DrawLineManager : MonoBehaviour {
             Color newColor = paintLineColor;//new Color(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f));
 
             //currLine.lmat.color = paintLineColor;
-			currLine.lmat.color = colorPicker.GetColor();//newColor;
+			currLine.lmat.color = colorPicker.GetColor();
 
 			numClicks = 0;
 
