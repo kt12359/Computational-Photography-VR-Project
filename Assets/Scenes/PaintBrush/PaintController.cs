@@ -15,6 +15,8 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 	public GameObject startPanel;
     public GameObject loadPanel;
 
+    private GameObject buttonPanel;
+
     [SerializeField] GameObject brushTipObject;
     [SerializeField] GameObject colorPalette;
 
@@ -53,6 +55,18 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
             // set the texture
             mLocalizationThumbnail.texture = thumbnailTexture;
         };
+
+        // Make sure panels match the default
+        startPanel.SetActive (true);
+		paintPanel.SetActive (false);
+        loadPanel.SetActive(false);
+		colorPalette.SetActive(false);
+		brushTipObject.SetActive(false);
+
+		buttonPanel = paintPanel.transform.Find("ButtonPanel").gameObject;
+		buttonPanel.SetActive(true);
+
+
 
     }
 
