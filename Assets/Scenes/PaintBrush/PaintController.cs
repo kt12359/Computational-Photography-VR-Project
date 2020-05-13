@@ -56,13 +56,15 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
             mLocalizationThumbnail.texture = thumbnailTexture;
         };
 
-        // Make sure panels match the default
+
+        // Make sure panels match the defaults
         startPanel.SetActive (true);
 		paintPanel.SetActive (false);
         loadPanel.SetActive(false);
 		colorPalette.SetActive(false);
 		brushTipObject.SetActive(false);
 
+		// Make sure this child is active for when its parent is active
 		buttonPanel = paintPanel.transform.Find("ButtonPanel").gameObject;
 		buttonPanel.SetActive(true);
 
