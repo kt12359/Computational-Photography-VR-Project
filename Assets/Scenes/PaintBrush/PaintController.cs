@@ -13,7 +13,6 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 
 	public GameObject paintPanel;
 	public GameObject startPanel;
-    public GameObject loadPanel;
 
     private GameObject buttonPanel;
 
@@ -24,6 +23,8 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
     [SerializeField] Image mLocalizationThumbnailContainer;
 
     public int drawingHistoryIndex = 0;
+
+    private int layerNumToLoad;
 
 	// Use this for initialization
 	void Start () {
@@ -60,16 +61,12 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
         // Make sure panels match the defaults
         startPanel.SetActive (true);
 		paintPanel.SetActive (false);
-        loadPanel.SetActive(false);
 		colorPalette.SetActive(false);
 		brushTipObject.SetActive(false);
 
 		// Make sure this child is active for when its parent is active
 		buttonPanel = paintPanel.transform.Find("ButtonPanel").gameObject;
 		buttonPanel.SetActive(true);
-
-
-
     }
 
 	public void onClickEnablePointCloud()
@@ -108,7 +105,6 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 
 	public void onStartPaintingClick ()
 	{
-    
 		startPanel.SetActive (false);
 		paintPanel.SetActive (true);
 
@@ -119,53 +115,34 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
         brushTipObject.SetActive(true);
 
         textLabel.text = "Press and hold the screen to paint";
-
-
 	}
 
 
-
-	public void OnSaveMapClick ()
+	public void OnSaveLayerClick (int layerNum)
 	{
-		
-
 		if (!LibPlacenote.Instance.Initialized()) {
 			Debug.Log ("SDK not yet initialized");
 			return;
 		}
 
-		//mLabelText.text = "Saving...";
 		LibPlacenote.Instance.SaveMap (
 			(mapId) => {
 				LibPlacenote.Instance.StopSession ();
-
 				print("Saved Map Id:" + mapId);
-
-				saveScene (mapId);
-
+				saveScene (mapId, layerNum);
 				textLabel.text = "Saving Your Painting: ";
-
-				//mLabelText.text = "Saved Map ID: " + mapId;
-				//mInitButtonPanel.SetActive (true);
-				//mMappingButtonPanel.SetActive (false);
-
-				//string jsonPath = Path.Combine(Application.persistentDataPath, mapId + ".json");
-				//SaveShapes2JSON(jsonPath);
 			},
 			(completed, faulted, percentage) => {
 				Debug.Log("Uploading map...");
 
 				if(completed) {
 					Debug.Log("Done Uploaded!!");
-
 					textLabel.text = "Saved! Try Loading it!";
-
-					startPanel.SetActive(true);
-					paintPanel.SetActive(false);
+					// startPanel.SetActive(true);
+					// paintPanel.SetActive(false);
 
                     // clearing the painting and history currently active
                     onClearAllClick();
-
                 }
                 else if(faulted)
                 {
@@ -179,16 +156,18 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
             }
 		);
 	}
-		
-	public void OnLoadMapClicked ()
-	{
 
+
+	public void OnLoadLayerClick (int layerNum)
+	{
 		if (!LibPlacenote.Instance.Initialized()) {
 			Debug.Log ("SDK not yet initialized");
 			return;
 		}
 
-		var mSelectedMapId = GetComponent<DrawingHistoryManager> ().loadMapIDFromFile ();
+		layerNumToLoad = layerNum;
+
+		var mSelectedMapId = GetComponent<DrawingHistoryManager> ().loadMapIDFromFile (layerNum);
 
 		if (mSelectedMapId == null) {
 			Debug.Log ("The saved map id was null!");
@@ -200,28 +179,111 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 
 						textLabel.text = "To load your drawing, point at the area shown in the thumbnail.";
 
-                        startPanel.SetActive(false);
-                        loadPanel.SetActive(true);
-
                         mLocalizationThumbnailContainer.gameObject.SetActive(true);
                         LibPlacenote.Instance.StartSession ();
-						//mLabelText.text = "Loaded ID: " + mSelectedMapId;
 					} else if (faulted) {
-						//mLabelText.text = "Failed to load ID: " + mSelectedMapId;
+						// ignore for now
 					}
 				}
 			);
 		}
-
-
 	}
+
+
+
+	// The old save method
+	// public void OnSaveMapClick ()
+	// {
+		
+
+	// 	if (!LibPlacenote.Instance.Initialized()) {
+	// 		Debug.Log ("SDK not yet initialized");
+	// 		return;
+	// 	}
+
+	// 	//mLabelText.text = "Saving...";
+	// 	LibPlacenote.Instance.SaveMap (
+	// 		(mapId) => {
+	// 			LibPlacenote.Instance.StopSession ();
+
+	// 			print("Saved Map Id:" + mapId);
+
+	// 			saveScene (mapId);
+
+	// 			textLabel.text = "Saving Your Painting: ";
+
+	// 			//mLabelText.text = "Saved Map ID: " + mapId;
+	// 			//mInitButtonPanel.SetActive (true);
+	// 			//mMappingButtonPanel.SetActive (false);
+
+	// 			//string jsonPath = Path.Combine(Application.persistentDataPath, mapId + ".json");
+	// 			//SaveShapes2JSON(jsonPath);
+	// 		},
+	// 		(completed, faulted, percentage) => {
+	// 			Debug.Log("Uploading map...");
+
+	// 			if(completed) {
+	// 				Debug.Log("Done Uploaded!!");
+
+	// 				textLabel.text = "Saved! Try Loading it!";
+
+	// 				startPanel.SetActive(true);
+	// 				paintPanel.SetActive(false);
+
+ //                    // clearing the painting and history currently active
+ //                    onClearAllClick();
+
+ //                }
+ //                else if(faulted)
+ //                {
+ //                    textLabel.text = "Map upload failed.";
+ //                }
+ //                else
+ //                {
+ //                    textLabel.text = "Saving Your Painting: " + (percentage * 100.0f).ToString("F2") + " %";
+ //                }
+
+ //            }
+	// 	);
+	// }
+	
+	// Old load method
+	// public void OnLoadMapClicked ()
+	// {
+
+	// 	if (!LibPlacenote.Instance.Initialized()) {
+	// 		Debug.Log ("SDK not yet initialized");
+	// 		return;
+	// 	}
+
+	// 	var mSelectedMapId = GetComponent<DrawingHistoryManager> ().loadMapIDFromFile ();
+
+	// 	if (mSelectedMapId == null) {
+	// 		Debug.Log ("The saved map id was null!");
+
+	// 	} else {
+	// 		LibPlacenote.Instance.LoadMap (mSelectedMapId,
+	// 			(completed, faulted, percentage) => {
+	// 				if (completed) {
+
+	// 					textLabel.text = "To load your drawing, point at the area shown in the thumbnail.";
+
+ //                        startPanel.SetActive(false);
+
+ //                        mLocalizationThumbnailContainer.gameObject.SetActive(true);
+ //                        LibPlacenote.Instance.StartSession ();
+	// 					//mLabelText.text = "Loaded ID: " + mSelectedMapId;
+	// 				} else if (faulted) {
+	// 					//mLabelText.text = "Failed to load ID: " + mSelectedMapId;
+	// 				}
+	// 			}
+	// 		);
+	// 	}
+	// }
 
     public void OnExitLoadedPaintingClick()
     {
         mLocalizationThumbnailContainer.gameObject.SetActive(false);
-
-        loadPanel.SetActive(false);
-        startPanel.SetActive(true);
 
         LibPlacenote.Instance.StopSession();
         FeaturesVisualizer.ClearPointcloud();
@@ -264,11 +326,11 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 	}
 
 
-	public void saveScene (string mapid)
+	public void saveScene (string mapid, int layerNum)
 	{
-		GetComponent<DrawingHistoryManager> ().saveDrawingHistory ();
+		GetComponent<DrawingHistoryManager> ().saveDrawingHistory (layerNum);
 
-		GetComponent<DrawingHistoryManager> ().saveMapIDToFile (mapid);
+		GetComponent<DrawingHistoryManager> ().saveMapIDToFile (mapid, layerNum);
 	}
 
 
@@ -278,7 +340,7 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 		deleteAllObjects();
 
 		// load saved scene
-		GetComponent<DrawingHistoryManager> ().loadFromDrawingHistory ();
+		GetComponent<DrawingHistoryManager> ().loadFromDrawingHistory (layerNumToLoad);
 
 		// replay drawing
 		replayDrawing();

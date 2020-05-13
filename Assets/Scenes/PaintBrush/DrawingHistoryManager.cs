@@ -144,19 +144,21 @@ public class DrawingHistoryManager : MonoBehaviour {
 	}
 
 
-	public void saveMapIDToFile(string mapid)
+	public void saveMapIDToFile(string mapid, int layerNum)
 	{
+		// string filePath = Application.persistentDataPath + "/mapIDFile" + layerNum + ".txt";
 		string filePath = Application.persistentDataPath + "/mapIDFile.txt";
 		StreamWriter sr = File.CreateText (filePath);
 		sr.WriteLine (mapid);
 		sr.Close ();
 	}
 
-	public string loadMapIDFromFile ()
+	public string loadMapIDFromFile (int layerNum)
 	{
 		string savedMapID;
 
 		// read history file
+		// FileInfo historyFile = new FileInfo(Application.persistentDataPath + "/mapIDFile" + layerNum + ".txt");
 		FileInfo historyFile = new FileInfo(Application.persistentDataPath + "/mapIDFile.txt");
 		StreamReader sr = historyFile.OpenText ();
 		string text;
@@ -178,11 +180,12 @@ public class DrawingHistoryManager : MonoBehaviour {
 	}
 
 
-	// save the drawing histor
-	public void saveDrawingHistory()
+	// save the drawing history
+	public void saveDrawingHistory(int layerNum)
 	{
-		// save the current drawingHistory as the only file allowed to be saved.
+		// save the current drawingHistory to a particular layer
 		// write to file
+		// string filePath = Application.persistentDataPath + "/historyFile" + layerNum + ".txt";
 		string filePath = Application.persistentDataPath + "/historyFile.txt";
 
 		Debug.Log ("File path saved = " + filePath);
@@ -203,10 +206,11 @@ public class DrawingHistoryManager : MonoBehaviour {
 
 	}
 
-	public void loadFromDrawingHistory()
+	public void loadFromDrawingHistory(int layerNum)
 	{
 
 		// read history file
+		// FileInfo historyFile = new FileInfo(Application.persistentDataPath + "/historyFile" + layerNum + ".txt");
 		FileInfo historyFile = new FileInfo(Application.persistentDataPath + "/historyFile.txt");
 		StreamReader sr = historyFile.OpenText ();
 		string text;
