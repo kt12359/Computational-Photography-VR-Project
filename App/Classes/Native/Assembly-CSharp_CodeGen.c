@@ -474,10 +474,10 @@ extern void PaintController_OnStatusChange_m935E882A373A8D6B0805181488E9A1170863
 extern void PaintController_OnLocalized_m5A0B4C5902F637A071F0963E2A4FE6E5C82F775A ();
 // 0x000000DF System.Void PaintController::.ctor()
 extern void PaintController__ctor_m818998C4946F96F96E83C961AF897F129CD0B884 ();
-// 0x000000E0 System.Void PaintController::<Start>b__13_0(UnityEngine.Texture2D)
-extern void PaintController_U3CStartU3Eb__13_0_m4D1F675B1541722926FBB82496C310B34B4C17DE ();
-// 0x000000E1 System.Void PaintController::<OnLoadLayerClick>b__19_0(System.Boolean,System.Boolean,System.Single)
-extern void PaintController_U3COnLoadLayerClickU3Eb__19_0_mD78A6C8A38D38FAEAF44A56EFD273D80663766D1 ();
+// 0x000000E0 System.Void PaintController::<Start>b__12_0(UnityEngine.Texture2D)
+extern void PaintController_U3CStartU3Eb__12_0_mE320951DFE034627210CDF87969C545F80AE8792 ();
+// 0x000000E1 System.Void PaintController::<OnLoadLayerClick>b__18_0(System.Boolean,System.Boolean,System.Single)
+extern void PaintController_U3COnLoadLayerClickU3Eb__18_0_m99F14583631F332B468AEF701DD445D5E4E356B3 ();
 // 0x000000E2 System.Void ColorWheelControl::Start()
 extern void ColorWheelControl_Start_mAB06127040D72A5D788C4E5443CD50C50E922E54 ();
 // 0x000000E3 System.Void ColorWheelControl::Update()
@@ -966,12 +966,12 @@ extern void U3CreplayDrawingU3Ed__8_System_Collections_Generic_IEnumeratorU3CSys
 extern void U3CreplayDrawingU3Ed__8_System_Collections_IEnumerator_Reset_m058057B8BA0D92FF23208B7DD5561902E256129E ();
 // 0x000001DB System.Object DrawingHistoryManager_<replayDrawing>d__8::System.Collections.IEnumerator.get_Current()
 extern void U3CreplayDrawingU3Ed__8_System_Collections_IEnumerator_get_Current_mE16A1347F43B5E67947D3370AEC6AA3700A72EC8 ();
-// 0x000001DC System.Void PaintController_<>c__DisplayClass18_0::.ctor()
-extern void U3CU3Ec__DisplayClass18_0__ctor_m6832104E5AD0CF6EBBC4C882EDEA5050768F91D8 ();
-// 0x000001DD System.Void PaintController_<>c__DisplayClass18_0::<OnSaveLayerClick>b__0(System.String)
-extern void U3CU3Ec__DisplayClass18_0_U3COnSaveLayerClickU3Eb__0_m9277039E197D6D79D58907888807836D27593022 ();
-// 0x000001DE System.Void PaintController_<>c__DisplayClass18_0::<OnSaveLayerClick>b__1(System.Boolean,System.Boolean,System.Single)
-extern void U3CU3Ec__DisplayClass18_0_U3COnSaveLayerClickU3Eb__1_mD1D06AB883FE6ADD46A1F8998B057FC1EB753DCE ();
+// 0x000001DC System.Void PaintController_<>c__DisplayClass17_0::.ctor()
+extern void U3CU3Ec__DisplayClass17_0__ctor_mB7E0865D53FC05A5557843DF1647F693F6CDDEFD ();
+// 0x000001DD System.Void PaintController_<>c__DisplayClass17_0::<OnSaveLayerClick>b__0(System.String)
+extern void U3CU3Ec__DisplayClass17_0_U3COnSaveLayerClickU3Eb__0_m051D4A00B731DF17A3F32411608E96CCFBECEF9A ();
+// 0x000001DE System.Void PaintController_<>c__DisplayClass17_0::<OnSaveLayerClick>b__1(System.Boolean,System.Boolean,System.Single)
+extern void U3CU3Ec__DisplayClass17_0_U3COnSaveLayerClickU3Eb__1_m727D74F633AC6851ABA7619E572EF6DAB467960D ();
 // 0x000001DF System.Void WanzyeeStudio.JsonNetUtility_<>c::.cctor()
 extern void U3CU3Ec__cctor_m82CB7C9DEA257CBA40DDFF79031F73AEAE5A2F6E ();
 // 0x000001E0 System.Void WanzyeeStudio.JsonNetUtility_<>c::.ctor()
@@ -1288,8 +1288,8 @@ static Il2CppMethodPointer s_methodPointers[526] =
 	PaintController_OnStatusChange_m935E882A373A8D6B0805181488E9A1170863C9EA,
 	PaintController_OnLocalized_m5A0B4C5902F637A071F0963E2A4FE6E5C82F775A,
 	PaintController__ctor_m818998C4946F96F96E83C961AF897F129CD0B884,
-	PaintController_U3CStartU3Eb__13_0_m4D1F675B1541722926FBB82496C310B34B4C17DE,
-	PaintController_U3COnLoadLayerClickU3Eb__19_0_mD78A6C8A38D38FAEAF44A56EFD273D80663766D1,
+	PaintController_U3CStartU3Eb__12_0_mE320951DFE034627210CDF87969C545F80AE8792,
+	PaintController_U3COnLoadLayerClickU3Eb__18_0_m99F14583631F332B468AEF701DD445D5E4E356B3,
 	ColorWheelControl_Start_mAB06127040D72A5D788C4E5443CD50C50E922E54,
 	ColorWheelControl_Update_m28A170B959F37BABE71C36D351F38A280AE0FBAC,
 	ColorWheelControl_GetColor_m84F6695CBFD0B3F2701D08A0F093FE065C21B94D,
@@ -1540,9 +1540,9 @@ static Il2CppMethodPointer s_methodPointers[526] =
 	U3CreplayDrawingU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mA1D250CA0C33881C7094EF6DF04B7438B945CFDB,
 	U3CreplayDrawingU3Ed__8_System_Collections_IEnumerator_Reset_m058057B8BA0D92FF23208B7DD5561902E256129E,
 	U3CreplayDrawingU3Ed__8_System_Collections_IEnumerator_get_Current_mE16A1347F43B5E67947D3370AEC6AA3700A72EC8,
-	U3CU3Ec__DisplayClass18_0__ctor_m6832104E5AD0CF6EBBC4C882EDEA5050768F91D8,
-	U3CU3Ec__DisplayClass18_0_U3COnSaveLayerClickU3Eb__0_m9277039E197D6D79D58907888807836D27593022,
-	U3CU3Ec__DisplayClass18_0_U3COnSaveLayerClickU3Eb__1_mD1D06AB883FE6ADD46A1F8998B057FC1EB753DCE,
+	U3CU3Ec__DisplayClass17_0__ctor_mB7E0865D53FC05A5557843DF1647F693F6CDDEFD,
+	U3CU3Ec__DisplayClass17_0_U3COnSaveLayerClickU3Eb__0_m051D4A00B731DF17A3F32411608E96CCFBECEF9A,
+	U3CU3Ec__DisplayClass17_0_U3COnSaveLayerClickU3Eb__1_m727D74F633AC6851ABA7619E572EF6DAB467960D,
 	U3CU3Ec__cctor_m82CB7C9DEA257CBA40DDFF79031F73AEAE5A2F6E,
 	U3CU3Ec__ctor_m0F0315ACDA5C7D58B7C209CDA2904A9372428C86,
 	U3CU3Ec_U3CInitializeU3Eb__1_0_m13F11664D8DA44DFCE1C16F5604FA9F772DD79FE,
