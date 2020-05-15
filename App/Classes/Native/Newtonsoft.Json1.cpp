@@ -1196,7 +1196,6 @@ IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1_GetValueOrDefault_m78CC8D5D3ABFC
 IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1_GetValueOrDefault_m9B6337DDFF610B2369A21ABE003A9777A458F6FE_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1_GetValueOrDefault_mB74595A5390226F1FBEDEB6C7F507D1AB57E1E28_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1__ctor_m08091F597C74B397324E4C8599F224F6AA9BA3BB_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1__ctor_m11F9C228CFDF836DDFCD7880C09CB4098AB9D7F2_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1__ctor_m19E96EA23A6273FAB5133E7D980C27F000C1FB92_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1__ctor_m2E6FC0D6DDFF0359075E8195130765ED04EA2010_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1__ctor_m431A7B37A7FB27E824A48CAAF72930B7D596399D_RuntimeMethod_var;
@@ -1212,6 +1211,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1__ctor_mA2C015497D01701140620ACCA
 IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1__ctor_mAB819EE77BD7E38C1E0E494C307D52F42DB259AE_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1__ctor_mAFE62620EADA9FD8E49BA1C0E2A2815C8366D491_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1__ctor_mC34B5D0417CE39DCD95A14161B422BA0BD5984EA_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1__ctor_mCA5C3573CEBE71F0457A9A4644BB3F6BB50B2834_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1__ctor_mD3154885E88D449C69AD9DEA6F9A3EF66A3FE996_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1__ctor_mE1C567291A8784C03994BE56D865978DB54F59FF_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1__ctor_mECC062BB3B525251E8DA021E28B9B63A33F45835_RuntimeMethod_var;
@@ -13047,7 +13047,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Nullable_1__ctor_m5ED9C022C8C437BF7E37E2
 // System.Void System.Nullable`1<System.Char>::.ctor(!0)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Nullable_1__ctor_mAFE62620EADA9FD8E49BA1C0E2A2815C8366D491_gshared (Nullable_1_tEB9036CD852DD7DCDAC49BEEC424155F285C4FD6 * __this, Il2CppChar ___value0, const RuntimeMethod* method);
 // System.Void System.Nullable`1<System.Int32>::.ctor(!0)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Nullable_1__ctor_m11F9C228CFDF836DDFCD7880C09CB4098AB9D7F2_gshared (Nullable_1_t0D03270832B3FFDDC0E7C2D89D4A0EA25376A1EB * __this, int32_t ___value0, const RuntimeMethod* method);
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Nullable_1__ctor_mCA5C3573CEBE71F0457A9A4644BB3F6BB50B2834_gshared (Nullable_1_t0D03270832B3FFDDC0E7C2D89D4A0EA25376A1EB * __this, int32_t ___value0, const RuntimeMethod* method);
 // System.Void System.Nullable`1<System.Int16>::.ctor(!0)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Nullable_1__ctor_mA2C015497D01701140620ACCA04B8B4E2AE05FBC_gshared (Nullable_1_t6DD1091F06288053C77A1E21CDA46B9FC0C082FE * __this, int16_t ___value0, const RuntimeMethod* method);
 // System.Void System.Nullable`1<System.UInt16>::.ctor(!0)
@@ -13555,9 +13555,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint8_t Convert_ToByte_m71CFEFDB61F13E2AD7ECF
 // System.SByte System.Convert::ToSByte(System.Object,System.IFormatProvider)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Convert_ToSByte_m2716303126BD8C930D1D4E8590F8706A8F26AD48 (RuntimeObject * ___value0, RuntimeObject* ___provider1, const RuntimeMethod* method);
 // System.Void System.Nullable`1<System.Int32>::.ctor(!0)
-inline void Nullable_1__ctor_m11F9C228CFDF836DDFCD7880C09CB4098AB9D7F2 (Nullable_1_t0D03270832B3FFDDC0E7C2D89D4A0EA25376A1EB * __this, int32_t ___value0, const RuntimeMethod* method)
+inline void Nullable_1__ctor_mCA5C3573CEBE71F0457A9A4644BB3F6BB50B2834 (Nullable_1_t0D03270832B3FFDDC0E7C2D89D4A0EA25376A1EB * __this, int32_t ___value0, const RuntimeMethod* method)
 {
-	((  void (*) (Nullable_1_t0D03270832B3FFDDC0E7C2D89D4A0EA25376A1EB *, int32_t, const RuntimeMethod*))Nullable_1__ctor_m11F9C228CFDF836DDFCD7880C09CB4098AB9D7F2_gshared)(__this, ___value0, method);
+	((  void (*) (Nullable_1_t0D03270832B3FFDDC0E7C2D89D4A0EA25376A1EB *, int32_t, const RuntimeMethod*))Nullable_1__ctor_mCA5C3573CEBE71F0457A9A4644BB3F6BB50B2834_gshared)(__this, ___value0, method);
 }
 // System.Void System.Nullable`1<System.Int16>::.ctor(!0)
 inline void Nullable_1__ctor_mA2C015497D01701140620ACCA04B8B4E2AE05FBC (Nullable_1_t6DD1091F06288053C77A1E21CDA46B9FC0C082FE * __this, int16_t ___value0, const RuntimeMethod* method)
@@ -21704,7 +21704,7 @@ IL_0052:
 		int32_t L_19 = Convert_ToInt32_m5D40340597602FB6C20BAB933E8B29617232757A(L_17, L_18, /*hidden argument*/NULL);
 		Nullable_1_t0D03270832B3FFDDC0E7C2D89D4A0EA25376A1EB  L_20;
 		memset((&L_20), 0, sizeof(L_20));
-		Nullable_1__ctor_m11F9C228CFDF836DDFCD7880C09CB4098AB9D7F2((&L_20), L_19, /*hidden argument*/Nullable_1__ctor_m11F9C228CFDF836DDFCD7880C09CB4098AB9D7F2_RuntimeMethod_var);
+		Nullable_1__ctor_mCA5C3573CEBE71F0457A9A4644BB3F6BB50B2834((&L_20), L_19, /*hidden argument*/Nullable_1__ctor_mCA5C3573CEBE71F0457A9A4644BB3F6BB50B2834_RuntimeMethod_var);
 		return L_20;
 	}
 }
@@ -34025,7 +34025,7 @@ IL_0136:
 		int32_t L_68 = DataMemberAttribute_get_Order_m1A3ADBDD919D8B3CECEDB183C5F8567F76CC9632_inline(L_67, /*hidden argument*/NULL);
 		Nullable_1_t0D03270832B3FFDDC0E7C2D89D4A0EA25376A1EB  L_69;
 		memset((&L_69), 0, sizeof(L_69));
-		Nullable_1__ctor_m11F9C228CFDF836DDFCD7880C09CB4098AB9D7F2((&L_69), L_68, /*hidden argument*/Nullable_1__ctor_m11F9C228CFDF836DDFCD7880C09CB4098AB9D7F2_RuntimeMethod_var);
+		Nullable_1__ctor_mCA5C3573CEBE71F0457A9A4644BB3F6BB50B2834((&L_69), L_68, /*hidden argument*/Nullable_1__ctor_mCA5C3573CEBE71F0457A9A4644BB3F6BB50B2834_RuntimeMethod_var);
 		G_B34_0 = L_69;
 		G_B34_1 = G_B33_0;
 		G_B34_2 = G_B33_1;

@@ -1068,7 +1068,6 @@ IL2CPP_EXTERN_C const uint32_t Cubemap__ctor_mFC82AF58FF4875D6750838AF47A05D5B20
 IL2CPP_EXTERN_C const uint32_t CullingGroup_t7F71E48F69794B87C5A7F3F27AD1F1517B2FBF1F_com_FromNativeMethodDefinition_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t CullingGroup_t7F71E48F69794B87C5A7F3F27AD1F1517B2FBF1F_pinvoke_FromNativeMethodDefinition_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t DebugLogHandler_LogException_m816CF2DDA84DFC1D1715B24F9626BD623FF05416_MetadataUsageId;
-IL2CPP_EXTERN_C const uint32_t Debug_Assert_m84EE43ACFD01E8C0CEC0160C494B2CE77338F7BC_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Debug_CallOverridenDebugHandler_m5F5FC22445A9C957A655734DA5B661A5E256BEBE_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Debug_LogAssertion_m2A8940871EC1BD01A405103429F2FCE2AFB12506_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Debug_LogErrorFormat_m994E4759C25BF0E9DD4179C10E3979558137CCF0_MetadataUsageId;
@@ -20632,38 +20631,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogWarningFormat_m4A02CCF91F3A9392
 		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_3 = ___args2;
 		NullCheck(L_0);
 		InterfaceActionInvoker4< int32_t, Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0 *, String_t*, ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* >::Invoke(0 /* System.Void UnityEngine.ILogHandler::LogFormat(UnityEngine.LogType,UnityEngine.Object,System.String,System.Object[]) */, ILogHandler_t941F581F97535C9BFC019CF1D0B44990E31F92B4_il2cpp_TypeInfo_var, L_0, 2, L_1, L_2, L_3);
-		return;
-	}
-}
-// System.Void UnityEngine.Debug::Assert(System.Boolean,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Assert_m84EE43ACFD01E8C0CEC0160C494B2CE77338F7BC (bool ___condition0, String_t* ___message1, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Debug_Assert_m84EE43ACFD01E8C0CEC0160C494B2CE77338F7BC_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	bool V_0 = false;
-	{
-		bool L_0 = ___condition0;
-		V_0 = (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
-		bool L_1 = V_0;
-		if (!L_1)
-		{
-			goto IL_0016;
-		}
-	}
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_t7B5FCB117E2FD63B6838BC52821B252E2BFB61C4_il2cpp_TypeInfo_var);
-		RuntimeObject* L_2 = Debug_get_unityLogger_mFA75EC397E067D09FD66D56B4E7692C3FCC3E960(/*hidden argument*/NULL);
-		String_t* L_3 = ___message1;
-		NullCheck(L_2);
-		InterfaceActionInvoker2< int32_t, RuntimeObject * >::Invoke(1 /* System.Void UnityEngine.ILogger::Log(UnityEngine.LogType,System.Object) */, ILogger_t572B66532D8EB6E76240476A788384A26D70866F_il2cpp_TypeInfo_var, L_2, 1, L_3);
-	}
-
-IL_0016:
-	{
 		return;
 	}
 }
