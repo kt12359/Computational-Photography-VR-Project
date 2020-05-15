@@ -1230,7 +1230,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Colors
+  m_Text: Brushes
 --- !u!222 &336447728
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1495,6 +1495,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1200291340}
   - {fileID: 1830464254}
   - {fileID: 1789404665}
   m_Father: {fileID: 1372132055}
@@ -3055,7 +3056,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1789404665}
+    m_TransformParent: {fileID: 515051212}
     m_Modifications:
     - target: {fileID: 2130943084915617136, guid: 4214b57e615806c448ba9d993d629531,
         type: 3}
@@ -3100,7 +3101,7 @@ PrefabInstance:
     - target: {fileID: 2130943084915617137, guid: 4214b57e615806c448ba9d993d629531,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2130943084915617137, guid: 4214b57e615806c448ba9d993d629531,
         type: 3}
@@ -3125,7 +3126,7 @@ PrefabInstance:
     - target: {fileID: 2130943084915617137, guid: 4214b57e615806c448ba9d993d629531,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 288
+      value: 388
       objectReference: {fileID: 0}
     - target: {fileID: 2130943084915617137, guid: 4214b57e615806c448ba9d993d629531,
         type: 3}
@@ -4521,7 +4522,7 @@ GameObject:
   - component: {fileID: 1789404667}
   - component: {fileID: 1789404666}
   m_Layer: 5
-  m_Name: ColorPalette
+  m_Name: Brushes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4541,9 +4542,8 @@ RectTransform:
   - {fileID: 894353446}
   - {fileID: 610553878}
   - {fileID: 35018194}
-  - {fileID: 1200291340}
   m_Father: {fileID: 515051212}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -4789,7 +4789,7 @@ RectTransform:
   - {fileID: 570739289}
   - {fileID: 125560524}
   m_Father: {fileID: 515051212}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}

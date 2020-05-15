@@ -9,7 +9,7 @@
     }
     SubShader
     {
-        Tags { "RenderType"="Opaque" }
+        Tags { "RenderType"="Transparent" }
         LOD 200
 
         CGPROGRAM
@@ -42,8 +42,12 @@
         {
             // Albedo comes from a texture tinted by color
             fixed4 c = tex2D (_MainTex, IN.uv_MainTex) * _Color;
+            float3 c2 = tex2D(_MainTex, IN.uv_MainTex).rgb;
+            float testIfBlack = c2.r + c2.g + c2.b - 2.8;
+            // If the pixel from input image is black, it will be clipped
+            // and code will not proceed beyond this point.
+            clip(testIfBlack);
             o.Albedo = c.rgb;
-            clip(o.Albedo - 0.001);
             // Metallic and smoothness come from slider variables
             o.Metallic = _Metallic;
             o.Smoothness = _Glossiness;
