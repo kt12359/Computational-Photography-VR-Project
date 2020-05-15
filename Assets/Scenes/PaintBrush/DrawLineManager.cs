@@ -67,10 +67,20 @@ public class DrawLineManager : MonoBehaviour {
         //setLineColor(buttonImage.color);
     }
 
+	public void OnPaintBrushTypeClick(Material selectedMaterial)
+	{
+		setBrushMaterial(selectedMaterial);
+	}
+
     public void OnLineWidthSliderChanged()
     {
         setLineWidth(slider.value);
     }
+
+	public void setBrushMaterial(Material selectedMaterial)
+	{
+		lMat = selectedMaterial;
+	}
 
 
     public Vector3 getRayEndPoint(float dist)
