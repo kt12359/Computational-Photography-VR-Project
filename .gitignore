@@ -1,3 +1,10 @@
+# I'm not 100% sure which are configuration, so here is a list of what I think is NOT
+# Ideally, the post build script in Unity would just set this stuff up, or the configuration would be set in Unity
+App/Classes
+
+
+
+
 
 # Created by https://www.gitignore.io/api/xcode,unity,macos,sublimetext,visualstudiocode
 # Edit at https://www.gitignore.io/?templates=xcode,unity,macos,sublimetext,visualstudiocode

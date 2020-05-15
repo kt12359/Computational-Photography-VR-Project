@@ -34,6 +34,7 @@ public class PostBuildTrigger : MonoBehaviour
         proj.SetBuildProperty(projectGuid, "ENABLE_BITCODE", "NO");
         proj.SetBuildProperty(frameworkTargetGuid, "ENABLE_BITCODE", "NO");
         proj.SetBuildProperty(mainTargetGuid, "ENABLE_BITCODE", "NO");
+
         proj.WriteToFile (projPath); 
         //EmbedFrameworks end
         #endif
