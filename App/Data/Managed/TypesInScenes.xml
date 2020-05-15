@@ -83,6 +83,7 @@
 		<type fullname="UnityEngine.UI.Dropdown" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.GraphicRaycaster" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.GridLayoutGroup" preserve="nothing"/>
+		<type fullname="UnityEngine.UI.HorizontalLayoutGroup" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Image" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.InputField" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Mask" preserve="nothing"/>
@@ -91,5 +92,6 @@
 		<type fullname="UnityEngine.UI.Slider" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Text" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Toggle" preserve="nothing"/>
+		<type fullname="UnityEngine.UI.VerticalLayoutGroup" preserve="nothing"/>
 	</assembly>
 </linker>

@@ -681,6 +681,13 @@
         {
             "managedAssemblyName": "UnityEngine.UI.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.UI.HorizontalLayoutGroup",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UI.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.UI.Image",
             "moduleName": "",
             "usedInScenes": []
@@ -731,6 +738,13 @@
             "managedAssemblyName": "UnityEngine.UI.dll",
             "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.UI.Toggle",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UI.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.UI.VerticalLayoutGroup",
             "moduleName": "",
             "usedInScenes": []
         }

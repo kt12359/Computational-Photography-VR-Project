@@ -13,7 +13,8 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 
 	public GameObject paintPanel;
 	public GameObject startPanel;
-    public GameObject loadPanel;
+
+    private GameObject buttonPanel;
 
     [SerializeField] GameObject brushTipObject;
     [SerializeField] GameObject colorPalette;
@@ -54,6 +55,16 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
             mLocalizationThumbnail.texture = thumbnailTexture;
         };
 
+
+        // Make sure panels match the defaults
+        startPanel.SetActive (true);
+		paintPanel.SetActive (false);
+		colorPalette.SetActive(false);
+		brushTipObject.SetActive(false);
+
+		// Make sure this child is active for when its parent is active
+		buttonPanel = paintPanel.transform.Find("ButtonPanel").gameObject;
+		buttonPanel.SetActive(true);
     }
 
 	public void onClickEnablePointCloud()
@@ -92,7 +103,6 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 
 	public void onStartPaintingClick ()
 	{
-    
 		startPanel.SetActive (false);
 		paintPanel.SetActive (true);
 
@@ -103,109 +113,38 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
         brushTipObject.SetActive(true);
 
         textLabel.text = "Press and hold the screen to paint";
-
-
 	}
 
 
-
-	public void OnSaveMapClick ()
+	public void OnSaveLayerClick (int layerNum)
 	{
-		
-
 		if (!LibPlacenote.Instance.Initialized()) {
 			Debug.Log ("SDK not yet initialized");
 			return;
 		}
 
-		//mLabelText.text = "Saving...";
-		LibPlacenote.Instance.SaveMap (
-			(mapId) => {
-				LibPlacenote.Instance.StopSession ();
-
-				print("Saved Map Id:" + mapId);
-
-				saveScene (mapId);
-
-				textLabel.text = "Saving Your Painting: ";
-
-				//mLabelText.text = "Saved Map ID: " + mapId;
-				//mInitButtonPanel.SetActive (true);
-				//mMappingButtonPanel.SetActive (false);
-
-				//string jsonPath = Path.Combine(Application.persistentDataPath, mapId + ".json");
-				//SaveShapes2JSON(jsonPath);
-			},
-			(completed, faulted, percentage) => {
-				Debug.Log("Uploading map...");
-
-				if(completed) {
-					Debug.Log("Done Uploaded!!");
-
-					textLabel.text = "Saved! Try Loading it!";
-
-					startPanel.SetActive(true);
-					paintPanel.SetActive(false);
-
-                    // clearing the painting and history currently active
-                    onClearAllClick();
-
-                }
-                else if(faulted)
-                {
-                    textLabel.text = "Map upload failed.";
-                }
-                else
-                {
-                    textLabel.text = "Saving Your Painting: " + (percentage * 100.0f).ToString("F2") + " %";
-                }
-
-            }
-		);
+		textLabel.text = "Saving Layer " + layerNum;
+		GetComponent<DrawingHistoryManager>().saveLayer(layerNum);
+		textLabel.text = "Layer " + layerNum + " saved!";
 	}
-		
-	public void OnLoadMapClicked ()
-	{
 
+
+	public void OnLoadLayerClick (int layerNum)
+	{
 		if (!LibPlacenote.Instance.Initialized()) {
 			Debug.Log ("SDK not yet initialized");
 			return;
 		}
 
-		var mSelectedMapId = GetComponent<DrawingHistoryManager> ().loadMapIDFromFile ();
-
-		if (mSelectedMapId == null) {
-			Debug.Log ("The saved map id was null!");
-
-		} else {
-			LibPlacenote.Instance.LoadMap (mSelectedMapId,
-				(completed, faulted, percentage) => {
-					if (completed) {
-
-						textLabel.text = "To load your drawing, point at the area shown in the thumbnail.";
-
-                        startPanel.SetActive(false);
-                        loadPanel.SetActive(true);
-
-                        mLocalizationThumbnailContainer.gameObject.SetActive(true);
-                        LibPlacenote.Instance.StartSession ();
-						//mLabelText.text = "Loaded ID: " + mSelectedMapId;
-					} else if (faulted) {
-						//mLabelText.text = "Failed to load ID: " + mSelectedMapId;
-					}
-				}
-			);
-		}
-
-
+		textLabel.text = "Loading Layer " + layerNum;
+		GetComponent<DrawingHistoryManager>().loadLayer(layerNum);
+		textLabel.text = "Layer " + layerNum + " loaded!";
 	}
+
 
     public void OnExitLoadedPaintingClick()
     {
         mLocalizationThumbnailContainer.gameObject.SetActive(false);
-
-        loadPanel.SetActive(false);
-        startPanel.SetActive(true);
 
         LibPlacenote.Instance.StopSession();
         FeaturesVisualizer.ClearPointcloud();
@@ -214,19 +153,8 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
     }
 
 
-    public void replayDrawing()
-	{
-		deleteAllObjects ();
-
-		StartCoroutine ( GetComponent<DrawingHistoryManager> ().replayDrawing () );
-
-
-	}
-
-
 	public void deleteAllObjects()
 	{
-
 		int numChildren = drawingRootSceneObject.transform.childCount;
 
 		for (int i = 0; i < numChildren; i++) {
@@ -244,34 +172,11 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 	public void onClearAllClick()
 	{
 		deleteAllObjects ();
-		GetComponent<DrawingHistoryManager> ().resetHistory ();
+		GetComponent<DrawingHistoryManager>().resetHistory ();
 	}
 
-
-	public void saveScene (string mapid)
-	{
-		GetComponent<DrawingHistoryManager> ().saveDrawingHistory ();
-
-		GetComponent<DrawingHistoryManager> ().saveMapIDToFile (mapid);
-	}
-
-
-	public void loadSavedScene()
-	{
-		// delete current scene
-		deleteAllObjects();
-
-		// load saved scene
-		GetComponent<DrawingHistoryManager> ().loadFromDrawingHistory ();
-
-		// replay drawing
-		replayDrawing();
-
-
-	}
 
 	public void OnPose (Matrix4x4 outputPose, Matrix4x4 arkitPose) {}
-
 
 
 	// This function runs when LibPlacenote sends a status change message like Localized!
@@ -299,13 +204,15 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 
     public void OnLocalized()
     {
-        textLabel.text = "Found It!";
+    	// Not being used right now
+    	return;
+        // textLabel.text = "Found It!";
 
-        loadSavedScene();
+        // loadSavedScene();
 
-        mLocalizationThumbnailContainer.gameObject.SetActive(false);
+        // mLocalizationThumbnailContainer.gameObject.SetActive(false);
 
-        // To increase tracking smoothness after localization
-        LibPlacenote.Instance.StopSendingFrames();
+        // // To increase tracking smoothness after localization
+        // LibPlacenote.Instance.StopSendingFrames();
     }
 }

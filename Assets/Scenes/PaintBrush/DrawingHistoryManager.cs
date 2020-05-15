@@ -7,18 +7,17 @@ using System.Linq;
 
 public class DrawingHistoryManager : MonoBehaviour {
 
-
 	public GameObject paintBrushSceneObject;
 
-	private ColorWheelControl cw = new ColorWheelControl();
-	public class drawingcommand{
+	public class DrawingCommand{
 		public int index;
 		public int objType;
 		public Vector3 position;
 		public Color color;
 		public float lineWidth;
 
-		public drawingcommand(int _index, int _objType, Vector3 _position, Color _color, float _lineWidth)
+		// A drawing command from individual values
+		public DrawingCommand(int _index, int _objType, Vector3 _position, Color _color, float _lineWidth)
 		{
 			index = _index;
 			objType = _objType;
@@ -26,133 +25,71 @@ public class DrawingHistoryManager : MonoBehaviour {
 			color = _color;
 			lineWidth = _lineWidth;
 		}
+
+		// A drawing command from a single string representation
+		public DrawingCommand(string commandString)
+		{
+			string[] values = commandString.Split(',');
+
+			index = Int32.Parse(values[0]);
+			objType = Int32.Parse(values[1]);
+			position = new Vector3 (Convert.ToSingle(values[2]), Convert.ToSingle(values[3]), Convert.ToSingle(values[4]));
+			color = new Color(Convert.ToSingle(values[5]), Convert.ToSingle(values[6]), Convert.ToSingle(values[7]));
+			lineWidth = Convert.ToSingle (values [8]);
+		}
+
+		// Comma-delimited string representation
+		public string ToString()
+		{
+			string commandString = 
+				index.ToString() + "," + 
+				objType.ToString() + "," + 
+				position.x.ToString() + "," + 
+				position.y.ToString() + "," + 
+				position.z.ToString() + "," + 
+				color.r.ToString() + "," + 
+				color.g.ToString() + "," + 
+				color.b.ToString() + "," + 
+				lineWidth.ToString();
+			return commandString;
+		}
 	}
 
-	public List<drawingcommand> drawingHistory;
+	public List<DrawingCommand> drawingHistory;
 
 	// Use this for initialization
 	void Start () {
-
 		// initialize the queue.
-		drawingHistory = new List<drawingcommand>();
+		drawingHistory = new List<DrawingCommand>();
 	}
 
 	// Update is called once per frame
-	void Update () {
-
-	}
+	void Update () {}
 
 	public void resetHistory()
 	{
-		drawingHistory.Clear ();
+		drawingHistory.Clear();
 	}
 
 	public void addDrawingCommand(int index, int objType, Vector3 position, Color color, float lineWidth)
 	{
-		drawingcommand newCommand = new drawingcommand (index, objType, position, color, lineWidth);
+		DrawingCommand newCommand = new DrawingCommand (index, objType, position, color, lineWidth);
 		drawingHistory.Add (newCommand);
 	}
 
-	public IEnumerator replayDrawing()
+
+	// TODO Either remove or use this
+	public void saveMapIDToFile(string mapid, int layerNum)
 	{
-		int currentIndex = -1;
-
-		foreach (drawingcommand cmd in drawingHistory) {
-
-			if (cmd.index == currentIndex) {
-
-				// continue line
-
-				paintBrushSceneObject.GetComponent<DrawLineManager>().addReplayLineSegment(true, cmd.lineWidth, cmd.position, cmd.color);
-
-				currentIndex = cmd.index;
-
-			} else if (cmd.index > currentIndex) {
-
-				if (cmd.objType == 0)
-				{
-					// add line
-
-					paintBrushSceneObject.GetComponent<DrawLineManager>().addReplayLineSegment(false, cmd.lineWidth, cmd.position, cmd.color);
-					currentIndex = cmd.index;
-
-
-				}
-				else if (cmd.objType == 1)
-				{
-					// add cube
-					//cubePanel.GetComponent<DrawCubeManager>().addReplayCubeAtEndpoint(cmd.position, cmd.color);
-					currentIndex = cmd.index;
-
-				}
-
-			}
-
-            yield return null;
-
-		}
-
-	}
-
-	public bool isDrawingHistoryEmpty()
-	{
-		if (drawingHistory.Count == 0)
-			return true;
-		else
-			return false;
-	}
-
-	public void replayDrawingFast()
-	{
-		int currentIndex = -1;
-
-		foreach (drawingcommand cmd in drawingHistory) {
-
-			if (cmd.index == currentIndex) {
-
-				// continue line
-
-				paintBrushSceneObject.GetComponent<DrawLineManager>().addReplayLineSegment(true, cmd.lineWidth, cmd.position, cmd.color);
-
-				currentIndex = cmd.index;
-
-			} else if (cmd.index > currentIndex) {
-
-				if (cmd.objType == 0)
-				{
-					// add line
-
-					paintBrushSceneObject.GetComponent<DrawLineManager>().addReplayLineSegment(false, cmd.lineWidth, cmd.position, cmd.color);
-					currentIndex = cmd.index;
-
-
-				}
-				else if (cmd.objType == 1)
-				{
-					// add cube
-					//cubePanel.GetComponent<DrawCubeManager>().addReplayCubeAtEndpoint(cmd.position, cmd.color);
-					currentIndex = cmd.index;
-
-				}
-
-			}
-				
-
-
-		}
-
-	}
-
-
-	public void saveMapIDToFile(string mapid)
-	{
+		// string filePath = Application.persistentDataPath + "/mapIDFile" + layerNum + ".txt";
 		string filePath = Application.persistentDataPath + "/mapIDFile.txt";
 		StreamWriter sr = File.CreateText (filePath);
 		sr.WriteLine (mapid);
 		sr.Close ();
 	}
 
-	public string loadMapIDFromFile ()
+	// TODO Either remove or use this
+	public string loadMapIDFromFile (int layerNum)
 	{
 		string savedMapID;
 
@@ -169,7 +106,6 @@ public class DrawingHistoryManager : MonoBehaviour {
 				// Create drawing command structure from string.
 				savedMapID = text;
 				return savedMapID;
-
 			}
 
 		} while (text != null);
@@ -178,72 +114,75 @@ public class DrawingHistoryManager : MonoBehaviour {
 	}
 
 
-	// save the drawing histor
-	public void saveDrawingHistory()
+	// Save a layer to a file
+	public void saveLayer(int layerNum)
 	{
-		// save the current drawingHistory as the only file allowed to be saved.
-		// write to file
-		string filePath = Application.persistentDataPath + "/historyFile.txt";
+		string layerFilepath = Application.persistentDataPath + "/layer" + layerNum + ".txt";
 
-		Debug.Log ("File path saved = " + filePath);
+		Debug.Log ("saveLayer(" + layerNum + "); filepath = " + layerFilepath);
 
-		StreamWriter sr = File.CreateText (filePath);
+		StreamWriter writer = File.CreateText (layerFilepath);
 
-		foreach (drawingcommand cmd in drawingHistory)
+		foreach (DrawingCommand command in drawingHistory)
 		{
-			string toWrite = cmd.index.ToString() + "," + cmd.objType.ToString() + "," + cmd.position.x.ToString() + "," + cmd.position.y.ToString() + "," 
-				+ cmd.position.z.ToString() + "," + cmd.color.r.ToString() + "," 
-				+ cmd.color.g.ToString() + "," + cmd.color.b.ToString() + "," 
-				+ cmd.lineWidth.ToString();
-
-			sr.WriteLine (toWrite);
-
+			writer.WriteLine (command.ToString());
 		}
-		sr.Close ();
-
+		writer.Close();
 	}
 
-	public void loadFromDrawingHistory()
+	// Loads a saved layer and renders to the screen
+	public void loadLayer(int layerNum)
 	{
+		FileInfo layerFile = new FileInfo(Application.persistentDataPath + "/layer" + layerNum + ".txt");
+		StreamReader reader = layerFile.OpenText();
+		string commandString;
+		List<DrawingCommand> commands = new List<DrawingCommand>();
 
-		// read history file
-		FileInfo historyFile = new FileInfo(Application.persistentDataPath + "/historyFile.txt");
-		StreamReader sr = historyFile.OpenText ();
-		string text;
+		// Read the commands from the file
+		while (true) 
+		{
+			commandString = reader.ReadLine();
+			if (commandString == null) break;
+			commands.Add(new DrawingCommand(commandString));
+		}
 
-		do {
-			text = sr.ReadLine();
+		StartCoroutine(renderCommands(commands));
+	}
 
-			if (text != null)
-			{
-				// Create drawing command structure from string.
-				drawingcommand lineCmd = parseSaveCmdLine(text);
-				drawingHistory.Add(lineCmd);
+	// Renders a list of commands to the screen
+	public IEnumerator renderCommands(List<DrawingCommand> commands)
+	{
+		int currentIndex = -1;
 
+		foreach (DrawingCommand command in commands) {
+
+			// Add to history
+			drawingHistory.Add(command);
+
+			// Render the command
+			if (command.index == currentIndex) {
+				// Continue drawing the same object/line
+				paintBrushSceneObject.GetComponent<DrawLineManager>().addReplayLineSegment(true, command.lineWidth, command.position, command.color);
+				currentIndex = command.index;
+
+			} else if (command.index > currentIndex) {
+				// Start new object/line
+				if (command.objType == 0)
+				{
+					// It's a line
+					paintBrushSceneObject.GetComponent<DrawLineManager>().addReplayLineSegment(false, command.lineWidth, command.position, command.color);
+					currentIndex = command.index;
+				}
+				else if (command.objType == 1)
+				{
+					// add cube
+					// TODO - do we need this? Right now only objType=1 is being used
+					//cubePanel.GetComponent<DrawCubeManager>().addReplayCubeAtEndpoint(command.position, command.color);
+					currentIndex = command.index;
+				}
 			}
 
-		} while (text != null);
-
-		// load into scene
-
+            yield return null;
+		}
 	}
-
-	drawingcommand parseSaveCmdLine(string textLine)
-	{
-		string[] values = textLine.Split (',');
-
-		int _index = Int32.Parse (values [0]);
-		int _objType = Int32.Parse (values [1]);
-		Vector3 _position = new Vector3 (Convert.ToSingle (values [2]), Convert.ToSingle (values [3]), Convert.ToSingle (values [4]));
-		//Color _color = new Color (Convert.ToSingle (values [5]), Convert.ToSingle (values [6]), Convert.ToSingle (values [7]));
-		Color _color = cw.GetColor();
-		float _lineWidth = Convert.ToSingle (values [8]);
-
-		drawingcommand theCmd = new drawingcommand (_index, _objType, _position, _color, _lineWidth);
-
-		return theCmd;
-	}
-
-
-
 }
