@@ -18,6 +18,9 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 
     [SerializeField] GameObject brushTipObject;
     [SerializeField] GameObject colorPalette;
+    [SerializeField] GameObject mainButtonPanel;
+    [SerializeField] GameObject saveLayerPanel;
+    [SerializeField] GameObject loadLayerPanel;
 
     [SerializeField] RawImage mLocalizationThumbnail;
     [SerializeField] Image mLocalizationThumbnailContainer;
@@ -58,6 +61,10 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 
         // Make sure panels match the defaults
         startPanel.SetActive (true);
+        mainButtonPanel.SetActive(true);
+
+        saveLayerPanel.SetActive(false);
+        loadLayerPanel.SetActive(false);
 		paintPanel.SetActive (false);
 		colorPalette.SetActive(false);
 		brushTipObject.SetActive(false);
@@ -115,6 +122,18 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
         textLabel.text = "Press and hold the screen to paint";
 	}
 
+	public void ToggleSaveLayerPanel(bool saveLayerPanelActive)
+	{
+		saveLayerPanel.SetActive(saveLayerPanelActive);
+        mainButtonPanel.SetActive(!saveLayerPanelActive);
+	}
+
+	public void ToggleLoadLayerPanel(bool loadLayerPanelActive)
+	{
+		loadLayerPanel.SetActive(loadLayerPanelActive);
+        mainButtonPanel.SetActive(!loadLayerPanelActive);
+	}
+
 
 	public void OnSaveLayerClick (int layerNum)
 	{
@@ -126,8 +145,8 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 		textLabel.text = "Saving Layer " + layerNum;
 		GetComponent<DrawingHistoryManager>().saveLayer(layerNum);
 		textLabel.text = "Layer " + layerNum + " saved!";
+		ToggleSaveLayerPanel(false);
 	}
-
 
 	public void OnLoadLayerClick (int layerNum)
 	{
@@ -139,6 +158,7 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 		textLabel.text = "Loading Layer " + layerNum;
 		GetComponent<DrawingHistoryManager>().loadLayer(layerNum);
 		textLabel.text = "Layer " + layerNum + " loaded!";
+		ToggleLoadLayerPanel(false);
 	}
 
 
