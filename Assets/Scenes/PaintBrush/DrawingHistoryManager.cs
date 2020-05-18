@@ -39,7 +39,7 @@ public class DrawingHistoryManager : MonoBehaviour {
 		}
 
 		// Comma-delimited string representation
-		public string ToString()
+		override public string ToString()
 		{
 			string commandString = 
 				index.ToString() + "," + 
