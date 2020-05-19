@@ -795,7 +795,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteral22514B4B867BBF33CE0FCE9EFDE4E50DB9C5BCED
 IL2CPP_EXTERN_C String_t* _stringLiteral2483914E6452B1BCB6A4BDB39FD1F2BED71B01D6;
 IL2CPP_EXTERN_C String_t* _stringLiteral280CEE9C684A6DDBA77318ADB357227915DC77A8;
 IL2CPP_EXTERN_C String_t* _stringLiteral2986EAE91B0223F981DDC06EB4F4F28348FCCE4B;
-IL2CPP_EXTERN_C String_t* _stringLiteral2A62CA293888A0ADC80B51878836E76049851EAA;
 IL2CPP_EXTERN_C String_t* _stringLiteral2BD306FE41D677C7324977457B5469FFB3F0E58A;
 IL2CPP_EXTERN_C String_t* _stringLiteral314CC9BC2DD78DD6741F9E1C9BCCE9A3BD2A3C1B;
 IL2CPP_EXTERN_C String_t* _stringLiteral339F5868588CFC8FDA4A1EC94EAD8F737C5FCFC0;
@@ -899,6 +898,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralEFFEB2B0885C8905BFFECFBD0041E5BB8D7933F6
 IL2CPP_EXTERN_C String_t* _stringLiteralF0E0B90A974C280DF048E09B763E9710042B5808;
 IL2CPP_EXTERN_C String_t* _stringLiteralF20D390E58FB2BBA75615C5C468F2CA158A2D576;
 IL2CPP_EXTERN_C String_t* _stringLiteralF4AA65AE93165E47343FC428663B9C9607D1DE03;
+IL2CPP_EXTERN_C String_t* _stringLiteralF6778F669D0AA1EE3DC676B8A3147F0DCA54F757;
 IL2CPP_EXTERN_C String_t* _stringLiteralF8B292AFE7340C0863086F413DA9726D63142BBB;
 IL2CPP_EXTERN_C String_t* _stringLiteralFF617FFC83DF850D13B380920E75F3C0C2A68081;
 IL2CPP_EXTERN_C String_t* _stringLiteralFF9AC50EE2C6EB4B8E55A566B40445CC11EC5F71;
@@ -20119,7 +20119,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DrawLineManager__UpdateFeature_mABDD556E
 	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  V_7;
 	memset((&V_7), 0, sizeof(V_7));
 	float V_8 = 0.0f;
-	float V_9 = 0.0f;
+	bool V_9 = false;
 	Touch_tAACD32535FF3FE5DD91125E0B6987B93C68D2DE8  V_10;
 	memset((&V_10), 0, sizeof(V_10));
 	bool V_11 = false;
@@ -20130,17 +20130,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DrawLineManager__UpdateFeature_mABDD556E
 	bool V_14 = false;
 	bool V_15 = false;
 	bool V_16 = false;
-	bool V_17 = false;
-	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * V_18 = NULL;
-	Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  V_19;
-	memset((&V_19), 0, sizeof(V_19));
-	int32_t V_20 = 0;
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * V_17 = NULL;
+	Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  V_18;
+	memset((&V_18), 0, sizeof(V_18));
+	int32_t V_19 = 0;
+	bool V_20 = false;
 	bool V_21 = false;
 	bool V_22 = false;
-	bool V_23 = false;
-	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  V_24;
-	memset((&V_24), 0, sizeof(V_24));
-	int32_t V_25 = 0;
+	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  V_23;
+	memset((&V_23), 0, sizeof(V_23));
+	int32_t V_24 = 0;
 	Exception_t * __last_unhandled_exception = 0;
 	NO_UNUSED_WARNING (__last_unhandled_exception);
 	Exception_t * __exception_local = 0;
@@ -20224,7 +20223,7 @@ IL_004a:
 		NullCheck(L_14);
 		Renderer_set_enabled_m0933766657F2685BAAE3340B0A984C0E63925303(L_14, (bool)1, /*hidden argument*/NULL);
 		// return;
-		goto IL_038f;
+		goto IL_0375;
 	}
 
 IL_0068:
@@ -20245,8 +20244,8 @@ IL_0068:
 		__this->set_paintLineColor_13(L_19);
 		// Vector3 pointToDraw = new Vector3(float.PositiveInfinity, float.PositiveInfinity, float.PositiveInfinity);
 		Vector3__ctor_m08F61F548AA5836D8789843ACB4A81E4963D2EE1((Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 *)(&V_7), (std::numeric_limits<float>::infinity()), (std::numeric_limits<float>::infinity()), (std::numeric_limits<float>::infinity()), /*hidden argument*/NULL);
-		// float minDistance = Mathf.Infinity;
-		V_8 = (std::numeric_limits<float>::infinity());
+		// bool doDraw = false;
+		V_9 = (bool)0;
 		// foreach (Vector3 featurePoint in pointCloud) {
 		List_1_tFCCBEDAA56D8F7598520FB136A9F8D713033D6B5 * L_20 = V_4;
 		NullCheck(L_20);
@@ -20254,14 +20253,14 @@ IL_0068:
 		V_12 = L_21;
 	}
 
-IL_00bc:
+IL_00b8:
 	try
 	{ // begin try (depth: 1)
 		{
-			goto IL_0115;
+			goto IL_0116;
 		}
 
-IL_00be:
+IL_00ba:
 		{
 			// foreach (Vector3 featurePoint in pointCloud) {
 			Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_22 = Enumerator_get_Current_mA28993FAE04AD21DAECAAECD79677D894B9CD08F_inline((Enumerator_t48C4103E92ACB77DD71FE41A2E4D5874FABF60F3 *)(&V_12), /*hidden argument*/Enumerator_get_Current_mA28993FAE04AD21DAECAAECD79677D894B9CD08F_RuntimeMethod_var);
@@ -20271,333 +20270,315 @@ IL_00be:
 			Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_24 = V_13;
 			IL2CPP_RUNTIME_CLASS_INIT(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_il2cpp_TypeInfo_var);
 			float L_25 = Vector3_Distance_mE316E10B9B319A5C2A29F86E028740FD528149E7(L_23, L_24, /*hidden argument*/NULL);
-			V_9 = L_25;
-			// if (curDistance < minDistance) {
-			float L_26 = V_9;
-			float L_27 = V_8;
+			V_8 = L_25;
+			// if (curDistance < distanceThreshold) {
+			float L_26 = V_8;
+			float L_27 = V_5;
 			V_14 = (bool)((((float)L_26) < ((float)L_27))? 1 : 0);
 			bool L_28 = V_14;
 			if (!L_28)
 			{
-				goto IL_0114;
+				goto IL_0115;
 			}
 		}
 
-IL_00df:
+IL_00db:
 		{
-			// minDistance = curDistance;
-			float L_29 = V_9;
-			V_8 = L_29;
+			// Debug.Log("curDistance = " + curDistance);
+			float L_29 = V_8;
+			float L_30 = L_29;
+			RuntimeObject * L_31 = Box(Single_tDDDA9169C4E4E308AC6D7A824F9B28DC82204AE1_il2cpp_TypeInfo_var, &L_30);
+			String_t* L_32 = String_Concat_mBB19C73816BDD1C3519F248E1ADC8E11A6FDB495(_stringLiteralF6778F669D0AA1EE3DC676B8A3147F0DCA54F757, L_31, /*hidden argument*/NULL);
+			IL2CPP_RUNTIME_CLASS_INIT(Debug_t7B5FCB117E2FD63B6838BC52821B252E2BFB61C4_il2cpp_TypeInfo_var);
+			Debug_Log_m4B7C70BAFD477C6BDB59C88A0934F0B018D03708(L_32, /*hidden argument*/NULL);
 			// pointToDraw.Set(featurePoint.x, featurePoint.y, featurePoint.z);
-			Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_30 = V_13;
-			float L_31 = L_30.get_x_2();
-			Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_32 = V_13;
-			float L_33 = L_32.get_y_3();
-			Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_34 = V_13;
-			float L_35 = L_34.get_z_4();
-			Vector3_Set_m8F08F9B5324A755A28A0832DCA2A0CB19423E5EC((Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 *)(&V_7), L_31, L_33, L_35, /*hidden argument*/NULL);
-			// if (minDistance <= distanceThreshold) {
-			float L_36 = V_8;
-			float L_37 = V_5;
-			V_15 = (bool)((((int32_t)((!(((float)L_36) <= ((float)L_37)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-			bool L_38 = V_15;
-			if (!L_38)
-			{
-				goto IL_0113;
-			}
-		}
-
-IL_0110:
-		{
+			Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_33 = V_13;
+			float L_34 = L_33.get_x_2();
+			Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_35 = V_13;
+			float L_36 = L_35.get_y_3();
+			Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_37 = V_13;
+			float L_38 = L_37.get_z_4();
+			Vector3_Set_m8F08F9B5324A755A28A0832DCA2A0CB19423E5EC((Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 *)(&V_7), L_34, L_36, L_38, /*hidden argument*/NULL);
+			// doDraw = true;
+			V_9 = (bool)1;
 			// break;
-			goto IL_011e;
-		}
-
-IL_0113:
-		{
-		}
-
-IL_0114:
-		{
+			goto IL_011f;
 		}
 
 IL_0115:
+		{
+		}
+
+IL_0116:
 		{
 			// foreach (Vector3 featurePoint in pointCloud) {
 			bool L_39 = Enumerator_MoveNext_m69228816AF06E8E322AEC50D13F7EE4FE3FB3BB3((Enumerator_t48C4103E92ACB77DD71FE41A2E4D5874FABF60F3 *)(&V_12), /*hidden argument*/Enumerator_MoveNext_m69228816AF06E8E322AEC50D13F7EE4FE3FB3BB3_RuntimeMethod_var);
 			if (L_39)
 			{
-				goto IL_00be;
+				goto IL_00ba;
 			}
 		}
 
-IL_011e:
+IL_011f:
 		{
-			IL2CPP_LEAVE(0x12F, FINALLY_0120);
+			IL2CPP_LEAVE(0x130, FINALLY_0121);
 		}
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		__last_unhandled_exception = (Exception_t *)e.ex;
-		goto FINALLY_0120;
+		goto FINALLY_0121;
 	}
 
-FINALLY_0120:
+FINALLY_0121:
 	{ // begin finally (depth: 1)
 		Enumerator_Dispose_mE796F469CC7CBCE71D17E9F1BD8E068F6238C865((Enumerator_t48C4103E92ACB77DD71FE41A2E4D5874FABF60F3 *)(&V_12), /*hidden argument*/Enumerator_Dispose_mE796F469CC7CBCE71D17E9F1BD8E068F6238C865_RuntimeMethod_var);
-		IL2CPP_END_FINALLY(288)
+		IL2CPP_END_FINALLY(289)
 	} // end finally (depth: 1)
-	IL2CPP_CLEANUP(288)
+	IL2CPP_CLEANUP(289)
 	{
-		IL2CPP_JUMP_TBL(0x12F, IL_012f)
+		IL2CPP_JUMP_TBL(0x130, IL_0130)
 		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
 	}
 
-IL_012f:
+IL_0130:
 	{
-		// Debug.Log("_UpdateFeature() minDistance = " + minDistance);
-		float L_40 = V_8;
-		float L_41 = L_40;
-		RuntimeObject * L_42 = Box(Single_tDDDA9169C4E4E308AC6D7A824F9B28DC82204AE1_il2cpp_TypeInfo_var, &L_41);
-		String_t* L_43 = String_Concat_mBB19C73816BDD1C3519F248E1ADC8E11A6FDB495(_stringLiteral2A62CA293888A0ADC80B51878836E76049851EAA, L_42, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_t7B5FCB117E2FD63B6838BC52821B252E2BFB61C4_il2cpp_TypeInfo_var);
-		Debug_Log_m4B7C70BAFD477C6BDB59C88A0934F0B018D03708(L_43, /*hidden argument*/NULL);
-		// Debug.Log("_UpdateFeature() endPoint = " + endPoint);
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_44 = V_6;
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_45 = L_44;
-		RuntimeObject * L_46 = Box(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_il2cpp_TypeInfo_var, &L_45);
-		String_t* L_47 = String_Concat_mBB19C73816BDD1C3519F248E1ADC8E11A6FDB495(_stringLiteralC9C3F99B6F8E39D285511235FB8F3E75C8B68B33, L_46, /*hidden argument*/NULL);
-		Debug_Log_m4B7C70BAFD477C6BDB59C88A0934F0B018D03708(L_47, /*hidden argument*/NULL);
-		// Debug.Log("_UpdateFeature() pointToDraw = " + pointToDraw);
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_48 = V_7;
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_49 = L_48;
-		RuntimeObject * L_50 = Box(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_il2cpp_TypeInfo_var, &L_49);
-		String_t* L_51 = String_Concat_mBB19C73816BDD1C3519F248E1ADC8E11A6FDB495(_stringLiteral5D89D497C739491C0AB4B550ED4E982CDB60EA5A, L_50, /*hidden argument*/NULL);
-		Debug_Log_m4B7C70BAFD477C6BDB59C88A0934F0B018D03708(L_51, /*hidden argument*/NULL);
-		// if (minDistance >= distanceThreshold) {
-		float L_52 = V_8;
-		float L_53 = V_5;
-		V_16 = (bool)((((int32_t)((!(((float)L_52) >= ((float)L_53)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-		bool L_54 = V_16;
-		if (!L_54)
+		// if (!doDraw) {
+		bool L_40 = V_9;
+		V_15 = (bool)((((int32_t)L_40) == ((int32_t)0))? 1 : 0);
+		bool L_41 = V_15;
+		if (!L_41)
 		{
-			goto IL_0189;
+			goto IL_0141;
 		}
 	}
 	{
 		// return;
-		goto IL_038f;
+		goto IL_0375;
 	}
 
-IL_0189:
+IL_0141:
 	{
+		// Debug.Log("_UpdateFeature() endPoint = " + endPoint);
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_42 = V_6;
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_43 = L_42;
+		RuntimeObject * L_44 = Box(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_il2cpp_TypeInfo_var, &L_43);
+		String_t* L_45 = String_Concat_mBB19C73816BDD1C3519F248E1ADC8E11A6FDB495(_stringLiteralC9C3F99B6F8E39D285511235FB8F3E75C8B68B33, L_44, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t7B5FCB117E2FD63B6838BC52821B252E2BFB61C4_il2cpp_TypeInfo_var);
+		Debug_Log_m4B7C70BAFD477C6BDB59C88A0934F0B018D03708(L_45, /*hidden argument*/NULL);
+		// Debug.Log("_UpdateFeature() pointToDraw = " + pointToDraw);
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_46 = V_7;
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_47 = L_46;
+		RuntimeObject * L_48 = Box(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_il2cpp_TypeInfo_var, &L_47);
+		String_t* L_49 = String_Concat_mBB19C73816BDD1C3519F248E1ADC8E11A6FDB495(_stringLiteral5D89D497C739491C0AB4B550ED4E982CDB60EA5A, L_48, /*hidden argument*/NULL);
+		Debug_Log_m4B7C70BAFD477C6BDB59C88A0934F0B018D03708(L_49, /*hidden argument*/NULL);
 		// if (firstTouchCondition == true) {
-		bool L_55 = V_0;
-		V_17 = L_55;
-		bool L_56 = V_17;
-		if (!L_56)
+		bool L_50 = V_0;
+		V_16 = L_50;
+		bool L_51 = V_16;
+		if (!L_51)
 		{
-			goto IL_02ef;
+			goto IL_02d5;
 		}
 	}
 	{
 		// if (!paintPanel.activeSelf) {
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_57 = __this->get_paintPanel_6();
-		NullCheck(L_57);
-		bool L_58 = GameObject_get_activeSelf_mFE1834886CAE59884AC2BE707A3B821A1DB61F44(L_57, /*hidden argument*/NULL);
-		V_21 = (bool)((((int32_t)L_58) == ((int32_t)0))? 1 : 0);
-		bool L_59 = V_21;
-		if (!L_59)
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_52 = __this->get_paintPanel_6();
+		NullCheck(L_52);
+		bool L_53 = GameObject_get_activeSelf_mFE1834886CAE59884AC2BE707A3B821A1DB61F44(L_52, /*hidden argument*/NULL);
+		V_20 = (bool)((((int32_t)L_53) == ((int32_t)0))? 1 : 0);
+		bool L_54 = V_20;
+		if (!L_54)
 		{
-			goto IL_01ae;
+			goto IL_0194;
 		}
 	}
 	{
 		// return;
-		goto IL_038f;
+		goto IL_0375;
 	}
 
-IL_01ae:
+IL_0194:
 	{
 		// Debug.Log ("First touch");
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t7B5FCB117E2FD63B6838BC52821B252E2BFB61C4_il2cpp_TypeInfo_var);
 		Debug_Log_m4B7C70BAFD477C6BDB59C88A0934F0B018D03708(_stringLiteral509D7AFBE04782CC66B7091DB66CB2DB096402F4, /*hidden argument*/NULL);
 		// GameObject go = new GameObject ();
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_60 = (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F *)il2cpp_codegen_object_new(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F_il2cpp_TypeInfo_var);
-		GameObject__ctor_mA4DFA8F4471418C248E95B55070665EF344B4B2D(L_60, /*hidden argument*/NULL);
-		V_18 = L_60;
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_55 = (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F *)il2cpp_codegen_object_new(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F_il2cpp_TypeInfo_var);
+		GameObject__ctor_mA4DFA8F4471418C248E95B55070665EF344B4B2D(L_55, /*hidden argument*/NULL);
+		V_17 = L_55;
 		// go.transform.position = pointToDraw;
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_61 = V_18;
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_56 = V_17;
+		NullCheck(L_56);
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_57 = GameObject_get_transform_mA5C38857137F137CB96C69FAA624199EB1C2FB2C(L_56, /*hidden argument*/NULL);
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_58 = V_7;
+		NullCheck(L_57);
+		Transform_set_position_mDA89E4893F14ECA5CBEEE7FB80A5BF7C1B8EA6DC(L_57, L_58, /*hidden argument*/NULL);
+		// go.transform.parent = drawingRootSceneObject.transform;
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_59 = V_17;
+		NullCheck(L_59);
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_60 = GameObject_get_transform_mA5C38857137F137CB96C69FAA624199EB1C2FB2C(L_59, /*hidden argument*/NULL);
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_61 = __this->get_drawingRootSceneObject_17();
 		NullCheck(L_61);
 		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_62 = GameObject_get_transform_mA5C38857137F137CB96C69FAA624199EB1C2FB2C(L_61, /*hidden argument*/NULL);
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_63 = V_7;
-		NullCheck(L_62);
-		Transform_set_position_mDA89E4893F14ECA5CBEEE7FB80A5BF7C1B8EA6DC(L_62, L_63, /*hidden argument*/NULL);
-		// go.transform.parent = drawingRootSceneObject.transform;
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_64 = V_18;
-		NullCheck(L_64);
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_65 = GameObject_get_transform_mA5C38857137F137CB96C69FAA624199EB1C2FB2C(L_64, /*hidden argument*/NULL);
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_66 = __this->get_drawingRootSceneObject_17();
-		NullCheck(L_66);
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_67 = GameObject_get_transform_mA5C38857137F137CB96C69FAA624199EB1C2FB2C(L_66, /*hidden argument*/NULL);
-		NullCheck(L_65);
-		Transform_set_parent_m65B8E4660B2C554069C57A957D9E55FECA7AA73E(L_65, L_67, /*hidden argument*/NULL);
+		NullCheck(L_60);
+		Transform_set_parent_m65B8E4660B2C554069C57A957D9E55FECA7AA73E(L_60, L_62, /*hidden argument*/NULL);
 		// go.AddComponent<MeshFilter> ();
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_68 = V_18;
-		NullCheck(L_68);
-		GameObject_AddComponent_TisMeshFilter_t8D4BA8E8723DE5CFF53B0DA5EE2F6B3A5B0E0FE0_m98AEA1EDDC59492203D06FA2912152C37C4164E4(L_68, /*hidden argument*/GameObject_AddComponent_TisMeshFilter_t8D4BA8E8723DE5CFF53B0DA5EE2F6B3A5B0E0FE0_m98AEA1EDDC59492203D06FA2912152C37C4164E4_RuntimeMethod_var);
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_63 = V_17;
+		NullCheck(L_63);
+		GameObject_AddComponent_TisMeshFilter_t8D4BA8E8723DE5CFF53B0DA5EE2F6B3A5B0E0FE0_m98AEA1EDDC59492203D06FA2912152C37C4164E4(L_63, /*hidden argument*/GameObject_AddComponent_TisMeshFilter_t8D4BA8E8723DE5CFF53B0DA5EE2F6B3A5B0E0FE0_m98AEA1EDDC59492203D06FA2912152C37C4164E4_RuntimeMethod_var);
 		// go.AddComponent<MeshRenderer> ();
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_69 = V_18;
-		NullCheck(L_69);
-		GameObject_AddComponent_TisMeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED_m16409C054F66125E0380BDDDB1454118A3BAD60E(L_69, /*hidden argument*/GameObject_AddComponent_TisMeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED_m16409C054F66125E0380BDDDB1454118A3BAD60E_RuntimeMethod_var);
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_64 = V_17;
+		NullCheck(L_64);
+		GameObject_AddComponent_TisMeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED_m16409C054F66125E0380BDDDB1454118A3BAD60E(L_64, /*hidden argument*/GameObject_AddComponent_TisMeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED_m16409C054F66125E0380BDDDB1454118A3BAD60E_RuntimeMethod_var);
 		// currLine = go.AddComponent<GraphicsLineRenderer> ();
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_70 = V_18;
-		NullCheck(L_70);
-		GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * L_71 = GameObject_AddComponent_TisGraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9_mC858BAF6485A3229ACF94549CBA69EE27275AA69(L_70, /*hidden argument*/GameObject_AddComponent_TisGraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9_mC858BAF6485A3229ACF94549CBA69EE27275AA69_RuntimeMethod_var);
-		__this->set_currLine_8(L_71);
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_65 = V_17;
+		NullCheck(L_65);
+		GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * L_66 = GameObject_AddComponent_TisGraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9_mC858BAF6485A3229ACF94549CBA69EE27275AA69(L_65, /*hidden argument*/GameObject_AddComponent_TisGraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9_mC858BAF6485A3229ACF94549CBA69EE27275AA69_RuntimeMethod_var);
+		__this->set_currLine_8(L_66);
 		// currLine.lmat = new Material(lMat);
-		GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * L_72 = __this->get_currLine_8();
-		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_73 = __this->get_lMat_5();
-		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_74 = (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 *)il2cpp_codegen_object_new(Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598_il2cpp_TypeInfo_var);
-		Material__ctor_m0171C6D4D3FD04D58C70808F255DBA67D0ED2BDE(L_74, L_73, /*hidden argument*/NULL);
-		NullCheck(L_72);
-		L_72->set_lmat_5(L_74);
+		GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * L_67 = __this->get_currLine_8();
+		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_68 = __this->get_lMat_5();
+		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_69 = (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 *)il2cpp_codegen_object_new(Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598_il2cpp_TypeInfo_var);
+		Material__ctor_m0171C6D4D3FD04D58C70808F255DBA67D0ED2BDE(L_69, L_68, /*hidden argument*/NULL);
+		NullCheck(L_67);
+		L_67->set_lmat_5(L_69);
 		// currLine.SetWidth (paintLineThickness);
-		GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * L_75 = __this->get_currLine_8();
-		float L_76 = __this->get_paintLineThickness_12();
-		NullCheck(L_75);
-		GraphicsLineRenderer_SetWidth_m79FFEAE9CA81B9DDE01D9D50CC8ED4F4EB9095CD(L_75, L_76, /*hidden argument*/NULL);
+		GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * L_70 = __this->get_currLine_8();
+		float L_71 = __this->get_paintLineThickness_12();
+		NullCheck(L_70);
+		GraphicsLineRenderer_SetWidth_m79FFEAE9CA81B9DDE01D9D50CC8ED4F4EB9095CD(L_70, L_71, /*hidden argument*/NULL);
 		// Color newColor = paintLineColor;//new Color(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f));
-		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_77 = __this->get_paintLineColor_13();
-		V_19 = L_77;
+		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_72 = __this->get_paintLineColor_13();
+		V_18 = L_72;
 		// currLine.lmat.color = colorPicker.GetColor();//newColor;
-		GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * L_78 = __this->get_currLine_8();
-		NullCheck(L_78);
-		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_79 = L_78->get_lmat_5();
-		FlexibleColorPicker_tD1D4032D819D7F35A043E41291E52F6F2C093572 * L_80 = __this->get_colorPicker_20();
-		NullCheck(L_80);
-		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_81 = FlexibleColorPicker_GetColor_mA0F6E7F764D91FF679E13F61CDE4F7367ED9C88A(L_80, /*hidden argument*/NULL);
-		NullCheck(L_79);
-		Material_set_color_m127EAC5D3CC68359E72D12A2B3CE7428EFBB81C3(L_79, L_81, /*hidden argument*/NULL);
+		GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * L_73 = __this->get_currLine_8();
+		NullCheck(L_73);
+		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_74 = L_73->get_lmat_5();
+		FlexibleColorPicker_tD1D4032D819D7F35A043E41291E52F6F2C093572 * L_75 = __this->get_colorPicker_20();
+		NullCheck(L_75);
+		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_76 = FlexibleColorPicker_GetColor_mA0F6E7F764D91FF679E13F61CDE4F7367ED9C88A(L_75, /*hidden argument*/NULL);
+		NullCheck(L_74);
+		Material_set_color_m127EAC5D3CC68359E72D12A2B3CE7428EFBB81C3(L_74, L_76, /*hidden argument*/NULL);
 		// numClicks = 0;
 		__this->set_numClicks_9(0);
 		// prevPaintPoint = pointToDraw;
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_82 = V_7;
-		__this->set_prevPaintPoint_11(L_82);
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_77 = V_7;
+		__this->set_prevPaintPoint_11(L_77);
 		// Debug.Log ("Adding History 1");
 		Debug_Log_m4B7C70BAFD477C6BDB59C88A0934F0B018D03708(_stringLiteral9AFD2795D8EC25726593CFB282D04D4F89FFCCD6, /*hidden argument*/NULL);
 		// int index = GetComponent<PaintController> ().drawingHistoryIndex;
-		PaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995 * L_83 = Component_GetComponent_TisPaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995_m6D05CE2BBEBA8C13D13DA541AF380B774DED20FF(__this, /*hidden argument*/Component_GetComponent_TisPaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995_m6D05CE2BBEBA8C13D13DA541AF380B774DED20FF_RuntimeMethod_var);
-		NullCheck(L_83);
-		int32_t L_84 = L_83->get_drawingHistoryIndex_18();
-		V_20 = L_84;
+		PaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995 * L_78 = Component_GetComponent_TisPaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995_m6D05CE2BBEBA8C13D13DA541AF380B774DED20FF(__this, /*hidden argument*/Component_GetComponent_TisPaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995_m6D05CE2BBEBA8C13D13DA541AF380B774DED20FF_RuntimeMethod_var);
+		NullCheck(L_78);
+		int32_t L_79 = L_78->get_drawingHistoryIndex_18();
+		V_19 = L_79;
 		// index++;
-		int32_t L_85 = V_20;
-		V_20 = ((int32_t)il2cpp_codegen_add((int32_t)L_85, (int32_t)1));
+		int32_t L_80 = V_19;
+		V_19 = ((int32_t)il2cpp_codegen_add((int32_t)L_80, (int32_t)1));
 		// Debug.Log ("Adding History 2");
 		Debug_Log_m4B7C70BAFD477C6BDB59C88A0934F0B018D03708(_stringLiteralA229295FC7453F43AB721C292BB7B25AF4AE2477, /*hidden argument*/NULL);
 		// brushTipObject.GetComponent<TrailRenderer>().enabled = false;
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_86 = __this->get_brushTipObject_19();
-		NullCheck(L_86);
-		TrailRenderer_t9AC23ED5E8A7955A3288A9C37865C11382DA668D * L_87 = GameObject_GetComponent_TisTrailRenderer_t9AC23ED5E8A7955A3288A9C37865C11382DA668D_m7C1059FAE34EC21FA55E05C684BA337973AB7195(L_86, /*hidden argument*/GameObject_GetComponent_TisTrailRenderer_t9AC23ED5E8A7955A3288A9C37865C11382DA668D_m7C1059FAE34EC21FA55E05C684BA337973AB7195_RuntimeMethod_var);
-		NullCheck(L_87);
-		Renderer_set_enabled_m0933766657F2685BAAE3340B0A984C0E63925303(L_87, (bool)0, /*hidden argument*/NULL);
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_81 = __this->get_brushTipObject_19();
+		NullCheck(L_81);
+		TrailRenderer_t9AC23ED5E8A7955A3288A9C37865C11382DA668D * L_82 = GameObject_GetComponent_TisTrailRenderer_t9AC23ED5E8A7955A3288A9C37865C11382DA668D_m7C1059FAE34EC21FA55E05C684BA337973AB7195(L_81, /*hidden argument*/GameObject_GetComponent_TisTrailRenderer_t9AC23ED5E8A7955A3288A9C37865C11382DA668D_m7C1059FAE34EC21FA55E05C684BA337973AB7195_RuntimeMethod_var);
+		NullCheck(L_82);
+		Renderer_set_enabled_m0933766657F2685BAAE3340B0A984C0E63925303(L_82, (bool)0, /*hidden argument*/NULL);
 		// paintBrushSceneObject.GetComponent<DrawingHistoryManager> ().addDrawingCommand (index, 0, pointToDraw, currLine.lmat.color, paintLineThickness);
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_88 = __this->get_paintBrushSceneObject_18();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_83 = __this->get_paintBrushSceneObject_18();
+		NullCheck(L_83);
+		DrawingHistoryManager_t465468CFA2187A9DE5AC4B22E7EC976E4C6A036B * L_84 = GameObject_GetComponent_TisDrawingHistoryManager_t465468CFA2187A9DE5AC4B22E7EC976E4C6A036B_m57713631EB645A56806C2B287CDABC034636999C(L_83, /*hidden argument*/GameObject_GetComponent_TisDrawingHistoryManager_t465468CFA2187A9DE5AC4B22E7EC976E4C6A036B_m57713631EB645A56806C2B287CDABC034636999C_RuntimeMethod_var);
+		int32_t L_85 = V_19;
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_86 = V_7;
+		GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * L_87 = __this->get_currLine_8();
+		NullCheck(L_87);
+		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_88 = L_87->get_lmat_5();
 		NullCheck(L_88);
-		DrawingHistoryManager_t465468CFA2187A9DE5AC4B22E7EC976E4C6A036B * L_89 = GameObject_GetComponent_TisDrawingHistoryManager_t465468CFA2187A9DE5AC4B22E7EC976E4C6A036B_m57713631EB645A56806C2B287CDABC034636999C(L_88, /*hidden argument*/GameObject_GetComponent_TisDrawingHistoryManager_t465468CFA2187A9DE5AC4B22E7EC976E4C6A036B_m57713631EB645A56806C2B287CDABC034636999C_RuntimeMethod_var);
-		int32_t L_90 = V_20;
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_91 = V_7;
-		GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * L_92 = __this->get_currLine_8();
-		NullCheck(L_92);
-		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_93 = L_92->get_lmat_5();
-		NullCheck(L_93);
-		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_94 = Material_get_color_m7CE9C1FC0E0B4952D58DFBBA4D569F4B161B27E9(L_93, /*hidden argument*/NULL);
-		float L_95 = __this->get_paintLineThickness_12();
-		NullCheck(L_89);
-		DrawingHistoryManager_addDrawingCommand_m57D40781CB938EE38A12812171FDC206B265C24A(L_89, L_90, 0, L_91, L_94, L_95, /*hidden argument*/NULL);
+		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_89 = Material_get_color_m7CE9C1FC0E0B4952D58DFBBA4D569F4B161B27E9(L_88, /*hidden argument*/NULL);
+		float L_90 = __this->get_paintLineThickness_12();
+		NullCheck(L_84);
+		DrawingHistoryManager_addDrawingCommand_m57D40781CB938EE38A12812171FDC206B265C24A(L_84, L_85, 0, L_86, L_89, L_90, /*hidden argument*/NULL);
 		// Debug.Log ("Adding History 3");
 		Debug_Log_m4B7C70BAFD477C6BDB59C88A0934F0B018D03708(_stringLiteralB246F11A8C91421FD6139C5A4D78D6014F2D6963, /*hidden argument*/NULL);
 		// GetComponent<PaintController> ().drawingHistoryIndex = index;
-		PaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995 * L_96 = Component_GetComponent_TisPaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995_m6D05CE2BBEBA8C13D13DA541AF380B774DED20FF(__this, /*hidden argument*/Component_GetComponent_TisPaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995_m6D05CE2BBEBA8C13D13DA541AF380B774DED20FF_RuntimeMethod_var);
-		int32_t L_97 = V_20;
-		NullCheck(L_96);
-		L_96->set_drawingHistoryIndex_18(L_97);
+		PaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995 * L_91 = Component_GetComponent_TisPaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995_m6D05CE2BBEBA8C13D13DA541AF380B774DED20FF(__this, /*hidden argument*/Component_GetComponent_TisPaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995_m6D05CE2BBEBA8C13D13DA541AF380B774DED20FF_RuntimeMethod_var);
+		int32_t L_92 = V_19;
+		NullCheck(L_91);
+		L_91->set_drawingHistoryIndex_18(L_92);
 		// Debug.Log ("Done Adding History");
 		Debug_Log_m4B7C70BAFD477C6BDB59C88A0934F0B018D03708(_stringLiteral6EA944352F4FC2347886BF2856A1BD4575D87233, /*hidden argument*/NULL);
-		goto IL_038f;
+		goto IL_0375;
 	}
 
-IL_02ef:
+IL_02d5:
 	{
 		// } else if (whileTouchedCondition == true) {
-		bool L_98 = V_1;
-		V_22 = L_98;
-		bool L_99 = V_22;
-		if (!L_99)
+		bool L_93 = V_1;
+		V_21 = L_93;
+		bool L_94 = V_21;
+		if (!L_94)
 		{
-			goto IL_038f;
+			goto IL_0375;
 		}
 	}
 	{
 		// if ((pointToDraw - prevPaintPoint).magnitude > 0.01f) {
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_100 = V_7;
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_101 = __this->get_prevPaintPoint_11();
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_95 = V_7;
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_96 = __this->get_prevPaintPoint_11();
 		IL2CPP_RUNTIME_CLASS_INIT(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_il2cpp_TypeInfo_var);
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_102 = Vector3_op_Subtraction_mF9846B723A5034F8B9F5F5DCB78E3D67649143D3(L_100, L_101, /*hidden argument*/NULL);
-		V_24 = L_102;
-		float L_103 = Vector3_get_magnitude_m9A750659B60C5FE0C30438A7F9681775D5DB1274((Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 *)(&V_24), /*hidden argument*/NULL);
-		V_23 = (bool)((((float)L_103) > ((float)(0.01f)))? 1 : 0);
-		bool L_104 = V_23;
-		if (!L_104)
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_97 = Vector3_op_Subtraction_mF9846B723A5034F8B9F5F5DCB78E3D67649143D3(L_95, L_96, /*hidden argument*/NULL);
+		V_23 = L_97;
+		float L_98 = Vector3_get_magnitude_m9A750659B60C5FE0C30438A7F9681775D5DB1274((Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 *)(&V_23), /*hidden argument*/NULL);
+		V_22 = (bool)((((float)L_98) > ((float)(0.01f)))? 1 : 0);
+		bool L_99 = V_22;
+		if (!L_99)
 		{
-			goto IL_038e;
+			goto IL_0374;
 		}
 	}
 	{
 		// currLine.AddPoint (pointToDraw);
-		GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * L_105 = __this->get_currLine_8();
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_106 = V_7;
-		NullCheck(L_105);
-		GraphicsLineRenderer_AddPoint_m24839F21D1D1D040E72FFFA36B5D2D8E904E0BA3(L_105, L_106, /*hidden argument*/NULL);
+		GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * L_100 = __this->get_currLine_8();
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_101 = V_7;
+		NullCheck(L_100);
+		GraphicsLineRenderer_AddPoint_m24839F21D1D1D040E72FFFA36B5D2D8E904E0BA3(L_100, L_101, /*hidden argument*/NULL);
 		// numClicks++;
-		int32_t L_107 = __this->get_numClicks_9();
-		__this->set_numClicks_9(((int32_t)il2cpp_codegen_add((int32_t)L_107, (int32_t)1)));
+		int32_t L_102 = __this->get_numClicks_9();
+		__this->set_numClicks_9(((int32_t)il2cpp_codegen_add((int32_t)L_102, (int32_t)1)));
 		// prevPaintPoint = pointToDraw;
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_108 = V_7;
-		__this->set_prevPaintPoint_11(L_108);
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_103 = V_7;
+		__this->set_prevPaintPoint_11(L_103);
 		// int index = GetComponent<PaintController> ().drawingHistoryIndex;
-		PaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995 * L_109 = Component_GetComponent_TisPaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995_m6D05CE2BBEBA8C13D13DA541AF380B774DED20FF(__this, /*hidden argument*/Component_GetComponent_TisPaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995_m6D05CE2BBEBA8C13D13DA541AF380B774DED20FF_RuntimeMethod_var);
-		NullCheck(L_109);
-		int32_t L_110 = L_109->get_drawingHistoryIndex_18();
-		V_25 = L_110;
+		PaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995 * L_104 = Component_GetComponent_TisPaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995_m6D05CE2BBEBA8C13D13DA541AF380B774DED20FF(__this, /*hidden argument*/Component_GetComponent_TisPaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995_m6D05CE2BBEBA8C13D13DA541AF380B774DED20FF_RuntimeMethod_var);
+		NullCheck(L_104);
+		int32_t L_105 = L_104->get_drawingHistoryIndex_18();
+		V_24 = L_105;
 		// paintBrushSceneObject.GetComponent<DrawingHistoryManager> ().addDrawingCommand (index, 0, pointToDraw, currLine.lmat.color, paintLineThickness);
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_111 = __this->get_paintBrushSceneObject_18();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_106 = __this->get_paintBrushSceneObject_18();
+		NullCheck(L_106);
+		DrawingHistoryManager_t465468CFA2187A9DE5AC4B22E7EC976E4C6A036B * L_107 = GameObject_GetComponent_TisDrawingHistoryManager_t465468CFA2187A9DE5AC4B22E7EC976E4C6A036B_m57713631EB645A56806C2B287CDABC034636999C(L_106, /*hidden argument*/GameObject_GetComponent_TisDrawingHistoryManager_t465468CFA2187A9DE5AC4B22E7EC976E4C6A036B_m57713631EB645A56806C2B287CDABC034636999C_RuntimeMethod_var);
+		int32_t L_108 = V_24;
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_109 = V_7;
+		GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * L_110 = __this->get_currLine_8();
+		NullCheck(L_110);
+		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_111 = L_110->get_lmat_5();
 		NullCheck(L_111);
-		DrawingHistoryManager_t465468CFA2187A9DE5AC4B22E7EC976E4C6A036B * L_112 = GameObject_GetComponent_TisDrawingHistoryManager_t465468CFA2187A9DE5AC4B22E7EC976E4C6A036B_m57713631EB645A56806C2B287CDABC034636999C(L_111, /*hidden argument*/GameObject_GetComponent_TisDrawingHistoryManager_t465468CFA2187A9DE5AC4B22E7EC976E4C6A036B_m57713631EB645A56806C2B287CDABC034636999C_RuntimeMethod_var);
-		int32_t L_113 = V_25;
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_114 = V_7;
-		GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * L_115 = __this->get_currLine_8();
-		NullCheck(L_115);
-		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_116 = L_115->get_lmat_5();
-		NullCheck(L_116);
-		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_117 = Material_get_color_m7CE9C1FC0E0B4952D58DFBBA4D569F4B161B27E9(L_116, /*hidden argument*/NULL);
-		float L_118 = __this->get_paintLineThickness_12();
-		NullCheck(L_112);
-		DrawingHistoryManager_addDrawingCommand_m57D40781CB938EE38A12812171FDC206B265C24A(L_112, L_113, 0, L_114, L_117, L_118, /*hidden argument*/NULL);
+		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_112 = Material_get_color_m7CE9C1FC0E0B4952D58DFBBA4D569F4B161B27E9(L_111, /*hidden argument*/NULL);
+		float L_113 = __this->get_paintLineThickness_12();
+		NullCheck(L_107);
+		DrawingHistoryManager_addDrawingCommand_m57D40781CB938EE38A12812171FDC206B265C24A(L_107, L_108, 0, L_109, L_112, L_113, /*hidden argument*/NULL);
 		// brushTipObject.GetComponent<TrailRenderer>().enabled = false;
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_119 = __this->get_brushTipObject_19();
-		NullCheck(L_119);
-		TrailRenderer_t9AC23ED5E8A7955A3288A9C37865C11382DA668D * L_120 = GameObject_GetComponent_TisTrailRenderer_t9AC23ED5E8A7955A3288A9C37865C11382DA668D_m7C1059FAE34EC21FA55E05C684BA337973AB7195(L_119, /*hidden argument*/GameObject_GetComponent_TisTrailRenderer_t9AC23ED5E8A7955A3288A9C37865C11382DA668D_m7C1059FAE34EC21FA55E05C684BA337973AB7195_RuntimeMethod_var);
-		NullCheck(L_120);
-		Renderer_set_enabled_m0933766657F2685BAAE3340B0A984C0E63925303(L_120, (bool)0, /*hidden argument*/NULL);
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_114 = __this->get_brushTipObject_19();
+		NullCheck(L_114);
+		TrailRenderer_t9AC23ED5E8A7955A3288A9C37865C11382DA668D * L_115 = GameObject_GetComponent_TisTrailRenderer_t9AC23ED5E8A7955A3288A9C37865C11382DA668D_m7C1059FAE34EC21FA55E05C684BA337973AB7195(L_114, /*hidden argument*/GameObject_GetComponent_TisTrailRenderer_t9AC23ED5E8A7955A3288A9C37865C11382DA668D_m7C1059FAE34EC21FA55E05C684BA337973AB7195_RuntimeMethod_var);
+		NullCheck(L_115);
+		Renderer_set_enabled_m0933766657F2685BAAE3340B0A984C0E63925303(L_115, (bool)0, /*hidden argument*/NULL);
 	}
 
-IL_038e:
+IL_0374:
 	{
 	}
 
-IL_038f:
+IL_0375:
 	{
 		// } // _UpdateFeature()
 		return;

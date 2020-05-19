@@ -245,32 +245,27 @@ public class DrawLineManager : MonoBehaviour {
 
 		// Find the closest feature point within the threshold
     	Vector3 pointToDraw = new Vector3(float.PositiveInfinity, float.PositiveInfinity, float.PositiveInfinity);
-    	float minDistance = Mathf.Infinity;
     	float curDistance;
+    	bool doDraw = false;
     	foreach (Vector3 featurePoint in pointCloud) {
     		curDistance = Vector3.Distance(endPoint, featurePoint);
-    		if (curDistance < minDistance) {
-    			minDistance = curDistance;
+    		if (curDistance < distanceThreshold) {
+    			Debug.Log("curDistance = " + curDistance);
     			pointToDraw.Set(featurePoint.x, featurePoint.y, featurePoint.z);
-    			if (minDistance <= distanceThreshold) {
-    				break;
-    			}
+    			doDraw = true;
+    			break;
     		}
     	}
 
-    	Debug.Log("_UpdateFeature() minDistance = " + minDistance);
-    	Debug.Log("_UpdateFeature() endPoint = " + endPoint);
-    	Debug.Log("_UpdateFeature() pointToDraw = " + pointToDraw);
-
     	// Only continue if a satisfactory point was found
-    	if (minDistance >= distanceThreshold) {
+    	if (!doDraw) {
     		return;
     	}
 
+    	Debug.Log("_UpdateFeature() endPoint = " + endPoint);
+    	Debug.Log("_UpdateFeature() pointToDraw = " + pointToDraw);
 
-        /* 
-        	TODO - Make this connect the dots!!
-        */
+    
         if (firstTouchCondition == true) {
 
 			// check if you're in drawing mode. if not, return.
