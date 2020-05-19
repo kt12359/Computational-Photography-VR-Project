@@ -21,11 +21,20 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
     [SerializeField] GameObject mainButtonPanel;
     [SerializeField] GameObject saveLayerPanel;
     [SerializeField] GameObject loadLayerPanel;
+    [SerializeField] GameObject modePanel;
+
+    public enum DrawingMode
+    {
+    	normal,
+    	feature
+    }
+
 
     [SerializeField] RawImage mLocalizationThumbnail;
     [SerializeField] Image mLocalizationThumbnailContainer;
 
     public int drawingHistoryIndex = 0;
+    public DrawingMode currentDrawingMode = DrawingMode.normal;
 
 	// Use this for initialization
 	void Start () {
@@ -65,6 +74,7 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 
         saveLayerPanel.SetActive(false);
         loadLayerPanel.SetActive(false);
+        modePanel.SetActive(false);
 		paintPanel.SetActive (false);
 		colorPalette.SetActive(false);
 		brushTipObject.SetActive(false);
@@ -134,6 +144,12 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
         mainButtonPanel.SetActive(!loadLayerPanelActive);
 	}
 
+	public void ToggleModePanel(bool modePanelActive)
+	{
+		modePanel.SetActive(modePanelActive);
+        mainButtonPanel.SetActive(!modePanelActive);
+	}
+
 
 	public void OnSaveLayerClick (int layerNum)
 	{
@@ -159,6 +175,32 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 		GetComponent<DrawingHistoryManager>().loadLayer(layerNum);
 		textLabel.text = "Layer " + layerNum + " loaded!";
 		ToggleLoadLayerPanel(false);
+	}
+
+	public void OnModeClick(string mode)
+	{
+		if (mode == "normal") {
+			currentDrawingMode = DrawingMode.normal;
+			if (pointCloudOn == true) {
+				FeaturesVisualizer.DisablePointcloud ();
+	            FeaturesVisualizer.ClearPointcloud();
+	            pointCloudOn = false;
+				Debug.Log ("Point Cloud Off");
+			}
+		}
+		else if (mode == "feature") {
+			currentDrawingMode = DrawingMode.feature;
+			if (pointCloudOn == false) {
+				FeaturesVisualizer.EnablePointcloud(new Color(1f, 1f, 1f, 0.2f), new Color(1f, 1f, 1f, 0.8f));
+				pointCloudOn = true;
+				Debug.Log ("Point Cloud On");
+			}
+		}
+		else {
+			Debug.Log("Invalid mode passed to OnModeClick: " + mode);
+		}
+
+		ToggleModePanel(false);
 	}
 
 
