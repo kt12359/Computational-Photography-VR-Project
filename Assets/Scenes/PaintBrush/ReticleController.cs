@@ -186,7 +186,7 @@ using UnityEngine.XR.ARSubsystems;
                                 // start new animation to go to this destination
                                 mGoToTarget = GoToTarget(targetPose.position);
                                 yield return StartCoroutine(mGoToTarget);
-
+                                GetComponent<DrawLineManager>().draw();
 
                             }
                         }

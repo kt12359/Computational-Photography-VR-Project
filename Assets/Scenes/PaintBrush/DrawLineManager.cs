@@ -104,13 +104,9 @@ public class DrawLineManager : MonoBehaviour {
         setLineWidth(slider.value);
 
     }
-	
-	// Update is called once per frame
-	void Update () {
-		Vector3 endPoint;
-		if(snapToSurfaceBrushTipObject.activeSelf)
-			return;
 
+	public void draw() {
+		Vector3 endPoint;
 		endPoint = getRayEndPoint (rayDist);
 		paintLineColor = colorPicker.GetColor();
 
@@ -211,7 +207,16 @@ public class DrawLineManager : MonoBehaviour {
             	brushTipObject.GetComponent<TrailRenderer>().enabled = true;
 			else
 				snapToSurfaceBrushTipObject.GetComponent<TrailRenderer>().enabled = true;
-        }
+        }	
+
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		if(snapToSurfaceBrushTipObject.activeSelf)
+			return;
+
+		draw();
     }
 
 
