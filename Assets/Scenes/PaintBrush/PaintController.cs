@@ -203,7 +203,7 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
         drawOnSurfacePanel.SetActive(snapToSurfacePanelActive);
         mainButtonPanel.SetActive(!snapToSurfacePanelActive);
 
-		GetComponent<ReticleController>().startStopReticle(snapToSurfacePanelActive);
+		//GetComponent<ReticleController>().startStopReticle(snapToSurfacePanelActive);
 	}
 
 

@@ -50,8 +50,8 @@ using UnityEngine.XR.ARSubsystems;
 
             mReticle.SetActive(false);
 
-
-            StartCoroutine(mContinuousHittest);
+            while(mReticle.activeSelf)
+                StartCoroutine(mContinuousHittest);
         }
 
 
@@ -185,7 +185,7 @@ using UnityEngine.XR.ARSubsystems;
 
                                 // start new animation to go to this destination
                                 mGoToTarget = GoToTarget(targetPose.position);
-                                StartCoroutine(mGoToTarget);
+                                yield return StartCoroutine(mGoToTarget);
 
 
                             }
