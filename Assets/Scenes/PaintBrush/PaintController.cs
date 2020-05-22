@@ -82,6 +82,10 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 		// Make sure this child is active for when its parent is active
 		buttonPanel = paintPanel.transform.Find("ButtonPanel").gameObject;
 		buttonPanel.SetActive(true);
+
+
+        // FeaturesVisualizer.EnablePointcloud(new Color(1f, 1f, 1f, 0.2f), new Color(1f, 1f, 1f, 0.8f));
+		// FeaturesVisualizer.DisablePointcloud ();
     }
 
 	public void onClickEnablePointCloud()
@@ -92,7 +96,6 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 			Debug.Log ("Point Cloud On");
 		} else {
 			FeaturesVisualizer.DisablePointcloud ();
-            FeaturesVisualizer.ClearPointcloud();
             pointCloudOn = false;
 			Debug.Log ("Point Cloud Off");
 		}
@@ -183,7 +186,6 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 			currentDrawingMode = DrawingMode.normal;
 			if (pointCloudOn == true) {
 				FeaturesVisualizer.DisablePointcloud ();
-	            FeaturesVisualizer.ClearPointcloud();
 	            pointCloudOn = false;
 				Debug.Log ("Point Cloud Off");
 			}

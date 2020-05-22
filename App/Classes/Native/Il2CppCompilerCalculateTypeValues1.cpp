@@ -38084,30 +38084,32 @@ public:
 	Text_tE9317B57477F4B50AA4C16F460DE6F82DAD6D030 * ___textLabel_7;
 	// GraphicsLineRenderer DrawLineManager::currLine
 	GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * ___currLine_8;
+	// System.Boolean DrawLineManager::doKeepDrawingFeature
+	bool ___doKeepDrawingFeature_9;
 	// System.Int32 DrawLineManager::numClicks
-	int32_t ___numClicks_9;
+	int32_t ___numClicks_10;
 	// System.Int32 DrawLineManager::numReplayClicks
-	int32_t ___numReplayClicks_10;
+	int32_t ___numReplayClicks_11;
 	// UnityEngine.Vector3 DrawLineManager::prevPaintPoint
-	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___prevPaintPoint_11;
+	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___prevPaintPoint_12;
 	// System.Single DrawLineManager::paintLineThickness
-	float ___paintLineThickness_12;
+	float ___paintLineThickness_13;
 	// UnityEngine.Color DrawLineManager::paintLineColor
-	Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  ___paintLineColor_13;
+	Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  ___paintLineColor_14;
 	// UnityEngine.Material DrawLineManager::brushTrailMaterial
-	Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * ___brushTrailMaterial_14;
+	Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * ___brushTrailMaterial_15;
 	// UnityEngine.UI.Slider DrawLineManager::slider
-	Slider_t0654A41304B5CE7074CA86F4E66CB681D0D52C09 * ___slider_15;
+	Slider_t0654A41304B5CE7074CA86F4E66CB681D0D52C09 * ___slider_16;
 	// UnityEngine.EventSystems.EventSystem DrawLineManager::eventSystemManager
-	EventSystem_t06ACEF1C8D95D44D3A7F57ED4BAA577101B4EA77 * ___eventSystemManager_16;
+	EventSystem_t06ACEF1C8D95D44D3A7F57ED4BAA577101B4EA77 * ___eventSystemManager_17;
 	// UnityEngine.GameObject DrawLineManager::drawingRootSceneObject
-	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___drawingRootSceneObject_17;
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___drawingRootSceneObject_18;
 	// UnityEngine.GameObject DrawLineManager::paintBrushSceneObject
-	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___paintBrushSceneObject_18;
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___paintBrushSceneObject_19;
 	// UnityEngine.GameObject DrawLineManager::brushTipObject
-	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___brushTipObject_19;
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___brushTipObject_20;
 	// FlexibleColorPicker DrawLineManager::colorPicker
-	FlexibleColorPicker_tD1D4032D819D7F35A043E41291E52F6F2C093572 * ___colorPicker_20;
+	FlexibleColorPicker_tD1D4032D819D7F35A043E41291E52F6F2C093572 * ___colorPicker_21;
 
 public:
 	inline static int32_t get_offset_of_rayDist_4() { return static_cast<int32_t>(offsetof(DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC, ___rayDist_4)); }
@@ -38154,107 +38156,115 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___currLine_8), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_numClicks_9() { return static_cast<int32_t>(offsetof(DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC, ___numClicks_9)); }
-	inline int32_t get_numClicks_9() const { return ___numClicks_9; }
-	inline int32_t* get_address_of_numClicks_9() { return &___numClicks_9; }
-	inline void set_numClicks_9(int32_t value)
+	inline static int32_t get_offset_of_doKeepDrawingFeature_9() { return static_cast<int32_t>(offsetof(DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC, ___doKeepDrawingFeature_9)); }
+	inline bool get_doKeepDrawingFeature_9() const { return ___doKeepDrawingFeature_9; }
+	inline bool* get_address_of_doKeepDrawingFeature_9() { return &___doKeepDrawingFeature_9; }
+	inline void set_doKeepDrawingFeature_9(bool value)
 	{
-		___numClicks_9 = value;
+		___doKeepDrawingFeature_9 = value;
 	}
 
-	inline static int32_t get_offset_of_numReplayClicks_10() { return static_cast<int32_t>(offsetof(DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC, ___numReplayClicks_10)); }
-	inline int32_t get_numReplayClicks_10() const { return ___numReplayClicks_10; }
-	inline int32_t* get_address_of_numReplayClicks_10() { return &___numReplayClicks_10; }
-	inline void set_numReplayClicks_10(int32_t value)
+	inline static int32_t get_offset_of_numClicks_10() { return static_cast<int32_t>(offsetof(DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC, ___numClicks_10)); }
+	inline int32_t get_numClicks_10() const { return ___numClicks_10; }
+	inline int32_t* get_address_of_numClicks_10() { return &___numClicks_10; }
+	inline void set_numClicks_10(int32_t value)
 	{
-		___numReplayClicks_10 = value;
+		___numClicks_10 = value;
 	}
 
-	inline static int32_t get_offset_of_prevPaintPoint_11() { return static_cast<int32_t>(offsetof(DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC, ___prevPaintPoint_11)); }
-	inline Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  get_prevPaintPoint_11() const { return ___prevPaintPoint_11; }
-	inline Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * get_address_of_prevPaintPoint_11() { return &___prevPaintPoint_11; }
-	inline void set_prevPaintPoint_11(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  value)
+	inline static int32_t get_offset_of_numReplayClicks_11() { return static_cast<int32_t>(offsetof(DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC, ___numReplayClicks_11)); }
+	inline int32_t get_numReplayClicks_11() const { return ___numReplayClicks_11; }
+	inline int32_t* get_address_of_numReplayClicks_11() { return &___numReplayClicks_11; }
+	inline void set_numReplayClicks_11(int32_t value)
 	{
-		___prevPaintPoint_11 = value;
+		___numReplayClicks_11 = value;
 	}
 
-	inline static int32_t get_offset_of_paintLineThickness_12() { return static_cast<int32_t>(offsetof(DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC, ___paintLineThickness_12)); }
-	inline float get_paintLineThickness_12() const { return ___paintLineThickness_12; }
-	inline float* get_address_of_paintLineThickness_12() { return &___paintLineThickness_12; }
-	inline void set_paintLineThickness_12(float value)
+	inline static int32_t get_offset_of_prevPaintPoint_12() { return static_cast<int32_t>(offsetof(DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC, ___prevPaintPoint_12)); }
+	inline Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  get_prevPaintPoint_12() const { return ___prevPaintPoint_12; }
+	inline Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * get_address_of_prevPaintPoint_12() { return &___prevPaintPoint_12; }
+	inline void set_prevPaintPoint_12(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  value)
 	{
-		___paintLineThickness_12 = value;
+		___prevPaintPoint_12 = value;
 	}
 
-	inline static int32_t get_offset_of_paintLineColor_13() { return static_cast<int32_t>(offsetof(DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC, ___paintLineColor_13)); }
-	inline Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  get_paintLineColor_13() const { return ___paintLineColor_13; }
-	inline Color_t119BCA590009762C7223FDD3AF9706653AC84ED2 * get_address_of_paintLineColor_13() { return &___paintLineColor_13; }
-	inline void set_paintLineColor_13(Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  value)
+	inline static int32_t get_offset_of_paintLineThickness_13() { return static_cast<int32_t>(offsetof(DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC, ___paintLineThickness_13)); }
+	inline float get_paintLineThickness_13() const { return ___paintLineThickness_13; }
+	inline float* get_address_of_paintLineThickness_13() { return &___paintLineThickness_13; }
+	inline void set_paintLineThickness_13(float value)
 	{
-		___paintLineColor_13 = value;
+		___paintLineThickness_13 = value;
 	}
 
-	inline static int32_t get_offset_of_brushTrailMaterial_14() { return static_cast<int32_t>(offsetof(DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC, ___brushTrailMaterial_14)); }
-	inline Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * get_brushTrailMaterial_14() const { return ___brushTrailMaterial_14; }
-	inline Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 ** get_address_of_brushTrailMaterial_14() { return &___brushTrailMaterial_14; }
-	inline void set_brushTrailMaterial_14(Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * value)
+	inline static int32_t get_offset_of_paintLineColor_14() { return static_cast<int32_t>(offsetof(DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC, ___paintLineColor_14)); }
+	inline Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  get_paintLineColor_14() const { return ___paintLineColor_14; }
+	inline Color_t119BCA590009762C7223FDD3AF9706653AC84ED2 * get_address_of_paintLineColor_14() { return &___paintLineColor_14; }
+	inline void set_paintLineColor_14(Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  value)
 	{
-		___brushTrailMaterial_14 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___brushTrailMaterial_14), (void*)value);
+		___paintLineColor_14 = value;
 	}
 
-	inline static int32_t get_offset_of_slider_15() { return static_cast<int32_t>(offsetof(DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC, ___slider_15)); }
-	inline Slider_t0654A41304B5CE7074CA86F4E66CB681D0D52C09 * get_slider_15() const { return ___slider_15; }
-	inline Slider_t0654A41304B5CE7074CA86F4E66CB681D0D52C09 ** get_address_of_slider_15() { return &___slider_15; }
-	inline void set_slider_15(Slider_t0654A41304B5CE7074CA86F4E66CB681D0D52C09 * value)
+	inline static int32_t get_offset_of_brushTrailMaterial_15() { return static_cast<int32_t>(offsetof(DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC, ___brushTrailMaterial_15)); }
+	inline Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * get_brushTrailMaterial_15() const { return ___brushTrailMaterial_15; }
+	inline Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 ** get_address_of_brushTrailMaterial_15() { return &___brushTrailMaterial_15; }
+	inline void set_brushTrailMaterial_15(Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * value)
 	{
-		___slider_15 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___slider_15), (void*)value);
+		___brushTrailMaterial_15 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___brushTrailMaterial_15), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_eventSystemManager_16() { return static_cast<int32_t>(offsetof(DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC, ___eventSystemManager_16)); }
-	inline EventSystem_t06ACEF1C8D95D44D3A7F57ED4BAA577101B4EA77 * get_eventSystemManager_16() const { return ___eventSystemManager_16; }
-	inline EventSystem_t06ACEF1C8D95D44D3A7F57ED4BAA577101B4EA77 ** get_address_of_eventSystemManager_16() { return &___eventSystemManager_16; }
-	inline void set_eventSystemManager_16(EventSystem_t06ACEF1C8D95D44D3A7F57ED4BAA577101B4EA77 * value)
+	inline static int32_t get_offset_of_slider_16() { return static_cast<int32_t>(offsetof(DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC, ___slider_16)); }
+	inline Slider_t0654A41304B5CE7074CA86F4E66CB681D0D52C09 * get_slider_16() const { return ___slider_16; }
+	inline Slider_t0654A41304B5CE7074CA86F4E66CB681D0D52C09 ** get_address_of_slider_16() { return &___slider_16; }
+	inline void set_slider_16(Slider_t0654A41304B5CE7074CA86F4E66CB681D0D52C09 * value)
 	{
-		___eventSystemManager_16 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___eventSystemManager_16), (void*)value);
+		___slider_16 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___slider_16), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_drawingRootSceneObject_17() { return static_cast<int32_t>(offsetof(DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC, ___drawingRootSceneObject_17)); }
-	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_drawingRootSceneObject_17() const { return ___drawingRootSceneObject_17; }
-	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_drawingRootSceneObject_17() { return &___drawingRootSceneObject_17; }
-	inline void set_drawingRootSceneObject_17(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	inline static int32_t get_offset_of_eventSystemManager_17() { return static_cast<int32_t>(offsetof(DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC, ___eventSystemManager_17)); }
+	inline EventSystem_t06ACEF1C8D95D44D3A7F57ED4BAA577101B4EA77 * get_eventSystemManager_17() const { return ___eventSystemManager_17; }
+	inline EventSystem_t06ACEF1C8D95D44D3A7F57ED4BAA577101B4EA77 ** get_address_of_eventSystemManager_17() { return &___eventSystemManager_17; }
+	inline void set_eventSystemManager_17(EventSystem_t06ACEF1C8D95D44D3A7F57ED4BAA577101B4EA77 * value)
 	{
-		___drawingRootSceneObject_17 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___drawingRootSceneObject_17), (void*)value);
+		___eventSystemManager_17 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___eventSystemManager_17), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_paintBrushSceneObject_18() { return static_cast<int32_t>(offsetof(DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC, ___paintBrushSceneObject_18)); }
-	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_paintBrushSceneObject_18() const { return ___paintBrushSceneObject_18; }
-	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_paintBrushSceneObject_18() { return &___paintBrushSceneObject_18; }
-	inline void set_paintBrushSceneObject_18(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	inline static int32_t get_offset_of_drawingRootSceneObject_18() { return static_cast<int32_t>(offsetof(DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC, ___drawingRootSceneObject_18)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_drawingRootSceneObject_18() const { return ___drawingRootSceneObject_18; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_drawingRootSceneObject_18() { return &___drawingRootSceneObject_18; }
+	inline void set_drawingRootSceneObject_18(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
 	{
-		___paintBrushSceneObject_18 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___paintBrushSceneObject_18), (void*)value);
+		___drawingRootSceneObject_18 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___drawingRootSceneObject_18), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_brushTipObject_19() { return static_cast<int32_t>(offsetof(DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC, ___brushTipObject_19)); }
-	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_brushTipObject_19() const { return ___brushTipObject_19; }
-	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_brushTipObject_19() { return &___brushTipObject_19; }
-	inline void set_brushTipObject_19(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	inline static int32_t get_offset_of_paintBrushSceneObject_19() { return static_cast<int32_t>(offsetof(DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC, ___paintBrushSceneObject_19)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_paintBrushSceneObject_19() const { return ___paintBrushSceneObject_19; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_paintBrushSceneObject_19() { return &___paintBrushSceneObject_19; }
+	inline void set_paintBrushSceneObject_19(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
 	{
-		___brushTipObject_19 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___brushTipObject_19), (void*)value);
+		___paintBrushSceneObject_19 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___paintBrushSceneObject_19), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_colorPicker_20() { return static_cast<int32_t>(offsetof(DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC, ___colorPicker_20)); }
-	inline FlexibleColorPicker_tD1D4032D819D7F35A043E41291E52F6F2C093572 * get_colorPicker_20() const { return ___colorPicker_20; }
-	inline FlexibleColorPicker_tD1D4032D819D7F35A043E41291E52F6F2C093572 ** get_address_of_colorPicker_20() { return &___colorPicker_20; }
-	inline void set_colorPicker_20(FlexibleColorPicker_tD1D4032D819D7F35A043E41291E52F6F2C093572 * value)
+	inline static int32_t get_offset_of_brushTipObject_20() { return static_cast<int32_t>(offsetof(DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC, ___brushTipObject_20)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_brushTipObject_20() const { return ___brushTipObject_20; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_brushTipObject_20() { return &___brushTipObject_20; }
+	inline void set_brushTipObject_20(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
 	{
-		___colorPicker_20 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___colorPicker_20), (void*)value);
+		___brushTipObject_20 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___brushTipObject_20), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_colorPicker_21() { return static_cast<int32_t>(offsetof(DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC, ___colorPicker_21)); }
+	inline FlexibleColorPicker_tD1D4032D819D7F35A043E41291E52F6F2C093572 * get_colorPicker_21() const { return ___colorPicker_21; }
+	inline FlexibleColorPicker_tD1D4032D819D7F35A043E41291E52F6F2C093572 ** get_address_of_colorPicker_21() { return &___colorPicker_21; }
+	inline void set_colorPicker_21(FlexibleColorPicker_tD1D4032D819D7F35A043E41291E52F6F2C093572 * value)
+	{
+		___colorPicker_21 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___colorPicker_21), (void*)value);
 	}
 };
 
@@ -54178,25 +54188,26 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3153[1] =
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3154;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize3154 = { sizeof (DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC), -1, 0, 0 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3154[17] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3154[18] = 
 {
 	DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC::get_offset_of_rayDist_4(),
 	DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC::get_offset_of_lMat_5(),
 	DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC::get_offset_of_paintPanel_6(),
 	DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC::get_offset_of_textLabel_7(),
 	DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC::get_offset_of_currLine_8(),
-	DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC::get_offset_of_numClicks_9(),
-	DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC::get_offset_of_numReplayClicks_10(),
-	DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC::get_offset_of_prevPaintPoint_11(),
-	DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC::get_offset_of_paintLineThickness_12(),
-	DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC::get_offset_of_paintLineColor_13(),
-	DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC::get_offset_of_brushTrailMaterial_14(),
-	DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC::get_offset_of_slider_15(),
-	DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC::get_offset_of_eventSystemManager_16(),
-	DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC::get_offset_of_drawingRootSceneObject_17(),
-	DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC::get_offset_of_paintBrushSceneObject_18(),
-	DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC::get_offset_of_brushTipObject_19(),
-	DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC::get_offset_of_colorPicker_20(),
+	DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC::get_offset_of_doKeepDrawingFeature_9(),
+	DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC::get_offset_of_numClicks_10(),
+	DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC::get_offset_of_numReplayClicks_11(),
+	DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC::get_offset_of_prevPaintPoint_12(),
+	DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC::get_offset_of_paintLineThickness_13(),
+	DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC::get_offset_of_paintLineColor_14(),
+	DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC::get_offset_of_brushTrailMaterial_15(),
+	DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC::get_offset_of_slider_16(),
+	DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC::get_offset_of_eventSystemManager_17(),
+	DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC::get_offset_of_drawingRootSceneObject_18(),
+	DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC::get_offset_of_paintBrushSceneObject_19(),
+	DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC::get_offset_of_brushTipObject_20(),
+	DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC::get_offset_of_colorPicker_21(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3155;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize3155 = { sizeof (DrawingHistoryManager_t465468CFA2187A9DE5AC4B22E7EC976E4C6A036B), -1, 0, 0 };

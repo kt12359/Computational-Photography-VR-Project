@@ -18,6 +18,9 @@ public class DrawLineManager : MonoBehaviour {
 
 	private GraphicsLineRenderer currLine;
 
+	// To keep track of feature point drawing mode
+	private bool doKeepDrawingFeature = false;
+
 	private int numClicks = 0;
 	private int numReplayClicks = 0;
 
@@ -225,8 +228,15 @@ public class DrawLineManager : MonoBehaviour {
 		GameObject currentSelection = eventSystemManager.currentSelectedGameObject;
 		bool isPanelSelected = currentSelection == null;
 
-        firstTouchCondition = (Input.touchCount == 1 && Input.GetTouch(0).phase == TouchPhase.Began && isPanelSelected);
-        whileTouchedCondition = (Input.touchCount == 1 && isPanelSelected);
+		// Reset when the user stops drawing
+		if (Input.touchCount == 0) {
+			doKeepDrawingFeature = false;
+			brushTipObject.GetComponent<TrailRenderer>().enabled = true;
+        	return;
+		}
+
+        firstTouchCondition   = (Input.touchCount == 1 && isPanelSelected && (doKeepDrawingFeature==false));
+        whileTouchedCondition = (Input.touchCount == 1 && isPanelSelected && (doKeepDrawingFeature==true));
 
         /*
 			Return immediately if there will be no updates
@@ -238,6 +248,11 @@ public class DrawLineManager : MonoBehaviour {
 
 
         List<Vector3> pointCloud = FeaturesVisualizer.GetPointCloud();
+        if (pointCloud == null) {
+        	brushTipObject.GetComponent<TrailRenderer>().enabled = true;
+        	return;
+        }
+
     	float distanceThreshold = 0.05f; // How close the point must be
 
     	Vector3 endPoint = getRayEndPoint (rayDist);
@@ -262,18 +277,20 @@ public class DrawLineManager : MonoBehaviour {
     		return;
     	}
 
-    	Debug.Log("_UpdateFeature() endPoint = " + endPoint);
-    	Debug.Log("_UpdateFeature() pointToDraw = " + pointToDraw);
+    	Debug.Log(
+    		"_UpdateFeature() endPoint = " + endPoint + "\n" +
+    		"_UpdateFeature() pointToDraw = " + pointToDraw + "\n" +
+    		"_UpdateFeature() firstTouchCondition = " + firstTouchCondition + "\n" +
+    		"_UpdateFeature() whileTouchedCondition = " + whileTouchedCondition + "\n" +);
 
     
         if (firstTouchCondition == true) {
-
 			// check if you're in drawing mode. if not, return.
 			if (!paintPanel.activeSelf) {
 				return;
 			}
 
-			Debug.Log ("First touch");
+			Debug.Log ("_UpdateFeature() First touch");
 
 			// start drawing line
 			GameObject go = new GameObject ();
@@ -314,13 +331,11 @@ public class DrawLineManager : MonoBehaviour {
 
 			Debug.Log ("Done Adding History");
 
+			// Make sure we continue this line
+			doKeepDrawingFeature = true;
+
 		} else if (whileTouchedCondition == true) {
-
 			if ((pointToDraw - prevPaintPoint).magnitude > 0.01f) {
-
-				// continue drawing line
-				//currLine.SetVertexCount (numClicks + 1);
-				//currLine.SetPosition (numClicks, pointToDraw); 
 
 				currLine.AddPoint (pointToDraw);
 				numClicks++;
