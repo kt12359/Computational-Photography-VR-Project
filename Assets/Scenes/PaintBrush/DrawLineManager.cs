@@ -23,7 +23,6 @@ public class DrawLineManager : MonoBehaviour {
 
 	private Vector3 prevPaintPoint;
     private float paintLineThickness;
-    //private Color paintLineColor;
 	private Color paintLineColor;
 
     [SerializeField] Material brushTrailMaterial;
@@ -37,9 +36,9 @@ public class DrawLineManager : MonoBehaviour {
 	public GameObject paintBrushSceneObject;
 
     [SerializeField] GameObject brushTipObject;
+	[SerializeField] GameObject snapToSurfaceBrushTipObject;
 
 	public FlexibleColorPicker colorPicker;
-
 
     public void setLineWidth(float thickness)
 	{
@@ -64,7 +63,6 @@ public class DrawLineManager : MonoBehaviour {
         // set line color to match color of the button
 		buttonImage.color = colorPicker.GetColor();
 		setLineColor(buttonImage.color);
-        //setLineColor(buttonImage.color);
     }
 
 	public void OnPaintBrushTypeClick(Material selectedMaterial)
@@ -90,11 +88,17 @@ public class DrawLineManager : MonoBehaviour {
 		return endPoint;
 	}
 
+	public Vector3 getRayEndPointReticle(float dist, Vector3 endpoint)
+	{
+		Ray ray = Camera.main.ViewportPointToRay (endpoint);
+		Vector3 newEndPoint = ray.GetPoint(dist);
+		return newEndPoint;
+	}
+
 	// Use this for initialization
 	void Start () {
 
         paintLineColor = new Color();
-		//cw = new ColorWheelControl();
         setLineColor(Color.red);
 
         setLineWidth(slider.value);
@@ -103,10 +107,12 @@ public class DrawLineManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-
-		Vector3 endPoint = getRayEndPoint (rayDist);
-		paintLineColor = colorPicker.GetColor();//cw.updateColor();
+		Vector3 endPoint;
+		if(!snapToSurfaceBrushTipObject.activeSelf)
+			endPoint = getRayEndPoint (rayDist);
+		else
+			endPoint = getRayEndPointReticle(rayDist, GetComponent<ReticleController>().getLastCursorPosition());
+		paintLineColor = colorPicker.GetColor();
 
 		//renderSphereAsBrushTip (endPoint);
 
@@ -130,6 +136,8 @@ public class DrawLineManager : MonoBehaviour {
 				return;
 			}
 
+			textLabel.text = "Drawing";
+
 			Debug.Log ("First touch");
 
 			// start drawing line
@@ -145,10 +153,7 @@ public class DrawLineManager : MonoBehaviour {
 			currLine.SetWidth (paintLineThickness);
 
 
-            Color newColor = paintLineColor;//new Color(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f));
-
-            //currLine.lmat.color = paintLineColor;
-			currLine.lmat.color = colorPicker.GetColor();//newColor;
+			currLine.lmat.color = colorPicker.GetColor();
 
 			numClicks = 0;
 
@@ -163,7 +168,11 @@ public class DrawLineManager : MonoBehaviour {
 
 			Debug.Log ("Adding History 2");
 
-            brushTipObject.GetComponent<TrailRenderer>().enabled = false;
+            if(!snapToSurfaceBrushTipObject.activeSelf)
+                brushTipObject.GetComponent<TrailRenderer>().enabled = false;
+			else
+				snapToSurfaceBrushTipObject.GetComponent<TrailRenderer>().enabled = false;
+			
             paintBrushSceneObject.GetComponent<DrawingHistoryManager> ().addDrawingCommand (index, 0, endPoint, currLine.lmat.color, paintLineThickness);
 
 			Debug.Log ("Adding History 3");
@@ -187,15 +196,21 @@ public class DrawLineManager : MonoBehaviour {
 				// add to history without incrementing index
 				int index = GetComponent<PaintController> ().drawingHistoryIndex;
 
-				paintBrushSceneObject.GetComponent<DrawingHistoryManager> ().addDrawingCommand (index, 0, endPoint, currLine.lmat.color, paintLineThickness);
+				if(!snapToSurfaceBrushTipObject.activeSelf)
+                	brushTipObject.GetComponent<TrailRenderer>().enabled = false;
+				else
+					snapToSurfaceBrushTipObject.GetComponent<TrailRenderer>().enabled = false;
 
-                brushTipObject.GetComponent<TrailRenderer>().enabled = false;
+				paintBrushSceneObject.GetComponent<DrawingHistoryManager> ().addDrawingCommand (index, 0, endPoint, currLine.lmat.color, paintLineThickness);
             }
         }
 
         else
         {
-            brushTipObject.GetComponent<TrailRenderer>().enabled = true;
+			if(!snapToSurfaceBrushTipObject.activeSelf)
+            	brushTipObject.GetComponent<TrailRenderer>().enabled = true;
+			else
+				snapToSurfaceBrushTipObject.GetComponent<TrailRenderer>().enabled = true;
         }
     }
 

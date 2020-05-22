@@ -1496,18 +1496,6 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.PlayerConnectionInternal
 
-	//Start Registrations for type : UnityEngine.Profiling.Profiler
-
-		//System.Void UnityEngine.Profiling.Profiler::BeginSampleImpl(System.String,UnityEngine.Object)
-		void Register_UnityEngine_Profiling_Profiler_BeginSampleImpl();
-		Register_UnityEngine_Profiling_Profiler_BeginSampleImpl();
-
-		//System.Void UnityEngine.Profiling.Profiler::EndSample()
-		void Register_UnityEngine_Profiling_Profiler_EndSample();
-		Register_UnityEngine_Profiling_Profiler_EndSample();
-
-	//End Registrations for type : UnityEngine.Profiling.Profiler
-
 	//Start Registrations for type : UnityEngine.QualitySettings
 
 		//System.Void UnityEngine.QualitySettings::set_vSyncCount(System.Int32)
@@ -2241,6 +2229,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Single UnityEngine.Time::get_realtimeSinceStartup()
 		void Register_UnityEngine_Time_get_realtimeSinceStartup();
 		Register_UnityEngine_Time_get_realtimeSinceStartup();
+
+		//System.Single UnityEngine.Time::get_time()
+		void Register_UnityEngine_Time_get_time();
+		Register_UnityEngine_Time_get_time();
 
 		//System.Single UnityEngine.Time::get_unscaledDeltaTime()
 		void Register_UnityEngine_Time_get_unscaledDeltaTime();

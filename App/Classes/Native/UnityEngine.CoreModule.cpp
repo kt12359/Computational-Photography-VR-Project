@@ -1068,7 +1068,6 @@ IL2CPP_EXTERN_C const uint32_t Cubemap__ctor_mFC82AF58FF4875D6750838AF47A05D5B20
 IL2CPP_EXTERN_C const uint32_t CullingGroup_t7F71E48F69794B87C5A7F3F27AD1F1517B2FBF1F_com_FromNativeMethodDefinition_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t CullingGroup_t7F71E48F69794B87C5A7F3F27AD1F1517B2FBF1F_pinvoke_FromNativeMethodDefinition_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t DebugLogHandler_LogException_m816CF2DDA84DFC1D1715B24F9626BD623FF05416_MetadataUsageId;
-IL2CPP_EXTERN_C const uint32_t Debug_Assert_m84EE43ACFD01E8C0CEC0160C494B2CE77338F7BC_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Debug_CallOverridenDebugHandler_m5F5FC22445A9C957A655734DA5B661A5E256BEBE_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Debug_LogAssertion_m2A8940871EC1BD01A405103429F2FCE2AFB12506_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Debug_LogErrorFormat_m994E4759C25BF0E9DD4179C10E3979558137CCF0_MetadataUsageId;
@@ -1143,7 +1142,6 @@ IL2CPP_EXTERN_C const uint32_t Material_set_mainTexture_m0742CFF768E9701618DA07C
 IL2CPP_EXTERN_C const uint32_t Mathf_Abs_mD852D98E3D4846B45F57D0AD4A8C6E00EF272662_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Mathf_Acos_mF3B88F0C8A5AE43F4C4A42676C8D3DE67B3EAF82_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Mathf_Approximately_m91AF00403E0D2DEA1AAE68601AD218CFAD70DF7E_MetadataUsageId;
-IL2CPP_EXTERN_C const uint32_t Mathf_Asin_mA5A9438C40F307D68427BFBBA407BDBF7F15C823_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Mathf_Atan2_mC5BCC778869EF562CD3A5A9D96002F63DA36A823_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Mathf_Atan_m1FF47E958C869FCB8BADF804011E04736E23C6F9_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Mathf_CeilToInt_m0230CCC7CC9266F18125D9425C38A25D1CA4275B_MetadataUsageId;
@@ -20635,38 +20633,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogWarningFormat_m4A02CCF91F3A9392
 		return;
 	}
 }
-// System.Void UnityEngine.Debug::Assert(System.Boolean,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Assert_m84EE43ACFD01E8C0CEC0160C494B2CE77338F7BC (bool ___condition0, String_t* ___message1, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Debug_Assert_m84EE43ACFD01E8C0CEC0160C494B2CE77338F7BC_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	bool V_0 = false;
-	{
-		bool L_0 = ___condition0;
-		V_0 = (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
-		bool L_1 = V_0;
-		if (!L_1)
-		{
-			goto IL_0016;
-		}
-	}
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_t7B5FCB117E2FD63B6838BC52821B252E2BFB61C4_il2cpp_TypeInfo_var);
-		RuntimeObject* L_2 = Debug_get_unityLogger_mFA75EC397E067D09FD66D56B4E7692C3FCC3E960(/*hidden argument*/NULL);
-		String_t* L_3 = ___message1;
-		NullCheck(L_2);
-		InterfaceActionInvoker2< int32_t, RuntimeObject * >::Invoke(1 /* System.Void UnityEngine.ILogger::Log(UnityEngine.LogType,System.Object) */, ILogger_t572B66532D8EB6E76240476A788384A26D70866F_il2cpp_TypeInfo_var, L_2, 1, L_3);
-	}
-
-IL_0016:
-	{
-		return;
-	}
-}
 // System.Void UnityEngine.Debug::LogAssertion(System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogAssertion_m2A8940871EC1BD01A405103429F2FCE2AFB12506 (RuntimeObject * ___message0, const RuntimeMethod* method)
 {
@@ -29299,30 +29265,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Mathf_Tan_m436F7A034334BCB42BD46ABC94D1
 		float L_0 = ___f0;
 		IL2CPP_RUNTIME_CLASS_INIT(Math_tFB388E53C7FDC6FCCF9A19ABF5A4E521FBD52E19_il2cpp_TypeInfo_var);
 		double L_1 = tan((((double)((double)L_0))));
-		V_0 = (((float)((float)L_1)));
-		goto IL_000c;
-	}
-
-IL_000c:
-	{
-		float L_2 = V_0;
-		return L_2;
-	}
-}
-// System.Single UnityEngine.Mathf::Asin(System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Mathf_Asin_mA5A9438C40F307D68427BFBBA407BDBF7F15C823 (float ___f0)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Mathf_Asin_mA5A9438C40F307D68427BFBBA407BDBF7F15C823_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	float V_0 = 0.0f;
-	{
-		float L_0 = ___f0;
-		IL2CPP_RUNTIME_CLASS_INIT(Math_tFB388E53C7FDC6FCCF9A19ABF5A4E521FBD52E19_il2cpp_TypeInfo_var);
-		double L_1 = asin((((double)((double)L_0))));
 		V_0 = (((float)((float)L_1)));
 		goto IL_000c;
 	}
