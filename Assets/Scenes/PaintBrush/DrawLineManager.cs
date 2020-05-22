@@ -108,10 +108,10 @@ public class DrawLineManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		Vector3 endPoint;
-		if(!snapToSurfaceBrushTipObject.activeSelf)
-			endPoint = getRayEndPoint (rayDist);
-		else
-			endPoint = getRayEndPointReticle(rayDist, GetComponent<ReticleController>().getLastCursorPosition());
+		if(snapToSurfaceBrushTipObject.activeSelf)
+			return;
+
+		endPoint = getRayEndPoint (rayDist);
 		paintLineColor = colorPicker.GetColor();
 
 		//renderSphereAsBrushTip (endPoint);
