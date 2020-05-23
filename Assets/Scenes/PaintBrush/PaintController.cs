@@ -16,6 +16,8 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 
     private GameObject buttonPanel;
 
+	private bool snapToSurfaceEnabled;
+
     [SerializeField] GameObject brushTipObject;
 	[SerializeField] GameObject brushTipGraphic;
 	[SerializeField] GameObject snapToSurfaceBrushTipObject;
@@ -75,6 +77,7 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 		brushTipObject.SetActive(false);
 		drawOnSurfacePanel.SetActive(false);
 		snapToSurfaceBrushTipObject.SetActive(false);
+		snapToSurfaceEnabled = false;
 
 		// Make sure this child is active for when its parent is active
 		buttonPanel = paintPanel.transform.Find("ButtonPanel").gameObject;
@@ -177,7 +180,18 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 
 		textLabel.text = "Enabling Snap to Surface";
 		textLabel.text = "Snap to Surface Enabled";
-		ToggleSnapToSurface(true);
+
+        drawOnSurfacePanel.SetActive(true);
+        mainButtonPanel.SetActive(false);
+
+		snapToSurfaceBrushTipObject.SetActive(true);
+		//brushTipGraphic.SetActive(snapToSurfacePanelActive);
+		brushTipObject.SetActive(false);
+		snapToSurfaceEnabled = true;
+
+	//GetComponent<ReticleController>().StartReticle();
+
+		//LibPlacenote.Instance.StartSession();
 	}
 
 	public void OnReturnToMainClick()
@@ -188,8 +202,16 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 		}
 
 		textLabel.text = "Returning to Main Session";
+        drawOnSurfacePanel.SetActive(false);
+        mainButtonPanel.SetActive(true);
+
+		snapToSurfaceBrushTipObject.SetActive(false);
+		//brushTipGraphic.SetActive(snapToSurfacePanelActive);
+		brushTipObject.SetActive(true);
+		snapToSurfaceEnabled = false;
+
+		//GetComponent<ReticleController>().StopReticle();
 		textLabel.text = "Press the Screen to Paint";
-		ToggleSnapToSurface(false);
 	}
 
 	// When user clicks snap to surface button, activate snap to surface panel
@@ -197,7 +219,7 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 	public void ToggleSnapToSurface(bool snapToSurfacePanelActive)
 	{
 		snapToSurfaceBrushTipObject.SetActive(snapToSurfacePanelActive);
-		brushTipGraphic.SetActive(snapToSurfacePanelActive);
+		//brushTipGraphic.SetActive(snapToSurfacePanelActive);
 		brushTipObject.SetActive(!snapToSurfacePanelActive);
 
         drawOnSurfacePanel.SetActive(snapToSurfacePanelActive);

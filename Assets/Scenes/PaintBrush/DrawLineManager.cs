@@ -40,6 +40,7 @@ public class DrawLineManager : MonoBehaviour {
 
 	public FlexibleColorPicker colorPicker;
 
+
     public void setLineWidth(float thickness)
 	{
 		paintLineThickness = thickness;
@@ -88,13 +89,6 @@ public class DrawLineManager : MonoBehaviour {
 		return endPoint;
 	}
 
-	public Vector3 getRayEndPointReticle(float dist, Vector3 endpoint)
-	{
-		Ray ray = Camera.main.ViewportPointToRay (endpoint);
-		Vector3 newEndPoint = ray.GetPoint(dist);
-		return newEndPoint;
-	}
-
 	// Use this for initialization
 	void Start () {
 
@@ -105,9 +99,13 @@ public class DrawLineManager : MonoBehaviour {
 
     }
 
-	public void draw() {
-		Vector3 endPoint;
-		endPoint = getRayEndPoint (rayDist);
+	public void drawNormal()
+	{
+		Vector3 endPoint = getRayEndPoint (rayDist);
+		draw(endPoint);
+	}
+	public void draw(Vector3 endPoint) 
+	{
 		paintLineColor = colorPicker.GetColor();
 
 		//renderSphereAsBrushTip (endPoint);
@@ -131,8 +129,6 @@ public class DrawLineManager : MonoBehaviour {
 
 				return;
 			}
-
-			textLabel.text = "Drawing";
 
 			Debug.Log ("First touch");
 
@@ -210,13 +206,25 @@ public class DrawLineManager : MonoBehaviour {
         }	
 
 	}
+
+	void drawOnSurface()
+	{
+		Vector3 invalid = new Vector3(-99999999, -99999999, -99999999);
+		Vector3 pos = GetComponent<ReticleController>().updatePos();
+		if(pos == invalid)
+			return;
+		Ray ray = Camera.main.ViewportPointToRay (pos);
+		Vector3 endPoint = ray.GetPoint (rayDist);
+		draw(endPoint);
+	}
+
 	
 	// Update is called once per frame
 	void Update () {
 		if(snapToSurfaceBrushTipObject.activeSelf)
-			return;
-
-		draw();
+			drawOnSurface();
+		else
+			drawNormal();
     }
 
 

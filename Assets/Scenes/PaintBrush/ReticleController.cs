@@ -22,17 +22,30 @@ using UnityEngine.XR.ARSubsystems;
         private IEnumerator mGoToTarget;
         private IEnumerator mContinuousHittest;
 
-        public void startStopReticle(bool start)
-        {
-            if(start)
-                StartReticle();
-            else
-                StopReticle();
-        }
-
         public Vector3 getLastCursorPosition()
         {
             return lastCursorPosition;
+        }
+
+        public Vector3 updatePos()
+        {
+            var screenPosition = new Vector2(Screen.width / 2, Screen.height / 2);
+
+            if (m_RaycastManager.Raycast(screenPosition, s_Hits, TrackableType.FeaturePoint))
+            {
+                // Raycast hits are sorted by distance, so get the closest hit.
+                var targetPose = s_Hits[0].pose;
+
+                // move reticle to the hit test point
+                mReticle.transform.position = targetPose.position;
+
+                // Show reticle if there's an active hit result
+                mReticle.SetActive(true);
+
+                return mReticle.transform.position;
+            }
+
+            return new Vector3 (-99999999, -99999999, -99999999);
         }
 
         void Start()
@@ -48,10 +61,9 @@ using UnityEngine.XR.ARSubsystems;
         public void StartReticle()
         {
 
-            mReticle.SetActive(false);
+            mReticle.SetActive(true);
 
-            while(mReticle.activeSelf)
-                StartCoroutine(mContinuousHittest);
+            StartCoroutine(mContinuousHittest);
         }
 
 
@@ -76,7 +88,8 @@ using UnityEngine.XR.ARSubsystems;
             }
         }
 
-        private IEnumerator ContinuousHittest()
+//Continuous hit test was private
+        public IEnumerator ContinuousHittest()
         {
 
             bool withinDistance = false;
@@ -84,6 +97,7 @@ using UnityEngine.XR.ARSubsystems;
 
             while (true)
             {
+                notifications.text = "In continuous hit test";
                 // getting screen point
                 var screenPosition = new Vector2(Screen.width / 2, Screen.height / 2);
 
@@ -186,13 +200,13 @@ using UnityEngine.XR.ARSubsystems;
                                 // start new animation to go to this destination
                                 mGoToTarget = GoToTarget(targetPose.position);
                                 yield return StartCoroutine(mGoToTarget);
-                                GetComponent<DrawLineManager>().draw();
 
                             }
                         }
+                    }
                         // hide reticle if there's no hit test result
                         //mReticle.SetActive(false);
-                    }
+                    
 
                     // go to next frame
                     yield return null;
@@ -221,5 +235,3 @@ using UnityEngine.XR.ARSubsystems;
 
         }
     }
-
-
