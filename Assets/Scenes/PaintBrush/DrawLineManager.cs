@@ -23,7 +23,6 @@ public class DrawLineManager : MonoBehaviour {
 
 	private Vector3 prevPaintPoint;
     private float paintLineThickness;
-    //private Color paintLineColor;
 	private Color paintLineColor;
 
     [SerializeField] Material brushTrailMaterial;
@@ -37,6 +36,7 @@ public class DrawLineManager : MonoBehaviour {
 	public GameObject paintBrushSceneObject;
 
     [SerializeField] GameObject brushTipObject;
+	[SerializeField] GameObject snapToSurfaceBrushTipObject;
 
 	public FlexibleColorPicker colorPicker;
 
@@ -64,7 +64,6 @@ public class DrawLineManager : MonoBehaviour {
         // set line color to match color of the button
 		buttonImage.color = colorPicker.GetColor();
 		setLineColor(buttonImage.color);
-        //setLineColor(buttonImage.color);
     }
 
 	public void OnPaintBrushTypeClick(Material selectedMaterial)
@@ -90,24 +89,35 @@ public class DrawLineManager : MonoBehaviour {
 		return endPoint;
 	}
 
+	public Vector3 getRayEndPointSurface(float dist)
+	{
+		return snapToSurfaceBrushTipObject.transform.position;
+	}
+
 	// Use this for initialization
 	void Start () {
 
         paintLineColor = new Color();
-		//cw = new ColorWheelControl();
         setLineColor(Color.red);
 
         setLineWidth(slider.value);
 
     }
-	
-	// Update is called once per frame
-	void Update () {
 
-
+	public void drawNormal()
+	{
 		Vector3 endPoint = getRayEndPoint (rayDist);
-		paintLineColor = colorPicker.GetColor();//cw.updateColor();
+		draw();
+	}
 
+	public void draw() 
+	{
+		Vector3 endPoint;
+		if(snapToSurfaceBrushTipObject.activeSelf)
+			endPoint = getRayEndPointSurface(rayDist);
+		else
+			endPoint = getRayEndPoint(rayDist);
+		paintLineColor = colorPicker.GetColor();
 		//renderSphereAsBrushTip (endPoint);
 
 
@@ -117,19 +127,15 @@ public class DrawLineManager : MonoBehaviour {
 		GameObject currentSelection = eventSystemManager.currentSelectedGameObject;
 		bool isPanelSelected = currentSelection == null;
 
-
         firstTouchCondition = (Input.touchCount == 1 && Input.GetTouch(0).phase == TouchPhase.Began && isPanelSelected);
         whileTouchedCondition = (Input.touchCount == 1 && isPanelSelected);
 
-
         if (firstTouchCondition == true) {
-
 			// check if you're in drawing mode. if not, return.
-			if (!paintPanel.activeSelf) {
+			if (!paintPanel.activeSelf && !snapToSurfaceBrushTipObject.activeSelf) {
 
 				return;
 			}
-
 			Debug.Log ("First touch");
 
 			// start drawing line
@@ -145,10 +151,7 @@ public class DrawLineManager : MonoBehaviour {
 			currLine.SetWidth (paintLineThickness);
 
 
-            Color newColor = paintLineColor;//new Color(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f));
-
-            //currLine.lmat.color = paintLineColor;
-			currLine.lmat.color = colorPicker.GetColor();//newColor;
+			currLine.lmat.color = paintLineColor;
 
 			numClicks = 0;
 
@@ -163,7 +166,9 @@ public class DrawLineManager : MonoBehaviour {
 
 			Debug.Log ("Adding History 2");
 
-            brushTipObject.GetComponent<TrailRenderer>().enabled = false;
+            if(brushTipObject.activeSelf)
+                brushTipObject.GetComponent<TrailRenderer>().enabled = false;
+			
             paintBrushSceneObject.GetComponent<DrawingHistoryManager> ().addDrawingCommand (index, 0, endPoint, currLine.lmat.color, paintLineThickness);
 
 			Debug.Log ("Adding History 3");
@@ -181,22 +186,39 @@ public class DrawLineManager : MonoBehaviour {
 
 				currLine.AddPoint (endPoint);
 				numClicks++;
-
 				prevPaintPoint = endPoint;
 
 				// add to history without incrementing index
 				int index = GetComponent<PaintController> ().drawingHistoryIndex;
 
-				paintBrushSceneObject.GetComponent<DrawingHistoryManager> ().addDrawingCommand (index, 0, endPoint, currLine.lmat.color, paintLineThickness);
+				if(brushTipObject.activeSelf)
+                	brushTipObject.GetComponent<TrailRenderer>().enabled = false;
 
-                brushTipObject.GetComponent<TrailRenderer>().enabled = false;
+				paintBrushSceneObject.GetComponent<DrawingHistoryManager> ().addDrawingCommand (index, 0, endPoint, currLine.lmat.color, paintLineThickness);
             }
+			else{
+				Debug.Log("Change in distance not large enough. Start: " + prevPaintPoint + " End: " + endPoint);
+			}
         }
 
         else
         {
-            brushTipObject.GetComponent<TrailRenderer>().enabled = true;
-        }
+			if(brushTipObject.activeSelf)
+            	brushTipObject.GetComponent<TrailRenderer>().enabled = true;
+        }	
+
+	}
+
+	public void drawOnSurface()
+	{
+		Vector3 endPoint = getRayEndPointSurface(0.0f);
+		draw();
+	}
+
+	
+	// Update is called once per frame
+	void Update () {
+		draw();
     }
 
 
