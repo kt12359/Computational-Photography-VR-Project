@@ -26,6 +26,7 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
     public enum DrawingMode
     {
     	normal,
+    	surface,
     	feature
     }
 
@@ -197,6 +198,10 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 				pointCloudOn = true;
 				Debug.Log ("Point Cloud On");
 			}
+		}
+		else if (mode == "surface") {
+			currentDrawingMode = DrawingMode.surface;
+			// TODO
 		}
 		else {
 			Debug.Log("Invalid mode passed to OnModeClick: " + mode);
