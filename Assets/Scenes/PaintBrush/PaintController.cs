@@ -34,10 +34,6 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
     	feature
     }
 
-
-	[SerializeField] GameObject drawOnSurfacePanel;
-	[SerializeField] GameObject backToMain;
-
     [SerializeField] RawImage mLocalizationThumbnail;
     [SerializeField] Image mLocalizationThumbnailContainer;
 
@@ -86,7 +82,6 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 		paintPanel.SetActive (false);
 		colorPalette.SetActive(false);
 		brushTipObject.SetActive(false);
-		drawOnSurfacePanel.SetActive(false);
 		snapToSurfaceBrushTipObject.SetActive(false);
 		snapToSurfaceEnabled = false;
 
@@ -251,7 +246,6 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 		snapToSurfaceBrushTipObject.SetActive(snapToSurfacePanelActive);
 		brushTipObject.SetActive(!snapToSurfacePanelActive);
 
-        drawOnSurfacePanel.SetActive(snapToSurfacePanelActive);
         mainButtonPanel.SetActive(!snapToSurfacePanelActive);
 
 		GetComponent<ReticleController>().startStopReticle(snapToSurfacePanelActive);

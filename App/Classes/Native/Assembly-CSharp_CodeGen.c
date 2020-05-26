@@ -488,8 +488,8 @@ extern void PaintController_OnStatusChange_m935E882A373A8D6B0805181488E9A1170863
 extern void PaintController_OnLocalized_m5A0B4C5902F637A071F0963E2A4FE6E5C82F775A ();
 // 0x000000E6 System.Void PaintController::.ctor()
 extern void PaintController__ctor_m818998C4946F96F96E83C961AF897F129CD0B884 ();
-// 0x000000E7 System.Void PaintController::<Start>b__22_0(UnityEngine.Texture2D)
-extern void PaintController_U3CStartU3Eb__22_0_mA0222E905E4C05CDA1BFCA6F6483A747FDDA5E06 ();
+// 0x000000E7 System.Void PaintController::<Start>b__20_0(UnityEngine.Texture2D)
+extern void PaintController_U3CStartU3Eb__20_0_m16E6E91F52EDE90245F9956487F1A66EA571D562 ();
 // 0x000000E8 System.Void PaintPlacementReticleController::Start()
 extern void PaintPlacementReticleController_Start_mF77725C328DE062AF1D6274C0D19DF6354AF92BA ();
 // 0x000000E9 System.Void PaintPlacementReticleController::startStopReticle(System.Boolean)
@@ -1349,7 +1349,7 @@ static Il2CppMethodPointer s_methodPointers[553] =
 	PaintController_OnStatusChange_m935E882A373A8D6B0805181488E9A1170863C9EA,
 	PaintController_OnLocalized_m5A0B4C5902F637A071F0963E2A4FE6E5C82F775A,
 	PaintController__ctor_m818998C4946F96F96E83C961AF897F129CD0B884,
-	PaintController_U3CStartU3Eb__22_0_mA0222E905E4C05CDA1BFCA6F6483A747FDDA5E06,
+	PaintController_U3CStartU3Eb__20_0_m16E6E91F52EDE90245F9956487F1A66EA571D562,
 	PaintPlacementReticleController_Start_mF77725C328DE062AF1D6274C0D19DF6354AF92BA,
 	PaintPlacementReticleController_startStopReticle_mA5C0DD8081C0363472D00E7DA6E9EC95E8CF4C1A,
 	PaintPlacementReticleController_StartReticle_mD7BBCDD0BEEF9613B6BE51785127B86440B7B6A4,

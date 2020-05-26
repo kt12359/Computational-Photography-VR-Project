@@ -57,6 +57,7 @@
 		<type fullname="MainThreadTaskQueue" preserve="nothing"/>
 		<type fullname="PaintController" preserve="nothing"/>
 		<type fullname="PlacenoteCameraManager" preserve="nothing"/>
+		<type fullname="ReticleController" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.XR.ARFoundation">
 		<type fullname="UnityEngine.XR.ARFoundation.ARCameraBackground" preserve="nothing"/>
