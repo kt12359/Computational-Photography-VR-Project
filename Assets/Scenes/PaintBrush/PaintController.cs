@@ -29,6 +29,7 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 
     public enum DrawingMode
     {
+    	none,
     	normal,
     	surface,
     	feature
@@ -141,19 +142,19 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
         textLabel.text = "Press and hold the screen to paint";
 	}
 
-	public void ToggleSaveLayerPanel(bool saveLayerPanelActive)
+	public void TogglePanelSaveLayer(bool saveLayerPanelActive)
 	{
 		saveLayerPanel.SetActive(saveLayerPanelActive);
         mainButtonPanel.SetActive(!saveLayerPanelActive);
 	}
 
-	public void ToggleLoadLayerPanel(bool loadLayerPanelActive)
+	public void TogglePanelLoadLayer(bool loadLayerPanelActive)
 	{
 		loadLayerPanel.SetActive(loadLayerPanelActive);
         mainButtonPanel.SetActive(!loadLayerPanelActive);
 	}
 
-	public void ToggleModePanel(bool modePanelActive)
+	public void TogglePanelMode(bool modePanelActive)
 	{
 		modePanel.SetActive(modePanelActive);
         mainButtonPanel.SetActive(!modePanelActive);
@@ -170,7 +171,7 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 		textLabel.text = "Saving Layer " + layerNum;
 		GetComponent<DrawingHistoryManager>().saveLayer(layerNum);
 		textLabel.text = "Layer " + layerNum + " saved!";
-		ToggleSaveLayerPanel(false);
+		TogglePanelSaveLayer(false);
 	}
 
 	public void OnLoadLayerClick (int layerNum)
@@ -183,72 +184,99 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 		textLabel.text = "Loading Layer " + layerNum;
 		GetComponent<DrawingHistoryManager>().loadLayer(layerNum);
 		textLabel.text = "Layer " + layerNum + " loaded!";
-		ToggleLoadLayerPanel(false);
+		TogglePanelLoadLayer(false);
 	}
 
 	public void OnModeClick(string mode)
 	{
+		// Handle turning off the current mode
+		switch (currentDrawingMode) {
+			case DrawingMode.normal:
+				ToggleModeNormal(false);
+				break;
+			case DrawingMode.feature:
+				ToggleModeFeature(false);
+				break;
+			case DrawingMode.surface:
+				ToggleModeSurface(false);
+				break;
+			default:
+				break;
+		}
+
+		// Handle turning on the new mode
 		if (mode == "normal") {
-			currentDrawingMode = DrawingMode.normal;
-			if (pointCloudOn == true) {
-				FeaturesVisualizer.DisablePointcloud ();
-	            pointCloudOn = false;
-				Debug.Log ("Point Cloud Off");
-			}
+			ToggleModeNormal(true);
 		}
 		else if (mode == "feature") {
+			ToggleModeFeature(true);
+		}
+		else if (mode == "surface") {
+			ToggleModeSurface(true);
+		}
+		else {
+			Debug.Log("Invalid mode passed to OnModeClick: " + mode);
+		}
+
+		TogglePanelMode(false);
+	}
+
+	private void ToggleModeNormal(bool modeNormalOn) {
+		if (modeNormalOn) {
+			// Turn on
+			currentDrawingMode = DrawingMode.normal;
+			textLabel.text = "Press the Screen to Paint";
+		} else {
+			// Turn off
+			currentDrawingMode = DrawingMode.none;
+		}
+	}
+
+	// When user clicks snap to surface button, activate snap to surface panel
+	// and snap to surface brush tip object. On return to main click, deactivate.
+	private void ToggleModeSurface(bool modeSurfaceOn) {
+		if (modeSurfaceOn) {
+			// Turn on
+			if (!LibPlacenote.Instance.Initialized()) {
+				Debug.Log ("SDK not yet initialized");
+				return;
+			}
+			currentDrawingMode = DrawingMode.surface;
+			
+			textLabel.text = "Snap to Surface Enabled";
+
+	        snapToSurfaceBrushTipObject.SetActive(true);
+			brushTipObject.SetActive(false);
+			GetComponent<ReticleController>().StartReticle();
+		} else {
+			// Turn off
+			currentDrawingMode = DrawingMode.none;
+			textLabel.text = "Returning to Main Session";
+			snapToSurfaceBrushTipObject.SetActive(false);
+			brushTipObject.SetActive(true);
+			GetComponent<ReticleController>().StopReticle();
+		}
+	}
+
+	private void ToggleModeFeature(bool modeFeatureOn) {
+		if (modeFeatureOn) {
+			// Turn on
 			currentDrawingMode = DrawingMode.feature;
 			if (pointCloudOn == false) {
 				FeaturesVisualizer.EnablePointcloud(new Color(1f, 1f, 1f, 0.2f), new Color(1f, 1f, 1f, 0.8f));
 				pointCloudOn = true;
 				Debug.Log ("Point Cloud On");
 			}
-		}
-		else if (mode == "surface") {
-			currentDrawingMode = DrawingMode.surface;
-			if (!LibPlacenote.Instance.Initialized()) {
-				Debug.Log ("SDK not yet initialized");
-				return;
+			textLabel.text = "Feature Drawing Enabled";
+		} else {
+			// Turn off
+			currentDrawingMode = DrawingMode.none;
+			if (pointCloudOn == true) {
+				FeaturesVisualizer.DisablePointcloud ();
+	            pointCloudOn = false;
+				Debug.Log ("Point Cloud Off");
 			}
-
-			textLabel.text = "Enabling Snap to Surface";
-			textLabel.text = "Snap to Surface Enabled";
-
-	        ToggleSnapToSurface(true);
-
-			GetComponent<ReticleController>().StartReticle();
-
-			//LibPlacenote.Instance.StartSession();
 		}
-		else {
-			Debug.Log("Invalid mode passed to OnModeClick: " + mode);
-		}
-
-		ToggleModePanel(false);
-	}
-
-	public void OnReturnToMainClick()
-	{
-		if (!LibPlacenote.Instance.Initialized()) {
-			Debug.Log ("SDK not yet initialized");
-			return;
-		}
-
-		textLabel.text = "Returning to Main Session";
-		ToggleSnapToSurface(false);
-		textLabel.text = "Press the Screen to Paint";
-	}
-
-	// When user clicks snap to surface button, activate snap to surface panel
-	// and snap to surface brush tip object. On return to main click, deactivate.
-	public void ToggleSnapToSurface(bool snapToSurfacePanelActive)
-	{
-		snapToSurfaceBrushTipObject.SetActive(snapToSurfacePanelActive);
-		brushTipObject.SetActive(!snapToSurfacePanelActive);
-
-        mainButtonPanel.SetActive(!snapToSurfacePanelActive);
-
-		GetComponent<ReticleController>().startStopReticle(snapToSurfacePanelActive);
 	}
 
 

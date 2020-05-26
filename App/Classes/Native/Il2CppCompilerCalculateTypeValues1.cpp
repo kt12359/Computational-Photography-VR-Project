@@ -54542,9 +54542,10 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3159[19] =
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3160;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize3160 = { sizeof (DrawingMode_tC38E5C04FAAA4C8AB38CA9EF4576944DD35500C9)+ sizeof (RuntimeObject), sizeof(int32_t), 0, 0 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3160[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3160[5] = 
 {
 	DrawingMode_tC38E5C04FAAA4C8AB38CA9EF4576944DD35500C9::get_offset_of_value___2() + static_cast<int32_t>(sizeof(RuntimeObject)),
+	0,
 	0,
 	0,
 	0,
