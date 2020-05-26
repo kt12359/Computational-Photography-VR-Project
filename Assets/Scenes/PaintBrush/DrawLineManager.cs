@@ -89,6 +89,11 @@ public class DrawLineManager : MonoBehaviour {
 		return endPoint;
 	}
 
+	public Vector3 getRayEndPointSurface(float dist)
+	{
+		return snapToSurfaceBrushTipObject.transform.position;
+	}
+
 	// Use this for initialization
 	void Start () {
 
@@ -102,12 +107,17 @@ public class DrawLineManager : MonoBehaviour {
 	public void drawNormal()
 	{
 		Vector3 endPoint = getRayEndPoint (rayDist);
-		draw(endPoint);
+		draw();
 	}
-	public void draw(Vector3 endPoint) 
-	{
-		paintLineColor = colorPicker.GetColor();
 
+	public void draw() 
+	{
+		Vector3 endPoint;
+		if(snapToSurfaceBrushTipObject.activeSelf)
+			endPoint = getRayEndPointSurface(rayDist);
+		else
+			endPoint = getRayEndPoint(rayDist);
+		paintLineColor = colorPicker.GetColor();
 		//renderSphereAsBrushTip (endPoint);
 
 
@@ -117,19 +127,15 @@ public class DrawLineManager : MonoBehaviour {
 		GameObject currentSelection = eventSystemManager.currentSelectedGameObject;
 		bool isPanelSelected = currentSelection == null;
 
-
         firstTouchCondition = (Input.touchCount == 1 && Input.GetTouch(0).phase == TouchPhase.Began && isPanelSelected);
         whileTouchedCondition = (Input.touchCount == 1 && isPanelSelected);
 
-
         if (firstTouchCondition == true) {
-
 			// check if you're in drawing mode. if not, return.
-			if (!paintPanel.activeSelf) {
+			if (!paintPanel.activeSelf && !snapToSurfaceBrushTipObject.activeSelf) {
 
 				return;
 			}
-
 			Debug.Log ("First touch");
 
 			// start drawing line
@@ -145,7 +151,7 @@ public class DrawLineManager : MonoBehaviour {
 			currLine.SetWidth (paintLineThickness);
 
 
-			currLine.lmat.color = colorPicker.GetColor();
+			currLine.lmat.color = paintLineColor;
 
 			numClicks = 0;
 
@@ -160,10 +166,8 @@ public class DrawLineManager : MonoBehaviour {
 
 			Debug.Log ("Adding History 2");
 
-            if(!snapToSurfaceBrushTipObject.activeSelf)
+            if(brushTipObject.activeSelf)
                 brushTipObject.GetComponent<TrailRenderer>().enabled = false;
-			else
-				snapToSurfaceBrushTipObject.GetComponent<TrailRenderer>().enabled = false;
 			
             paintBrushSceneObject.GetComponent<DrawingHistoryManager> ().addDrawingCommand (index, 0, endPoint, currLine.lmat.color, paintLineThickness);
 
@@ -182,49 +186,39 @@ public class DrawLineManager : MonoBehaviour {
 
 				currLine.AddPoint (endPoint);
 				numClicks++;
-
 				prevPaintPoint = endPoint;
 
 				// add to history without incrementing index
 				int index = GetComponent<PaintController> ().drawingHistoryIndex;
 
-				if(!snapToSurfaceBrushTipObject.activeSelf)
+				if(brushTipObject.activeSelf)
                 	brushTipObject.GetComponent<TrailRenderer>().enabled = false;
-				else
-					snapToSurfaceBrushTipObject.GetComponent<TrailRenderer>().enabled = false;
 
 				paintBrushSceneObject.GetComponent<DrawingHistoryManager> ().addDrawingCommand (index, 0, endPoint, currLine.lmat.color, paintLineThickness);
             }
+			else{
+				Debug.Log("Change in distance not large enough. Start: " + prevPaintPoint + " End: " + endPoint);
+			}
         }
 
         else
         {
-			if(!snapToSurfaceBrushTipObject.activeSelf)
+			if(brushTipObject.activeSelf)
             	brushTipObject.GetComponent<TrailRenderer>().enabled = true;
-			else
-				snapToSurfaceBrushTipObject.GetComponent<TrailRenderer>().enabled = true;
         }	
 
 	}
 
-	void drawOnSurface()
+	public void drawOnSurface()
 	{
-		Vector3 invalid = new Vector3(-99999999, -99999999, -99999999);
-		Vector3 pos = GetComponent<ReticleController>().updatePos();
-		if(pos == invalid)
-			return;
-		Ray ray = Camera.main.ViewportPointToRay (pos);
-		Vector3 endPoint = ray.GetPoint (rayDist);
-		draw(endPoint);
+		Vector3 endPoint = getRayEndPointSurface(0.0f);
+		draw();
 	}
 
 	
 	// Update is called once per frame
 	void Update () {
-		if(snapToSurfaceBrushTipObject.activeSelf)
-			drawOnSurface();
-		else
-			drawNormal();
+		draw();
     }
 
 

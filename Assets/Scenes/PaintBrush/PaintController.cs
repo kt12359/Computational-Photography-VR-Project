@@ -181,15 +181,9 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 		textLabel.text = "Enabling Snap to Surface";
 		textLabel.text = "Snap to Surface Enabled";
 
-        drawOnSurfacePanel.SetActive(true);
-        mainButtonPanel.SetActive(false);
+        ToggleSnapToSurface(true);
 
-		snapToSurfaceBrushTipObject.SetActive(true);
-		//brushTipGraphic.SetActive(snapToSurfacePanelActive);
-		brushTipObject.SetActive(false);
-		snapToSurfaceEnabled = true;
-
-	//GetComponent<ReticleController>().StartReticle();
+		GetComponent<ReticleController>().StartReticle();
 
 		//LibPlacenote.Instance.StartSession();
 	}
@@ -202,15 +196,7 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 		}
 
 		textLabel.text = "Returning to Main Session";
-        drawOnSurfacePanel.SetActive(false);
-        mainButtonPanel.SetActive(true);
-
-		snapToSurfaceBrushTipObject.SetActive(false);
-		//brushTipGraphic.SetActive(snapToSurfacePanelActive);
-		brushTipObject.SetActive(true);
-		snapToSurfaceEnabled = false;
-
-		//GetComponent<ReticleController>().StopReticle();
+		ToggleSnapToSurface(false);
 		textLabel.text = "Press the Screen to Paint";
 	}
 
@@ -219,13 +205,12 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 	public void ToggleSnapToSurface(bool snapToSurfacePanelActive)
 	{
 		snapToSurfaceBrushTipObject.SetActive(snapToSurfacePanelActive);
-		//brushTipGraphic.SetActive(snapToSurfacePanelActive);
 		brushTipObject.SetActive(!snapToSurfacePanelActive);
 
         drawOnSurfacePanel.SetActive(snapToSurfacePanelActive);
         mainButtonPanel.SetActive(!snapToSurfacePanelActive);
 
-		//GetComponent<ReticleController>().startStopReticle(snapToSurfacePanelActive);
+		GetComponent<ReticleController>().startStopReticle(snapToSurfacePanelActive);
 	}
 
 
