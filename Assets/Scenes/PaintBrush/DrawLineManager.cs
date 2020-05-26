@@ -18,6 +18,9 @@ public class DrawLineManager : MonoBehaviour {
 
 	private GraphicsLineRenderer currLine;
 
+	// To keep track of feature point drawing mode
+	private bool doKeepDrawingFeature = false;
+
 	private int numClicks = 0;
 	private int numReplayClicks = 0;
 
@@ -104,9 +107,29 @@ public class DrawLineManager : MonoBehaviour {
 
     }
 
-	public void drawNormal()
-	{
-		Vector3 endPoint = getRayEndPoint (rayDist);
+
+    // Update is called once per frame
+    void Update() {
+    	PaintController.DrawingMode currentDrawingMode = GetComponent<PaintController>().currentDrawingMode;
+		Debug.Log("Drawing Mode: " + currentDrawingMode);
+
+		switch (currentDrawingMode) {
+			case PaintController.DrawingMode.normal:
+				_UpdateNormal();
+				break;
+			case PaintController.DrawingMode.surface:
+				_UpdateNormal();
+				break;
+			case PaintController.DrawingMode.feature:
+				_UpdateFeature();
+				break;
+			default:
+				break;
+		}
+    }
+	
+	// Update is called once per frame
+	void _UpdateNormal () {
 		draw();
 	}
 
@@ -203,23 +226,154 @@ public class DrawLineManager : MonoBehaviour {
 
         else
         {
-			if(brushTipObject.activeSelf)
+        	if(brushTipObject.activeSelf)
             	brushTipObject.GetComponent<TrailRenderer>().enabled = true;
-        }	
+        }
+    } // draw()
 
-	}
 
+    // TODO is this being used?
 	public void drawOnSurface()
 	{
 		Vector3 endPoint = getRayEndPointSurface(0.0f);
 		draw();
 	}
 
-	
-	// Update is called once per frame
-	void Update () {
-		draw();
-    }
+    /*
+		TODO - Make sure this stays in sync with _UpdateNormal. 
+		Right now this is separate so we can both work on this file more easily.
+    */
+    void _UpdateFeature()
+    {
+    	bool firstTouchCondition;
+		bool whileTouchedCondition;
+
+		GameObject currentSelection = eventSystemManager.currentSelectedGameObject;
+		bool isPanelSelected = currentSelection == null;
+
+		// Reset when the user stops drawing
+		if (Input.touchCount == 0) {
+			doKeepDrawingFeature = false;
+			brushTipObject.GetComponent<TrailRenderer>().enabled = true;
+        	return;
+		}
+
+        firstTouchCondition   = (Input.touchCount == 1 && isPanelSelected && (doKeepDrawingFeature==false));
+        whileTouchedCondition = (Input.touchCount == 1 && isPanelSelected && (doKeepDrawingFeature==true));
+
+        /*
+			Return immediately if there will be no updates
+        */
+        if (firstTouchCondition == false && whileTouchedCondition == false) {
+        	brushTipObject.GetComponent<TrailRenderer>().enabled = true;
+        	return;
+        }
+
+
+        List<Vector3> pointCloud = FeaturesVisualizer.GetPointCloud();
+        if (pointCloud == null) {
+        	brushTipObject.GetComponent<TrailRenderer>().enabled = true;
+        	return;
+        }
+
+    	float distanceThreshold = 0.05f; // How close the point must be
+
+    	Vector3 endPoint = getRayEndPoint (rayDist);
+		paintLineColor = colorPicker.GetColor();//cw.updateColor();
+
+		// Find the closest feature point within the threshold
+    	Vector3 pointToDraw = new Vector3(float.PositiveInfinity, float.PositiveInfinity, float.PositiveInfinity);
+    	float curDistance;
+    	bool doDraw = false;
+    	foreach (Vector3 featurePoint in pointCloud) {
+    		curDistance = Vector3.Distance(endPoint, featurePoint);
+    		if (curDistance < distanceThreshold) {
+    			Debug.Log("curDistance = " + curDistance);
+    			pointToDraw.Set(featurePoint.x, featurePoint.y, featurePoint.z);
+    			doDraw = true;
+    			break;
+    		}
+    	}
+
+    	// Only continue if a satisfactory point was found
+    	if (!doDraw) {
+    		return;
+    	}
+
+    	Debug.Log(
+    		"_UpdateFeature() endPoint = " + endPoint + "\n" +
+    		"_UpdateFeature() pointToDraw = " + pointToDraw + "\n" +
+    		"_UpdateFeature() firstTouchCondition = " + firstTouchCondition + "\n" +
+    		"_UpdateFeature() whileTouchedCondition = " + whileTouchedCondition + "\n");
+
+    
+        if (firstTouchCondition == true) {
+			// check if you're in drawing mode. if not, return.
+			if (!paintPanel.activeSelf) {
+				return;
+			}
+
+			Debug.Log ("_UpdateFeature() First touch");
+
+			// start drawing line
+			GameObject go = new GameObject ();
+			go.transform.position = pointToDraw;
+			go.transform.parent = drawingRootSceneObject.transform;
+
+			go.AddComponent<MeshFilter> ();
+			go.AddComponent<MeshRenderer> ();
+			currLine = go.AddComponent<GraphicsLineRenderer> ();
+
+			currLine.lmat = new Material(lMat);
+			currLine.SetWidth (paintLineThickness);
+
+
+            Color newColor = paintLineColor;//new Color(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f));
+
+            //currLine.lmat.color = paintLineColor;
+			currLine.lmat.color = colorPicker.GetColor();//newColor;
+
+			numClicks = 0;
+
+			prevPaintPoint = pointToDraw;
+
+			// add to history and increment index
+
+			Debug.Log ("Adding History 1");
+
+			int index = GetComponent<PaintController> ().drawingHistoryIndex;
+			index++;
+
+			Debug.Log ("Adding History 2");
+
+            brushTipObject.GetComponent<TrailRenderer>().enabled = false;
+            paintBrushSceneObject.GetComponent<DrawingHistoryManager> ().addDrawingCommand (index, 0, pointToDraw, currLine.lmat.color, paintLineThickness);
+
+			Debug.Log ("Adding History 3");
+			GetComponent<PaintController> ().drawingHistoryIndex = index;
+
+			Debug.Log ("Done Adding History");
+
+			// Make sure we continue this line
+			doKeepDrawingFeature = true;
+
+		} else if (whileTouchedCondition == true) {
+			if ((pointToDraw - prevPaintPoint).magnitude > 0.01f) {
+
+				currLine.AddPoint (pointToDraw);
+				numClicks++;
+
+				prevPaintPoint = pointToDraw;
+
+				// add to history without incrementing index
+				int index = GetComponent<PaintController> ().drawingHistoryIndex;
+
+				paintBrushSceneObject.GetComponent<DrawingHistoryManager> ().addDrawingCommand (index, 0, pointToDraw, currLine.lmat.color, paintLineThickness);
+
+                brushTipObject.GetComponent<TrailRenderer>().enabled = false;
+            }
+        }
+    } // _UpdateFeature()
 
 
 	public void addReplayLineSegment(bool toContinue, float lineThickness, Vector3 position, Color color)
