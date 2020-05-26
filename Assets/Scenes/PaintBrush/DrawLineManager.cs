@@ -281,7 +281,7 @@ public class DrawLineManager : MonoBehaviour {
     		"_UpdateFeature() endPoint = " + endPoint + "\n" +
     		"_UpdateFeature() pointToDraw = " + pointToDraw + "\n" +
     		"_UpdateFeature() firstTouchCondition = " + firstTouchCondition + "\n" +
-    		"_UpdateFeature() whileTouchedCondition = " + whileTouchedCondition + "\n" +);
+    		"_UpdateFeature() whileTouchedCondition = " + whileTouchedCondition + "\n");
 
     
         if (firstTouchCondition == true) {
