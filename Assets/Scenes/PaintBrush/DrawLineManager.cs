@@ -154,76 +154,10 @@ public class DrawLineManager : MonoBehaviour {
         whileTouchedCondition = (Input.touchCount == 1 && isPanelSelected);
 
         if (firstTouchCondition == true) {
-			// check if you're in drawing mode. if not, return.
-			if (!paintPanel.activeSelf && !snapToSurfaceBrushTipObject.activeSelf) {
-
-				return;
-			}
-			Debug.Log ("First touch");
-
-			// start drawing line
-			GameObject go = new GameObject ();
-			go.transform.position = endPoint;
-			go.transform.parent = drawingRootSceneObject.transform;
-
-			go.AddComponent<MeshFilter> ();
-			go.AddComponent<MeshRenderer> ();
-			currLine = go.AddComponent<GraphicsLineRenderer> ();
-
-			currLine.lmat = new Material(lMat);
-			currLine.SetWidth (paintLineThickness);
-
-
-			currLine.lmat.color = paintLineColor;
-
-			numClicks = 0;
-
-			prevPaintPoint = endPoint;
-
-			// add to history and increment index
-
-			Debug.Log ("Adding History 1");
-
-			int index = GetComponent<PaintController> ().drawingHistoryIndex;
-			index++;
-
-			Debug.Log ("Adding History 2");
-
-            if(brushTipObject.activeSelf)
-                brushTipObject.GetComponent<TrailRenderer>().enabled = false;
-			
-            paintBrushSceneObject.GetComponent<DrawingHistoryManager> ().addDrawingCommand (index, 0, endPoint, currLine.lmat.color, paintLineThickness);
-
-			Debug.Log ("Adding History 3");
-			GetComponent<PaintController> ().drawingHistoryIndex = index;
-
-			Debug.Log ("Done Adding History");
-
+			startNewLine(endPoint);
 		} else if (whileTouchedCondition == true) {
-
-			if ((endPoint - prevPaintPoint).magnitude > 0.01f) {
-
-				// continue drawing line
-				//currLine.SetVertexCount (numClicks + 1);
-				//currLine.SetPosition (numClicks, endPoint); 
-
-				currLine.AddPoint (endPoint);
-				numClicks++;
-				prevPaintPoint = endPoint;
-
-				// add to history without incrementing index
-				int index = GetComponent<PaintController> ().drawingHistoryIndex;
-
-				if(brushTipObject.activeSelf)
-                	brushTipObject.GetComponent<TrailRenderer>().enabled = false;
-
-				paintBrushSceneObject.GetComponent<DrawingHistoryManager> ().addDrawingCommand (index, 0, endPoint, currLine.lmat.color, paintLineThickness);
-            }
-			else{
-				Debug.Log("Change in distance not large enough. Start: " + prevPaintPoint + " End: " + endPoint);
-			}
+			addPointToLine(endPoint);
         }
-
         else
         {
         	if(brushTipObject.activeSelf)
@@ -239,11 +173,8 @@ public class DrawLineManager : MonoBehaviour {
 		draw();
 	}
 
-    /*
-		TODO - Make sure this stays in sync with _UpdateNormal. 
-		Right now this is separate so we can both work on this file more easily.
-    */
-    void _UpdateFeature()
+	// Update for DrawingMode.feature
+    private void _UpdateFeature()
     {
     	bool firstTouchCondition;
 		bool whileTouchedCondition;
@@ -308,72 +239,82 @@ public class DrawLineManager : MonoBehaviour {
 
     
         if (firstTouchCondition == true) {
-			// check if you're in drawing mode. if not, return.
-			if (!paintPanel.activeSelf) {
-				return;
-			}
-
-			Debug.Log ("_UpdateFeature() First touch");
-
-			// start drawing line
-			GameObject go = new GameObject ();
-			go.transform.position = pointToDraw;
-			go.transform.parent = drawingRootSceneObject.transform;
-
-			go.AddComponent<MeshFilter> ();
-			go.AddComponent<MeshRenderer> ();
-			currLine = go.AddComponent<GraphicsLineRenderer> ();
-
-			currLine.lmat = new Material(lMat);
-			currLine.SetWidth (paintLineThickness);
-
-
-            Color newColor = paintLineColor;//new Color(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f));
-
-            //currLine.lmat.color = paintLineColor;
-			currLine.lmat.color = colorPicker.GetColor();//newColor;
-
-			numClicks = 0;
-
-			prevPaintPoint = pointToDraw;
-
-			// add to history and increment index
-
-			Debug.Log ("Adding History 1");
-
-			int index = GetComponent<PaintController> ().drawingHistoryIndex;
-			index++;
-
-			Debug.Log ("Adding History 2");
-
-            brushTipObject.GetComponent<TrailRenderer>().enabled = false;
-            paintBrushSceneObject.GetComponent<DrawingHistoryManager> ().addDrawingCommand (index, 0, pointToDraw, currLine.lmat.color, paintLineThickness);
-
-			Debug.Log ("Adding History 3");
-			GetComponent<PaintController> ().drawingHistoryIndex = index;
-
-			Debug.Log ("Done Adding History");
-
+			startNewLine(pointToDraw);
 			// Make sure we continue this line
 			doKeepDrawingFeature = true;
 
 		} else if (whileTouchedCondition == true) {
-			if ((pointToDraw - prevPaintPoint).magnitude > 0.01f) {
-
-				currLine.AddPoint (pointToDraw);
-				numClicks++;
-
-				prevPaintPoint = pointToDraw;
-
-				// add to history without incrementing index
-				int index = GetComponent<PaintController> ().drawingHistoryIndex;
-
-				paintBrushSceneObject.GetComponent<DrawingHistoryManager> ().addDrawingCommand (index, 0, pointToDraw, currLine.lmat.color, paintLineThickness);
-
-                brushTipObject.GetComponent<TrailRenderer>().enabled = false;
-            }
+			addPointToLine(pointToDraw);
         }
     } // _UpdateFeature()
+
+    // Starts drawing a new line with the given point
+    private void startNewLine(Vector3 firstPoint) {
+    	Debug.Log ("startNewLine()");
+
+    	// Make sure we are in drawing mode
+		if (!paintPanel.activeSelf && !snapToSurfaceBrushTipObject.activeSelf) {
+			return;
+		}
+
+		// Create a new line object
+		GameObject go = new GameObject ();
+		go.transform.position = firstPoint;
+		go.transform.parent = drawingRootSceneObject.transform;
+		go.AddComponent<MeshFilter> ();
+		go.AddComponent<MeshRenderer> ();
+
+		// Keep track of this line
+		currLine = go.AddComponent<GraphicsLineRenderer> ();
+
+		// Configure the color, etc. of the line
+		currLine.lmat = new Material(lMat);
+		currLine.SetWidth (paintLineThickness);
+		currLine.lmat.color = colorPicker.GetColor();
+
+		// TODO is this being used?
+		numClicks = 0;
+
+		// Keep track of the last point on the line
+		prevPaintPoint = firstPoint;
+
+		// Add to history and increment index
+		Debug.Log ("Adding History 1");
+		int index = GetComponent<PaintController> ().drawingHistoryIndex;
+		index++;
+
+		Debug.Log ("Adding History 2");
+        paintBrushSceneObject.GetComponent<DrawingHistoryManager> ().addDrawingCommand (index, 0, firstPoint, currLine.lmat.color, paintLineThickness);
+
+		Debug.Log ("Adding History 3");
+		GetComponent<PaintController>().drawingHistoryIndex = index;
+
+		Debug.Log ("Done Adding History");
+
+		// Make sure the trail is off
+        if(brushTipObject.activeSelf)
+        	brushTipObject.GetComponent<TrailRenderer>().enabled = false;
+    }
+
+    // Adds a point to the line currently being drawn
+    private void addPointToLine(Vector3 pointToAdd, bool overrideThreshold=false) {
+    	if (!overrideThreshold && (pointToAdd - prevPaintPoint).magnitude <= 0.01f) {
+    		Debug.Log("Change in distance not large enough. Start: " + prevPaintPoint + " End: " + pointToAdd);
+    		return;
+    	}
+
+		currLine.AddPoint (pointToAdd);
+		numClicks++;
+		prevPaintPoint = pointToAdd;
+
+		// add to history without incrementing index
+		int index = GetComponent<PaintController> ().drawingHistoryIndex;
+		paintBrushSceneObject.GetComponent<DrawingHistoryManager> ().addDrawingCommand (index, 0, pointToAdd, currLine.lmat.color, paintLineThickness);
+
+		// Make sure the trail is off
+        if(brushTipObject.activeSelf)
+        	brushTipObject.GetComponent<TrailRenderer>().enabled = false;
+    }
 
 
 	public void addReplayLineSegment(bool toContinue, float lineThickness, Vector3 position, Color color)
