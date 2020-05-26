@@ -583,6 +583,20 @@
         {
             "managedAssemblyName": "Unity.XR.ARFoundation.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.XR.ARFoundation.ARPlaneManager",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.XR.ARFoundation.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.XR.ARFoundation.ARPointCloudManager",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.XR.ARFoundation.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.XR.ARFoundation.ARRaycastManager",
             "moduleName": "",
             "usedInScenes": []

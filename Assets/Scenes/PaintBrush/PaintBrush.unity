@@ -2251,6 +2251,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d1e35827f2c514549b1e8c48885a0cc2, type: 3}
+--- !u!1 &460853576 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1271650370769016, guid: d1e35827f2c514549b1e8c48885a0cc2,
+    type: 3}
+  m_PrefabInstance: {fileID: 460853575}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &461333610
 GameObject:
   m_ObjectHideFlags: 0
@@ -4493,8 +4499,6 @@ MonoBehaviour:
   saveLayerPanel: {fileID: 2123072813}
   loadLayerPanel: {fileID: 141472734}
   modePanel: {fileID: 1084826660}
-  drawOnSurfacePanel: {fileID: 0}
-  backToMain: {fileID: 0}
   mLocalizationThumbnail: {fileID: 607316061}
   mLocalizationThumbnailContainer: {fileID: 1741075603}
   drawingHistoryIndex: 0
@@ -4513,7 +4517,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mReticle: {fileID: 132539632}
   notifications: {fileID: 1661929572}
-  mPointCloudManager: {fileID: 0}
+  mPointCloudManager: {fileID: 2104600272}
   m_RaycastManager: {fileID: 2104600270}
 --- !u!1 &1076705464
 GameObject:
@@ -8835,12 +8839,45 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 2104600267}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2104600271}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa17d122634046b4a8e23048891fafc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2104600271 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4620038059582172613, guid: 4ff1c5a4b485e47aca5aacd4a978133d,
+    type: 3}
+  m_PrefabInstance: {fileID: 2104600267}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2104600272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104600271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ab0e80cee9cc1d44928bfe488dd1e2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PointCloudPrefab: {fileID: 460853576}
+--- !u!114 &2104600273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104600271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1760703bbd54c04488a8d10600262ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PlanePrefab: {fileID: 0}
+  m_DetectionMode: -1
 --- !u!1 &2123072813
 GameObject:
   m_ObjectHideFlags: 0
