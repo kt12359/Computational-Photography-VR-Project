@@ -48,7 +48,7 @@ using UnityEngine.XR.ARSubsystems;
         void Start()
         {
             mContinuousHittest = ContinuousHittest();
-            mPointCloudManager.pointCloudsChanged += OnPointCloudChanged;
+            //mPointCloudManager.pointCloudsChanged += OnPointCloudChanged;
 
         }
 
