@@ -39,7 +39,7 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
     [SerializeField] Image mLocalizationThumbnailContainer;
 
     public int drawingHistoryIndex = 0;
-    public DrawingMode currentDrawingMode = DrawingMode.normal;
+    public DrawingMode currentDrawingMode;
 
 	// Use this for initialization
 	void Start () {
@@ -89,6 +89,8 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 		// Make sure this child is active for when its parent is active
 		buttonPanel = paintPanel.transform.Find("ButtonPanel").gameObject;
 		buttonPanel.SetActive(true);
+
+		currentDrawingMode = DrawingMode.normal;
 
 
         // FeaturesVisualizer.EnablePointcloud(new Color(1f, 1f, 1f, 0.2f), new Color(1f, 1f, 1f, 0.8f));

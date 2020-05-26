@@ -784,7 +784,6 @@ IL2CPP_EXTERN_C RuntimeClass* Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F3
 IL2CPP_EXTERN_C RuntimeClass* Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* WaitForSeconds_t3E9E78D3BB53F03F96C7F28BA9B9086CD1A5F4E8_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C String_t* _stringLiteral011C9736AA1A9F17DFC5A8D26D83BD4E18B328C3;
 IL2CPP_EXTERN_C String_t* _stringLiteral06031611CAF569E5E25842A823F689A47F5B41B6;
 IL2CPP_EXTERN_C String_t* _stringLiteral0B2660C5FD3686DCE5AE69626DD6C7432724A969;
 IL2CPP_EXTERN_C String_t* _stringLiteral0C80F452E98868793E264850506F41418B3AE3D2;
@@ -825,7 +824,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteral4B7615DCE52C4C05CE4E1D374E9C61A13717AC7C
 IL2CPP_EXTERN_C String_t* _stringLiteral4DC67D93C9F26E3A6AD092147FB0D692C7A7EE8B;
 IL2CPP_EXTERN_C String_t* _stringLiteral4E0369B225397734E7F93B36D77A4332A4A967BC;
 IL2CPP_EXTERN_C String_t* _stringLiteral4F4790EE5CECDE22E044EF7909779F7CF563D6A7;
-IL2CPP_EXTERN_C String_t* _stringLiteral509D7AFBE04782CC66B7091DB66CB2DB096402F4;
 IL2CPP_EXTERN_C String_t* _stringLiteral5245024A05AA2D66CA0AE89AB2DFD0F277EA5099;
 IL2CPP_EXTERN_C String_t* _stringLiteral524A7D520F53E851E22833ECB3358DA7F5B31A2D;
 IL2CPP_EXTERN_C String_t* _stringLiteral537312F44EA755F3AF4D650AAB1C71EB719AE268;
@@ -882,6 +880,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralA229295FC7453F43AB721C292BB7B25AF4AE2477
 IL2CPP_EXTERN_C String_t* _stringLiteralA26876A873DC9B770CD699CE9DF093ACECBF2C95;
 IL2CPP_EXTERN_C String_t* _stringLiteralA47448E6B5E4E2979F5885CC8CE8140EAEF8253A;
 IL2CPP_EXTERN_C String_t* _stringLiteralA7450E44A333A60DC887332A0E50A0068BBB41FF;
+IL2CPP_EXTERN_C String_t* _stringLiteralACF1768D419EDDB7860327FFD735FC2DF2D30AE1;
 IL2CPP_EXTERN_C String_t* _stringLiteralAD3BB12910607DC82579DCDD9C8FFFA8553FD43E;
 IL2CPP_EXTERN_C String_t* _stringLiteralADC83B19E793491B1C6EA0FD8B46CD9F32E592FC;
 IL2CPP_EXTERN_C String_t* _stringLiteralAF764F988057E4E1486D7B7D9D555715DF9F942A;
@@ -1105,8 +1104,10 @@ IL2CPP_EXTERN_C const uint32_t BuildACity_U3COnSaveMapClickU3Eb__13_2_m9A98C6A8B
 IL2CPP_EXTERN_C const uint32_t BuildACity_WriteMapIDToFile_m54AF92011C6B17A2397629E5379353839B59FEF8_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t DrawLineManager_Update_m438F1279DF8B989843186F341E6D1663987AD2DD_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t DrawLineManager__UpdateFeature_mABDD556EBEF17CB443A2CA9BEC4023CD4062DBDC_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t DrawLineManager_addPointToLine_m2924F756CB4E70C0F9113104CA3732D7B63B2285_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t DrawLineManager_addReplayLineSegment_mBBBD11AB05ADD61934D22245E9A6E8921DB89304_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t DrawLineManager_draw_m36190D55990D68DB2033DA957B88B3325023B7EF_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t DrawLineManager_startNewLine_mCCF7BCE85E281B694E9BDD7C50471B3BA3B3C0C7_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t DrawingCommand_ToString_m01433F68D248FCCEDD3CCE8F9BA8726B2196F92A_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t DrawingCommand__ctor_m9F682159CB7796BB182505BCA273FD91679242AB_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t DrawingHistoryManager_Start_mBF78A56E9BF484C39CF050797FF872DA28E96D91_MetadataUsageId;
@@ -15462,8 +15463,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_mC832F1AC0F814BAEB19175F5D7
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_mA52EAAB235BDE102E8518F30412F14422B05C9E0_gshared (List_1_tE22AC27B04238DDEA6B873A77D0222DA9B480F52 * __this, const RuntimeMethod* method);
 // !0 System.Collections.Generic.List`1<UnityEngine.XR.ARFoundation.ARRaycastHit>::get_Item(System.Int32)
 IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR ARRaycastHit_t509D3DB25CAC944ED3D3092C0A6096F85DDDD1BC  List_1_get_Item_mFA1DFF7102266DFFCA6630C79C553225EE591AAE_gshared_inline (List_1_tE22AC27B04238DDEA6B873A77D0222DA9B480F52 * __this, int32_t ___index0, const RuntimeMethod* method);
-// !!0 UnityEngine.GameObject::AddComponent<System.Object>()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * GameObject_AddComponent_TisRuntimeObject_m80EDFEAC4927F588A7A702F81524EDBFA8603FE2_gshared (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * __this, const RuntimeMethod* method);
 // System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<UnityEngine.Vector3>::GetEnumerator()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Enumerator_t48C4103E92ACB77DD71FE41A2E4D5874FABF60F3  List_1_GetEnumerator_m22097829B2F380B979F443CAAA46A992290D81E5_gshared (List_1_tFCCBEDAA56D8F7598520FB136A9F8D713033D6B5 * __this, const RuntimeMethod* method);
 // !0 System.Collections.Generic.List`1/Enumerator<UnityEngine.Vector3>::get_Current()
@@ -15472,6 +15471,8 @@ IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR Vector3_tDCF05E21F632FE2BA260C06E0D10C
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m69228816AF06E8E322AEC50D13F7EE4FE3FB3BB3_gshared (Enumerator_t48C4103E92ACB77DD71FE41A2E4D5874FABF60F3 * __this, const RuntimeMethod* method);
 // System.Void System.Collections.Generic.List`1/Enumerator<UnityEngine.Vector3>::Dispose()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_Dispose_mE796F469CC7CBCE71D17E9F1BD8E068F6238C865_gshared (Enumerator_t48C4103E92ACB77DD71FE41A2E4D5874FABF60F3 * __this, const RuntimeMethod* method);
+// !!0 UnityEngine.GameObject::AddComponent<System.Object>()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * GameObject_AddComponent_TisRuntimeObject_m80EDFEAC4927F588A7A702F81524EDBFA8603FE2_gshared (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * __this, const RuntimeMethod* method);
 // System.Boolean System.Nullable`1<UnityEngine.Color>::get_HasValue()
 IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR bool Nullable_1_get_HasValue_m3CF20BBCAD02A5063EFEFDF037D37743544DB9D7_gshared_inline (Nullable_1_t9DBDF4088AAEF0A6A6B9D1720769D79A41563E77 * __this, const RuntimeMethod* method);
 // !0 System.Nullable`1<UnityEngine.Color>::GetValueOrDefault()
@@ -15840,29 +15841,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Input_get_touchCount_m497E19AA4FA22DB
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Touch_tAACD32535FF3FE5DD91125E0B6987B93C68D2DE8  Input_GetTouch_m8082D8EE3A187488373CE6AC66A70B0AAD7CC23F (int32_t ___index0, const RuntimeMethod* method);
 // UnityEngine.TouchPhase UnityEngine.Touch::get_phase()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Touch_get_phase_m759A61477ECBBD90A57E36F1166EB9340A0FE349 (Touch_tAACD32535FF3FE5DD91125E0B6987B93C68D2DE8 * __this, const RuntimeMethod* method);
-// System.Void UnityEngine.GameObject::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameObject__ctor_mA4DFA8F4471418C248E95B55070665EF344B4B2D (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * __this, const RuntimeMethod* method);
-// System.Void UnityEngine.Transform::set_parent(UnityEngine.Transform)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_parent_m65B8E4660B2C554069C57A957D9E55FECA7AA73E (Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * __this, Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * ___value0, const RuntimeMethod* method);
-// !!0 UnityEngine.GameObject::AddComponent<UnityEngine.MeshFilter>()
-inline MeshFilter_t8D4BA8E8723DE5CFF53B0DA5EE2F6B3A5B0E0FE0 * GameObject_AddComponent_TisMeshFilter_t8D4BA8E8723DE5CFF53B0DA5EE2F6B3A5B0E0FE0_m98AEA1EDDC59492203D06FA2912152C37C4164E4 (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * __this, const RuntimeMethod* method)
-{
-	return ((  MeshFilter_t8D4BA8E8723DE5CFF53B0DA5EE2F6B3A5B0E0FE0 * (*) (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F *, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m80EDFEAC4927F588A7A702F81524EDBFA8603FE2_gshared)(__this, method);
-}
-// !!0 UnityEngine.GameObject::AddComponent<UnityEngine.MeshRenderer>()
-inline MeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED * GameObject_AddComponent_TisMeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED_m16409C054F66125E0380BDDDB1454118A3BAD60E (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * __this, const RuntimeMethod* method)
-{
-	return ((  MeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED * (*) (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F *, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m80EDFEAC4927F588A7A702F81524EDBFA8603FE2_gshared)(__this, method);
-}
-// !!0 UnityEngine.GameObject::AddComponent<GraphicsLineRenderer>()
-inline GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * GameObject_AddComponent_TisGraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9_mC858BAF6485A3229ACF94549CBA69EE27275AA69 (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * __this, const RuntimeMethod* method)
-{
-	return ((  GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * (*) (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F *, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m80EDFEAC4927F588A7A702F81524EDBFA8603FE2_gshared)(__this, method);
-}
-// System.Void UnityEngine.Material::.ctor(UnityEngine.Material)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material__ctor_m0171C6D4D3FD04D58C70808F255DBA67D0ED2BDE (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * __this, Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * ___source0, const RuntimeMethod* method);
-// System.Void GraphicsLineRenderer::SetWidth(System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GraphicsLineRenderer_SetWidth_m79FFEAE9CA81B9DDE01D9D50CC8ED4F4EB9095CD (GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * __this, float ___width0, const RuntimeMethod* method);
+// System.Void DrawLineManager::startNewLine(UnityEngine.Vector3)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DrawLineManager_startNewLine_mCCF7BCE85E281B694E9BDD7C50471B3BA3B3C0C7 (DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC * __this, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___firstPoint0, const RuntimeMethod* method);
+// System.Void DrawLineManager::addPointToLine(UnityEngine.Vector3,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DrawLineManager_addPointToLine_m2924F756CB4E70C0F9113104CA3732D7B63B2285 (DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC * __this, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___pointToAdd0, bool ___overrideThreshold1, const RuntimeMethod* method);
 // !!0 UnityEngine.GameObject::GetComponent<UnityEngine.TrailRenderer>()
 inline TrailRenderer_t9AC23ED5E8A7955A3288A9C37865C11382DA668D * GameObject_GetComponent_TisTrailRenderer_t9AC23ED5E8A7955A3288A9C37865C11382DA668D_m7C1059FAE34EC21FA55E05C684BA337973AB7195 (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * __this, const RuntimeMethod* method)
 {
@@ -15870,23 +15852,6 @@ inline TrailRenderer_t9AC23ED5E8A7955A3288A9C37865C11382DA668D * GameObject_GetC
 }
 // System.Void UnityEngine.Renderer::set_enabled(System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Renderer_set_enabled_m0933766657F2685BAAE3340B0A984C0E63925303 (Renderer_t0556D67DD582620D1F495627EDE30D03284151F4 * __this, bool ___value0, const RuntimeMethod* method);
-// !!0 UnityEngine.GameObject::GetComponent<DrawingHistoryManager>()
-inline DrawingHistoryManager_t465468CFA2187A9DE5AC4B22E7EC976E4C6A036B * GameObject_GetComponent_TisDrawingHistoryManager_t465468CFA2187A9DE5AC4B22E7EC976E4C6A036B_m57713631EB645A56806C2B287CDABC034636999C (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * __this, const RuntimeMethod* method)
-{
-	return ((  DrawingHistoryManager_t465468CFA2187A9DE5AC4B22E7EC976E4C6A036B * (*) (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F *, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_mD4382B2843BA9A61A01A8F9D7B9813D060F9C9CA_gshared)(__this, method);
-}
-// UnityEngine.Color UnityEngine.Material::get_color()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  Material_get_color_m7CE9C1FC0E0B4952D58DFBBA4D569F4B161B27E9 (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * __this, const RuntimeMethod* method);
-// System.Void DrawingHistoryManager::addDrawingCommand(System.Int32,System.Int32,UnityEngine.Vector3,UnityEngine.Color,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DrawingHistoryManager_addDrawingCommand_m57D40781CB938EE38A12812171FDC206B265C24A (DrawingHistoryManager_t465468CFA2187A9DE5AC4B22E7EC976E4C6A036B * __this, int32_t ___index0, int32_t ___objType1, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___position2, Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  ___color3, float ___lineWidth4, const RuntimeMethod* method);
-// UnityEngine.Vector3 UnityEngine.Vector3::op_Subtraction(UnityEngine.Vector3,UnityEngine.Vector3)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  Vector3_op_Subtraction_mF9846B723A5034F8B9F5F5DCB78E3D67649143D3 (Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___a0, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___b1, const RuntimeMethod* method);
-// System.Single UnityEngine.Vector3::get_magnitude()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Vector3_get_magnitude_m9A750659B60C5FE0C30438A7F9681775D5DB1274 (Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * __this, const RuntimeMethod* method);
-// System.Void GraphicsLineRenderer::AddPoint(UnityEngine.Vector3)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GraphicsLineRenderer_AddPoint_m24839F21D1D1D040E72FFFA36B5D2D8E904E0BA3 (GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * __this, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___point0, const RuntimeMethod* method);
-// System.String System.String::Concat(System.Object[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_mB7BA84F13912303B2E5E40FBF0109E1A328ACA07 (ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* ___args0, const RuntimeMethod* method);
 // System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<UnityEngine.Vector3>::GetEnumerator()
 inline Enumerator_t48C4103E92ACB77DD71FE41A2E4D5874FABF60F3  List_1_GetEnumerator_m22097829B2F380B979F443CAAA46A992290D81E5 (List_1_tFCCBEDAA56D8F7598520FB136A9F8D713033D6B5 * __this, const RuntimeMethod* method)
 {
@@ -15913,6 +15878,46 @@ inline void Enumerator_Dispose_mE796F469CC7CBCE71D17E9F1BD8E068F6238C865 (Enumer
 }
 // System.String System.Boolean::ToString()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Boolean_ToString_m62D1EFD5F6D5F6B6AF0D14A07BF5741C94413301 (bool* __this, const RuntimeMethod* method);
+// System.String System.String::Concat(System.Object[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_mB7BA84F13912303B2E5E40FBF0109E1A328ACA07 (ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* ___args0, const RuntimeMethod* method);
+// System.Void UnityEngine.GameObject::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameObject__ctor_mA4DFA8F4471418C248E95B55070665EF344B4B2D (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * __this, const RuntimeMethod* method);
+// System.Void UnityEngine.Transform::set_parent(UnityEngine.Transform)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_parent_m65B8E4660B2C554069C57A957D9E55FECA7AA73E (Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * __this, Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * ___value0, const RuntimeMethod* method);
+// !!0 UnityEngine.GameObject::AddComponent<UnityEngine.MeshFilter>()
+inline MeshFilter_t8D4BA8E8723DE5CFF53B0DA5EE2F6B3A5B0E0FE0 * GameObject_AddComponent_TisMeshFilter_t8D4BA8E8723DE5CFF53B0DA5EE2F6B3A5B0E0FE0_m98AEA1EDDC59492203D06FA2912152C37C4164E4 (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * __this, const RuntimeMethod* method)
+{
+	return ((  MeshFilter_t8D4BA8E8723DE5CFF53B0DA5EE2F6B3A5B0E0FE0 * (*) (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F *, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m80EDFEAC4927F588A7A702F81524EDBFA8603FE2_gshared)(__this, method);
+}
+// !!0 UnityEngine.GameObject::AddComponent<UnityEngine.MeshRenderer>()
+inline MeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED * GameObject_AddComponent_TisMeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED_m16409C054F66125E0380BDDDB1454118A3BAD60E (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * __this, const RuntimeMethod* method)
+{
+	return ((  MeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED * (*) (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F *, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m80EDFEAC4927F588A7A702F81524EDBFA8603FE2_gshared)(__this, method);
+}
+// !!0 UnityEngine.GameObject::AddComponent<GraphicsLineRenderer>()
+inline GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * GameObject_AddComponent_TisGraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9_mC858BAF6485A3229ACF94549CBA69EE27275AA69 (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * __this, const RuntimeMethod* method)
+{
+	return ((  GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * (*) (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F *, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m80EDFEAC4927F588A7A702F81524EDBFA8603FE2_gshared)(__this, method);
+}
+// System.Void UnityEngine.Material::.ctor(UnityEngine.Material)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material__ctor_m0171C6D4D3FD04D58C70808F255DBA67D0ED2BDE (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * __this, Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * ___source0, const RuntimeMethod* method);
+// System.Void GraphicsLineRenderer::SetWidth(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GraphicsLineRenderer_SetWidth_m79FFEAE9CA81B9DDE01D9D50CC8ED4F4EB9095CD (GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * __this, float ___width0, const RuntimeMethod* method);
+// !!0 UnityEngine.GameObject::GetComponent<DrawingHistoryManager>()
+inline DrawingHistoryManager_t465468CFA2187A9DE5AC4B22E7EC976E4C6A036B * GameObject_GetComponent_TisDrawingHistoryManager_t465468CFA2187A9DE5AC4B22E7EC976E4C6A036B_m57713631EB645A56806C2B287CDABC034636999C (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * __this, const RuntimeMethod* method)
+{
+	return ((  DrawingHistoryManager_t465468CFA2187A9DE5AC4B22E7EC976E4C6A036B * (*) (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F *, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_mD4382B2843BA9A61A01A8F9D7B9813D060F9C9CA_gshared)(__this, method);
+}
+// UnityEngine.Color UnityEngine.Material::get_color()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  Material_get_color_m7CE9C1FC0E0B4952D58DFBBA4D569F4B161B27E9 (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * __this, const RuntimeMethod* method);
+// System.Void DrawingHistoryManager::addDrawingCommand(System.Int32,System.Int32,UnityEngine.Vector3,UnityEngine.Color,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DrawingHistoryManager_addDrawingCommand_m57D40781CB938EE38A12812171FDC206B265C24A (DrawingHistoryManager_t465468CFA2187A9DE5AC4B22E7EC976E4C6A036B * __this, int32_t ___index0, int32_t ___objType1, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___position2, Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  ___color3, float ___lineWidth4, const RuntimeMethod* method);
+// UnityEngine.Vector3 UnityEngine.Vector3::op_Subtraction(UnityEngine.Vector3,UnityEngine.Vector3)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  Vector3_op_Subtraction_mF9846B723A5034F8B9F5F5DCB78E3D67649143D3 (Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___a0, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___b1, const RuntimeMethod* method);
+// System.Single UnityEngine.Vector3::get_magnitude()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Vector3_get_magnitude_m9A750659B60C5FE0C30438A7F9681775D5DB1274 (Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 * __this, const RuntimeMethod* method);
+// System.Void GraphicsLineRenderer::AddPoint(UnityEngine.Vector3)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GraphicsLineRenderer_AddPoint_m24839F21D1D1D040E72FFFA36B5D2D8E904E0BA3 (GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * __this, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___point0, const RuntimeMethod* method);
 // System.Void System.Collections.Generic.List`1<DrawingHistoryManager/DrawingCommand>::.ctor()
 inline void List_1__ctor_mD348443BDB8796B44958171254E0DF0A53A5196C (List_1_t25E41A167AD19452B1B99E3FED6FDE3B54DDFD5D * __this, const RuntimeMethod* method)
 {
@@ -19433,19 +19438,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DrawLineManager_draw_m36190D55990D68DB20
 	Touch_tAACD32535FF3FE5DD91125E0B6987B93C68D2DE8  V_6;
 	memset((&V_6), 0, sizeof(V_6));
 	bool V_7 = false;
-	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * V_8 = NULL;
-	int32_t V_9 = 0;
-	bool V_10 = false;
-	bool V_11 = false;
-	bool V_12 = false;
-	bool V_13 = false;
-	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  V_14;
-	memset((&V_14), 0, sizeof(V_14));
-	int32_t V_15 = 0;
-	bool V_16 = false;
-	bool V_17 = false;
+	bool V_8 = false;
+	bool V_9 = false;
 	int32_t G_B6_0 = 0;
-	int32_t G_B10_0 = 0;
 	{
 		// if(snapToSurfaceBrushTipObject.activeSelf)
 		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_0 = __this->get_snapToSurfaceBrushTipObject_21();
@@ -19525,314 +19520,61 @@ IL_0071:
 		bool L_20 = V_7;
 		if (!L_20)
 		{
-			goto IL_01f8;
+			goto IL_0094;
 		}
 	}
 	{
-		// if (!paintPanel.activeSelf && !snapToSurfaceBrushTipObject.activeSelf) {
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_21 = __this->get_paintPanel_6();
-		NullCheck(L_21);
-		bool L_22 = GameObject_get_activeSelf_mFE1834886CAE59884AC2BE707A3B821A1DB61F44(L_21, /*hidden argument*/NULL);
-		if (L_22)
-		{
-			goto IL_00a9;
-		}
-	}
-	{
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_23 = __this->get_snapToSurfaceBrushTipObject_21();
-		NullCheck(L_23);
-		bool L_24 = GameObject_get_activeSelf_mFE1834886CAE59884AC2BE707A3B821A1DB61F44(L_23, /*hidden argument*/NULL);
-		G_B10_0 = ((((int32_t)L_24) == ((int32_t)0))? 1 : 0);
-		goto IL_00aa;
+		// startNewLine(endPoint);
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_21 = V_0;
+		DrawLineManager_startNewLine_mCCF7BCE85E281B694E9BDD7C50471B3BA3B3C0C7(__this, L_21, /*hidden argument*/NULL);
+		goto IL_00cd;
 	}
 
-IL_00a9:
-	{
-		G_B10_0 = 0;
-	}
-
-IL_00aa:
-	{
-		V_10 = (bool)G_B10_0;
-		bool L_25 = V_10;
-		if (!L_25)
-		{
-			goto IL_00b6;
-		}
-	}
-	{
-		// return;
-		goto IL_030b;
-	}
-
-IL_00b6:
-	{
-		// Debug.Log ("First touch");
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_t7B5FCB117E2FD63B6838BC52821B252E2BFB61C4_il2cpp_TypeInfo_var);
-		Debug_Log_m4B7C70BAFD477C6BDB59C88A0934F0B018D03708(_stringLiteral509D7AFBE04782CC66B7091DB66CB2DB096402F4, /*hidden argument*/NULL);
-		// GameObject go = new GameObject ();
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_26 = (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F *)il2cpp_codegen_object_new(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F_il2cpp_TypeInfo_var);
-		GameObject__ctor_mA4DFA8F4471418C248E95B55070665EF344B4B2D(L_26, /*hidden argument*/NULL);
-		V_8 = L_26;
-		// go.transform.position = endPoint;
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_27 = V_8;
-		NullCheck(L_27);
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_28 = GameObject_get_transform_mA5C38857137F137CB96C69FAA624199EB1C2FB2C(L_27, /*hidden argument*/NULL);
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_29 = V_0;
-		NullCheck(L_28);
-		Transform_set_position_mDA89E4893F14ECA5CBEEE7FB80A5BF7C1B8EA6DC(L_28, L_29, /*hidden argument*/NULL);
-		// go.transform.parent = drawingRootSceneObject.transform;
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_30 = V_8;
-		NullCheck(L_30);
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_31 = GameObject_get_transform_mA5C38857137F137CB96C69FAA624199EB1C2FB2C(L_30, /*hidden argument*/NULL);
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_32 = __this->get_drawingRootSceneObject_18();
-		NullCheck(L_32);
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_33 = GameObject_get_transform_mA5C38857137F137CB96C69FAA624199EB1C2FB2C(L_32, /*hidden argument*/NULL);
-		NullCheck(L_31);
-		Transform_set_parent_m65B8E4660B2C554069C57A957D9E55FECA7AA73E(L_31, L_33, /*hidden argument*/NULL);
-		// go.AddComponent<MeshFilter> ();
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_34 = V_8;
-		NullCheck(L_34);
-		GameObject_AddComponent_TisMeshFilter_t8D4BA8E8723DE5CFF53B0DA5EE2F6B3A5B0E0FE0_m98AEA1EDDC59492203D06FA2912152C37C4164E4(L_34, /*hidden argument*/GameObject_AddComponent_TisMeshFilter_t8D4BA8E8723DE5CFF53B0DA5EE2F6B3A5B0E0FE0_m98AEA1EDDC59492203D06FA2912152C37C4164E4_RuntimeMethod_var);
-		// go.AddComponent<MeshRenderer> ();
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_35 = V_8;
-		NullCheck(L_35);
-		GameObject_AddComponent_TisMeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED_m16409C054F66125E0380BDDDB1454118A3BAD60E(L_35, /*hidden argument*/GameObject_AddComponent_TisMeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED_m16409C054F66125E0380BDDDB1454118A3BAD60E_RuntimeMethod_var);
-		// currLine = go.AddComponent<GraphicsLineRenderer> ();
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_36 = V_8;
-		NullCheck(L_36);
-		GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * L_37 = GameObject_AddComponent_TisGraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9_mC858BAF6485A3229ACF94549CBA69EE27275AA69(L_36, /*hidden argument*/GameObject_AddComponent_TisGraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9_mC858BAF6485A3229ACF94549CBA69EE27275AA69_RuntimeMethod_var);
-		__this->set_currLine_8(L_37);
-		// currLine.lmat = new Material(lMat);
-		GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * L_38 = __this->get_currLine_8();
-		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_39 = __this->get_lMat_5();
-		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_40 = (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 *)il2cpp_codegen_object_new(Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598_il2cpp_TypeInfo_var);
-		Material__ctor_m0171C6D4D3FD04D58C70808F255DBA67D0ED2BDE(L_40, L_39, /*hidden argument*/NULL);
-		NullCheck(L_38);
-		L_38->set_lmat_5(L_40);
-		// currLine.SetWidth (paintLineThickness);
-		GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * L_41 = __this->get_currLine_8();
-		float L_42 = __this->get_paintLineThickness_13();
-		NullCheck(L_41);
-		GraphicsLineRenderer_SetWidth_m79FFEAE9CA81B9DDE01D9D50CC8ED4F4EB9095CD(L_41, L_42, /*hidden argument*/NULL);
-		// currLine.lmat.color = paintLineColor;
-		GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * L_43 = __this->get_currLine_8();
-		NullCheck(L_43);
-		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_44 = L_43->get_lmat_5();
-		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_45 = __this->get_paintLineColor_14();
-		NullCheck(L_44);
-		Material_set_color_m127EAC5D3CC68359E72D12A2B3CE7428EFBB81C3(L_44, L_45, /*hidden argument*/NULL);
-		// numClicks = 0;
-		__this->set_numClicks_10(0);
-		// prevPaintPoint = endPoint;
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_46 = V_0;
-		__this->set_prevPaintPoint_12(L_46);
-		// Debug.Log ("Adding History 1");
-		Debug_Log_m4B7C70BAFD477C6BDB59C88A0934F0B018D03708(_stringLiteral9AFD2795D8EC25726593CFB282D04D4F89FFCCD6, /*hidden argument*/NULL);
-		// int index = GetComponent<PaintController> ().drawingHistoryIndex;
-		PaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995 * L_47 = Component_GetComponent_TisPaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995_m6D05CE2BBEBA8C13D13DA541AF380B774DED20FF(__this, /*hidden argument*/Component_GetComponent_TisPaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995_m6D05CE2BBEBA8C13D13DA541AF380B774DED20FF_RuntimeMethod_var);
-		NullCheck(L_47);
-		int32_t L_48 = L_47->get_drawingHistoryIndex_21();
-		V_9 = L_48;
-		// index++;
-		int32_t L_49 = V_9;
-		V_9 = ((int32_t)il2cpp_codegen_add((int32_t)L_49, (int32_t)1));
-		// Debug.Log ("Adding History 2");
-		Debug_Log_m4B7C70BAFD477C6BDB59C88A0934F0B018D03708(_stringLiteralA229295FC7453F43AB721C292BB7B25AF4AE2477, /*hidden argument*/NULL);
-		// if(brushTipObject.activeSelf)
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_50 = __this->get_brushTipObject_20();
-		NullCheck(L_50);
-		bool L_51 = GameObject_get_activeSelf_mFE1834886CAE59884AC2BE707A3B821A1DB61F44(L_50, /*hidden argument*/NULL);
-		V_11 = L_51;
-		bool L_52 = V_11;
-		if (!L_52)
-		{
-			goto IL_01a4;
-		}
-	}
-	{
-		// brushTipObject.GetComponent<TrailRenderer>().enabled = false;
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_53 = __this->get_brushTipObject_20();
-		NullCheck(L_53);
-		TrailRenderer_t9AC23ED5E8A7955A3288A9C37865C11382DA668D * L_54 = GameObject_GetComponent_TisTrailRenderer_t9AC23ED5E8A7955A3288A9C37865C11382DA668D_m7C1059FAE34EC21FA55E05C684BA337973AB7195(L_53, /*hidden argument*/GameObject_GetComponent_TisTrailRenderer_t9AC23ED5E8A7955A3288A9C37865C11382DA668D_m7C1059FAE34EC21FA55E05C684BA337973AB7195_RuntimeMethod_var);
-		NullCheck(L_54);
-		Renderer_set_enabled_m0933766657F2685BAAE3340B0A984C0E63925303(L_54, (bool)0, /*hidden argument*/NULL);
-	}
-
-IL_01a4:
-	{
-		// paintBrushSceneObject.GetComponent<DrawingHistoryManager> ().addDrawingCommand (index, 0, endPoint, currLine.lmat.color, paintLineThickness);
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_55 = __this->get_paintBrushSceneObject_19();
-		NullCheck(L_55);
-		DrawingHistoryManager_t465468CFA2187A9DE5AC4B22E7EC976E4C6A036B * L_56 = GameObject_GetComponent_TisDrawingHistoryManager_t465468CFA2187A9DE5AC4B22E7EC976E4C6A036B_m57713631EB645A56806C2B287CDABC034636999C(L_55, /*hidden argument*/GameObject_GetComponent_TisDrawingHistoryManager_t465468CFA2187A9DE5AC4B22E7EC976E4C6A036B_m57713631EB645A56806C2B287CDABC034636999C_RuntimeMethod_var);
-		int32_t L_57 = V_9;
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_58 = V_0;
-		GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * L_59 = __this->get_currLine_8();
-		NullCheck(L_59);
-		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_60 = L_59->get_lmat_5();
-		NullCheck(L_60);
-		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_61 = Material_get_color_m7CE9C1FC0E0B4952D58DFBBA4D569F4B161B27E9(L_60, /*hidden argument*/NULL);
-		float L_62 = __this->get_paintLineThickness_13();
-		NullCheck(L_56);
-		DrawingHistoryManager_addDrawingCommand_m57D40781CB938EE38A12812171FDC206B265C24A(L_56, L_57, 0, L_58, L_61, L_62, /*hidden argument*/NULL);
-		// Debug.Log ("Adding History 3");
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_t7B5FCB117E2FD63B6838BC52821B252E2BFB61C4_il2cpp_TypeInfo_var);
-		Debug_Log_m4B7C70BAFD477C6BDB59C88A0934F0B018D03708(_stringLiteralB246F11A8C91421FD6139C5A4D78D6014F2D6963, /*hidden argument*/NULL);
-		// GetComponent<PaintController> ().drawingHistoryIndex = index;
-		PaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995 * L_63 = Component_GetComponent_TisPaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995_m6D05CE2BBEBA8C13D13DA541AF380B774DED20FF(__this, /*hidden argument*/Component_GetComponent_TisPaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995_m6D05CE2BBEBA8C13D13DA541AF380B774DED20FF_RuntimeMethod_var);
-		int32_t L_64 = V_9;
-		NullCheck(L_63);
-		L_63->set_drawingHistoryIndex_21(L_64);
-		// Debug.Log ("Done Adding History");
-		Debug_Log_m4B7C70BAFD477C6BDB59C88A0934F0B018D03708(_stringLiteral6EA944352F4FC2347886BF2856A1BD4575D87233, /*hidden argument*/NULL);
-		goto IL_030b;
-	}
-
-IL_01f8:
+IL_0094:
 	{
 		// } else if (whileTouchedCondition == true) {
-		bool L_65 = V_2;
-		V_12 = L_65;
-		bool L_66 = V_12;
-		if (!L_66)
+		bool L_22 = V_2;
+		V_8 = L_22;
+		bool L_23 = V_8;
+		if (!L_23)
 		{
-			goto IL_02e6;
+			goto IL_00a8;
 		}
 	}
 	{
-		// if ((endPoint - prevPaintPoint).magnitude > 0.01f) {
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_67 = V_0;
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_68 = __this->get_prevPaintPoint_12();
-		IL2CPP_RUNTIME_CLASS_INIT(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_il2cpp_TypeInfo_var);
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_69 = Vector3_op_Subtraction_mF9846B723A5034F8B9F5F5DCB78E3D67649143D3(L_67, L_68, /*hidden argument*/NULL);
-		V_14 = L_69;
-		float L_70 = Vector3_get_magnitude_m9A750659B60C5FE0C30438A7F9681775D5DB1274((Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 *)(&V_14), /*hidden argument*/NULL);
-		V_13 = (bool)((((float)L_70) > ((float)(0.01f)))? 1 : 0);
-		bool L_71 = V_13;
-		if (!L_71)
-		{
-			goto IL_02a9;
-		}
-	}
-	{
-		// currLine.AddPoint (endPoint);
-		GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * L_72 = __this->get_currLine_8();
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_73 = V_0;
-		NullCheck(L_72);
-		GraphicsLineRenderer_AddPoint_m24839F21D1D1D040E72FFFA36B5D2D8E904E0BA3(L_72, L_73, /*hidden argument*/NULL);
-		// numClicks++;
-		int32_t L_74 = __this->get_numClicks_10();
-		__this->set_numClicks_10(((int32_t)il2cpp_codegen_add((int32_t)L_74, (int32_t)1)));
-		// prevPaintPoint = endPoint;
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_75 = V_0;
-		__this->set_prevPaintPoint_12(L_75);
-		// int index = GetComponent<PaintController> ().drawingHistoryIndex;
-		PaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995 * L_76 = Component_GetComponent_TisPaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995_m6D05CE2BBEBA8C13D13DA541AF380B774DED20FF(__this, /*hidden argument*/Component_GetComponent_TisPaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995_m6D05CE2BBEBA8C13D13DA541AF380B774DED20FF_RuntimeMethod_var);
-		NullCheck(L_76);
-		int32_t L_77 = L_76->get_drawingHistoryIndex_21();
-		V_15 = L_77;
-		// if(brushTipObject.activeSelf)
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_78 = __this->get_brushTipObject_20();
-		NullCheck(L_78);
-		bool L_79 = GameObject_get_activeSelf_mFE1834886CAE59884AC2BE707A3B821A1DB61F44(L_78, /*hidden argument*/NULL);
-		V_16 = L_79;
-		bool L_80 = V_16;
-		if (!L_80)
-		{
-			goto IL_027b;
-		}
-	}
-	{
-		// brushTipObject.GetComponent<TrailRenderer>().enabled = false;
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_81 = __this->get_brushTipObject_20();
-		NullCheck(L_81);
-		TrailRenderer_t9AC23ED5E8A7955A3288A9C37865C11382DA668D * L_82 = GameObject_GetComponent_TisTrailRenderer_t9AC23ED5E8A7955A3288A9C37865C11382DA668D_m7C1059FAE34EC21FA55E05C684BA337973AB7195(L_81, /*hidden argument*/GameObject_GetComponent_TisTrailRenderer_t9AC23ED5E8A7955A3288A9C37865C11382DA668D_m7C1059FAE34EC21FA55E05C684BA337973AB7195_RuntimeMethod_var);
-		NullCheck(L_82);
-		Renderer_set_enabled_m0933766657F2685BAAE3340B0A984C0E63925303(L_82, (bool)0, /*hidden argument*/NULL);
+		// addPointToLine(endPoint);
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_24 = V_0;
+		DrawLineManager_addPointToLine_m2924F756CB4E70C0F9113104CA3732D7B63B2285(__this, L_24, (bool)0, /*hidden argument*/NULL);
+		goto IL_00cd;
 	}
 
-IL_027b:
-	{
-		// paintBrushSceneObject.GetComponent<DrawingHistoryManager> ().addDrawingCommand (index, 0, endPoint, currLine.lmat.color, paintLineThickness);
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_83 = __this->get_paintBrushSceneObject_19();
-		NullCheck(L_83);
-		DrawingHistoryManager_t465468CFA2187A9DE5AC4B22E7EC976E4C6A036B * L_84 = GameObject_GetComponent_TisDrawingHistoryManager_t465468CFA2187A9DE5AC4B22E7EC976E4C6A036B_m57713631EB645A56806C2B287CDABC034636999C(L_83, /*hidden argument*/GameObject_GetComponent_TisDrawingHistoryManager_t465468CFA2187A9DE5AC4B22E7EC976E4C6A036B_m57713631EB645A56806C2B287CDABC034636999C_RuntimeMethod_var);
-		int32_t L_85 = V_15;
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_86 = V_0;
-		GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * L_87 = __this->get_currLine_8();
-		NullCheck(L_87);
-		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_88 = L_87->get_lmat_5();
-		NullCheck(L_88);
-		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_89 = Material_get_color_m7CE9C1FC0E0B4952D58DFBBA4D569F4B161B27E9(L_88, /*hidden argument*/NULL);
-		float L_90 = __this->get_paintLineThickness_13();
-		NullCheck(L_84);
-		DrawingHistoryManager_addDrawingCommand_m57D40781CB938EE38A12812171FDC206B265C24A(L_84, L_85, 0, L_86, L_89, L_90, /*hidden argument*/NULL);
-		goto IL_02e3;
-	}
-
-IL_02a9:
-	{
-		// Debug.Log("Change in distance not large enough. Start: " + prevPaintPoint + " End: " + endPoint);
-		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_91 = (ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A*)(ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A*)SZArrayNew(ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A_il2cpp_TypeInfo_var, (uint32_t)4);
-		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_92 = L_91;
-		NullCheck(L_92);
-		ArrayElementTypeCheck (L_92, _stringLiteral6396AD158D00DF8002A0B9EB233ABA117056A4A1);
-		(L_92)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject *)_stringLiteral6396AD158D00DF8002A0B9EB233ABA117056A4A1);
-		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_93 = L_92;
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_94 = __this->get_prevPaintPoint_12();
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_95 = L_94;
-		RuntimeObject * L_96 = Box(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_il2cpp_TypeInfo_var, &L_95);
-		NullCheck(L_93);
-		ArrayElementTypeCheck (L_93, L_96);
-		(L_93)->SetAt(static_cast<il2cpp_array_size_t>(1), (RuntimeObject *)L_96);
-		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_97 = L_93;
-		NullCheck(L_97);
-		ArrayElementTypeCheck (L_97, _stringLiteral65B0B1FE333C517AC85A6A93112BCDF05AACA6B0);
-		(L_97)->SetAt(static_cast<il2cpp_array_size_t>(2), (RuntimeObject *)_stringLiteral65B0B1FE333C517AC85A6A93112BCDF05AACA6B0);
-		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_98 = L_97;
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_99 = V_0;
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_100 = L_99;
-		RuntimeObject * L_101 = Box(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_il2cpp_TypeInfo_var, &L_100);
-		NullCheck(L_98);
-		ArrayElementTypeCheck (L_98, L_101);
-		(L_98)->SetAt(static_cast<il2cpp_array_size_t>(3), (RuntimeObject *)L_101);
-		String_t* L_102 = String_Concat_mB7BA84F13912303B2E5E40FBF0109E1A328ACA07(L_98, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_t7B5FCB117E2FD63B6838BC52821B252E2BFB61C4_il2cpp_TypeInfo_var);
-		Debug_Log_m4B7C70BAFD477C6BDB59C88A0934F0B018D03708(L_102, /*hidden argument*/NULL);
-	}
-
-IL_02e3:
-	{
-		goto IL_030b;
-	}
-
-IL_02e6:
+IL_00a8:
 	{
 		// if(brushTipObject.activeSelf)
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_103 = __this->get_brushTipObject_20();
-		NullCheck(L_103);
-		bool L_104 = GameObject_get_activeSelf_mFE1834886CAE59884AC2BE707A3B821A1DB61F44(L_103, /*hidden argument*/NULL);
-		V_17 = L_104;
-		bool L_105 = V_17;
-		if (!L_105)
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_25 = __this->get_brushTipObject_20();
+		NullCheck(L_25);
+		bool L_26 = GameObject_get_activeSelf_mFE1834886CAE59884AC2BE707A3B821A1DB61F44(L_25, /*hidden argument*/NULL);
+		V_9 = L_26;
+		bool L_27 = V_9;
+		if (!L_27)
 		{
-			goto IL_030a;
+			goto IL_00cc;
 		}
 	}
 	{
 		// brushTipObject.GetComponent<TrailRenderer>().enabled = true;
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_106 = __this->get_brushTipObject_20();
-		NullCheck(L_106);
-		TrailRenderer_t9AC23ED5E8A7955A3288A9C37865C11382DA668D * L_107 = GameObject_GetComponent_TisTrailRenderer_t9AC23ED5E8A7955A3288A9C37865C11382DA668D_m7C1059FAE34EC21FA55E05C684BA337973AB7195(L_106, /*hidden argument*/GameObject_GetComponent_TisTrailRenderer_t9AC23ED5E8A7955A3288A9C37865C11382DA668D_m7C1059FAE34EC21FA55E05C684BA337973AB7195_RuntimeMethod_var);
-		NullCheck(L_107);
-		Renderer_set_enabled_m0933766657F2685BAAE3340B0A984C0E63925303(L_107, (bool)1, /*hidden argument*/NULL);
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_28 = __this->get_brushTipObject_20();
+		NullCheck(L_28);
+		TrailRenderer_t9AC23ED5E8A7955A3288A9C37865C11382DA668D * L_29 = GameObject_GetComponent_TisTrailRenderer_t9AC23ED5E8A7955A3288A9C37865C11382DA668D_m7C1059FAE34EC21FA55E05C684BA337973AB7195(L_28, /*hidden argument*/GameObject_GetComponent_TisTrailRenderer_t9AC23ED5E8A7955A3288A9C37865C11382DA668D_m7C1059FAE34EC21FA55E05C684BA337973AB7195_RuntimeMethod_var);
+		NullCheck(L_29);
+		Renderer_set_enabled_m0933766657F2685BAAE3340B0A984C0E63925303(L_29, (bool)1, /*hidden argument*/NULL);
 	}
 
-IL_030a:
+IL_00cc:
 	{
 	}
 
-IL_030b:
+IL_00cd:
 	{
 		// } // draw()
 		return;
@@ -19884,16 +19626,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DrawLineManager__UpdateFeature_mABDD556E
 	bool V_15 = false;
 	bool V_16 = false;
 	bool V_17 = false;
-	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * V_18 = NULL;
-	Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  V_19;
-	memset((&V_19), 0, sizeof(V_19));
-	int32_t V_20 = 0;
-	bool V_21 = false;
-	bool V_22 = false;
-	bool V_23 = false;
-	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  V_24;
-	memset((&V_24), 0, sizeof(V_24));
-	int32_t V_25 = 0;
+	bool V_18 = false;
 	Exception_t * __last_unhandled_exception = 0;
 	NO_UNUSED_WARNING (__last_unhandled_exception);
 	Exception_t * __exception_local = 0;
@@ -19934,7 +19667,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DrawLineManager__UpdateFeature_mABDD556E
 		NullCheck(L_7);
 		Renderer_set_enabled_m0933766657F2685BAAE3340B0A984C0E63925303(L_7, (bool)1, /*hidden argument*/NULL);
 		// return;
-		goto IL_0404;
+		goto IL_0225;
 	}
 
 IL_0042:
@@ -20018,7 +19751,7 @@ IL_007b:
 		NullCheck(L_18);
 		Renderer_set_enabled_m0933766657F2685BAAE3340B0A984C0E63925303(L_18, (bool)1, /*hidden argument*/NULL);
 		// return;
-		goto IL_0404;
+		goto IL_0225;
 	}
 
 IL_0099:
@@ -20043,7 +19776,7 @@ IL_0099:
 		NullCheck(L_23);
 		Renderer_set_enabled_m0933766657F2685BAAE3340B0A984C0E63925303(L_23, (bool)1, /*hidden argument*/NULL);
 		// return;
-		goto IL_0404;
+		goto IL_0225;
 	}
 
 IL_00c3:
@@ -20171,7 +19904,7 @@ IL_0184:
 	}
 	{
 		// return;
-		goto IL_0404;
+		goto IL_0225;
 	}
 
 IL_0195:
@@ -20235,211 +19968,353 @@ IL_0195:
 		bool L_70 = V_17;
 		if (!L_70)
 		{
-			goto IL_0364;
+			goto IL_0212;
 		}
 	}
 	{
-		// if (!paintPanel.activeSelf) {
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_71 = __this->get_paintPanel_6();
-		NullCheck(L_71);
-		bool L_72 = GameObject_get_activeSelf_mFE1834886CAE59884AC2BE707A3B821A1DB61F44(L_71, /*hidden argument*/NULL);
-		V_21 = (bool)((((int32_t)L_72) == ((int32_t)0))? 1 : 0);
-		bool L_73 = V_21;
+		// startNewLine(pointToDraw);
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_71 = V_7;
+		DrawLineManager_startNewLine_mCCF7BCE85E281B694E9BDD7C50471B3BA3B3C0C7(__this, L_71, /*hidden argument*/NULL);
+		// doKeepDrawingFeature = true;
+		__this->set_doKeepDrawingFeature_9((bool)1);
+		goto IL_0225;
+	}
+
+IL_0212:
+	{
+		// } else if (whileTouchedCondition == true) {
+		bool L_72 = V_1;
+		V_18 = L_72;
+		bool L_73 = V_18;
 		if (!L_73)
 		{
-			goto IL_021c;
+			goto IL_0225;
+		}
+	}
+	{
+		// addPointToLine(pointToDraw);
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_74 = V_7;
+		DrawLineManager_addPointToLine_m2924F756CB4E70C0F9113104CA3732D7B63B2285(__this, L_74, (bool)0, /*hidden argument*/NULL);
+	}
+
+IL_0225:
+	{
+		// } // _UpdateFeature()
+		return;
+	}
+}
+// System.Void DrawLineManager::startNewLine(UnityEngine.Vector3)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DrawLineManager_startNewLine_mCCF7BCE85E281B694E9BDD7C50471B3BA3B3C0C7 (DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC * __this, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___firstPoint0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (DrawLineManager_startNewLine_mCCF7BCE85E281B694E9BDD7C50471B3BA3B3C0C7_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * V_0 = NULL;
+	int32_t V_1 = 0;
+	bool V_2 = false;
+	bool V_3 = false;
+	int32_t G_B3_0 = 0;
+	{
+		// Debug.Log ("startNewLine()");
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t7B5FCB117E2FD63B6838BC52821B252E2BFB61C4_il2cpp_TypeInfo_var);
+		Debug_Log_m4B7C70BAFD477C6BDB59C88A0934F0B018D03708(_stringLiteralACF1768D419EDDB7860327FFD735FC2DF2D30AE1, /*hidden argument*/NULL);
+		// if (!paintPanel.activeSelf && !snapToSurfaceBrushTipObject.activeSelf) {
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_0 = __this->get_paintPanel_6();
+		NullCheck(L_0);
+		bool L_1 = GameObject_get_activeSelf_mFE1834886CAE59884AC2BE707A3B821A1DB61F44(L_0, /*hidden argument*/NULL);
+		if (L_1)
+		{
+			goto IL_0029;
+		}
+	}
+	{
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_2 = __this->get_snapToSurfaceBrushTipObject_21();
+		NullCheck(L_2);
+		bool L_3 = GameObject_get_activeSelf_mFE1834886CAE59884AC2BE707A3B821A1DB61F44(L_2, /*hidden argument*/NULL);
+		G_B3_0 = ((((int32_t)L_3) == ((int32_t)0))? 1 : 0);
+		goto IL_002a;
+	}
+
+IL_0029:
+	{
+		G_B3_0 = 0;
+	}
+
+IL_002a:
+	{
+		V_2 = (bool)G_B3_0;
+		bool L_4 = V_2;
+		if (!L_4)
+		{
+			goto IL_0034;
 		}
 	}
 	{
 		// return;
-		goto IL_0404;
+		goto IL_015d;
 	}
 
-IL_021c:
+IL_0034:
 	{
-		// Debug.Log ("_UpdateFeature() First touch");
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_t7B5FCB117E2FD63B6838BC52821B252E2BFB61C4_il2cpp_TypeInfo_var);
-		Debug_Log_m4B7C70BAFD477C6BDB59C88A0934F0B018D03708(_stringLiteral011C9736AA1A9F17DFC5A8D26D83BD4E18B328C3, /*hidden argument*/NULL);
 		// GameObject go = new GameObject ();
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_74 = (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F *)il2cpp_codegen_object_new(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F_il2cpp_TypeInfo_var);
-		GameObject__ctor_mA4DFA8F4471418C248E95B55070665EF344B4B2D(L_74, /*hidden argument*/NULL);
-		V_18 = L_74;
-		// go.transform.position = pointToDraw;
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_75 = V_18;
-		NullCheck(L_75);
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_76 = GameObject_get_transform_mA5C38857137F137CB96C69FAA624199EB1C2FB2C(L_75, /*hidden argument*/NULL);
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_77 = V_7;
-		NullCheck(L_76);
-		Transform_set_position_mDA89E4893F14ECA5CBEEE7FB80A5BF7C1B8EA6DC(L_76, L_77, /*hidden argument*/NULL);
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_5 = (GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F *)il2cpp_codegen_object_new(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F_il2cpp_TypeInfo_var);
+		GameObject__ctor_mA4DFA8F4471418C248E95B55070665EF344B4B2D(L_5, /*hidden argument*/NULL);
+		V_0 = L_5;
+		// go.transform.position = firstPoint;
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_6 = V_0;
+		NullCheck(L_6);
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_7 = GameObject_get_transform_mA5C38857137F137CB96C69FAA624199EB1C2FB2C(L_6, /*hidden argument*/NULL);
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_8 = ___firstPoint0;
+		NullCheck(L_7);
+		Transform_set_position_mDA89E4893F14ECA5CBEEE7FB80A5BF7C1B8EA6DC(L_7, L_8, /*hidden argument*/NULL);
 		// go.transform.parent = drawingRootSceneObject.transform;
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_78 = V_18;
-		NullCheck(L_78);
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_79 = GameObject_get_transform_mA5C38857137F137CB96C69FAA624199EB1C2FB2C(L_78, /*hidden argument*/NULL);
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_80 = __this->get_drawingRootSceneObject_18();
-		NullCheck(L_80);
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_81 = GameObject_get_transform_mA5C38857137F137CB96C69FAA624199EB1C2FB2C(L_80, /*hidden argument*/NULL);
-		NullCheck(L_79);
-		Transform_set_parent_m65B8E4660B2C554069C57A957D9E55FECA7AA73E(L_79, L_81, /*hidden argument*/NULL);
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_9 = V_0;
+		NullCheck(L_9);
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_10 = GameObject_get_transform_mA5C38857137F137CB96C69FAA624199EB1C2FB2C(L_9, /*hidden argument*/NULL);
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_11 = __this->get_drawingRootSceneObject_18();
+		NullCheck(L_11);
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_12 = GameObject_get_transform_mA5C38857137F137CB96C69FAA624199EB1C2FB2C(L_11, /*hidden argument*/NULL);
+		NullCheck(L_10);
+		Transform_set_parent_m65B8E4660B2C554069C57A957D9E55FECA7AA73E(L_10, L_12, /*hidden argument*/NULL);
 		// go.AddComponent<MeshFilter> ();
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_82 = V_18;
-		NullCheck(L_82);
-		GameObject_AddComponent_TisMeshFilter_t8D4BA8E8723DE5CFF53B0DA5EE2F6B3A5B0E0FE0_m98AEA1EDDC59492203D06FA2912152C37C4164E4(L_82, /*hidden argument*/GameObject_AddComponent_TisMeshFilter_t8D4BA8E8723DE5CFF53B0DA5EE2F6B3A5B0E0FE0_m98AEA1EDDC59492203D06FA2912152C37C4164E4_RuntimeMethod_var);
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_13 = V_0;
+		NullCheck(L_13);
+		GameObject_AddComponent_TisMeshFilter_t8D4BA8E8723DE5CFF53B0DA5EE2F6B3A5B0E0FE0_m98AEA1EDDC59492203D06FA2912152C37C4164E4(L_13, /*hidden argument*/GameObject_AddComponent_TisMeshFilter_t8D4BA8E8723DE5CFF53B0DA5EE2F6B3A5B0E0FE0_m98AEA1EDDC59492203D06FA2912152C37C4164E4_RuntimeMethod_var);
 		// go.AddComponent<MeshRenderer> ();
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_83 = V_18;
-		NullCheck(L_83);
-		GameObject_AddComponent_TisMeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED_m16409C054F66125E0380BDDDB1454118A3BAD60E(L_83, /*hidden argument*/GameObject_AddComponent_TisMeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED_m16409C054F66125E0380BDDDB1454118A3BAD60E_RuntimeMethod_var);
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_14 = V_0;
+		NullCheck(L_14);
+		GameObject_AddComponent_TisMeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED_m16409C054F66125E0380BDDDB1454118A3BAD60E(L_14, /*hidden argument*/GameObject_AddComponent_TisMeshRenderer_t9D67CA54E83315F743623BDE8EADCD5074659EED_m16409C054F66125E0380BDDDB1454118A3BAD60E_RuntimeMethod_var);
 		// currLine = go.AddComponent<GraphicsLineRenderer> ();
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_84 = V_18;
-		NullCheck(L_84);
-		GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * L_85 = GameObject_AddComponent_TisGraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9_mC858BAF6485A3229ACF94549CBA69EE27275AA69(L_84, /*hidden argument*/GameObject_AddComponent_TisGraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9_mC858BAF6485A3229ACF94549CBA69EE27275AA69_RuntimeMethod_var);
-		__this->set_currLine_8(L_85);
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_15 = V_0;
+		NullCheck(L_15);
+		GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * L_16 = GameObject_AddComponent_TisGraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9_mC858BAF6485A3229ACF94549CBA69EE27275AA69(L_15, /*hidden argument*/GameObject_AddComponent_TisGraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9_mC858BAF6485A3229ACF94549CBA69EE27275AA69_RuntimeMethod_var);
+		__this->set_currLine_8(L_16);
 		// currLine.lmat = new Material(lMat);
-		GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * L_86 = __this->get_currLine_8();
-		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_87 = __this->get_lMat_5();
-		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_88 = (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 *)il2cpp_codegen_object_new(Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598_il2cpp_TypeInfo_var);
-		Material__ctor_m0171C6D4D3FD04D58C70808F255DBA67D0ED2BDE(L_88, L_87, /*hidden argument*/NULL);
-		NullCheck(L_86);
-		L_86->set_lmat_5(L_88);
+		GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * L_17 = __this->get_currLine_8();
+		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_18 = __this->get_lMat_5();
+		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_19 = (Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 *)il2cpp_codegen_object_new(Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598_il2cpp_TypeInfo_var);
+		Material__ctor_m0171C6D4D3FD04D58C70808F255DBA67D0ED2BDE(L_19, L_18, /*hidden argument*/NULL);
+		NullCheck(L_17);
+		L_17->set_lmat_5(L_19);
 		// currLine.SetWidth (paintLineThickness);
-		GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * L_89 = __this->get_currLine_8();
-		float L_90 = __this->get_paintLineThickness_13();
-		NullCheck(L_89);
-		GraphicsLineRenderer_SetWidth_m79FFEAE9CA81B9DDE01D9D50CC8ED4F4EB9095CD(L_89, L_90, /*hidden argument*/NULL);
-		// Color newColor = paintLineColor;//new Color(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f));
-		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_91 = __this->get_paintLineColor_14();
-		V_19 = L_91;
-		// currLine.lmat.color = colorPicker.GetColor();//newColor;
-		GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * L_92 = __this->get_currLine_8();
-		NullCheck(L_92);
-		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_93 = L_92->get_lmat_5();
-		FlexibleColorPicker_tD1D4032D819D7F35A043E41291E52F6F2C093572 * L_94 = __this->get_colorPicker_22();
-		NullCheck(L_94);
-		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_95 = FlexibleColorPicker_GetColor_mA0F6E7F764D91FF679E13F61CDE4F7367ED9C88A(L_94, /*hidden argument*/NULL);
-		NullCheck(L_93);
-		Material_set_color_m127EAC5D3CC68359E72D12A2B3CE7428EFBB81C3(L_93, L_95, /*hidden argument*/NULL);
+		GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * L_20 = __this->get_currLine_8();
+		float L_21 = __this->get_paintLineThickness_13();
+		NullCheck(L_20);
+		GraphicsLineRenderer_SetWidth_m79FFEAE9CA81B9DDE01D9D50CC8ED4F4EB9095CD(L_20, L_21, /*hidden argument*/NULL);
+		// currLine.lmat.color = colorPicker.GetColor();
+		GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * L_22 = __this->get_currLine_8();
+		NullCheck(L_22);
+		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_23 = L_22->get_lmat_5();
+		FlexibleColorPicker_tD1D4032D819D7F35A043E41291E52F6F2C093572 * L_24 = __this->get_colorPicker_22();
+		NullCheck(L_24);
+		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_25 = FlexibleColorPicker_GetColor_mA0F6E7F764D91FF679E13F61CDE4F7367ED9C88A(L_24, /*hidden argument*/NULL);
+		NullCheck(L_23);
+		Material_set_color_m127EAC5D3CC68359E72D12A2B3CE7428EFBB81C3(L_23, L_25, /*hidden argument*/NULL);
 		// numClicks = 0;
 		__this->set_numClicks_10(0);
-		// prevPaintPoint = pointToDraw;
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_96 = V_7;
-		__this->set_prevPaintPoint_12(L_96);
+		// prevPaintPoint = firstPoint;
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_26 = ___firstPoint0;
+		__this->set_prevPaintPoint_12(L_26);
 		// Debug.Log ("Adding History 1");
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t7B5FCB117E2FD63B6838BC52821B252E2BFB61C4_il2cpp_TypeInfo_var);
 		Debug_Log_m4B7C70BAFD477C6BDB59C88A0934F0B018D03708(_stringLiteral9AFD2795D8EC25726593CFB282D04D4F89FFCCD6, /*hidden argument*/NULL);
 		// int index = GetComponent<PaintController> ().drawingHistoryIndex;
-		PaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995 * L_97 = Component_GetComponent_TisPaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995_m6D05CE2BBEBA8C13D13DA541AF380B774DED20FF(__this, /*hidden argument*/Component_GetComponent_TisPaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995_m6D05CE2BBEBA8C13D13DA541AF380B774DED20FF_RuntimeMethod_var);
-		NullCheck(L_97);
-		int32_t L_98 = L_97->get_drawingHistoryIndex_21();
-		V_20 = L_98;
+		PaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995 * L_27 = Component_GetComponent_TisPaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995_m6D05CE2BBEBA8C13D13DA541AF380B774DED20FF(__this, /*hidden argument*/Component_GetComponent_TisPaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995_m6D05CE2BBEBA8C13D13DA541AF380B774DED20FF_RuntimeMethod_var);
+		NullCheck(L_27);
+		int32_t L_28 = L_27->get_drawingHistoryIndex_21();
+		V_1 = L_28;
 		// index++;
-		int32_t L_99 = V_20;
-		V_20 = ((int32_t)il2cpp_codegen_add((int32_t)L_99, (int32_t)1));
+		int32_t L_29 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add((int32_t)L_29, (int32_t)1));
 		// Debug.Log ("Adding History 2");
 		Debug_Log_m4B7C70BAFD477C6BDB59C88A0934F0B018D03708(_stringLiteralA229295FC7453F43AB721C292BB7B25AF4AE2477, /*hidden argument*/NULL);
-		// brushTipObject.GetComponent<TrailRenderer>().enabled = false;
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_100 = __this->get_brushTipObject_20();
-		NullCheck(L_100);
-		TrailRenderer_t9AC23ED5E8A7955A3288A9C37865C11382DA668D * L_101 = GameObject_GetComponent_TisTrailRenderer_t9AC23ED5E8A7955A3288A9C37865C11382DA668D_m7C1059FAE34EC21FA55E05C684BA337973AB7195(L_100, /*hidden argument*/GameObject_GetComponent_TisTrailRenderer_t9AC23ED5E8A7955A3288A9C37865C11382DA668D_m7C1059FAE34EC21FA55E05C684BA337973AB7195_RuntimeMethod_var);
-		NullCheck(L_101);
-		Renderer_set_enabled_m0933766657F2685BAAE3340B0A984C0E63925303(L_101, (bool)0, /*hidden argument*/NULL);
-		// paintBrushSceneObject.GetComponent<DrawingHistoryManager> ().addDrawingCommand (index, 0, pointToDraw, currLine.lmat.color, paintLineThickness);
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_102 = __this->get_paintBrushSceneObject_19();
-		NullCheck(L_102);
-		DrawingHistoryManager_t465468CFA2187A9DE5AC4B22E7EC976E4C6A036B * L_103 = GameObject_GetComponent_TisDrawingHistoryManager_t465468CFA2187A9DE5AC4B22E7EC976E4C6A036B_m57713631EB645A56806C2B287CDABC034636999C(L_102, /*hidden argument*/GameObject_GetComponent_TisDrawingHistoryManager_t465468CFA2187A9DE5AC4B22E7EC976E4C6A036B_m57713631EB645A56806C2B287CDABC034636999C_RuntimeMethod_var);
-		int32_t L_104 = V_20;
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_105 = V_7;
-		GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * L_106 = __this->get_currLine_8();
-		NullCheck(L_106);
-		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_107 = L_106->get_lmat_5();
-		NullCheck(L_107);
-		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_108 = Material_get_color_m7CE9C1FC0E0B4952D58DFBBA4D569F4B161B27E9(L_107, /*hidden argument*/NULL);
-		float L_109 = __this->get_paintLineThickness_13();
-		NullCheck(L_103);
-		DrawingHistoryManager_addDrawingCommand_m57D40781CB938EE38A12812171FDC206B265C24A(L_103, L_104, 0, L_105, L_108, L_109, /*hidden argument*/NULL);
+		// paintBrushSceneObject.GetComponent<DrawingHistoryManager> ().addDrawingCommand (index, 0, firstPoint, currLine.lmat.color, paintLineThickness);
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_30 = __this->get_paintBrushSceneObject_19();
+		NullCheck(L_30);
+		DrawingHistoryManager_t465468CFA2187A9DE5AC4B22E7EC976E4C6A036B * L_31 = GameObject_GetComponent_TisDrawingHistoryManager_t465468CFA2187A9DE5AC4B22E7EC976E4C6A036B_m57713631EB645A56806C2B287CDABC034636999C(L_30, /*hidden argument*/GameObject_GetComponent_TisDrawingHistoryManager_t465468CFA2187A9DE5AC4B22E7EC976E4C6A036B_m57713631EB645A56806C2B287CDABC034636999C_RuntimeMethod_var);
+		int32_t L_32 = V_1;
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_33 = ___firstPoint0;
+		GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * L_34 = __this->get_currLine_8();
+		NullCheck(L_34);
+		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_35 = L_34->get_lmat_5();
+		NullCheck(L_35);
+		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_36 = Material_get_color_m7CE9C1FC0E0B4952D58DFBBA4D569F4B161B27E9(L_35, /*hidden argument*/NULL);
+		float L_37 = __this->get_paintLineThickness_13();
+		NullCheck(L_31);
+		DrawingHistoryManager_addDrawingCommand_m57D40781CB938EE38A12812171FDC206B265C24A(L_31, L_32, 0, L_33, L_36, L_37, /*hidden argument*/NULL);
 		// Debug.Log ("Adding History 3");
 		Debug_Log_m4B7C70BAFD477C6BDB59C88A0934F0B018D03708(_stringLiteralB246F11A8C91421FD6139C5A4D78D6014F2D6963, /*hidden argument*/NULL);
-		// GetComponent<PaintController> ().drawingHistoryIndex = index;
-		PaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995 * L_110 = Component_GetComponent_TisPaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995_m6D05CE2BBEBA8C13D13DA541AF380B774DED20FF(__this, /*hidden argument*/Component_GetComponent_TisPaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995_m6D05CE2BBEBA8C13D13DA541AF380B774DED20FF_RuntimeMethod_var);
-		int32_t L_111 = V_20;
-		NullCheck(L_110);
-		L_110->set_drawingHistoryIndex_21(L_111);
+		// GetComponent<PaintController>().drawingHistoryIndex = index;
+		PaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995 * L_38 = Component_GetComponent_TisPaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995_m6D05CE2BBEBA8C13D13DA541AF380B774DED20FF(__this, /*hidden argument*/Component_GetComponent_TisPaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995_m6D05CE2BBEBA8C13D13DA541AF380B774DED20FF_RuntimeMethod_var);
+		int32_t L_39 = V_1;
+		NullCheck(L_38);
+		L_38->set_drawingHistoryIndex_21(L_39);
 		// Debug.Log ("Done Adding History");
 		Debug_Log_m4B7C70BAFD477C6BDB59C88A0934F0B018D03708(_stringLiteral6EA944352F4FC2347886BF2856A1BD4575D87233, /*hidden argument*/NULL);
-		// doKeepDrawingFeature = true;
-		__this->set_doKeepDrawingFeature_9((bool)1);
-		goto IL_0404;
-	}
-
-IL_0364:
-	{
-		// } else if (whileTouchedCondition == true) {
-		bool L_112 = V_1;
-		V_22 = L_112;
-		bool L_113 = V_22;
-		if (!L_113)
+		// if(brushTipObject.activeSelf)
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_40 = __this->get_brushTipObject_20();
+		NullCheck(L_40);
+		bool L_41 = GameObject_get_activeSelf_mFE1834886CAE59884AC2BE707A3B821A1DB61F44(L_40, /*hidden argument*/NULL);
+		V_3 = L_41;
+		bool L_42 = V_3;
+		if (!L_42)
 		{
-			goto IL_0404;
+			goto IL_015d;
 		}
 	}
 	{
-		// if ((pointToDraw - prevPaintPoint).magnitude > 0.01f) {
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_114 = V_7;
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_115 = __this->get_prevPaintPoint_12();
-		IL2CPP_RUNTIME_CLASS_INIT(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_il2cpp_TypeInfo_var);
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_116 = Vector3_op_Subtraction_mF9846B723A5034F8B9F5F5DCB78E3D67649143D3(L_114, L_115, /*hidden argument*/NULL);
-		V_24 = L_116;
-		float L_117 = Vector3_get_magnitude_m9A750659B60C5FE0C30438A7F9681775D5DB1274((Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 *)(&V_24), /*hidden argument*/NULL);
-		V_23 = (bool)((((float)L_117) > ((float)(0.01f)))? 1 : 0);
-		bool L_118 = V_23;
-		if (!L_118)
-		{
-			goto IL_0403;
-		}
-	}
-	{
-		// currLine.AddPoint (pointToDraw);
-		GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * L_119 = __this->get_currLine_8();
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_120 = V_7;
-		NullCheck(L_119);
-		GraphicsLineRenderer_AddPoint_m24839F21D1D1D040E72FFFA36B5D2D8E904E0BA3(L_119, L_120, /*hidden argument*/NULL);
-		// numClicks++;
-		int32_t L_121 = __this->get_numClicks_10();
-		__this->set_numClicks_10(((int32_t)il2cpp_codegen_add((int32_t)L_121, (int32_t)1)));
-		// prevPaintPoint = pointToDraw;
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_122 = V_7;
-		__this->set_prevPaintPoint_12(L_122);
-		// int index = GetComponent<PaintController> ().drawingHistoryIndex;
-		PaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995 * L_123 = Component_GetComponent_TisPaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995_m6D05CE2BBEBA8C13D13DA541AF380B774DED20FF(__this, /*hidden argument*/Component_GetComponent_TisPaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995_m6D05CE2BBEBA8C13D13DA541AF380B774DED20FF_RuntimeMethod_var);
-		NullCheck(L_123);
-		int32_t L_124 = L_123->get_drawingHistoryIndex_21();
-		V_25 = L_124;
-		// paintBrushSceneObject.GetComponent<DrawingHistoryManager> ().addDrawingCommand (index, 0, pointToDraw, currLine.lmat.color, paintLineThickness);
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_125 = __this->get_paintBrushSceneObject_19();
-		NullCheck(L_125);
-		DrawingHistoryManager_t465468CFA2187A9DE5AC4B22E7EC976E4C6A036B * L_126 = GameObject_GetComponent_TisDrawingHistoryManager_t465468CFA2187A9DE5AC4B22E7EC976E4C6A036B_m57713631EB645A56806C2B287CDABC034636999C(L_125, /*hidden argument*/GameObject_GetComponent_TisDrawingHistoryManager_t465468CFA2187A9DE5AC4B22E7EC976E4C6A036B_m57713631EB645A56806C2B287CDABC034636999C_RuntimeMethod_var);
-		int32_t L_127 = V_25;
-		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_128 = V_7;
-		GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * L_129 = __this->get_currLine_8();
-		NullCheck(L_129);
-		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_130 = L_129->get_lmat_5();
-		NullCheck(L_130);
-		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_131 = Material_get_color_m7CE9C1FC0E0B4952D58DFBBA4D569F4B161B27E9(L_130, /*hidden argument*/NULL);
-		float L_132 = __this->get_paintLineThickness_13();
-		NullCheck(L_126);
-		DrawingHistoryManager_addDrawingCommand_m57D40781CB938EE38A12812171FDC206B265C24A(L_126, L_127, 0, L_128, L_131, L_132, /*hidden argument*/NULL);
 		// brushTipObject.GetComponent<TrailRenderer>().enabled = false;
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_133 = __this->get_brushTipObject_20();
-		NullCheck(L_133);
-		TrailRenderer_t9AC23ED5E8A7955A3288A9C37865C11382DA668D * L_134 = GameObject_GetComponent_TisTrailRenderer_t9AC23ED5E8A7955A3288A9C37865C11382DA668D_m7C1059FAE34EC21FA55E05C684BA337973AB7195(L_133, /*hidden argument*/GameObject_GetComponent_TisTrailRenderer_t9AC23ED5E8A7955A3288A9C37865C11382DA668D_m7C1059FAE34EC21FA55E05C684BA337973AB7195_RuntimeMethod_var);
-		NullCheck(L_134);
-		Renderer_set_enabled_m0933766657F2685BAAE3340B0A984C0E63925303(L_134, (bool)0, /*hidden argument*/NULL);
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_43 = __this->get_brushTipObject_20();
+		NullCheck(L_43);
+		TrailRenderer_t9AC23ED5E8A7955A3288A9C37865C11382DA668D * L_44 = GameObject_GetComponent_TisTrailRenderer_t9AC23ED5E8A7955A3288A9C37865C11382DA668D_m7C1059FAE34EC21FA55E05C684BA337973AB7195(L_43, /*hidden argument*/GameObject_GetComponent_TisTrailRenderer_t9AC23ED5E8A7955A3288A9C37865C11382DA668D_m7C1059FAE34EC21FA55E05C684BA337973AB7195_RuntimeMethod_var);
+		NullCheck(L_44);
+		Renderer_set_enabled_m0933766657F2685BAAE3340B0A984C0E63925303(L_44, (bool)0, /*hidden argument*/NULL);
 	}
 
-IL_0403:
+IL_015d:
 	{
+		// }
+		return;
+	}
+}
+// System.Void DrawLineManager::addPointToLine(UnityEngine.Vector3,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DrawLineManager_addPointToLine_m2924F756CB4E70C0F9113104CA3732D7B63B2285 (DrawLineManager_tA297559AFBCEA1618AA52713D0C2FFF09EAE72DC * __this, Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___pointToAdd0, bool ___overrideThreshold1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (DrawLineManager_addPointToLine_m2924F756CB4E70C0F9113104CA3732D7B63B2285_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	bool V_1 = false;
+	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	bool V_3 = false;
+	int32_t G_B3_0 = 0;
+	{
+		// if (!overrideThreshold && (pointToAdd - prevPaintPoint).magnitude <= 0.01f) {
+		bool L_0 = ___overrideThreshold1;
+		if (L_0)
+		{
+			goto IL_0024;
+		}
+	}
+	{
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_1 = ___pointToAdd0;
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_2 = __this->get_prevPaintPoint_12();
+		IL2CPP_RUNTIME_CLASS_INIT(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_il2cpp_TypeInfo_var);
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_3 = Vector3_op_Subtraction_mF9846B723A5034F8B9F5F5DCB78E3D67649143D3(L_1, L_2, /*hidden argument*/NULL);
+		V_2 = L_3;
+		float L_4 = Vector3_get_magnitude_m9A750659B60C5FE0C30438A7F9681775D5DB1274((Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 *)(&V_2), /*hidden argument*/NULL);
+		G_B3_0 = ((((int32_t)((!(((float)L_4) <= ((float)(0.01f))))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		goto IL_0025;
 	}
 
-IL_0404:
+IL_0024:
 	{
-		// } // _UpdateFeature()
+		G_B3_0 = 0;
+	}
+
+IL_0025:
+	{
+		V_1 = (bool)G_B3_0;
+		bool L_5 = V_1;
+		if (!L_5)
+		{
+			goto IL_0064;
+		}
+	}
+	{
+		// Debug.Log("Change in distance not large enough. Start: " + prevPaintPoint + " End: " + pointToAdd);
+		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_6 = (ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A*)(ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A*)SZArrayNew(ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A_il2cpp_TypeInfo_var, (uint32_t)4);
+		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_7 = L_6;
+		NullCheck(L_7);
+		ArrayElementTypeCheck (L_7, _stringLiteral6396AD158D00DF8002A0B9EB233ABA117056A4A1);
+		(L_7)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject *)_stringLiteral6396AD158D00DF8002A0B9EB233ABA117056A4A1);
+		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_8 = L_7;
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_9 = __this->get_prevPaintPoint_12();
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_10 = L_9;
+		RuntimeObject * L_11 = Box(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_il2cpp_TypeInfo_var, &L_10);
+		NullCheck(L_8);
+		ArrayElementTypeCheck (L_8, L_11);
+		(L_8)->SetAt(static_cast<il2cpp_array_size_t>(1), (RuntimeObject *)L_11);
+		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_12 = L_8;
+		NullCheck(L_12);
+		ArrayElementTypeCheck (L_12, _stringLiteral65B0B1FE333C517AC85A6A93112BCDF05AACA6B0);
+		(L_12)->SetAt(static_cast<il2cpp_array_size_t>(2), (RuntimeObject *)_stringLiteral65B0B1FE333C517AC85A6A93112BCDF05AACA6B0);
+		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_13 = L_12;
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_14 = ___pointToAdd0;
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_15 = L_14;
+		RuntimeObject * L_16 = Box(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_il2cpp_TypeInfo_var, &L_15);
+		NullCheck(L_13);
+		ArrayElementTypeCheck (L_13, L_16);
+		(L_13)->SetAt(static_cast<il2cpp_array_size_t>(3), (RuntimeObject *)L_16);
+		String_t* L_17 = String_Concat_mB7BA84F13912303B2E5E40FBF0109E1A328ACA07(L_13, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t7B5FCB117E2FD63B6838BC52821B252E2BFB61C4_il2cpp_TypeInfo_var);
+		Debug_Log_m4B7C70BAFD477C6BDB59C88A0934F0B018D03708(L_17, /*hidden argument*/NULL);
+		// return;
+		goto IL_00dd;
+	}
+
+IL_0064:
+	{
+		// currLine.AddPoint (pointToAdd);
+		GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * L_18 = __this->get_currLine_8();
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_19 = ___pointToAdd0;
+		NullCheck(L_18);
+		GraphicsLineRenderer_AddPoint_m24839F21D1D1D040E72FFFA36B5D2D8E904E0BA3(L_18, L_19, /*hidden argument*/NULL);
+		// numClicks++;
+		int32_t L_20 = __this->get_numClicks_10();
+		__this->set_numClicks_10(((int32_t)il2cpp_codegen_add((int32_t)L_20, (int32_t)1)));
+		// prevPaintPoint = pointToAdd;
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_21 = ___pointToAdd0;
+		__this->set_prevPaintPoint_12(L_21);
+		// int index = GetComponent<PaintController> ().drawingHistoryIndex;
+		PaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995 * L_22 = Component_GetComponent_TisPaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995_m6D05CE2BBEBA8C13D13DA541AF380B774DED20FF(__this, /*hidden argument*/Component_GetComponent_TisPaintController_tF0FF78957C8D8834D1A777C69BEB8F3BFA2F6995_m6D05CE2BBEBA8C13D13DA541AF380B774DED20FF_RuntimeMethod_var);
+		NullCheck(L_22);
+		int32_t L_23 = L_22->get_drawingHistoryIndex_21();
+		V_0 = L_23;
+		// paintBrushSceneObject.GetComponent<DrawingHistoryManager> ().addDrawingCommand (index, 0, pointToAdd, currLine.lmat.color, paintLineThickness);
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_24 = __this->get_paintBrushSceneObject_19();
+		NullCheck(L_24);
+		DrawingHistoryManager_t465468CFA2187A9DE5AC4B22E7EC976E4C6A036B * L_25 = GameObject_GetComponent_TisDrawingHistoryManager_t465468CFA2187A9DE5AC4B22E7EC976E4C6A036B_m57713631EB645A56806C2B287CDABC034636999C(L_24, /*hidden argument*/GameObject_GetComponent_TisDrawingHistoryManager_t465468CFA2187A9DE5AC4B22E7EC976E4C6A036B_m57713631EB645A56806C2B287CDABC034636999C_RuntimeMethod_var);
+		int32_t L_26 = V_0;
+		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_27 = ___pointToAdd0;
+		GraphicsLineRenderer_tA9CD9AA7FF8FE5F1D5D2C6C030A20BE71A3C8BD9 * L_28 = __this->get_currLine_8();
+		NullCheck(L_28);
+		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_29 = L_28->get_lmat_5();
+		NullCheck(L_29);
+		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_30 = Material_get_color_m7CE9C1FC0E0B4952D58DFBBA4D569F4B161B27E9(L_29, /*hidden argument*/NULL);
+		float L_31 = __this->get_paintLineThickness_13();
+		NullCheck(L_25);
+		DrawingHistoryManager_addDrawingCommand_m57D40781CB938EE38A12812171FDC206B265C24A(L_25, L_26, 0, L_27, L_30, L_31, /*hidden argument*/NULL);
+		// if(brushTipObject.activeSelf)
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_32 = __this->get_brushTipObject_20();
+		NullCheck(L_32);
+		bool L_33 = GameObject_get_activeSelf_mFE1834886CAE59884AC2BE707A3B821A1DB61F44(L_32, /*hidden argument*/NULL);
+		V_3 = L_33;
+		bool L_34 = V_3;
+		if (!L_34)
+		{
+			goto IL_00dd;
+		}
+	}
+	{
+		// brushTipObject.GetComponent<TrailRenderer>().enabled = false;
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_35 = __this->get_brushTipObject_20();
+		NullCheck(L_35);
+		TrailRenderer_t9AC23ED5E8A7955A3288A9C37865C11382DA668D * L_36 = GameObject_GetComponent_TisTrailRenderer_t9AC23ED5E8A7955A3288A9C37865C11382DA668D_m7C1059FAE34EC21FA55E05C684BA337973AB7195(L_35, /*hidden argument*/GameObject_GetComponent_TisTrailRenderer_t9AC23ED5E8A7955A3288A9C37865C11382DA668D_m7C1059FAE34EC21FA55E05C684BA337973AB7195_RuntimeMethod_var);
+		NullCheck(L_36);
+		Renderer_set_enabled_m0933766657F2685BAAE3340B0A984C0E63925303(L_36, (bool)0, /*hidden argument*/NULL);
+	}
+
+IL_00dd:
+	{
+		// }
 		return;
 	}
 }
@@ -39392,6 +39267,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PaintController_Start_mBD017F5F71D3907C1
 		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_21 = __this->get_buttonPanel_9();
 		NullCheck(L_21);
 		GameObject_SetActive_m25A39F6D9FB68C51F13313F9804E85ACC937BC04(L_21, (bool)1, /*hidden argument*/NULL);
+		// currentDrawingMode = DrawingMode.normal;
+		__this->set_currentDrawingMode_22(1);
 		// }
 		return;
 	}
@@ -40419,8 +40296,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PaintController__ctor_m818998C4946F96F96
 		__this->set_pointCloudOn_6((bool)0);
 		// public int drawingHistoryIndex = 0;
 		__this->set_drawingHistoryIndex_21(0);
-		// public DrawingMode currentDrawingMode = DrawingMode.normal;
-		__this->set_currentDrawingMode_22(1);
 		MonoBehaviour__ctor_mEAEC84B222C60319D593E456D769B3311DFCEF97(__this, /*hidden argument*/NULL);
 		return;
 	}
