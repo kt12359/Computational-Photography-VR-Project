@@ -223,6 +223,8 @@ struct DrawingCommand_tF3EC2935B5BEFB7563A725845C7851C019F61E52;
 struct DrawingCommandU5BU5D_t25C86437DABFF450FD7824D7C4C1AC0E18AD6018;
 // FCP_SpriteMeshEditor
 struct FCP_SpriteMeshEditor_t01760AA4EABD09C4E07A42AE3AE2B314D13CE309;
+// FeatureHighlightController
+struct FeatureHighlightController_t8F24E13E716B315AF04EF1FF263E1C032C39E217;
 // FeaturesVisualizer
 struct FeaturesVisualizer_t554784C8A9A1FDA010BC1C416279695C0826C3DA;
 // FlexibleColorPicker
@@ -11050,6 +11052,36 @@ public:
 	inline void set_bufferedHash_8(int32_t value)
 	{
 		___bufferedHash_8 = value;
+	}
+};
+
+
+// FeatureHighlightController
+struct  FeatureHighlightController_t8F24E13E716B315AF04EF1FF263E1C032C39E217  : public MonoBehaviour_t4A60845CF505405AF8BE8C61CC07F75CADEF6429
+{
+public:
+	// UnityEngine.GameObject FeatureHighlightController::m_featureHighlight
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___m_featureHighlight_4;
+	// UnityEngine.UI.Text FeatureHighlightController::notifications
+	Text_tE9317B57477F4B50AA4C16F460DE6F82DAD6D030 * ___notifications_5;
+
+public:
+	inline static int32_t get_offset_of_m_featureHighlight_4() { return static_cast<int32_t>(offsetof(FeatureHighlightController_t8F24E13E716B315AF04EF1FF263E1C032C39E217, ___m_featureHighlight_4)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_m_featureHighlight_4() const { return ___m_featureHighlight_4; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_m_featureHighlight_4() { return &___m_featureHighlight_4; }
+	inline void set_m_featureHighlight_4(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___m_featureHighlight_4 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___m_featureHighlight_4), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_notifications_5() { return static_cast<int32_t>(offsetof(FeatureHighlightController_t8F24E13E716B315AF04EF1FF263E1C032C39E217, ___notifications_5)); }
+	inline Text_tE9317B57477F4B50AA4C16F460DE6F82DAD6D030 * get_notifications_5() const { return ___notifications_5; }
+	inline Text_tE9317B57477F4B50AA4C16F460DE6F82DAD6D030 ** get_address_of_notifications_5() { return &___notifications_5; }
+	inline void set_notifications_5(Text_tE9317B57477F4B50AA4C16F460DE6F82DAD6D030 * value)
+	{
+		___notifications_5 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___notifications_5), (void*)value);
 	}
 };
 
@@ -22436,6 +22468,30 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FCP_SpriteMeshEditor__ctor_m6C00C69D9662
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void FeatureHighlightController::Start()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeatureHighlightController_Start_m82887FC75F37B2399B7EC0BDEF731EA5494DC6D8 (FeatureHighlightController_t8F24E13E716B315AF04EF1FF263E1C032C39E217 * __this, const RuntimeMethod* method)
+{
+	{
+		// }
+		return;
+	}
+}
+// System.Void FeatureHighlightController::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeatureHighlightController__ctor_mED96EA96F03C5129814B8B4460D5BB3DF153A3D3 (FeatureHighlightController_t8F24E13E716B315AF04EF1FF263E1C032C39E217 * __this, const RuntimeMethod* method)
+{
+	{
+		MonoBehaviour__ctor_mEAEC84B222C60319D593E456D769B3311DFCEF97(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
