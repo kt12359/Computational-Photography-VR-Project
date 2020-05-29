@@ -173,21 +173,27 @@ public class DrawLineManager : MonoBehaviour {
 		draw();
 	}
 
+	private float DistanceBetweenRayAndPoint(Ray ray, Vector3 point)
+	{
+		return Vector3.Cross(ray.direction, point - ray.origin).magnitude;
+	}
+
 	// Update for DrawingMode.feature
     private void _UpdateFeature()
     {
-    	bool firstTouchCondition;
-		bool whileTouchedCondition;
-
-		GameObject currentSelection = eventSystemManager.currentSelectedGameObject;
-		bool isPanelSelected = currentSelection == null;
-
-		// Reset when the user stops drawing
+    	// Reset when the user stops drawing
+    	// Check this first for performance
 		if (Input.touchCount == 0) {
 			doKeepDrawingFeature = false;
 			brushTipObject.GetComponent<TrailRenderer>().enabled = true;
         	return;
 		}
+
+    	bool firstTouchCondition;
+		bool whileTouchedCondition;
+
+		GameObject currentSelection = eventSystemManager.currentSelectedGameObject;
+		bool isPanelSelected = currentSelection == null;
 
         firstTouchCondition   = (Input.touchCount == 1 && isPanelSelected && (doKeepDrawingFeature==false));
         whileTouchedCondition = (Input.touchCount == 1 && isPanelSelected && (doKeepDrawingFeature==true));
@@ -207,17 +213,22 @@ public class DrawLineManager : MonoBehaviour {
         	return;
         }
 
-    	float distanceThreshold = 0.05f; // How close the point must be
+        paintLineColor = colorPicker.GetColor();
 
-    	Vector3 endPoint = getRayEndPoint (rayDist);
-		paintLineColor = colorPicker.GetColor();//cw.updateColor();
+        // The ray of the user's view
+        Ray viewpointRay = Camera.main.ViewportPointToRay (new Vector3 (0.5f, 0.5f, 0.5f));
 
-		// Find the closest feature point within the threshold
+        // The point must be within this threshold of the line
+        // TODO: Adjust for distance from user.
+        //		 Points closer to the user should use a smaller threshold
+    	float distanceThreshold = 0.02f;
+
+		// Find the closest feature point to the ray within the threshold
     	Vector3 pointToDraw = new Vector3(float.PositiveInfinity, float.PositiveInfinity, float.PositiveInfinity);
     	float curDistance;
     	bool doDraw = false;
     	foreach (Vector3 featurePoint in pointCloud) {
-    		curDistance = Vector3.Distance(endPoint, featurePoint);
+    		curDistance = DistanceBetweenRayAndPoint(viewpointRay, featurePoint);
     		if (curDistance < distanceThreshold) {
     			Debug.Log("curDistance = " + curDistance);
     			pointToDraw.Set(featurePoint.x, featurePoint.y, featurePoint.z);
@@ -232,7 +243,6 @@ public class DrawLineManager : MonoBehaviour {
     	}
 
     	Debug.Log(
-    		"_UpdateFeature() endPoint = " + endPoint + "\n" +
     		"_UpdateFeature() pointToDraw = " + pointToDraw + "\n" +
     		"_UpdateFeature() firstTouchCondition = " + firstTouchCondition + "\n" +
     		"_UpdateFeature() whileTouchedCondition = " + whileTouchedCondition + "\n");
@@ -244,7 +254,7 @@ public class DrawLineManager : MonoBehaviour {
 			doKeepDrawingFeature = true;
 
 		} else if (whileTouchedCondition == true) {
-			addPointToLine(pointToDraw);
+			addPointToLine(pointToDraw, overrideThreshold: true);
         }
     } // _UpdateFeature()
 

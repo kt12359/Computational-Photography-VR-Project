@@ -49,6 +49,7 @@
 		<type fullname="DrawLineManager" preserve="nothing"/>
 		<type fullname="DrawingHistoryManager" preserve="nothing"/>
 		<type fullname="FCP_SpriteMeshEditor" preserve="nothing"/>
+		<type fullname="FeatureHighlightController" preserve="nothing"/>
 		<type fullname="FeaturesVisualizer" preserve="nothing"/>
 		<type fullname="FlexibleColorPicker" preserve="nothing"/>
 		<type fullname="KeyboardMover" preserve="nothing"/>
