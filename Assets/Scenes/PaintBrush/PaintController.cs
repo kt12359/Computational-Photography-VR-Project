@@ -43,8 +43,6 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 
 	// Use this for initialization
 	void Start () {
-
-        //FeaturesVisualizer.EnablePointcloud ();
         LibPlacenote.Instance.RegisterListener (this);
 
         mLocalizationThumbnailContainer.gameObject.SetActive(false);
@@ -91,25 +89,7 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 		buttonPanel.SetActive(true);
 
 		currentDrawingMode = DrawingMode.normal;
-
-
-        // FeaturesVisualizer.EnablePointcloud(new Color(1f, 1f, 1f, 0.2f), new Color(1f, 1f, 1f, 0.8f));
-		// FeaturesVisualizer.DisablePointcloud ();
     }
-
-	public void onClickEnablePointCloud()
-	{
-		if (pointCloudOn == false) {
-            FeaturesVisualizer.EnablePointcloud(new Color(1f, 1f, 1f, 0.2f), new Color(1f, 1f, 1f, 0.8f));
-			pointCloudOn = true;
-			Debug.Log ("Point Cloud On");
-		} else {
-			FeaturesVisualizer.DisablePointcloud ();
-            pointCloudOn = false;
-			Debug.Log ("Point Cloud Off");
-		}
-
-	}
 
     public void OnToggleColorPaletteClick()
     {
@@ -269,7 +249,8 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 				pointCloudOn = true;
 				Debug.Log ("Point Cloud On");
 			}
-			textLabel.text = "Feature Drawing Enabled";
+			GetComponent<FeatureHighlightController>().ToggleHighlight(true);
+			textLabel.text = "Highlight a Feature and Tap the Screen to Connect";
 		} else {
 			// Turn off
 			currentDrawingMode = DrawingMode.none;
@@ -278,6 +259,7 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 	            pointCloudOn = false;
 				Debug.Log ("Point Cloud Off");
 			}
+			GetComponent<FeatureHighlightController>().ToggleHighlight(false);
 		}
 	}
 
