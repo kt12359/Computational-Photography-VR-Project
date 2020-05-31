@@ -16,6 +16,8 @@ public class DrawingHistoryManager : MonoBehaviour {
 		public Color color;
 		public float lineWidth;
 
+		public int layerNum;
+
 		// A drawing command from individual values
 		public DrawingCommand(int _index, int _objType, Vector3 _position, Color _color, float _lineWidth)
 		{
@@ -24,6 +26,7 @@ public class DrawingHistoryManager : MonoBehaviour {
 			position = _position;
 			color = _color;
 			lineWidth = _lineWidth;
+			layerNum = 1;
 		}
 
 		// A drawing command from a single string representation
@@ -36,6 +39,7 @@ public class DrawingHistoryManager : MonoBehaviour {
 			position = new Vector3 (Convert.ToSingle(values[2]), Convert.ToSingle(values[3]), Convert.ToSingle(values[4]));
 			color = new Color(Convert.ToSingle(values[5]), Convert.ToSingle(values[6]), Convert.ToSingle(values[7]));
 			lineWidth = Convert.ToSingle (values [8]);
+			layerNum = Int32.Parse(values[9]);
 		}
 
 		// Comma-delimited string representation
@@ -50,7 +54,8 @@ public class DrawingHistoryManager : MonoBehaviour {
 				color.r.ToString() + "," + 
 				color.g.ToString() + "," + 
 				color.b.ToString() + "," + 
-				lineWidth.ToString();
+				lineWidth.ToString() + "," +
+				layerNum.ToString();
 			return commandString;
 		}
 	}
@@ -113,6 +118,33 @@ public class DrawingHistoryManager : MonoBehaviour {
 		return null;
 	}
 
+	public float getNewPosition(float currentPos, float newPos)
+	{
+		float diff = Mathf.Abs(currentPos - newPos);
+		if(currentPos < newPos)
+			currentPos += diff;
+		else
+			currentPos -= diff;
+		return currentPos;
+	}
+
+	public void moveLayer(int layerNum, Vector3 newPos)
+	{
+		Debug.Log("Moving layer " + layerNum + " to position " + newPos);
+
+		foreach(DrawingCommand command in drawingHistory)
+		{
+			if(command.layerNum == layerNum)
+			{
+				Vector3 pos = command.position;
+				pos.x = getNewPosition(pos.x, newPos.x);
+				pos.y = getNewPosition(pos.y, newPos.y);
+				pos.z = getNewPosition(pos.z, newPos.z);
+				command.position = pos;
+			}
+		}
+	}
+
 
 	// Save a layer to a file
 	public void saveLayer(int layerNum)
@@ -125,6 +157,7 @@ public class DrawingHistoryManager : MonoBehaviour {
 
 		foreach (DrawingCommand command in drawingHistory)
 		{
+			command.layerNum = layerNum;
 			writer.WriteLine (command.ToString());
 		}
 		writer.Close();

@@ -15,8 +15,8 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 	public GameObject startPanel;
 
     private GameObject buttonPanel;
-
 	private bool snapToSurfaceEnabled;
+	private int currentLayer;
 
     [SerializeField] GameObject brushTipObject;
 	[SerializeField] GameObject brushTipGraphic;
@@ -25,6 +25,7 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
     [SerializeField] GameObject mainButtonPanel;
     [SerializeField] GameObject saveLayerPanel;
     [SerializeField] GameObject loadLayerPanel;
+	[SerializeField] GameObject moveLayerPanel;
     [SerializeField] GameObject modePanel;
 
     public enum DrawingMode
@@ -87,6 +88,7 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 		// Make sure this child is active for when its parent is active
 		buttonPanel = paintPanel.transform.Find("ButtonPanel").gameObject;
 		buttonPanel.SetActive(true);
+		currentLayer = 1;
 
 		currentDrawingMode = DrawingMode.normal;
     }
@@ -124,6 +126,12 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
         textLabel.text = "Press and hold the screen to paint";
 	}
 
+	public void TogglePanelMoveLayer(bool moveLayerPanelActive)
+	{
+		moveLayerPanel.SetActive(moveLayerPanelActive);
+		mainButtonPanel.SetActive(!moveLayerPanelActive);
+	}
+
 	public void TogglePanelSaveLayer(bool saveLayerPanelActive)
 	{
 		saveLayerPanel.SetActive(saveLayerPanelActive);
@@ -140,6 +148,19 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 	{
 		modePanel.SetActive(modePanelActive);
         mainButtonPanel.SetActive(!modePanelActive);
+	}
+
+	public void OnMoveLayerClick(int layerNum)
+	{
+		if (!LibPlacenote.Instance.Initialized()) {
+			Debug.Log ("SDK not yet initialized");
+			return;
+		}
+
+		textLabel.text = "Moving Layer " + layerNum;
+		GetComponent<DrawingHistoryManager>().moveLayer(layerNum, GetComponent<DrawLineManager>().getRayEndPoint(0.3f));
+		textLabel.text = "Layer " + layerNum + " moved!";
+		TogglePanelSaveLayer(false);
 	}
 
 
