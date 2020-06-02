@@ -37,6 +37,7 @@ public class DrawingHistoryManager : MonoBehaviour {
 			index = Int32.Parse(values[0]);
 			objType = Int32.Parse(values[1]);
 			position = new Vector3 (Convert.ToSingle(values[2]), Convert.ToSingle(values[3]), Convert.ToSingle(values[4]));
+			Debug.Log("Loaded position: " + position);
 			color = new Color(Convert.ToSingle(values[5]), Convert.ToSingle(values[6]), Convert.ToSingle(values[7]));
 			lineWidth = Convert.ToSingle (values [8]);
 			layerNum = Int32.Parse(values[9]);
@@ -74,6 +75,18 @@ public class DrawingHistoryManager : MonoBehaviour {
 	public void resetHistory()
 	{
 		drawingHistory.Clear();
+	}
+
+	public void deleteAllInLayer(int layerNum)
+	{
+		drawingHistory.RemoveAll(delegate(DrawingCommand command) {return command.layerNum == layerNum; });
+		resetHistory();
+		for(int i = 1; i <= 4; ++i)
+		{
+			if(drawingHistory.Exists(delegate(DrawingCommand command) { return command.layerNum == i; }))
+				loadLayer(i);
+		}
+
 	}
 
 	public void addDrawingCommand(int index, int objType, Vector3 position, Color color, float lineWidth)
@@ -120,12 +133,18 @@ public class DrawingHistoryManager : MonoBehaviour {
 
 	public float getNewPosition(float currentPos, float newPos)
 	{
-		float diff = Mathf.Abs(currentPos - newPos);
+		/*float diff = Mathf.Abs(currentPos - newPos);
 		if(currentPos < newPos)
-			currentPos += diff;
-		else
-			currentPos -= diff;
-		return currentPos;
+			currentPos += diff - currentPos;
+		else if(currentPos > newPos)
+		{
+			if(currentPos >= 0)
+				currentPos -= diff + currentPos;
+			else
+				currentPos += diff - currentPos;
+		}
+		return currentPos;*/
+		return currentPos + newPos;
 	}
 
 	public void moveLayer(int layerNum, Vector3 newPos)
@@ -134,15 +153,21 @@ public class DrawingHistoryManager : MonoBehaviour {
 
 		foreach(DrawingCommand command in drawingHistory)
 		{
+			Debug.Log("Command position: " + command.position);
 			if(command.layerNum == layerNum)
 			{
-				Vector3 pos = command.position;
-				pos.x = getNewPosition(pos.x, newPos.x);
-				pos.y = getNewPosition(pos.y, newPos.y);
-				pos.z = getNewPosition(pos.z, newPos.z);
-				command.position = pos;
+				Debug.Log("Start position: " + command.position);
+				Debug.Log("New position: "+ newPos);
+				command.position.x = getNewPosition(command.position.x, newPos.x);
+				command.position.y = getNewPosition(command.position.y, newPos.y);
+				command.position.z = getNewPosition(command.position.z, newPos.z);
+				Debug.Log("End position: " + command.position);
+
 			}
 		}
+		saveLayer(layerNum);
+		deleteAllInLayer(layerNum);
+		loadLayer(layerNum);
 	}
 
 

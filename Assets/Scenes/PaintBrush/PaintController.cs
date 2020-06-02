@@ -158,9 +158,10 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 		}
 
 		textLabel.text = "Moving Layer " + layerNum;
-		GetComponent<DrawingHistoryManager>().moveLayer(layerNum, GetComponent<DrawLineManager>().getRayEndPoint(0.3f));
+		Vector3 pos = GetComponent<DrawLineManager>().getRayEndPoint(0.3f);
+		GetComponent<DrawingHistoryManager>().moveLayer(layerNum, pos);
 		textLabel.text = "Layer " + layerNum + " moved!";
-		TogglePanelSaveLayer(false);
+		TogglePanelMoveLayer(false);
 	}
 
 

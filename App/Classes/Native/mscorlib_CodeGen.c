@@ -17554,1349 +17554,1352 @@ extern void KeyNotFoundException__ctor_m7B2F987D196533CC4321C1EE5919F10A15862C89
 // 0x0000242F System.Void System.Collections.Generic.List`1::CopyTo(System.Int32,T[],System.Int32,System.Int32)
 // 0x00002430 System.Void System.Collections.Generic.List`1::CopyTo(T[],System.Int32)
 // 0x00002431 System.Void System.Collections.Generic.List`1::EnsureCapacity(System.Int32)
-// 0x00002432 T System.Collections.Generic.List`1::Find(System.Predicate`1<T>)
-// 0x00002433 System.Collections.Generic.List`1_Enumerator<T> System.Collections.Generic.List`1::GetEnumerator()
-// 0x00002434 System.Collections.Generic.IEnumerator`1<T> System.Collections.Generic.List`1::System.Collections.Generic.IEnumerable<T>.GetEnumerator()
-// 0x00002435 System.Collections.IEnumerator System.Collections.Generic.List`1::System.Collections.IEnumerable.GetEnumerator()
-// 0x00002436 System.Int32 System.Collections.Generic.List`1::IndexOf(T)
-// 0x00002437 System.Int32 System.Collections.Generic.List`1::System.Collections.IList.IndexOf(System.Object)
-// 0x00002438 System.Void System.Collections.Generic.List`1::Insert(System.Int32,T)
-// 0x00002439 System.Void System.Collections.Generic.List`1::System.Collections.IList.Insert(System.Int32,System.Object)
-// 0x0000243A System.Void System.Collections.Generic.List`1::InsertRange(System.Int32,System.Collections.Generic.IEnumerable`1<T>)
-// 0x0000243B System.Boolean System.Collections.Generic.List`1::Remove(T)
-// 0x0000243C System.Void System.Collections.Generic.List`1::System.Collections.IList.Remove(System.Object)
-// 0x0000243D System.Int32 System.Collections.Generic.List`1::RemoveAll(System.Predicate`1<T>)
-// 0x0000243E System.Void System.Collections.Generic.List`1::RemoveAt(System.Int32)
-// 0x0000243F System.Void System.Collections.Generic.List`1::RemoveRange(System.Int32,System.Int32)
-// 0x00002440 System.Void System.Collections.Generic.List`1::Reverse()
-// 0x00002441 System.Void System.Collections.Generic.List`1::Reverse(System.Int32,System.Int32)
-// 0x00002442 System.Void System.Collections.Generic.List`1::Sort()
-// 0x00002443 System.Void System.Collections.Generic.List`1::Sort(System.Collections.Generic.IComparer`1<T>)
-// 0x00002444 System.Void System.Collections.Generic.List`1::Sort(System.Int32,System.Int32,System.Collections.Generic.IComparer`1<T>)
-// 0x00002445 System.Void System.Collections.Generic.List`1::Sort(System.Comparison`1<T>)
-// 0x00002446 T[] System.Collections.Generic.List`1::ToArray()
-// 0x00002447 System.Void System.Collections.Generic.List`1::TrimExcess()
-// 0x00002448 System.Void System.Collections.Generic.List`1::.cctor()
-// 0x00002449 System.Void System.Collections.Generic.List`1_Enumerator::.ctor(System.Collections.Generic.List`1<T>)
-// 0x0000244A System.Void System.Collections.Generic.List`1_Enumerator::Dispose()
-// 0x0000244B System.Boolean System.Collections.Generic.List`1_Enumerator::MoveNext()
-// 0x0000244C System.Boolean System.Collections.Generic.List`1_Enumerator::MoveNextRare()
-// 0x0000244D T System.Collections.Generic.List`1_Enumerator::get_Current()
-// 0x0000244E System.Object System.Collections.Generic.List`1_Enumerator::System.Collections.IEnumerator.get_Current()
-// 0x0000244F System.Void System.Collections.Generic.List`1_Enumerator::System.Collections.IEnumerator.Reset()
-// 0x00002450 System.Void System.Diagnostics.ConditionalAttribute::.ctor(System.String)
+// 0x00002432 System.Boolean System.Collections.Generic.List`1::Exists(System.Predicate`1<T>)
+// 0x00002433 T System.Collections.Generic.List`1::Find(System.Predicate`1<T>)
+// 0x00002434 System.Int32 System.Collections.Generic.List`1::FindIndex(System.Predicate`1<T>)
+// 0x00002435 System.Int32 System.Collections.Generic.List`1::FindIndex(System.Int32,System.Int32,System.Predicate`1<T>)
+// 0x00002436 System.Collections.Generic.List`1_Enumerator<T> System.Collections.Generic.List`1::GetEnumerator()
+// 0x00002437 System.Collections.Generic.IEnumerator`1<T> System.Collections.Generic.List`1::System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+// 0x00002438 System.Collections.IEnumerator System.Collections.Generic.List`1::System.Collections.IEnumerable.GetEnumerator()
+// 0x00002439 System.Int32 System.Collections.Generic.List`1::IndexOf(T)
+// 0x0000243A System.Int32 System.Collections.Generic.List`1::System.Collections.IList.IndexOf(System.Object)
+// 0x0000243B System.Void System.Collections.Generic.List`1::Insert(System.Int32,T)
+// 0x0000243C System.Void System.Collections.Generic.List`1::System.Collections.IList.Insert(System.Int32,System.Object)
+// 0x0000243D System.Void System.Collections.Generic.List`1::InsertRange(System.Int32,System.Collections.Generic.IEnumerable`1<T>)
+// 0x0000243E System.Boolean System.Collections.Generic.List`1::Remove(T)
+// 0x0000243F System.Void System.Collections.Generic.List`1::System.Collections.IList.Remove(System.Object)
+// 0x00002440 System.Int32 System.Collections.Generic.List`1::RemoveAll(System.Predicate`1<T>)
+// 0x00002441 System.Void System.Collections.Generic.List`1::RemoveAt(System.Int32)
+// 0x00002442 System.Void System.Collections.Generic.List`1::RemoveRange(System.Int32,System.Int32)
+// 0x00002443 System.Void System.Collections.Generic.List`1::Reverse()
+// 0x00002444 System.Void System.Collections.Generic.List`1::Reverse(System.Int32,System.Int32)
+// 0x00002445 System.Void System.Collections.Generic.List`1::Sort()
+// 0x00002446 System.Void System.Collections.Generic.List`1::Sort(System.Collections.Generic.IComparer`1<T>)
+// 0x00002447 System.Void System.Collections.Generic.List`1::Sort(System.Int32,System.Int32,System.Collections.Generic.IComparer`1<T>)
+// 0x00002448 System.Void System.Collections.Generic.List`1::Sort(System.Comparison`1<T>)
+// 0x00002449 T[] System.Collections.Generic.List`1::ToArray()
+// 0x0000244A System.Void System.Collections.Generic.List`1::TrimExcess()
+// 0x0000244B System.Void System.Collections.Generic.List`1::.cctor()
+// 0x0000244C System.Void System.Collections.Generic.List`1_Enumerator::.ctor(System.Collections.Generic.List`1<T>)
+// 0x0000244D System.Void System.Collections.Generic.List`1_Enumerator::Dispose()
+// 0x0000244E System.Boolean System.Collections.Generic.List`1_Enumerator::MoveNext()
+// 0x0000244F System.Boolean System.Collections.Generic.List`1_Enumerator::MoveNextRare()
+// 0x00002450 T System.Collections.Generic.List`1_Enumerator::get_Current()
+// 0x00002451 System.Object System.Collections.Generic.List`1_Enumerator::System.Collections.IEnumerator.get_Current()
+// 0x00002452 System.Void System.Collections.Generic.List`1_Enumerator::System.Collections.IEnumerator.Reset()
+// 0x00002453 System.Void System.Diagnostics.ConditionalAttribute::.ctor(System.String)
 extern void ConditionalAttribute__ctor_mBCBBDCEEA97B6D8AB2E161FD30366D25052D6185 ();
-// 0x00002451 System.Void System.Diagnostics.DebuggerStepThroughAttribute::.ctor()
+// 0x00002454 System.Void System.Diagnostics.DebuggerStepThroughAttribute::.ctor()
 extern void DebuggerStepThroughAttribute__ctor_mA53619AA648F1BF673897FD31866B02BFCD850CB ();
-// 0x00002452 System.Void System.Diagnostics.DebuggerHiddenAttribute::.ctor()
+// 0x00002455 System.Void System.Diagnostics.DebuggerHiddenAttribute::.ctor()
 extern void DebuggerHiddenAttribute__ctor_mAA6F6E292901D40E4B4C876530F1349332CCD1B5 ();
-// 0x00002453 System.Void System.Diagnostics.DebuggerNonUserCodeAttribute::.ctor()
+// 0x00002456 System.Void System.Diagnostics.DebuggerNonUserCodeAttribute::.ctor()
 extern void DebuggerNonUserCodeAttribute__ctor_mF25987CCA201FC0D67A8D50EF9D5CF29379E0253 ();
-// 0x00002454 System.Void System.Diagnostics.DebuggableAttribute::.ctor(System.Diagnostics.DebuggableAttribute_DebuggingModes)
+// 0x00002457 System.Void System.Diagnostics.DebuggableAttribute::.ctor(System.Diagnostics.DebuggableAttribute_DebuggingModes)
 extern void DebuggableAttribute__ctor_m344E7AC4B8204C1D0EB633A0F2290DFE51D992AE ();
-// 0x00002455 System.Void System.Diagnostics.DebuggerBrowsableAttribute::.ctor(System.Diagnostics.DebuggerBrowsableState)
+// 0x00002458 System.Void System.Diagnostics.DebuggerBrowsableAttribute::.ctor(System.Diagnostics.DebuggerBrowsableState)
 extern void DebuggerBrowsableAttribute__ctor_mEDDC64F9252A035974C88153DF89C201AA2BAEF2 ();
-// 0x00002456 System.Void System.Diagnostics.DebuggerTypeProxyAttribute::.ctor(System.Type)
+// 0x00002459 System.Void System.Diagnostics.DebuggerTypeProxyAttribute::.ctor(System.Type)
 extern void DebuggerTypeProxyAttribute__ctor_m13D2C635F8F694A002500F7DAB0BF24757748718 ();
-// 0x00002457 System.Void System.Diagnostics.DebuggerDisplayAttribute::.ctor(System.String)
+// 0x0000245A System.Void System.Diagnostics.DebuggerDisplayAttribute::.ctor(System.String)
 extern void DebuggerDisplayAttribute__ctor_m31F6CB042E520591E9DD2CA8ABC18F2D3189F6D0 ();
-// 0x00002458 System.Boolean System.Diagnostics.Debugger::get_IsAttached()
+// 0x0000245B System.Boolean System.Diagnostics.Debugger::get_IsAttached()
 extern void Debugger_get_IsAttached_mFCFAAB7A47FA4DEC80A3A68FE13C307C439E9013 ();
-// 0x00002459 System.Boolean System.Diagnostics.Debugger::IsAttached_internal()
+// 0x0000245C System.Boolean System.Diagnostics.Debugger::IsAttached_internal()
 extern void Debugger_IsAttached_internal_mD97FD654F4BB93CD312556BCC1712138D40D21F7 ();
-// 0x0000245A System.Void System.Diagnostics.Debugger::Log(System.Int32,System.String,System.String)
+// 0x0000245D System.Void System.Diagnostics.Debugger::Log(System.Int32,System.String,System.String)
 extern void Debugger_Log_m52B86A127845E202768352DD9E3ED13BE12756DC ();
-// 0x0000245B System.Void System.Diagnostics.Debugger::NotifyOfCrossThreadDependency()
+// 0x0000245E System.Void System.Diagnostics.Debugger::NotifyOfCrossThreadDependency()
 extern void Debugger_NotifyOfCrossThreadDependency_m8387594B996D7068C44BA22E2D85266D3BAF4307 ();
-// 0x0000245C System.Void System.Diagnostics.Debugger::.cctor()
+// 0x0000245F System.Void System.Diagnostics.Debugger::.cctor()
 extern void Debugger__cctor_m9ECF38364565495403DE44A272B22FF2DFD052AA ();
-// 0x0000245D System.Boolean System.Diagnostics.StackFrame::get_frame_info(System.Int32,System.Boolean,System.Reflection.MethodBase&,System.Int32&,System.Int32&,System.String&,System.Int32&,System.Int32&)
+// 0x00002460 System.Boolean System.Diagnostics.StackFrame::get_frame_info(System.Int32,System.Boolean,System.Reflection.MethodBase&,System.Int32&,System.Int32&,System.String&,System.Int32&,System.Int32&)
 extern void StackFrame_get_frame_info_m4690CB302E03620011A1BD50EEAC647E69846E31 ();
-// 0x0000245E System.Void System.Diagnostics.StackFrame::.ctor()
+// 0x00002461 System.Void System.Diagnostics.StackFrame::.ctor()
 extern void StackFrame__ctor_m5B7E7E939EF5E9C7F0BAC2DEED33CC7F9F0BFA08 ();
-// 0x0000245F System.Void System.Diagnostics.StackFrame::.ctor(System.Int32,System.Boolean)
+// 0x00002462 System.Void System.Diagnostics.StackFrame::.ctor(System.Int32,System.Boolean)
 extern void StackFrame__ctor_m7DCC1C2335E1386E6FAD5E5ACEB2330441302BCD ();
-// 0x00002460 System.Int32 System.Diagnostics.StackFrame::GetFileLineNumber()
+// 0x00002463 System.Int32 System.Diagnostics.StackFrame::GetFileLineNumber()
 extern void StackFrame_GetFileLineNumber_m9BF229B90236328F176AB8E3B0AE8C9F7F875DED ();
-// 0x00002461 System.String System.Diagnostics.StackFrame::GetFileName()
+// 0x00002464 System.String System.Diagnostics.StackFrame::GetFileName()
 extern void StackFrame_GetFileName_m4A5ECC64AB15C75C5F76892B80247A3470F59342 ();
-// 0x00002462 System.String System.Diagnostics.StackFrame::GetSecureFileName()
+// 0x00002465 System.String System.Diagnostics.StackFrame::GetSecureFileName()
 extern void StackFrame_GetSecureFileName_m70617D4D68A1202A794040045930720D63B00BA7 ();
-// 0x00002463 System.Int32 System.Diagnostics.StackFrame::GetILOffset()
+// 0x00002466 System.Int32 System.Diagnostics.StackFrame::GetILOffset()
 extern void StackFrame_GetILOffset_m3E18DB47078DBE3AD8B539AE88DEA5F89AD5FD55 ();
-// 0x00002464 System.Reflection.MethodBase System.Diagnostics.StackFrame::GetMethod()
+// 0x00002467 System.Reflection.MethodBase System.Diagnostics.StackFrame::GetMethod()
 extern void StackFrame_GetMethod_m2BE34314F21C8B80F4ADF3167A4CFD417C2B811F ();
-// 0x00002465 System.Int32 System.Diagnostics.StackFrame::GetNativeOffset()
+// 0x00002468 System.Int32 System.Diagnostics.StackFrame::GetNativeOffset()
 extern void StackFrame_GetNativeOffset_m0BA9AB13054AC226600DCB0C55ED37D7DCABC9C5 ();
-// 0x00002466 System.Int64 System.Diagnostics.StackFrame::GetMethodAddress()
+// 0x00002469 System.Int64 System.Diagnostics.StackFrame::GetMethodAddress()
 extern void StackFrame_GetMethodAddress_m8516C2832DE41C888861EE98AEA341287BC07A27 ();
-// 0x00002467 System.UInt32 System.Diagnostics.StackFrame::GetMethodIndex()
+// 0x0000246A System.UInt32 System.Diagnostics.StackFrame::GetMethodIndex()
 extern void StackFrame_GetMethodIndex_mC1E293B5EF859BA0424EF76F84659A06201E84B2 ();
-// 0x00002468 System.String System.Diagnostics.StackFrame::GetInternalMethodName()
+// 0x0000246B System.String System.Diagnostics.StackFrame::GetInternalMethodName()
 extern void StackFrame_GetInternalMethodName_m2690896FB6563D59491447D1B5377195E88A2018 ();
-// 0x00002469 System.String System.Diagnostics.StackFrame::ToString()
+// 0x0000246C System.String System.Diagnostics.StackFrame::ToString()
 extern void StackFrame_ToString_m205044F382A04F9B05D7A2718DE7A7692EF38580 ();
-// 0x0000246A System.Void System.Diagnostics.StackTrace::.ctor()
+// 0x0000246D System.Void System.Diagnostics.StackTrace::.ctor()
 extern void StackTrace__ctor_mB01121AE4B50E28777806A8C6BA844C2E564AB1F ();
-// 0x0000246B System.Void System.Diagnostics.StackTrace::.ctor(System.Boolean)
+// 0x0000246E System.Void System.Diagnostics.StackTrace::.ctor(System.Boolean)
 extern void StackTrace__ctor_mCF16893B6C5EEC13841370A064CFF74E9F54E997 ();
-// 0x0000246C System.Void System.Diagnostics.StackTrace::.ctor(System.Int32,System.Boolean)
+// 0x0000246F System.Void System.Diagnostics.StackTrace::.ctor(System.Int32,System.Boolean)
 extern void StackTrace__ctor_mC06D6ED2D5E080D5B9D31E7B595D8A7F0675F504 ();
-// 0x0000246D System.Void System.Diagnostics.StackTrace::init_frames(System.Int32,System.Boolean)
+// 0x00002470 System.Void System.Diagnostics.StackTrace::init_frames(System.Int32,System.Boolean)
 extern void StackTrace_init_frames_m56291BB25D8B83B7BED4E4CD752273919237C1D5 ();
-// 0x0000246E System.Diagnostics.StackFrame[] System.Diagnostics.StackTrace::get_trace(System.Exception,System.Int32,System.Boolean)
+// 0x00002471 System.Diagnostics.StackFrame[] System.Diagnostics.StackTrace::get_trace(System.Exception,System.Int32,System.Boolean)
 extern void StackTrace_get_trace_m597A54FDD1AEA259BA205475F06DF9B07F645C47 ();
-// 0x0000246F System.Void System.Diagnostics.StackTrace::.ctor(System.Exception,System.Boolean)
+// 0x00002472 System.Void System.Diagnostics.StackTrace::.ctor(System.Exception,System.Boolean)
 extern void StackTrace__ctor_m3D57C02A24F1CCFD03425E2C4697A6347EB90408 ();
-// 0x00002470 System.Void System.Diagnostics.StackTrace::.ctor(System.Exception,System.Int32,System.Boolean)
+// 0x00002473 System.Void System.Diagnostics.StackTrace::.ctor(System.Exception,System.Int32,System.Boolean)
 extern void StackTrace__ctor_m80E5206B158C5579211CF8CC1F860E00C92F588C ();
-// 0x00002471 System.Int32 System.Diagnostics.StackTrace::get_FrameCount()
+// 0x00002474 System.Int32 System.Diagnostics.StackTrace::get_FrameCount()
 extern void StackTrace_get_FrameCount_m5E79E4D6D150B629ED87E93BACE6B71905697016 ();
-// 0x00002472 System.Diagnostics.StackFrame System.Diagnostics.StackTrace::GetFrame(System.Int32)
+// 0x00002475 System.Diagnostics.StackFrame System.Diagnostics.StackTrace::GetFrame(System.Int32)
 extern void StackTrace_GetFrame_mD3B073DD2D452B894A5D215C8EB3ED2B859DE2B3 ();
-// 0x00002473 System.String System.Diagnostics.StackTrace::GetAotId()
+// 0x00002476 System.String System.Diagnostics.StackTrace::GetAotId()
 extern void StackTrace_GetAotId_m1C3F23FF69F608186FD0092C457A257991F56D2D ();
-// 0x00002474 System.Boolean System.Diagnostics.StackTrace::AddFrames(System.Text.StringBuilder)
+// 0x00002477 System.Boolean System.Diagnostics.StackTrace::AddFrames(System.Text.StringBuilder)
 extern void StackTrace_AddFrames_m899073F7BC69218AE0A2ED6367EC3118490EF60A ();
-// 0x00002475 System.Void System.Diagnostics.StackTrace::GetFullNameForStackTrace(System.Text.StringBuilder,System.Reflection.MethodBase)
+// 0x00002478 System.Void System.Diagnostics.StackTrace::GetFullNameForStackTrace(System.Text.StringBuilder,System.Reflection.MethodBase)
 extern void StackTrace_GetFullNameForStackTrace_m8681E3272F66FE4BE04D35F49B0C2C4474F4EC56 ();
-// 0x00002476 System.String System.Diagnostics.StackTrace::ToString()
+// 0x00002479 System.String System.Diagnostics.StackTrace::ToString()
 extern void StackTrace_ToString_mD5310F948F5BD43ADB97F77CEE1F807A1E2ABA26 ();
-// 0x00002477 System.String System.Diagnostics.StackTrace::ToString(System.Diagnostics.StackTrace_TraceFormat)
+// 0x0000247A System.String System.Diagnostics.StackTrace::ToString(System.Diagnostics.StackTrace_TraceFormat)
 extern void StackTrace_ToString_m1C8457C5B1405CB08B90BEC24F67D636EF5026A5 ();
-// 0x00002478 System.Boolean System.Diagnostics.Contracts.Contract::ForAll(System.Collections.Generic.IEnumerable`1<T>,System.Predicate`1<T>)
-// 0x00002479 System.Void System.Diagnostics.Tracing.ArrayTypeInfo`1::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
-// 0x0000247A System.Void System.Diagnostics.Tracing.ArrayTypeInfo`1::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,ElementType[]&)
-// 0x0000247B ItemType System.Diagnostics.Tracing.ConcurrentSet`2::TryGet(KeyType)
-// 0x0000247C ItemType System.Diagnostics.Tracing.ConcurrentSet`2::GetOrAdd(ItemType)
-// 0x0000247D System.Int32 System.Diagnostics.Tracing.ConcurrentSetItem`2::Compare(ItemType)
-// 0x0000247E System.Int32 System.Diagnostics.Tracing.ConcurrentSetItem`2::Compare(KeyType)
-// 0x0000247F System.Void System.Diagnostics.Tracing.ConcurrentSetItem`2::.ctor()
-// 0x00002480 System.Void System.Diagnostics.Tracing.DataCollector::Enable(System.Byte*,System.Int32,System.Diagnostics.Tracing.EventSource_EventData*,System.Int32,System.Runtime.InteropServices.GCHandle*,System.Int32)
+// 0x0000247B System.Boolean System.Diagnostics.Contracts.Contract::ForAll(System.Collections.Generic.IEnumerable`1<T>,System.Predicate`1<T>)
+// 0x0000247C System.Void System.Diagnostics.Tracing.ArrayTypeInfo`1::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x0000247D System.Void System.Diagnostics.Tracing.ArrayTypeInfo`1::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,ElementType[]&)
+// 0x0000247E ItemType System.Diagnostics.Tracing.ConcurrentSet`2::TryGet(KeyType)
+// 0x0000247F ItemType System.Diagnostics.Tracing.ConcurrentSet`2::GetOrAdd(ItemType)
+// 0x00002480 System.Int32 System.Diagnostics.Tracing.ConcurrentSetItem`2::Compare(ItemType)
+// 0x00002481 System.Int32 System.Diagnostics.Tracing.ConcurrentSetItem`2::Compare(KeyType)
+// 0x00002482 System.Void System.Diagnostics.Tracing.ConcurrentSetItem`2::.ctor()
+// 0x00002483 System.Void System.Diagnostics.Tracing.DataCollector::Enable(System.Byte*,System.Int32,System.Diagnostics.Tracing.EventSource_EventData*,System.Int32,System.Runtime.InteropServices.GCHandle*,System.Int32)
 extern void DataCollector_Enable_m96EC2766D893ECDFA2FB42ED3D22BD56686C8F46_AdjustorThunk ();
-// 0x00002481 System.Void System.Diagnostics.Tracing.DataCollector::Disable()
+// 0x00002484 System.Void System.Diagnostics.Tracing.DataCollector::Disable()
 extern void DataCollector_Disable_m2A8088437433B3A9A41C40400CEAB870094DE10F_AdjustorThunk ();
-// 0x00002482 System.Diagnostics.Tracing.EventSource_EventData* System.Diagnostics.Tracing.DataCollector::Finish()
+// 0x00002485 System.Diagnostics.Tracing.EventSource_EventData* System.Diagnostics.Tracing.DataCollector::Finish()
 extern void DataCollector_Finish_mC345BA60556033F6411F860262E9699D37AFB33B_AdjustorThunk ();
-// 0x00002483 System.Void System.Diagnostics.Tracing.DataCollector::AddScalar(System.Void*,System.Int32)
+// 0x00002486 System.Void System.Diagnostics.Tracing.DataCollector::AddScalar(System.Void*,System.Int32)
 extern void DataCollector_AddScalar_m08825D15318C9D82B2DFB7785373CA14387F4D02_AdjustorThunk ();
-// 0x00002484 System.Void System.Diagnostics.Tracing.DataCollector::AddBinary(System.String,System.Int32)
+// 0x00002487 System.Void System.Diagnostics.Tracing.DataCollector::AddBinary(System.String,System.Int32)
 extern void DataCollector_AddBinary_mAE50602915B73FC52AAAD2A3691AA7392AD7FFAC_AdjustorThunk ();
-// 0x00002485 System.Void System.Diagnostics.Tracing.DataCollector::AddBinary(System.Array,System.Int32)
+// 0x00002488 System.Void System.Diagnostics.Tracing.DataCollector::AddBinary(System.Array,System.Int32)
 extern void DataCollector_AddBinary_mF9695153355117D745C9BAEAD8EA656AA26CCE9C_AdjustorThunk ();
-// 0x00002486 System.Void System.Diagnostics.Tracing.DataCollector::AddArray(System.Array,System.Int32,System.Int32)
+// 0x00002489 System.Void System.Diagnostics.Tracing.DataCollector::AddArray(System.Array,System.Int32,System.Int32)
 extern void DataCollector_AddArray_m2936C91CE082A3131D866834C93721BB6CB68678_AdjustorThunk ();
-// 0x00002487 System.Int32 System.Diagnostics.Tracing.DataCollector::BeginBufferedArray()
+// 0x0000248A System.Int32 System.Diagnostics.Tracing.DataCollector::BeginBufferedArray()
 extern void DataCollector_BeginBufferedArray_m807DC271CDB214E02B63EA8790080AB3C45779B5_AdjustorThunk ();
-// 0x00002488 System.Void System.Diagnostics.Tracing.DataCollector::EndBufferedArray(System.Int32,System.Int32)
+// 0x0000248B System.Void System.Diagnostics.Tracing.DataCollector::EndBufferedArray(System.Int32,System.Int32)
 extern void DataCollector_EndBufferedArray_m5EB7D38BB8818E569778C5C57DAEE5128AA4634F_AdjustorThunk ();
-// 0x00002489 System.Void System.Diagnostics.Tracing.DataCollector::BeginBuffered()
+// 0x0000248C System.Void System.Diagnostics.Tracing.DataCollector::BeginBuffered()
 extern void DataCollector_BeginBuffered_m0F7945D3305D4A54C5412792B3BFC3241C17839C_AdjustorThunk ();
-// 0x0000248A System.Void System.Diagnostics.Tracing.DataCollector::EndBuffered()
+// 0x0000248D System.Void System.Diagnostics.Tracing.DataCollector::EndBuffered()
 extern void DataCollector_EndBuffered_mB38401E54A7144F04DE425E22B77B0226B436851_AdjustorThunk ();
-// 0x0000248B System.Void System.Diagnostics.Tracing.DataCollector::EnsureBuffer()
+// 0x0000248E System.Void System.Diagnostics.Tracing.DataCollector::EnsureBuffer()
 extern void DataCollector_EnsureBuffer_m16EE4172BA206E2558E879ABF3383540605A8363_AdjustorThunk ();
-// 0x0000248C System.Void System.Diagnostics.Tracing.DataCollector::EnsureBuffer(System.Int32)
+// 0x0000248F System.Void System.Diagnostics.Tracing.DataCollector::EnsureBuffer(System.Int32)
 extern void DataCollector_EnsureBuffer_m605C4A01F1F7A26E1515AD0FC76A8CEE23F4198F_AdjustorThunk ();
-// 0x0000248D System.Void System.Diagnostics.Tracing.DataCollector::GrowBuffer(System.Int32)
+// 0x00002490 System.Void System.Diagnostics.Tracing.DataCollector::GrowBuffer(System.Int32)
 extern void DataCollector_GrowBuffer_mCD2F806216218E8394B131B8317D24070B20726D_AdjustorThunk ();
-// 0x0000248E System.Void System.Diagnostics.Tracing.DataCollector::PinArray(System.Object,System.Int32)
+// 0x00002491 System.Void System.Diagnostics.Tracing.DataCollector::PinArray(System.Object,System.Int32)
 extern void DataCollector_PinArray_mA9BB0ACB268FEE6501F56EFBE766D02A0AF15AA6_AdjustorThunk ();
-// 0x0000248F System.Void System.Diagnostics.Tracing.DataCollector::ScalarsBegin()
+// 0x00002492 System.Void System.Diagnostics.Tracing.DataCollector::ScalarsBegin()
 extern void DataCollector_ScalarsBegin_m264D9FD64BA4BEAC4DC96FB9FFA9D4458D5DF8FA_AdjustorThunk ();
-// 0x00002490 System.Void System.Diagnostics.Tracing.DataCollector::ScalarsEnd()
+// 0x00002493 System.Void System.Diagnostics.Tracing.DataCollector::ScalarsEnd()
 extern void DataCollector_ScalarsEnd_mAC8DCCD8233246BBBE27E55D51BFD96DC47C17DB_AdjustorThunk ();
-// 0x00002491 UnderlyingType System.Diagnostics.Tracing.EnumHelper`1::Cast(ValueType)
-// 0x00002492 System.Void System.Diagnostics.Tracing.EnumHelper`1::.cctor()
-// 0x00002493 System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1::.ctor(System.Object,System.IntPtr)
-// 0x00002494 UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1::Invoke(ValueType)
-// 0x00002495 System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
-// 0x00002496 UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1::EndInvoke(System.IAsyncResult)
-// 0x00002497 System.Void System.Diagnostics.Tracing.EnumHelper`1_Caster`1::.cctor()
-// 0x00002498 System.Void System.Diagnostics.Tracing.EnumerableTypeInfo`2::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
-// 0x00002499 System.Void System.Diagnostics.Tracing.EnumerableTypeInfo`2::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,IterableType&)
-// 0x0000249A System.String System.Diagnostics.Tracing.EventDataAttribute::get_Name()
+// 0x00002494 UnderlyingType System.Diagnostics.Tracing.EnumHelper`1::Cast(ValueType)
+// 0x00002495 System.Void System.Diagnostics.Tracing.EnumHelper`1::.cctor()
+// 0x00002496 System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1::.ctor(System.Object,System.IntPtr)
+// 0x00002497 UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1::Invoke(ValueType)
+// 0x00002498 System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// 0x00002499 UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1::EndInvoke(System.IAsyncResult)
+// 0x0000249A System.Void System.Diagnostics.Tracing.EnumHelper`1_Caster`1::.cctor()
+// 0x0000249B System.Void System.Diagnostics.Tracing.EnumerableTypeInfo`2::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x0000249C System.Void System.Diagnostics.Tracing.EnumerableTypeInfo`2::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,IterableType&)
+// 0x0000249D System.String System.Diagnostics.Tracing.EventDataAttribute::get_Name()
 extern void EventDataAttribute_get_Name_m9AA2FCA324D80D38117FA506A81F54EAD3262D0F ();
-// 0x0000249B System.Diagnostics.Tracing.EventLevel System.Diagnostics.Tracing.EventDataAttribute::get_Level()
+// 0x0000249E System.Diagnostics.Tracing.EventLevel System.Diagnostics.Tracing.EventDataAttribute::get_Level()
 extern void EventDataAttribute_get_Level_m2645CBBEA5EF6157B33D20DFFD92881FA5CB0D8B ();
-// 0x0000249C System.Diagnostics.Tracing.EventOpcode System.Diagnostics.Tracing.EventDataAttribute::get_Opcode()
+// 0x0000249F System.Diagnostics.Tracing.EventOpcode System.Diagnostics.Tracing.EventDataAttribute::get_Opcode()
 extern void EventDataAttribute_get_Opcode_mA9A0A7D84CD44B13F027B45AF1D8B5F0B435D79D ();
-// 0x0000249D System.Diagnostics.Tracing.EventKeywords System.Diagnostics.Tracing.EventDataAttribute::get_Keywords()
+// 0x000024A0 System.Diagnostics.Tracing.EventKeywords System.Diagnostics.Tracing.EventDataAttribute::get_Keywords()
 extern void EventDataAttribute_get_Keywords_m8D6FDC6B0786770D3C977A2440F9812F21B200E1 ();
-// 0x0000249E System.Diagnostics.Tracing.EventTags System.Diagnostics.Tracing.EventDataAttribute::get_Tags()
+// 0x000024A1 System.Diagnostics.Tracing.EventTags System.Diagnostics.Tracing.EventDataAttribute::get_Tags()
 extern void EventDataAttribute_get_Tags_m412BCFA2B5FA99B82732C89EBC378E3A10AECB62 ();
-// 0x0000249F System.Diagnostics.Tracing.EventFieldTags System.Diagnostics.Tracing.EventFieldAttribute::get_Tags()
+// 0x000024A2 System.Diagnostics.Tracing.EventFieldTags System.Diagnostics.Tracing.EventFieldAttribute::get_Tags()
 extern void EventFieldAttribute_get_Tags_m9374186F1346A034B8062CE64776924AF3F55017 ();
-// 0x000024A0 System.String System.Diagnostics.Tracing.EventFieldAttribute::get_Name()
+// 0x000024A3 System.String System.Diagnostics.Tracing.EventFieldAttribute::get_Name()
 extern void EventFieldAttribute_get_Name_m49EA259EE61C829EA9F76EE79E0C1BC610235467 ();
-// 0x000024A1 System.Diagnostics.Tracing.EventFieldFormat System.Diagnostics.Tracing.EventFieldAttribute::get_Format()
+// 0x000024A4 System.Diagnostics.Tracing.EventFieldFormat System.Diagnostics.Tracing.EventFieldAttribute::get_Format()
 extern void EventFieldAttribute_get_Format_mFECF8B1366D7AF6C9B8BCA28F87B352C3C22B5C8 ();
-// 0x000024A2 System.Void System.Diagnostics.Tracing.EventPayload::.ctor(System.Collections.Generic.List`1<System.String>,System.Collections.Generic.List`1<System.Object>)
+// 0x000024A5 System.Void System.Diagnostics.Tracing.EventPayload::.ctor(System.Collections.Generic.List`1<System.String>,System.Collections.Generic.List`1<System.Object>)
 extern void EventPayload__ctor_m8B60F93322B2AA2BA544D139AAA4091F35B44B9F ();
-// 0x000024A3 System.Collections.Generic.ICollection`1<System.String> System.Diagnostics.Tracing.EventPayload::get_Keys()
+// 0x000024A6 System.Collections.Generic.ICollection`1<System.String> System.Diagnostics.Tracing.EventPayload::get_Keys()
 extern void EventPayload_get_Keys_mD236EE154B85DCB3F0E625EFB795797859D9C865 ();
-// 0x000024A4 System.Object System.Diagnostics.Tracing.EventPayload::get_Item(System.String)
+// 0x000024A7 System.Object System.Diagnostics.Tracing.EventPayload::get_Item(System.String)
 extern void EventPayload_get_Item_mA7D4C6A1762EFEC5B2A28528090DB612B75ED80B ();
-// 0x000024A5 System.Void System.Diagnostics.Tracing.EventPayload::set_Item(System.String,System.Object)
+// 0x000024A8 System.Void System.Diagnostics.Tracing.EventPayload::set_Item(System.String,System.Object)
 extern void EventPayload_set_Item_m2824703E771F214B750920B6F242899F860B1CEA ();
-// 0x000024A6 System.Void System.Diagnostics.Tracing.EventPayload::Add(System.String,System.Object)
+// 0x000024A9 System.Void System.Diagnostics.Tracing.EventPayload::Add(System.String,System.Object)
 extern void EventPayload_Add_m704F88C7603E4BEAC23A3303DDF92F470085C78F ();
-// 0x000024A7 System.Void System.Diagnostics.Tracing.EventPayload::Add(System.Collections.Generic.KeyValuePair`2<System.String,System.Object>)
+// 0x000024AA System.Void System.Diagnostics.Tracing.EventPayload::Add(System.Collections.Generic.KeyValuePair`2<System.String,System.Object>)
 extern void EventPayload_Add_m30450C18FFC7912DEDDB784D268B461887970717 ();
-// 0x000024A8 System.Void System.Diagnostics.Tracing.EventPayload::Clear()
+// 0x000024AB System.Void System.Diagnostics.Tracing.EventPayload::Clear()
 extern void EventPayload_Clear_m39A4723AC6E4073FF4DC53930E3AD1BAF337C0D5 ();
-// 0x000024A9 System.Boolean System.Diagnostics.Tracing.EventPayload::Contains(System.Collections.Generic.KeyValuePair`2<System.String,System.Object>)
+// 0x000024AC System.Boolean System.Diagnostics.Tracing.EventPayload::Contains(System.Collections.Generic.KeyValuePair`2<System.String,System.Object>)
 extern void EventPayload_Contains_m0C87CF0D769A650989D31A0B2516B6F25BC5FD88 ();
-// 0x000024AA System.Boolean System.Diagnostics.Tracing.EventPayload::ContainsKey(System.String)
+// 0x000024AD System.Boolean System.Diagnostics.Tracing.EventPayload::ContainsKey(System.String)
 extern void EventPayload_ContainsKey_m3737598706A07270C39F102A5C5AF684CB4A20AA ();
-// 0x000024AB System.Int32 System.Diagnostics.Tracing.EventPayload::get_Count()
+// 0x000024AE System.Int32 System.Diagnostics.Tracing.EventPayload::get_Count()
 extern void EventPayload_get_Count_mC8C51B0D0E8DD2D768443B5EA910CC0BC22F28CA ();
-// 0x000024AC System.Boolean System.Diagnostics.Tracing.EventPayload::get_IsReadOnly()
+// 0x000024AF System.Boolean System.Diagnostics.Tracing.EventPayload::get_IsReadOnly()
 extern void EventPayload_get_IsReadOnly_m20D1ED36E831FF892038B4091CD2A475069C33C5 ();
-// 0x000024AD System.Collections.Generic.IEnumerator`1<System.Collections.Generic.KeyValuePair`2<System.String,System.Object>> System.Diagnostics.Tracing.EventPayload::GetEnumerator()
+// 0x000024B0 System.Collections.Generic.IEnumerator`1<System.Collections.Generic.KeyValuePair`2<System.String,System.Object>> System.Diagnostics.Tracing.EventPayload::GetEnumerator()
 extern void EventPayload_GetEnumerator_m91136E6A7D5A3E74FA5366E3347F2E6AD853770D ();
-// 0x000024AE System.Collections.IEnumerator System.Diagnostics.Tracing.EventPayload::System.Collections.IEnumerable.GetEnumerator()
+// 0x000024B1 System.Collections.IEnumerator System.Diagnostics.Tracing.EventPayload::System.Collections.IEnumerable.GetEnumerator()
 extern void EventPayload_System_Collections_IEnumerable_GetEnumerator_m861738DBE222BB24EE6CDE14744E41F8E1E7E514 ();
-// 0x000024AF System.Void System.Diagnostics.Tracing.EventPayload::CopyTo(System.Collections.Generic.KeyValuePair`2<System.String,System.Object>[],System.Int32)
+// 0x000024B2 System.Void System.Diagnostics.Tracing.EventPayload::CopyTo(System.Collections.Generic.KeyValuePair`2<System.String,System.Object>[],System.Int32)
 extern void EventPayload_CopyTo_m6B0F68A45E6F5D04F648A748FEFF6E913CC9C92A ();
-// 0x000024B0 System.Boolean System.Diagnostics.Tracing.EventPayload::Remove(System.String)
+// 0x000024B3 System.Boolean System.Diagnostics.Tracing.EventPayload::Remove(System.String)
 extern void EventPayload_Remove_m55F4737F656BA3A8A9B6525ADAAC846FD19B2E3E ();
-// 0x000024B1 System.Boolean System.Diagnostics.Tracing.EventPayload::Remove(System.Collections.Generic.KeyValuePair`2<System.String,System.Object>)
+// 0x000024B4 System.Boolean System.Diagnostics.Tracing.EventPayload::Remove(System.Collections.Generic.KeyValuePair`2<System.String,System.Object>)
 extern void EventPayload_Remove_m67E94C45AA1EC648A3B89834A3A11220912847DC ();
-// 0x000024B2 System.Boolean System.Diagnostics.Tracing.EventPayload::TryGetValue(System.String,System.Object&)
+// 0x000024B5 System.Boolean System.Diagnostics.Tracing.EventPayload::TryGetValue(System.String,System.Object&)
 extern void EventPayload_TryGetValue_m75C2983849C0B9FF8B15C51F0E2B471B7803387F ();
-// 0x000024B3 System.Void System.Diagnostics.Tracing.EventPayload_<GetEnumerator>d__17::.ctor(System.Int32)
+// 0x000024B6 System.Void System.Diagnostics.Tracing.EventPayload_<GetEnumerator>d__17::.ctor(System.Int32)
 extern void U3CGetEnumeratorU3Ed__17__ctor_m96831BB252933F4FC367C90E8C6560467C39CCEE ();
-// 0x000024B4 System.Void System.Diagnostics.Tracing.EventPayload_<GetEnumerator>d__17::System.IDisposable.Dispose()
+// 0x000024B7 System.Void System.Diagnostics.Tracing.EventPayload_<GetEnumerator>d__17::System.IDisposable.Dispose()
 extern void U3CGetEnumeratorU3Ed__17_System_IDisposable_Dispose_m9F76E3E5CB1711E1B01C26506CEEA33FEEBF8ECC ();
-// 0x000024B5 System.Boolean System.Diagnostics.Tracing.EventPayload_<GetEnumerator>d__17::MoveNext()
+// 0x000024B8 System.Boolean System.Diagnostics.Tracing.EventPayload_<GetEnumerator>d__17::MoveNext()
 extern void U3CGetEnumeratorU3Ed__17_MoveNext_m451A16FB6126749AB11DBD28771761699BFC1681 ();
-// 0x000024B6 System.Collections.Generic.KeyValuePair`2<System.String,System.Object> System.Diagnostics.Tracing.EventPayload_<GetEnumerator>d__17::System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.get_Current()
+// 0x000024B9 System.Collections.Generic.KeyValuePair`2<System.String,System.Object> System.Diagnostics.Tracing.EventPayload_<GetEnumerator>d__17::System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.get_Current()
 extern void U3CGetEnumeratorU3Ed__17_System_Collections_Generic_IEnumeratorU3CSystem_Collections_Generic_KeyValuePairU3CSystem_StringU2CSystem_ObjectU3EU3E_get_Current_mCB8BFBA2C812898BE240722FD9588935DC4CEFD1 ();
-// 0x000024B7 System.Void System.Diagnostics.Tracing.EventPayload_<GetEnumerator>d__17::System.Collections.IEnumerator.Reset()
+// 0x000024BA System.Void System.Diagnostics.Tracing.EventPayload_<GetEnumerator>d__17::System.Collections.IEnumerator.Reset()
 extern void U3CGetEnumeratorU3Ed__17_System_Collections_IEnumerator_Reset_mDC045F6D9917B711DDC89E6B9A2EE9CC1DCD2856 ();
-// 0x000024B8 System.Object System.Diagnostics.Tracing.EventPayload_<GetEnumerator>d__17::System.Collections.IEnumerator.get_Current()
+// 0x000024BB System.Object System.Diagnostics.Tracing.EventPayload_<GetEnumerator>d__17::System.Collections.IEnumerator.get_Current()
 extern void U3CGetEnumeratorU3Ed__17_System_Collections_IEnumerator_get_Current_m59F37C7DE26CE9C90711A8C710D37B68038228CF ();
-// 0x000024B9 System.Void System.Diagnostics.Tracing.EventSourceOptions::set_Level(System.Diagnostics.Tracing.EventLevel)
+// 0x000024BC System.Void System.Diagnostics.Tracing.EventSourceOptions::set_Level(System.Diagnostics.Tracing.EventLevel)
 extern void EventSourceOptions_set_Level_m340628B5F059DE8CD72F0094BBB29D6EADFD39D4_AdjustorThunk ();
-// 0x000024BA System.Void System.Diagnostics.Tracing.EventSourceOptions::set_Opcode(System.Diagnostics.Tracing.EventOpcode)
+// 0x000024BD System.Void System.Diagnostics.Tracing.EventSourceOptions::set_Opcode(System.Diagnostics.Tracing.EventOpcode)
 extern void EventSourceOptions_set_Opcode_m4763851B2C99E961E725331B973501E21F17B854_AdjustorThunk ();
-// 0x000024BB System.Void System.Diagnostics.Tracing.EventSourceOptions::set_Keywords(System.Diagnostics.Tracing.EventKeywords)
+// 0x000024BE System.Void System.Diagnostics.Tracing.EventSourceOptions::set_Keywords(System.Diagnostics.Tracing.EventKeywords)
 extern void EventSourceOptions_set_Keywords_m1D14E58898680877AB26459A21B160F955A34187_AdjustorThunk ();
-// 0x000024BC System.Void System.Diagnostics.Tracing.FieldMetadata::.ctor(System.String,System.Diagnostics.Tracing.TraceLoggingDataType,System.Diagnostics.Tracing.EventFieldTags,System.Boolean)
+// 0x000024BF System.Void System.Diagnostics.Tracing.FieldMetadata::.ctor(System.String,System.Diagnostics.Tracing.TraceLoggingDataType,System.Diagnostics.Tracing.EventFieldTags,System.Boolean)
 extern void FieldMetadata__ctor_mE3EBA94F5DE1B2637E0A0515BEB5D866779D86D2 ();
-// 0x000024BD System.Void System.Diagnostics.Tracing.FieldMetadata::.ctor(System.String,System.Diagnostics.Tracing.TraceLoggingDataType,System.Diagnostics.Tracing.EventFieldTags,System.Byte,System.UInt16,System.Byte[])
+// 0x000024C0 System.Void System.Diagnostics.Tracing.FieldMetadata::.ctor(System.String,System.Diagnostics.Tracing.TraceLoggingDataType,System.Diagnostics.Tracing.EventFieldTags,System.Byte,System.UInt16,System.Byte[])
 extern void FieldMetadata__ctor_m51883151B3EB815CC989B0B05F401145A0172363 ();
-// 0x000024BE System.Void System.Diagnostics.Tracing.FieldMetadata::IncrementStructFieldCount()
+// 0x000024C1 System.Void System.Diagnostics.Tracing.FieldMetadata::IncrementStructFieldCount()
 extern void FieldMetadata_IncrementStructFieldCount_m874313B0277DFA9F7B0309099139D9347E52F8AF ();
-// 0x000024BF System.Void System.Diagnostics.Tracing.FieldMetadata::Encode(System.Int32&,System.Byte[])
+// 0x000024C2 System.Void System.Diagnostics.Tracing.FieldMetadata::Encode(System.Int32&,System.Byte[])
 extern void FieldMetadata_Encode_mF59FC93BED0895548D79501F4EE2CF0FEAE1B39A ();
-// 0x000024C0 System.Void System.Diagnostics.Tracing.InvokeTypeInfo`1::.ctor(System.Diagnostics.Tracing.TypeAnalysis)
-// 0x000024C1 System.Void System.Diagnostics.Tracing.InvokeTypeInfo`1::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
-// 0x000024C2 System.Void System.Diagnostics.Tracing.InvokeTypeInfo`1::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,ContainerType&)
-// 0x000024C3 System.Object System.Diagnostics.Tracing.InvokeTypeInfo`1::GetData(System.Object)
-// 0x000024C4 System.Void System.Diagnostics.Tracing.InvokeTypeInfo`1::WriteObjectData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Object)
-// 0x000024C5 System.Void System.Diagnostics.Tracing.NameInfo::ReserveEventIDsBelow(System.Int32)
+// 0x000024C3 System.Void System.Diagnostics.Tracing.InvokeTypeInfo`1::.ctor(System.Diagnostics.Tracing.TypeAnalysis)
+// 0x000024C4 System.Void System.Diagnostics.Tracing.InvokeTypeInfo`1::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x000024C5 System.Void System.Diagnostics.Tracing.InvokeTypeInfo`1::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,ContainerType&)
+// 0x000024C6 System.Object System.Diagnostics.Tracing.InvokeTypeInfo`1::GetData(System.Object)
+// 0x000024C7 System.Void System.Diagnostics.Tracing.InvokeTypeInfo`1::WriteObjectData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Object)
+// 0x000024C8 System.Void System.Diagnostics.Tracing.NameInfo::ReserveEventIDsBelow(System.Int32)
 extern void NameInfo_ReserveEventIDsBelow_m4297DAD11F30051AC636093AB42E31178C0A08F8 ();
-// 0x000024C6 System.Void System.Diagnostics.Tracing.NameInfo::.ctor(System.String,System.Diagnostics.Tracing.EventTags,System.Int32)
+// 0x000024C9 System.Void System.Diagnostics.Tracing.NameInfo::.ctor(System.String,System.Diagnostics.Tracing.EventTags,System.Int32)
 extern void NameInfo__ctor_m697D2AEA8E68842A940310E3B874709CAA86F4DE ();
-// 0x000024C7 System.Int32 System.Diagnostics.Tracing.NameInfo::Compare(System.Diagnostics.Tracing.NameInfo)
+// 0x000024CA System.Int32 System.Diagnostics.Tracing.NameInfo::Compare(System.Diagnostics.Tracing.NameInfo)
 extern void NameInfo_Compare_mCC500203B3DEC807707E1F33478C330DDE2CA2B8 ();
-// 0x000024C8 System.Int32 System.Diagnostics.Tracing.NameInfo::Compare(System.Collections.Generic.KeyValuePair`2<System.String,System.Diagnostics.Tracing.EventTags>)
+// 0x000024CB System.Int32 System.Diagnostics.Tracing.NameInfo::Compare(System.Collections.Generic.KeyValuePair`2<System.String,System.Diagnostics.Tracing.EventTags>)
 extern void NameInfo_Compare_mDB4FA5A8A0E1F394F654232DC46455389AE14866 ();
-// 0x000024C9 System.Int32 System.Diagnostics.Tracing.NameInfo::Compare(System.String,System.Diagnostics.Tracing.EventTags)
+// 0x000024CC System.Int32 System.Diagnostics.Tracing.NameInfo::Compare(System.String,System.Diagnostics.Tracing.EventTags)
 extern void NameInfo_Compare_m2053E0E1B730AF1E06588A1F974A5F2798381BFE ();
-// 0x000024CA System.Void System.Diagnostics.Tracing.NameInfo::.cctor()
+// 0x000024CD System.Void System.Diagnostics.Tracing.NameInfo::.cctor()
 extern void NameInfo__cctor_mF76CED99F534FF64631F0C781DCE8EF39C1CB2D9 ();
-// 0x000024CB System.Void System.Diagnostics.Tracing.PropertyAccessor`1::Write(System.Diagnostics.Tracing.TraceLoggingDataCollector,ContainerType&)
-// 0x000024CC System.Object System.Diagnostics.Tracing.PropertyAccessor`1::GetData(ContainerType)
-// 0x000024CD System.Diagnostics.Tracing.PropertyAccessor`1<ContainerType> System.Diagnostics.Tracing.PropertyAccessor`1::Create(System.Diagnostics.Tracing.PropertyAnalysis)
-// 0x000024CE System.Void System.Diagnostics.Tracing.PropertyAccessor`1::.ctor()
-// 0x000024CF System.Void System.Diagnostics.Tracing.NonGenericProperytWriter`1::.ctor(System.Diagnostics.Tracing.PropertyAnalysis)
-// 0x000024D0 System.Void System.Diagnostics.Tracing.NonGenericProperytWriter`1::Write(System.Diagnostics.Tracing.TraceLoggingDataCollector,ContainerType&)
-// 0x000024D1 System.Object System.Diagnostics.Tracing.NonGenericProperytWriter`1::GetData(ContainerType)
-// 0x000024D2 System.Void System.Diagnostics.Tracing.ClassPropertyWriter`2::.ctor(System.Diagnostics.Tracing.PropertyAnalysis)
-// 0x000024D3 System.Void System.Diagnostics.Tracing.ClassPropertyWriter`2::Write(System.Diagnostics.Tracing.TraceLoggingDataCollector,ContainerType&)
-// 0x000024D4 System.Object System.Diagnostics.Tracing.ClassPropertyWriter`2::GetData(ContainerType)
-// 0x000024D5 System.Void System.Diagnostics.Tracing.ClassPropertyWriter`2_Getter::.ctor(System.Object,System.IntPtr)
-// 0x000024D6 ValueType System.Diagnostics.Tracing.ClassPropertyWriter`2_Getter::Invoke(ContainerType)
-// 0x000024D7 System.IAsyncResult System.Diagnostics.Tracing.ClassPropertyWriter`2_Getter::BeginInvoke(ContainerType,System.AsyncCallback,System.Object)
-// 0x000024D8 ValueType System.Diagnostics.Tracing.ClassPropertyWriter`2_Getter::EndInvoke(System.IAsyncResult)
-// 0x000024D9 System.Void System.Diagnostics.Tracing.PropertyAnalysis::.ctor(System.String,System.Reflection.MethodInfo,System.Diagnostics.Tracing.TraceLoggingTypeInfo,System.Diagnostics.Tracing.EventFieldAttribute)
+// 0x000024CE System.Void System.Diagnostics.Tracing.PropertyAccessor`1::Write(System.Diagnostics.Tracing.TraceLoggingDataCollector,ContainerType&)
+// 0x000024CF System.Object System.Diagnostics.Tracing.PropertyAccessor`1::GetData(ContainerType)
+// 0x000024D0 System.Diagnostics.Tracing.PropertyAccessor`1<ContainerType> System.Diagnostics.Tracing.PropertyAccessor`1::Create(System.Diagnostics.Tracing.PropertyAnalysis)
+// 0x000024D1 System.Void System.Diagnostics.Tracing.PropertyAccessor`1::.ctor()
+// 0x000024D2 System.Void System.Diagnostics.Tracing.NonGenericProperytWriter`1::.ctor(System.Diagnostics.Tracing.PropertyAnalysis)
+// 0x000024D3 System.Void System.Diagnostics.Tracing.NonGenericProperytWriter`1::Write(System.Diagnostics.Tracing.TraceLoggingDataCollector,ContainerType&)
+// 0x000024D4 System.Object System.Diagnostics.Tracing.NonGenericProperytWriter`1::GetData(ContainerType)
+// 0x000024D5 System.Void System.Diagnostics.Tracing.ClassPropertyWriter`2::.ctor(System.Diagnostics.Tracing.PropertyAnalysis)
+// 0x000024D6 System.Void System.Diagnostics.Tracing.ClassPropertyWriter`2::Write(System.Diagnostics.Tracing.TraceLoggingDataCollector,ContainerType&)
+// 0x000024D7 System.Object System.Diagnostics.Tracing.ClassPropertyWriter`2::GetData(ContainerType)
+// 0x000024D8 System.Void System.Diagnostics.Tracing.ClassPropertyWriter`2_Getter::.ctor(System.Object,System.IntPtr)
+// 0x000024D9 ValueType System.Diagnostics.Tracing.ClassPropertyWriter`2_Getter::Invoke(ContainerType)
+// 0x000024DA System.IAsyncResult System.Diagnostics.Tracing.ClassPropertyWriter`2_Getter::BeginInvoke(ContainerType,System.AsyncCallback,System.Object)
+// 0x000024DB ValueType System.Diagnostics.Tracing.ClassPropertyWriter`2_Getter::EndInvoke(System.IAsyncResult)
+// 0x000024DC System.Void System.Diagnostics.Tracing.PropertyAnalysis::.ctor(System.String,System.Reflection.MethodInfo,System.Diagnostics.Tracing.TraceLoggingTypeInfo,System.Diagnostics.Tracing.EventFieldAttribute)
 extern void PropertyAnalysis__ctor_m29B134F54408C609851A5B14D437079EE8F999BC ();
-// 0x000024DA System.Void System.Diagnostics.Tracing.NullTypeInfo`1::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
-// 0x000024DB System.Void System.Diagnostics.Tracing.NullTypeInfo`1::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,DataType&)
-// 0x000024DC System.Object System.Diagnostics.Tracing.NullTypeInfo`1::GetData(System.Object)
-// 0x000024DD System.Void System.Diagnostics.Tracing.NullTypeInfo`1::.ctor()
-// 0x000024DE System.Void System.Diagnostics.Tracing.BooleanTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x000024DD System.Void System.Diagnostics.Tracing.NullTypeInfo`1::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x000024DE System.Void System.Diagnostics.Tracing.NullTypeInfo`1::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,DataType&)
+// 0x000024DF System.Object System.Diagnostics.Tracing.NullTypeInfo`1::GetData(System.Object)
+// 0x000024E0 System.Void System.Diagnostics.Tracing.NullTypeInfo`1::.ctor()
+// 0x000024E1 System.Void System.Diagnostics.Tracing.BooleanTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
 extern void BooleanTypeInfo_WriteMetadata_m07A6148730F46CDA6105BE96A5325273C035F06D ();
-// 0x000024DF System.Void System.Diagnostics.Tracing.BooleanTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Boolean&)
+// 0x000024E2 System.Void System.Diagnostics.Tracing.BooleanTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Boolean&)
 extern void BooleanTypeInfo_WriteData_m28A2028D54EDC69FF035DDFD989CAA95C6160623 ();
-// 0x000024E0 System.Void System.Diagnostics.Tracing.BooleanTypeInfo::.ctor()
+// 0x000024E3 System.Void System.Diagnostics.Tracing.BooleanTypeInfo::.ctor()
 extern void BooleanTypeInfo__ctor_mA6C506EA7D9651E4024FD3B1612F2170D7EF37B5 ();
-// 0x000024E1 System.Void System.Diagnostics.Tracing.ByteTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x000024E4 System.Void System.Diagnostics.Tracing.ByteTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
 extern void ByteTypeInfo_WriteMetadata_mD9012F4D78EA50C79A13F97CB138FAC0EEB2D781 ();
-// 0x000024E2 System.Void System.Diagnostics.Tracing.ByteTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Byte&)
+// 0x000024E5 System.Void System.Diagnostics.Tracing.ByteTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Byte&)
 extern void ByteTypeInfo_WriteData_mD3A9BCACC8C7A261A056377E1E44C7609D2DDAC5 ();
-// 0x000024E3 System.Void System.Diagnostics.Tracing.ByteTypeInfo::.ctor()
+// 0x000024E6 System.Void System.Diagnostics.Tracing.ByteTypeInfo::.ctor()
 extern void ByteTypeInfo__ctor_mC04ADDE2C15F05E2B211965E5E3BFC777BB32776 ();
-// 0x000024E4 System.Void System.Diagnostics.Tracing.SByteTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x000024E7 System.Void System.Diagnostics.Tracing.SByteTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
 extern void SByteTypeInfo_WriteMetadata_m24B4DA25B413E4BA4D6FD966ABF071A984598BA1 ();
-// 0x000024E5 System.Void System.Diagnostics.Tracing.SByteTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.SByte&)
+// 0x000024E8 System.Void System.Diagnostics.Tracing.SByteTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.SByte&)
 extern void SByteTypeInfo_WriteData_mA12BDABEED30E261A0EE2232E414574DDC243B4B ();
-// 0x000024E6 System.Void System.Diagnostics.Tracing.SByteTypeInfo::.ctor()
+// 0x000024E9 System.Void System.Diagnostics.Tracing.SByteTypeInfo::.ctor()
 extern void SByteTypeInfo__ctor_mE051EE1E75CBE7BF5D6F0DEBCD1B2EC3B55DD89E ();
-// 0x000024E7 System.Void System.Diagnostics.Tracing.Int16TypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x000024EA System.Void System.Diagnostics.Tracing.Int16TypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
 extern void Int16TypeInfo_WriteMetadata_m382478A62487410C10BB77B1EF23129C0B49BE48 ();
-// 0x000024E8 System.Void System.Diagnostics.Tracing.Int16TypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Int16&)
+// 0x000024EB System.Void System.Diagnostics.Tracing.Int16TypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Int16&)
 extern void Int16TypeInfo_WriteData_mD00EA7EBC4EDF2A770A6E1D0B1C60BDE54ADE4F0 ();
-// 0x000024E9 System.Void System.Diagnostics.Tracing.Int16TypeInfo::.ctor()
+// 0x000024EC System.Void System.Diagnostics.Tracing.Int16TypeInfo::.ctor()
 extern void Int16TypeInfo__ctor_m32663BF727B1441F924AF3C2440672AD69A8A0D0 ();
-// 0x000024EA System.Void System.Diagnostics.Tracing.UInt16TypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x000024ED System.Void System.Diagnostics.Tracing.UInt16TypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
 extern void UInt16TypeInfo_WriteMetadata_m726F89A1754BBA837166A1B12473BD97B598832F ();
-// 0x000024EB System.Void System.Diagnostics.Tracing.UInt16TypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.UInt16&)
+// 0x000024EE System.Void System.Diagnostics.Tracing.UInt16TypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.UInt16&)
 extern void UInt16TypeInfo_WriteData_mFACB0FFE18C3653D08F40728CDC7BE4E5E97D11E ();
-// 0x000024EC System.Void System.Diagnostics.Tracing.UInt16TypeInfo::.ctor()
+// 0x000024EF System.Void System.Diagnostics.Tracing.UInt16TypeInfo::.ctor()
 extern void UInt16TypeInfo__ctor_mCC09171DCA51C7C406B0A16C46D5EF4D07D089CD ();
-// 0x000024ED System.Void System.Diagnostics.Tracing.Int32TypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x000024F0 System.Void System.Diagnostics.Tracing.Int32TypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
 extern void Int32TypeInfo_WriteMetadata_m3E03992BEA715AB29814661E18829AA9856EB8AD ();
-// 0x000024EE System.Void System.Diagnostics.Tracing.Int32TypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Int32&)
+// 0x000024F1 System.Void System.Diagnostics.Tracing.Int32TypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Int32&)
 extern void Int32TypeInfo_WriteData_m89BC83C7D3DB16EFBC022F76E1C6C87B2C547B8C ();
-// 0x000024EF System.Void System.Diagnostics.Tracing.Int32TypeInfo::.ctor()
+// 0x000024F2 System.Void System.Diagnostics.Tracing.Int32TypeInfo::.ctor()
 extern void Int32TypeInfo__ctor_mFB5D5C183B9CEADA879A9B192E5F6E613EF79ACC ();
-// 0x000024F0 System.Void System.Diagnostics.Tracing.UInt32TypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x000024F3 System.Void System.Diagnostics.Tracing.UInt32TypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
 extern void UInt32TypeInfo_WriteMetadata_mDE1B62DD209465812263064E836CC068E2F9A975 ();
-// 0x000024F1 System.Void System.Diagnostics.Tracing.UInt32TypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.UInt32&)
+// 0x000024F4 System.Void System.Diagnostics.Tracing.UInt32TypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.UInt32&)
 extern void UInt32TypeInfo_WriteData_mEA4FBF3A424F64E5F6A8B7EA2370DEFE1AF3D0B1 ();
-// 0x000024F2 System.Void System.Diagnostics.Tracing.UInt32TypeInfo::.ctor()
+// 0x000024F5 System.Void System.Diagnostics.Tracing.UInt32TypeInfo::.ctor()
 extern void UInt32TypeInfo__ctor_m5492D535F1F613D8B2160CCB6782ECA813E89181 ();
-// 0x000024F3 System.Void System.Diagnostics.Tracing.Int64TypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x000024F6 System.Void System.Diagnostics.Tracing.Int64TypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
 extern void Int64TypeInfo_WriteMetadata_m918E8C4BF91CBF06D4AF381BD87716379EAC5AEA ();
-// 0x000024F4 System.Void System.Diagnostics.Tracing.Int64TypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Int64&)
+// 0x000024F7 System.Void System.Diagnostics.Tracing.Int64TypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Int64&)
 extern void Int64TypeInfo_WriteData_m04CA2FE4276893FC6429502FD5783E09CC4E22B1 ();
-// 0x000024F5 System.Void System.Diagnostics.Tracing.Int64TypeInfo::.ctor()
+// 0x000024F8 System.Void System.Diagnostics.Tracing.Int64TypeInfo::.ctor()
 extern void Int64TypeInfo__ctor_m34E0E0F18CF350928B7FFA21BB7FBF14AB2D2783 ();
-// 0x000024F6 System.Void System.Diagnostics.Tracing.UInt64TypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x000024F9 System.Void System.Diagnostics.Tracing.UInt64TypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
 extern void UInt64TypeInfo_WriteMetadata_mA2B28959D1A7F80936B5F91ACB974C3F74841F47 ();
-// 0x000024F7 System.Void System.Diagnostics.Tracing.UInt64TypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.UInt64&)
+// 0x000024FA System.Void System.Diagnostics.Tracing.UInt64TypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.UInt64&)
 extern void UInt64TypeInfo_WriteData_m20A3AC76C851EC7AFA4737F59248FEF69E651767 ();
-// 0x000024F8 System.Void System.Diagnostics.Tracing.UInt64TypeInfo::.ctor()
+// 0x000024FB System.Void System.Diagnostics.Tracing.UInt64TypeInfo::.ctor()
 extern void UInt64TypeInfo__ctor_m237E06B639D1A9D0DFFDD3795FEABE0B50F245AE ();
-// 0x000024F9 System.Void System.Diagnostics.Tracing.IntPtrTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x000024FC System.Void System.Diagnostics.Tracing.IntPtrTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
 extern void IntPtrTypeInfo_WriteMetadata_m79A560E04FE047591C7BADF18CACCDFA96334A96 ();
-// 0x000024FA System.Void System.Diagnostics.Tracing.IntPtrTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.IntPtr&)
+// 0x000024FD System.Void System.Diagnostics.Tracing.IntPtrTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.IntPtr&)
 extern void IntPtrTypeInfo_WriteData_mB25292A7BBDED83A542034E56B4860118ABD0F37 ();
-// 0x000024FB System.Void System.Diagnostics.Tracing.IntPtrTypeInfo::.ctor()
+// 0x000024FE System.Void System.Diagnostics.Tracing.IntPtrTypeInfo::.ctor()
 extern void IntPtrTypeInfo__ctor_m01105F4A30A454AC162C62C5D3FF447A225DA07B ();
-// 0x000024FC System.Void System.Diagnostics.Tracing.UIntPtrTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x000024FF System.Void System.Diagnostics.Tracing.UIntPtrTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
 extern void UIntPtrTypeInfo_WriteMetadata_mFFDF55AFC3C3F64744FBF72B9E329F37644FB792 ();
-// 0x000024FD System.Void System.Diagnostics.Tracing.UIntPtrTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.UIntPtr&)
+// 0x00002500 System.Void System.Diagnostics.Tracing.UIntPtrTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.UIntPtr&)
 extern void UIntPtrTypeInfo_WriteData_mCCB7DC6B9E441D3F520F08A2031F987DE6F33223 ();
-// 0x000024FE System.Void System.Diagnostics.Tracing.UIntPtrTypeInfo::.ctor()
+// 0x00002501 System.Void System.Diagnostics.Tracing.UIntPtrTypeInfo::.ctor()
 extern void UIntPtrTypeInfo__ctor_m10665E5B71030580321F853F0AA64AA6450867BE ();
-// 0x000024FF System.Void System.Diagnostics.Tracing.DoubleTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x00002502 System.Void System.Diagnostics.Tracing.DoubleTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
 extern void DoubleTypeInfo_WriteMetadata_m2A4FFE877B83DCA94583DAC1F80E3669316ACDD0 ();
-// 0x00002500 System.Void System.Diagnostics.Tracing.DoubleTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Double&)
+// 0x00002503 System.Void System.Diagnostics.Tracing.DoubleTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Double&)
 extern void DoubleTypeInfo_WriteData_m27CE61D12C5C903258BEDC8F254EDD92CCD5FA37 ();
-// 0x00002501 System.Void System.Diagnostics.Tracing.DoubleTypeInfo::.ctor()
+// 0x00002504 System.Void System.Diagnostics.Tracing.DoubleTypeInfo::.ctor()
 extern void DoubleTypeInfo__ctor_m0FC3E8A06AF05EE78EBFC4BEB3C45686DE65143B ();
-// 0x00002502 System.Void System.Diagnostics.Tracing.SingleTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x00002505 System.Void System.Diagnostics.Tracing.SingleTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
 extern void SingleTypeInfo_WriteMetadata_m79E35F64478C4ADEEAFFDE24311D0D30EFFBF4EF ();
-// 0x00002503 System.Void System.Diagnostics.Tracing.SingleTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Single&)
+// 0x00002506 System.Void System.Diagnostics.Tracing.SingleTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Single&)
 extern void SingleTypeInfo_WriteData_m6AB20CFEE17FABDF830351986D1873B6271A32B9 ();
-// 0x00002504 System.Void System.Diagnostics.Tracing.SingleTypeInfo::.ctor()
+// 0x00002507 System.Void System.Diagnostics.Tracing.SingleTypeInfo::.ctor()
 extern void SingleTypeInfo__ctor_mA5EBEEF7D8FA70CC36839D33FFEE1E92B36733C4 ();
-// 0x00002505 System.Void System.Diagnostics.Tracing.CharTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x00002508 System.Void System.Diagnostics.Tracing.CharTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
 extern void CharTypeInfo_WriteMetadata_mE577CAC8218A19FD48D32C7675C6DA2887E83E1C ();
-// 0x00002506 System.Void System.Diagnostics.Tracing.CharTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Char&)
+// 0x00002509 System.Void System.Diagnostics.Tracing.CharTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Char&)
 extern void CharTypeInfo_WriteData_m73DF28169B9F52CB9E81E0A5FFACFF1289142B6E ();
-// 0x00002507 System.Void System.Diagnostics.Tracing.CharTypeInfo::.ctor()
+// 0x0000250A System.Void System.Diagnostics.Tracing.CharTypeInfo::.ctor()
 extern void CharTypeInfo__ctor_m83F187FC1D323E6E2FA872CF3153BAB1F76AC298 ();
-// 0x00002508 System.Void System.Diagnostics.Tracing.BooleanArrayTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x0000250B System.Void System.Diagnostics.Tracing.BooleanArrayTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
 extern void BooleanArrayTypeInfo_WriteMetadata_mA1EE23C965D4098703A0A2CD9651F249371788B9 ();
-// 0x00002509 System.Void System.Diagnostics.Tracing.BooleanArrayTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Boolean[]&)
+// 0x0000250C System.Void System.Diagnostics.Tracing.BooleanArrayTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Boolean[]&)
 extern void BooleanArrayTypeInfo_WriteData_mBAE17DCF09F392EC536BD083A9D8F94814779217 ();
-// 0x0000250A System.Void System.Diagnostics.Tracing.BooleanArrayTypeInfo::.ctor()
+// 0x0000250D System.Void System.Diagnostics.Tracing.BooleanArrayTypeInfo::.ctor()
 extern void BooleanArrayTypeInfo__ctor_m4C42FDCC33CCC47576364D5CD3566487FBB26241 ();
-// 0x0000250B System.Void System.Diagnostics.Tracing.ByteArrayTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x0000250E System.Void System.Diagnostics.Tracing.ByteArrayTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
 extern void ByteArrayTypeInfo_WriteMetadata_mCD7E871F81D44427A3A82A00CA8271C3631E55BB ();
-// 0x0000250C System.Void System.Diagnostics.Tracing.ByteArrayTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Byte[]&)
+// 0x0000250F System.Void System.Diagnostics.Tracing.ByteArrayTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Byte[]&)
 extern void ByteArrayTypeInfo_WriteData_mF7E0A5229076248F2C2B1F347DC9919E855D911D ();
-// 0x0000250D System.Void System.Diagnostics.Tracing.ByteArrayTypeInfo::.ctor()
+// 0x00002510 System.Void System.Diagnostics.Tracing.ByteArrayTypeInfo::.ctor()
 extern void ByteArrayTypeInfo__ctor_mC48373891BDF2EE356654D62BCFE3E252D365AD3 ();
-// 0x0000250E System.Void System.Diagnostics.Tracing.SByteArrayTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x00002511 System.Void System.Diagnostics.Tracing.SByteArrayTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
 extern void SByteArrayTypeInfo_WriteMetadata_m6237C70B7EACAD7382CD1A48D48423B416B9304E ();
-// 0x0000250F System.Void System.Diagnostics.Tracing.SByteArrayTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.SByte[]&)
+// 0x00002512 System.Void System.Diagnostics.Tracing.SByteArrayTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.SByte[]&)
 extern void SByteArrayTypeInfo_WriteData_m91EC7DD3F438D469AD2B240D6274E333490BDC73 ();
-// 0x00002510 System.Void System.Diagnostics.Tracing.SByteArrayTypeInfo::.ctor()
+// 0x00002513 System.Void System.Diagnostics.Tracing.SByteArrayTypeInfo::.ctor()
 extern void SByteArrayTypeInfo__ctor_m574A695A8BC3854E038875B5EDA049ADCE1121BA ();
-// 0x00002511 System.Void System.Diagnostics.Tracing.Int16ArrayTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x00002514 System.Void System.Diagnostics.Tracing.Int16ArrayTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
 extern void Int16ArrayTypeInfo_WriteMetadata_m3F7C0E3CCDA710AF980E09D08AE290920CFACD14 ();
-// 0x00002512 System.Void System.Diagnostics.Tracing.Int16ArrayTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Int16[]&)
+// 0x00002515 System.Void System.Diagnostics.Tracing.Int16ArrayTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Int16[]&)
 extern void Int16ArrayTypeInfo_WriteData_m51E1AE9039F8D9C5F27AAA03C38260CC041BCE59 ();
-// 0x00002513 System.Void System.Diagnostics.Tracing.Int16ArrayTypeInfo::.ctor()
+// 0x00002516 System.Void System.Diagnostics.Tracing.Int16ArrayTypeInfo::.ctor()
 extern void Int16ArrayTypeInfo__ctor_mF1C882F2ECD07C3ACE31BF421C84375783557470 ();
-// 0x00002514 System.Void System.Diagnostics.Tracing.UInt16ArrayTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x00002517 System.Void System.Diagnostics.Tracing.UInt16ArrayTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
 extern void UInt16ArrayTypeInfo_WriteMetadata_m596A9EE05ECA727F33C41036ADB98A256E2FB4DE ();
-// 0x00002515 System.Void System.Diagnostics.Tracing.UInt16ArrayTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.UInt16[]&)
+// 0x00002518 System.Void System.Diagnostics.Tracing.UInt16ArrayTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.UInt16[]&)
 extern void UInt16ArrayTypeInfo_WriteData_m4B7BFF050CEBE1B0A0A3D81240B5A295992A5015 ();
-// 0x00002516 System.Void System.Diagnostics.Tracing.UInt16ArrayTypeInfo::.ctor()
+// 0x00002519 System.Void System.Diagnostics.Tracing.UInt16ArrayTypeInfo::.ctor()
 extern void UInt16ArrayTypeInfo__ctor_m47BF92C31CA6C00BF2934AE7D7B30BBE7340C2FE ();
-// 0x00002517 System.Void System.Diagnostics.Tracing.Int32ArrayTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x0000251A System.Void System.Diagnostics.Tracing.Int32ArrayTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
 extern void Int32ArrayTypeInfo_WriteMetadata_m0C90F588EBDFC32FBFE0083A2401948BC090CE49 ();
-// 0x00002518 System.Void System.Diagnostics.Tracing.Int32ArrayTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Int32[]&)
+// 0x0000251B System.Void System.Diagnostics.Tracing.Int32ArrayTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Int32[]&)
 extern void Int32ArrayTypeInfo_WriteData_mE38CBC5DE3E05961040331FA25EFE3B3CF8FFAF2 ();
-// 0x00002519 System.Void System.Diagnostics.Tracing.Int32ArrayTypeInfo::.ctor()
+// 0x0000251C System.Void System.Diagnostics.Tracing.Int32ArrayTypeInfo::.ctor()
 extern void Int32ArrayTypeInfo__ctor_m9D7274FDA03ACB4C441E103CB50E6BE7DBF548F5 ();
-// 0x0000251A System.Void System.Diagnostics.Tracing.UInt32ArrayTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x0000251D System.Void System.Diagnostics.Tracing.UInt32ArrayTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
 extern void UInt32ArrayTypeInfo_WriteMetadata_m4D3D827654E56768B873B6E1660C4200E9605BDC ();
-// 0x0000251B System.Void System.Diagnostics.Tracing.UInt32ArrayTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.UInt32[]&)
+// 0x0000251E System.Void System.Diagnostics.Tracing.UInt32ArrayTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.UInt32[]&)
 extern void UInt32ArrayTypeInfo_WriteData_mF0956C58360D9405F0AA117F12F567CD257FF309 ();
-// 0x0000251C System.Void System.Diagnostics.Tracing.UInt32ArrayTypeInfo::.ctor()
+// 0x0000251F System.Void System.Diagnostics.Tracing.UInt32ArrayTypeInfo::.ctor()
 extern void UInt32ArrayTypeInfo__ctor_m6E6B67C602B24ECD669EF5C8A05DE8994F4B2030 ();
-// 0x0000251D System.Void System.Diagnostics.Tracing.Int64ArrayTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x00002520 System.Void System.Diagnostics.Tracing.Int64ArrayTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
 extern void Int64ArrayTypeInfo_WriteMetadata_mEC1F28EE4FD5CF899FA3F50C7A310C552F141867 ();
-// 0x0000251E System.Void System.Diagnostics.Tracing.Int64ArrayTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Int64[]&)
+// 0x00002521 System.Void System.Diagnostics.Tracing.Int64ArrayTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Int64[]&)
 extern void Int64ArrayTypeInfo_WriteData_mB86F88E0AE559A28CD38519E59B73158809BF8ED ();
-// 0x0000251F System.Void System.Diagnostics.Tracing.Int64ArrayTypeInfo::.ctor()
+// 0x00002522 System.Void System.Diagnostics.Tracing.Int64ArrayTypeInfo::.ctor()
 extern void Int64ArrayTypeInfo__ctor_m0420AE4B52AE5BD112A2B29B0D12C0A6FB4B931D ();
-// 0x00002520 System.Void System.Diagnostics.Tracing.UInt64ArrayTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x00002523 System.Void System.Diagnostics.Tracing.UInt64ArrayTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
 extern void UInt64ArrayTypeInfo_WriteMetadata_m6A04F2B67A8D2A5A59668E49D5D5794645CEC205 ();
-// 0x00002521 System.Void System.Diagnostics.Tracing.UInt64ArrayTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.UInt64[]&)
+// 0x00002524 System.Void System.Diagnostics.Tracing.UInt64ArrayTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.UInt64[]&)
 extern void UInt64ArrayTypeInfo_WriteData_m13DA739D1DD4B70DB4A80AAC44D9DEDB9D471241 ();
-// 0x00002522 System.Void System.Diagnostics.Tracing.UInt64ArrayTypeInfo::.ctor()
+// 0x00002525 System.Void System.Diagnostics.Tracing.UInt64ArrayTypeInfo::.ctor()
 extern void UInt64ArrayTypeInfo__ctor_m7FD48AB4A63443625F680B68E2B80C17B694F26F ();
-// 0x00002523 System.Void System.Diagnostics.Tracing.IntPtrArrayTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x00002526 System.Void System.Diagnostics.Tracing.IntPtrArrayTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
 extern void IntPtrArrayTypeInfo_WriteMetadata_mA9E5E10CB682BD5CE22DF1A773CD74F8CE80DBF8 ();
-// 0x00002524 System.Void System.Diagnostics.Tracing.IntPtrArrayTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.IntPtr[]&)
+// 0x00002527 System.Void System.Diagnostics.Tracing.IntPtrArrayTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.IntPtr[]&)
 extern void IntPtrArrayTypeInfo_WriteData_m1487D1B5120D1A3EB58610228926DCCD8B4A3B71 ();
-// 0x00002525 System.Void System.Diagnostics.Tracing.IntPtrArrayTypeInfo::.ctor()
+// 0x00002528 System.Void System.Diagnostics.Tracing.IntPtrArrayTypeInfo::.ctor()
 extern void IntPtrArrayTypeInfo__ctor_mEAB7419D27051053AAF97425F4CE4283CB6316EF ();
-// 0x00002526 System.Void System.Diagnostics.Tracing.UIntPtrArrayTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x00002529 System.Void System.Diagnostics.Tracing.UIntPtrArrayTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
 extern void UIntPtrArrayTypeInfo_WriteMetadata_m8551A2F963F22F3DE6C9B67DA8262FFE33668559 ();
-// 0x00002527 System.Void System.Diagnostics.Tracing.UIntPtrArrayTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.UIntPtr[]&)
+// 0x0000252A System.Void System.Diagnostics.Tracing.UIntPtrArrayTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.UIntPtr[]&)
 extern void UIntPtrArrayTypeInfo_WriteData_m958B95A4D47D568FC84835595F1DF258A40B972B ();
-// 0x00002528 System.Void System.Diagnostics.Tracing.UIntPtrArrayTypeInfo::.ctor()
+// 0x0000252B System.Void System.Diagnostics.Tracing.UIntPtrArrayTypeInfo::.ctor()
 extern void UIntPtrArrayTypeInfo__ctor_m2ED85F03228949555DADD7E37416A143A58E3601 ();
-// 0x00002529 System.Void System.Diagnostics.Tracing.CharArrayTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x0000252C System.Void System.Diagnostics.Tracing.CharArrayTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
 extern void CharArrayTypeInfo_WriteMetadata_mC7FF2CC1A8F353E1DE380391F9CB5CEAFF2B8DE8 ();
-// 0x0000252A System.Void System.Diagnostics.Tracing.CharArrayTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Char[]&)
+// 0x0000252D System.Void System.Diagnostics.Tracing.CharArrayTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Char[]&)
 extern void CharArrayTypeInfo_WriteData_mB1D375727E16AD926965EE31F78E496BB8657C33 ();
-// 0x0000252B System.Void System.Diagnostics.Tracing.CharArrayTypeInfo::.ctor()
+// 0x0000252E System.Void System.Diagnostics.Tracing.CharArrayTypeInfo::.ctor()
 extern void CharArrayTypeInfo__ctor_m1EE2437D82CF59C21FD9A6202A9BDE9646CA8DDB ();
-// 0x0000252C System.Void System.Diagnostics.Tracing.DoubleArrayTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x0000252F System.Void System.Diagnostics.Tracing.DoubleArrayTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
 extern void DoubleArrayTypeInfo_WriteMetadata_m59A14C61353BF38C5DB529EAC4EF403609E425D6 ();
-// 0x0000252D System.Void System.Diagnostics.Tracing.DoubleArrayTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Double[]&)
+// 0x00002530 System.Void System.Diagnostics.Tracing.DoubleArrayTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Double[]&)
 extern void DoubleArrayTypeInfo_WriteData_m9450D339E028432799F22EFB0D2DF0F08DE51D3F ();
-// 0x0000252E System.Void System.Diagnostics.Tracing.DoubleArrayTypeInfo::.ctor()
+// 0x00002531 System.Void System.Diagnostics.Tracing.DoubleArrayTypeInfo::.ctor()
 extern void DoubleArrayTypeInfo__ctor_mA1D7B8202A7F5FE4462E05403AF389C57308729D ();
-// 0x0000252F System.Void System.Diagnostics.Tracing.SingleArrayTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x00002532 System.Void System.Diagnostics.Tracing.SingleArrayTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
 extern void SingleArrayTypeInfo_WriteMetadata_mE32CCB89C827B4652F6841A68F358FE77EAF96B9 ();
-// 0x00002530 System.Void System.Diagnostics.Tracing.SingleArrayTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Single[]&)
+// 0x00002533 System.Void System.Diagnostics.Tracing.SingleArrayTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Single[]&)
 extern void SingleArrayTypeInfo_WriteData_m9D1BDFF577F65CAEEAA39E2C630280F3E9B9A306 ();
-// 0x00002531 System.Void System.Diagnostics.Tracing.SingleArrayTypeInfo::.ctor()
+// 0x00002534 System.Void System.Diagnostics.Tracing.SingleArrayTypeInfo::.ctor()
 extern void SingleArrayTypeInfo__ctor_m9897E1859A9FBE59C35E997146A165465927226F ();
-// 0x00002532 System.Void System.Diagnostics.Tracing.EnumByteTypeInfo`1::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
-// 0x00002533 System.Void System.Diagnostics.Tracing.EnumByteTypeInfo`1::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,EnumType&)
-// 0x00002534 System.Object System.Diagnostics.Tracing.EnumByteTypeInfo`1::GetData(System.Object)
-// 0x00002535 System.Void System.Diagnostics.Tracing.EnumByteTypeInfo`1::.ctor()
-// 0x00002536 System.Void System.Diagnostics.Tracing.EnumSByteTypeInfo`1::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
-// 0x00002537 System.Void System.Diagnostics.Tracing.EnumSByteTypeInfo`1::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,EnumType&)
-// 0x00002538 System.Object System.Diagnostics.Tracing.EnumSByteTypeInfo`1::GetData(System.Object)
-// 0x00002539 System.Void System.Diagnostics.Tracing.EnumSByteTypeInfo`1::.ctor()
-// 0x0000253A System.Void System.Diagnostics.Tracing.EnumInt16TypeInfo`1::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
-// 0x0000253B System.Void System.Diagnostics.Tracing.EnumInt16TypeInfo`1::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,EnumType&)
-// 0x0000253C System.Object System.Diagnostics.Tracing.EnumInt16TypeInfo`1::GetData(System.Object)
-// 0x0000253D System.Void System.Diagnostics.Tracing.EnumInt16TypeInfo`1::.ctor()
-// 0x0000253E System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
-// 0x0000253F System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,EnumType&)
-// 0x00002540 System.Object System.Diagnostics.Tracing.EnumUInt16TypeInfo`1::GetData(System.Object)
-// 0x00002541 System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1::.ctor()
-// 0x00002542 System.Void System.Diagnostics.Tracing.EnumInt32TypeInfo`1::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
-// 0x00002543 System.Void System.Diagnostics.Tracing.EnumInt32TypeInfo`1::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,EnumType&)
-// 0x00002544 System.Object System.Diagnostics.Tracing.EnumInt32TypeInfo`1::GetData(System.Object)
-// 0x00002545 System.Void System.Diagnostics.Tracing.EnumInt32TypeInfo`1::.ctor()
-// 0x00002546 System.Void System.Diagnostics.Tracing.EnumUInt32TypeInfo`1::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
-// 0x00002547 System.Void System.Diagnostics.Tracing.EnumUInt32TypeInfo`1::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,EnumType&)
-// 0x00002548 System.Object System.Diagnostics.Tracing.EnumUInt32TypeInfo`1::GetData(System.Object)
-// 0x00002549 System.Void System.Diagnostics.Tracing.EnumUInt32TypeInfo`1::.ctor()
-// 0x0000254A System.Void System.Diagnostics.Tracing.EnumInt64TypeInfo`1::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
-// 0x0000254B System.Void System.Diagnostics.Tracing.EnumInt64TypeInfo`1::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,EnumType&)
-// 0x0000254C System.Object System.Diagnostics.Tracing.EnumInt64TypeInfo`1::GetData(System.Object)
-// 0x0000254D System.Void System.Diagnostics.Tracing.EnumInt64TypeInfo`1::.ctor()
-// 0x0000254E System.Void System.Diagnostics.Tracing.EnumUInt64TypeInfo`1::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
-// 0x0000254F System.Void System.Diagnostics.Tracing.EnumUInt64TypeInfo`1::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,EnumType&)
-// 0x00002550 System.Object System.Diagnostics.Tracing.EnumUInt64TypeInfo`1::GetData(System.Object)
-// 0x00002551 System.Void System.Diagnostics.Tracing.EnumUInt64TypeInfo`1::.ctor()
-// 0x00002552 System.Void System.Diagnostics.Tracing.StringTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x00002535 System.Void System.Diagnostics.Tracing.EnumByteTypeInfo`1::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x00002536 System.Void System.Diagnostics.Tracing.EnumByteTypeInfo`1::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,EnumType&)
+// 0x00002537 System.Object System.Diagnostics.Tracing.EnumByteTypeInfo`1::GetData(System.Object)
+// 0x00002538 System.Void System.Diagnostics.Tracing.EnumByteTypeInfo`1::.ctor()
+// 0x00002539 System.Void System.Diagnostics.Tracing.EnumSByteTypeInfo`1::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x0000253A System.Void System.Diagnostics.Tracing.EnumSByteTypeInfo`1::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,EnumType&)
+// 0x0000253B System.Object System.Diagnostics.Tracing.EnumSByteTypeInfo`1::GetData(System.Object)
+// 0x0000253C System.Void System.Diagnostics.Tracing.EnumSByteTypeInfo`1::.ctor()
+// 0x0000253D System.Void System.Diagnostics.Tracing.EnumInt16TypeInfo`1::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x0000253E System.Void System.Diagnostics.Tracing.EnumInt16TypeInfo`1::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,EnumType&)
+// 0x0000253F System.Object System.Diagnostics.Tracing.EnumInt16TypeInfo`1::GetData(System.Object)
+// 0x00002540 System.Void System.Diagnostics.Tracing.EnumInt16TypeInfo`1::.ctor()
+// 0x00002541 System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x00002542 System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,EnumType&)
+// 0x00002543 System.Object System.Diagnostics.Tracing.EnumUInt16TypeInfo`1::GetData(System.Object)
+// 0x00002544 System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1::.ctor()
+// 0x00002545 System.Void System.Diagnostics.Tracing.EnumInt32TypeInfo`1::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x00002546 System.Void System.Diagnostics.Tracing.EnumInt32TypeInfo`1::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,EnumType&)
+// 0x00002547 System.Object System.Diagnostics.Tracing.EnumInt32TypeInfo`1::GetData(System.Object)
+// 0x00002548 System.Void System.Diagnostics.Tracing.EnumInt32TypeInfo`1::.ctor()
+// 0x00002549 System.Void System.Diagnostics.Tracing.EnumUInt32TypeInfo`1::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x0000254A System.Void System.Diagnostics.Tracing.EnumUInt32TypeInfo`1::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,EnumType&)
+// 0x0000254B System.Object System.Diagnostics.Tracing.EnumUInt32TypeInfo`1::GetData(System.Object)
+// 0x0000254C System.Void System.Diagnostics.Tracing.EnumUInt32TypeInfo`1::.ctor()
+// 0x0000254D System.Void System.Diagnostics.Tracing.EnumInt64TypeInfo`1::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x0000254E System.Void System.Diagnostics.Tracing.EnumInt64TypeInfo`1::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,EnumType&)
+// 0x0000254F System.Object System.Diagnostics.Tracing.EnumInt64TypeInfo`1::GetData(System.Object)
+// 0x00002550 System.Void System.Diagnostics.Tracing.EnumInt64TypeInfo`1::.ctor()
+// 0x00002551 System.Void System.Diagnostics.Tracing.EnumUInt64TypeInfo`1::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x00002552 System.Void System.Diagnostics.Tracing.EnumUInt64TypeInfo`1::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,EnumType&)
+// 0x00002553 System.Object System.Diagnostics.Tracing.EnumUInt64TypeInfo`1::GetData(System.Object)
+// 0x00002554 System.Void System.Diagnostics.Tracing.EnumUInt64TypeInfo`1::.ctor()
+// 0x00002555 System.Void System.Diagnostics.Tracing.StringTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
 extern void StringTypeInfo_WriteMetadata_m7BA77BB436D3ECA5D0CA4E897F498B64B983BF67 ();
-// 0x00002553 System.Void System.Diagnostics.Tracing.StringTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.String&)
+// 0x00002556 System.Void System.Diagnostics.Tracing.StringTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.String&)
 extern void StringTypeInfo_WriteData_mA87C3114049DFF26BA4F0C2505B303CCADD60202 ();
-// 0x00002554 System.Object System.Diagnostics.Tracing.StringTypeInfo::GetData(System.Object)
+// 0x00002557 System.Object System.Diagnostics.Tracing.StringTypeInfo::GetData(System.Object)
 extern void StringTypeInfo_GetData_mEB4630C27ED935B3728D577140D9902BA050E76B ();
-// 0x00002555 System.Void System.Diagnostics.Tracing.StringTypeInfo::.ctor()
+// 0x00002558 System.Void System.Diagnostics.Tracing.StringTypeInfo::.ctor()
 extern void StringTypeInfo__ctor_mCBEF207AA52314389CDE3589F55D5A3B4CA48ADD ();
-// 0x00002556 System.Void System.Diagnostics.Tracing.GuidTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x00002559 System.Void System.Diagnostics.Tracing.GuidTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
 extern void GuidTypeInfo_WriteMetadata_m9635C7C5CDDF712E6ECD663239C0F9C2F91400C5 ();
-// 0x00002557 System.Void System.Diagnostics.Tracing.GuidTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Guid&)
+// 0x0000255A System.Void System.Diagnostics.Tracing.GuidTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Guid&)
 extern void GuidTypeInfo_WriteData_m42291EB8518A2D5F5567A125EF6002484BECBCBF ();
-// 0x00002558 System.Void System.Diagnostics.Tracing.GuidTypeInfo::.ctor()
+// 0x0000255B System.Void System.Diagnostics.Tracing.GuidTypeInfo::.ctor()
 extern void GuidTypeInfo__ctor_m16193A1FFDF45604394A54B7D5695069EC1306B6 ();
-// 0x00002559 System.Void System.Diagnostics.Tracing.GuidArrayTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x0000255C System.Void System.Diagnostics.Tracing.GuidArrayTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
 extern void GuidArrayTypeInfo_WriteMetadata_m5730BE8FCDD94266193D0C8D871FB2E75E3158E2 ();
-// 0x0000255A System.Void System.Diagnostics.Tracing.GuidArrayTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Guid[]&)
+// 0x0000255D System.Void System.Diagnostics.Tracing.GuidArrayTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Guid[]&)
 extern void GuidArrayTypeInfo_WriteData_mD66FFBEB0080744526AAFA804C17347C2AF337EC ();
-// 0x0000255B System.Void System.Diagnostics.Tracing.GuidArrayTypeInfo::.ctor()
+// 0x0000255E System.Void System.Diagnostics.Tracing.GuidArrayTypeInfo::.ctor()
 extern void GuidArrayTypeInfo__ctor_m60FBBC3A58A030148BD5092494CF7DD8BCDD4584 ();
-// 0x0000255C System.Void System.Diagnostics.Tracing.DateTimeTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x0000255F System.Void System.Diagnostics.Tracing.DateTimeTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
 extern void DateTimeTypeInfo_WriteMetadata_m4BE24D3F7EF79D507A0EFFA0CD0DFC5F12D9B72E ();
-// 0x0000255D System.Void System.Diagnostics.Tracing.DateTimeTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.DateTime&)
+// 0x00002560 System.Void System.Diagnostics.Tracing.DateTimeTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.DateTime&)
 extern void DateTimeTypeInfo_WriteData_mFA2B7BBA92EC712E3D58C342C15EB42665F3D948 ();
-// 0x0000255E System.Void System.Diagnostics.Tracing.DateTimeTypeInfo::.ctor()
+// 0x00002561 System.Void System.Diagnostics.Tracing.DateTimeTypeInfo::.ctor()
 extern void DateTimeTypeInfo__ctor_m963A7C1FB683821F9728B33B2BA04C0D8A73B1F4 ();
-// 0x0000255F System.Void System.Diagnostics.Tracing.DateTimeOffsetTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x00002562 System.Void System.Diagnostics.Tracing.DateTimeOffsetTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
 extern void DateTimeOffsetTypeInfo_WriteMetadata_mB5CF44C8DD3E10801E57E5DE92AB3BBFEA77552F ();
-// 0x00002560 System.Void System.Diagnostics.Tracing.DateTimeOffsetTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.DateTimeOffset&)
+// 0x00002563 System.Void System.Diagnostics.Tracing.DateTimeOffsetTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.DateTimeOffset&)
 extern void DateTimeOffsetTypeInfo_WriteData_m7332322CA12B9611780B69333EDAE41C8FCFBF29 ();
-// 0x00002561 System.Void System.Diagnostics.Tracing.DateTimeOffsetTypeInfo::.ctor()
+// 0x00002564 System.Void System.Diagnostics.Tracing.DateTimeOffsetTypeInfo::.ctor()
 extern void DateTimeOffsetTypeInfo__ctor_m15CCCCC4AC20E4A3CE0A9F9F07D45C502A64C386 ();
-// 0x00002562 System.Void System.Diagnostics.Tracing.TimeSpanTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x00002565 System.Void System.Diagnostics.Tracing.TimeSpanTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
 extern void TimeSpanTypeInfo_WriteMetadata_m2CE971266F080B99103DD39DEACD4816BAA46941 ();
-// 0x00002563 System.Void System.Diagnostics.Tracing.TimeSpanTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.TimeSpan&)
+// 0x00002566 System.Void System.Diagnostics.Tracing.TimeSpanTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.TimeSpan&)
 extern void TimeSpanTypeInfo_WriteData_m81F5FADA9F320944D55D956560A45A00DFC8A938 ();
-// 0x00002564 System.Void System.Diagnostics.Tracing.TimeSpanTypeInfo::.ctor()
+// 0x00002567 System.Void System.Diagnostics.Tracing.TimeSpanTypeInfo::.ctor()
 extern void TimeSpanTypeInfo__ctor_m61DE1869347F3CAD1FD95898E7E6BFDBB82EF248 ();
-// 0x00002565 System.Void System.Diagnostics.Tracing.DecimalTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x00002568 System.Void System.Diagnostics.Tracing.DecimalTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
 extern void DecimalTypeInfo_WriteMetadata_m0DF80910557674432657F9301DA0F2DA238B285F ();
-// 0x00002566 System.Void System.Diagnostics.Tracing.DecimalTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Decimal&)
+// 0x00002569 System.Void System.Diagnostics.Tracing.DecimalTypeInfo::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Decimal&)
 extern void DecimalTypeInfo_WriteData_m0B7A8C4A3B2D4FF9E765B48AF93587DA6D2098AA ();
-// 0x00002567 System.Void System.Diagnostics.Tracing.DecimalTypeInfo::.ctor()
+// 0x0000256A System.Void System.Diagnostics.Tracing.DecimalTypeInfo::.ctor()
 extern void DecimalTypeInfo__ctor_mF2531EBF69BEC23272D7EBC06FB6CB789EE282A3 ();
-// 0x00002568 System.Void System.Diagnostics.Tracing.KeyValuePairTypeInfo`2::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
-// 0x00002569 System.Void System.Diagnostics.Tracing.KeyValuePairTypeInfo`2::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Collections.Generic.KeyValuePair`2<K,V>&)
-// 0x0000256A System.Void System.Diagnostics.Tracing.NullableTypeInfo`1::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
-// 0x0000256B System.Void System.Diagnostics.Tracing.NullableTypeInfo`1::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Nullable`1<T>&)
-// 0x0000256C System.Byte[] System.Diagnostics.Tracing.Statics::MetadataForString(System.String,System.Int32,System.Int32,System.Int32)
+// 0x0000256B System.Void System.Diagnostics.Tracing.KeyValuePairTypeInfo`2::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x0000256C System.Void System.Diagnostics.Tracing.KeyValuePairTypeInfo`2::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Collections.Generic.KeyValuePair`2<K,V>&)
+// 0x0000256D System.Void System.Diagnostics.Tracing.NullableTypeInfo`1::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x0000256E System.Void System.Diagnostics.Tracing.NullableTypeInfo`1::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Nullable`1<T>&)
+// 0x0000256F System.Byte[] System.Diagnostics.Tracing.Statics::MetadataForString(System.String,System.Int32,System.Int32,System.Int32)
 extern void Statics_MetadataForString_m53EAC9E9AD6BA8CB18BB3ABE008C4D5D2725C34D ();
-// 0x0000256D System.Void System.Diagnostics.Tracing.Statics::EncodeTags(System.Int32,System.Int32&,System.Byte[])
+// 0x00002570 System.Void System.Diagnostics.Tracing.Statics::EncodeTags(System.Int32,System.Int32&,System.Byte[])
 extern void Statics_EncodeTags_m23393859C6E4565A03D11540CE8A133DBCC5A453 ();
-// 0x0000256E System.Byte System.Diagnostics.Tracing.Statics::Combine(System.Int32,System.Byte)
+// 0x00002571 System.Byte System.Diagnostics.Tracing.Statics::Combine(System.Int32,System.Byte)
 extern void Statics_Combine_m8FC035624CCB68893AEC92F51283B310EA34A1FE ();
-// 0x0000256F System.Int32 System.Diagnostics.Tracing.Statics::Combine(System.Int32,System.Int32)
+// 0x00002572 System.Int32 System.Diagnostics.Tracing.Statics::Combine(System.Int32,System.Int32)
 extern void Statics_Combine_m0AEA4E5998C70D965FB75058CC425FEE60BE1AB7 ();
-// 0x00002570 System.Void System.Diagnostics.Tracing.Statics::CheckName(System.String)
+// 0x00002573 System.Void System.Diagnostics.Tracing.Statics::CheckName(System.String)
 extern void Statics_CheckName_m001904DCAB16ACBA3DB970F2497D6032BBE26EDE ();
-// 0x00002571 System.Boolean System.Diagnostics.Tracing.Statics::ShouldOverrideFieldName(System.String)
+// 0x00002574 System.Boolean System.Diagnostics.Tracing.Statics::ShouldOverrideFieldName(System.String)
 extern void Statics_ShouldOverrideFieldName_mDAF0438FDC16831195015D2F1C7563CFDAB740C5 ();
-// 0x00002572 System.Diagnostics.Tracing.TraceLoggingDataType System.Diagnostics.Tracing.Statics::MakeDataType(System.Diagnostics.Tracing.TraceLoggingDataType,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x00002575 System.Diagnostics.Tracing.TraceLoggingDataType System.Diagnostics.Tracing.Statics::MakeDataType(System.Diagnostics.Tracing.TraceLoggingDataType,System.Diagnostics.Tracing.EventFieldFormat)
 extern void Statics_MakeDataType_m9C2ED4465BB2F30FED6D80D9A5237168265DF644 ();
-// 0x00002573 System.Diagnostics.Tracing.TraceLoggingDataType System.Diagnostics.Tracing.Statics::Format8(System.Diagnostics.Tracing.EventFieldFormat,System.Diagnostics.Tracing.TraceLoggingDataType)
+// 0x00002576 System.Diagnostics.Tracing.TraceLoggingDataType System.Diagnostics.Tracing.Statics::Format8(System.Diagnostics.Tracing.EventFieldFormat,System.Diagnostics.Tracing.TraceLoggingDataType)
 extern void Statics_Format8_m1C71026EA0BAB2008E3F0DC1889869CEE6D3822D ();
-// 0x00002574 System.Diagnostics.Tracing.TraceLoggingDataType System.Diagnostics.Tracing.Statics::Format16(System.Diagnostics.Tracing.EventFieldFormat,System.Diagnostics.Tracing.TraceLoggingDataType)
+// 0x00002577 System.Diagnostics.Tracing.TraceLoggingDataType System.Diagnostics.Tracing.Statics::Format16(System.Diagnostics.Tracing.EventFieldFormat,System.Diagnostics.Tracing.TraceLoggingDataType)
 extern void Statics_Format16_m307BF384650F500E54F521F17E146DBBB98F4D08 ();
-// 0x00002575 System.Diagnostics.Tracing.TraceLoggingDataType System.Diagnostics.Tracing.Statics::Format32(System.Diagnostics.Tracing.EventFieldFormat,System.Diagnostics.Tracing.TraceLoggingDataType)
+// 0x00002578 System.Diagnostics.Tracing.TraceLoggingDataType System.Diagnostics.Tracing.Statics::Format32(System.Diagnostics.Tracing.EventFieldFormat,System.Diagnostics.Tracing.TraceLoggingDataType)
 extern void Statics_Format32_mA958A8DDBBC7C05DD61B456C4835D04C34B508A4 ();
-// 0x00002576 System.Diagnostics.Tracing.TraceLoggingDataType System.Diagnostics.Tracing.Statics::Format64(System.Diagnostics.Tracing.EventFieldFormat,System.Diagnostics.Tracing.TraceLoggingDataType)
+// 0x00002579 System.Diagnostics.Tracing.TraceLoggingDataType System.Diagnostics.Tracing.Statics::Format64(System.Diagnostics.Tracing.EventFieldFormat,System.Diagnostics.Tracing.TraceLoggingDataType)
 extern void Statics_Format64_m9EA165BBDCDC6E40774219DC6EB0214564FC5184 ();
-// 0x00002577 System.Diagnostics.Tracing.TraceLoggingDataType System.Diagnostics.Tracing.Statics::FormatPtr(System.Diagnostics.Tracing.EventFieldFormat,System.Diagnostics.Tracing.TraceLoggingDataType)
+// 0x0000257A System.Diagnostics.Tracing.TraceLoggingDataType System.Diagnostics.Tracing.Statics::FormatPtr(System.Diagnostics.Tracing.EventFieldFormat,System.Diagnostics.Tracing.TraceLoggingDataType)
 extern void Statics_FormatPtr_m00FD8183206A97949E3FD18EF644E9E1F8B1A5D5 ();
-// 0x00002578 System.Object System.Diagnostics.Tracing.Statics::CreateInstance(System.Type,System.Object[])
+// 0x0000257B System.Object System.Diagnostics.Tracing.Statics::CreateInstance(System.Type,System.Object[])
 extern void Statics_CreateInstance_m98A7DC128B291FF331E452EEE9F581AFB2CA6C0A ();
-// 0x00002579 System.Boolean System.Diagnostics.Tracing.Statics::IsValueType(System.Type)
+// 0x0000257C System.Boolean System.Diagnostics.Tracing.Statics::IsValueType(System.Type)
 extern void Statics_IsValueType_mA0D42D4823CA219F808641A80507260D2CC249A1 ();
-// 0x0000257A System.Boolean System.Diagnostics.Tracing.Statics::IsEnum(System.Type)
+// 0x0000257D System.Boolean System.Diagnostics.Tracing.Statics::IsEnum(System.Type)
 extern void Statics_IsEnum_m9CD80B63044F16008C4CA89353FA72D2CA63EABF ();
-// 0x0000257B System.Collections.Generic.IEnumerable`1<System.Reflection.PropertyInfo> System.Diagnostics.Tracing.Statics::GetProperties(System.Type)
+// 0x0000257E System.Collections.Generic.IEnumerable`1<System.Reflection.PropertyInfo> System.Diagnostics.Tracing.Statics::GetProperties(System.Type)
 extern void Statics_GetProperties_m5DFC41E95E0807B7F0EE158533B1B386AC80FAD1 ();
-// 0x0000257C System.Reflection.MethodInfo System.Diagnostics.Tracing.Statics::GetGetMethod(System.Reflection.PropertyInfo)
+// 0x0000257F System.Reflection.MethodInfo System.Diagnostics.Tracing.Statics::GetGetMethod(System.Reflection.PropertyInfo)
 extern void Statics_GetGetMethod_mE98B4885D792A561AD1E0D5F019D080D45C193C4 ();
-// 0x0000257D System.Reflection.MethodInfo System.Diagnostics.Tracing.Statics::GetDeclaredStaticMethod(System.Type,System.String)
+// 0x00002580 System.Reflection.MethodInfo System.Diagnostics.Tracing.Statics::GetDeclaredStaticMethod(System.Type,System.String)
 extern void Statics_GetDeclaredStaticMethod_mEE3CD2B73C69050E9AF25D41A3D30F1E9EF4ACD4 ();
-// 0x0000257E System.Boolean System.Diagnostics.Tracing.Statics::HasCustomAttribute(System.Reflection.PropertyInfo,System.Type)
+// 0x00002581 System.Boolean System.Diagnostics.Tracing.Statics::HasCustomAttribute(System.Reflection.PropertyInfo,System.Type)
 extern void Statics_HasCustomAttribute_m4CBBA23FEE129EEFE8E35786BAE38CD6CB619F55 ();
-// 0x0000257F AttributeType System.Diagnostics.Tracing.Statics::GetCustomAttribute(System.Reflection.PropertyInfo)
-// 0x00002580 AttributeType System.Diagnostics.Tracing.Statics::GetCustomAttribute(System.Type)
-// 0x00002581 System.Type[] System.Diagnostics.Tracing.Statics::GetGenericArguments(System.Type)
+// 0x00002582 AttributeType System.Diagnostics.Tracing.Statics::GetCustomAttribute(System.Reflection.PropertyInfo)
+// 0x00002583 AttributeType System.Diagnostics.Tracing.Statics::GetCustomAttribute(System.Type)
+// 0x00002584 System.Type[] System.Diagnostics.Tracing.Statics::GetGenericArguments(System.Type)
 extern void Statics_GetGenericArguments_m31D1FF50706DDF53DA40BACF27E0942F3A4E85A9 ();
-// 0x00002582 System.Type System.Diagnostics.Tracing.Statics::FindEnumerableElementType(System.Type)
+// 0x00002585 System.Type System.Diagnostics.Tracing.Statics::FindEnumerableElementType(System.Type)
 extern void Statics_FindEnumerableElementType_mE2B9BCD8FECD8262FA51BED1DD0AE91DD8C37180 ();
-// 0x00002583 System.Boolean System.Diagnostics.Tracing.Statics::IsGenericMatch(System.Type,System.Object)
+// 0x00002586 System.Boolean System.Diagnostics.Tracing.Statics::IsGenericMatch(System.Type,System.Object)
 extern void Statics_IsGenericMatch_mB50849B2448DCAA07CD8C30B0EF05613CA6C4699 ();
-// 0x00002584 System.Delegate System.Diagnostics.Tracing.Statics::CreateDelegate(System.Type,System.Reflection.MethodInfo)
+// 0x00002587 System.Delegate System.Diagnostics.Tracing.Statics::CreateDelegate(System.Type,System.Reflection.MethodInfo)
 extern void Statics_CreateDelegate_mF1C37CC7EA4839A092250B6E298BC5D6155F51E6 ();
-// 0x00002585 System.Diagnostics.Tracing.TraceLoggingTypeInfo System.Diagnostics.Tracing.Statics::GetTypeInfoInstance(System.Type,System.Collections.Generic.List`1<System.Type>)
+// 0x00002588 System.Diagnostics.Tracing.TraceLoggingTypeInfo System.Diagnostics.Tracing.Statics::GetTypeInfoInstance(System.Type,System.Collections.Generic.List`1<System.Type>)
 extern void Statics_GetTypeInfoInstance_mA015F72885AA57E7724BE14A8BE2AA83D93BC4A6 ();
-// 0x00002586 System.Diagnostics.Tracing.TraceLoggingTypeInfo`1<DataType> System.Diagnostics.Tracing.Statics::CreateDefaultTypeInfo(System.Collections.Generic.List`1<System.Type>)
-// 0x00002587 System.Void System.Diagnostics.Tracing.Statics::.cctor()
+// 0x00002589 System.Diagnostics.Tracing.TraceLoggingTypeInfo`1<DataType> System.Diagnostics.Tracing.Statics::CreateDefaultTypeInfo(System.Collections.Generic.List`1<System.Type>)
+// 0x0000258A System.Void System.Diagnostics.Tracing.Statics::.cctor()
 extern void Statics__cctor_m9E6415F9158F8E880C890D69A7E82A393871A7C5 ();
-// 0x00002588 System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::.ctor()
+// 0x0000258B System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::.ctor()
 extern void TraceLoggingDataCollector__ctor_m4CB8F762D485A018F9200649D56FCCA04BF7053C ();
-// 0x00002589 System.Int32 System.Diagnostics.Tracing.TraceLoggingDataCollector::BeginBufferedArray()
+// 0x0000258C System.Int32 System.Diagnostics.Tracing.TraceLoggingDataCollector::BeginBufferedArray()
 extern void TraceLoggingDataCollector_BeginBufferedArray_m91FF12562BC919A7C536F6845DE205A13C9D489B ();
-// 0x0000258A System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::EndBufferedArray(System.Int32,System.Int32)
+// 0x0000258D System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::EndBufferedArray(System.Int32,System.Int32)
 extern void TraceLoggingDataCollector_EndBufferedArray_m7973ADCE6DA8C4717FACC298D317F417833C10A5 ();
-// 0x0000258B System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddScalar(System.Boolean)
+// 0x0000258E System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddScalar(System.Boolean)
 extern void TraceLoggingDataCollector_AddScalar_m030CF1F0AAABF9BA35B0AA6620E0902B72BFBA6F ();
-// 0x0000258C System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddScalar(System.SByte)
+// 0x0000258F System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddScalar(System.SByte)
 extern void TraceLoggingDataCollector_AddScalar_m19856EAB8A7B3627A41A2D0BC36E9561E3B8361D ();
-// 0x0000258D System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddScalar(System.Byte)
+// 0x00002590 System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddScalar(System.Byte)
 extern void TraceLoggingDataCollector_AddScalar_mDDFC0EB23CCD9845D919E0DF87A3E00963B39FCF ();
-// 0x0000258E System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddScalar(System.Int16)
+// 0x00002591 System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddScalar(System.Int16)
 extern void TraceLoggingDataCollector_AddScalar_mC374FF8A83BCBF186C122FBF7BE527B31E8519AD ();
-// 0x0000258F System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddScalar(System.UInt16)
+// 0x00002592 System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddScalar(System.UInt16)
 extern void TraceLoggingDataCollector_AddScalar_mC4001DABF0B0A58EBB93275501D999A00D7F61C6 ();
-// 0x00002590 System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddScalar(System.Int32)
+// 0x00002593 System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddScalar(System.Int32)
 extern void TraceLoggingDataCollector_AddScalar_mF71D9A7523C70D7771FE22212CB301288C22980A ();
-// 0x00002591 System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddScalar(System.UInt32)
+// 0x00002594 System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddScalar(System.UInt32)
 extern void TraceLoggingDataCollector_AddScalar_m3A8375255FAD53CE4EF938960ABCD165FC6727FF ();
-// 0x00002592 System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddScalar(System.Int64)
+// 0x00002595 System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddScalar(System.Int64)
 extern void TraceLoggingDataCollector_AddScalar_mE84AEED03D7F7EDD965444C4A8A575FF99B78E1A ();
-// 0x00002593 System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddScalar(System.UInt64)
+// 0x00002596 System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddScalar(System.UInt64)
 extern void TraceLoggingDataCollector_AddScalar_mA03D31A793FC01F72566FEB94EEE344ABBA25840 ();
-// 0x00002594 System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddScalar(System.IntPtr)
+// 0x00002597 System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddScalar(System.IntPtr)
 extern void TraceLoggingDataCollector_AddScalar_m71E11032CE1F1164095A4E11CDC2660F0457B62B ();
-// 0x00002595 System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddScalar(System.UIntPtr)
+// 0x00002598 System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddScalar(System.UIntPtr)
 extern void TraceLoggingDataCollector_AddScalar_m5ED233D2CA9BA4750539B94FBBE49110025A5086 ();
-// 0x00002596 System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddScalar(System.Single)
+// 0x00002599 System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddScalar(System.Single)
 extern void TraceLoggingDataCollector_AddScalar_m3277CF920B647C5CCC7B425A9743D1D9E766FC31 ();
-// 0x00002597 System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddScalar(System.Double)
+// 0x0000259A System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddScalar(System.Double)
 extern void TraceLoggingDataCollector_AddScalar_m075915BEBFC9E59FB99C82B93B172439A96494D6 ();
-// 0x00002598 System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddScalar(System.Char)
+// 0x0000259B System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddScalar(System.Char)
 extern void TraceLoggingDataCollector_AddScalar_m2EE5A680F8697DA177197C284601CF9BF8903222 ();
-// 0x00002599 System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddScalar(System.Guid)
+// 0x0000259C System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddScalar(System.Guid)
 extern void TraceLoggingDataCollector_AddScalar_m7CCD2526F15B901CC200BA8767D1293C8A50FF2D ();
-// 0x0000259A System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddBinary(System.String)
+// 0x0000259D System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddBinary(System.String)
 extern void TraceLoggingDataCollector_AddBinary_m816F3D72D6356A9016DCFC873BB18F31D3D00F08 ();
-// 0x0000259B System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddBinary(System.Byte[])
+// 0x0000259E System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddBinary(System.Byte[])
 extern void TraceLoggingDataCollector_AddBinary_m64DF06B69258BB59BBAD7C6FF1158EA31BBF93D0 ();
-// 0x0000259C System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddArray(System.Boolean[])
+// 0x0000259F System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddArray(System.Boolean[])
 extern void TraceLoggingDataCollector_AddArray_m1440855FB11E1D00775EF965F243085370635048 ();
-// 0x0000259D System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddArray(System.SByte[])
+// 0x000025A0 System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddArray(System.SByte[])
 extern void TraceLoggingDataCollector_AddArray_m08BD4382BDFEBD4587DB60C10562B8F2E537D989 ();
-// 0x0000259E System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddArray(System.Int16[])
+// 0x000025A1 System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddArray(System.Int16[])
 extern void TraceLoggingDataCollector_AddArray_m1BC48EAF4F2E9DA95AE76D9EA98B44C20E79F01D ();
-// 0x0000259F System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddArray(System.UInt16[])
+// 0x000025A2 System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddArray(System.UInt16[])
 extern void TraceLoggingDataCollector_AddArray_m7FC7AC33CB29E1631DA57F8A5655C2BCA4B156B8 ();
-// 0x000025A0 System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddArray(System.Int32[])
+// 0x000025A3 System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddArray(System.Int32[])
 extern void TraceLoggingDataCollector_AddArray_mA5562435B07941B497C390BADA90476D3AEE0545 ();
-// 0x000025A1 System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddArray(System.UInt32[])
+// 0x000025A4 System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddArray(System.UInt32[])
 extern void TraceLoggingDataCollector_AddArray_mD71A1CEEC1FD6E51D5E74065306089DE07418995 ();
-// 0x000025A2 System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddArray(System.Int64[])
+// 0x000025A5 System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddArray(System.Int64[])
 extern void TraceLoggingDataCollector_AddArray_m1AA74DD4E25E34905CD48CFCFBEBF4ABA32274D6 ();
-// 0x000025A3 System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddArray(System.UInt64[])
+// 0x000025A6 System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddArray(System.UInt64[])
 extern void TraceLoggingDataCollector_AddArray_m9441D79F32E8FA07EF0814D951CADD8C5530CD82 ();
-// 0x000025A4 System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddArray(System.IntPtr[])
+// 0x000025A7 System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddArray(System.IntPtr[])
 extern void TraceLoggingDataCollector_AddArray_mA0C2DF68F4375AA0226E8E489974B7348EFAA6A1 ();
-// 0x000025A5 System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddArray(System.UIntPtr[])
+// 0x000025A8 System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddArray(System.UIntPtr[])
 extern void TraceLoggingDataCollector_AddArray_mF562DD1AE2222F9B6D47DD20DC59F084D5E78452 ();
-// 0x000025A6 System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddArray(System.Single[])
+// 0x000025A9 System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddArray(System.Single[])
 extern void TraceLoggingDataCollector_AddArray_m76E2D1994E47488488F231C51F7133FD0E76C143 ();
-// 0x000025A7 System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddArray(System.Double[])
+// 0x000025AA System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddArray(System.Double[])
 extern void TraceLoggingDataCollector_AddArray_mD60FAB2811AD7D19E8E40FB15D788A3A01F5CA19 ();
-// 0x000025A8 System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddArray(System.Char[])
+// 0x000025AB System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddArray(System.Char[])
 extern void TraceLoggingDataCollector_AddArray_m0AA3C1566B2BCAB6F0306AFFC8ED3E258F55DC98 ();
-// 0x000025A9 System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddArray(System.Guid[])
+// 0x000025AC System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::AddArray(System.Guid[])
 extern void TraceLoggingDataCollector_AddArray_m817113A967AFB39C7DA9417AB3B90D48CAF2381A ();
-// 0x000025AA System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::.cctor()
+// 0x000025AD System.Void System.Diagnostics.Tracing.TraceLoggingDataCollector::.cctor()
 extern void TraceLoggingDataCollector__cctor_mA360AB2B8F61E680D6728A35C0CB957BBF2A55C3 ();
-// 0x000025AB System.Void System.Diagnostics.Tracing.EventSource::WriteMultiMerge(System.String,System.Diagnostics.Tracing.EventSourceOptions&,System.Diagnostics.Tracing.TraceLoggingEventTypes,System.Guid*,System.Guid*,System.Object[])
+// 0x000025AE System.Void System.Diagnostics.Tracing.EventSource::WriteMultiMerge(System.String,System.Diagnostics.Tracing.EventSourceOptions&,System.Diagnostics.Tracing.TraceLoggingEventTypes,System.Guid*,System.Guid*,System.Object[])
 extern void EventSource_WriteMultiMerge_mDC46442C56B718279ABC9243D06516958E3D52A3 ();
-// 0x000025AC System.Void System.Diagnostics.Tracing.EventSource::WriteMultiMergeInner(System.String,System.Diagnostics.Tracing.EventSourceOptions&,System.Diagnostics.Tracing.TraceLoggingEventTypes,System.Guid*,System.Guid*,System.Object[])
+// 0x000025AF System.Void System.Diagnostics.Tracing.EventSource::WriteMultiMergeInner(System.String,System.Diagnostics.Tracing.EventSourceOptions&,System.Diagnostics.Tracing.TraceLoggingEventTypes,System.Guid*,System.Guid*,System.Object[])
 extern void EventSource_WriteMultiMergeInner_m4A2DB1EE170667A126A10EC907AB736BF27742A7 ();
-// 0x000025AD System.Void System.Diagnostics.Tracing.EventSource::WriteMultiMerge(System.String,System.Diagnostics.Tracing.EventSourceOptions&,System.Diagnostics.Tracing.TraceLoggingEventTypes,System.Guid*,System.Guid*,System.Diagnostics.Tracing.EventSource_EventData*)
+// 0x000025B0 System.Void System.Diagnostics.Tracing.EventSource::WriteMultiMerge(System.String,System.Diagnostics.Tracing.EventSourceOptions&,System.Diagnostics.Tracing.TraceLoggingEventTypes,System.Guid*,System.Guid*,System.Diagnostics.Tracing.EventSource_EventData*)
 extern void EventSource_WriteMultiMerge_mE28FE5172F6CDBBB9DA939763E49E8170C737FBA ();
-// 0x000025AE System.Void System.Diagnostics.Tracing.EventSource::WriteCleanup(System.Runtime.InteropServices.GCHandle*,System.Int32)
+// 0x000025B1 System.Void System.Diagnostics.Tracing.EventSource::WriteCleanup(System.Runtime.InteropServices.GCHandle*,System.Int32)
 extern void EventSource_WriteCleanup_m9BFDFCC89E5EBB1B1949B8F3437ED35F158DD642 ();
-// 0x000025AF System.Void System.Diagnostics.Tracing.EventSource::InitializeProviderMetadata()
+// 0x000025B2 System.Void System.Diagnostics.Tracing.EventSource::InitializeProviderMetadata()
 extern void EventSource_InitializeProviderMetadata_m676D1CFEE8AF394C647AB4626141DCB44EB0E690 ();
-// 0x000025B0 System.Int32 System.Diagnostics.Tracing.EventSource::AddValueToMetaData(System.Collections.Generic.List`1<System.Byte>,System.String)
+// 0x000025B3 System.Int32 System.Diagnostics.Tracing.EventSource::AddValueToMetaData(System.Collections.Generic.List`1<System.Byte>,System.String)
 extern void EventSource_AddValueToMetaData_mD330620B11E64D53B9CCE4E6EA1E7D53EBACC05C ();
-// 0x000025B1 System.Int32 System.Diagnostics.Tracing.EventSource::HexDigit(System.Char)
+// 0x000025B4 System.Int32 System.Diagnostics.Tracing.EventSource::HexDigit(System.Char)
 extern void EventSource_HexDigit_mE5A6532D03CC8994C6ED0C3B9CAD0D74EAD670D5 ();
-// 0x000025B2 System.Diagnostics.Tracing.NameInfo System.Diagnostics.Tracing.EventSource::UpdateDescriptor(System.String,System.Diagnostics.Tracing.TraceLoggingEventTypes,System.Diagnostics.Tracing.EventSourceOptions&,System.Diagnostics.Tracing.EventDescriptor&)
+// 0x000025B5 System.Diagnostics.Tracing.NameInfo System.Diagnostics.Tracing.EventSource::UpdateDescriptor(System.String,System.Diagnostics.Tracing.TraceLoggingEventTypes,System.Diagnostics.Tracing.EventSourceOptions&,System.Diagnostics.Tracing.EventDescriptor&)
 extern void EventSource_UpdateDescriptor_mD988BD298BD4BC7C4BA81A18982DE214055D1A7C ();
-// 0x000025B3 System.String System.Diagnostics.Tracing.EventSource::get_Name()
+// 0x000025B6 System.String System.Diagnostics.Tracing.EventSource::get_Name()
 extern void EventSource_get_Name_mABD8C2F600FE94C317D03931E0FE6C7F03637191 ();
-// 0x000025B4 System.Guid System.Diagnostics.Tracing.EventSource::get_Guid()
+// 0x000025B7 System.Guid System.Diagnostics.Tracing.EventSource::get_Guid()
 extern void EventSource_get_Guid_m3394EA3EBA76E0308CEF04768FC752256A272131 ();
-// 0x000025B5 System.Boolean System.Diagnostics.Tracing.EventSource::IsEnabled()
+// 0x000025B8 System.Boolean System.Diagnostics.Tracing.EventSource::IsEnabled()
 extern void EventSource_IsEnabled_m37942F59ECF17A141C3F1CE0FD2041CDB2A1486E ();
-// 0x000025B6 System.Boolean System.Diagnostics.Tracing.EventSource::IsEnabled(System.Diagnostics.Tracing.EventLevel,System.Diagnostics.Tracing.EventKeywords)
+// 0x000025B9 System.Boolean System.Diagnostics.Tracing.EventSource::IsEnabled(System.Diagnostics.Tracing.EventLevel,System.Diagnostics.Tracing.EventKeywords)
 extern void EventSource_IsEnabled_mD4697D2FE23E685D66BBC81F3BB5AF7668167DDC ();
-// 0x000025B7 System.Boolean System.Diagnostics.Tracing.EventSource::IsEnabled(System.Diagnostics.Tracing.EventLevel,System.Diagnostics.Tracing.EventKeywords,System.Diagnostics.Tracing.EventChannel)
+// 0x000025BA System.Boolean System.Diagnostics.Tracing.EventSource::IsEnabled(System.Diagnostics.Tracing.EventLevel,System.Diagnostics.Tracing.EventKeywords,System.Diagnostics.Tracing.EventChannel)
 extern void EventSource_IsEnabled_m5AE75285968280B58AA9B7B16140825FDB720F9D ();
-// 0x000025B8 System.Guid System.Diagnostics.Tracing.EventSource::GetGuid(System.Type)
+// 0x000025BB System.Guid System.Diagnostics.Tracing.EventSource::GetGuid(System.Type)
 extern void EventSource_GetGuid_mDC7778A0D413EE6FFF174026CBD083B8DE59A3AC ();
-// 0x000025B9 System.String System.Diagnostics.Tracing.EventSource::GetName(System.Type)
+// 0x000025BC System.String System.Diagnostics.Tracing.EventSource::GetName(System.Type)
 extern void EventSource_GetName_m61DBFEE5EF6DEED0344196BE7E63129109FFD8DD ();
-// 0x000025BA System.Void System.Diagnostics.Tracing.EventSource::SetCurrentThreadActivityId(System.Guid)
+// 0x000025BD System.Void System.Diagnostics.Tracing.EventSource::SetCurrentThreadActivityId(System.Guid)
 extern void EventSource_SetCurrentThreadActivityId_m801DDE9F133D4E31C8965858AB4CDB708E0F0442 ();
-// 0x000025BB System.Guid System.Diagnostics.Tracing.EventSource::get_CurrentThreadActivityId()
+// 0x000025BE System.Guid System.Diagnostics.Tracing.EventSource::get_CurrentThreadActivityId()
 extern void EventSource_get_CurrentThreadActivityId_m8D74643E8786AFAFBBE37E174271CF942228E427 ();
-// 0x000025BC System.Guid System.Diagnostics.Tracing.EventSource::get_InternalCurrentThreadActivityId()
+// 0x000025BF System.Guid System.Diagnostics.Tracing.EventSource::get_InternalCurrentThreadActivityId()
 extern void EventSource_get_InternalCurrentThreadActivityId_m8620A6D4474016C5B1C8E067E0483D431AFB15B5 ();
-// 0x000025BD System.Guid System.Diagnostics.Tracing.EventSource::get_FallbackActivityId()
+// 0x000025C0 System.Guid System.Diagnostics.Tracing.EventSource::get_FallbackActivityId()
 extern void EventSource_get_FallbackActivityId_m64F92C11C652C9E1AC7F8818CBC77700BC949940 ();
-// 0x000025BE System.String System.Diagnostics.Tracing.EventSource::ToString()
+// 0x000025C1 System.String System.Diagnostics.Tracing.EventSource::ToString()
 extern void EventSource_ToString_m0265BBC34A7D8001FE1819300765B1E62F56D80E ();
-// 0x000025BF System.Void System.Diagnostics.Tracing.EventSource::.ctor()
+// 0x000025C2 System.Void System.Diagnostics.Tracing.EventSource::.ctor()
 extern void EventSource__ctor_m609A5F8A53C64F1F7E5CEEE5427E77F4D3F4B52A ();
-// 0x000025C0 System.Void System.Diagnostics.Tracing.EventSource::.ctor(System.Diagnostics.Tracing.EventSourceSettings)
+// 0x000025C3 System.Void System.Diagnostics.Tracing.EventSource::.ctor(System.Diagnostics.Tracing.EventSourceSettings)
 extern void EventSource__ctor_mB386B8134304A663129B2AE557487685C91A927B ();
-// 0x000025C1 System.Void System.Diagnostics.Tracing.EventSource::.ctor(System.Diagnostics.Tracing.EventSourceSettings,System.String[])
+// 0x000025C4 System.Void System.Diagnostics.Tracing.EventSource::.ctor(System.Diagnostics.Tracing.EventSourceSettings,System.String[])
 extern void EventSource__ctor_mF8965DE244C1780B06C51E727B299E74A0798A4B ();
-// 0x000025C2 System.Void System.Diagnostics.Tracing.EventSource::OnEventCommand(System.Diagnostics.Tracing.EventCommandEventArgs)
+// 0x000025C5 System.Void System.Diagnostics.Tracing.EventSource::OnEventCommand(System.Diagnostics.Tracing.EventCommandEventArgs)
 extern void EventSource_OnEventCommand_mFAB609F2FCE61EF095D1FDD2AE94A7CF4DEE0209 ();
-// 0x000025C3 System.Void System.Diagnostics.Tracing.EventSource::WriteEvent(System.Int32,System.Int32)
+// 0x000025C6 System.Void System.Diagnostics.Tracing.EventSource::WriteEvent(System.Int32,System.Int32)
 extern void EventSource_WriteEvent_m44D8648B0F8F664487F15BEA6E13AE6D81543CB8 ();
-// 0x000025C4 System.Void System.Diagnostics.Tracing.EventSource::WriteEvent(System.Int32,System.String,System.String)
+// 0x000025C7 System.Void System.Diagnostics.Tracing.EventSource::WriteEvent(System.Int32,System.String,System.String)
 extern void EventSource_WriteEvent_mE27A6FC640BF894A83640A57FD16C9C26AB9FDF9 ();
-// 0x000025C5 System.Void System.Diagnostics.Tracing.EventSource::WriteEvent(System.Int32,System.String,System.String,System.String)
+// 0x000025C8 System.Void System.Diagnostics.Tracing.EventSource::WriteEvent(System.Int32,System.String,System.String,System.String)
 extern void EventSource_WriteEvent_m09CF0FC5F066EF4464A34539CE25033532AB6EC4 ();
-// 0x000025C6 System.Void System.Diagnostics.Tracing.EventSource::WriteEventCore(System.Int32,System.Int32,System.Diagnostics.Tracing.EventSource_EventData*)
+// 0x000025C9 System.Void System.Diagnostics.Tracing.EventSource::WriteEventCore(System.Int32,System.Int32,System.Diagnostics.Tracing.EventSource_EventData*)
 extern void EventSource_WriteEventCore_m662D7C156AC77E89457BA453C735A5D209A138EF ();
-// 0x000025C7 System.Void System.Diagnostics.Tracing.EventSource::WriteEventWithRelatedActivityIdCore(System.Int32,System.Guid*,System.Int32,System.Diagnostics.Tracing.EventSource_EventData*)
+// 0x000025CA System.Void System.Diagnostics.Tracing.EventSource::WriteEventWithRelatedActivityIdCore(System.Int32,System.Guid*,System.Int32,System.Diagnostics.Tracing.EventSource_EventData*)
 extern void EventSource_WriteEventWithRelatedActivityIdCore_m05FFB47325B826566B3C4B8ED415BB90BDDA2661 ();
-// 0x000025C8 System.Void System.Diagnostics.Tracing.EventSource::WriteEvent(System.Int32,System.Object[])
+// 0x000025CB System.Void System.Diagnostics.Tracing.EventSource::WriteEvent(System.Int32,System.Object[])
 extern void EventSource_WriteEvent_m07CFBC104154E61897EFBA392944181E34C0200F ();
-// 0x000025C9 System.Void System.Diagnostics.Tracing.EventSource::Dispose()
+// 0x000025CC System.Void System.Diagnostics.Tracing.EventSource::Dispose()
 extern void EventSource_Dispose_m2B3962369A463AB6DC62A63CEBA0D557ADB094FA ();
-// 0x000025CA System.Void System.Diagnostics.Tracing.EventSource::Dispose(System.Boolean)
+// 0x000025CD System.Void System.Diagnostics.Tracing.EventSource::Dispose(System.Boolean)
 extern void EventSource_Dispose_m6E49F02AD7EC25079AE7D2209AA15723AA066928 ();
-// 0x000025CB System.Void System.Diagnostics.Tracing.EventSource::Finalize()
+// 0x000025CE System.Void System.Diagnostics.Tracing.EventSource::Finalize()
 extern void EventSource_Finalize_m146DD940348050A0FC11F0110BCA54D9A53C1A9C ();
-// 0x000025CC System.Void System.Diagnostics.Tracing.EventSource::WriteStringToListener(System.Diagnostics.Tracing.EventListener,System.String,System.Diagnostics.Tracing.SessionMask)
+// 0x000025CF System.Void System.Diagnostics.Tracing.EventSource::WriteStringToListener(System.Diagnostics.Tracing.EventListener,System.String,System.Diagnostics.Tracing.SessionMask)
 extern void EventSource_WriteStringToListener_m1AD36AD726EA78E822B0AAED74458DC13D611FF4 ();
-// 0x000025CD System.Void System.Diagnostics.Tracing.EventSource::WriteEventRaw(System.String,System.Diagnostics.Tracing.EventDescriptor&,System.Guid*,System.Guid*,System.Int32,System.IntPtr)
+// 0x000025D0 System.Void System.Diagnostics.Tracing.EventSource::WriteEventRaw(System.String,System.Diagnostics.Tracing.EventDescriptor&,System.Guid*,System.Guid*,System.Int32,System.IntPtr)
 extern void EventSource_WriteEventRaw_mCA2DB42F1A629B84F40CCAFFFEF8C307A505656A ();
-// 0x000025CE System.Void System.Diagnostics.Tracing.EventSource::Initialize(System.Guid,System.String,System.String[])
+// 0x000025D1 System.Void System.Diagnostics.Tracing.EventSource::Initialize(System.Guid,System.String,System.String[])
 extern void EventSource_Initialize_m19DBF37360307BE0AF8E5F4D48CDFBB11C2DFD01 ();
-// 0x000025CF System.String System.Diagnostics.Tracing.EventSource::GetName(System.Type,System.Diagnostics.Tracing.EventManifestOptions)
+// 0x000025D2 System.String System.Diagnostics.Tracing.EventSource::GetName(System.Type,System.Diagnostics.Tracing.EventManifestOptions)
 extern void EventSource_GetName_m8F056FBB0AAE31DAA579B4FB3CBF6F260C9A554C ();
-// 0x000025D0 System.Guid System.Diagnostics.Tracing.EventSource::GenerateGuidFromName(System.String)
+// 0x000025D3 System.Guid System.Diagnostics.Tracing.EventSource::GenerateGuidFromName(System.String)
 extern void EventSource_GenerateGuidFromName_m1F8FCE194EAE1D9BF3450A18651424A3EEB0FCCB ();
-// 0x000025D1 System.Object System.Diagnostics.Tracing.EventSource::DecodeObject(System.Int32,System.Int32,System.Diagnostics.Tracing.EventSource_EventData*&)
+// 0x000025D4 System.Object System.Diagnostics.Tracing.EventSource::DecodeObject(System.Int32,System.Int32,System.Diagnostics.Tracing.EventSource_EventData*&)
 extern void EventSource_DecodeObject_mAD5531B9BB6EC969B6E834D2484B635F7AED7AF9 ();
-// 0x000025D2 System.Diagnostics.Tracing.EventDispatcher System.Diagnostics.Tracing.EventSource::GetDispatcher(System.Diagnostics.Tracing.EventListener)
+// 0x000025D5 System.Diagnostics.Tracing.EventDispatcher System.Diagnostics.Tracing.EventSource::GetDispatcher(System.Diagnostics.Tracing.EventListener)
 extern void EventSource_GetDispatcher_m29C93456D9792AB1FBD2E3153C79AD72B41E8FF6 ();
-// 0x000025D3 System.Void System.Diagnostics.Tracing.EventSource::WriteEventVarargs(System.Int32,System.Guid*,System.Object[])
+// 0x000025D6 System.Void System.Diagnostics.Tracing.EventSource::WriteEventVarargs(System.Int32,System.Guid*,System.Object[])
 extern void EventSource_WriteEventVarargs_mCE9497C75321C9390053AEFC4233EE6BBAFC3341 ();
-// 0x000025D4 System.Object[] System.Diagnostics.Tracing.EventSource::SerializeEventArgs(System.Int32,System.Object[])
+// 0x000025D7 System.Object[] System.Diagnostics.Tracing.EventSource::SerializeEventArgs(System.Int32,System.Object[])
 extern void EventSource_SerializeEventArgs_m05C56910CA41D15C484C0357CD6845ED0E36CAAB ();
-// 0x000025D5 System.Void System.Diagnostics.Tracing.EventSource::LogEventArgsMismatches(System.Reflection.ParameterInfo[],System.Object[])
+// 0x000025D8 System.Void System.Diagnostics.Tracing.EventSource::LogEventArgsMismatches(System.Reflection.ParameterInfo[],System.Object[])
 extern void EventSource_LogEventArgsMismatches_m4A7AA9AD1A96A67DEF1074C575BB4254546679A7 ();
-// 0x000025D6 System.Int32 System.Diagnostics.Tracing.EventSource::GetParamLengthIncludingByteArray(System.Reflection.ParameterInfo[])
+// 0x000025D9 System.Int32 System.Diagnostics.Tracing.EventSource::GetParamLengthIncludingByteArray(System.Reflection.ParameterInfo[])
 extern void EventSource_GetParamLengthIncludingByteArray_m9442DBFD2A5D754AD9B7D0BF26149B5053A279BE ();
-// 0x000025D7 System.Void System.Diagnostics.Tracing.EventSource::WriteToAllListeners(System.Int32,System.Guid*,System.Int32,System.Diagnostics.Tracing.EventSource_EventData*)
+// 0x000025DA System.Void System.Diagnostics.Tracing.EventSource::WriteToAllListeners(System.Int32,System.Guid*,System.Int32,System.Diagnostics.Tracing.EventSource_EventData*)
 extern void EventSource_WriteToAllListeners_mD457E0CC869EFD253FC4348D6AD53F8445D6E4D9 ();
-// 0x000025D8 System.Void System.Diagnostics.Tracing.EventSource::WriteToAllListeners(System.Int32,System.Guid*,System.Object[])
+// 0x000025DB System.Void System.Diagnostics.Tracing.EventSource::WriteToAllListeners(System.Int32,System.Guid*,System.Object[])
 extern void EventSource_WriteToAllListeners_mA57F9C980EC8A2C8D120C0B94C03AD4CB7D8FB92 ();
-// 0x000025D9 System.Void System.Diagnostics.Tracing.EventSource::DispatchToAllListeners(System.Int32,System.Guid*,System.Diagnostics.Tracing.EventWrittenEventArgs)
+// 0x000025DC System.Void System.Diagnostics.Tracing.EventSource::DispatchToAllListeners(System.Int32,System.Guid*,System.Diagnostics.Tracing.EventWrittenEventArgs)
 extern void EventSource_DispatchToAllListeners_m15BA8A2450CF4B48186FFF584C29F31A66F2A95A ();
-// 0x000025DA System.Void System.Diagnostics.Tracing.EventSource::WriteEventString(System.Diagnostics.Tracing.EventLevel,System.Int64,System.String)
+// 0x000025DD System.Void System.Diagnostics.Tracing.EventSource::WriteEventString(System.Diagnostics.Tracing.EventLevel,System.Int64,System.String)
 extern void EventSource_WriteEventString_mD4ED7CB40E6DE8A5EC1C6CB99111E7D22810EB81 ();
-// 0x000025DB System.Void System.Diagnostics.Tracing.EventSource::WriteStringToAllListeners(System.String,System.String)
+// 0x000025DE System.Void System.Diagnostics.Tracing.EventSource::WriteStringToAllListeners(System.String,System.String)
 extern void EventSource_WriteStringToAllListeners_m2FB8625875A9A4F2F47F1539A9085805F1335B83 ();
-// 0x000025DC System.Diagnostics.Tracing.SessionMask System.Diagnostics.Tracing.EventSource::GetEtwSessionMask(System.Int32,System.Guid*)
+// 0x000025DF System.Diagnostics.Tracing.SessionMask System.Diagnostics.Tracing.EventSource::GetEtwSessionMask(System.Int32,System.Guid*)
 extern void EventSource_GetEtwSessionMask_m6735D6D9DFE0CD12958F84CF0AF515E0B227A976 ();
-// 0x000025DD System.Boolean System.Diagnostics.Tracing.EventSource::IsEnabledByDefault(System.Int32,System.Boolean,System.Diagnostics.Tracing.EventLevel,System.Diagnostics.Tracing.EventKeywords)
+// 0x000025E0 System.Boolean System.Diagnostics.Tracing.EventSource::IsEnabledByDefault(System.Int32,System.Boolean,System.Diagnostics.Tracing.EventLevel,System.Diagnostics.Tracing.EventKeywords)
 extern void EventSource_IsEnabledByDefault_m57B7C1CE338531F6F54F023A349CF34AAA526DCC ();
-// 0x000025DE System.Boolean System.Diagnostics.Tracing.EventSource::IsEnabledCommon(System.Boolean,System.Diagnostics.Tracing.EventLevel,System.Diagnostics.Tracing.EventKeywords,System.Diagnostics.Tracing.EventLevel,System.Diagnostics.Tracing.EventKeywords,System.Diagnostics.Tracing.EventChannel)
+// 0x000025E1 System.Boolean System.Diagnostics.Tracing.EventSource::IsEnabledCommon(System.Boolean,System.Diagnostics.Tracing.EventLevel,System.Diagnostics.Tracing.EventKeywords,System.Diagnostics.Tracing.EventLevel,System.Diagnostics.Tracing.EventKeywords,System.Diagnostics.Tracing.EventChannel)
 extern void EventSource_IsEnabledCommon_m0127CC87C38EE4BD087484079C7EA9B11C3465B1 ();
-// 0x000025DF System.Void System.Diagnostics.Tracing.EventSource::ThrowEventSourceException(System.String,System.Exception)
+// 0x000025E2 System.Void System.Diagnostics.Tracing.EventSource::ThrowEventSourceException(System.String,System.Exception)
 extern void EventSource_ThrowEventSourceException_m88C851C8CF8D333C7D99B2E1B52DE215B938E454 ();
-// 0x000025E0 System.Void System.Diagnostics.Tracing.EventSource::ValidateEventOpcodeForTransfer(System.Diagnostics.Tracing.EventSource_EventMetadata&,System.String)
+// 0x000025E3 System.Void System.Diagnostics.Tracing.EventSource::ValidateEventOpcodeForTransfer(System.Diagnostics.Tracing.EventSource_EventMetadata&,System.String)
 extern void EventSource_ValidateEventOpcodeForTransfer_m876C53C1AA2692F8DFEB46618060F9F045208E22 ();
-// 0x000025E1 System.Diagnostics.Tracing.EventOpcode System.Diagnostics.Tracing.EventSource::GetOpcodeWithDefault(System.Diagnostics.Tracing.EventOpcode,System.String)
+// 0x000025E4 System.Diagnostics.Tracing.EventOpcode System.Diagnostics.Tracing.EventSource::GetOpcodeWithDefault(System.Diagnostics.Tracing.EventOpcode,System.String)
 extern void EventSource_GetOpcodeWithDefault_m97DE04BD2DD86571AC4CC084DB6A091F6E0F27B3 ();
-// 0x000025E2 System.Void System.Diagnostics.Tracing.EventSource::SendCommand(System.Diagnostics.Tracing.EventListener,System.Int32,System.Int32,System.Diagnostics.Tracing.EventCommand,System.Boolean,System.Diagnostics.Tracing.EventLevel,System.Diagnostics.Tracing.EventKeywords,System.Collections.Generic.IDictionary`2<System.String,System.String>)
+// 0x000025E5 System.Void System.Diagnostics.Tracing.EventSource::SendCommand(System.Diagnostics.Tracing.EventListener,System.Int32,System.Int32,System.Diagnostics.Tracing.EventCommand,System.Boolean,System.Diagnostics.Tracing.EventLevel,System.Diagnostics.Tracing.EventKeywords,System.Collections.Generic.IDictionary`2<System.String,System.String>)
 extern void EventSource_SendCommand_mC04C4889CCB21B58C052A48E030C4655B5CA74DE ();
-// 0x000025E3 System.Void System.Diagnostics.Tracing.EventSource::DoCommand(System.Diagnostics.Tracing.EventCommandEventArgs)
+// 0x000025E6 System.Void System.Diagnostics.Tracing.EventSource::DoCommand(System.Diagnostics.Tracing.EventCommandEventArgs)
 extern void EventSource_DoCommand_mE3A4F025E762B755EC8EF965078564898D7984B5 ();
-// 0x000025E4 System.Void System.Diagnostics.Tracing.EventSource::UpdateEtwSession(System.Int32,System.Int32,System.Boolean,System.String,System.Boolean)
+// 0x000025E7 System.Void System.Diagnostics.Tracing.EventSource::UpdateEtwSession(System.Int32,System.Int32,System.Boolean,System.String,System.Boolean)
 extern void EventSource_UpdateEtwSession_m33189FFE8A08A040F324E3F6D657BB84CD646706 ();
-// 0x000025E5 System.Boolean System.Diagnostics.Tracing.EventSource::ParseCommandArgs(System.Collections.Generic.IDictionary`2<System.String,System.String>,System.Boolean&,System.String&,System.Int32&)
+// 0x000025E8 System.Boolean System.Diagnostics.Tracing.EventSource::ParseCommandArgs(System.Collections.Generic.IDictionary`2<System.String,System.String>,System.Boolean&,System.String&,System.Int32&)
 extern void EventSource_ParseCommandArgs_m35F3BD60CBD5B9B5CF46955DCFFDF83EEEE6FF50 ();
-// 0x000025E6 System.Void System.Diagnostics.Tracing.EventSource::UpdateKwdTriggers(System.Boolean)
+// 0x000025E9 System.Void System.Diagnostics.Tracing.EventSource::UpdateKwdTriggers(System.Boolean)
 extern void EventSource_UpdateKwdTriggers_mBA5B84F6C3F910D2CD4623294EE8B9D0F41476B1 ();
-// 0x000025E7 System.Boolean System.Diagnostics.Tracing.EventSource::EnableEventForDispatcher(System.Diagnostics.Tracing.EventDispatcher,System.Int32,System.Boolean)
+// 0x000025EA System.Boolean System.Diagnostics.Tracing.EventSource::EnableEventForDispatcher(System.Diagnostics.Tracing.EventDispatcher,System.Int32,System.Boolean)
 extern void EventSource_EnableEventForDispatcher_mF9382455854614BE9AE3CBD3AFDA7E2C568D070F ();
-// 0x000025E8 System.Boolean System.Diagnostics.Tracing.EventSource::AnyEventEnabled()
+// 0x000025EB System.Boolean System.Diagnostics.Tracing.EventSource::AnyEventEnabled()
 extern void EventSource_AnyEventEnabled_m2D7B2F4BE236B1776E8144A9223E09DCAFBB7689 ();
-// 0x000025E9 System.Boolean System.Diagnostics.Tracing.EventSource::get_IsDisposed()
+// 0x000025EC System.Boolean System.Diagnostics.Tracing.EventSource::get_IsDisposed()
 extern void EventSource_get_IsDisposed_m5EDEAD9D333BB6B845416840E5AF815910766C8C ();
-// 0x000025EA System.Void System.Diagnostics.Tracing.EventSource::EnsureDescriptorsInitialized()
+// 0x000025ED System.Void System.Diagnostics.Tracing.EventSource::EnsureDescriptorsInitialized()
 extern void EventSource_EnsureDescriptorsInitialized_m65626E878E8D3224BD1345BEAAFD0FA058703BE7 ();
-// 0x000025EB System.Boolean System.Diagnostics.Tracing.EventSource::SendManifest(System.Byte[])
+// 0x000025EE System.Boolean System.Diagnostics.Tracing.EventSource::SendManifest(System.Byte[])
 extern void EventSource_SendManifest_mA0825219A44D8580BBF5E15E051BC398AA420311 ();
-// 0x000025EC System.Attribute System.Diagnostics.Tracing.EventSource::GetCustomAttributeHelper(System.Reflection.MemberInfo,System.Type,System.Diagnostics.Tracing.EventManifestOptions)
+// 0x000025EF System.Attribute System.Diagnostics.Tracing.EventSource::GetCustomAttributeHelper(System.Reflection.MemberInfo,System.Type,System.Diagnostics.Tracing.EventManifestOptions)
 extern void EventSource_GetCustomAttributeHelper_m0071006CDD204BE00B7EFEA9F5E52D087AF1F7D7 ();
-// 0x000025ED System.Boolean System.Diagnostics.Tracing.EventSource::AttributeTypeNamesMatch(System.Type,System.Type)
+// 0x000025F0 System.Boolean System.Diagnostics.Tracing.EventSource::AttributeTypeNamesMatch(System.Type,System.Type)
 extern void EventSource_AttributeTypeNamesMatch_m40953EA25DF869AD98D3DBF329FD74C98E7F41A0 ();
-// 0x000025EE System.Type System.Diagnostics.Tracing.EventSource::GetEventSourceBaseType(System.Type,System.Boolean,System.Boolean)
+// 0x000025F1 System.Type System.Diagnostics.Tracing.EventSource::GetEventSourceBaseType(System.Type,System.Boolean,System.Boolean)
 extern void EventSource_GetEventSourceBaseType_m9DC1F883AE9DBD6C162E3794B1174C9905446238 ();
-// 0x000025EF System.Byte[] System.Diagnostics.Tracing.EventSource::CreateManifestAndDescriptors(System.Type,System.String,System.Diagnostics.Tracing.EventSource,System.Diagnostics.Tracing.EventManifestOptions)
+// 0x000025F2 System.Byte[] System.Diagnostics.Tracing.EventSource::CreateManifestAndDescriptors(System.Type,System.String,System.Diagnostics.Tracing.EventSource,System.Diagnostics.Tracing.EventManifestOptions)
 extern void EventSource_CreateManifestAndDescriptors_mB6EC46491632FA449EDCDFC4BAB3711B511F679D ();
-// 0x000025F0 System.Boolean System.Diagnostics.Tracing.EventSource::RemoveFirstArgIfRelatedActivityId(System.Reflection.ParameterInfo[]&)
+// 0x000025F3 System.Boolean System.Diagnostics.Tracing.EventSource::RemoveFirstArgIfRelatedActivityId(System.Reflection.ParameterInfo[]&)
 extern void EventSource_RemoveFirstArgIfRelatedActivityId_mF6B0FB18A71D6634E910A93DF42B228DF13DBEDE ();
-// 0x000025F1 System.Void System.Diagnostics.Tracing.EventSource::AddProviderEnumKind(System.Diagnostics.Tracing.ManifestBuilder,System.Reflection.FieldInfo,System.String)
+// 0x000025F4 System.Void System.Diagnostics.Tracing.EventSource::AddProviderEnumKind(System.Diagnostics.Tracing.ManifestBuilder,System.Reflection.FieldInfo,System.String)
 extern void EventSource_AddProviderEnumKind_m34E218F4A3DAD06FCEA74D1BDF1B7B5972D008D6 ();
-// 0x000025F2 System.Void System.Diagnostics.Tracing.EventSource::AddEventDescriptor(System.Diagnostics.Tracing.EventSource_EventMetadata[]&,System.String,System.Diagnostics.Tracing.EventAttribute,System.Reflection.ParameterInfo[],System.Boolean)
+// 0x000025F5 System.Void System.Diagnostics.Tracing.EventSource::AddEventDescriptor(System.Diagnostics.Tracing.EventSource_EventMetadata[]&,System.String,System.Diagnostics.Tracing.EventAttribute,System.Reflection.ParameterInfo[],System.Boolean)
 extern void EventSource_AddEventDescriptor_m2477DFF028C6BBC7C415914465312DBE1A05DD50 ();
-// 0x000025F3 System.Void System.Diagnostics.Tracing.EventSource::TrimEventDescriptors(System.Diagnostics.Tracing.EventSource_EventMetadata[]&)
+// 0x000025F6 System.Void System.Diagnostics.Tracing.EventSource::TrimEventDescriptors(System.Diagnostics.Tracing.EventSource_EventMetadata[]&)
 extern void EventSource_TrimEventDescriptors_mB20A4A38B1690E2BDBA7198FCF96140566140E3A ();
-// 0x000025F4 System.Void System.Diagnostics.Tracing.EventSource::AddListener(System.Diagnostics.Tracing.EventListener)
+// 0x000025F7 System.Void System.Diagnostics.Tracing.EventSource::AddListener(System.Diagnostics.Tracing.EventListener)
 extern void EventSource_AddListener_mB6D602A82B5E1A629E7964101D38EACAF9C01BC1 ();
-// 0x000025F5 System.Void System.Diagnostics.Tracing.EventSource::DebugCheckEvent(System.Collections.Generic.Dictionary`2<System.String,System.String>&,System.Diagnostics.Tracing.EventSource_EventMetadata[],System.Reflection.MethodInfo,System.Diagnostics.Tracing.EventAttribute,System.Diagnostics.Tracing.ManifestBuilder,System.Diagnostics.Tracing.EventManifestOptions)
+// 0x000025F8 System.Void System.Diagnostics.Tracing.EventSource::DebugCheckEvent(System.Collections.Generic.Dictionary`2<System.String,System.String>&,System.Diagnostics.Tracing.EventSource_EventMetadata[],System.Reflection.MethodInfo,System.Diagnostics.Tracing.EventAttribute,System.Diagnostics.Tracing.ManifestBuilder,System.Diagnostics.Tracing.EventManifestOptions)
 extern void EventSource_DebugCheckEvent_m7967092356AD89E7EB5E45D15E8C4088898D633A ();
-// 0x000025F6 System.Int32 System.Diagnostics.Tracing.EventSource::GetHelperCallFirstArg(System.Reflection.MethodInfo)
+// 0x000025F9 System.Int32 System.Diagnostics.Tracing.EventSource::GetHelperCallFirstArg(System.Reflection.MethodInfo)
 extern void EventSource_GetHelperCallFirstArg_mC36F9E7EF839A547C0B1F36BC98C05FC0CDACC4F ();
-// 0x000025F7 System.Void System.Diagnostics.Tracing.EventSource::ReportOutOfBandMessage(System.String,System.Boolean)
+// 0x000025FA System.Void System.Diagnostics.Tracing.EventSource::ReportOutOfBandMessage(System.String,System.Boolean)
 extern void EventSource_ReportOutOfBandMessage_m0E5283359AE9FAED47C0D72E26FF1D80F20646B8 ();
-// 0x000025F8 System.Diagnostics.Tracing.EventSourceSettings System.Diagnostics.Tracing.EventSource::ValidateSettings(System.Diagnostics.Tracing.EventSourceSettings)
+// 0x000025FB System.Diagnostics.Tracing.EventSourceSettings System.Diagnostics.Tracing.EventSource::ValidateSettings(System.Diagnostics.Tracing.EventSourceSettings)
 extern void EventSource_ValidateSettings_mE39C56F8D4DAB1C4E09CAA91896E9F247EF61BFF ();
-// 0x000025F9 System.Boolean System.Diagnostics.Tracing.EventSource::get_ThrowOnEventWriteErrors()
+// 0x000025FC System.Boolean System.Diagnostics.Tracing.EventSource::get_ThrowOnEventWriteErrors()
 extern void EventSource_get_ThrowOnEventWriteErrors_mCF30F1D3752B413F3E08436D4CEABE2B76315A3F ();
-// 0x000025FA System.Boolean System.Diagnostics.Tracing.EventSource::get_SelfDescribingEvents()
+// 0x000025FD System.Boolean System.Diagnostics.Tracing.EventSource::get_SelfDescribingEvents()
 extern void EventSource_get_SelfDescribingEvents_mC1AA4D0FD4ECB96F90435B292D23DC86C76F3DD0 ();
-// 0x000025FB System.Void System.Diagnostics.Tracing.EventSource::ReportActivitySamplingInfo(System.Diagnostics.Tracing.EventListener,System.Diagnostics.Tracing.SessionMask)
+// 0x000025FE System.Void System.Diagnostics.Tracing.EventSource::ReportActivitySamplingInfo(System.Diagnostics.Tracing.EventListener,System.Diagnostics.Tracing.SessionMask)
 extern void EventSource_ReportActivitySamplingInfo_m5C4B41A96EA6877580974579248B5B1F98165928 ();
-// 0x000025FC System.Void System.Diagnostics.Tracing.EventSource::.cctor()
+// 0x000025FF System.Void System.Diagnostics.Tracing.EventSource::.cctor()
 extern void EventSource__cctor_m4929B950E6F969BE9565F18F477E75978E914B33 ();
-// 0x000025FD System.IntPtr System.Diagnostics.Tracing.EventSource_EventData::get_DataPointer()
+// 0x00002600 System.IntPtr System.Diagnostics.Tracing.EventSource_EventData::get_DataPointer()
 extern void EventData_get_DataPointer_mBC2F8ECE956F3A8B3D24BCC48512C6C153C978DA_AdjustorThunk ();
-// 0x000025FE System.Void System.Diagnostics.Tracing.EventSource_EventData::set_DataPointer(System.IntPtr)
+// 0x00002601 System.Void System.Diagnostics.Tracing.EventSource_EventData::set_DataPointer(System.IntPtr)
 extern void EventData_set_DataPointer_mCBFBFF7CED553A233032A89F0F0EC16FDFCD62B4_AdjustorThunk ();
-// 0x000025FF System.Void System.Diagnostics.Tracing.EventSource_EventData::set_Size(System.Int32)
+// 0x00002602 System.Void System.Diagnostics.Tracing.EventSource_EventData::set_Size(System.Int32)
 extern void EventData_set_Size_m43C4529AD157BEC415C9338748703B06D1B63579_AdjustorThunk ();
-// 0x00002600 System.Void System.Diagnostics.Tracing.EventSource_EventData::SetMetadata(System.Byte*,System.Int32,System.Int32)
+// 0x00002603 System.Void System.Diagnostics.Tracing.EventSource_EventData::SetMetadata(System.Byte*,System.Int32,System.Int32)
 extern void EventData_SetMetadata_m2638D08FE5AD0F8A4B207B83E014385991E7CF88_AdjustorThunk ();
-// 0x00002601 System.Void System.Diagnostics.Tracing.EventSource_Sha1ForNonSecretPurposes::Start()
+// 0x00002604 System.Void System.Diagnostics.Tracing.EventSource_Sha1ForNonSecretPurposes::Start()
 extern void Sha1ForNonSecretPurposes_Start_mA97AC00189A011EF6E62617B21C6E2CEEE480941_AdjustorThunk ();
-// 0x00002602 System.Void System.Diagnostics.Tracing.EventSource_Sha1ForNonSecretPurposes::Append(System.Byte)
+// 0x00002605 System.Void System.Diagnostics.Tracing.EventSource_Sha1ForNonSecretPurposes::Append(System.Byte)
 extern void Sha1ForNonSecretPurposes_Append_m6B1A3F8758C2E73925709AC34E208A4E6051E1B1_AdjustorThunk ();
-// 0x00002603 System.Void System.Diagnostics.Tracing.EventSource_Sha1ForNonSecretPurposes::Append(System.Byte[])
+// 0x00002606 System.Void System.Diagnostics.Tracing.EventSource_Sha1ForNonSecretPurposes::Append(System.Byte[])
 extern void Sha1ForNonSecretPurposes_Append_mE38C1265578CD69E60160CBC417DC10FB05D367C_AdjustorThunk ();
-// 0x00002604 System.Void System.Diagnostics.Tracing.EventSource_Sha1ForNonSecretPurposes::Finish(System.Byte[])
+// 0x00002607 System.Void System.Diagnostics.Tracing.EventSource_Sha1ForNonSecretPurposes::Finish(System.Byte[])
 extern void Sha1ForNonSecretPurposes_Finish_mE22BAFF41954BF42E561E6ECB08E549FC867D927_AdjustorThunk ();
-// 0x00002605 System.Void System.Diagnostics.Tracing.EventSource_Sha1ForNonSecretPurposes::Drain()
+// 0x00002608 System.Void System.Diagnostics.Tracing.EventSource_Sha1ForNonSecretPurposes::Drain()
 extern void Sha1ForNonSecretPurposes_Drain_m506D32DBB98E741CDF8674DDCB6808B35A8C48A8_AdjustorThunk ();
-// 0x00002606 System.UInt32 System.Diagnostics.Tracing.EventSource_Sha1ForNonSecretPurposes::Rol1(System.UInt32)
+// 0x00002609 System.UInt32 System.Diagnostics.Tracing.EventSource_Sha1ForNonSecretPurposes::Rol1(System.UInt32)
 extern void Sha1ForNonSecretPurposes_Rol1_m77257ADE4C12D9216F61D909B7C217647BE37BED ();
-// 0x00002607 System.UInt32 System.Diagnostics.Tracing.EventSource_Sha1ForNonSecretPurposes::Rol5(System.UInt32)
+// 0x0000260A System.UInt32 System.Diagnostics.Tracing.EventSource_Sha1ForNonSecretPurposes::Rol5(System.UInt32)
 extern void Sha1ForNonSecretPurposes_Rol5_m059118E8DFAC985AC4A28DA77D57CA02EE854EFD ();
-// 0x00002608 System.UInt32 System.Diagnostics.Tracing.EventSource_Sha1ForNonSecretPurposes::Rol30(System.UInt32)
+// 0x0000260B System.UInt32 System.Diagnostics.Tracing.EventSource_Sha1ForNonSecretPurposes::Rol30(System.UInt32)
 extern void Sha1ForNonSecretPurposes_Rol30_m866BB946519D295C48B706551F4C9048B337B52F ();
-// 0x00002609 System.Void System.Diagnostics.Tracing.EventSource_OverideEventProvider::.ctor(System.Diagnostics.Tracing.EventSource)
+// 0x0000260C System.Void System.Diagnostics.Tracing.EventSource_OverideEventProvider::.ctor(System.Diagnostics.Tracing.EventSource)
 extern void OverideEventProvider__ctor_mD477F0BCF1048627D9B27E8D71AD47B2D28C385B ();
-// 0x0000260A System.Void System.Diagnostics.Tracing.EventSource_OverideEventProvider::OnControllerCommand(System.Diagnostics.Tracing.ControllerCommand,System.Collections.Generic.IDictionary`2<System.String,System.String>,System.Int32,System.Int32)
+// 0x0000260D System.Void System.Diagnostics.Tracing.EventSource_OverideEventProvider::OnControllerCommand(System.Diagnostics.Tracing.ControllerCommand,System.Collections.Generic.IDictionary`2<System.String,System.String>,System.Int32,System.Int32)
 extern void OverideEventProvider_OnControllerCommand_m18D4213930B4B551E30CE21175AB45200A1FED97 ();
-// 0x0000260B System.Void System.Diagnostics.Tracing.TraceLoggingEventTypes::.ctor(System.String,System.Diagnostics.Tracing.EventTags,System.Type[])
+// 0x0000260E System.Void System.Diagnostics.Tracing.TraceLoggingEventTypes::.ctor(System.String,System.Diagnostics.Tracing.EventTags,System.Type[])
 extern void TraceLoggingEventTypes__ctor_m8463F3C12A26246CDBCED020138DE3188B3D37C7 ();
-// 0x0000260C System.Void System.Diagnostics.Tracing.TraceLoggingEventTypes::.ctor(System.String,System.Diagnostics.Tracing.EventTags,System.Reflection.ParameterInfo[])
+// 0x0000260F System.Void System.Diagnostics.Tracing.TraceLoggingEventTypes::.ctor(System.String,System.Diagnostics.Tracing.EventTags,System.Reflection.ParameterInfo[])
 extern void TraceLoggingEventTypes__ctor_m08243D6F1D5DD75F9E2ED6C5C09CF1F25E506A4B ();
-// 0x0000260D System.Void System.Diagnostics.Tracing.TraceLoggingEventTypes::.ctor(System.Diagnostics.Tracing.EventTags,System.String,System.Diagnostics.Tracing.TraceLoggingTypeInfo[])
+// 0x00002610 System.Void System.Diagnostics.Tracing.TraceLoggingEventTypes::.ctor(System.Diagnostics.Tracing.EventTags,System.String,System.Diagnostics.Tracing.TraceLoggingTypeInfo[])
 extern void TraceLoggingEventTypes__ctor_m01AA9D32D50DA43E399D2E4F6C6CE2686C860F0F ();
-// 0x0000260E System.String System.Diagnostics.Tracing.TraceLoggingEventTypes::get_Name()
+// 0x00002611 System.String System.Diagnostics.Tracing.TraceLoggingEventTypes::get_Name()
 extern void TraceLoggingEventTypes_get_Name_m582D5F0FF940D1585A968EF5D1625B14D8E055FA ();
-// 0x0000260F System.Diagnostics.Tracing.EventTags System.Diagnostics.Tracing.TraceLoggingEventTypes::get_Tags()
+// 0x00002612 System.Diagnostics.Tracing.EventTags System.Diagnostics.Tracing.TraceLoggingEventTypes::get_Tags()
 extern void TraceLoggingEventTypes_get_Tags_mEA1CB6CABA32F0B2FCDEAB82ACC7E3AE153B5E2C ();
-// 0x00002610 System.Diagnostics.Tracing.NameInfo System.Diagnostics.Tracing.TraceLoggingEventTypes::GetNameInfo(System.String,System.Diagnostics.Tracing.EventTags)
+// 0x00002613 System.Diagnostics.Tracing.NameInfo System.Diagnostics.Tracing.TraceLoggingEventTypes::GetNameInfo(System.String,System.Diagnostics.Tracing.EventTags)
 extern void TraceLoggingEventTypes_GetNameInfo_m68D000807BAE5F6EC2C49E65F1C4C3671891F756 ();
-// 0x00002611 System.Diagnostics.Tracing.TraceLoggingTypeInfo[] System.Diagnostics.Tracing.TraceLoggingEventTypes::MakeArray(System.Reflection.ParameterInfo[])
+// 0x00002614 System.Diagnostics.Tracing.TraceLoggingTypeInfo[] System.Diagnostics.Tracing.TraceLoggingEventTypes::MakeArray(System.Reflection.ParameterInfo[])
 extern void TraceLoggingEventTypes_MakeArray_mFEB619E641B7C378811F11F7AEAC6B780B7FD27D ();
-// 0x00002612 System.Diagnostics.Tracing.TraceLoggingTypeInfo[] System.Diagnostics.Tracing.TraceLoggingEventTypes::MakeArray(System.Type[])
+// 0x00002615 System.Diagnostics.Tracing.TraceLoggingTypeInfo[] System.Diagnostics.Tracing.TraceLoggingEventTypes::MakeArray(System.Type[])
 extern void TraceLoggingEventTypes_MakeArray_mFED40E1D79EAF166AC6ED6E0E83312D6791A7AF9 ();
-// 0x00002613 System.Void System.Diagnostics.Tracing.TraceLoggingMetadataCollector::.ctor()
+// 0x00002616 System.Void System.Diagnostics.Tracing.TraceLoggingMetadataCollector::.ctor()
 extern void TraceLoggingMetadataCollector__ctor_mDD4E4C38DCE260B896FC5E8CFAF2699EFC4F98DC ();
-// 0x00002614 System.Void System.Diagnostics.Tracing.TraceLoggingMetadataCollector::.ctor(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.Diagnostics.Tracing.FieldMetadata)
+// 0x00002617 System.Void System.Diagnostics.Tracing.TraceLoggingMetadataCollector::.ctor(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.Diagnostics.Tracing.FieldMetadata)
 extern void TraceLoggingMetadataCollector__ctor_mE342313AC4310277DB5AF429C77F61B12B67389D ();
-// 0x00002615 System.Diagnostics.Tracing.EventFieldTags System.Diagnostics.Tracing.TraceLoggingMetadataCollector::get_Tags()
+// 0x00002618 System.Diagnostics.Tracing.EventFieldTags System.Diagnostics.Tracing.TraceLoggingMetadataCollector::get_Tags()
 extern void TraceLoggingMetadataCollector_get_Tags_m0F851297CC3BBE6DEA97B0DDA27EBC4462FCDA4A ();
-// 0x00002616 System.Void System.Diagnostics.Tracing.TraceLoggingMetadataCollector::set_Tags(System.Diagnostics.Tracing.EventFieldTags)
+// 0x00002619 System.Void System.Diagnostics.Tracing.TraceLoggingMetadataCollector::set_Tags(System.Diagnostics.Tracing.EventFieldTags)
 extern void TraceLoggingMetadataCollector_set_Tags_mF42A2BC303AB0CE39F1CD993178A05E17D306B44 ();
-// 0x00002617 System.Int32 System.Diagnostics.Tracing.TraceLoggingMetadataCollector::get_ScratchSize()
+// 0x0000261A System.Int32 System.Diagnostics.Tracing.TraceLoggingMetadataCollector::get_ScratchSize()
 extern void TraceLoggingMetadataCollector_get_ScratchSize_m60DBA65A18F39A132ACCCFAC00E282AD8CF78CE3 ();
-// 0x00002618 System.Int32 System.Diagnostics.Tracing.TraceLoggingMetadataCollector::get_DataCount()
+// 0x0000261B System.Int32 System.Diagnostics.Tracing.TraceLoggingMetadataCollector::get_DataCount()
 extern void TraceLoggingMetadataCollector_get_DataCount_m19A06BB75F607CBA8FE706B1374071D5C1A38526 ();
-// 0x00002619 System.Int32 System.Diagnostics.Tracing.TraceLoggingMetadataCollector::get_PinCount()
+// 0x0000261C System.Int32 System.Diagnostics.Tracing.TraceLoggingMetadataCollector::get_PinCount()
 extern void TraceLoggingMetadataCollector_get_PinCount_m8784D51D54A3896114C22FE8DF1DDCC1CEF64C5A ();
-// 0x0000261A System.Boolean System.Diagnostics.Tracing.TraceLoggingMetadataCollector::get_BeginningBufferedArray()
+// 0x0000261D System.Boolean System.Diagnostics.Tracing.TraceLoggingMetadataCollector::get_BeginningBufferedArray()
 extern void TraceLoggingMetadataCollector_get_BeginningBufferedArray_m875CC5C471F8E4C33CF2698B593570BE5984E0E6 ();
-// 0x0000261B System.Diagnostics.Tracing.TraceLoggingMetadataCollector System.Diagnostics.Tracing.TraceLoggingMetadataCollector::AddGroup(System.String)
+// 0x0000261E System.Diagnostics.Tracing.TraceLoggingMetadataCollector System.Diagnostics.Tracing.TraceLoggingMetadataCollector::AddGroup(System.String)
 extern void TraceLoggingMetadataCollector_AddGroup_m938D13CD9816CA7D62161EF0700AAAEB45884160 ();
-// 0x0000261C System.Void System.Diagnostics.Tracing.TraceLoggingMetadataCollector::AddScalar(System.String,System.Diagnostics.Tracing.TraceLoggingDataType)
+// 0x0000261F System.Void System.Diagnostics.Tracing.TraceLoggingMetadataCollector::AddScalar(System.String,System.Diagnostics.Tracing.TraceLoggingDataType)
 extern void TraceLoggingMetadataCollector_AddScalar_m136E01C1CEEFA221D5F78507069DFE8590CC15FB ();
-// 0x0000261D System.Void System.Diagnostics.Tracing.TraceLoggingMetadataCollector::AddBinary(System.String,System.Diagnostics.Tracing.TraceLoggingDataType)
+// 0x00002620 System.Void System.Diagnostics.Tracing.TraceLoggingMetadataCollector::AddBinary(System.String,System.Diagnostics.Tracing.TraceLoggingDataType)
 extern void TraceLoggingMetadataCollector_AddBinary_mA1EC53EFE1C72570ABAF8FB53F773D52033FD257 ();
-// 0x0000261E System.Void System.Diagnostics.Tracing.TraceLoggingMetadataCollector::AddArray(System.String,System.Diagnostics.Tracing.TraceLoggingDataType)
+// 0x00002621 System.Void System.Diagnostics.Tracing.TraceLoggingMetadataCollector::AddArray(System.String,System.Diagnostics.Tracing.TraceLoggingDataType)
 extern void TraceLoggingMetadataCollector_AddArray_m9074593EAE95D13523B4F7CF7FB94019CF49F406 ();
-// 0x0000261F System.Void System.Diagnostics.Tracing.TraceLoggingMetadataCollector::BeginBufferedArray()
+// 0x00002622 System.Void System.Diagnostics.Tracing.TraceLoggingMetadataCollector::BeginBufferedArray()
 extern void TraceLoggingMetadataCollector_BeginBufferedArray_m10A9D19539D483BDE22950EB3B6D0C6BBBD1B461 ();
-// 0x00002620 System.Void System.Diagnostics.Tracing.TraceLoggingMetadataCollector::EndBufferedArray()
+// 0x00002623 System.Void System.Diagnostics.Tracing.TraceLoggingMetadataCollector::EndBufferedArray()
 extern void TraceLoggingMetadataCollector_EndBufferedArray_mD649372F4F19057DEA54C9D6442035161C38BA8E ();
-// 0x00002621 System.Byte[] System.Diagnostics.Tracing.TraceLoggingMetadataCollector::GetMetadata()
+// 0x00002624 System.Byte[] System.Diagnostics.Tracing.TraceLoggingMetadataCollector::GetMetadata()
 extern void TraceLoggingMetadataCollector_GetMetadata_mE576A1EF4772025B805D74483A1E1EB4763DA25D ();
-// 0x00002622 System.Void System.Diagnostics.Tracing.TraceLoggingMetadataCollector::AddField(System.Diagnostics.Tracing.FieldMetadata)
+// 0x00002625 System.Void System.Diagnostics.Tracing.TraceLoggingMetadataCollector::AddField(System.Diagnostics.Tracing.FieldMetadata)
 extern void TraceLoggingMetadataCollector_AddField_m9B34D7AB37CD85825092EC20DF72AC7254DA282F ();
-// 0x00002623 System.Void System.Diagnostics.Tracing.TraceLoggingMetadataCollector_Impl::AddScalar(System.Int32)
+// 0x00002626 System.Void System.Diagnostics.Tracing.TraceLoggingMetadataCollector_Impl::AddScalar(System.Int32)
 extern void Impl_AddScalar_mF4D0F93A5611A1A6C3DD3429D980B80B4470E611 ();
-// 0x00002624 System.Void System.Diagnostics.Tracing.TraceLoggingMetadataCollector_Impl::AddNonscalar()
+// 0x00002627 System.Void System.Diagnostics.Tracing.TraceLoggingMetadataCollector_Impl::AddNonscalar()
 extern void Impl_AddNonscalar_m75063AAB17BB5BF47DA14FFEB1166095E6EABD63 ();
-// 0x00002625 System.Void System.Diagnostics.Tracing.TraceLoggingMetadataCollector_Impl::BeginBuffered()
+// 0x00002628 System.Void System.Diagnostics.Tracing.TraceLoggingMetadataCollector_Impl::BeginBuffered()
 extern void Impl_BeginBuffered_m9503BE745DB36F52B94DE0EFE4FF4AA25DD28AAE ();
-// 0x00002626 System.Void System.Diagnostics.Tracing.TraceLoggingMetadataCollector_Impl::EndBuffered()
+// 0x00002629 System.Void System.Diagnostics.Tracing.TraceLoggingMetadataCollector_Impl::EndBuffered()
 extern void Impl_EndBuffered_m4F0A7B23766A9959B15EE20D8F7DB0B80B6BF0F3 ();
-// 0x00002627 System.Int32 System.Diagnostics.Tracing.TraceLoggingMetadataCollector_Impl::Encode(System.Byte[])
+// 0x0000262A System.Int32 System.Diagnostics.Tracing.TraceLoggingMetadataCollector_Impl::Encode(System.Byte[])
 extern void Impl_Encode_m447740B08170A4E421F5E7143EF3232A77AB36CD ();
-// 0x00002628 System.Void System.Diagnostics.Tracing.TraceLoggingMetadataCollector_Impl::.ctor()
+// 0x0000262B System.Void System.Diagnostics.Tracing.TraceLoggingMetadataCollector_Impl::.ctor()
 extern void Impl__ctor_mEC3CC0DB840B066AF1C49C78EEF19669A6DD7CB6 ();
-// 0x00002629 System.Void System.Diagnostics.Tracing.TraceLoggingTypeInfo::.ctor(System.Type)
+// 0x0000262C System.Void System.Diagnostics.Tracing.TraceLoggingTypeInfo::.ctor(System.Type)
 extern void TraceLoggingTypeInfo__ctor_m6122E84F15E9A052737518F60B4CA6F7C1D5CE74 ();
-// 0x0000262A System.Void System.Diagnostics.Tracing.TraceLoggingTypeInfo::.ctor(System.Type,System.String,System.Diagnostics.Tracing.EventLevel,System.Diagnostics.Tracing.EventOpcode,System.Diagnostics.Tracing.EventKeywords,System.Diagnostics.Tracing.EventTags)
+// 0x0000262D System.Void System.Diagnostics.Tracing.TraceLoggingTypeInfo::.ctor(System.Type,System.String,System.Diagnostics.Tracing.EventLevel,System.Diagnostics.Tracing.EventOpcode,System.Diagnostics.Tracing.EventKeywords,System.Diagnostics.Tracing.EventTags)
 extern void TraceLoggingTypeInfo__ctor_m057EE183448805D4BFBCA54029DBE7968712A270 ();
-// 0x0000262B System.String System.Diagnostics.Tracing.TraceLoggingTypeInfo::get_Name()
+// 0x0000262E System.String System.Diagnostics.Tracing.TraceLoggingTypeInfo::get_Name()
 extern void TraceLoggingTypeInfo_get_Name_m71FC96A7FD12F7BBF6B28451E05B549EC9C29995 ();
-// 0x0000262C System.Diagnostics.Tracing.EventLevel System.Diagnostics.Tracing.TraceLoggingTypeInfo::get_Level()
+// 0x0000262F System.Diagnostics.Tracing.EventLevel System.Diagnostics.Tracing.TraceLoggingTypeInfo::get_Level()
 extern void TraceLoggingTypeInfo_get_Level_mD8605194C1D768CFA1DE8E64ADF5CF89CC082CBF ();
-// 0x0000262D System.Diagnostics.Tracing.EventOpcode System.Diagnostics.Tracing.TraceLoggingTypeInfo::get_Opcode()
+// 0x00002630 System.Diagnostics.Tracing.EventOpcode System.Diagnostics.Tracing.TraceLoggingTypeInfo::get_Opcode()
 extern void TraceLoggingTypeInfo_get_Opcode_mC5C1A9BD89FA8C785228FF61A25787BBC10544C1 ();
-// 0x0000262E System.Diagnostics.Tracing.EventKeywords System.Diagnostics.Tracing.TraceLoggingTypeInfo::get_Keywords()
+// 0x00002631 System.Diagnostics.Tracing.EventKeywords System.Diagnostics.Tracing.TraceLoggingTypeInfo::get_Keywords()
 extern void TraceLoggingTypeInfo_get_Keywords_mDD63841C50042CE015E3E37C872F083190147C06 ();
-// 0x0000262F System.Diagnostics.Tracing.EventTags System.Diagnostics.Tracing.TraceLoggingTypeInfo::get_Tags()
+// 0x00002632 System.Diagnostics.Tracing.EventTags System.Diagnostics.Tracing.TraceLoggingTypeInfo::get_Tags()
 extern void TraceLoggingTypeInfo_get_Tags_mDBDBBB08C1EC06514A4F899DA788100F1C36AF77 ();
-// 0x00002630 System.Type System.Diagnostics.Tracing.TraceLoggingTypeInfo::get_DataType()
+// 0x00002633 System.Type System.Diagnostics.Tracing.TraceLoggingTypeInfo::get_DataType()
 extern void TraceLoggingTypeInfo_get_DataType_m90D61A758FD34C646EDED59FF1A40F2B25604FED ();
-// 0x00002631 System.Void System.Diagnostics.Tracing.TraceLoggingTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
-// 0x00002632 System.Void System.Diagnostics.Tracing.TraceLoggingTypeInfo::WriteObjectData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Object)
-// 0x00002633 System.Object System.Diagnostics.Tracing.TraceLoggingTypeInfo::GetData(System.Object)
+// 0x00002634 System.Void System.Diagnostics.Tracing.TraceLoggingTypeInfo::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+// 0x00002635 System.Void System.Diagnostics.Tracing.TraceLoggingTypeInfo::WriteObjectData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Object)
+// 0x00002636 System.Object System.Diagnostics.Tracing.TraceLoggingTypeInfo::GetData(System.Object)
 extern void TraceLoggingTypeInfo_GetData_mD03CF4EF23DB30D47C43B2444B1FF4AFC6D76A13 ();
-// 0x00002634 System.Void System.Diagnostics.Tracing.TraceLoggingTypeInfo`1::.ctor()
-// 0x00002635 System.Void System.Diagnostics.Tracing.TraceLoggingTypeInfo`1::.ctor(System.String,System.Diagnostics.Tracing.EventLevel,System.Diagnostics.Tracing.EventOpcode,System.Diagnostics.Tracing.EventKeywords,System.Diagnostics.Tracing.EventTags)
-// 0x00002636 System.Diagnostics.Tracing.TraceLoggingTypeInfo`1<DataType> System.Diagnostics.Tracing.TraceLoggingTypeInfo`1::get_Instance()
-// 0x00002637 System.Void System.Diagnostics.Tracing.TraceLoggingTypeInfo`1::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,DataType&)
-// 0x00002638 System.Void System.Diagnostics.Tracing.TraceLoggingTypeInfo`1::WriteObjectData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Object)
-// 0x00002639 System.Diagnostics.Tracing.TraceLoggingTypeInfo`1<DataType> System.Diagnostics.Tracing.TraceLoggingTypeInfo`1::GetInstance(System.Collections.Generic.List`1<System.Type>)
-// 0x0000263A System.Diagnostics.Tracing.TraceLoggingTypeInfo`1<DataType> System.Diagnostics.Tracing.TraceLoggingTypeInfo`1::InitInstance()
-// 0x0000263B System.Void System.Diagnostics.Tracing.TypeAnalysis::.ctor(System.Type,System.Diagnostics.Tracing.EventDataAttribute,System.Collections.Generic.List`1<System.Type>)
+// 0x00002637 System.Void System.Diagnostics.Tracing.TraceLoggingTypeInfo`1::.ctor()
+// 0x00002638 System.Void System.Diagnostics.Tracing.TraceLoggingTypeInfo`1::.ctor(System.String,System.Diagnostics.Tracing.EventLevel,System.Diagnostics.Tracing.EventOpcode,System.Diagnostics.Tracing.EventKeywords,System.Diagnostics.Tracing.EventTags)
+// 0x00002639 System.Diagnostics.Tracing.TraceLoggingTypeInfo`1<DataType> System.Diagnostics.Tracing.TraceLoggingTypeInfo`1::get_Instance()
+// 0x0000263A System.Void System.Diagnostics.Tracing.TraceLoggingTypeInfo`1::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,DataType&)
+// 0x0000263B System.Void System.Diagnostics.Tracing.TraceLoggingTypeInfo`1::WriteObjectData(System.Diagnostics.Tracing.TraceLoggingDataCollector,System.Object)
+// 0x0000263C System.Diagnostics.Tracing.TraceLoggingTypeInfo`1<DataType> System.Diagnostics.Tracing.TraceLoggingTypeInfo`1::GetInstance(System.Collections.Generic.List`1<System.Type>)
+// 0x0000263D System.Diagnostics.Tracing.TraceLoggingTypeInfo`1<DataType> System.Diagnostics.Tracing.TraceLoggingTypeInfo`1::InitInstance()
+// 0x0000263E System.Void System.Diagnostics.Tracing.TypeAnalysis::.ctor(System.Type,System.Diagnostics.Tracing.EventDataAttribute,System.Collections.Generic.List`1<System.Type>)
 extern void TypeAnalysis__ctor_m7FE311A013186B7421FCA3574941907DB1FA4632 ();
-// 0x0000263C System.Void System.Diagnostics.Tracing.ActivityTracker::OnStart(System.String,System.String,System.Int32,System.Guid&,System.Guid&,System.Diagnostics.Tracing.EventActivityOptions)
+// 0x0000263F System.Void System.Diagnostics.Tracing.ActivityTracker::OnStart(System.String,System.String,System.Int32,System.Guid&,System.Guid&,System.Diagnostics.Tracing.EventActivityOptions)
 extern void ActivityTracker_OnStart_mEDF85D7D9BE34A20080296A0448EB869DB5E1423 ();
-// 0x0000263D System.Void System.Diagnostics.Tracing.ActivityTracker::OnStop(System.String,System.String,System.Int32,System.Guid&)
+// 0x00002640 System.Void System.Diagnostics.Tracing.ActivityTracker::OnStop(System.String,System.String,System.Int32,System.Guid&)
 extern void ActivityTracker_OnStop_m10062644F7133C33781A4D4FF469C42F9C793460 ();
-// 0x0000263E System.Void System.Diagnostics.Tracing.ActivityTracker::Enable()
+// 0x00002641 System.Void System.Diagnostics.Tracing.ActivityTracker::Enable()
 extern void ActivityTracker_Enable_mCAE3A31B1869805B640C535208BE0A6EBB2D792F ();
-// 0x0000263F System.Diagnostics.Tracing.ActivityTracker System.Diagnostics.Tracing.ActivityTracker::get_Instance()
+// 0x00002642 System.Diagnostics.Tracing.ActivityTracker System.Diagnostics.Tracing.ActivityTracker::get_Instance()
 extern void ActivityTracker_get_Instance_m59A2EFCE88211D1C5B0936FE82F300CF64AF3F79 ();
-// 0x00002640 System.Diagnostics.Tracing.ActivityTracker_ActivityInfo System.Diagnostics.Tracing.ActivityTracker::FindActiveActivity(System.String,System.Diagnostics.Tracing.ActivityTracker_ActivityInfo)
+// 0x00002643 System.Diagnostics.Tracing.ActivityTracker_ActivityInfo System.Diagnostics.Tracing.ActivityTracker::FindActiveActivity(System.String,System.Diagnostics.Tracing.ActivityTracker_ActivityInfo)
 extern void ActivityTracker_FindActiveActivity_m825DA9F728122ADF06722DBDC3B3301529A7A243 ();
-// 0x00002641 System.String System.Diagnostics.Tracing.ActivityTracker::NormalizeActivityName(System.String,System.String,System.Int32)
+// 0x00002644 System.String System.Diagnostics.Tracing.ActivityTracker::NormalizeActivityName(System.String,System.String,System.Int32)
 extern void ActivityTracker_NormalizeActivityName_mB2C3FFE58EF7CB96DCF25481531B1A416E1641C4 ();
-// 0x00002642 System.Void System.Diagnostics.Tracing.ActivityTracker::ActivityChanging(System.Threading.AsyncLocalValueChangedArgs`1<System.Diagnostics.Tracing.ActivityTracker_ActivityInfo>)
+// 0x00002645 System.Void System.Diagnostics.Tracing.ActivityTracker::ActivityChanging(System.Threading.AsyncLocalValueChangedArgs`1<System.Diagnostics.Tracing.ActivityTracker_ActivityInfo>)
 extern void ActivityTracker_ActivityChanging_mA66236EFC899D344B382F088CBCECD3E0337794D ();
-// 0x00002643 System.Void System.Diagnostics.Tracing.ActivityTracker::.ctor()
+// 0x00002646 System.Void System.Diagnostics.Tracing.ActivityTracker::.ctor()
 extern void ActivityTracker__ctor_m053468088D9FAE456679AF7037F4C0DFC606D1A4 ();
-// 0x00002644 System.Void System.Diagnostics.Tracing.ActivityTracker::.cctor()
+// 0x00002647 System.Void System.Diagnostics.Tracing.ActivityTracker::.cctor()
 extern void ActivityTracker__cctor_mBA7D4C78415D6ACC25117C0497395DE3AD4E174F ();
-// 0x00002645 System.Void System.Diagnostics.Tracing.ActivityTracker_ActivityInfo::.ctor(System.String,System.Int64,System.Diagnostics.Tracing.ActivityTracker_ActivityInfo,System.Guid,System.Diagnostics.Tracing.EventActivityOptions)
+// 0x00002648 System.Void System.Diagnostics.Tracing.ActivityTracker_ActivityInfo::.ctor(System.String,System.Int64,System.Diagnostics.Tracing.ActivityTracker_ActivityInfo,System.Guid,System.Diagnostics.Tracing.EventActivityOptions)
 extern void ActivityInfo__ctor_mF1424D4A83823CB90CE3CFC3FC07D73862DF6977 ();
-// 0x00002646 System.Guid System.Diagnostics.Tracing.ActivityTracker_ActivityInfo::get_ActivityId()
+// 0x00002649 System.Guid System.Diagnostics.Tracing.ActivityTracker_ActivityInfo::get_ActivityId()
 extern void ActivityInfo_get_ActivityId_mAF4ADFA8470BA23026C4221A87F00C8FD1AB17DA ();
-// 0x00002647 System.String System.Diagnostics.Tracing.ActivityTracker_ActivityInfo::Path(System.Diagnostics.Tracing.ActivityTracker_ActivityInfo)
+// 0x0000264A System.String System.Diagnostics.Tracing.ActivityTracker_ActivityInfo::Path(System.Diagnostics.Tracing.ActivityTracker_ActivityInfo)
 extern void ActivityInfo_Path_m209104A8557A657DEE7417F441B864A94CA9345C ();
-// 0x00002648 System.String System.Diagnostics.Tracing.ActivityTracker_ActivityInfo::ToString()
+// 0x0000264B System.String System.Diagnostics.Tracing.ActivityTracker_ActivityInfo::ToString()
 extern void ActivityInfo_ToString_m8C94E010DFEEC41E000C7C27DCF97D0B449270CC ();
-// 0x00002649 System.String System.Diagnostics.Tracing.ActivityTracker_ActivityInfo::LiveActivities(System.Diagnostics.Tracing.ActivityTracker_ActivityInfo)
+// 0x0000264C System.String System.Diagnostics.Tracing.ActivityTracker_ActivityInfo::LiveActivities(System.Diagnostics.Tracing.ActivityTracker_ActivityInfo)
 extern void ActivityInfo_LiveActivities_mCBEF8A0430ECD9AF83050E02AAB6D4B81D0E3834 ();
-// 0x0000264A System.Boolean System.Diagnostics.Tracing.ActivityTracker_ActivityInfo::CanBeOrphan()
+// 0x0000264D System.Boolean System.Diagnostics.Tracing.ActivityTracker_ActivityInfo::CanBeOrphan()
 extern void ActivityInfo_CanBeOrphan_m17EF7FD5866FB7A4B78B57FF036FD7DE5FD2A57F ();
-// 0x0000264B System.Void System.Diagnostics.Tracing.ActivityTracker_ActivityInfo::CreateActivityPathGuid(System.Guid&,System.Int32&)
+// 0x0000264E System.Void System.Diagnostics.Tracing.ActivityTracker_ActivityInfo::CreateActivityPathGuid(System.Guid&,System.Int32&)
 extern void ActivityInfo_CreateActivityPathGuid_mE268B8C2B8AF9B84630B5454E0D1C0F5305F0509 ();
-// 0x0000264C System.Void System.Diagnostics.Tracing.ActivityTracker_ActivityInfo::CreateOverflowGuid(System.Guid*)
+// 0x0000264F System.Void System.Diagnostics.Tracing.ActivityTracker_ActivityInfo::CreateOverflowGuid(System.Guid*)
 extern void ActivityInfo_CreateOverflowGuid_mB9A63065544A315F6BC3DC3F10A10B4F6C929CD0 ();
-// 0x0000264D System.Int32 System.Diagnostics.Tracing.ActivityTracker_ActivityInfo::AddIdToGuid(System.Guid*,System.Int32,System.UInt32,System.Boolean)
+// 0x00002650 System.Int32 System.Diagnostics.Tracing.ActivityTracker_ActivityInfo::AddIdToGuid(System.Guid*,System.Int32,System.UInt32,System.Boolean)
 extern void ActivityInfo_AddIdToGuid_mA6DB51AEA8A7B95EBC26D58976902FAE9605E7C5 ();
-// 0x0000264E System.Void System.Diagnostics.Tracing.ActivityTracker_ActivityInfo::WriteNibble(System.Byte*&,System.Byte*,System.UInt32)
+// 0x00002651 System.Void System.Diagnostics.Tracing.ActivityTracker_ActivityInfo::WriteNibble(System.Byte*&,System.Byte*,System.UInt32)
 extern void ActivityInfo_WriteNibble_mB4EEEC7F9DCD0CEB03434D485BE5F033BF7873E1 ();
-// 0x0000264F System.Boolean System.Diagnostics.Tracing.TplEtwProvider::get_Debug()
+// 0x00002652 System.Boolean System.Diagnostics.Tracing.TplEtwProvider::get_Debug()
 extern void TplEtwProvider_get_Debug_mE5DDB49768D1B2F09A611B7AF9D24B09149322CB ();
-// 0x00002650 System.Void System.Diagnostics.Tracing.TplEtwProvider::DebugFacilityMessage(System.String,System.String)
+// 0x00002653 System.Void System.Diagnostics.Tracing.TplEtwProvider::DebugFacilityMessage(System.String,System.String)
 extern void TplEtwProvider_DebugFacilityMessage_mEAF4EBC66501BB729030C9B3EB2FC9EBD9DB4493 ();
-// 0x00002651 System.Void System.Diagnostics.Tracing.TplEtwProvider::DebugFacilityMessage1(System.String,System.String,System.String)
+// 0x00002654 System.Void System.Diagnostics.Tracing.TplEtwProvider::DebugFacilityMessage1(System.String,System.String,System.String)
 extern void TplEtwProvider_DebugFacilityMessage1_mAD7516D94C2F2699CAE46D17BD3D763AC2300F3E ();
-// 0x00002652 System.Void System.Diagnostics.Tracing.TplEtwProvider::SetActivityId(System.Guid)
+// 0x00002655 System.Void System.Diagnostics.Tracing.TplEtwProvider::SetActivityId(System.Guid)
 extern void TplEtwProvider_SetActivityId_m294926056209B6554A8B45C237CE0E63928AF1DB ();
-// 0x00002653 System.Void System.Diagnostics.Tracing.TplEtwProvider::.ctor()
+// 0x00002656 System.Void System.Diagnostics.Tracing.TplEtwProvider::.ctor()
 extern void TplEtwProvider__ctor_m49B82F71C1ADEDD9119398BF23696EB0B824153B ();
-// 0x00002654 System.Void System.Diagnostics.Tracing.TplEtwProvider::.cctor()
+// 0x00002657 System.Void System.Diagnostics.Tracing.TplEtwProvider::.cctor()
 extern void TplEtwProvider__cctor_m27EF691E2942DB426459BCED11B64491FB51A46A ();
-// 0x00002655 System.Void System.Diagnostics.Tracing.EventDescriptor::.ctor(System.Int32,System.Byte,System.Byte,System.Int64)
+// 0x00002658 System.Void System.Diagnostics.Tracing.EventDescriptor::.ctor(System.Int32,System.Byte,System.Byte,System.Int64)
 extern void EventDescriptor__ctor_m20ACB5320BC8C24F5E6839113B8E6A42AC477BE8_AdjustorThunk ();
-// 0x00002656 System.Void System.Diagnostics.Tracing.EventDescriptor::.ctor(System.Int32,System.Byte,System.Byte,System.Byte,System.Byte,System.Int32,System.Int64)
+// 0x00002659 System.Void System.Diagnostics.Tracing.EventDescriptor::.ctor(System.Int32,System.Byte,System.Byte,System.Byte,System.Byte,System.Int32,System.Int64)
 extern void EventDescriptor__ctor_mCACEB722052AE5F7952870054BECE6C4D3F6EF1D_AdjustorThunk ();
-// 0x00002657 System.Int32 System.Diagnostics.Tracing.EventDescriptor::get_EventId()
+// 0x0000265A System.Int32 System.Diagnostics.Tracing.EventDescriptor::get_EventId()
 extern void EventDescriptor_get_EventId_m21302247E72B42768C3BCEDE8A558EF7E5CC95F1_AdjustorThunk ();
-// 0x00002658 System.Byte System.Diagnostics.Tracing.EventDescriptor::get_Version()
+// 0x0000265B System.Byte System.Diagnostics.Tracing.EventDescriptor::get_Version()
 extern void EventDescriptor_get_Version_m1072E7AD9DEB4C47C5E744CEEA88AE842DC3F325_AdjustorThunk ();
-// 0x00002659 System.Byte System.Diagnostics.Tracing.EventDescriptor::get_Channel()
+// 0x0000265C System.Byte System.Diagnostics.Tracing.EventDescriptor::get_Channel()
 extern void EventDescriptor_get_Channel_m0BB29BED3179BDFA9273A32316AA9F1AEC7DF2FE_AdjustorThunk ();
-// 0x0000265A System.Byte System.Diagnostics.Tracing.EventDescriptor::get_Level()
+// 0x0000265D System.Byte System.Diagnostics.Tracing.EventDescriptor::get_Level()
 extern void EventDescriptor_get_Level_m7C94E667D031CD7C223DF964A1152EBCDF4CF819_AdjustorThunk ();
-// 0x0000265B System.Byte System.Diagnostics.Tracing.EventDescriptor::get_Opcode()
+// 0x0000265E System.Byte System.Diagnostics.Tracing.EventDescriptor::get_Opcode()
 extern void EventDescriptor_get_Opcode_m48F2CE8D3854DB6DF75737FE7126BE4E93CC8E27_AdjustorThunk ();
-// 0x0000265C System.Int32 System.Diagnostics.Tracing.EventDescriptor::get_Task()
+// 0x0000265F System.Int32 System.Diagnostics.Tracing.EventDescriptor::get_Task()
 extern void EventDescriptor_get_Task_mC79AF3207BABD1AD4A46762F06C817B822B8019B_AdjustorThunk ();
-// 0x0000265D System.Int64 System.Diagnostics.Tracing.EventDescriptor::get_Keywords()
+// 0x00002660 System.Int64 System.Diagnostics.Tracing.EventDescriptor::get_Keywords()
 extern void EventDescriptor_get_Keywords_mABC615159FF89E33D739D3A529BDDED9CD2F5762_AdjustorThunk ();
-// 0x0000265E System.Boolean System.Diagnostics.Tracing.EventDescriptor::Equals(System.Object)
+// 0x00002661 System.Boolean System.Diagnostics.Tracing.EventDescriptor::Equals(System.Object)
 extern void EventDescriptor_Equals_mBB3C8409351F189AFEB32E44E991A2459BCD10E7_AdjustorThunk ();
-// 0x0000265F System.Int32 System.Diagnostics.Tracing.EventDescriptor::GetHashCode()
+// 0x00002662 System.Int32 System.Diagnostics.Tracing.EventDescriptor::GetHashCode()
 extern void EventDescriptor_GetHashCode_m984A4CCE70E567FF52CAD661D9F328A76DDD0683_AdjustorThunk ();
-// 0x00002660 System.Boolean System.Diagnostics.Tracing.EventDescriptor::Equals(System.Diagnostics.Tracing.EventDescriptor)
+// 0x00002663 System.Boolean System.Diagnostics.Tracing.EventDescriptor::Equals(System.Diagnostics.Tracing.EventDescriptor)
 extern void EventDescriptor_Equals_m7140F558C5527F3CBBA68E6AAAAD5FD4CB9566B4_AdjustorThunk ();
-// 0x00002661 System.Void System.Diagnostics.Tracing.EventProvider::.ctor()
+// 0x00002664 System.Void System.Diagnostics.Tracing.EventProvider::.ctor()
 extern void EventProvider__ctor_m3B50CC1BF097459B596C77B56561A089D9397AD9 ();
-// 0x00002662 System.Void System.Diagnostics.Tracing.EventProvider::Register(System.Guid)
+// 0x00002665 System.Void System.Diagnostics.Tracing.EventProvider::Register(System.Guid)
 extern void EventProvider_Register_m44CAC9D9F9EA2B0E4E3883128A19E1B70C254EE2 ();
-// 0x00002663 System.Int32 System.Diagnostics.Tracing.EventProvider::SetInformation(Microsoft.Win32.UnsafeNativeMethods_ManifestEtw_EVENT_INFO_CLASS,System.Void*,System.Int32)
+// 0x00002666 System.Int32 System.Diagnostics.Tracing.EventProvider::SetInformation(Microsoft.Win32.UnsafeNativeMethods_ManifestEtw_EVENT_INFO_CLASS,System.Void*,System.Int32)
 extern void EventProvider_SetInformation_mD5E67B8179B84395068AB6CEC4D7907E63DFFDAE ();
-// 0x00002664 System.Void System.Diagnostics.Tracing.EventProvider::Dispose()
+// 0x00002667 System.Void System.Diagnostics.Tracing.EventProvider::Dispose()
 extern void EventProvider_Dispose_mB4F2B41F819F0AA49DFF2A1D6E93CEE2CD8C841D ();
-// 0x00002665 System.Void System.Diagnostics.Tracing.EventProvider::Dispose(System.Boolean)
+// 0x00002668 System.Void System.Diagnostics.Tracing.EventProvider::Dispose(System.Boolean)
 extern void EventProvider_Dispose_m9449CFF60A77A3A203D281635F7FE81756ED6DB1 ();
-// 0x00002666 System.Void System.Diagnostics.Tracing.EventProvider::Finalize()
+// 0x00002669 System.Void System.Diagnostics.Tracing.EventProvider::Finalize()
 extern void EventProvider_Finalize_m0C39C52B29F6B9641C114765416AB48648873033 ();
-// 0x00002667 System.Void System.Diagnostics.Tracing.EventProvider::Deregister()
+// 0x0000266A System.Void System.Diagnostics.Tracing.EventProvider::Deregister()
 extern void EventProvider_Deregister_mAAE2FC907D1CF1D60C6B0113AD6C70C5262418E6 ();
-// 0x00002668 System.Void System.Diagnostics.Tracing.EventProvider::EtwEnableCallBack(System.Guid&,System.Int32,System.Byte,System.Int64,System.Int64,Microsoft.Win32.UnsafeNativeMethods_ManifestEtw_EVENT_FILTER_DESCRIPTOR*,System.Void*)
+// 0x0000266B System.Void System.Diagnostics.Tracing.EventProvider::EtwEnableCallBack(System.Guid&,System.Int32,System.Byte,System.Int64,System.Int64,Microsoft.Win32.UnsafeNativeMethods_ManifestEtw_EVENT_FILTER_DESCRIPTOR*,System.Void*)
 extern void EventProvider_EtwEnableCallBack_m32987ABF4E909DC5476F09C034714951CB4A8048 ();
-// 0x00002669 System.Void System.Diagnostics.Tracing.EventProvider::EtwEnableCallBackImpl(System.Int32,System.Byte,System.Int64,System.Int64,Microsoft.Win32.UnsafeNativeMethods_ManifestEtw_EVENT_FILTER_DESCRIPTOR*)
+// 0x0000266C System.Void System.Diagnostics.Tracing.EventProvider::EtwEnableCallBackImpl(System.Int32,System.Byte,System.Int64,System.Int64,Microsoft.Win32.UnsafeNativeMethods_ManifestEtw_EVENT_FILTER_DESCRIPTOR*)
 extern void EventProvider_EtwEnableCallBackImpl_m05EA7378BE8A415FF10BA92D0C8A9B1D7E0D9575 ();
-// 0x0000266A System.Void System.Diagnostics.Tracing.EventProvider::OnControllerCommand(System.Diagnostics.Tracing.ControllerCommand,System.Collections.Generic.IDictionary`2<System.String,System.String>,System.Int32,System.Int32)
+// 0x0000266D System.Void System.Diagnostics.Tracing.EventProvider::OnControllerCommand(System.Diagnostics.Tracing.ControllerCommand,System.Collections.Generic.IDictionary`2<System.String,System.String>,System.Int32,System.Int32)
 extern void EventProvider_OnControllerCommand_mD2567D7D0C20D9B507CE83D185C6B173069E6FA8 ();
-// 0x0000266B System.Diagnostics.Tracing.EventLevel System.Diagnostics.Tracing.EventProvider::get_Level()
+// 0x0000266E System.Diagnostics.Tracing.EventLevel System.Diagnostics.Tracing.EventProvider::get_Level()
 extern void EventProvider_get_Level_m68A0811632D34B78A4C86E545AE957EAE1819B51 ();
-// 0x0000266C System.Diagnostics.Tracing.EventKeywords System.Diagnostics.Tracing.EventProvider::get_MatchAnyKeyword()
+// 0x0000266F System.Diagnostics.Tracing.EventKeywords System.Diagnostics.Tracing.EventProvider::get_MatchAnyKeyword()
 extern void EventProvider_get_MatchAnyKeyword_mAB5C8F8500A479EA5294786DA79D8147A6681D2D ();
-// 0x0000266D System.Int32 System.Diagnostics.Tracing.EventProvider::FindNull(System.Byte[],System.Int32)
+// 0x00002670 System.Int32 System.Diagnostics.Tracing.EventProvider::FindNull(System.Byte[],System.Int32)
 extern void EventProvider_FindNull_m56DE2A00D1D720C8D449EABF8D0D5E8F7E5D0944 ();
-// 0x0000266E System.Collections.Generic.List`1<System.Tuple`2<System.Diagnostics.Tracing.EventProvider_SessionInfo,System.Boolean>> System.Diagnostics.Tracing.EventProvider::GetSessions()
+// 0x00002671 System.Collections.Generic.List`1<System.Tuple`2<System.Diagnostics.Tracing.EventProvider_SessionInfo,System.Boolean>> System.Diagnostics.Tracing.EventProvider::GetSessions()
 extern void EventProvider_GetSessions_mF76C5CED507D8F8C66063D65255AA7AA46ED76AD ();
-// 0x0000266F System.Void System.Diagnostics.Tracing.EventProvider::GetSessionInfoCallback(System.Int32,System.Int64,System.Collections.Generic.List`1<System.Diagnostics.Tracing.EventProvider_SessionInfo>&)
+// 0x00002672 System.Void System.Diagnostics.Tracing.EventProvider::GetSessionInfoCallback(System.Int32,System.Int64,System.Collections.Generic.List`1<System.Diagnostics.Tracing.EventProvider_SessionInfo>&)
 extern void EventProvider_GetSessionInfoCallback_mD81D88C92F8882D52339D0B64364DE4C2DFFE588 ();
-// 0x00002670 System.Void System.Diagnostics.Tracing.EventProvider::GetSessionInfo(System.Action`2<System.Int32,System.Int64>)
+// 0x00002673 System.Void System.Diagnostics.Tracing.EventProvider::GetSessionInfo(System.Action`2<System.Int32,System.Int64>)
 extern void EventProvider_GetSessionInfo_m71C26395796B07AFB9D31C3EE6488169E95A7DF3 ();
-// 0x00002671 System.Int32 System.Diagnostics.Tracing.EventProvider::IndexOfSessionInList(System.Collections.Generic.List`1<System.Diagnostics.Tracing.EventProvider_SessionInfo>,System.Int32)
+// 0x00002674 System.Int32 System.Diagnostics.Tracing.EventProvider::IndexOfSessionInList(System.Collections.Generic.List`1<System.Diagnostics.Tracing.EventProvider_SessionInfo>,System.Int32)
 extern void EventProvider_IndexOfSessionInList_m8BA6899C34E4767F735A299458C542B0E54703EB ();
-// 0x00002672 System.Boolean System.Diagnostics.Tracing.EventProvider::GetDataFromController(System.Int32,Microsoft.Win32.UnsafeNativeMethods_ManifestEtw_EVENT_FILTER_DESCRIPTOR*,System.Diagnostics.Tracing.ControllerCommand&,System.Byte[]&,System.Int32&)
+// 0x00002675 System.Boolean System.Diagnostics.Tracing.EventProvider::GetDataFromController(System.Int32,Microsoft.Win32.UnsafeNativeMethods_ManifestEtw_EVENT_FILTER_DESCRIPTOR*,System.Diagnostics.Tracing.ControllerCommand&,System.Byte[]&,System.Int32&)
 extern void EventProvider_GetDataFromController_m0DB5389F33A5037F545F98F12A1C0C3BA9A6BAFA ();
-// 0x00002673 System.Boolean System.Diagnostics.Tracing.EventProvider::IsEnabled()
+// 0x00002676 System.Boolean System.Diagnostics.Tracing.EventProvider::IsEnabled()
 extern void EventProvider_IsEnabled_m3C139A2AA66437973E6E41421D09300222F2CC4B ();
-// 0x00002674 System.Boolean System.Diagnostics.Tracing.EventProvider::IsEnabled(System.Byte,System.Int64)
+// 0x00002677 System.Boolean System.Diagnostics.Tracing.EventProvider::IsEnabled(System.Byte,System.Int64)
 extern void EventProvider_IsEnabled_m848CFB9793278CF12ADB24CCB61D7A18FD9C0770 ();
-// 0x00002675 System.Diagnostics.Tracing.EventProvider_WriteEventErrorCode System.Diagnostics.Tracing.EventProvider::GetLastWriteEventError()
+// 0x00002678 System.Diagnostics.Tracing.EventProvider_WriteEventErrorCode System.Diagnostics.Tracing.EventProvider::GetLastWriteEventError()
 extern void EventProvider_GetLastWriteEventError_m6A26D6CE68F05B5CBB215F557891A1BC679F4190 ();
-// 0x00002676 System.Void System.Diagnostics.Tracing.EventProvider::SetLastError(System.Int32)
+// 0x00002679 System.Void System.Diagnostics.Tracing.EventProvider::SetLastError(System.Int32)
 extern void EventProvider_SetLastError_mBA37EA20D53FBE88D5C2CDEDB2DA95A81193467D ();
-// 0x00002677 System.Object System.Diagnostics.Tracing.EventProvider::EncodeObject(System.Object&,System.Diagnostics.Tracing.EventProvider_EventData*&,System.Byte*&,System.UInt32&)
+// 0x0000267A System.Object System.Diagnostics.Tracing.EventProvider::EncodeObject(System.Object&,System.Diagnostics.Tracing.EventProvider_EventData*&,System.Byte*&,System.UInt32&)
 extern void EventProvider_EncodeObject_m044B03076E2E0E22AA48868A25E6162A4F117756 ();
-// 0x00002678 System.Boolean System.Diagnostics.Tracing.EventProvider::WriteEvent(System.Diagnostics.Tracing.EventDescriptor&,System.Guid*,System.Guid*,System.Object[])
+// 0x0000267B System.Boolean System.Diagnostics.Tracing.EventProvider::WriteEvent(System.Diagnostics.Tracing.EventDescriptor&,System.Guid*,System.Guid*,System.Object[])
 extern void EventProvider_WriteEvent_mF2E76529786B9E030899B61AEDBF70E505E096B9 ();
-// 0x00002679 System.Boolean System.Diagnostics.Tracing.EventProvider::WriteEvent(System.Diagnostics.Tracing.EventDescriptor&,System.Guid*,System.Guid*,System.Int32,System.IntPtr)
+// 0x0000267C System.Boolean System.Diagnostics.Tracing.EventProvider::WriteEvent(System.Diagnostics.Tracing.EventDescriptor&,System.Guid*,System.Guid*,System.Int32,System.IntPtr)
 extern void EventProvider_WriteEvent_m6C22684084397194BD0AFC9BC694919934E16B64 ();
-// 0x0000267A System.Boolean System.Diagnostics.Tracing.EventProvider::WriteEventRaw(System.Diagnostics.Tracing.EventDescriptor&,System.Guid*,System.Guid*,System.Int32,System.IntPtr)
+// 0x0000267D System.Boolean System.Diagnostics.Tracing.EventProvider::WriteEventRaw(System.Diagnostics.Tracing.EventDescriptor&,System.Guid*,System.Guid*,System.Int32,System.IntPtr)
 extern void EventProvider_WriteEventRaw_mB083FE1591EEA4E690A4831CE311D8B8B6BE2FFB ();
-// 0x0000267B System.UInt32 System.Diagnostics.Tracing.EventProvider::EventUnregister()
+// 0x0000267E System.UInt32 System.Diagnostics.Tracing.EventProvider::EventUnregister()
 extern void EventProvider_EventUnregister_m54EE65718C38DFB6F0DA261DEA011DF185E4C35D ();
-// 0x0000267C System.Int32 System.Diagnostics.Tracing.EventProvider::bitcount(System.UInt32)
+// 0x0000267F System.Int32 System.Diagnostics.Tracing.EventProvider::bitcount(System.UInt32)
 extern void EventProvider_bitcount_m569150D2AB57D36D2277653DAB4BB85B1AC95DEC ();
-// 0x0000267D System.Int32 System.Diagnostics.Tracing.EventProvider::bitindex(System.UInt32)
+// 0x00002680 System.Int32 System.Diagnostics.Tracing.EventProvider::bitindex(System.UInt32)
 extern void EventProvider_bitindex_m57E2DA3929D7112A697B4CD829B1B8A6AD86A82C ();
-// 0x0000267E System.Void System.Diagnostics.Tracing.EventProvider::.cctor()
+// 0x00002681 System.Void System.Diagnostics.Tracing.EventProvider::.cctor()
 extern void EventProvider__cctor_m4CFEB09F7B23CD35BFA5023B8279CE4F948CD70D ();
-// 0x0000267F System.Void System.Diagnostics.Tracing.EventProvider_SessionInfo::.ctor(System.Int32,System.Int32)
+// 0x00002682 System.Void System.Diagnostics.Tracing.EventProvider_SessionInfo::.ctor(System.Int32,System.Int32)
 extern void SessionInfo__ctor_m6A2E60B7B29F9603446D37D1474B44287A51FDF6_AdjustorThunk ();
-// 0x00002680 System.Void System.Diagnostics.Tracing.EventProvider_MonoPInvokeCallbackAttribute::.ctor(System.Type)
+// 0x00002683 System.Void System.Diagnostics.Tracing.EventProvider_MonoPInvokeCallbackAttribute::.ctor(System.Type)
 extern void MonoPInvokeCallbackAttribute__ctor_mC3234693EC3F9BBF9F195791AABE716D47015B47 ();
-// 0x00002681 System.Void System.Diagnostics.Tracing.EventProvider_<>c__DisplayClass44_0::.ctor()
+// 0x00002684 System.Void System.Diagnostics.Tracing.EventProvider_<>c__DisplayClass44_0::.ctor()
 extern void U3CU3Ec__DisplayClass44_0__ctor_m124616C1BA780E90A29F45AED140E42AFE7A0FCF ();
-// 0x00002682 System.Void System.Diagnostics.Tracing.EventProvider_<>c__DisplayClass44_0::<GetSessions>b__0(System.Int32,System.Int64)
+// 0x00002685 System.Void System.Diagnostics.Tracing.EventProvider_<>c__DisplayClass44_0::<GetSessions>b__0(System.Int32,System.Int64)
 extern void U3CU3Ec__DisplayClass44_0_U3CGetSessionsU3Eb__0_mF6A698B2DC65CAE298A7EEF7F767D2CB47DB0E6F ();
-// 0x00002683 System.Void System.Diagnostics.Tracing.EventListener::OnEventSourceCreated(System.Diagnostics.Tracing.EventSource)
+// 0x00002686 System.Void System.Diagnostics.Tracing.EventListener::OnEventSourceCreated(System.Diagnostics.Tracing.EventSource)
 extern void EventListener_OnEventSourceCreated_mE16D909C658BAC318541F2170B712A29ABAC71E9 ();
-// 0x00002684 System.Void System.Diagnostics.Tracing.EventListener::OnEventWritten(System.Diagnostics.Tracing.EventWrittenEventArgs)
+// 0x00002687 System.Void System.Diagnostics.Tracing.EventListener::OnEventWritten(System.Diagnostics.Tracing.EventWrittenEventArgs)
 extern void EventListener_OnEventWritten_m948452552734FAA3156D27B90E72520BC14451D0 ();
-// 0x00002685 System.Void System.Diagnostics.Tracing.EventListener::AddEventSource(System.Diagnostics.Tracing.EventSource)
+// 0x00002688 System.Void System.Diagnostics.Tracing.EventListener::AddEventSource(System.Diagnostics.Tracing.EventSource)
 extern void EventListener_AddEventSource_mB9F8DBB27131AF31A8F5C3D52EFA96D9D219EFD3 ();
-// 0x00002686 System.Void System.Diagnostics.Tracing.EventListener::DisposeOnShutdown(System.Object,System.EventArgs)
+// 0x00002689 System.Void System.Diagnostics.Tracing.EventListener::DisposeOnShutdown(System.Object,System.EventArgs)
 extern void EventListener_DisposeOnShutdown_m281D5755882E0BEB4CEEBDB3B471C36E43B3ED22 ();
-// 0x00002687 System.Object System.Diagnostics.Tracing.EventListener::get_EventListenersLock()
+// 0x0000268A System.Object System.Diagnostics.Tracing.EventListener::get_EventListenersLock()
 extern void EventListener_get_EventListenersLock_mBDF83655CC15E0FFEFCFD64F88FFCE36739289D7 ();
-// 0x00002688 System.Void System.Diagnostics.Tracing.EventListener::.cctor()
+// 0x0000268B System.Void System.Diagnostics.Tracing.EventListener::.cctor()
 extern void EventListener__cctor_mD64517D1F2A36B1B5CCD5FEFBD244EC11CFAE5A7 ();
-// 0x00002689 System.Diagnostics.Tracing.EventCommand System.Diagnostics.Tracing.EventCommandEventArgs::get_Command()
+// 0x0000268C System.Diagnostics.Tracing.EventCommand System.Diagnostics.Tracing.EventCommandEventArgs::get_Command()
 extern void EventCommandEventArgs_get_Command_m9BD6DFCAF9C44A69F75FB447B55BEE00B36EB3E3 ();
-// 0x0000268A System.Void System.Diagnostics.Tracing.EventCommandEventArgs::set_Command(System.Diagnostics.Tracing.EventCommand)
+// 0x0000268D System.Void System.Diagnostics.Tracing.EventCommandEventArgs::set_Command(System.Diagnostics.Tracing.EventCommand)
 extern void EventCommandEventArgs_set_Command_m17462F8AD3C08E5DEEB66BEA0BBD92AB2C69AC1A ();
-// 0x0000268B System.Collections.Generic.IDictionary`2<System.String,System.String> System.Diagnostics.Tracing.EventCommandEventArgs::get_Arguments()
+// 0x0000268E System.Collections.Generic.IDictionary`2<System.String,System.String> System.Diagnostics.Tracing.EventCommandEventArgs::get_Arguments()
 extern void EventCommandEventArgs_get_Arguments_mC479E0933B8003A788E2D47344FFAFD8EB4B6B91 ();
-// 0x0000268C System.Void System.Diagnostics.Tracing.EventCommandEventArgs::set_Arguments(System.Collections.Generic.IDictionary`2<System.String,System.String>)
+// 0x0000268F System.Void System.Diagnostics.Tracing.EventCommandEventArgs::set_Arguments(System.Collections.Generic.IDictionary`2<System.String,System.String>)
 extern void EventCommandEventArgs_set_Arguments_m483387647F68AA74AECA7CA464E06EB1724C6B32 ();
-// 0x0000268D System.Void System.Diagnostics.Tracing.EventCommandEventArgs::.ctor(System.Diagnostics.Tracing.EventCommand,System.Collections.Generic.IDictionary`2<System.String,System.String>,System.Diagnostics.Tracing.EventSource,System.Diagnostics.Tracing.EventListener,System.Int32,System.Int32,System.Boolean,System.Diagnostics.Tracing.EventLevel,System.Diagnostics.Tracing.EventKeywords)
+// 0x00002690 System.Void System.Diagnostics.Tracing.EventCommandEventArgs::.ctor(System.Diagnostics.Tracing.EventCommand,System.Collections.Generic.IDictionary`2<System.String,System.String>,System.Diagnostics.Tracing.EventSource,System.Diagnostics.Tracing.EventListener,System.Int32,System.Int32,System.Boolean,System.Diagnostics.Tracing.EventLevel,System.Diagnostics.Tracing.EventKeywords)
 extern void EventCommandEventArgs__ctor_mE825F4713713801A62278C1D1EDAE92C01923545 ();
-// 0x0000268E System.Void System.Diagnostics.Tracing.EventSourceCreatedEventArgs::set_EventSource(System.Diagnostics.Tracing.EventSource)
+// 0x00002691 System.Void System.Diagnostics.Tracing.EventSourceCreatedEventArgs::set_EventSource(System.Diagnostics.Tracing.EventSource)
 extern void EventSourceCreatedEventArgs_set_EventSource_m8C2A640E3442264BA1BF7F6EE963F7FDBC744794 ();
-// 0x0000268F System.Void System.Diagnostics.Tracing.EventSourceCreatedEventArgs::.ctor()
+// 0x00002692 System.Void System.Diagnostics.Tracing.EventSourceCreatedEventArgs::.ctor()
 extern void EventSourceCreatedEventArgs__ctor_mF081BD4935B0CF6E11774446ABE33E49043CDA97 ();
-// 0x00002690 System.Void System.Diagnostics.Tracing.EventWrittenEventArgs::set_EventName(System.String)
+// 0x00002693 System.Void System.Diagnostics.Tracing.EventWrittenEventArgs::set_EventName(System.String)
 extern void EventWrittenEventArgs_set_EventName_m6DEE32D41AE486E21288D9B7A405B06FACD3B6CB ();
-// 0x00002691 System.Void System.Diagnostics.Tracing.EventWrittenEventArgs::set_EventId(System.Int32)
+// 0x00002694 System.Void System.Diagnostics.Tracing.EventWrittenEventArgs::set_EventId(System.Int32)
 extern void EventWrittenEventArgs_set_EventId_mE7FB36E134327D9723860072902E1580EC653FCE ();
-// 0x00002692 System.Void System.Diagnostics.Tracing.EventWrittenEventArgs::set_RelatedActivityId(System.Guid)
+// 0x00002695 System.Void System.Diagnostics.Tracing.EventWrittenEventArgs::set_RelatedActivityId(System.Guid)
 extern void EventWrittenEventArgs_set_RelatedActivityId_mE9E13512C9D1F91EE7C5B3B2E2897CADFF72CDDF ();
-// 0x00002693 System.Void System.Diagnostics.Tracing.EventWrittenEventArgs::set_Payload(System.Collections.ObjectModel.ReadOnlyCollection`1<System.Object>)
+// 0x00002696 System.Void System.Diagnostics.Tracing.EventWrittenEventArgs::set_Payload(System.Collections.ObjectModel.ReadOnlyCollection`1<System.Object>)
 extern void EventWrittenEventArgs_set_Payload_mA63B6D1CB51F126394F4BF193856BD9445C85647 ();
-// 0x00002694 System.Void System.Diagnostics.Tracing.EventWrittenEventArgs::set_PayloadNames(System.Collections.ObjectModel.ReadOnlyCollection`1<System.String>)
+// 0x00002697 System.Void System.Diagnostics.Tracing.EventWrittenEventArgs::set_PayloadNames(System.Collections.ObjectModel.ReadOnlyCollection`1<System.String>)
 extern void EventWrittenEventArgs_set_PayloadNames_mA045E5448CD84218AD1C21E408EFC3578F9B1A0F ();
-// 0x00002695 System.Void System.Diagnostics.Tracing.EventWrittenEventArgs::set_Message(System.String)
+// 0x00002698 System.Void System.Diagnostics.Tracing.EventWrittenEventArgs::set_Message(System.String)
 extern void EventWrittenEventArgs_set_Message_m694B0CF9EF8C94C0F24F8DF61FC36B766AF728CE ();
-// 0x00002696 System.Void System.Diagnostics.Tracing.EventWrittenEventArgs::.ctor(System.Diagnostics.Tracing.EventSource)
+// 0x00002699 System.Void System.Diagnostics.Tracing.EventWrittenEventArgs::.ctor(System.Diagnostics.Tracing.EventSource)
 extern void EventWrittenEventArgs__ctor_m932A7D51A4062CD37694EDF4688EB5F91F8CE635 ();
-// 0x00002697 System.String System.Diagnostics.Tracing.EventSourceAttribute::get_Name()
+// 0x0000269A System.String System.Diagnostics.Tracing.EventSourceAttribute::get_Name()
 extern void EventSourceAttribute_get_Name_mC420250C7AFB5B14092C7B6EF5550F55ED4525A0 ();
-// 0x00002698 System.Void System.Diagnostics.Tracing.EventSourceAttribute::set_Name(System.String)
+// 0x0000269B System.Void System.Diagnostics.Tracing.EventSourceAttribute::set_Name(System.String)
 extern void EventSourceAttribute_set_Name_m5241AA462B6F5A7FD782898E39EA8A12E7EC0599 ();
-// 0x00002699 System.String System.Diagnostics.Tracing.EventSourceAttribute::get_Guid()
+// 0x0000269C System.String System.Diagnostics.Tracing.EventSourceAttribute::get_Guid()
 extern void EventSourceAttribute_get_Guid_m9DF9B8B791ACCF9B9DA2AC9BBF575944080DF9E1 ();
-// 0x0000269A System.Void System.Diagnostics.Tracing.EventSourceAttribute::set_Guid(System.String)
+// 0x0000269D System.Void System.Diagnostics.Tracing.EventSourceAttribute::set_Guid(System.String)
 extern void EventSourceAttribute_set_Guid_mFD84CCF1C8F47DC2AE5B04BDE106D78472CF287F ();
-// 0x0000269B System.String System.Diagnostics.Tracing.EventSourceAttribute::get_LocalizationResources()
+// 0x0000269E System.String System.Diagnostics.Tracing.EventSourceAttribute::get_LocalizationResources()
 extern void EventSourceAttribute_get_LocalizationResources_m4733F2B33A398B188C0541C3394954FF3DAC6B1F ();
-// 0x0000269C System.Void System.Diagnostics.Tracing.EventSourceAttribute::.ctor()
+// 0x0000269F System.Void System.Diagnostics.Tracing.EventSourceAttribute::.ctor()
 extern void EventSourceAttribute__ctor_m85695AC135298D8469D7C03B2A9AA1F6349DA42B ();
-// 0x0000269D System.Void System.Diagnostics.Tracing.EventAttribute::.ctor(System.Int32)
+// 0x000026A0 System.Void System.Diagnostics.Tracing.EventAttribute::.ctor(System.Int32)
 extern void EventAttribute__ctor_mAF81D17BBC44C41B77F565E419E91A9991828A12 ();
-// 0x0000269E System.Int32 System.Diagnostics.Tracing.EventAttribute::get_EventId()
+// 0x000026A1 System.Int32 System.Diagnostics.Tracing.EventAttribute::get_EventId()
 extern void EventAttribute_get_EventId_mECBD6F6FA850319FF22D8C98CD56AFC44A786557 ();
-// 0x0000269F System.Void System.Diagnostics.Tracing.EventAttribute::set_EventId(System.Int32)
+// 0x000026A2 System.Void System.Diagnostics.Tracing.EventAttribute::set_EventId(System.Int32)
 extern void EventAttribute_set_EventId_m61538B5C4903FEF2439AA944F6868FD2CD4E2140 ();
-// 0x000026A0 System.Diagnostics.Tracing.EventLevel System.Diagnostics.Tracing.EventAttribute::get_Level()
+// 0x000026A3 System.Diagnostics.Tracing.EventLevel System.Diagnostics.Tracing.EventAttribute::get_Level()
 extern void EventAttribute_get_Level_mB5C7FA65BD79AA55FB614D04B573187E715081EA ();
-// 0x000026A1 System.Void System.Diagnostics.Tracing.EventAttribute::set_Level(System.Diagnostics.Tracing.EventLevel)
+// 0x000026A4 System.Void System.Diagnostics.Tracing.EventAttribute::set_Level(System.Diagnostics.Tracing.EventLevel)
 extern void EventAttribute_set_Level_m6AEB7BE447B1A1163675C470E0F21C79A7338BFB ();
-// 0x000026A2 System.Diagnostics.Tracing.EventKeywords System.Diagnostics.Tracing.EventAttribute::get_Keywords()
+// 0x000026A5 System.Diagnostics.Tracing.EventKeywords System.Diagnostics.Tracing.EventAttribute::get_Keywords()
 extern void EventAttribute_get_Keywords_m6889779A5A55DB96A591BF26676DFCDDD0520142 ();
-// 0x000026A3 System.Diagnostics.Tracing.EventOpcode System.Diagnostics.Tracing.EventAttribute::get_Opcode()
+// 0x000026A6 System.Diagnostics.Tracing.EventOpcode System.Diagnostics.Tracing.EventAttribute::get_Opcode()
 extern void EventAttribute_get_Opcode_m2D6D1FA345ABB33FEB10D4A9C0878CCB5C811712 ();
-// 0x000026A4 System.Void System.Diagnostics.Tracing.EventAttribute::set_Opcode(System.Diagnostics.Tracing.EventOpcode)
+// 0x000026A7 System.Void System.Diagnostics.Tracing.EventAttribute::set_Opcode(System.Diagnostics.Tracing.EventOpcode)
 extern void EventAttribute_set_Opcode_m1B2E46E0B71755AD96C32C2A91C11FB01C3C3ADE ();
-// 0x000026A5 System.Boolean System.Diagnostics.Tracing.EventAttribute::get_IsOpcodeSet()
+// 0x000026A8 System.Boolean System.Diagnostics.Tracing.EventAttribute::get_IsOpcodeSet()
 extern void EventAttribute_get_IsOpcodeSet_m1894AE2FDD0E7D2A746D8182CB4AEC49DDA0DA2E ();
-// 0x000026A6 System.Diagnostics.Tracing.EventTask System.Diagnostics.Tracing.EventAttribute::get_Task()
+// 0x000026A9 System.Diagnostics.Tracing.EventTask System.Diagnostics.Tracing.EventAttribute::get_Task()
 extern void EventAttribute_get_Task_m670824C9F357501D5AEB3051330FBDE3DEBFA7A3 ();
-// 0x000026A7 System.Void System.Diagnostics.Tracing.EventAttribute::set_Task(System.Diagnostics.Tracing.EventTask)
+// 0x000026AA System.Void System.Diagnostics.Tracing.EventAttribute::set_Task(System.Diagnostics.Tracing.EventTask)
 extern void EventAttribute_set_Task_mB95C285A14B635F26C03541E7A5887C8206B59E2 ();
-// 0x000026A8 System.Byte System.Diagnostics.Tracing.EventAttribute::get_Version()
+// 0x000026AB System.Byte System.Diagnostics.Tracing.EventAttribute::get_Version()
 extern void EventAttribute_get_Version_m3AAD912A9FC7924161D37BD19D89ECBA5BDD0CF6 ();
-// 0x000026A9 System.String System.Diagnostics.Tracing.EventAttribute::get_Message()
+// 0x000026AC System.String System.Diagnostics.Tracing.EventAttribute::get_Message()
 extern void EventAttribute_get_Message_m058E0091B7D3211698644AC7149075C9355DD519 ();
-// 0x000026AA System.Void System.Diagnostics.Tracing.EventAttribute::set_Message(System.String)
+// 0x000026AD System.Void System.Diagnostics.Tracing.EventAttribute::set_Message(System.String)
 extern void EventAttribute_set_Message_m837D28BE6A03C0A13E16BF19414173E2C505C9C9 ();
-// 0x000026AB System.Diagnostics.Tracing.EventTags System.Diagnostics.Tracing.EventAttribute::get_Tags()
+// 0x000026AE System.Diagnostics.Tracing.EventTags System.Diagnostics.Tracing.EventAttribute::get_Tags()
 extern void EventAttribute_get_Tags_m17DF10412A2D6AB01E36B784D74350E9528105E7 ();
-// 0x000026AC System.Diagnostics.Tracing.EventActivityOptions System.Diagnostics.Tracing.EventAttribute::get_ActivityOptions()
+// 0x000026AF System.Diagnostics.Tracing.EventActivityOptions System.Diagnostics.Tracing.EventAttribute::get_ActivityOptions()
 extern void EventAttribute_get_ActivityOptions_m4840396BF21481922FCE3059FAE9CF231DF8541E ();
-// 0x000026AD System.Void System.Diagnostics.Tracing.EventAttribute::set_ActivityOptions(System.Diagnostics.Tracing.EventActivityOptions)
+// 0x000026B0 System.Void System.Diagnostics.Tracing.EventAttribute::set_ActivityOptions(System.Diagnostics.Tracing.EventActivityOptions)
 extern void EventAttribute_set_ActivityOptions_mA357663A41591C7AC1086C41D7CA081181D9E838 ();
-// 0x000026AE System.Void System.Diagnostics.Tracing.NonEventAttribute::.ctor()
+// 0x000026B1 System.Void System.Diagnostics.Tracing.NonEventAttribute::.ctor()
 extern void NonEventAttribute__ctor_m11EB423FA0331D5ACEA383A7D8C27148C58219DB ();
-// 0x000026AF System.Void System.Diagnostics.Tracing.ActivityFilter::DisableFilter(System.Diagnostics.Tracing.ActivityFilter&,System.Diagnostics.Tracing.EventSource)
+// 0x000026B2 System.Void System.Diagnostics.Tracing.ActivityFilter::DisableFilter(System.Diagnostics.Tracing.ActivityFilter&,System.Diagnostics.Tracing.EventSource)
 extern void ActivityFilter_DisableFilter_m9FBB5B5BA14DE3C7E50C3E5CADAF4D20B9DAE9E0 ();
-// 0x000026B0 System.Void System.Diagnostics.Tracing.ActivityFilter::UpdateFilter(System.Diagnostics.Tracing.ActivityFilter&,System.Diagnostics.Tracing.EventSource,System.Int32,System.String)
+// 0x000026B3 System.Void System.Diagnostics.Tracing.ActivityFilter::UpdateFilter(System.Diagnostics.Tracing.ActivityFilter&,System.Diagnostics.Tracing.EventSource,System.Int32,System.String)
 extern void ActivityFilter_UpdateFilter_m0C60ECDB3EB276F7ADB7CC633A6775B229C271F2 ();
-// 0x000026B1 System.Boolean System.Diagnostics.Tracing.ActivityFilter::PassesActivityFilter(System.Diagnostics.Tracing.ActivityFilter,System.Guid*,System.Boolean,System.Diagnostics.Tracing.EventSource,System.Int32)
+// 0x000026B4 System.Boolean System.Diagnostics.Tracing.ActivityFilter::PassesActivityFilter(System.Diagnostics.Tracing.ActivityFilter,System.Guid*,System.Boolean,System.Diagnostics.Tracing.EventSource,System.Int32)
 extern void ActivityFilter_PassesActivityFilter_m785587F8F988B60DE16C32E39A7A6098B0789EBF ();
-// 0x000026B2 System.Void System.Diagnostics.Tracing.ActivityFilter::FlowActivityIfNeeded(System.Diagnostics.Tracing.ActivityFilter,System.Guid*,System.Guid*)
+// 0x000026B5 System.Void System.Diagnostics.Tracing.ActivityFilter::FlowActivityIfNeeded(System.Diagnostics.Tracing.ActivityFilter,System.Guid*,System.Guid*)
 extern void ActivityFilter_FlowActivityIfNeeded_mDEF179A961943951E2CEBC169DE65B2EFB81C2DE ();
-// 0x000026B3 System.Void System.Diagnostics.Tracing.ActivityFilter::UpdateKwdTriggers(System.Diagnostics.Tracing.ActivityFilter,System.Guid,System.Diagnostics.Tracing.EventSource,System.Diagnostics.Tracing.EventKeywords)
+// 0x000026B6 System.Void System.Diagnostics.Tracing.ActivityFilter::UpdateKwdTriggers(System.Diagnostics.Tracing.ActivityFilter,System.Guid,System.Diagnostics.Tracing.EventSource,System.Diagnostics.Tracing.EventKeywords)
 extern void ActivityFilter_UpdateKwdTriggers_mD820641A48F418C6F0C27AB2102143DED6A45466 ();
-// 0x000026B4 System.Collections.Generic.IEnumerable`1<System.Tuple`2<System.Int32,System.Int32>> System.Diagnostics.Tracing.ActivityFilter::GetFilterAsTuple(System.Guid)
+// 0x000026B7 System.Collections.Generic.IEnumerable`1<System.Tuple`2<System.Int32,System.Int32>> System.Diagnostics.Tracing.ActivityFilter::GetFilterAsTuple(System.Guid)
 extern void ActivityFilter_GetFilterAsTuple_m2F34BA17CE7D2F693C2EF1469EECB6CEFB0483CD ();
-// 0x000026B5 System.Void System.Diagnostics.Tracing.ActivityFilter::Dispose()
+// 0x000026B8 System.Void System.Diagnostics.Tracing.ActivityFilter::Dispose()
 extern void ActivityFilter_Dispose_mD331A6D08027C578FB33DF9D4508146FDD1E3B69 ();
-// 0x000026B6 System.Void System.Diagnostics.Tracing.ActivityFilter::.ctor(System.Diagnostics.Tracing.EventSource,System.Int32,System.Int32,System.Int32,System.Diagnostics.Tracing.ActivityFilter)
+// 0x000026B9 System.Void System.Diagnostics.Tracing.ActivityFilter::.ctor(System.Diagnostics.Tracing.EventSource,System.Int32,System.Int32,System.Int32,System.Diagnostics.Tracing.ActivityFilter)
 extern void ActivityFilter__ctor_m00C3F59EE554D19FD8DF964906B75B493545193A ();
-// 0x000026B7 System.Void System.Diagnostics.Tracing.ActivityFilter::EnsureActivityCleanupDelegate(System.Diagnostics.Tracing.ActivityFilter)
+// 0x000026BA System.Void System.Diagnostics.Tracing.ActivityFilter::EnsureActivityCleanupDelegate(System.Diagnostics.Tracing.ActivityFilter)
 extern void ActivityFilter_EnsureActivityCleanupDelegate_m1D616455807E8954308B06BA964B32A0D9E97C26 ();
-// 0x000026B8 System.Action`1<System.Guid> System.Diagnostics.Tracing.ActivityFilter::GetActivityDyingDelegate(System.Diagnostics.Tracing.ActivityFilter)
+// 0x000026BB System.Action`1<System.Guid> System.Diagnostics.Tracing.ActivityFilter::GetActivityDyingDelegate(System.Diagnostics.Tracing.ActivityFilter)
 extern void ActivityFilter_GetActivityDyingDelegate_m6A560B3B4400B4EC40D9B3529035B4207DDBCCDC ();
-// 0x000026B9 System.Boolean System.Diagnostics.Tracing.ActivityFilter::EnableFilter(System.Diagnostics.Tracing.ActivityFilter&,System.Diagnostics.Tracing.EventSource,System.Int32,System.Int32,System.Int32)
+// 0x000026BC System.Boolean System.Diagnostics.Tracing.ActivityFilter::EnableFilter(System.Diagnostics.Tracing.ActivityFilter&,System.Diagnostics.Tracing.EventSource,System.Int32,System.Int32,System.Int32)
 extern void ActivityFilter_EnableFilter_m20D1DA79B8B50BE7AB981E37785277BCE74F0872 ();
-// 0x000026BA System.Void System.Diagnostics.Tracing.ActivityFilter::TrimActiveActivityStore(System.Collections.Concurrent.ConcurrentDictionary`2<System.Guid,System.Int32>)
+// 0x000026BD System.Void System.Diagnostics.Tracing.ActivityFilter::TrimActiveActivityStore(System.Collections.Concurrent.ConcurrentDictionary`2<System.Guid,System.Int32>)
 extern void ActivityFilter_TrimActiveActivityStore_m2F9DABE17BEE26AD75FEEB7A6C898D2C2F688936 ();
-// 0x000026BB System.Collections.Concurrent.ConcurrentDictionary`2<System.Guid,System.Int32> System.Diagnostics.Tracing.ActivityFilter::GetActiveActivities(System.Diagnostics.Tracing.ActivityFilter)
+// 0x000026BE System.Collections.Concurrent.ConcurrentDictionary`2<System.Guid,System.Int32> System.Diagnostics.Tracing.ActivityFilter::GetActiveActivities(System.Diagnostics.Tracing.ActivityFilter)
 extern void ActivityFilter_GetActiveActivities_m198C40727D9FB78922DE5531091C8B7C69AC2959 ();
-// 0x000026BC System.Void System.Diagnostics.Tracing.ActivityFilter_<GetFilterAsTuple>d__7::.ctor(System.Int32)
+// 0x000026BF System.Void System.Diagnostics.Tracing.ActivityFilter_<GetFilterAsTuple>d__7::.ctor(System.Int32)
 extern void U3CGetFilterAsTupleU3Ed__7__ctor_mE6E6456BDBEAFAF62BA8CF3D075D053E046F0E4F ();
-// 0x000026BD System.Void System.Diagnostics.Tracing.ActivityFilter_<GetFilterAsTuple>d__7::System.IDisposable.Dispose()
+// 0x000026C0 System.Void System.Diagnostics.Tracing.ActivityFilter_<GetFilterAsTuple>d__7::System.IDisposable.Dispose()
 extern void U3CGetFilterAsTupleU3Ed__7_System_IDisposable_Dispose_mEDA871B0D34012DD87B7E98D4D8B99736B456012 ();
-// 0x000026BE System.Boolean System.Diagnostics.Tracing.ActivityFilter_<GetFilterAsTuple>d__7::MoveNext()
+// 0x000026C1 System.Boolean System.Diagnostics.Tracing.ActivityFilter_<GetFilterAsTuple>d__7::MoveNext()
 extern void U3CGetFilterAsTupleU3Ed__7_MoveNext_m5EA36FADB9DB1365E8C4ECA1E1EE7206A2E41FAE ();
-// 0x000026BF System.Tuple`2<System.Int32,System.Int32> System.Diagnostics.Tracing.ActivityFilter_<GetFilterAsTuple>d__7::System.Collections.Generic.IEnumerator<System.Tuple<System.Int32,System.Int32>>.get_Current()
+// 0x000026C2 System.Tuple`2<System.Int32,System.Int32> System.Diagnostics.Tracing.ActivityFilter_<GetFilterAsTuple>d__7::System.Collections.Generic.IEnumerator<System.Tuple<System.Int32,System.Int32>>.get_Current()
 extern void U3CGetFilterAsTupleU3Ed__7_System_Collections_Generic_IEnumeratorU3CSystem_TupleU3CSystem_Int32U2CSystem_Int32U3EU3E_get_Current_mB8DF7A42EC47199DFD9847142DFEC75581225C30 ();
-// 0x000026C0 System.Void System.Diagnostics.Tracing.ActivityFilter_<GetFilterAsTuple>d__7::System.Collections.IEnumerator.Reset()
+// 0x000026C3 System.Void System.Diagnostics.Tracing.ActivityFilter_<GetFilterAsTuple>d__7::System.Collections.IEnumerator.Reset()
 extern void U3CGetFilterAsTupleU3Ed__7_System_Collections_IEnumerator_Reset_m90DAD077759C760A2A2DFE315532247320FCBDA0 ();
-// 0x000026C1 System.Object System.Diagnostics.Tracing.ActivityFilter_<GetFilterAsTuple>d__7::System.Collections.IEnumerator.get_Current()
+// 0x000026C4 System.Object System.Diagnostics.Tracing.ActivityFilter_<GetFilterAsTuple>d__7::System.Collections.IEnumerator.get_Current()
 extern void U3CGetFilterAsTupleU3Ed__7_System_Collections_IEnumerator_get_Current_mADE2ACF734941FF617CA4CDFB9BBACA3C91E95AE ();
-// 0x000026C2 System.Collections.Generic.IEnumerator`1<System.Tuple`2<System.Int32,System.Int32>> System.Diagnostics.Tracing.ActivityFilter_<GetFilterAsTuple>d__7::System.Collections.Generic.IEnumerable<System.Tuple<System.Int32,System.Int32>>.GetEnumerator()
+// 0x000026C5 System.Collections.Generic.IEnumerator`1<System.Tuple`2<System.Int32,System.Int32>> System.Diagnostics.Tracing.ActivityFilter_<GetFilterAsTuple>d__7::System.Collections.Generic.IEnumerable<System.Tuple<System.Int32,System.Int32>>.GetEnumerator()
 extern void U3CGetFilterAsTupleU3Ed__7_System_Collections_Generic_IEnumerableU3CSystem_TupleU3CSystem_Int32U2CSystem_Int32U3EU3E_GetEnumerator_m76C2A9E5353BED7EB8AB5F81DD259C81DC58003C ();
-// 0x000026C3 System.Collections.IEnumerator System.Diagnostics.Tracing.ActivityFilter_<GetFilterAsTuple>d__7::System.Collections.IEnumerable.GetEnumerator()
+// 0x000026C6 System.Collections.IEnumerator System.Diagnostics.Tracing.ActivityFilter_<GetFilterAsTuple>d__7::System.Collections.IEnumerable.GetEnumerator()
 extern void U3CGetFilterAsTupleU3Ed__7_System_Collections_IEnumerable_GetEnumerator_mC651A84863E461B8C9024EFFFB36B504DA60822B ();
-// 0x000026C4 System.Void System.Diagnostics.Tracing.ActivityFilter_<>c__DisplayClass11_0::.ctor()
+// 0x000026C7 System.Void System.Diagnostics.Tracing.ActivityFilter_<>c__DisplayClass11_0::.ctor()
 extern void U3CU3Ec__DisplayClass11_0__ctor_mC36FF641F6D74BAFFD34D20C425F6CAB6186B724 ();
-// 0x000026C5 System.Void System.Diagnostics.Tracing.ActivityFilter_<>c__DisplayClass11_0::<GetActivityDyingDelegate>b__0(System.Guid)
+// 0x000026C8 System.Void System.Diagnostics.Tracing.ActivityFilter_<>c__DisplayClass11_0::<GetActivityDyingDelegate>b__0(System.Guid)
 extern void U3CU3Ec__DisplayClass11_0_U3CGetActivityDyingDelegateU3Eb__0_m564AE359E0218F0F72645EEFC5412A7EB1CEAEA8 ();
-// 0x000026C6 System.Void System.Diagnostics.Tracing.ActivityFilter_<>c__DisplayClass13_0::.ctor()
+// 0x000026C9 System.Void System.Diagnostics.Tracing.ActivityFilter_<>c__DisplayClass13_0::.ctor()
 extern void U3CU3Ec__DisplayClass13_0__ctor_m98D55CE8C6D7C06709C5EBCA1F4AA16C4FD0DBE7 ();
-// 0x000026C7 System.Int32 System.Diagnostics.Tracing.ActivityFilter_<>c__DisplayClass13_0::<TrimActiveActivityStore>b__0(System.Collections.Generic.KeyValuePair`2<System.Guid,System.Int32>,System.Collections.Generic.KeyValuePair`2<System.Guid,System.Int32>)
+// 0x000026CA System.Int32 System.Diagnostics.Tracing.ActivityFilter_<>c__DisplayClass13_0::<TrimActiveActivityStore>b__0(System.Collections.Generic.KeyValuePair`2<System.Guid,System.Int32>,System.Collections.Generic.KeyValuePair`2<System.Guid,System.Int32>)
 extern void U3CU3Ec__DisplayClass13_0_U3CTrimActiveActivityStoreU3Eb__0_m232F9353137386136CACE83A0EDE95E39FA99566 ();
-// 0x000026C8 System.Diagnostics.Tracing.EtwSession System.Diagnostics.Tracing.EtwSession::GetEtwSession(System.Int32,System.Boolean)
+// 0x000026CB System.Diagnostics.Tracing.EtwSession System.Diagnostics.Tracing.EtwSession::GetEtwSession(System.Int32,System.Boolean)
 extern void EtwSession_GetEtwSession_m14FE36A6BDA36657ACA9BBEA4C60CB565F9123C7 ();
-// 0x000026C9 System.Void System.Diagnostics.Tracing.EtwSession::RemoveEtwSession(System.Diagnostics.Tracing.EtwSession)
+// 0x000026CC System.Void System.Diagnostics.Tracing.EtwSession::RemoveEtwSession(System.Diagnostics.Tracing.EtwSession)
 extern void EtwSession_RemoveEtwSession_m3DBA837698A1FD39777CAB3E8B8520F2247AB9CF ();
-// 0x000026CA System.Void System.Diagnostics.Tracing.EtwSession::TrimGlobalList()
+// 0x000026CD System.Void System.Diagnostics.Tracing.EtwSession::TrimGlobalList()
 extern void EtwSession_TrimGlobalList_m9D86F191B7D640C690D0A0B5A135BAEC8958AD70 ();
-// 0x000026CB System.Void System.Diagnostics.Tracing.EtwSession::.ctor(System.Int32)
+// 0x000026CE System.Void System.Diagnostics.Tracing.EtwSession::.ctor(System.Int32)
 extern void EtwSession__ctor_m7E42DF90818C56AD7D42EC3253F9093601D14298 ();
-// 0x000026CC System.Void System.Diagnostics.Tracing.EtwSession::.cctor()
+// 0x000026CF System.Void System.Diagnostics.Tracing.EtwSession::.cctor()
 extern void EtwSession__cctor_m7C39F24A99FC96B4C03232F16CB145DCAACCB7CA ();
-// 0x000026CD System.Void System.Diagnostics.Tracing.EtwSession_<>c__DisplayClass1_0::.ctor()
+// 0x000026D0 System.Void System.Diagnostics.Tracing.EtwSession_<>c__DisplayClass1_0::.ctor()
 extern void U3CU3Ec__DisplayClass1_0__ctor_mB255346B368388999B2278A029F8809960234BE5 ();
-// 0x000026CE System.Boolean System.Diagnostics.Tracing.EtwSession_<>c__DisplayClass1_0::<RemoveEtwSession>b__0(System.WeakReference`1<System.Diagnostics.Tracing.EtwSession>)
+// 0x000026D1 System.Boolean System.Diagnostics.Tracing.EtwSession_<>c__DisplayClass1_0::<RemoveEtwSession>b__0(System.WeakReference`1<System.Diagnostics.Tracing.EtwSession>)
 extern void U3CU3Ec__DisplayClass1_0_U3CRemoveEtwSessionU3Eb__0_mB859C94FB51BAA7EDF9A3B7B8672CE786439E391 ();
-// 0x000026CF System.Void System.Diagnostics.Tracing.EtwSession_<>c::.cctor()
+// 0x000026D2 System.Void System.Diagnostics.Tracing.EtwSession_<>c::.cctor()
 extern void U3CU3Ec__cctor_mBAFD5DCA645C4737242A4DDFDF9FC1CCE45AC17A ();
-// 0x000026D0 System.Void System.Diagnostics.Tracing.EtwSession_<>c::.ctor()
+// 0x000026D3 System.Void System.Diagnostics.Tracing.EtwSession_<>c::.ctor()
 extern void U3CU3Ec__ctor_m66C172742DCF7147BDED206B842A6982D4E08093 ();
-// 0x000026D1 System.Boolean System.Diagnostics.Tracing.EtwSession_<>c::<TrimGlobalList>b__2_0(System.WeakReference`1<System.Diagnostics.Tracing.EtwSession>)
+// 0x000026D4 System.Boolean System.Diagnostics.Tracing.EtwSession_<>c::<TrimGlobalList>b__2_0(System.WeakReference`1<System.Diagnostics.Tracing.EtwSession>)
 extern void U3CU3Ec_U3CTrimGlobalListU3Eb__2_0_m8248F04CFE66D74535AD59F94D04A353912A9AA3 ();
-// 0x000026D2 System.Void System.Diagnostics.Tracing.SessionMask::.ctor(System.UInt32)
+// 0x000026D5 System.Void System.Diagnostics.Tracing.SessionMask::.ctor(System.UInt32)
 extern void SessionMask__ctor_mF0381B32D172407AD80049857433DAA4206268EB_AdjustorThunk ();
-// 0x000026D3 System.Boolean System.Diagnostics.Tracing.SessionMask::IsEqualOrSupersetOf(System.Diagnostics.Tracing.SessionMask)
+// 0x000026D6 System.Boolean System.Diagnostics.Tracing.SessionMask::IsEqualOrSupersetOf(System.Diagnostics.Tracing.SessionMask)
 extern void SessionMask_IsEqualOrSupersetOf_m59465BC65F95147CEC04D7C88FE57B2A8328BCAD_AdjustorThunk ();
-// 0x000026D4 System.Diagnostics.Tracing.SessionMask System.Diagnostics.Tracing.SessionMask::get_All()
+// 0x000026D7 System.Diagnostics.Tracing.SessionMask System.Diagnostics.Tracing.SessionMask::get_All()
 extern void SessionMask_get_All_m496B5178F530B5516652F0F33CEF01BC9E3DD7B4 ();
-// 0x000026D5 System.Diagnostics.Tracing.SessionMask System.Diagnostics.Tracing.SessionMask::FromId(System.Int32)
+// 0x000026D8 System.Diagnostics.Tracing.SessionMask System.Diagnostics.Tracing.SessionMask::FromId(System.Int32)
 extern void SessionMask_FromId_m4766E347B5F280891336E8B9B70BD9F4EBD686CC ();
-// 0x000026D6 System.UInt64 System.Diagnostics.Tracing.SessionMask::ToEventKeywords()
+// 0x000026D9 System.UInt64 System.Diagnostics.Tracing.SessionMask::ToEventKeywords()
 extern void SessionMask_ToEventKeywords_m0A85046D77F1C6AA244EB74A812E52C8059B77B8_AdjustorThunk ();
-// 0x000026D7 System.Diagnostics.Tracing.SessionMask System.Diagnostics.Tracing.SessionMask::FromEventKeywords(System.UInt64)
+// 0x000026DA System.Diagnostics.Tracing.SessionMask System.Diagnostics.Tracing.SessionMask::FromEventKeywords(System.UInt64)
 extern void SessionMask_FromEventKeywords_m90707FEE5D3E1D84057394FAE517EF6B1696D701 ();
-// 0x000026D8 System.Boolean System.Diagnostics.Tracing.SessionMask::get_Item(System.Int32)
+// 0x000026DB System.Boolean System.Diagnostics.Tracing.SessionMask::get_Item(System.Int32)
 extern void SessionMask_get_Item_mB7D297B67C35C99EB2FCBA1CC0EECC6BFB8D2E3A_AdjustorThunk ();
-// 0x000026D9 System.Void System.Diagnostics.Tracing.SessionMask::set_Item(System.Int32,System.Boolean)
+// 0x000026DC System.Void System.Diagnostics.Tracing.SessionMask::set_Item(System.Int32,System.Boolean)
 extern void SessionMask_set_Item_m0C2E974F91F0702A8D534619C30AEA4195D7D628_AdjustorThunk ();
-// 0x000026DA System.UInt64 System.Diagnostics.Tracing.SessionMask::op_Explicit(System.Diagnostics.Tracing.SessionMask)
+// 0x000026DD System.UInt64 System.Diagnostics.Tracing.SessionMask::op_Explicit(System.Diagnostics.Tracing.SessionMask)
 extern void SessionMask_op_Explicit_m62151A83BD15863B4E030D07FB7621C2540A3CF7 ();
-// 0x000026DB System.UInt32 System.Diagnostics.Tracing.SessionMask::op_Explicit(System.Diagnostics.Tracing.SessionMask)
+// 0x000026DE System.UInt32 System.Diagnostics.Tracing.SessionMask::op_Explicit(System.Diagnostics.Tracing.SessionMask)
 extern void SessionMask_op_Explicit_m0098B07CE617722AD1EA9DF898D6539A0EEE19EE ();
-// 0x000026DC System.Void System.Diagnostics.Tracing.EventDispatcher::.ctor(System.Diagnostics.Tracing.EventDispatcher,System.Boolean[],System.Diagnostics.Tracing.EventListener)
+// 0x000026DF System.Void System.Diagnostics.Tracing.EventDispatcher::.ctor(System.Diagnostics.Tracing.EventDispatcher,System.Boolean[],System.Diagnostics.Tracing.EventListener)
 extern void EventDispatcher__ctor_mACD9486D1C3A29D8508AD3BD2DDDE9121B5CCF2E ();
-// 0x000026DD System.Void System.Diagnostics.Tracing.ManifestBuilder::.ctor(System.String,System.Guid,System.String,System.Resources.ResourceManager,System.Diagnostics.Tracing.EventManifestOptions)
+// 0x000026E0 System.Void System.Diagnostics.Tracing.ManifestBuilder::.ctor(System.String,System.Guid,System.String,System.Resources.ResourceManager,System.Diagnostics.Tracing.EventManifestOptions)
 extern void ManifestBuilder__ctor_mE5FB339ABBF66CDB14F65E053D7D8764D2659C39 ();
-// 0x000026DE System.Void System.Diagnostics.Tracing.ManifestBuilder::AddOpcode(System.String,System.Int32)
+// 0x000026E1 System.Void System.Diagnostics.Tracing.ManifestBuilder::AddOpcode(System.String,System.Int32)
 extern void ManifestBuilder_AddOpcode_m39D46900FA589DD6295EC85E438CD844B1771227 ();
-// 0x000026DF System.Void System.Diagnostics.Tracing.ManifestBuilder::AddTask(System.String,System.Int32)
+// 0x000026E2 System.Void System.Diagnostics.Tracing.ManifestBuilder::AddTask(System.String,System.Int32)
 extern void ManifestBuilder_AddTask_m27FA79B8634C16C8D2EA5068AFB937EC3DEA4282 ();
-// 0x000026E0 System.Void System.Diagnostics.Tracing.ManifestBuilder::AddKeyword(System.String,System.UInt64)
+// 0x000026E3 System.Void System.Diagnostics.Tracing.ManifestBuilder::AddKeyword(System.String,System.UInt64)
 extern void ManifestBuilder_AddKeyword_m40B31162FE9759417693A96A346D03759AE5F79A ();
-// 0x000026E1 System.Void System.Diagnostics.Tracing.ManifestBuilder::StartEvent(System.String,System.Diagnostics.Tracing.EventAttribute)
+// 0x000026E4 System.Void System.Diagnostics.Tracing.ManifestBuilder::StartEvent(System.String,System.Diagnostics.Tracing.EventAttribute)
 extern void ManifestBuilder_StartEvent_m20757C6BE1E0E1F3B9AB3CB1674567A8B56E183E ();
-// 0x000026E2 System.Void System.Diagnostics.Tracing.ManifestBuilder::AddEventParameter(System.Type,System.String)
+// 0x000026E5 System.Void System.Diagnostics.Tracing.ManifestBuilder::AddEventParameter(System.Type,System.String)
 extern void ManifestBuilder_AddEventParameter_m53C32DDB5EB3C924364BB80E0E0492E0E06CC46E ();
-// 0x000026E3 System.Void System.Diagnostics.Tracing.ManifestBuilder::EndEvent()
+// 0x000026E6 System.Void System.Diagnostics.Tracing.ManifestBuilder::EndEvent()
 extern void ManifestBuilder_EndEvent_m95778E3FF0E7DA01DD15D5B3EFBE13A0AB208F6C ();
-// 0x000026E4 System.Byte[] System.Diagnostics.Tracing.ManifestBuilder::CreateManifest()
+// 0x000026E7 System.Byte[] System.Diagnostics.Tracing.ManifestBuilder::CreateManifest()
 extern void ManifestBuilder_CreateManifest_mDD01686B4C7D615B86ACBA648988B5903FBB67E7 ();
-// 0x000026E5 System.Collections.Generic.IList`1<System.String> System.Diagnostics.Tracing.ManifestBuilder::get_Errors()
+// 0x000026E8 System.Collections.Generic.IList`1<System.String> System.Diagnostics.Tracing.ManifestBuilder::get_Errors()
 extern void ManifestBuilder_get_Errors_m38AD987BCFCAC441E35B1407D0E6E07C42AB822E ();
-// 0x000026E6 System.Void System.Diagnostics.Tracing.ManifestBuilder::ManifestError(System.String,System.Boolean)
+// 0x000026E9 System.Void System.Diagnostics.Tracing.ManifestBuilder::ManifestError(System.String,System.Boolean)
 extern void ManifestBuilder_ManifestError_mA178FBE087E34A3CC07873D32896191BF7C74A20 ();
-// 0x000026E7 System.String System.Diagnostics.Tracing.ManifestBuilder::CreateManifestString()
+// 0x000026EA System.String System.Diagnostics.Tracing.ManifestBuilder::CreateManifestString()
 extern void ManifestBuilder_CreateManifestString_m345D8445BF70DD3AE849513454D09A710CB99D5F ();
-// 0x000026E8 System.Void System.Diagnostics.Tracing.ManifestBuilder::WriteNameAndMessageAttribs(System.Text.StringBuilder,System.String,System.String)
+// 0x000026EB System.Void System.Diagnostics.Tracing.ManifestBuilder::WriteNameAndMessageAttribs(System.Text.StringBuilder,System.String,System.String)
 extern void ManifestBuilder_WriteNameAndMessageAttribs_m444B282AD88FA3A63618C9E361B3B084642889D8 ();
-// 0x000026E9 System.Void System.Diagnostics.Tracing.ManifestBuilder::WriteMessageAttrib(System.Text.StringBuilder,System.String,System.String,System.String)
+// 0x000026EC System.Void System.Diagnostics.Tracing.ManifestBuilder::WriteMessageAttrib(System.Text.StringBuilder,System.String,System.String,System.String)
 extern void ManifestBuilder_WriteMessageAttrib_m41F740A687F6D00B1D52FDA78B5D22052B587027 ();
-// 0x000026EA System.String System.Diagnostics.Tracing.ManifestBuilder::GetLocalizedMessage(System.String,System.Globalization.CultureInfo,System.Boolean)
+// 0x000026ED System.String System.Diagnostics.Tracing.ManifestBuilder::GetLocalizedMessage(System.String,System.Globalization.CultureInfo,System.Boolean)
 extern void ManifestBuilder_GetLocalizedMessage_mCB29634920B7747BA68803A846811B46A1538C66 ();
-// 0x000026EB System.Collections.Generic.List`1<System.Globalization.CultureInfo> System.Diagnostics.Tracing.ManifestBuilder::GetSupportedCultures(System.Resources.ResourceManager)
+// 0x000026EE System.Collections.Generic.List`1<System.Globalization.CultureInfo> System.Diagnostics.Tracing.ManifestBuilder::GetSupportedCultures(System.Resources.ResourceManager)
 extern void ManifestBuilder_GetSupportedCultures_mA8CBFCA3BDA40C88141E2DBC6F44186D0355BDFF ();
-// 0x000026EC System.String System.Diagnostics.Tracing.ManifestBuilder::GetLevelName(System.Diagnostics.Tracing.EventLevel)
+// 0x000026EF System.String System.Diagnostics.Tracing.ManifestBuilder::GetLevelName(System.Diagnostics.Tracing.EventLevel)
 extern void ManifestBuilder_GetLevelName_mDE24AE4C28BD5EF3FE4D29D3731F19B050C6D1E2 ();
-// 0x000026ED System.String System.Diagnostics.Tracing.ManifestBuilder::GetTaskName(System.Diagnostics.Tracing.EventTask,System.String)
+// 0x000026F0 System.String System.Diagnostics.Tracing.ManifestBuilder::GetTaskName(System.Diagnostics.Tracing.EventTask,System.String)
 extern void ManifestBuilder_GetTaskName_mA4295AA0FF9A15046B6C696F6C33265BA44CC104 ();
-// 0x000026EE System.String System.Diagnostics.Tracing.ManifestBuilder::GetOpcodeName(System.Diagnostics.Tracing.EventOpcode,System.String)
+// 0x000026F1 System.String System.Diagnostics.Tracing.ManifestBuilder::GetOpcodeName(System.Diagnostics.Tracing.EventOpcode,System.String)
 extern void ManifestBuilder_GetOpcodeName_m612EBC12C1DB95126B4335BDE9AB4EF9671CDA59 ();
-// 0x000026EF System.String System.Diagnostics.Tracing.ManifestBuilder::GetKeywords(System.UInt64,System.String)
+// 0x000026F2 System.String System.Diagnostics.Tracing.ManifestBuilder::GetKeywords(System.UInt64,System.String)
 extern void ManifestBuilder_GetKeywords_m5EA6BEBFD8B95C29E7079DF929E551442315D3B0 ();
-// 0x000026F0 System.String System.Diagnostics.Tracing.ManifestBuilder::GetTypeName(System.Type)
+// 0x000026F3 System.String System.Diagnostics.Tracing.ManifestBuilder::GetTypeName(System.Type)
 extern void ManifestBuilder_GetTypeName_m4148EBA98880502C3C7836AB3A99230DEC3AB71C ();
-// 0x000026F1 System.Void System.Diagnostics.Tracing.ManifestBuilder::UpdateStringBuilder(System.Text.StringBuilder&,System.String,System.Int32,System.Int32)
+// 0x000026F4 System.Void System.Diagnostics.Tracing.ManifestBuilder::UpdateStringBuilder(System.Text.StringBuilder&,System.String,System.Int32,System.Int32)
 extern void ManifestBuilder_UpdateStringBuilder_m1FFC9292B0D91B441594C31E4F3373062821782E ();
-// 0x000026F2 System.String System.Diagnostics.Tracing.ManifestBuilder::TranslateToManifestConvention(System.String,System.String)
+// 0x000026F5 System.String System.Diagnostics.Tracing.ManifestBuilder::TranslateToManifestConvention(System.String,System.String)
 extern void ManifestBuilder_TranslateToManifestConvention_m100A461415FF81C8254B2E763B5F45132A49D85C ();
-// 0x000026F3 System.Int32 System.Diagnostics.Tracing.ManifestBuilder::TranslateIndexToManifestConvention(System.Int32,System.String)
+// 0x000026F6 System.Int32 System.Diagnostics.Tracing.ManifestBuilder::TranslateIndexToManifestConvention(System.Int32,System.String)
 extern void ManifestBuilder_TranslateIndexToManifestConvention_m5856C01D23838CEF6101AE630F3010A7D3222049 ();
-// 0x000026F4 System.Void System.Diagnostics.Tracing.ManifestBuilder_<>c__DisplayClass22_0::.ctor()
+// 0x000026F7 System.Void System.Diagnostics.Tracing.ManifestBuilder_<>c__DisplayClass22_0::.ctor()
 extern void U3CU3Ec__DisplayClass22_0__ctor_mDB74AD5BD6EEBA50B284AA8D1D62BD3A586A4050 ();
-// 0x000026F5 System.Void System.Diagnostics.Tracing.ManifestBuilder_<>c__DisplayClass22_1::.ctor()
+// 0x000026F8 System.Void System.Diagnostics.Tracing.ManifestBuilder_<>c__DisplayClass22_1::.ctor()
 extern void U3CU3Ec__DisplayClass22_1__ctor_mFB26E5BDCE1C37A03D22EAE3CB62B76C3D1FF818 ();
-// 0x000026F6 System.Void System.Diagnostics.Tracing.ManifestBuilder_<>c__DisplayClass22_1::<TranslateToManifestConvention>b__0(System.Char,System.String)
+// 0x000026F9 System.Void System.Diagnostics.Tracing.ManifestBuilder_<>c__DisplayClass22_1::<TranslateToManifestConvention>b__0(System.Char,System.String)
 extern void U3CU3Ec__DisplayClass22_1_U3CTranslateToManifestConventionU3Eb__0_m739A6DC3C33A8D6A6F9FD0CEFAD75723E53E6372 ();
-// 0x000026F7 System.Void System.Diagnostics.Tracing.EventSourceException::.ctor()
+// 0x000026FA System.Void System.Diagnostics.Tracing.EventSourceException::.ctor()
 extern void EventSourceException__ctor_mC129C6CA6FA04EF61AE7EA8FFAEB31EE2FB22CB4 ();
-// 0x000026F8 System.Void System.Diagnostics.Tracing.EventSourceException::.ctor(System.String,System.Exception)
+// 0x000026FB System.Void System.Diagnostics.Tracing.EventSourceException::.ctor(System.String,System.Exception)
 extern void EventSourceException__ctor_m78D3B11FA7DD159AA95794E02A5F773920CA1E4B ();
-// 0x000026F9 System.Void System.Diagnostics.Tracing.EventSourceException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+// 0x000026FC System.Void System.Diagnostics.Tracing.EventSourceException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 extern void EventSourceException__ctor_m23257A66B05A7D0E3D3D15D4015ECFF5148A2D2D ();
-// 0x000026FA System.Void System.Diagnostics.Tracing.EventSourceException::.ctor(System.Exception)
+// 0x000026FD System.Void System.Diagnostics.Tracing.EventSourceException::.ctor(System.Exception)
 extern void EventSourceException__ctor_m0F9F45DC1718C6DEEC208258A16B71F140022D8C ();
-// 0x000026FB System.UInt32 <PrivateImplementationDetails>::ComputeStringHash(System.String)
+// 0x000026FE System.UInt32 <PrivateImplementationDetails>::ComputeStringHash(System.String)
 extern void U3CPrivateImplementationDetailsU3E_ComputeStringHash_m5C1A2CA6703F0D94CE54FF9003154837BB1CDF9A ();
-// 0x000026FC System.Void System.Reflection.Emit.UnmanagedMarshal::.ctor()
+// 0x000026FF System.Void System.Reflection.Emit.UnmanagedMarshal::.ctor()
 extern void UnmanagedMarshal__ctor_m005368EB74DDF13094D2A208604C32BF147E01AB ();
-// 0x000026FD System.Reflection.MethodAttributes System.Reflection.Emit.DynamicMethod::get_Attributes()
+// 0x00002700 System.Reflection.MethodAttributes System.Reflection.Emit.DynamicMethod::get_Attributes()
 extern void DynamicMethod_get_Attributes_mC58D4B535A6398DC3609EE74AD7C9BF722441280 ();
-// 0x000026FE System.Type System.Reflection.Emit.DynamicMethod::get_DeclaringType()
+// 0x00002701 System.Type System.Reflection.Emit.DynamicMethod::get_DeclaringType()
 extern void DynamicMethod_get_DeclaringType_mD2753935566CFA2E78A850A4F5375B097A02ACDD ();
-// 0x000026FF System.RuntimeMethodHandle System.Reflection.Emit.DynamicMethod::get_MethodHandle()
+// 0x00002702 System.RuntimeMethodHandle System.Reflection.Emit.DynamicMethod::get_MethodHandle()
 extern void DynamicMethod_get_MethodHandle_m9819B9B17985F310B6B08893194D0C43B5014DD1 ();
-// 0x00002700 System.String System.Reflection.Emit.DynamicMethod::get_Name()
+// 0x00002703 System.String System.Reflection.Emit.DynamicMethod::get_Name()
 extern void DynamicMethod_get_Name_mDFA40A0322EA9D82A58BC1D7851539B6DB7784DE ();
-// 0x00002701 System.Type System.Reflection.Emit.DynamicMethod::get_ReflectedType()
+// 0x00002704 System.Type System.Reflection.Emit.DynamicMethod::get_ReflectedType()
 extern void DynamicMethod_get_ReflectedType_mB5CFA1E729693C6F57C212C8310CF61841D6FFBE ();
-// 0x00002702 System.Reflection.MethodInfo System.Reflection.Emit.DynamicMethod::GetBaseDefinition()
+// 0x00002705 System.Reflection.MethodInfo System.Reflection.Emit.DynamicMethod::GetBaseDefinition()
 extern void DynamicMethod_GetBaseDefinition_m28936BA84F6CD1D1F19B3C0DDCADC174BD866955 ();
-// 0x00002703 System.Object[] System.Reflection.Emit.DynamicMethod::GetCustomAttributes(System.Boolean)
+// 0x00002706 System.Object[] System.Reflection.Emit.DynamicMethod::GetCustomAttributes(System.Boolean)
 extern void DynamicMethod_GetCustomAttributes_mCF887C904460299D866BC4EB78A833E8B2F618CB ();
-// 0x00002704 System.Object[] System.Reflection.Emit.DynamicMethod::GetCustomAttributes(System.Type,System.Boolean)
+// 0x00002707 System.Object[] System.Reflection.Emit.DynamicMethod::GetCustomAttributes(System.Type,System.Boolean)
 extern void DynamicMethod_GetCustomAttributes_m26DE975FCACBC09460D11BCAAE7B54680D2C7E35 ();
-// 0x00002705 System.Reflection.MethodImplAttributes System.Reflection.Emit.DynamicMethod::GetMethodImplementationFlags()
+// 0x00002708 System.Reflection.MethodImplAttributes System.Reflection.Emit.DynamicMethod::GetMethodImplementationFlags()
 extern void DynamicMethod_GetMethodImplementationFlags_mC0674C63123FEC9A90C9D1C94E50A99B3CDAE2E2 ();
-// 0x00002706 System.Reflection.ParameterInfo[] System.Reflection.Emit.DynamicMethod::GetParameters()
+// 0x00002709 System.Reflection.ParameterInfo[] System.Reflection.Emit.DynamicMethod::GetParameters()
 extern void DynamicMethod_GetParameters_m8C20FCA60AE4C677DA668BB31CEC123BB92F2C20 ();
-// 0x00002707 System.Object System.Reflection.Emit.DynamicMethod::Invoke(System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)
+// 0x0000270A System.Object System.Reflection.Emit.DynamicMethod::Invoke(System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)
 extern void DynamicMethod_Invoke_mE49140EFF4E317EE7D6F8A43194B75922834836E ();
-// 0x00002708 System.Boolean System.Reflection.Emit.DynamicMethod::IsDefined(System.Type,System.Boolean)
+// 0x0000270B System.Boolean System.Reflection.Emit.DynamicMethod::IsDefined(System.Type,System.Boolean)
 extern void DynamicMethod_IsDefined_m6E187A1CED0D49048857AFE4D9BD4C4D9204C0EA ();
-// 0x00002709 System.Void Unity.ThrowStub::ThrowNotSupportedException()
+// 0x0000270C System.Void Unity.ThrowStub::ThrowNotSupportedException()
 extern void ThrowStub_ThrowNotSupportedException_mA248D7D785682F31CDF02FDC1FAB3173EE1B1E19 ();
-// 0x0000270A System.Void System.__Il2CppComObject::Finalize()
+// 0x0000270D System.Void System.__Il2CppComObject::Finalize()
 extern void __Il2CppComObject_Finalize_m98123DBAAA7974D2616F9E90F2574955714CA9A9 ();
-// 0x0000270B System.Void System.__Il2CppComDelegate::Finalize()
+// 0x0000270E System.Void System.__Il2CppComDelegate::Finalize()
 extern void __Il2CppComDelegate_Finalize_m893C22F7BEDFBDF8F015EA584CC1419D144D2187 ();
-static Il2CppMethodPointer s_methodPointers[9995] = 
+static Il2CppMethodPointer s_methodPointers[9998] = 
 {
 	NULL,
 	NULL,
@@ -28193,6 +28196,9 @@ static Il2CppMethodPointer s_methodPointers[9995] =
 	NULL,
 	NULL,
 	NULL,
+	NULL,
+	NULL,
+	NULL,
 	ConditionalAttribute__ctor_mBCBBDCEEA97B6D8AB2E161FD30366D25052D6185,
 	DebuggerStepThroughAttribute__ctor_mA53619AA648F1BF673897FD31866B02BFCD850CB,
 	DebuggerHiddenAttribute__ctor_mAA6F6E292901D40E4B4C876530F1349332CCD1B5,
@@ -28894,7 +28900,7 @@ static Il2CppMethodPointer s_methodPointers[9995] =
 	__Il2CppComObject_Finalize_m98123DBAAA7974D2616F9E90F2574955714CA9A9,
 	__Il2CppComDelegate_Finalize_m893C22F7BEDFBDF8F015EA584CC1419D144D2187,
 };
-static const int32_t s_InvokerIndices[9995] = 
+static const int32_t s_InvokerIndices[9998] = 
 {
 	-1,
 	-1,
@@ -38191,6 +38197,9 @@ static const int32_t s_InvokerIndices[9995] =
 	-1,
 	-1,
 	-1,
+	-1,
+	-1,
+	-1,
 	26,
 	23,
 	23,
@@ -38895,7 +38904,7 @@ static const int32_t s_InvokerIndices[9995] =
 static const Il2CppTokenIndexMethodTuple s_reversePInvokeIndices[2] = 
 {
 	{ 0x06001899, 1,  (void**)&OSSpecificSynchronizationContext_InvocationEntry_m056BCE43FF155AAE872FF7E565F8F72A50D26147_RuntimeMethod_var, 0 },
-	{ 0x06002668, 0,  (void**)&EventProvider_EtwEnableCallBack_m32987ABF4E909DC5476F09C034714951CB4A8048_RuntimeMethod_var, 0 },
+	{ 0x0600266B, 0,  (void**)&EventProvider_EtwEnableCallBack_m32987ABF4E909DC5476F09C034714951CB4A8048_RuntimeMethod_var, 0 },
 };
 static const Il2CppTokenRangePair s_rgctxIndices[143] = 
 {
@@ -38950,29 +38959,29 @@ static const Il2CppTokenRangePair s_rgctxIndices[143] =
 	{ 0x020004E3, { 512, 4 } },
 	{ 0x020004E4, { 516, 4 } },
 	{ 0x020004E5, { 520, 5 } },
-	{ 0x020004F2, { 525, 38 } },
-	{ 0x020004F3, { 563, 3 } },
-	{ 0x02000503, { 569, 1 } },
-	{ 0x02000504, { 570, 5 } },
-	{ 0x02000508, { 575, 2 } },
-	{ 0x0200050A, { 579, 4 } },
-	{ 0x0200050B, { 583, 5 } },
-	{ 0x02000515, { 588, 9 } },
-	{ 0x02000517, { 597, 9 } },
-	{ 0x02000518, { 606, 3 } },
-	{ 0x02000519, { 609, 9 } },
-	{ 0x0200051C, { 618, 2 } },
-	{ 0x02000539, { 620, 3 } },
-	{ 0x0200053A, { 623, 3 } },
-	{ 0x0200053B, { 626, 3 } },
-	{ 0x0200053C, { 629, 3 } },
-	{ 0x0200053D, { 632, 3 } },
-	{ 0x0200053E, { 635, 3 } },
-	{ 0x0200053F, { 638, 3 } },
-	{ 0x02000540, { 641, 3 } },
-	{ 0x02000548, { 644, 4 } },
-	{ 0x02000549, { 648, 3 } },
-	{ 0x02000557, { 675, 8 } },
+	{ 0x020004F2, { 525, 40 } },
+	{ 0x020004F3, { 565, 3 } },
+	{ 0x02000503, { 571, 1 } },
+	{ 0x02000504, { 572, 5 } },
+	{ 0x02000508, { 577, 2 } },
+	{ 0x0200050A, { 581, 4 } },
+	{ 0x0200050B, { 585, 5 } },
+	{ 0x02000515, { 590, 9 } },
+	{ 0x02000517, { 599, 9 } },
+	{ 0x02000518, { 608, 3 } },
+	{ 0x02000519, { 611, 9 } },
+	{ 0x0200051C, { 620, 2 } },
+	{ 0x02000539, { 622, 3 } },
+	{ 0x0200053A, { 625, 3 } },
+	{ 0x0200053B, { 628, 3 } },
+	{ 0x0200053C, { 631, 3 } },
+	{ 0x0200053D, { 634, 3 } },
+	{ 0x0200053E, { 637, 3 } },
+	{ 0x0200053F, { 640, 3 } },
+	{ 0x02000540, { 643, 3 } },
+	{ 0x02000548, { 646, 4 } },
+	{ 0x02000549, { 650, 3 } },
+	{ 0x02000557, { 677, 8 } },
 	{ 0x06000166, { 6, 1 } },
 	{ 0x0600016A, { 7, 2 } },
 	{ 0x0600016B, { 9, 1 } },
@@ -39037,220 +39046,52 @@ static const Il2CppTokenRangePair s_rgctxIndices[143] =
 	{ 0x0600214C, { 221, 1 } },
 	{ 0x06002325, { 347, 1 } },
 	{ 0x06002326, { 348, 1 } },
-	{ 0x06002478, { 566, 3 } },
-	{ 0x06002491, { 577, 2 } },
-	{ 0x0600257F, { 651, 2 } },
-	{ 0x06002580, { 653, 2 } },
-	{ 0x06002586, { 655, 20 } },
+	{ 0x0600247B, { 568, 3 } },
+	{ 0x06002494, { 579, 2 } },
+	{ 0x06002582, { 653, 2 } },
+	{ 0x06002583, { 655, 2 } },
+	{ 0x06002589, { 657, 20 } },
 };
-static const Il2CppRGCTXDefinition s_rgctxValues[683] = 
+static const Il2CppRGCTXDefinition s_rgctxValues[685] = 
 {
-	{ (Il2CppRGCTXDataType)2, 19323 },
-	{ (Il2CppRGCTXDataType)3, 15528 },
-	{ (Il2CppRGCTXDataType)2, 19324 },
-	{ (Il2CppRGCTXDataType)3, 15529 },
-	{ (Il2CppRGCTXDataType)3, 15530 },
+	{ (Il2CppRGCTXDataType)2, 19327 },
+	{ (Il2CppRGCTXDataType)3, 15618 },
+	{ (Il2CppRGCTXDataType)2, 19328 },
+	{ (Il2CppRGCTXDataType)3, 15619 },
+	{ (Il2CppRGCTXDataType)3, 15620 },
 	{ (Il2CppRGCTXDataType)2, 9290 },
-	{ (Il2CppRGCTXDataType)2, 19325 },
+	{ (Il2CppRGCTXDataType)2, 19329 },
 	{ (Il2CppRGCTXDataType)2, 9565 },
-	{ (Il2CppRGCTXDataType)3, 15531 },
+	{ (Il2CppRGCTXDataType)3, 15621 },
 	{ (Il2CppRGCTXDataType)2, 9567 },
 	{ (Il2CppRGCTXDataType)2, 9573 },
-	{ (Il2CppRGCTXDataType)3, 15532 },
-	{ (Il2CppRGCTXDataType)3, 15533 },
-	{ (Il2CppRGCTXDataType)3, 15534 },
-	{ (Il2CppRGCTXDataType)3, 15535 },
-	{ (Il2CppRGCTXDataType)3, 15536 },
-	{ (Il2CppRGCTXDataType)3, 15537 },
-	{ (Il2CppRGCTXDataType)2, 19326 },
-	{ (Il2CppRGCTXDataType)3, 15538 },
-	{ (Il2CppRGCTXDataType)3, 15539 },
-	{ (Il2CppRGCTXDataType)3, 15540 },
-	{ (Il2CppRGCTXDataType)3, 15541 },
-	{ (Il2CppRGCTXDataType)3, 15542 },
-	{ (Il2CppRGCTXDataType)3, 15543 },
-	{ (Il2CppRGCTXDataType)3, 15544 },
-	{ (Il2CppRGCTXDataType)3, 15545 },
-	{ (Il2CppRGCTXDataType)3, 15546 },
-	{ (Il2CppRGCTXDataType)3, 15547 },
-	{ (Il2CppRGCTXDataType)3, 15548 },
-	{ (Il2CppRGCTXDataType)2, 19327 },
-	{ (Il2CppRGCTXDataType)3, 15549 },
-	{ (Il2CppRGCTXDataType)2, 19328 },
-	{ (Il2CppRGCTXDataType)3, 15550 },
-	{ (Il2CppRGCTXDataType)3, 15551 },
-	{ (Il2CppRGCTXDataType)3, 15552 },
-	{ (Il2CppRGCTXDataType)3, 15553 },
-	{ (Il2CppRGCTXDataType)3, 15554 },
-	{ (Il2CppRGCTXDataType)2, 19329 },
-	{ (Il2CppRGCTXDataType)3, 15555 },
-	{ (Il2CppRGCTXDataType)3, 15556 },
-	{ (Il2CppRGCTXDataType)3, 15557 },
-	{ (Il2CppRGCTXDataType)3, 15558 },
-	{ (Il2CppRGCTXDataType)3, 15559 },
-	{ (Il2CppRGCTXDataType)3, 15560 },
-	{ (Il2CppRGCTXDataType)3, 15561 },
-	{ (Il2CppRGCTXDataType)3, 15562 },
-	{ (Il2CppRGCTXDataType)3, 15563 },
-	{ (Il2CppRGCTXDataType)3, 15564 },
-	{ (Il2CppRGCTXDataType)3, 15565 },
-	{ (Il2CppRGCTXDataType)3, 15566 },
-	{ (Il2CppRGCTXDataType)3, 15567 },
-	{ (Il2CppRGCTXDataType)3, 15568 },
-	{ (Il2CppRGCTXDataType)2, 19330 },
-	{ (Il2CppRGCTXDataType)2, 19331 },
-	{ (Il2CppRGCTXDataType)3, 15569 },
-	{ (Il2CppRGCTXDataType)2, 9676 },
-	{ (Il2CppRGCTXDataType)2, 9681 },
-	{ (Il2CppRGCTXDataType)2, 9683 },
-	{ (Il2CppRGCTXDataType)2, 19332 },
-	{ (Il2CppRGCTXDataType)3, 15570 },
-	{ (Il2CppRGCTXDataType)2, 19333 },
-	{ (Il2CppRGCTXDataType)3, 15571 },
-	{ (Il2CppRGCTXDataType)3, 15572 },
-	{ (Il2CppRGCTXDataType)2, 19334 },
-	{ (Il2CppRGCTXDataType)3, 15573 },
-	{ (Il2CppRGCTXDataType)2, 9698 },
-	{ (Il2CppRGCTXDataType)2, 9699 },
-	{ (Il2CppRGCTXDataType)3, 15574 },
-	{ (Il2CppRGCTXDataType)3, 15575 },
-	{ (Il2CppRGCTXDataType)2, 9706 },
-	{ (Il2CppRGCTXDataType)3, 15576 },
-	{ (Il2CppRGCTXDataType)2, 9713 },
-	{ (Il2CppRGCTXDataType)2, 19335 },
-	{ (Il2CppRGCTXDataType)3, 15577 },
-	{ (Il2CppRGCTXDataType)2, 19335 },
-	{ (Il2CppRGCTXDataType)2, 9733 },
-	{ (Il2CppRGCTXDataType)3, 15578 },
-	{ (Il2CppRGCTXDataType)2, 19336 },
-	{ (Il2CppRGCTXDataType)2, 9736 },
-	{ (Il2CppRGCTXDataType)2, 9737 },
-	{ (Il2CppRGCTXDataType)2, 19337 },
-	{ (Il2CppRGCTXDataType)2, 9745 },
-	{ (Il2CppRGCTXDataType)2, 9746 },
-	{ (Il2CppRGCTXDataType)2, 9747 },
-	{ (Il2CppRGCTXDataType)1, 9829 },
-	{ (Il2CppRGCTXDataType)2, 9829 },
-	{ (Il2CppRGCTXDataType)2, 19338 },
-	{ (Il2CppRGCTXDataType)2, 10260 },
-	{ (Il2CppRGCTXDataType)3, 15579 },
-	{ (Il2CppRGCTXDataType)2, 10259 },
-	{ (Il2CppRGCTXDataType)2, 19339 },
-	{ (Il2CppRGCTXDataType)2, 19340 },
-	{ (Il2CppRGCTXDataType)2, 10537 },
-	{ (Il2CppRGCTXDataType)2, 10536 },
-	{ (Il2CppRGCTXDataType)3, 15580 },
-	{ (Il2CppRGCTXDataType)3, 15581 },
-	{ (Il2CppRGCTXDataType)3, 15582 },
-	{ (Il2CppRGCTXDataType)2, 10662 },
-	{ (Il2CppRGCTXDataType)1, 10662 },
-	{ (Il2CppRGCTXDataType)1, 10883 },
-	{ (Il2CppRGCTXDataType)2, 10883 },
-	{ (Il2CppRGCTXDataType)2, 11012 },
-	{ (Il2CppRGCTXDataType)2, 11013 },
-	{ (Il2CppRGCTXDataType)2, 11088 },
-	{ (Il2CppRGCTXDataType)3, 15583 },
-	{ (Il2CppRGCTXDataType)2, 11089 },
-	{ (Il2CppRGCTXDataType)3, 15584 },
-	{ (Il2CppRGCTXDataType)2, 11091 },
-	{ (Il2CppRGCTXDataType)3, 15585 },
-	{ (Il2CppRGCTXDataType)3, 15586 },
-	{ (Il2CppRGCTXDataType)3, 15587 },
-	{ (Il2CppRGCTXDataType)2, 11178 },
-	{ (Il2CppRGCTXDataType)3, 15588 },
-	{ (Il2CppRGCTXDataType)3, 15589 },
-	{ (Il2CppRGCTXDataType)2, 11187 },
-	{ (Il2CppRGCTXDataType)3, 15590 },
-	{ (Il2CppRGCTXDataType)2, 19341 },
-	{ (Il2CppRGCTXDataType)3, 15591 },
-	{ (Il2CppRGCTXDataType)3, 15592 },
-	{ (Il2CppRGCTXDataType)3, 15593 },
-	{ (Il2CppRGCTXDataType)3, 15594 },
-	{ (Il2CppRGCTXDataType)3, 15595 },
-	{ (Il2CppRGCTXDataType)3, 15596 },
-	{ (Il2CppRGCTXDataType)3, 15597 },
-	{ (Il2CppRGCTXDataType)2, 19341 },
-	{ (Il2CppRGCTXDataType)3, 15598 },
-	{ (Il2CppRGCTXDataType)3, 15599 },
-	{ (Il2CppRGCTXDataType)2, 11188 },
-	{ (Il2CppRGCTXDataType)3, 15600 },
-	{ (Il2CppRGCTXDataType)3, 15601 },
-	{ (Il2CppRGCTXDataType)3, 15225 },
-	{ (Il2CppRGCTXDataType)2, 11554 },
-	{ (Il2CppRGCTXDataType)3, 15602 },
-	{ (Il2CppRGCTXDataType)3, 15603 },
-	{ (Il2CppRGCTXDataType)2, 11555 },
-	{ (Il2CppRGCTXDataType)3, 15604 },
-	{ (Il2CppRGCTXDataType)2, 11556 },
-	{ (Il2CppRGCTXDataType)3, 15605 },
-	{ (Il2CppRGCTXDataType)3, 15606 },
-	{ (Il2CppRGCTXDataType)3, 15607 },
-	{ (Il2CppRGCTXDataType)3, 15608 },
-	{ (Il2CppRGCTXDataType)2, 19342 },
-	{ (Il2CppRGCTXDataType)3, 15609 },
-	{ (Il2CppRGCTXDataType)3, 15610 },
-	{ (Il2CppRGCTXDataType)2, 11566 },
-	{ (Il2CppRGCTXDataType)3, 15611 },
-	{ (Il2CppRGCTXDataType)2, 11572 },
-	{ (Il2CppRGCTXDataType)3, 15612 },
-	{ (Il2CppRGCTXDataType)3, 15613 },
-	{ (Il2CppRGCTXDataType)2, 11575 },
-	{ (Il2CppRGCTXDataType)3, 15614 },
-	{ (Il2CppRGCTXDataType)2, 11611 },
-	{ (Il2CppRGCTXDataType)2, 11610 },
-	{ (Il2CppRGCTXDataType)3, 15615 },
-	{ (Il2CppRGCTXDataType)3, 15616 },
-	{ (Il2CppRGCTXDataType)3, 15617 },
-	{ (Il2CppRGCTXDataType)3, 15618 },
-	{ (Il2CppRGCTXDataType)3, 15619 },
-	{ (Il2CppRGCTXDataType)2, 11712 },
-	{ (Il2CppRGCTXDataType)2, 11713 },
-	{ (Il2CppRGCTXDataType)3, 15620 },
-	{ (Il2CppRGCTXDataType)3, 15621 },
 	{ (Il2CppRGCTXDataType)3, 15622 },
 	{ (Il2CppRGCTXDataType)3, 15623 },
-	{ (Il2CppRGCTXDataType)2, 19343 },
 	{ (Il2CppRGCTXDataType)3, 15624 },
-	{ (Il2CppRGCTXDataType)2, 11802 },
 	{ (Il2CppRGCTXDataType)3, 15625 },
-	{ (Il2CppRGCTXDataType)2, 11804 },
 	{ (Il2CppRGCTXDataType)3, 15626 },
-	{ (Il2CppRGCTXDataType)2, 11805 },
 	{ (Il2CppRGCTXDataType)3, 15627 },
-	{ (Il2CppRGCTXDataType)2, 19344 },
+	{ (Il2CppRGCTXDataType)2, 19330 },
 	{ (Il2CppRGCTXDataType)3, 15628 },
-	{ (Il2CppRGCTXDataType)2, 11809 },
-	{ (Il2CppRGCTXDataType)2, 19345 },
 	{ (Il2CppRGCTXDataType)3, 15629 },
-	{ (Il2CppRGCTXDataType)2, 19346 },
 	{ (Il2CppRGCTXDataType)3, 15630 },
-	{ (Il2CppRGCTXDataType)2, 19347 },
 	{ (Il2CppRGCTXDataType)3, 15631 },
-	{ (Il2CppRGCTXDataType)2, 19347 },
-	{ (Il2CppRGCTXDataType)2, 11812 },
 	{ (Il2CppRGCTXDataType)3, 15632 },
-	{ (Il2CppRGCTXDataType)2, 11835 },
 	{ (Il2CppRGCTXDataType)3, 15633 },
 	{ (Il2CppRGCTXDataType)3, 15634 },
-	{ (Il2CppRGCTXDataType)2, 12711 },
 	{ (Il2CppRGCTXDataType)3, 15635 },
 	{ (Il2CppRGCTXDataType)3, 15636 },
 	{ (Il2CppRGCTXDataType)3, 15637 },
 	{ (Il2CppRGCTXDataType)3, 15638 },
+	{ (Il2CppRGCTXDataType)2, 19331 },
 	{ (Il2CppRGCTXDataType)3, 15639 },
-	{ (Il2CppRGCTXDataType)2, 12703 },
-	{ (Il2CppRGCTXDataType)1, 12703 },
+	{ (Il2CppRGCTXDataType)2, 19332 },
 	{ (Il2CppRGCTXDataType)3, 15640 },
-	{ (Il2CppRGCTXDataType)2, 12702 },
 	{ (Il2CppRGCTXDataType)3, 15641 },
 	{ (Il2CppRGCTXDataType)3, 15642 },
-	{ (Il2CppRGCTXDataType)2, 12705 },
-	{ (Il2CppRGCTXDataType)2, 12709 },
-	{ (Il2CppRGCTXDataType)2, 12707 },
-	{ (Il2CppRGCTXDataType)2, 12719 },
 	{ (Il2CppRGCTXDataType)3, 15643 },
 	{ (Il2CppRGCTXDataType)3, 15644 },
-	{ (Il2CppRGCTXDataType)2, 12763 },
+	{ (Il2CppRGCTXDataType)2, 19333 },
 	{ (Il2CppRGCTXDataType)3, 15645 },
 	{ (Il2CppRGCTXDataType)3, 15646 },
 	{ (Il2CppRGCTXDataType)3, 15647 },
@@ -39258,55 +39099,78 @@ static const Il2CppRGCTXDefinition s_rgctxValues[683] =
 	{ (Il2CppRGCTXDataType)3, 15649 },
 	{ (Il2CppRGCTXDataType)3, 15650 },
 	{ (Il2CppRGCTXDataType)3, 15651 },
-	{ (Il2CppRGCTXDataType)2, 12811 },
 	{ (Il2CppRGCTXDataType)3, 15652 },
-	{ (Il2CppRGCTXDataType)2, 12812 },
 	{ (Il2CppRGCTXDataType)3, 15653 },
 	{ (Il2CppRGCTXDataType)3, 15654 },
 	{ (Il2CppRGCTXDataType)3, 15655 },
-	{ (Il2CppRGCTXDataType)1, 19349 },
-	{ (Il2CppRGCTXDataType)2, 12896 },
-	{ (Il2CppRGCTXDataType)2, 12897 },
-	{ (Il2CppRGCTXDataType)2, 19350 },
 	{ (Il2CppRGCTXDataType)3, 15656 },
-	{ (Il2CppRGCTXDataType)2, 19253 },
-	{ (Il2CppRGCTXDataType)2, 13009 },
 	{ (Il2CppRGCTXDataType)3, 15657 },
 	{ (Il2CppRGCTXDataType)3, 15658 },
+	{ (Il2CppRGCTXDataType)2, 19334 },
+	{ (Il2CppRGCTXDataType)2, 19335 },
 	{ (Il2CppRGCTXDataType)3, 15659 },
-	{ (Il2CppRGCTXDataType)2, 19254 },
+	{ (Il2CppRGCTXDataType)2, 9676 },
+	{ (Il2CppRGCTXDataType)2, 9681 },
+	{ (Il2CppRGCTXDataType)2, 9683 },
+	{ (Il2CppRGCTXDataType)2, 19336 },
 	{ (Il2CppRGCTXDataType)3, 15660 },
+	{ (Il2CppRGCTXDataType)2, 19337 },
 	{ (Il2CppRGCTXDataType)3, 15661 },
-	{ (Il2CppRGCTXDataType)2, 13011 },
-	{ (Il2CppRGCTXDataType)1, 13010 },
-	{ (Il2CppRGCTXDataType)2, 13010 },
 	{ (Il2CppRGCTXDataType)3, 15662 },
+	{ (Il2CppRGCTXDataType)2, 19338 },
 	{ (Il2CppRGCTXDataType)3, 15663 },
+	{ (Il2CppRGCTXDataType)2, 9698 },
+	{ (Il2CppRGCTXDataType)2, 9699 },
 	{ (Il2CppRGCTXDataType)3, 15664 },
 	{ (Il2CppRGCTXDataType)3, 15665 },
-	{ (Il2CppRGCTXDataType)2, 19351 },
+	{ (Il2CppRGCTXDataType)2, 9706 },
 	{ (Il2CppRGCTXDataType)3, 15666 },
+	{ (Il2CppRGCTXDataType)2, 9713 },
+	{ (Il2CppRGCTXDataType)2, 19339 },
 	{ (Il2CppRGCTXDataType)3, 15667 },
+	{ (Il2CppRGCTXDataType)2, 19339 },
+	{ (Il2CppRGCTXDataType)2, 9733 },
 	{ (Il2CppRGCTXDataType)3, 15668 },
+	{ (Il2CppRGCTXDataType)2, 19340 },
+	{ (Il2CppRGCTXDataType)2, 9736 },
+	{ (Il2CppRGCTXDataType)2, 9737 },
+	{ (Il2CppRGCTXDataType)2, 19341 },
+	{ (Il2CppRGCTXDataType)2, 9745 },
+	{ (Il2CppRGCTXDataType)2, 9746 },
+	{ (Il2CppRGCTXDataType)2, 9747 },
+	{ (Il2CppRGCTXDataType)1, 9829 },
+	{ (Il2CppRGCTXDataType)2, 9829 },
+	{ (Il2CppRGCTXDataType)2, 19342 },
+	{ (Il2CppRGCTXDataType)2, 10260 },
 	{ (Il2CppRGCTXDataType)3, 15669 },
+	{ (Il2CppRGCTXDataType)2, 10259 },
+	{ (Il2CppRGCTXDataType)2, 19343 },
+	{ (Il2CppRGCTXDataType)2, 19344 },
+	{ (Il2CppRGCTXDataType)2, 10537 },
+	{ (Il2CppRGCTXDataType)2, 10536 },
 	{ (Il2CppRGCTXDataType)3, 15670 },
 	{ (Il2CppRGCTXDataType)3, 15671 },
-	{ (Il2CppRGCTXDataType)2, 13022 },
 	{ (Il2CppRGCTXDataType)3, 15672 },
-	{ (Il2CppRGCTXDataType)2, 19352 },
-	{ (Il2CppRGCTXDataType)2, 13025 },
+	{ (Il2CppRGCTXDataType)2, 10662 },
+	{ (Il2CppRGCTXDataType)1, 10662 },
+	{ (Il2CppRGCTXDataType)1, 10883 },
+	{ (Il2CppRGCTXDataType)2, 10883 },
+	{ (Il2CppRGCTXDataType)2, 11012 },
+	{ (Il2CppRGCTXDataType)2, 11013 },
+	{ (Il2CppRGCTXDataType)2, 11088 },
 	{ (Il2CppRGCTXDataType)3, 15673 },
+	{ (Il2CppRGCTXDataType)2, 11089 },
 	{ (Il2CppRGCTXDataType)3, 15674 },
-	{ (Il2CppRGCTXDataType)2, 19259 },
-	{ (Il2CppRGCTXDataType)2, 19353 },
+	{ (Il2CppRGCTXDataType)2, 11091 },
 	{ (Il2CppRGCTXDataType)3, 15675 },
-	{ (Il2CppRGCTXDataType)2, 13024 },
 	{ (Il2CppRGCTXDataType)3, 15676 },
 	{ (Il2CppRGCTXDataType)3, 15677 },
+	{ (Il2CppRGCTXDataType)2, 11178 },
 	{ (Il2CppRGCTXDataType)3, 15678 },
 	{ (Il2CppRGCTXDataType)3, 15679 },
+	{ (Il2CppRGCTXDataType)2, 11187 },
 	{ (Il2CppRGCTXDataType)3, 15680 },
-	{ (Il2CppRGCTXDataType)2, 19257 },
+	{ (Il2CppRGCTXDataType)2, 19345 },
 	{ (Il2CppRGCTXDataType)3, 15681 },
 	{ (Il2CppRGCTXDataType)3, 15682 },
 	{ (Il2CppRGCTXDataType)3, 15683 },
@@ -39314,433 +39178,580 @@ static const Il2CppRGCTXDefinition s_rgctxValues[683] =
 	{ (Il2CppRGCTXDataType)3, 15685 },
 	{ (Il2CppRGCTXDataType)3, 15686 },
 	{ (Il2CppRGCTXDataType)3, 15687 },
-	{ (Il2CppRGCTXDataType)2, 19354 },
+	{ (Il2CppRGCTXDataType)2, 19345 },
 	{ (Il2CppRGCTXDataType)3, 15688 },
 	{ (Il2CppRGCTXDataType)3, 15689 },
-	{ (Il2CppRGCTXDataType)2, 19262 },
-	{ (Il2CppRGCTXDataType)2, 13030 },
-	{ (Il2CppRGCTXDataType)2, 19263 },
+	{ (Il2CppRGCTXDataType)2, 11188 },
 	{ (Il2CppRGCTXDataType)3, 15690 },
-	{ (Il2CppRGCTXDataType)2, 13032 },
-	{ (Il2CppRGCTXDataType)1, 13031 },
-	{ (Il2CppRGCTXDataType)2, 13031 },
 	{ (Il2CppRGCTXDataType)3, 15691 },
-	{ (Il2CppRGCTXDataType)2, 19355 },
+	{ (Il2CppRGCTXDataType)3, 15315 },
+	{ (Il2CppRGCTXDataType)2, 11554 },
 	{ (Il2CppRGCTXDataType)3, 15692 },
 	{ (Il2CppRGCTXDataType)3, 15693 },
-	{ (Il2CppRGCTXDataType)1, 13046 },
+	{ (Il2CppRGCTXDataType)2, 11555 },
 	{ (Il2CppRGCTXDataType)3, 15694 },
-	{ (Il2CppRGCTXDataType)2, 19356 },
+	{ (Il2CppRGCTXDataType)2, 11556 },
 	{ (Il2CppRGCTXDataType)3, 15695 },
-	{ (Il2CppRGCTXDataType)2, 19357 },
-	{ (Il2CppRGCTXDataType)2, 13053 },
 	{ (Il2CppRGCTXDataType)3, 15696 },
 	{ (Il2CppRGCTXDataType)3, 15697 },
-	{ (Il2CppRGCTXDataType)2, 19359 },
-	{ (Il2CppRGCTXDataType)2, 13045 },
 	{ (Il2CppRGCTXDataType)3, 15698 },
-	{ (Il2CppRGCTXDataType)2, 13044 },
+	{ (Il2CppRGCTXDataType)2, 19346 },
 	{ (Il2CppRGCTXDataType)3, 15699 },
 	{ (Il2CppRGCTXDataType)3, 15700 },
+	{ (Il2CppRGCTXDataType)2, 11566 },
 	{ (Il2CppRGCTXDataType)3, 15701 },
+	{ (Il2CppRGCTXDataType)2, 11572 },
 	{ (Il2CppRGCTXDataType)3, 15702 },
 	{ (Il2CppRGCTXDataType)3, 15703 },
-	{ (Il2CppRGCTXDataType)2, 19360 },
+	{ (Il2CppRGCTXDataType)2, 11575 },
 	{ (Il2CppRGCTXDataType)3, 15704 },
+	{ (Il2CppRGCTXDataType)2, 11611 },
+	{ (Il2CppRGCTXDataType)2, 11610 },
 	{ (Il2CppRGCTXDataType)3, 15705 },
 	{ (Il2CppRGCTXDataType)3, 15706 },
 	{ (Il2CppRGCTXDataType)3, 15707 },
 	{ (Il2CppRGCTXDataType)3, 15708 },
 	{ (Il2CppRGCTXDataType)3, 15709 },
+	{ (Il2CppRGCTXDataType)2, 11712 },
+	{ (Il2CppRGCTXDataType)2, 11713 },
 	{ (Il2CppRGCTXDataType)3, 15710 },
 	{ (Il2CppRGCTXDataType)3, 15711 },
 	{ (Il2CppRGCTXDataType)3, 15712 },
-	{ (Il2CppRGCTXDataType)2, 13048 },
-	{ (Il2CppRGCTXDataType)2, 13049 },
 	{ (Il2CppRGCTXDataType)3, 15713 },
-	{ (Il2CppRGCTXDataType)2, 13046 },
-	{ (Il2CppRGCTXDataType)2, 19361 },
+	{ (Il2CppRGCTXDataType)2, 19347 },
 	{ (Il2CppRGCTXDataType)3, 15714 },
-	{ (Il2CppRGCTXDataType)2, 19358 },
+	{ (Il2CppRGCTXDataType)2, 11802 },
 	{ (Il2CppRGCTXDataType)3, 15715 },
+	{ (Il2CppRGCTXDataType)2, 11804 },
 	{ (Il2CppRGCTXDataType)3, 15716 },
+	{ (Il2CppRGCTXDataType)2, 11805 },
 	{ (Il2CppRGCTXDataType)3, 15717 },
+	{ (Il2CppRGCTXDataType)2, 19348 },
 	{ (Il2CppRGCTXDataType)3, 15718 },
+	{ (Il2CppRGCTXDataType)2, 11809 },
+	{ (Il2CppRGCTXDataType)2, 19349 },
 	{ (Il2CppRGCTXDataType)3, 15719 },
+	{ (Il2CppRGCTXDataType)2, 19350 },
 	{ (Il2CppRGCTXDataType)3, 15720 },
+	{ (Il2CppRGCTXDataType)2, 19351 },
 	{ (Il2CppRGCTXDataType)3, 15721 },
+	{ (Il2CppRGCTXDataType)2, 19351 },
+	{ (Il2CppRGCTXDataType)2, 11812 },
 	{ (Il2CppRGCTXDataType)3, 15722 },
+	{ (Il2CppRGCTXDataType)2, 11835 },
 	{ (Il2CppRGCTXDataType)3, 15723 },
-	{ (Il2CppRGCTXDataType)2, 13091 },
 	{ (Il2CppRGCTXDataType)3, 15724 },
+	{ (Il2CppRGCTXDataType)2, 12711 },
 	{ (Il2CppRGCTXDataType)3, 15725 },
-	{ (Il2CppRGCTXDataType)2, 19362 },
 	{ (Il2CppRGCTXDataType)3, 15726 },
 	{ (Il2CppRGCTXDataType)3, 15727 },
-	{ (Il2CppRGCTXDataType)2, 13048 },
 	{ (Il2CppRGCTXDataType)3, 15728 },
 	{ (Il2CppRGCTXDataType)3, 15729 },
+	{ (Il2CppRGCTXDataType)2, 12703 },
+	{ (Il2CppRGCTXDataType)1, 12703 },
 	{ (Il2CppRGCTXDataType)3, 15730 },
+	{ (Il2CppRGCTXDataType)2, 12702 },
 	{ (Il2CppRGCTXDataType)3, 15731 },
 	{ (Il2CppRGCTXDataType)3, 15732 },
-	{ (Il2CppRGCTXDataType)2, 19363 },
+	{ (Il2CppRGCTXDataType)2, 12705 },
+	{ (Il2CppRGCTXDataType)2, 12709 },
+	{ (Il2CppRGCTXDataType)2, 12707 },
+	{ (Il2CppRGCTXDataType)2, 12719 },
 	{ (Il2CppRGCTXDataType)3, 15733 },
-	{ (Il2CppRGCTXDataType)2, 13076 },
 	{ (Il2CppRGCTXDataType)3, 15734 },
-	{ (Il2CppRGCTXDataType)2, 13077 },
+	{ (Il2CppRGCTXDataType)2, 12763 },
 	{ (Il2CppRGCTXDataType)3, 15735 },
 	{ (Il2CppRGCTXDataType)3, 15736 },
-	{ (Il2CppRGCTXDataType)2, 13082 },
 	{ (Il2CppRGCTXDataType)3, 15737 },
 	{ (Il2CppRGCTXDataType)3, 15738 },
-	{ (Il2CppRGCTXDataType)2, 13103 },
 	{ (Il2CppRGCTXDataType)3, 15739 },
-	{ (Il2CppRGCTXDataType)2, 13109 },
 	{ (Il2CppRGCTXDataType)3, 15740 },
-	{ (Il2CppRGCTXDataType)2, 13110 },
 	{ (Il2CppRGCTXDataType)3, 15741 },
-	{ (Il2CppRGCTXDataType)2, 19364 },
+	{ (Il2CppRGCTXDataType)2, 12811 },
 	{ (Il2CppRGCTXDataType)3, 15742 },
-	{ (Il2CppRGCTXDataType)2, 13119 },
-	{ (Il2CppRGCTXDataType)2, 13120 },
+	{ (Il2CppRGCTXDataType)2, 12812 },
 	{ (Il2CppRGCTXDataType)3, 15743 },
 	{ (Il2CppRGCTXDataType)3, 15744 },
-	{ (Il2CppRGCTXDataType)2, 19365 },
 	{ (Il2CppRGCTXDataType)3, 15745 },
+	{ (Il2CppRGCTXDataType)1, 19353 },
+	{ (Il2CppRGCTXDataType)2, 12896 },
+	{ (Il2CppRGCTXDataType)2, 12897 },
+	{ (Il2CppRGCTXDataType)2, 19354 },
 	{ (Il2CppRGCTXDataType)3, 15746 },
+	{ (Il2CppRGCTXDataType)2, 19257 },
+	{ (Il2CppRGCTXDataType)2, 13009 },
 	{ (Il2CppRGCTXDataType)3, 15747 },
 	{ (Il2CppRGCTXDataType)3, 15748 },
 	{ (Il2CppRGCTXDataType)3, 15749 },
+	{ (Il2CppRGCTXDataType)2, 19258 },
 	{ (Il2CppRGCTXDataType)3, 15750 },
 	{ (Il2CppRGCTXDataType)3, 15751 },
+	{ (Il2CppRGCTXDataType)2, 13011 },
+	{ (Il2CppRGCTXDataType)1, 13010 },
+	{ (Il2CppRGCTXDataType)2, 13010 },
 	{ (Il2CppRGCTXDataType)3, 15752 },
 	{ (Il2CppRGCTXDataType)3, 15753 },
-	{ (Il2CppRGCTXDataType)2, 13123 },
 	{ (Il2CppRGCTXDataType)3, 15754 },
-	{ (Il2CppRGCTXDataType)2, 13123 },
 	{ (Il2CppRGCTXDataType)3, 15755 },
+	{ (Il2CppRGCTXDataType)2, 19355 },
 	{ (Il2CppRGCTXDataType)3, 15756 },
-	{ (Il2CppRGCTXDataType)2, 19366 },
 	{ (Il2CppRGCTXDataType)3, 15757 },
-	{ (Il2CppRGCTXDataType)2, 13128 },
 	{ (Il2CppRGCTXDataType)3, 15758 },
 	{ (Il2CppRGCTXDataType)3, 15759 },
 	{ (Il2CppRGCTXDataType)3, 15760 },
 	{ (Il2CppRGCTXDataType)3, 15761 },
+	{ (Il2CppRGCTXDataType)2, 13022 },
 	{ (Il2CppRGCTXDataType)3, 15762 },
+	{ (Il2CppRGCTXDataType)2, 19356 },
+	{ (Il2CppRGCTXDataType)2, 13025 },
 	{ (Il2CppRGCTXDataType)3, 15763 },
 	{ (Il2CppRGCTXDataType)3, 15764 },
+	{ (Il2CppRGCTXDataType)2, 19263 },
+	{ (Il2CppRGCTXDataType)2, 19357 },
 	{ (Il2CppRGCTXDataType)3, 15765 },
+	{ (Il2CppRGCTXDataType)2, 13024 },
 	{ (Il2CppRGCTXDataType)3, 15766 },
 	{ (Il2CppRGCTXDataType)3, 15767 },
-	{ (Il2CppRGCTXDataType)2, 19367 },
 	{ (Il2CppRGCTXDataType)3, 15768 },
-	{ (Il2CppRGCTXDataType)2, 19274 },
-	{ (Il2CppRGCTXDataType)1, 19368 },
-	{ (Il2CppRGCTXDataType)2, 19368 },
 	{ (Il2CppRGCTXDataType)3, 15769 },
-	{ (Il2CppRGCTXDataType)2, 19275 },
-	{ (Il2CppRGCTXDataType)2, 13143 },
 	{ (Il2CppRGCTXDataType)3, 15770 },
+	{ (Il2CppRGCTXDataType)2, 19261 },
 	{ (Il2CppRGCTXDataType)3, 15771 },
-	{ (Il2CppRGCTXDataType)2, 13138 },
 	{ (Il2CppRGCTXDataType)3, 15772 },
-	{ (Il2CppRGCTXDataType)2, 13139 },
 	{ (Il2CppRGCTXDataType)3, 15773 },
 	{ (Il2CppRGCTXDataType)3, 15774 },
 	{ (Il2CppRGCTXDataType)3, 15775 },
 	{ (Il2CppRGCTXDataType)3, 15776 },
-	{ (Il2CppRGCTXDataType)2, 19369 },
 	{ (Il2CppRGCTXDataType)3, 15777 },
+	{ (Il2CppRGCTXDataType)2, 19358 },
 	{ (Il2CppRGCTXDataType)3, 15778 },
-	{ (Il2CppRGCTXDataType)2, 13137 },
 	{ (Il2CppRGCTXDataType)3, 15779 },
-	{ (Il2CppRGCTXDataType)2, 13140 },
+	{ (Il2CppRGCTXDataType)2, 19266 },
+	{ (Il2CppRGCTXDataType)2, 13030 },
+	{ (Il2CppRGCTXDataType)2, 19267 },
 	{ (Il2CppRGCTXDataType)3, 15780 },
-	{ (Il2CppRGCTXDataType)2, 13142 },
+	{ (Il2CppRGCTXDataType)2, 13032 },
+	{ (Il2CppRGCTXDataType)1, 13031 },
+	{ (Il2CppRGCTXDataType)2, 13031 },
 	{ (Il2CppRGCTXDataType)3, 15781 },
-	{ (Il2CppRGCTXDataType)1, 13134 },
-	{ (Il2CppRGCTXDataType)2, 13141 },
+	{ (Il2CppRGCTXDataType)2, 19359 },
 	{ (Il2CppRGCTXDataType)3, 15782 },
-	{ (Il2CppRGCTXDataType)1, 13141 },
-	{ (Il2CppRGCTXDataType)2, 13135 },
-	{ (Il2CppRGCTXDataType)2, 13134 },
-	{ (Il2CppRGCTXDataType)2, 19370 },
 	{ (Il2CppRGCTXDataType)3, 15783 },
+	{ (Il2CppRGCTXDataType)1, 13046 },
 	{ (Il2CppRGCTXDataType)3, 15784 },
-	{ (Il2CppRGCTXDataType)2, 13141 },
+	{ (Il2CppRGCTXDataType)2, 19360 },
 	{ (Il2CppRGCTXDataType)3, 15785 },
-	{ (Il2CppRGCTXDataType)2, 19368 },
+	{ (Il2CppRGCTXDataType)2, 19361 },
+	{ (Il2CppRGCTXDataType)2, 13053 },
 	{ (Il2CppRGCTXDataType)3, 15786 },
-	{ (Il2CppRGCTXDataType)1, 13137 },
-	{ (Il2CppRGCTXDataType)1, 13135 },
 	{ (Il2CppRGCTXDataType)3, 15787 },
-	{ (Il2CppRGCTXDataType)2, 13159 },
+	{ (Il2CppRGCTXDataType)2, 19363 },
+	{ (Il2CppRGCTXDataType)2, 13045 },
 	{ (Il2CppRGCTXDataType)3, 15788 },
+	{ (Il2CppRGCTXDataType)2, 13044 },
 	{ (Il2CppRGCTXDataType)3, 15789 },
-	{ (Il2CppRGCTXDataType)2, 13157 },
 	{ (Il2CppRGCTXDataType)3, 15790 },
-	{ (Il2CppRGCTXDataType)2, 13158 },
 	{ (Il2CppRGCTXDataType)3, 15791 },
 	{ (Il2CppRGCTXDataType)3, 15792 },
-	{ (Il2CppRGCTXDataType)2, 19371 },
 	{ (Il2CppRGCTXDataType)3, 15793 },
-	{ (Il2CppRGCTXDataType)2, 13169 },
+	{ (Il2CppRGCTXDataType)2, 19364 },
 	{ (Il2CppRGCTXDataType)3, 15794 },
-	{ (Il2CppRGCTXDataType)2, 13167 },
-	{ (Il2CppRGCTXDataType)2, 13175 },
-	{ (Il2CppRGCTXDataType)2, 13189 },
 	{ (Il2CppRGCTXDataType)3, 15795 },
 	{ (Il2CppRGCTXDataType)3, 15796 },
 	{ (Il2CppRGCTXDataType)3, 15797 },
-	{ (Il2CppRGCTXDataType)2, 13190 },
 	{ (Il2CppRGCTXDataType)3, 15798 },
-	{ (Il2CppRGCTXDataType)2, 13188 },
-	{ (Il2CppRGCTXDataType)2, 13197 },
-	{ (Il2CppRGCTXDataType)2, 13226 },
 	{ (Il2CppRGCTXDataType)3, 15799 },
-	{ (Il2CppRGCTXDataType)1, 13227 },
-	{ (Il2CppRGCTXDataType)1, 19372 },
-	{ (Il2CppRGCTXDataType)2, 13226 },
-	{ (Il2CppRGCTXDataType)2, 19373 },
 	{ (Il2CppRGCTXDataType)3, 15800 },
-	{ (Il2CppRGCTXDataType)2, 13227 },
 	{ (Il2CppRGCTXDataType)3, 15801 },
-	{ (Il2CppRGCTXDataType)2, 13232 },
-	{ (Il2CppRGCTXDataType)2, 13233 },
 	{ (Il2CppRGCTXDataType)3, 15802 },
-	{ (Il2CppRGCTXDataType)2, 19374 },
+	{ (Il2CppRGCTXDataType)2, 13048 },
+	{ (Il2CppRGCTXDataType)2, 13049 },
 	{ (Il2CppRGCTXDataType)3, 15803 },
-	{ (Il2CppRGCTXDataType)2, 13231 },
+	{ (Il2CppRGCTXDataType)2, 13046 },
+	{ (Il2CppRGCTXDataType)2, 19365 },
 	{ (Il2CppRGCTXDataType)3, 15804 },
-	{ (Il2CppRGCTXDataType)2, 13237 },
-	{ (Il2CppRGCTXDataType)2, 13238 },
+	{ (Il2CppRGCTXDataType)2, 19362 },
 	{ (Il2CppRGCTXDataType)3, 15805 },
-	{ (Il2CppRGCTXDataType)2, 19375 },
 	{ (Il2CppRGCTXDataType)3, 15806 },
-	{ (Il2CppRGCTXDataType)2, 13235 },
-	{ (Il2CppRGCTXDataType)2, 13243 },
-	{ (Il2CppRGCTXDataType)2, 19376 },
 	{ (Il2CppRGCTXDataType)3, 15807 },
-	{ (Il2CppRGCTXDataType)2, 13242 },
-	{ (Il2CppRGCTXDataType)2, 13250 },
 	{ (Il2CppRGCTXDataType)3, 15808 },
-	{ (Il2CppRGCTXDataType)1, 13251 },
-	{ (Il2CppRGCTXDataType)2, 13250 },
-	{ (Il2CppRGCTXDataType)1, 19377 },
-	{ (Il2CppRGCTXDataType)2, 19378 },
 	{ (Il2CppRGCTXDataType)3, 15809 },
 	{ (Il2CppRGCTXDataType)3, 15810 },
-	{ (Il2CppRGCTXDataType)2, 13251 },
 	{ (Il2CppRGCTXDataType)3, 15811 },
-	{ (Il2CppRGCTXDataType)2, 13257 },
-	{ (Il2CppRGCTXDataType)2, 13259 },
 	{ (Il2CppRGCTXDataType)3, 15812 },
-	{ (Il2CppRGCTXDataType)2, 19379 },
 	{ (Il2CppRGCTXDataType)3, 15813 },
-	{ (Il2CppRGCTXDataType)2, 13256 },
+	{ (Il2CppRGCTXDataType)2, 13091 },
 	{ (Il2CppRGCTXDataType)3, 15814 },
-	{ (Il2CppRGCTXDataType)2, 13263 },
-	{ (Il2CppRGCTXDataType)2, 13265 },
 	{ (Il2CppRGCTXDataType)3, 15815 },
-	{ (Il2CppRGCTXDataType)2, 13262 },
-	{ (Il2CppRGCTXDataType)2, 19380 },
+	{ (Il2CppRGCTXDataType)2, 19366 },
 	{ (Il2CppRGCTXDataType)3, 15816 },
-	{ (Il2CppRGCTXDataType)2, 13261 },
-	{ (Il2CppRGCTXDataType)2, 13269 },
-	{ (Il2CppRGCTXDataType)2, 19381 },
 	{ (Il2CppRGCTXDataType)3, 15817 },
-	{ (Il2CppRGCTXDataType)2, 13268 },
+	{ (Il2CppRGCTXDataType)2, 13048 },
 	{ (Il2CppRGCTXDataType)3, 15818 },
 	{ (Il2CppRGCTXDataType)3, 15819 },
-	{ (Il2CppRGCTXDataType)2, 13274 },
-	{ (Il2CppRGCTXDataType)1, 13275 },
-	{ (Il2CppRGCTXDataType)1, 19382 },
-	{ (Il2CppRGCTXDataType)2, 19383 },
 	{ (Il2CppRGCTXDataType)3, 15820 },
-	{ (Il2CppRGCTXDataType)2, 13277 },
-	{ (Il2CppRGCTXDataType)2, 19384 },
 	{ (Il2CppRGCTXDataType)3, 15821 },
 	{ (Il2CppRGCTXDataType)3, 15822 },
-	{ (Il2CppRGCTXDataType)2, 13280 },
-	{ (Il2CppRGCTXDataType)2, 19385 },
+	{ (Il2CppRGCTXDataType)2, 19367 },
 	{ (Il2CppRGCTXDataType)3, 15823 },
+	{ (Il2CppRGCTXDataType)2, 13076 },
 	{ (Il2CppRGCTXDataType)3, 15824 },
-	{ (Il2CppRGCTXDataType)2, 19386 },
+	{ (Il2CppRGCTXDataType)2, 13077 },
 	{ (Il2CppRGCTXDataType)3, 15825 },
-	{ (Il2CppRGCTXDataType)2, 13283 },
-	{ (Il2CppRGCTXDataType)1, 19387 },
-	{ (Il2CppRGCTXDataType)2, 19388 },
-	{ (Il2CppRGCTXDataType)2, 13337 },
-	{ (Il2CppRGCTXDataType)2, 19290 },
-	{ (Il2CppRGCTXDataType)2, 13334 },
-	{ (Il2CppRGCTXDataType)2, 13340 },
 	{ (Il2CppRGCTXDataType)3, 15826 },
+	{ (Il2CppRGCTXDataType)2, 13082 },
 	{ (Il2CppRGCTXDataType)3, 15827 },
-	{ (Il2CppRGCTXDataType)2, 13335 },
 	{ (Il2CppRGCTXDataType)3, 15828 },
+	{ (Il2CppRGCTXDataType)2, 13103 },
 	{ (Il2CppRGCTXDataType)3, 15829 },
+	{ (Il2CppRGCTXDataType)2, 13109 },
 	{ (Il2CppRGCTXDataType)3, 15830 },
-	{ (Il2CppRGCTXDataType)1, 13335 },
+	{ (Il2CppRGCTXDataType)2, 13110 },
 	{ (Il2CppRGCTXDataType)3, 15831 },
+	{ (Il2CppRGCTXDataType)2, 19368 },
 	{ (Il2CppRGCTXDataType)3, 15832 },
+	{ (Il2CppRGCTXDataType)2, 13119 },
+	{ (Il2CppRGCTXDataType)2, 13120 },
 	{ (Il2CppRGCTXDataType)3, 15833 },
 	{ (Il2CppRGCTXDataType)3, 15834 },
+	{ (Il2CppRGCTXDataType)2, 19369 },
 	{ (Il2CppRGCTXDataType)3, 15835 },
 	{ (Il2CppRGCTXDataType)3, 15836 },
-	{ (Il2CppRGCTXDataType)2, 19389 },
 	{ (Il2CppRGCTXDataType)3, 15837 },
 	{ (Il2CppRGCTXDataType)3, 15838 },
 	{ (Il2CppRGCTXDataType)3, 15839 },
 	{ (Il2CppRGCTXDataType)3, 15840 },
 	{ (Il2CppRGCTXDataType)3, 15841 },
 	{ (Il2CppRGCTXDataType)3, 15842 },
-	{ (Il2CppRGCTXDataType)2, 13339 },
 	{ (Il2CppRGCTXDataType)3, 15843 },
+	{ (Il2CppRGCTXDataType)2, 13123 },
 	{ (Il2CppRGCTXDataType)3, 15844 },
+	{ (Il2CppRGCTXDataType)2, 13123 },
 	{ (Il2CppRGCTXDataType)3, 15845 },
 	{ (Il2CppRGCTXDataType)3, 15846 },
+	{ (Il2CppRGCTXDataType)2, 19370 },
 	{ (Il2CppRGCTXDataType)3, 15847 },
+	{ (Il2CppRGCTXDataType)2, 13128 },
 	{ (Il2CppRGCTXDataType)3, 15848 },
 	{ (Il2CppRGCTXDataType)3, 15849 },
 	{ (Il2CppRGCTXDataType)3, 15850 },
 	{ (Il2CppRGCTXDataType)3, 15851 },
 	{ (Il2CppRGCTXDataType)3, 15852 },
 	{ (Il2CppRGCTXDataType)3, 15853 },
-	{ (Il2CppRGCTXDataType)2, 19390 },
 	{ (Il2CppRGCTXDataType)3, 15854 },
 	{ (Il2CppRGCTXDataType)3, 15855 },
-	{ (Il2CppRGCTXDataType)2, 13347 },
-	{ (Il2CppRGCTXDataType)2, 13393 },
-	{ (Il2CppRGCTXDataType)2, 19391 },
 	{ (Il2CppRGCTXDataType)3, 15856 },
 	{ (Il2CppRGCTXDataType)3, 15857 },
-	{ (Il2CppRGCTXDataType)2, 13408 },
+	{ (Il2CppRGCTXDataType)2, 19371 },
 	{ (Il2CppRGCTXDataType)3, 15858 },
-	{ (Il2CppRGCTXDataType)2, 19392 },
+	{ (Il2CppRGCTXDataType)2, 19278 },
+	{ (Il2CppRGCTXDataType)1, 19372 },
+	{ (Il2CppRGCTXDataType)2, 19372 },
 	{ (Il2CppRGCTXDataType)3, 15859 },
+	{ (Il2CppRGCTXDataType)2, 19279 },
+	{ (Il2CppRGCTXDataType)2, 13143 },
 	{ (Il2CppRGCTXDataType)3, 15860 },
-	{ (Il2CppRGCTXDataType)1, 19393 },
-	{ (Il2CppRGCTXDataType)2, 19393 },
-	{ (Il2CppRGCTXDataType)2, 19394 },
 	{ (Il2CppRGCTXDataType)3, 15861 },
-	{ (Il2CppRGCTXDataType)1, 19395 },
-	{ (Il2CppRGCTXDataType)2, 19396 },
-	{ (Il2CppRGCTXDataType)2, 19395 },
-	{ (Il2CppRGCTXDataType)2, 19397 },
-	{ (Il2CppRGCTXDataType)2, 13440 },
-	{ (Il2CppRGCTXDataType)2, 13444 },
+	{ (Il2CppRGCTXDataType)2, 13138 },
 	{ (Il2CppRGCTXDataType)3, 15862 },
-	{ (Il2CppRGCTXDataType)2, 19398 },
+	{ (Il2CppRGCTXDataType)2, 13139 },
 	{ (Il2CppRGCTXDataType)3, 15863 },
 	{ (Il2CppRGCTXDataType)3, 15864 },
-	{ (Il2CppRGCTXDataType)2, 13482 },
-	{ (Il2CppRGCTXDataType)2, 19399 },
 	{ (Il2CppRGCTXDataType)3, 15865 },
-	{ (Il2CppRGCTXDataType)2, 13488 },
 	{ (Il2CppRGCTXDataType)3, 15866 },
-	{ (Il2CppRGCTXDataType)2, 13483 },
+	{ (Il2CppRGCTXDataType)2, 19373 },
 	{ (Il2CppRGCTXDataType)3, 15867 },
 	{ (Il2CppRGCTXDataType)3, 15868 },
-	{ (Il2CppRGCTXDataType)1, 13496 },
-	{ (Il2CppRGCTXDataType)2, 19400 },
+	{ (Il2CppRGCTXDataType)2, 13137 },
 	{ (Il2CppRGCTXDataType)3, 15869 },
-	{ (Il2CppRGCTXDataType)2, 19401 },
+	{ (Il2CppRGCTXDataType)2, 13140 },
 	{ (Il2CppRGCTXDataType)3, 15870 },
-	{ (Il2CppRGCTXDataType)2, 19402 },
+	{ (Il2CppRGCTXDataType)2, 13142 },
 	{ (Il2CppRGCTXDataType)3, 15871 },
-	{ (Il2CppRGCTXDataType)2, 19403 },
+	{ (Il2CppRGCTXDataType)1, 13134 },
+	{ (Il2CppRGCTXDataType)2, 13141 },
 	{ (Il2CppRGCTXDataType)3, 15872 },
+	{ (Il2CppRGCTXDataType)1, 13141 },
+	{ (Il2CppRGCTXDataType)2, 13135 },
+	{ (Il2CppRGCTXDataType)2, 13134 },
+	{ (Il2CppRGCTXDataType)2, 19374 },
 	{ (Il2CppRGCTXDataType)3, 15873 },
-	{ (Il2CppRGCTXDataType)2, 13500 },
-	{ (Il2CppRGCTXDataType)2, 13501 },
 	{ (Il2CppRGCTXDataType)3, 15874 },
-	{ (Il2CppRGCTXDataType)2, 13507 },
-	{ (Il2CppRGCTXDataType)2, 19404 },
-	{ (Il2CppRGCTXDataType)1, 19405 },
-	{ (Il2CppRGCTXDataType)2, 19405 },
-	{ (Il2CppRGCTXDataType)2, 13508 },
+	{ (Il2CppRGCTXDataType)2, 13141 },
 	{ (Il2CppRGCTXDataType)3, 15875 },
+	{ (Il2CppRGCTXDataType)2, 19372 },
 	{ (Il2CppRGCTXDataType)3, 15876 },
-	{ (Il2CppRGCTXDataType)2, 13511 },
+	{ (Il2CppRGCTXDataType)1, 13137 },
+	{ (Il2CppRGCTXDataType)1, 13135 },
 	{ (Il2CppRGCTXDataType)3, 15877 },
-	{ (Il2CppRGCTXDataType)2, 13523 },
+	{ (Il2CppRGCTXDataType)2, 13159 },
 	{ (Il2CppRGCTXDataType)3, 15878 },
 	{ (Il2CppRGCTXDataType)3, 15879 },
-	{ (Il2CppRGCTXDataType)2, 13596 },
+	{ (Il2CppRGCTXDataType)2, 13157 },
 	{ (Il2CppRGCTXDataType)3, 15880 },
+	{ (Il2CppRGCTXDataType)2, 13158 },
 	{ (Il2CppRGCTXDataType)3, 15881 },
-	{ (Il2CppRGCTXDataType)2, 13601 },
 	{ (Il2CppRGCTXDataType)3, 15882 },
+	{ (Il2CppRGCTXDataType)2, 19375 },
 	{ (Il2CppRGCTXDataType)3, 15883 },
-	{ (Il2CppRGCTXDataType)2, 13606 },
+	{ (Il2CppRGCTXDataType)2, 13169 },
 	{ (Il2CppRGCTXDataType)3, 15884 },
+	{ (Il2CppRGCTXDataType)2, 13167 },
+	{ (Il2CppRGCTXDataType)2, 13175 },
+	{ (Il2CppRGCTXDataType)2, 13189 },
 	{ (Il2CppRGCTXDataType)3, 15885 },
-	{ (Il2CppRGCTXDataType)2, 13611 },
 	{ (Il2CppRGCTXDataType)3, 15886 },
 	{ (Il2CppRGCTXDataType)3, 15887 },
-	{ (Il2CppRGCTXDataType)2, 13616 },
+	{ (Il2CppRGCTXDataType)2, 13190 },
 	{ (Il2CppRGCTXDataType)3, 15888 },
+	{ (Il2CppRGCTXDataType)2, 13188 },
+	{ (Il2CppRGCTXDataType)2, 13197 },
+	{ (Il2CppRGCTXDataType)2, 13226 },
 	{ (Il2CppRGCTXDataType)3, 15889 },
-	{ (Il2CppRGCTXDataType)2, 13621 },
+	{ (Il2CppRGCTXDataType)1, 13227 },
+	{ (Il2CppRGCTXDataType)1, 19376 },
+	{ (Il2CppRGCTXDataType)2, 13226 },
+	{ (Il2CppRGCTXDataType)2, 19377 },
 	{ (Il2CppRGCTXDataType)3, 15890 },
+	{ (Il2CppRGCTXDataType)2, 13227 },
 	{ (Il2CppRGCTXDataType)3, 15891 },
-	{ (Il2CppRGCTXDataType)2, 13626 },
+	{ (Il2CppRGCTXDataType)2, 13232 },
+	{ (Il2CppRGCTXDataType)2, 13233 },
 	{ (Il2CppRGCTXDataType)3, 15892 },
+	{ (Il2CppRGCTXDataType)2, 19378 },
 	{ (Il2CppRGCTXDataType)3, 15893 },
-	{ (Il2CppRGCTXDataType)2, 13631 },
+	{ (Il2CppRGCTXDataType)2, 13231 },
 	{ (Il2CppRGCTXDataType)3, 15894 },
+	{ (Il2CppRGCTXDataType)2, 13237 },
+	{ (Il2CppRGCTXDataType)2, 13238 },
 	{ (Il2CppRGCTXDataType)3, 15895 },
+	{ (Il2CppRGCTXDataType)2, 19379 },
 	{ (Il2CppRGCTXDataType)3, 15896 },
+	{ (Il2CppRGCTXDataType)2, 13235 },
+	{ (Il2CppRGCTXDataType)2, 13243 },
+	{ (Il2CppRGCTXDataType)2, 19380 },
 	{ (Il2CppRGCTXDataType)3, 15897 },
+	{ (Il2CppRGCTXDataType)2, 13242 },
+	{ (Il2CppRGCTXDataType)2, 13250 },
 	{ (Il2CppRGCTXDataType)3, 15898 },
+	{ (Il2CppRGCTXDataType)1, 13251 },
+	{ (Il2CppRGCTXDataType)2, 13250 },
+	{ (Il2CppRGCTXDataType)1, 19381 },
+	{ (Il2CppRGCTXDataType)2, 19382 },
 	{ (Il2CppRGCTXDataType)3, 15899 },
 	{ (Il2CppRGCTXDataType)3, 15900 },
+	{ (Il2CppRGCTXDataType)2, 13251 },
+	{ (Il2CppRGCTXDataType)3, 15901 },
+	{ (Il2CppRGCTXDataType)2, 13257 },
+	{ (Il2CppRGCTXDataType)2, 13259 },
+	{ (Il2CppRGCTXDataType)3, 15902 },
+	{ (Il2CppRGCTXDataType)2, 19383 },
+	{ (Il2CppRGCTXDataType)3, 15903 },
+	{ (Il2CppRGCTXDataType)2, 13256 },
+	{ (Il2CppRGCTXDataType)3, 15904 },
+	{ (Il2CppRGCTXDataType)2, 13263 },
+	{ (Il2CppRGCTXDataType)2, 13265 },
+	{ (Il2CppRGCTXDataType)3, 15905 },
+	{ (Il2CppRGCTXDataType)2, 13262 },
+	{ (Il2CppRGCTXDataType)2, 19384 },
+	{ (Il2CppRGCTXDataType)3, 15906 },
+	{ (Il2CppRGCTXDataType)2, 13261 },
+	{ (Il2CppRGCTXDataType)2, 13269 },
+	{ (Il2CppRGCTXDataType)2, 19385 },
+	{ (Il2CppRGCTXDataType)3, 15907 },
+	{ (Il2CppRGCTXDataType)2, 13268 },
+	{ (Il2CppRGCTXDataType)3, 15908 },
+	{ (Il2CppRGCTXDataType)3, 15909 },
+	{ (Il2CppRGCTXDataType)2, 13274 },
+	{ (Il2CppRGCTXDataType)1, 13275 },
+	{ (Il2CppRGCTXDataType)1, 19386 },
+	{ (Il2CppRGCTXDataType)2, 19387 },
+	{ (Il2CppRGCTXDataType)3, 15910 },
+	{ (Il2CppRGCTXDataType)2, 13277 },
+	{ (Il2CppRGCTXDataType)2, 19388 },
+	{ (Il2CppRGCTXDataType)3, 15911 },
+	{ (Il2CppRGCTXDataType)3, 15912 },
+	{ (Il2CppRGCTXDataType)2, 13280 },
+	{ (Il2CppRGCTXDataType)2, 19389 },
+	{ (Il2CppRGCTXDataType)3, 15913 },
+	{ (Il2CppRGCTXDataType)3, 15914 },
+	{ (Il2CppRGCTXDataType)2, 19390 },
+	{ (Il2CppRGCTXDataType)3, 15915 },
+	{ (Il2CppRGCTXDataType)2, 13283 },
+	{ (Il2CppRGCTXDataType)1, 19391 },
+	{ (Il2CppRGCTXDataType)2, 19392 },
+	{ (Il2CppRGCTXDataType)2, 13337 },
+	{ (Il2CppRGCTXDataType)2, 19294 },
+	{ (Il2CppRGCTXDataType)2, 13334 },
+	{ (Il2CppRGCTXDataType)2, 13340 },
+	{ (Il2CppRGCTXDataType)3, 15916 },
+	{ (Il2CppRGCTXDataType)3, 15917 },
+	{ (Il2CppRGCTXDataType)2, 13335 },
+	{ (Il2CppRGCTXDataType)3, 15918 },
+	{ (Il2CppRGCTXDataType)3, 15919 },
+	{ (Il2CppRGCTXDataType)3, 15920 },
+	{ (Il2CppRGCTXDataType)1, 13335 },
+	{ (Il2CppRGCTXDataType)3, 15921 },
+	{ (Il2CppRGCTXDataType)3, 15922 },
+	{ (Il2CppRGCTXDataType)3, 15923 },
+	{ (Il2CppRGCTXDataType)3, 15924 },
+	{ (Il2CppRGCTXDataType)3, 15925 },
+	{ (Il2CppRGCTXDataType)3, 15926 },
+	{ (Il2CppRGCTXDataType)2, 19393 },
+	{ (Il2CppRGCTXDataType)3, 15927 },
+	{ (Il2CppRGCTXDataType)3, 15928 },
+	{ (Il2CppRGCTXDataType)3, 15929 },
+	{ (Il2CppRGCTXDataType)3, 15930 },
+	{ (Il2CppRGCTXDataType)3, 15931 },
+	{ (Il2CppRGCTXDataType)3, 15932 },
+	{ (Il2CppRGCTXDataType)3, 15933 },
+	{ (Il2CppRGCTXDataType)3, 15934 },
+	{ (Il2CppRGCTXDataType)2, 13339 },
+	{ (Il2CppRGCTXDataType)3, 15935 },
+	{ (Il2CppRGCTXDataType)3, 15936 },
+	{ (Il2CppRGCTXDataType)3, 15937 },
+	{ (Il2CppRGCTXDataType)3, 15938 },
+	{ (Il2CppRGCTXDataType)3, 15939 },
+	{ (Il2CppRGCTXDataType)3, 15940 },
+	{ (Il2CppRGCTXDataType)3, 15941 },
+	{ (Il2CppRGCTXDataType)3, 15942 },
+	{ (Il2CppRGCTXDataType)3, 15943 },
+	{ (Il2CppRGCTXDataType)3, 15944 },
+	{ (Il2CppRGCTXDataType)3, 15945 },
+	{ (Il2CppRGCTXDataType)2, 19394 },
+	{ (Il2CppRGCTXDataType)3, 15946 },
+	{ (Il2CppRGCTXDataType)3, 15947 },
+	{ (Il2CppRGCTXDataType)2, 13347 },
+	{ (Il2CppRGCTXDataType)2, 13393 },
+	{ (Il2CppRGCTXDataType)2, 19395 },
+	{ (Il2CppRGCTXDataType)3, 15948 },
+	{ (Il2CppRGCTXDataType)3, 15949 },
+	{ (Il2CppRGCTXDataType)2, 13408 },
+	{ (Il2CppRGCTXDataType)3, 15950 },
+	{ (Il2CppRGCTXDataType)2, 19396 },
+	{ (Il2CppRGCTXDataType)3, 15951 },
+	{ (Il2CppRGCTXDataType)3, 15952 },
+	{ (Il2CppRGCTXDataType)1, 19397 },
+	{ (Il2CppRGCTXDataType)2, 19397 },
+	{ (Il2CppRGCTXDataType)2, 19398 },
+	{ (Il2CppRGCTXDataType)3, 15953 },
+	{ (Il2CppRGCTXDataType)1, 19399 },
+	{ (Il2CppRGCTXDataType)2, 19400 },
+	{ (Il2CppRGCTXDataType)2, 19399 },
+	{ (Il2CppRGCTXDataType)2, 19401 },
+	{ (Il2CppRGCTXDataType)2, 13440 },
+	{ (Il2CppRGCTXDataType)2, 13444 },
+	{ (Il2CppRGCTXDataType)3, 15954 },
+	{ (Il2CppRGCTXDataType)2, 19402 },
+	{ (Il2CppRGCTXDataType)3, 15955 },
+	{ (Il2CppRGCTXDataType)3, 15956 },
+	{ (Il2CppRGCTXDataType)2, 13482 },
+	{ (Il2CppRGCTXDataType)2, 19403 },
+	{ (Il2CppRGCTXDataType)3, 15957 },
+	{ (Il2CppRGCTXDataType)2, 13488 },
+	{ (Il2CppRGCTXDataType)3, 15958 },
+	{ (Il2CppRGCTXDataType)2, 13483 },
+	{ (Il2CppRGCTXDataType)3, 15959 },
+	{ (Il2CppRGCTXDataType)3, 15960 },
+	{ (Il2CppRGCTXDataType)1, 13496 },
+	{ (Il2CppRGCTXDataType)2, 19404 },
+	{ (Il2CppRGCTXDataType)3, 15961 },
+	{ (Il2CppRGCTXDataType)2, 19405 },
+	{ (Il2CppRGCTXDataType)3, 15962 },
+	{ (Il2CppRGCTXDataType)2, 19406 },
+	{ (Il2CppRGCTXDataType)3, 15963 },
+	{ (Il2CppRGCTXDataType)2, 19407 },
+	{ (Il2CppRGCTXDataType)3, 15964 },
+	{ (Il2CppRGCTXDataType)3, 15965 },
+	{ (Il2CppRGCTXDataType)2, 13500 },
+	{ (Il2CppRGCTXDataType)2, 13501 },
+	{ (Il2CppRGCTXDataType)3, 15966 },
+	{ (Il2CppRGCTXDataType)2, 13507 },
+	{ (Il2CppRGCTXDataType)2, 19408 },
+	{ (Il2CppRGCTXDataType)1, 19409 },
+	{ (Il2CppRGCTXDataType)2, 19409 },
+	{ (Il2CppRGCTXDataType)2, 13508 },
+	{ (Il2CppRGCTXDataType)3, 15967 },
+	{ (Il2CppRGCTXDataType)3, 15968 },
+	{ (Il2CppRGCTXDataType)2, 13511 },
+	{ (Il2CppRGCTXDataType)3, 15969 },
+	{ (Il2CppRGCTXDataType)2, 13523 },
+	{ (Il2CppRGCTXDataType)3, 15970 },
+	{ (Il2CppRGCTXDataType)3, 15971 },
+	{ (Il2CppRGCTXDataType)2, 13596 },
+	{ (Il2CppRGCTXDataType)3, 15972 },
+	{ (Il2CppRGCTXDataType)3, 15973 },
+	{ (Il2CppRGCTXDataType)2, 13601 },
+	{ (Il2CppRGCTXDataType)3, 15974 },
+	{ (Il2CppRGCTXDataType)3, 15975 },
+	{ (Il2CppRGCTXDataType)2, 13606 },
+	{ (Il2CppRGCTXDataType)3, 15976 },
+	{ (Il2CppRGCTXDataType)3, 15977 },
+	{ (Il2CppRGCTXDataType)2, 13611 },
+	{ (Il2CppRGCTXDataType)3, 15978 },
+	{ (Il2CppRGCTXDataType)3, 15979 },
+	{ (Il2CppRGCTXDataType)2, 13616 },
+	{ (Il2CppRGCTXDataType)3, 15980 },
+	{ (Il2CppRGCTXDataType)3, 15981 },
+	{ (Il2CppRGCTXDataType)2, 13621 },
+	{ (Il2CppRGCTXDataType)3, 15982 },
+	{ (Il2CppRGCTXDataType)3, 15983 },
+	{ (Il2CppRGCTXDataType)2, 13626 },
+	{ (Il2CppRGCTXDataType)3, 15984 },
+	{ (Il2CppRGCTXDataType)3, 15985 },
+	{ (Il2CppRGCTXDataType)2, 13631 },
+	{ (Il2CppRGCTXDataType)3, 15986 },
+	{ (Il2CppRGCTXDataType)3, 15987 },
+	{ (Il2CppRGCTXDataType)3, 15988 },
+	{ (Il2CppRGCTXDataType)3, 15989 },
+	{ (Il2CppRGCTXDataType)3, 15990 },
+	{ (Il2CppRGCTXDataType)3, 15991 },
+	{ (Il2CppRGCTXDataType)3, 15992 },
 	{ (Il2CppRGCTXDataType)1, 13665 },
 	{ (Il2CppRGCTXDataType)2, 13665 },
 	{ (Il2CppRGCTXDataType)1, 13666 },
 	{ (Il2CppRGCTXDataType)2, 13666 },
 	{ (Il2CppRGCTXDataType)1, 13668 },
-	{ (Il2CppRGCTXDataType)2, 19406 },
-	{ (Il2CppRGCTXDataType)3, 15901 },
-	{ (Il2CppRGCTXDataType)2, 13667 },
-	{ (Il2CppRGCTXDataType)2, 19407 },
-	{ (Il2CppRGCTXDataType)3, 15902 },
-	{ (Il2CppRGCTXDataType)2, 19408 },
-	{ (Il2CppRGCTXDataType)3, 15903 },
-	{ (Il2CppRGCTXDataType)2, 19409 },
-	{ (Il2CppRGCTXDataType)3, 15904 },
 	{ (Il2CppRGCTXDataType)2, 19410 },
-	{ (Il2CppRGCTXDataType)3, 15905 },
+	{ (Il2CppRGCTXDataType)3, 15993 },
+	{ (Il2CppRGCTXDataType)2, 13667 },
 	{ (Il2CppRGCTXDataType)2, 19411 },
-	{ (Il2CppRGCTXDataType)3, 15906 },
+	{ (Il2CppRGCTXDataType)3, 15994 },
 	{ (Il2CppRGCTXDataType)2, 19412 },
-	{ (Il2CppRGCTXDataType)3, 15907 },
+	{ (Il2CppRGCTXDataType)3, 15995 },
 	{ (Il2CppRGCTXDataType)2, 19413 },
-	{ (Il2CppRGCTXDataType)3, 15908 },
+	{ (Il2CppRGCTXDataType)3, 15996 },
 	{ (Il2CppRGCTXDataType)2, 19414 },
-	{ (Il2CppRGCTXDataType)3, 15909 },
+	{ (Il2CppRGCTXDataType)3, 15997 },
+	{ (Il2CppRGCTXDataType)2, 19415 },
+	{ (Il2CppRGCTXDataType)3, 15998 },
+	{ (Il2CppRGCTXDataType)2, 19416 },
+	{ (Il2CppRGCTXDataType)3, 15999 },
+	{ (Il2CppRGCTXDataType)2, 19417 },
+	{ (Il2CppRGCTXDataType)3, 16000 },
+	{ (Il2CppRGCTXDataType)2, 19418 },
+	{ (Il2CppRGCTXDataType)3, 16001 },
 	{ (Il2CppRGCTXDataType)1, 13746 },
 	{ (Il2CppRGCTXDataType)2, 13745 },
-	{ (Il2CppRGCTXDataType)3, 15910 },
+	{ (Il2CppRGCTXDataType)3, 16002 },
 	{ (Il2CppRGCTXDataType)2, 13746 },
-	{ (Il2CppRGCTXDataType)3, 15911 },
-	{ (Il2CppRGCTXDataType)3, 15912 },
-	{ (Il2CppRGCTXDataType)3, 15913 },
-	{ (Il2CppRGCTXDataType)3, 15914 },
+	{ (Il2CppRGCTXDataType)3, 16003 },
+	{ (Il2CppRGCTXDataType)3, 16004 },
+	{ (Il2CppRGCTXDataType)3, 16005 },
+	{ (Il2CppRGCTXDataType)3, 16006 },
 };
 extern const Il2CppCodeGenModule g_mscorlibCodeGenModule;
 const Il2CppCodeGenModule g_mscorlibCodeGenModule = 
 {
 	"mscorlib.dll",
-	9995,
+	9998,
 	s_methodPointers,
 	s_InvokerIndices,
 	2,
 	s_reversePInvokeIndices,
 	143,
 	s_rgctxIndices,
-	683,
+	685,
 	s_rgctxValues,
 	NULL,
 };
