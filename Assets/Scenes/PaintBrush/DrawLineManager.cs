@@ -84,6 +84,12 @@ public class DrawLineManager : MonoBehaviour {
 		lMat = selectedMaterial;
 	}
 
+	public Vector3 getNewPositionForLayer(float offset)
+	{
+		Vector3 camPosition = Camera.main.transform.position;
+		Vector3 camAim = Camera.main.transform.forward;
+		return camPosition + camAim * offset;
+	}
 
     public Vector3 getRayEndPoint(float dist)
 	{

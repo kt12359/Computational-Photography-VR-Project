@@ -15,7 +15,6 @@ public class DrawingHistoryManager : MonoBehaviour {
 		public Vector3 position;
 		public Color color;
 		public float lineWidth;
-
 		public int layerNum;
 
 		// A drawing command from individual values
@@ -62,11 +61,19 @@ public class DrawingHistoryManager : MonoBehaviour {
 	}
 
 	public List<DrawingCommand> drawingHistory;
+	private bool layer1Active;
+	private bool layer2Active;
+	private bool layer3Active;
+	private bool layer4Active;
 
 	// Use this for initialization
 	void Start () {
 		// initialize the queue.
 		drawingHistory = new List<DrawingCommand>();
+		layer1Active = false;
+		layer2Active = false;
+		layer3Active = false;
+		layer4Active = false;
 	}
 
 	// Update is called once per frame
@@ -74,19 +81,30 @@ public class DrawingHistoryManager : MonoBehaviour {
 
 	public void resetHistory()
 	{
+		for(int i = 1; i <= 4; ++i)
+			setLayerActive(i, false);
 		drawingHistory.Clear();
 	}
 
 	public void deleteAllInLayer(int layerNum)
 	{
-		drawingHistory.RemoveAll(delegate(DrawingCommand command) {return command.layerNum == layerNum; });
-		resetHistory();
-		for(int i = 1; i <= 4; ++i)
-		{
-			if(drawingHistory.Exists(delegate(DrawingCommand command) { return command.layerNum == i; }))
-				loadLayer(i);
+		GetComponent<PaintController>().deleteAllObjects();
+		if(layer1Active){
+			loadLayer(1);
+			setLayerActive(1, false);
 		}
-
+		if(layer2Active){
+			loadLayer(2);
+			setLayerActive(2, false);
+		}
+		if(layer3Active){
+			loadLayer(3);
+			setLayerActive(3, false);
+		}
+		if(layer4Active){
+			loadLayer(4);
+			setLayerActive(4, false);
+		}
 	}
 
 	public void addDrawingCommand(int index, int objType, Vector3 position, Color color, float lineWidth)
@@ -131,22 +149,6 @@ public class DrawingHistoryManager : MonoBehaviour {
 		return null;
 	}
 
-	public float getNewPosition(float currentPos, float newPos)
-	{
-		/*float diff = Mathf.Abs(currentPos - newPos);
-		if(currentPos < newPos)
-			currentPos += diff - currentPos;
-		else if(currentPos > newPos)
-		{
-			if(currentPos >= 0)
-				currentPos -= diff + currentPos;
-			else
-				currentPos += diff - currentPos;
-		}
-		return currentPos;*/
-		return currentPos + newPos;
-	}
-
 	public void moveLayer(int layerNum, Vector3 newPos)
 	{
 		Debug.Log("Moving layer " + layerNum + " to position " + newPos);
@@ -158,16 +160,22 @@ public class DrawingHistoryManager : MonoBehaviour {
 			{
 				Debug.Log("Start position: " + command.position);
 				Debug.Log("New position: "+ newPos);
-				command.position.x = getNewPosition(command.position.x, newPos.x);
-				command.position.y = getNewPosition(command.position.y, newPos.y);
-				command.position.z = getNewPosition(command.position.z, newPos.z);
+				command.position += newPos;
 				Debug.Log("End position: " + command.position);
 
 			}
 		}
 		saveLayer(layerNum);
 		deleteAllInLayer(layerNum);
-		loadLayer(layerNum);
+		//loadLayer(layerNum);
+		//resetHistory();
+		//loadLayer(layerNum);
+		/*for(int i = 1; i <= 4; ++i)
+		{
+			if(drawingHistory.Exists(delegate(DrawingCommand command) { return command.layerNum == i; }))
+				loadLayer(i);
+		}*/
+		//loadLayer(layerNum);
 	}
 
 
@@ -186,6 +194,19 @@ public class DrawingHistoryManager : MonoBehaviour {
 			writer.WriteLine (command.ToString());
 		}
 		writer.Close();
+		setLayerActive(layerNum, true);
+	}
+
+	public void setLayerActive(int layerNum, bool active)
+	{
+		if(layerNum == 1)
+			layer1Active = active;
+		else if(layerNum == 2)
+			layer2Active = active;
+		else if(layerNum == 3)
+			layer3Active = active;
+		else
+			layer4Active = active;
 	}
 
 	// Loads a saved layer and renders to the screen
@@ -203,7 +224,7 @@ public class DrawingHistoryManager : MonoBehaviour {
 			if (commandString == null) break;
 			commands.Add(new DrawingCommand(commandString));
 		}
-
+		setLayerActive(layerNum, true);
 		StartCoroutine(renderCommands(commands));
 	}
 

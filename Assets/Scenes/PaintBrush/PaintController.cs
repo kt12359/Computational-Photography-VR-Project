@@ -158,7 +158,7 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 		}
 
 		textLabel.text = "Moving Layer " + layerNum;
-		Vector3 pos = GetComponent<DrawLineManager>().getRayEndPoint(0.3f);
+		Vector3 pos = GetComponent<DrawLineManager>().getNewPositionForLayer(0.3f);
 		GetComponent<DrawingHistoryManager>().moveLayer(layerNum, pos);
 		textLabel.text = "Layer " + layerNum + " moved!";
 		TogglePanelMoveLayer(false);
