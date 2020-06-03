@@ -65,11 +65,13 @@ public class DrawingHistoryManager : MonoBehaviour {
 	private bool layer2Active;
 	private bool layer3Active;
 	private bool layer4Active;
+	private float [] origin;
 
 	// Use this for initialization
 	void Start () {
 		// initialize the queue.
 		drawingHistory = new List<DrawingCommand>();
+		origin = new float[6];
 		layer1Active = false;
 		layer2Active = false;
 		layer3Active = false;
@@ -84,6 +86,42 @@ public class DrawingHistoryManager : MonoBehaviour {
 		for(int i = 1; i <= 4; ++i)
 			setLayerActive(i, false);
 		drawingHistory.Clear();
+	}
+
+	public Vector3 getOrigin(int layerNum)
+	{
+		int X_MIN = 0;
+		int Y_MIN = 1;
+		int Z_MIN = 2;
+		int X_MAX = 3;
+		int Y_MAX = 4;
+		int Z_MAX = 5;
+		// Set minimum values to practical infinity.
+		origin[X_MIN] = origin[Y_MIN] = origin[Z_MIN] = 999999.0f;
+		// Set maximum values to negative practical infinity.
+		origin[X_MAX] = origin[Y_MAX] = origin[Z_MAX] = -999999.0f;
+		foreach(DrawingCommand command in drawingHistory)
+		{
+			if(command.layerNum == layerNum)
+			{
+				if(command.position.x < origin[X_MIN])
+					origin[X_MIN] = command.position.x;
+				if(command.position.y < origin[Y_MIN])
+					origin[Y_MIN] = command.position.y;
+				if(command.position.z < origin[Z_MIN])
+					origin[Z_MIN] = command.position.z;
+				if(command.position.x > origin[X_MAX])
+					origin[X_MAX] = command.position.x;
+				if(command.position.y > origin[Y_MAX])
+					origin[Y_MAX] = command.position.y;
+				if(command.position.z > origin[Z_MAX])
+					origin[Z_MAX] = command.position.z;
+			}
+		}
+		float midPointX = (origin[X_MAX] + origin[X_MIN])/2.0f;
+		float midPointY = (origin[Y_MAX] + origin[Y_MIN])/2.0f;
+		float midPointZ = (origin[Z_MAX] + origin[Z_MIN])/2.0f;
+		return new Vector3(midPointX, midPointY, midPointZ);
 	}
 
 	public void deleteAllInLayer(int layerNum)
@@ -151,6 +189,8 @@ public class DrawingHistoryManager : MonoBehaviour {
 
 	public void moveLayer(int layerNum, Vector3 newPos)
 	{
+		Vector3 oldOrigin = getOrigin(layerNum);
+		Debug.Log("Old origin: " + oldOrigin);
 		Debug.Log("Moving layer " + layerNum + " to position " + newPos);
 
 		foreach(DrawingCommand command in drawingHistory)
@@ -158,24 +198,13 @@ public class DrawingHistoryManager : MonoBehaviour {
 			Debug.Log("Command position: " + command.position);
 			if(command.layerNum == layerNum)
 			{
+				Vector3 startPosition = command.position;
 				Debug.Log("Start position: " + command.position);
-				Debug.Log("New position: "+ newPos);
-				command.position += newPos;
+				command.position = startPosition - oldOrigin + newPos;
 				Debug.Log("End position: " + command.position);
 
 			}
 		}
-		saveLayer(layerNum);
-		deleteAllInLayer(layerNum);
-		//loadLayer(layerNum);
-		//resetHistory();
-		//loadLayer(layerNum);
-		/*for(int i = 1; i <= 4; ++i)
-		{
-			if(drawingHistory.Exists(delegate(DrawingCommand command) { return command.layerNum == i; }))
-				loadLayer(i);
-		}*/
-		//loadLayer(layerNum);
 	}
 
 
@@ -224,8 +253,8 @@ public class DrawingHistoryManager : MonoBehaviour {
 			if (commandString == null) break;
 			commands.Add(new DrawingCommand(commandString));
 		}
-		setLayerActive(layerNum, true);
 		StartCoroutine(renderCommands(commands));
+		//setLayerActive(layerNum, true);
 	}
 
 	// Renders a list of commands to the screen
