@@ -16,9 +16,11 @@ public class DrawingHistoryManager : MonoBehaviour {
 		public Color color;
 		public float lineWidth;
 		public int layerNum;
+		public int primaryMaterialIndex;
+		public int secondaryMaterialIndex;
 
 		// A drawing command from individual values
-		public DrawingCommand(int _index, int _objType, Vector3 _position, Color _color, float _lineWidth)
+		public DrawingCommand(int _index, int _objType, Vector3 _position, Color _color, float _lineWidth, int _primaryMaterialIndex, int _secondaryMaterialIndex)
 		{
 			index = _index;
 			objType = _objType;
@@ -26,6 +28,8 @@ public class DrawingHistoryManager : MonoBehaviour {
 			color = _color;
 			lineWidth = _lineWidth;
 			layerNum = 1;
+			primaryMaterialIndex = _primaryMaterialIndex;
+			secondaryMaterialIndex = _secondaryMaterialIndex;
 		}
 
 		// A drawing command from a single string representation
@@ -40,6 +44,8 @@ public class DrawingHistoryManager : MonoBehaviour {
 			color = new Color(Convert.ToSingle(values[5]), Convert.ToSingle(values[6]), Convert.ToSingle(values[7]));
 			lineWidth = Convert.ToSingle (values [8]);
 			layerNum = Int32.Parse(values[9]);
+			primaryMaterialIndex = Int32.Parse(values[10]);
+			secondaryMaterialIndex = Int32.Parse(values[11]);
 		}
 
 		// Comma-delimited string representation
@@ -55,12 +61,17 @@ public class DrawingHistoryManager : MonoBehaviour {
 				color.g.ToString() + "," + 
 				color.b.ToString() + "," + 
 				lineWidth.ToString() + "," +
-				layerNum.ToString();
+				layerNum.ToString() + "," +
+				primaryMaterialIndex.ToString() + "," +
+				secondaryMaterialIndex.ToString();
 			return commandString;
 		}
 	}
 
 	public List<DrawingCommand> drawingHistory;
+
+	private List<Material> materialIndex;
+
 	private bool layer1Active;
 	private bool layer2Active;
 	private bool layer3Active;
@@ -71,6 +82,7 @@ public class DrawingHistoryManager : MonoBehaviour {
 	void Start () {
 		// initialize the queue.
 		drawingHistory = new List<DrawingCommand>();
+		materialIndex = new List<Material>();
 		origin = new float[6];
 		layer1Active = false;
 		layer2Active = false;
@@ -86,6 +98,21 @@ public class DrawingHistoryManager : MonoBehaviour {
 		for(int i = 1; i <= 4; ++i)
 			setLayerActive(i, false);
 		drawingHistory.Clear();
+	}
+
+	private int getIndexFromMaterial(Material mat)
+	{
+		for (int i = 0; i < materialIndex.Count; i++) {
+			if (materialIndex[i] == mat)
+				return i;
+		}
+		materialIndex.Add(mat);
+		return materialIndex.Count-1;
+	}
+
+	private Material getMaterialFromIndex(int index)
+	{
+		return materialIndex[index];
 	}
 
 	public Vector3 getOrigin(int layerNum)
@@ -145,9 +172,15 @@ public class DrawingHistoryManager : MonoBehaviour {
 		}
 	}
 
-	public void addDrawingCommand(int index, int objType, Vector3 position, Color color, float lineWidth)
+	public void addDrawingCommand(int index, int objType, Vector3 position, Color color, float lineWidth, Material primaryMaterial, Material secondaryMaterial)
 	{
-		DrawingCommand newCommand = new DrawingCommand (index, objType, position, color, lineWidth);
+		int primaryMaterialIndex = getIndexFromMaterial(primaryMaterial);
+		int secondaryMaterialIndex;
+		if (secondaryMaterial)
+			secondaryMaterialIndex = getIndexFromMaterial(secondaryMaterial);
+		else
+			secondaryMaterialIndex = getIndexFromMaterial(primaryMaterial);
+		DrawingCommand newCommand = new DrawingCommand (index, objType, position, color, lineWidth, primaryMaterialIndex, secondaryMaterialIndex);
 		drawingHistory.Add (newCommand);
 	}
 
@@ -263,6 +296,8 @@ public class DrawingHistoryManager : MonoBehaviour {
 		int currentIndex = -1;
 
 		foreach (DrawingCommand command in commands) {
+			Material primaryMaterial = getMaterialFromIndex(command.primaryMaterialIndex);
+			Material secondaryMaterial = getMaterialFromIndex(command.secondaryMaterialIndex);
 
 			// Add to history
 			drawingHistory.Add(command);
@@ -270,7 +305,7 @@ public class DrawingHistoryManager : MonoBehaviour {
 			// Render the command
 			if (command.index == currentIndex) {
 				// Continue drawing the same object/line
-				paintBrushSceneObject.GetComponent<DrawLineManager>().addReplayLineSegment(true, command.lineWidth, command.position, command.color);
+				paintBrushSceneObject.GetComponent<DrawLineManager>().addReplayLineSegment(true, command.lineWidth, command.position, command.color, primaryMaterial, secondaryMaterial);
 				currentIndex = command.index;
 
 			} else if (command.index > currentIndex) {
@@ -278,13 +313,13 @@ public class DrawingHistoryManager : MonoBehaviour {
 				if (command.objType == 0)
 				{
 					// It's a line
-					paintBrushSceneObject.GetComponent<DrawLineManager>().addReplayLineSegment(false, command.lineWidth, command.position, command.color);
+					paintBrushSceneObject.GetComponent<DrawLineManager>().addReplayLineSegment(false, command.lineWidth, command.position, command.color, primaryMaterial, secondaryMaterial);
 					currentIndex = command.index;
 				}
 				else if (command.objType == 1)
 				{
 					// add cube
-					// TODO - do we need this? Right now only objType=1 is being used
+					// TODO - do we need this? Right now only objType=0 is being used
 					//cubePanel.GetComponent<DrawCubeManager>().addReplayCubeAtEndpoint(command.position, command.color);
 					currentIndex = command.index;
 				}

@@ -283,7 +283,7 @@ public class DrawLineManager : MonoBehaviour {
 		index++;
 
 		Debug.Log ("Adding History 2");
-        paintBrushSceneObject.GetComponent<DrawingHistoryManager> ().addDrawingCommand (index, 0, firstPoint, currLine.GetColor(), paintLineThickness);
+        paintBrushSceneObject.GetComponent<DrawingHistoryManager> ().addDrawingCommand (index, 0, firstPoint, currLine.GetColor(), paintLineThickness, lMat, lMat_texture);
 
 		Debug.Log ("Adding History 3");
 		GetComponent<PaintController>().drawingHistoryIndex = index;
@@ -313,7 +313,7 @@ public class DrawLineManager : MonoBehaviour {
 
 		// add to history without incrementing index
 		int index = GetComponent<PaintController> ().drawingHistoryIndex;
-		paintBrushSceneObject.GetComponent<DrawingHistoryManager> ().addDrawingCommand (index, 0, pointToAdd, currLine.GetColor(), paintLineThickness);
+		paintBrushSceneObject.GetComponent<DrawingHistoryManager> ().addDrawingCommand (index, 0, pointToAdd, currLine.GetColor(), paintLineThickness, lMat, lMat_texture);
 
 		// Make sure the trail is off
         if(brushTipObject.activeSelf)
@@ -321,7 +321,7 @@ public class DrawLineManager : MonoBehaviour {
     }
 
 
-	public void addReplayLineSegment(bool toContinue, float lineThickness, Vector3 position, Color color)
+	public void addReplayLineSegment(bool toContinue, float lineThickness, Vector3 position, Color color, Material primaryMaterial, Material secondaryMaterial)
 	{
 		if (toContinue == false) {
 
@@ -334,9 +334,8 @@ public class DrawLineManager : MonoBehaviour {
 			go.AddComponent<MeshRenderer> ();
 			currLine = go.AddComponent<GraphicsLineRenderer> ();
 
-			currLine.SetPrimaryMaterial(new Material(lMat));
-			if (lMat_texture) 
-				currLine.SetSecondaryMaterial(new Material(lMat_texture));
+			currLine.SetPrimaryMaterial(new Material(primaryMaterial));
+			currLine.SetSecondaryMaterial(new Material(secondaryMaterial));
 			currLine.SetWidth (lineThickness);
 			currLine.SetColor(color);
 			numReplayClicks = 0;
