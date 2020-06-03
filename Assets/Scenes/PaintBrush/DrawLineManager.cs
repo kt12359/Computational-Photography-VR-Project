@@ -12,6 +12,7 @@ public class DrawLineManager : MonoBehaviour {
 
 	private float rayDist = 0.3f;
 	public Material lMat;
+	private Material lMat_texture;
 
 	public GameObject paintPanel;
 	public Text textLabel;
@@ -69,19 +70,29 @@ public class DrawLineManager : MonoBehaviour {
 		setLineColor(buttonImage.color);
     }
 
-	public void OnPaintBrushTypeClick(Material selectedMaterial)
-	{
-		setBrushMaterial(selectedMaterial);
-	}
-
     public void OnLineWidthSliderChanged()
     {
         setLineWidth(slider.value);
     }
 
-	public void setBrushMaterial(Material selectedMaterial)
+	public void OnPaintBrushTypeClick(Material selectedMaterial)
+	{
+		setPaintBrushType(selectedMaterial);
+	}
+
+	public void OnPaintBrushTextureClick(Material selectedTexture)
+	{
+		setPaintBrushTexture(selectedTexture);
+	}
+
+	public void setPaintBrushType(Material selectedMaterial)
 	{
 		lMat = selectedMaterial;
+	}
+
+	public void setPaintBrushTexture(Material selectedTexture)
+	{
+		lMat_texture = selectedTexture;
 	}
 
 	public Vector3 getNewPositionForLayer(float offset)
@@ -254,9 +265,11 @@ public class DrawLineManager : MonoBehaviour {
 		currLine = go.AddComponent<GraphicsLineRenderer> ();
 
 		// Configure the color, etc. of the line
-		currLine.lmat = new Material(lMat);
+		currLine.SetPrimaryMaterial(new Material(lMat));
+		if (lMat_texture) 
+			currLine.SetSecondaryMaterial(new Material(lMat_texture));
 		currLine.SetWidth (paintLineThickness);
-		currLine.lmat.color = colorPicker.GetColor();
+		currLine.SetColor(colorPicker.GetColor());
 
 		// TODO is this being used?
 		numClicks = 0;
@@ -270,7 +283,7 @@ public class DrawLineManager : MonoBehaviour {
 		index++;
 
 		Debug.Log ("Adding History 2");
-        paintBrushSceneObject.GetComponent<DrawingHistoryManager> ().addDrawingCommand (index, 0, firstPoint, currLine.lmat.color, paintLineThickness);
+        paintBrushSceneObject.GetComponent<DrawingHistoryManager> ().addDrawingCommand (index, 0, firstPoint, currLine.GetColor(), paintLineThickness);
 
 		Debug.Log ("Adding History 3");
 		GetComponent<PaintController>().drawingHistoryIndex = index;
@@ -300,7 +313,7 @@ public class DrawLineManager : MonoBehaviour {
 
 		// add to history without incrementing index
 		int index = GetComponent<PaintController> ().drawingHistoryIndex;
-		paintBrushSceneObject.GetComponent<DrawingHistoryManager> ().addDrawingCommand (index, 0, pointToAdd, currLine.lmat.color, paintLineThickness);
+		paintBrushSceneObject.GetComponent<DrawingHistoryManager> ().addDrawingCommand (index, 0, pointToAdd, currLine.GetColor(), paintLineThickness);
 
 		// Make sure the trail is off
         if(brushTipObject.activeSelf)
@@ -321,9 +334,11 @@ public class DrawLineManager : MonoBehaviour {
 			go.AddComponent<MeshRenderer> ();
 			currLine = go.AddComponent<GraphicsLineRenderer> ();
 
-			currLine.lmat = new Material(lMat);
+			currLine.SetPrimaryMaterial(new Material(lMat));
+			if (lMat_texture) 
+				currLine.SetSecondaryMaterial(new Material(lMat_texture));
 			currLine.SetWidth (lineThickness);
-			currLine.lmat.color = color;
+			currLine.SetColor(color);
 			numReplayClicks = 0;
 
 

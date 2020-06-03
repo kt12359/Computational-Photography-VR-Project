@@ -9,16 +9,51 @@ public class GraphicsLineRenderer : MonoBehaviour {
 
 
 	private Mesh ml;
-	public Material lmat;
 	private Vector3 s;
 
 	private float lineSize = 0.03f;
 	private bool firstQuad = true;
 
-	void Start () {
+	void Start ()
+	{
+		ml = GetComponent<MeshFilter>().mesh;
+	}
 
-		ml = GetComponent<MeshFilter> ().mesh;
-		GetComponent<MeshRenderer> ().material = lmat;
+	// Sets the material that appears on top
+	public void SetPrimaryMaterial(Material mat)
+	{
+		Material[] mats = GetComponent<MeshRenderer>().materials;
+		mats[0] = mat;
+		GetComponent<MeshRenderer>().materials = mats;
+	}
+
+	// Sets the material that appears underneath
+	public void SetSecondaryMaterial(Material mat)
+	{
+		Material[] mats = new Material[2];
+		mats[0] = GetComponent<MeshRenderer>().materials[0];
+		mats[1] = mat;
+		GetComponent<MeshRenderer>().materials = mats;
+	}
+
+	// Sets the color of the primary and secondary materials
+	public void SetColor(Color color)
+	{
+		Color c = color;
+		if (GetComponent<MeshRenderer>().materials.Length == 2) {
+			c.a = 0.5f;
+			GetComponent<MeshRenderer>().materials[0].color = c;
+			GetComponent<MeshRenderer>().materials[1].color = c;
+		}
+		else {
+			c.a = 1.0f;
+			GetComponent<MeshRenderer>().materials[0].color = c;
+		}
+	}
+
+	public Color GetColor()
+	{
+		return GetComponent<MeshRenderer>().materials[0].color;
 	}
 
 	public void SetWidth(float width)
