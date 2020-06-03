@@ -390,768 +390,782 @@ extern void DrawLineManager_OnPaintBrushTypeClick_m7D0AA5DEA870BE39469DC6F7BB690
 extern void DrawLineManager_OnLineWidthSliderChanged_m44ACCD7A979B3A95E24A34E1222C3269E034621F ();
 // 0x000000B5 System.Void DrawLineManager::setBrushMaterial(UnityEngine.Material)
 extern void DrawLineManager_setBrushMaterial_mDAF26AEFCA5C1653A810ABBD50FF92A2D5E53989 ();
-// 0x000000B6 UnityEngine.Vector3 DrawLineManager::getRayEndPoint(System.Single)
+// 0x000000B6 UnityEngine.Vector3 DrawLineManager::getNewPositionForLayer(System.Single)
+extern void DrawLineManager_getNewPositionForLayer_mE7C1B1B635D33A504A4499E8FA28EDCA07967B99 ();
+// 0x000000B7 UnityEngine.Vector3 DrawLineManager::getRayEndPoint(System.Single)
 extern void DrawLineManager_getRayEndPoint_mCF00F8778219FD4DC6D35815F0ABE3FB25EBD342 ();
-// 0x000000B7 UnityEngine.Vector3 DrawLineManager::getRayEndPointSurface(System.Single)
+// 0x000000B8 UnityEngine.Vector3 DrawLineManager::getRayEndPointSurface(System.Single)
 extern void DrawLineManager_getRayEndPointSurface_m96CD6A51A63187E3D4BE16315B60C442E9327102 ();
-// 0x000000B8 System.Void DrawLineManager::Start()
+// 0x000000B9 System.Void DrawLineManager::Start()
 extern void DrawLineManager_Start_m0EEA60EE3ED4F65833E365CFE233ACEC0879F30F ();
-// 0x000000B9 System.Void DrawLineManager::Update()
+// 0x000000BA System.Void DrawLineManager::Update()
 extern void DrawLineManager_Update_m438F1279DF8B989843186F341E6D1663987AD2DD ();
-// 0x000000BA System.Void DrawLineManager::_UpdateNormal()
+// 0x000000BB System.Void DrawLineManager::_UpdateNormal()
 extern void DrawLineManager__UpdateNormal_m48AE17E3C5A1E1FA784C32C1F0AFE06186F9C600 ();
-// 0x000000BB System.Void DrawLineManager::draw()
+// 0x000000BC System.Void DrawLineManager::draw()
 extern void DrawLineManager_draw_m36190D55990D68DB2033DA957B88B3325023B7EF ();
-// 0x000000BC System.Void DrawLineManager::drawOnSurface()
+// 0x000000BD System.Void DrawLineManager::drawOnSurface()
 extern void DrawLineManager_drawOnSurface_m08E6F1F7D5F12CD905DA6E331FB16733DF180225 ();
-// 0x000000BD System.Single DrawLineManager::DistanceBetweenRayAndPoint(UnityEngine.Ray,UnityEngine.Vector3)
+// 0x000000BE System.Single DrawLineManager::DistanceBetweenRayAndPoint(UnityEngine.Ray,UnityEngine.Vector3)
 extern void DrawLineManager_DistanceBetweenRayAndPoint_mFB79D8B7B0B5C63F5FE4F6277CAB5ADCBFE66E54 ();
-// 0x000000BE System.Void DrawLineManager::_UpdateFeature()
+// 0x000000BF System.Void DrawLineManager::_UpdateFeature()
 extern void DrawLineManager__UpdateFeature_mABDD556EBEF17CB443A2CA9BEC4023CD4062DBDC ();
-// 0x000000BF System.Void DrawLineManager::startNewLine(UnityEngine.Vector3)
+// 0x000000C0 System.Void DrawLineManager::startNewLine(UnityEngine.Vector3)
 extern void DrawLineManager_startNewLine_mCCF7BCE85E281B694E9BDD7C50471B3BA3B3C0C7 ();
-// 0x000000C0 System.Void DrawLineManager::addPointToLine(UnityEngine.Vector3,System.Boolean)
+// 0x000000C1 System.Void DrawLineManager::addPointToLine(UnityEngine.Vector3,System.Boolean)
 extern void DrawLineManager_addPointToLine_m2924F756CB4E70C0F9113104CA3732D7B63B2285 ();
-// 0x000000C1 System.Void DrawLineManager::addReplayLineSegment(System.Boolean,System.Single,UnityEngine.Vector3,UnityEngine.Color)
+// 0x000000C2 System.Void DrawLineManager::addReplayLineSegment(System.Boolean,System.Single,UnityEngine.Vector3,UnityEngine.Color)
 extern void DrawLineManager_addReplayLineSegment_mBBBD11AB05ADD61934D22245E9A6E8921DB89304 ();
-// 0x000000C2 System.Void DrawLineManager::.ctor()
+// 0x000000C3 System.Void DrawLineManager::.ctor()
 extern void DrawLineManager__ctor_mBA26A37EF3E91317E671E4D24CC4214CC8095E6C ();
-// 0x000000C3 System.Void DrawingHistoryManager::Start()
+// 0x000000C4 System.Void DrawingHistoryManager::Start()
 extern void DrawingHistoryManager_Start_mBF78A56E9BF484C39CF050797FF872DA28E96D91 ();
-// 0x000000C4 System.Void DrawingHistoryManager::Update()
+// 0x000000C5 System.Void DrawingHistoryManager::Update()
 extern void DrawingHistoryManager_Update_mF368FE8C58E3348BA994AF3519BFEAD4419593F5 ();
-// 0x000000C5 System.Void DrawingHistoryManager::resetHistory()
+// 0x000000C6 System.Void DrawingHistoryManager::resetHistory()
 extern void DrawingHistoryManager_resetHistory_m2C8CB1AF953BDF7D6930FAA9053BCB88BADC8C7E ();
-// 0x000000C6 System.Void DrawingHistoryManager::addDrawingCommand(System.Int32,System.Int32,UnityEngine.Vector3,UnityEngine.Color,System.Single)
+// 0x000000C7 UnityEngine.Vector3 DrawingHistoryManager::getOrigin(System.Int32)
+extern void DrawingHistoryManager_getOrigin_mD08F026F4423D3BA260F408710695C7EC5DD3201 ();
+// 0x000000C8 System.Void DrawingHistoryManager::deleteAllInLayer(System.Int32)
+extern void DrawingHistoryManager_deleteAllInLayer_m9B0526746994616B892A6CA90B1CAB2A570D5A13 ();
+// 0x000000C9 System.Void DrawingHistoryManager::addDrawingCommand(System.Int32,System.Int32,UnityEngine.Vector3,UnityEngine.Color,System.Single)
 extern void DrawingHistoryManager_addDrawingCommand_m57D40781CB938EE38A12812171FDC206B265C24A ();
-// 0x000000C7 System.Void DrawingHistoryManager::saveMapIDToFile(System.String,System.Int32)
+// 0x000000CA System.Void DrawingHistoryManager::saveMapIDToFile(System.String,System.Int32)
 extern void DrawingHistoryManager_saveMapIDToFile_m98AA355BA46FAFD3C39956F311C88C2A8154D024 ();
-// 0x000000C8 System.String DrawingHistoryManager::loadMapIDFromFile(System.Int32)
+// 0x000000CB System.String DrawingHistoryManager::loadMapIDFromFile(System.Int32)
 extern void DrawingHistoryManager_loadMapIDFromFile_m92B4B329DB7508BBFD12D3F8649EA27BB1DE4F20 ();
-// 0x000000C9 System.Void DrawingHistoryManager::saveLayer(System.Int32)
+// 0x000000CC System.Void DrawingHistoryManager::moveLayer(System.Int32,UnityEngine.Vector3)
+extern void DrawingHistoryManager_moveLayer_mAE5066A505E18186C386521113D36BA0637FE805 ();
+// 0x000000CD System.Void DrawingHistoryManager::saveLayer(System.Int32)
 extern void DrawingHistoryManager_saveLayer_mF126E3AA5A17353C1E9A54851710907CD9EAC862 ();
-// 0x000000CA System.Void DrawingHistoryManager::loadLayer(System.Int32)
+// 0x000000CE System.Void DrawingHistoryManager::setLayerActive(System.Int32,System.Boolean)
+extern void DrawingHistoryManager_setLayerActive_m2FBC2D52EB2E0583C16FB2DBB919990B26C0A384 ();
+// 0x000000CF System.Void DrawingHistoryManager::loadLayer(System.Int32)
 extern void DrawingHistoryManager_loadLayer_mDC1C4AE89B2F828C6295985A365E99EBD8FE22C4 ();
-// 0x000000CB System.Collections.IEnumerator DrawingHistoryManager::renderCommands(System.Collections.Generic.List`1<DrawingHistoryManager_DrawingCommand>)
+// 0x000000D0 System.Collections.IEnumerator DrawingHistoryManager::renderCommands(System.Collections.Generic.List`1<DrawingHistoryManager_DrawingCommand>)
 extern void DrawingHistoryManager_renderCommands_m752FE4EE5A6F1A1CA2365EA825FA652DCBFB7622 ();
-// 0x000000CC System.Void DrawingHistoryManager::.ctor()
+// 0x000000D1 System.Void DrawingHistoryManager::.ctor()
 extern void DrawingHistoryManager__ctor_m52571A1343ED1F835F5159241E7C57BD77940576 ();
-// 0x000000CD System.Void FeatureHighlightController::Start()
+// 0x000000D2 System.Void FeatureHighlightController::Start()
 extern void FeatureHighlightController_Start_m82887FC75F37B2399B7EC0BDEF731EA5494DC6D8 ();
-// 0x000000CE System.Void FeatureHighlightController::ToggleHighlight(System.Boolean)
+// 0x000000D3 System.Void FeatureHighlightController::ToggleHighlight(System.Boolean)
 extern void FeatureHighlightController_ToggleHighlight_m50CDC09606979A8C20AC21AF58BBA03CB9C692F8 ();
-// 0x000000CF UnityEngine.Vector3 FeatureHighlightController::GetPoint()
+// 0x000000D4 UnityEngine.Vector3 FeatureHighlightController::GetPoint()
 extern void FeatureHighlightController_GetPoint_m3275B3F81C01C76318F98F025519B3ADFF67A14C ();
-// 0x000000D0 System.Void FeatureHighlightController::HighlightPoint(UnityEngine.Vector3)
+// 0x000000D5 System.Void FeatureHighlightController::HighlightPoint(UnityEngine.Vector3)
 extern void FeatureHighlightController_HighlightPoint_mF977B56CE87635C6BA672D2FA4F3D1841412D69A ();
-// 0x000000D1 System.Void FeatureHighlightController::ClearHighlight()
+// 0x000000D6 System.Void FeatureHighlightController::ClearHighlight()
 extern void FeatureHighlightController_ClearHighlight_mC71234F0345F34CDFA0A617DC92240B1860979C3 ();
-// 0x000000D2 System.Single FeatureHighlightController::DistanceBetweenRayAndPoint(UnityEngine.Ray,UnityEngine.Vector3)
+// 0x000000D7 System.Single FeatureHighlightController::DistanceBetweenRayAndPoint(UnityEngine.Ray,UnityEngine.Vector3)
 extern void FeatureHighlightController_DistanceBetweenRayAndPoint_m2F68FC1AD68986F1B9FE2A367C0835DEEB4089AE ();
-// 0x000000D3 System.Collections.IEnumerator FeatureHighlightController::ContinuousUpdate()
+// 0x000000D8 System.Collections.IEnumerator FeatureHighlightController::ContinuousUpdate()
 extern void FeatureHighlightController_ContinuousUpdate_m3DE077F38DBFE666F5107F8CA04AE83A96040DD6 ();
-// 0x000000D4 System.Void FeatureHighlightController::.ctor()
+// 0x000000D9 System.Void FeatureHighlightController::.ctor()
 extern void FeatureHighlightController__ctor_mED96EA96F03C5129814B8B4460D5BB3DF153A3D3 ();
-// 0x000000D5 System.Void GraphicsLineRenderer::Start()
+// 0x000000DA System.Void GraphicsLineRenderer::Start()
 extern void GraphicsLineRenderer_Start_m238335DB2ECCFF663EB6D69834B9D26359E84492 ();
-// 0x000000D6 System.Void GraphicsLineRenderer::SetWidth(System.Single)
+// 0x000000DB System.Void GraphicsLineRenderer::SetWidth(System.Single)
 extern void GraphicsLineRenderer_SetWidth_m79FFEAE9CA81B9DDE01D9D50CC8ED4F4EB9095CD ();
-// 0x000000D7 System.Void GraphicsLineRenderer::AddPoint(UnityEngine.Vector3)
+// 0x000000DC System.Void GraphicsLineRenderer::AddPoint(UnityEngine.Vector3)
 extern void GraphicsLineRenderer_AddPoint_m24839F21D1D1D040E72FFFA36B5D2D8E904E0BA3 ();
-// 0x000000D8 UnityEngine.Vector3[] GraphicsLineRenderer::MakeQuad(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Boolean)
+// 0x000000DD UnityEngine.Vector3[] GraphicsLineRenderer::MakeQuad(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Boolean)
 extern void GraphicsLineRenderer_MakeQuad_m89E24F5B14BFF28904F557EEC7EF2C63EAD9132E ();
-// 0x000000D9 System.Void GraphicsLineRenderer::AddLine(UnityEngine.Mesh,UnityEngine.Vector3[])
+// 0x000000DE System.Void GraphicsLineRenderer::AddLine(UnityEngine.Mesh,UnityEngine.Vector3[])
 extern void GraphicsLineRenderer_AddLine_mFE4B0A2E06F4FD7EDC435CBAFDC7CE42AC1C9F90 ();
-// 0x000000DA UnityEngine.Vector3[] GraphicsLineRenderer::resizeVertices(UnityEngine.Vector3[],System.Int32)
+// 0x000000DF UnityEngine.Vector3[] GraphicsLineRenderer::resizeVertices(UnityEngine.Vector3[],System.Int32)
 extern void GraphicsLineRenderer_resizeVertices_m47D324C654E218AC79030985A27C76C38C30DC01 ();
-// 0x000000DB System.Int32[] GraphicsLineRenderer::resizeTraingles(System.Int32[],System.Int32)
+// 0x000000E0 System.Int32[] GraphicsLineRenderer::resizeTraingles(System.Int32[],System.Int32)
 extern void GraphicsLineRenderer_resizeTraingles_m80309056030E0CA87D376CFAF1F3EFA8CABA327B ();
-// 0x000000DC UnityEngine.Vector2[] GraphicsLineRenderer::resizeUVs(UnityEngine.Vector2[],System.Int32)
+// 0x000000E1 UnityEngine.Vector2[] GraphicsLineRenderer::resizeUVs(UnityEngine.Vector2[],System.Int32)
 extern void GraphicsLineRenderer_resizeUVs_mBB5546995A5077CF3FB8503F7570FE9B15653D65 ();
-// 0x000000DD System.Void GraphicsLineRenderer::.ctor()
+// 0x000000E2 System.Void GraphicsLineRenderer::.ctor()
 extern void GraphicsLineRenderer__ctor_mAE3D25AB1FE02E28C2202679BC922446C73EFB7D ();
-// 0x000000DE System.Void PaintController::Start()
+// 0x000000E3 System.Void PaintController::Start()
 extern void PaintController_Start_mBD017F5F71D3907C15E6FCC36BA387F03222877F ();
-// 0x000000DF System.Void PaintController::OnToggleColorPaletteClick()
+// 0x000000E4 System.Void PaintController::OnToggleColorPaletteClick()
 extern void PaintController_OnToggleColorPaletteClick_mDB712BA268FC0CDDEA17222A9B562B884E12F3B1 ();
-// 0x000000E0 System.Void PaintController::Update()
+// 0x000000E5 System.Void PaintController::Update()
 extern void PaintController_Update_mFB29ACDD5415EAE9E01B6C771121864084DE111E ();
-// 0x000000E1 System.Void PaintController::onStartPaintingClick()
+// 0x000000E6 System.Void PaintController::onStartPaintingClick()
 extern void PaintController_onStartPaintingClick_m774EC81CDB90E468FD9B98412A6CD7007799C099 ();
-// 0x000000E2 System.Void PaintController::TogglePanelSaveLayer(System.Boolean)
+// 0x000000E7 System.Void PaintController::TogglePanelMoveLayer(System.Boolean)
+extern void PaintController_TogglePanelMoveLayer_m05203E4FFBEA94583C6A72B069F8116C3D532660 ();
+// 0x000000E8 System.Void PaintController::TogglePanelSaveLayer(System.Boolean)
 extern void PaintController_TogglePanelSaveLayer_mDB0550CC0753C3D82D89338C304C71048532105B ();
-// 0x000000E3 System.Void PaintController::TogglePanelLoadLayer(System.Boolean)
+// 0x000000E9 System.Void PaintController::TogglePanelLoadLayer(System.Boolean)
 extern void PaintController_TogglePanelLoadLayer_mCFD5472764497DA901F7AE82B28DECAB3CB0395C ();
-// 0x000000E4 System.Void PaintController::TogglePanelMode(System.Boolean)
+// 0x000000EA System.Void PaintController::TogglePanelMode(System.Boolean)
 extern void PaintController_TogglePanelMode_mF80DE9FB987FFE85ECF66226915390048DF3B547 ();
-// 0x000000E5 System.Void PaintController::OnSaveLayerClick(System.Int32)
+// 0x000000EB System.Void PaintController::OnMoveLayerClick(System.Int32)
+extern void PaintController_OnMoveLayerClick_mD21E46C46E3CDA405786D62FA61696F1D342E295 ();
+// 0x000000EC System.Void PaintController::OnSaveLayerClick(System.Int32)
 extern void PaintController_OnSaveLayerClick_m39BB064ED6FA3285BF0685A0A609D915DA6461FD ();
-// 0x000000E6 System.Void PaintController::OnLoadLayerClick(System.Int32)
+// 0x000000ED System.Void PaintController::OnLoadLayerClick(System.Int32)
 extern void PaintController_OnLoadLayerClick_mB0645EFA00A4609CDE0C99AE5BB9D87775DB858C ();
-// 0x000000E7 System.Void PaintController::OnModeClick(System.String)
+// 0x000000EE System.Void PaintController::OnModeClick(System.String)
 extern void PaintController_OnModeClick_m527136A4D4BA6B6935DEB49BAAE77291AF5DE751 ();
-// 0x000000E8 System.Void PaintController::ToggleModeNormal(System.Boolean)
+// 0x000000EF System.Void PaintController::ToggleModeNormal(System.Boolean)
 extern void PaintController_ToggleModeNormal_mD7EF06859F1897FB92557EB3864F5181574720BD ();
-// 0x000000E9 System.Void PaintController::ToggleModeSurface(System.Boolean)
+// 0x000000F0 System.Void PaintController::ToggleModeSurface(System.Boolean)
 extern void PaintController_ToggleModeSurface_m8059785D1B8C902D48AE3C07DC1CFF4D2B81003C ();
-// 0x000000EA System.Void PaintController::ToggleModeFeature(System.Boolean)
+// 0x000000F1 System.Void PaintController::ToggleModeFeature(System.Boolean)
 extern void PaintController_ToggleModeFeature_m87C54E0C1AEDD1761CA1B95D17E93DA416D44E8B ();
-// 0x000000EB System.Void PaintController::OnExitLoadedPaintingClick()
+// 0x000000F2 System.Void PaintController::OnExitLoadedPaintingClick()
 extern void PaintController_OnExitLoadedPaintingClick_mD9373F22858D6AD94A381E99453D4C0DCF7253F5 ();
-// 0x000000EC System.Void PaintController::deleteAllObjects()
+// 0x000000F3 System.Void PaintController::deleteAllObjects()
 extern void PaintController_deleteAllObjects_mFD836503966ACEAA31B1CFFD3E2D0F7F849EA3E3 ();
-// 0x000000ED System.Void PaintController::onClearAllClick()
+// 0x000000F4 System.Void PaintController::onClearAllClick()
 extern void PaintController_onClearAllClick_mFDAED465A66A4B9D275F42A0C13B3F5C58DB5E8A ();
-// 0x000000EE System.Void PaintController::OnPose(UnityEngine.Matrix4x4,UnityEngine.Matrix4x4)
+// 0x000000F5 System.Void PaintController::OnPose(UnityEngine.Matrix4x4,UnityEngine.Matrix4x4)
 extern void PaintController_OnPose_m6E58816B5786321B91C9EDB7A047BC342050501A ();
-// 0x000000EF System.Void PaintController::OnStatusChange(LibPlacenote_MappingStatus,LibPlacenote_MappingStatus)
+// 0x000000F6 System.Void PaintController::OnStatusChange(LibPlacenote_MappingStatus,LibPlacenote_MappingStatus)
 extern void PaintController_OnStatusChange_m935E882A373A8D6B0805181488E9A1170863C9EA ();
-// 0x000000F0 System.Void PaintController::OnLocalized()
+// 0x000000F7 System.Void PaintController::OnLocalized()
 extern void PaintController_OnLocalized_m5A0B4C5902F637A071F0963E2A4FE6E5C82F775A ();
-// 0x000000F1 System.Void PaintController::.ctor()
+// 0x000000F8 System.Void PaintController::.ctor()
 extern void PaintController__ctor_m818998C4946F96F96E83C961AF897F129CD0B884 ();
-// 0x000000F2 System.Void PaintController::<Start>b__20_0(UnityEngine.Texture2D)
-extern void PaintController_U3CStartU3Eb__20_0_m16E6E91F52EDE90245F9956487F1A66EA571D562 ();
-// 0x000000F3 System.Void PaintPlacementReticleController::Start()
+// 0x000000F9 System.Void PaintController::<Start>b__22_0(UnityEngine.Texture2D)
+extern void PaintController_U3CStartU3Eb__22_0_mA0222E905E4C05CDA1BFCA6F6483A747FDDA5E06 ();
+// 0x000000FA System.Void PaintPlacementReticleController::Start()
 extern void PaintPlacementReticleController_Start_mF77725C328DE062AF1D6274C0D19DF6354AF92BA ();
-// 0x000000F4 System.Void PaintPlacementReticleController::startStopReticle(System.Boolean)
+// 0x000000FB System.Void PaintPlacementReticleController::startStopReticle(System.Boolean)
 extern void PaintPlacementReticleController_startStopReticle_mA5C0DD8081C0363472D00E7DA6E9EC95E8CF4C1A ();
-// 0x000000F5 System.Void PaintPlacementReticleController::StartReticle()
+// 0x000000FC System.Void PaintPlacementReticleController::StartReticle()
 extern void PaintPlacementReticleController_StartReticle_mD7BBCDD0BEEF9613B6BE51785127B86440B7B6A4 ();
-// 0x000000F6 System.Void PaintPlacementReticleController::ObjReticleActivate(UnityEngine.GameObject)
+// 0x000000FD System.Void PaintPlacementReticleController::ObjReticleActivate(UnityEngine.GameObject)
 extern void PaintPlacementReticleController_ObjReticleActivate_m48D8E7908ED9434ECDC92F40317078188A51A2B5 ();
-// 0x000000F7 System.Void PaintPlacementReticleController::ObjReticleDeactivate()
+// 0x000000FE System.Void PaintPlacementReticleController::ObjReticleDeactivate()
 extern void PaintPlacementReticleController_ObjReticleDeactivate_mFA3E9D0A23BD5065889CB869C3EE26D062E03FE8 ();
-// 0x000000F8 System.Void PaintPlacementReticleController::StopReticle()
+// 0x000000FF System.Void PaintPlacementReticleController::StopReticle()
 extern void PaintPlacementReticleController_StopReticle_m99DACAA75A137D824A88E95DF376A8FC34353CDE ();
-// 0x000000F9 System.Collections.IEnumerator PaintPlacementReticleController::ContinuousHittest()
+// 0x00000100 System.Collections.IEnumerator PaintPlacementReticleController::ContinuousHittest()
 extern void PaintPlacementReticleController_ContinuousHittest_mA600E6A7FEC5B53BBA972109366947729C7890D5 ();
-// 0x000000FA System.Void PaintPlacementReticleController::.ctor()
+// 0x00000101 System.Void PaintPlacementReticleController::.ctor()
 extern void PaintPlacementReticleController__ctor_m8DF560A18F96C05D6633FBE774A9309F901F1BBE ();
-// 0x000000FB System.Void PaintPlacementReticleController::.cctor()
+// 0x00000102 System.Void PaintPlacementReticleController::.cctor()
 extern void PaintPlacementReticleController__cctor_mFB77B3E1415D4B5C0F471A87140F88E636C4FCEC ();
-// 0x000000FC System.Void ReticleController::OnPointCloudChanged(UnityEngine.XR.ARFoundation.ARPointCloudChangedEventArgs)
+// 0x00000103 System.Void ReticleController::OnPointCloudChanged(UnityEngine.XR.ARFoundation.ARPointCloudChangedEventArgs)
 extern void ReticleController_OnPointCloudChanged_m749D7AFAFAFAF7B76F9FF5CE4720217CE01B7B35 ();
-// 0x000000FD UnityEngine.Vector3 ReticleController::getPos()
+// 0x00000104 UnityEngine.Vector3 ReticleController::getPos()
 extern void ReticleController_getPos_mDEB358AFC1299468FBA7D5126ED79B13925E93D1 ();
-// 0x000000FE System.Void ReticleController::Start()
+// 0x00000105 System.Void ReticleController::Start()
 extern void ReticleController_Start_m723DEA7CF33ACC98EC67CA3FE4F4DC337799CA39 ();
-// 0x000000FF System.Void ReticleController::startStopReticle(System.Boolean)
+// 0x00000106 System.Void ReticleController::startStopReticle(System.Boolean)
 extern void ReticleController_startStopReticle_m7CD83DC8B4562913F86C4BF6D5DDA1AF85A5766E ();
-// 0x00000100 System.Void ReticleController::StartReticle()
+// 0x00000107 System.Void ReticleController::StartReticle()
 extern void ReticleController_StartReticle_m15DA1A62AD9424A52E3D829290CF7ADB6712314D ();
-// 0x00000101 System.Void ReticleController::StopReticle()
+// 0x00000108 System.Void ReticleController::StopReticle()
 extern void ReticleController_StopReticle_mDD99E4F701BEC52C036C1055EF2AB0D6CAD12151 ();
-// 0x00000102 System.Collections.IEnumerator ReticleController::ContinuousHittest()
+// 0x00000109 System.Collections.IEnumerator ReticleController::ContinuousHittest()
 extern void ReticleController_ContinuousHittest_m55BA5D253362317961FAACD8D05146C58A054C80 ();
-// 0x00000103 System.Void ReticleController::.ctor()
+// 0x0000010A System.Void ReticleController::.ctor()
 extern void ReticleController__ctor_m62DC237470909C52F7368163EE690799E1284603 ();
-// 0x00000104 System.Void ReticleController::.cctor()
+// 0x0000010B System.Void ReticleController::.cctor()
 extern void ReticleController__cctor_m7C9B5D2E70D2A8DC32A59B6079315854B1FC43C3 ();
-// 0x00000105 System.Void WanzyeeStudio.JsonNetUtility::Initialize()
+// 0x0000010C System.Void WanzyeeStudio.JsonNetUtility::Initialize()
 extern void JsonNetUtility_Initialize_m38B6895657DB0B03DEE5923BE28EE2F4484EB778 ();
-// 0x00000106 System.Collections.Generic.List`1<Newtonsoft.Json.JsonConverter> WanzyeeStudio.JsonNetUtility::CreateConverters()
+// 0x0000010D System.Collections.Generic.List`1<Newtonsoft.Json.JsonConverter> WanzyeeStudio.JsonNetUtility::CreateConverters()
 extern void JsonNetUtility_CreateConverters_m1ED94579A6BEF0C43EE64C8E4D39838188F24734 ();
-// 0x00000107 Newtonsoft.Json.JsonConverter WanzyeeStudio.JsonNetUtility::CreateConverter(System.Type)
+// 0x0000010E Newtonsoft.Json.JsonConverter WanzyeeStudio.JsonNetUtility::CreateConverter(System.Type)
 extern void JsonNetUtility_CreateConverter_m45216D8A3CB93723832DE0755E5D9AD3E59C4804 ();
-// 0x00000108 System.Type[] WanzyeeStudio.JsonNetUtility::FindConverterTypes()
+// 0x0000010F System.Type[] WanzyeeStudio.JsonNetUtility::FindConverterTypes()
 extern void JsonNetUtility_FindConverterTypes_m53E064B2B355156B6BBD939D0799AB278C0F3A65 ();
-// 0x00000109 System.Void WanzyeeStudio.JsonNetUtility::.cctor()
+// 0x00000110 System.Void WanzyeeStudio.JsonNetUtility::.cctor()
 extern void JsonNetUtility__cctor_m39D7B7D870817CFB3D14DD8E52461EBD54BB3CB5 ();
-// 0x0000010A System.Void WanzyeeStudio.Json.BoundsConverter::PreserveProperties()
+// 0x00000111 System.Void WanzyeeStudio.Json.BoundsConverter::PreserveProperties()
 extern void BoundsConverter_PreserveProperties_mD137F6B6E86976EBBD8734D1D25584FC42238001 ();
-// 0x0000010B System.String[] WanzyeeStudio.Json.BoundsConverter::GetPropertyNames()
+// 0x00000112 System.String[] WanzyeeStudio.Json.BoundsConverter::GetPropertyNames()
 extern void BoundsConverter_GetPropertyNames_m151E30E2758C3F980E9ECFD6A2D3B886A7923EE0 ();
-// 0x0000010C System.Void WanzyeeStudio.Json.BoundsConverter::.ctor()
+// 0x00000113 System.Void WanzyeeStudio.Json.BoundsConverter::.ctor()
 extern void BoundsConverter__ctor_m097FA699C775AC6D163E6258358C0EFD7E6B6D75 ();
-// 0x0000010D System.String[] WanzyeeStudio.Json.ColorConverter::GetPropertyNames()
+// 0x00000114 System.String[] WanzyeeStudio.Json.ColorConverter::GetPropertyNames()
 extern void ColorConverter_GetPropertyNames_m1A41DFBFF458D384C8D834445BF8B5E10CEBBAEF ();
-// 0x0000010E System.Void WanzyeeStudio.Json.ColorConverter::.ctor()
+// 0x00000115 System.Void WanzyeeStudio.Json.ColorConverter::.ctor()
 extern void ColorConverter__ctor_mBB4F910A0DECEA7D863839149D8A6B23D4D774AF ();
-// 0x0000010F System.Boolean WanzyeeStudio.Json.DictionaryConverter::CanConvert(System.Type)
+// 0x00000116 System.Boolean WanzyeeStudio.Json.DictionaryConverter::CanConvert(System.Type)
 extern void DictionaryConverter_CanConvert_m0ED5AB6E04476DBDF854C36DBA8D9C1B73F76528 ();
-// 0x00000110 System.Object WanzyeeStudio.Json.DictionaryConverter::ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+// 0x00000117 System.Object WanzyeeStudio.Json.DictionaryConverter::ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
 extern void DictionaryConverter_ReadJson_m12664B51E2D981974094A5ABE433DB8BF38850D3 ();
-// 0x00000111 System.Void WanzyeeStudio.Json.DictionaryConverter::WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+// 0x00000118 System.Void WanzyeeStudio.Json.DictionaryConverter::WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
 extern void DictionaryConverter_WriteJson_m6A7AB5266B1654499073F504F8F1A777764947D1 ();
-// 0x00000112 System.Void WanzyeeStudio.Json.DictionaryConverter::.ctor()
+// 0x00000119 System.Void WanzyeeStudio.Json.DictionaryConverter::.ctor()
 extern void DictionaryConverter__ctor_mE70DB5276A39AAF3B54DAADB4DF7FA5BB9A7AE83 ();
-// 0x00000113 System.String[] WanzyeeStudio.Json.Matrix4x4Converter::GetPropertyNames()
+// 0x0000011A System.String[] WanzyeeStudio.Json.Matrix4x4Converter::GetPropertyNames()
 extern void Matrix4x4Converter_GetPropertyNames_m43C12B95B3655761A6EEE9AE2002C069D50EB8E2 ();
-// 0x00000114 System.Void WanzyeeStudio.Json.Matrix4x4Converter::.ctor()
+// 0x0000011B System.Void WanzyeeStudio.Json.Matrix4x4Converter::.ctor()
 extern void Matrix4x4Converter__ctor_m8965BECD9C3C051DA68677A354DBCC2A409D4FA7 ();
-// 0x00000115 System.Reflection.MemberInfo WanzyeeStudio.Json.PartialConverter`1::GetMember(System.String)
-// 0x00000116 System.Void WanzyeeStudio.Json.PartialConverter`1::Throw(System.String,System.String)
-// 0x00000117 System.Object WanzyeeStudio.Json.PartialConverter`1::GetValue(System.Reflection.MemberInfo,System.Object)
-// 0x00000118 System.Void WanzyeeStudio.Json.PartialConverter`1::SetValue(System.Reflection.MemberInfo,System.Object,System.Object)
-// 0x00000119 System.Type WanzyeeStudio.Json.PartialConverter`1::GetValueType(System.Reflection.MemberInfo)
-// 0x0000011A System.Collections.Generic.Dictionary`2<System.String,System.Reflection.MemberInfo> WanzyeeStudio.Json.PartialConverter`1::GetProperties()
-// 0x0000011B System.String[] WanzyeeStudio.Json.PartialConverter`1::GetPropertyNames()
-// 0x0000011C T WanzyeeStudio.Json.PartialConverter`1::CreateInstance()
-// 0x0000011D System.Boolean WanzyeeStudio.Json.PartialConverter`1::CanConvert(System.Type)
-// 0x0000011E System.Object WanzyeeStudio.Json.PartialConverter`1::ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
-// 0x0000011F System.Void WanzyeeStudio.Json.PartialConverter`1::WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
-// 0x00000120 System.Void WanzyeeStudio.Json.PartialConverter`1::.ctor()
-// 0x00000121 System.String[] WanzyeeStudio.Json.QuaternionConverter::GetPropertyNames()
+// 0x0000011C System.Reflection.MemberInfo WanzyeeStudio.Json.PartialConverter`1::GetMember(System.String)
+// 0x0000011D System.Void WanzyeeStudio.Json.PartialConverter`1::Throw(System.String,System.String)
+// 0x0000011E System.Object WanzyeeStudio.Json.PartialConverter`1::GetValue(System.Reflection.MemberInfo,System.Object)
+// 0x0000011F System.Void WanzyeeStudio.Json.PartialConverter`1::SetValue(System.Reflection.MemberInfo,System.Object,System.Object)
+// 0x00000120 System.Type WanzyeeStudio.Json.PartialConverter`1::GetValueType(System.Reflection.MemberInfo)
+// 0x00000121 System.Collections.Generic.Dictionary`2<System.String,System.Reflection.MemberInfo> WanzyeeStudio.Json.PartialConverter`1::GetProperties()
+// 0x00000122 System.String[] WanzyeeStudio.Json.PartialConverter`1::GetPropertyNames()
+// 0x00000123 T WanzyeeStudio.Json.PartialConverter`1::CreateInstance()
+// 0x00000124 System.Boolean WanzyeeStudio.Json.PartialConverter`1::CanConvert(System.Type)
+// 0x00000125 System.Object WanzyeeStudio.Json.PartialConverter`1::ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+// 0x00000126 System.Void WanzyeeStudio.Json.PartialConverter`1::WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+// 0x00000127 System.Void WanzyeeStudio.Json.PartialConverter`1::.ctor()
+// 0x00000128 System.String[] WanzyeeStudio.Json.QuaternionConverter::GetPropertyNames()
 extern void QuaternionConverter_GetPropertyNames_m086F37D9B1E7679C3A7E91AF1453C14978FF5BAC ();
-// 0x00000122 System.Void WanzyeeStudio.Json.QuaternionConverter::.ctor()
+// 0x00000129 System.Void WanzyeeStudio.Json.QuaternionConverter::.ctor()
 extern void QuaternionConverter__ctor_mEB36056BFE463A68D8FB7ECEC638396A4D190C07 ();
-// 0x00000123 System.String[] WanzyeeStudio.Json.RectConverter::GetPropertyNames()
+// 0x0000012A System.String[] WanzyeeStudio.Json.RectConverter::GetPropertyNames()
 extern void RectConverter_GetPropertyNames_m8B2B4CC8371461F10EE22C591198783F44C3CD0B ();
-// 0x00000124 System.Void WanzyeeStudio.Json.RectConverter::.ctor()
+// 0x0000012B System.Void WanzyeeStudio.Json.RectConverter::.ctor()
 extern void RectConverter__ctor_m0B4E360A2B9A3B79D27BA1E969691288EDD342D2 ();
-// 0x00000125 System.String[] WanzyeeStudio.Json.RectOffsetConverter::GetPropertyNames()
+// 0x0000012C System.String[] WanzyeeStudio.Json.RectOffsetConverter::GetPropertyNames()
 extern void RectOffsetConverter_GetPropertyNames_mA82A5BC168EBFD7BA759E848F287E3D9655BD934 ();
-// 0x00000126 System.Void WanzyeeStudio.Json.RectOffsetConverter::.ctor()
+// 0x0000012D System.Void WanzyeeStudio.Json.RectOffsetConverter::.ctor()
 extern void RectOffsetConverter__ctor_mD1320D49FDD19E113C5EC8B1CB3BE442B6FBC48E ();
-// 0x00000127 System.String[] WanzyeeStudio.Json.Vector2Converter::GetPropertyNames()
+// 0x0000012E System.String[] WanzyeeStudio.Json.Vector2Converter::GetPropertyNames()
 extern void Vector2Converter_GetPropertyNames_m3D1AF86E84FC1682C0749137022357506032576B ();
-// 0x00000128 System.Void WanzyeeStudio.Json.Vector2Converter::.ctor()
+// 0x0000012F System.Void WanzyeeStudio.Json.Vector2Converter::.ctor()
 extern void Vector2Converter__ctor_m700A453515A3BBCE594BB2BCFBEBD37D6DDF758E ();
-// 0x00000129 System.String[] WanzyeeStudio.Json.Vector3Converter::GetPropertyNames()
+// 0x00000130 System.String[] WanzyeeStudio.Json.Vector3Converter::GetPropertyNames()
 extern void Vector3Converter_GetPropertyNames_m509FD9E9754FAD3B9FDF8BB4D7620F8366555F92 ();
-// 0x0000012A System.Void WanzyeeStudio.Json.Vector3Converter::.ctor()
+// 0x00000131 System.Void WanzyeeStudio.Json.Vector3Converter::.ctor()
 extern void Vector3Converter__ctor_mCE9C923A0D7AF77BD8333D78ACCF2F2213858E23 ();
-// 0x0000012B System.String[] WanzyeeStudio.Json.Vector4Converter::GetPropertyNames()
+// 0x00000132 System.String[] WanzyeeStudio.Json.Vector4Converter::GetPropertyNames()
 extern void Vector4Converter_GetPropertyNames_m3039C9803594BEE1D7D47E7A41F68C1524D276CA ();
-// 0x0000012C System.Void WanzyeeStudio.Json.Vector4Converter::.ctor()
+// 0x00000133 System.Void WanzyeeStudio.Json.Vector4Converter::.ctor()
 extern void Vector4Converter__ctor_m94A7EA991A777A0BDC3A8DE6419C384D9EA83C6F ();
-// 0x0000012D UnityEngine.Vector3 PNUtility.MatrixOps::GetPosition(UnityEngine.Matrix4x4)
+// 0x00000134 UnityEngine.Vector3 PNUtility.MatrixOps::GetPosition(UnityEngine.Matrix4x4)
 extern void MatrixOps_GetPosition_m77201D5229D9CB1A8DC1A8AA6867E17F128A5FC3 ();
-// 0x0000012E UnityEngine.Quaternion PNUtility.MatrixOps::GetRotation(UnityEngine.Matrix4x4)
+// 0x00000135 UnityEngine.Quaternion PNUtility.MatrixOps::GetRotation(UnityEngine.Matrix4x4)
 extern void MatrixOps_GetRotation_mADD4D31ED829BF78694E642556CB4245C5E375D4 ();
-// 0x0000012F UnityEngine.Quaternion PNUtility.MatrixOps::QuaternionFromMatrix(UnityEngine.Matrix4x4)
+// 0x00000136 UnityEngine.Quaternion PNUtility.MatrixOps::QuaternionFromMatrix(UnityEngine.Matrix4x4)
 extern void MatrixOps_QuaternionFromMatrix_m96EC01C6848B3F0AF1A977A34735DC23A1CD377E ();
-// 0x00000130 UnityEngine.Matrix4x4 PNUtility.MatrixOps::PNPose2Matrix4x4(LibPlacenote_PNTransformUnity)
+// 0x00000137 UnityEngine.Matrix4x4 PNUtility.MatrixOps::PNPose2Matrix4x4(LibPlacenote_PNTransformUnity)
 extern void MatrixOps_PNPose2Matrix4x4_m6B2F96C1F31D17B548571AA6B8CE3729B0235A6C ();
-// 0x00000131 System.Void PNUtility.MatrixOps::.ctor()
+// 0x00000138 System.Void PNUtility.MatrixOps::.ctor()
 extern void MatrixOps__ctor_m9A1443A6795ACCB7F528473290D6DC4DE78E6141 ();
-// 0x00000132 System.Void StickyNotes.MapInfoElement::Initialize(LibPlacenote_MapInfo,UnityEngine.UI.ToggleGroup,UnityEngine.RectTransform,UnityEngine.Events.UnityAction`1<System.Boolean>)
+// 0x00000139 System.Void StickyNotes.MapInfoElement::Initialize(LibPlacenote_MapInfo,UnityEngine.UI.ToggleGroup,UnityEngine.RectTransform,UnityEngine.Events.UnityAction`1<System.Boolean>)
 extern void MapInfoElement_Initialize_mBB36D5057EE603709C9F4EAB6568CB3DB812BB8D ();
-// 0x00000133 System.Double StickyNotes.MapInfoElement::Calc(System.Single,System.Single,System.Single,System.Single)
+// 0x0000013A System.Double StickyNotes.MapInfoElement::Calc(System.Single,System.Single,System.Single,System.Single)
 extern void MapInfoElement_Calc_m27C28A3F5DE4D3F1B6657ADCF640C40D953C37D9 ();
-// 0x00000134 System.Void StickyNotes.MapInfoElement::.ctor()
+// 0x0000013B System.Void StickyNotes.MapInfoElement::.ctor()
 extern void MapInfoElement__ctor_m12DA22D6BFBEF64AC8886166D33F48F850C46093 ();
-// 0x00000135 System.Void StickyNotes.NoteController::.ctor()
+// 0x0000013C System.Void StickyNotes.NoteController::.ctor()
 extern void NoteController__ctor_mD7D38E7D0489D3B3351529AADF77732D17E7A43C ();
-// 0x00000136 System.Void StickyNotes.NoteInfo::.ctor()
+// 0x0000013D System.Void StickyNotes.NoteInfo::.ctor()
 extern void NoteInfo__ctor_m23D962FCAA5EF27F2C217BE9B9BDB33E4824CE2B ();
-// 0x00000137 System.Void StickyNotes.NotesList::.ctor()
+// 0x0000013E System.Void StickyNotes.NotesList::.ctor()
 extern void NotesList__ctor_m49B7E9E8774793D36946202F98BB3DBED009F994 ();
-// 0x00000138 System.Void StickyNotes.NotesManager::Start()
+// 0x0000013F System.Void StickyNotes.NotesManager::Start()
 extern void NotesManager_Start_m2EF1ECD3E1552D4298079D95E3EF3960EA086B35 ();
-// 0x00000139 System.Boolean StickyNotes.NotesManager::HitTestWithResultType(UnityEngine.Vector2,UnityEngine.XR.ARSubsystems.TrackableType)
+// 0x00000140 System.Boolean StickyNotes.NotesManager::HitTestWithResultType(UnityEngine.Vector2,UnityEngine.XR.ARSubsystems.TrackableType)
 extern void NotesManager_HitTestWithResultType_m03BE1987D72EE2A868F4CA9D7C2511DA5695E9D8 ();
-// 0x0000013A System.Void StickyNotes.NotesManager::Update()
+// 0x00000141 System.Void StickyNotes.NotesManager::Update()
 extern void NotesManager_Update_mE57071FBFB18913B4940154668C4073D07D46DC8 ();
-// 0x0000013B System.Void StickyNotes.NotesManager::ToggleButtons()
+// 0x00000142 System.Void StickyNotes.NotesManager::ToggleButtons()
 extern void NotesManager_ToggleButtons_m7874ABA7CD325AE84C43AF40C0AA8741B13BB813 ();
-// 0x0000013C System.Void StickyNotes.NotesManager::TurnOnButtons()
+// 0x00000143 System.Void StickyNotes.NotesManager::TurnOnButtons()
 extern void NotesManager_TurnOnButtons_mE87BB36371F6B8B7D3AE79367933233E2E4B1D18 ();
-// 0x0000013D System.Void StickyNotes.NotesManager::TurnOffButtons()
+// 0x00000144 System.Void StickyNotes.NotesManager::TurnOffButtons()
 extern void NotesManager_TurnOffButtons_mFC502C746C8074C072AD47B92C73857252AF12A9 ();
-// 0x0000013E System.Void StickyNotes.NotesManager::InstantiateNote(UnityEngine.Vector3)
+// 0x00000145 System.Void StickyNotes.NotesManager::InstantiateNote(UnityEngine.Vector3)
 extern void NotesManager_InstantiateNote_mC8B18A60E0069E48BAF6D7899F25E7B00BD24A71 ();
-// 0x0000013F System.Void StickyNotes.NotesManager::EditCurrNote()
+// 0x00000146 System.Void StickyNotes.NotesManager::EditCurrNote()
 extern void NotesManager_EditCurrNote_m5169C86C5DC8B1FBF247831F152BCA1044FA7BD1 ();
-// 0x00000140 System.Void StickyNotes.NotesManager::OnNoteClosed(UnityEngine.UI.InputField)
+// 0x00000147 System.Void StickyNotes.NotesManager::OnNoteClosed(UnityEngine.UI.InputField)
 extern void NotesManager_OnNoteClosed_m96315BFFB95C9D0D3CA82B80E47C74A9730A6BFA ();
-// 0x00000141 UnityEngine.GameObject StickyNotes.NotesManager::NoteFromInfo(StickyNotes.NoteInfo)
+// 0x00000148 UnityEngine.GameObject StickyNotes.NotesManager::NoteFromInfo(StickyNotes.NoteInfo)
 extern void NotesManager_NoteFromInfo_m270B9E250B04C83F3C39903EC2ED9932A5171703 ();
-// 0x00000142 System.Void StickyNotes.NotesManager::OnEditButtonClick()
+// 0x00000149 System.Void StickyNotes.NotesManager::OnEditButtonClick()
 extern void NotesManager_OnEditButtonClick_m0C84E6862A9C21EA72BF29B6304437D9A911B294 ();
-// 0x00000143 System.Void StickyNotes.NotesManager::OnDeleteButtonClick()
+// 0x0000014A System.Void StickyNotes.NotesManager::OnDeleteButtonClick()
 extern void NotesManager_OnDeleteButtonClick_m2A6946E32E6B2BCB3D0A424EDED063792B33B04B ();
-// 0x00000144 System.Void StickyNotes.NotesManager::DeleteCurrentNote()
+// 0x0000014B System.Void StickyNotes.NotesManager::DeleteCurrentNote()
 extern void NotesManager_DeleteCurrentNote_mFC9D141C2DD1EAB6A70FCFE5AB1ABE233366B1B8 ();
-// 0x00000145 System.Void StickyNotes.NotesManager::ClearNotes()
+// 0x0000014C System.Void StickyNotes.NotesManager::ClearNotes()
 extern void NotesManager_ClearNotes_mCA2D0B87363E5533EB14A6FF4FE7DDC548FDDF6D ();
-// 0x00000146 Newtonsoft.Json.Linq.JObject StickyNotes.NotesManager::Notes2JSON()
+// 0x0000014D Newtonsoft.Json.Linq.JObject StickyNotes.NotesManager::Notes2JSON()
 extern void NotesManager_Notes2JSON_m284C126C5C9F37F036B5E229989795F2F83CD2D4 ();
-// 0x00000147 System.Void StickyNotes.NotesManager::LoadNotesJSON(Newtonsoft.Json.Linq.JToken)
+// 0x0000014E System.Void StickyNotes.NotesManager::LoadNotesJSON(Newtonsoft.Json.Linq.JToken)
 extern void NotesManager_LoadNotesJSON_mE5B1A935E3F446F3F619ED53D9800D48DCB3A442 ();
-// 0x00000148 System.Void StickyNotes.NotesManager::.ctor()
+// 0x0000014F System.Void StickyNotes.NotesManager::.ctor()
 extern void NotesManager__ctor_m6DAB1C806E55D1F76FA96256A6C3B21D1D9CE96E ();
-// 0x00000149 System.String StickyNotes.StickyNotesMain::get_mSelectedMapId()
+// 0x00000150 System.String StickyNotes.StickyNotesMain::get_mSelectedMapId()
 extern void StickyNotesMain_get_mSelectedMapId_m2B330672E7C9D47219220DB9DC64DA7EB8C3BE5F ();
-// 0x0000014A System.Void StickyNotes.StickyNotesMain::Start()
+// 0x00000151 System.Void StickyNotes.StickyNotesMain::Start()
 extern void StickyNotesMain_Start_m588BD4B23AFC07EED756BD86EAFF919CCAF418DC ();
-// 0x0000014B System.Void StickyNotes.StickyNotesMain::Update()
+// 0x00000152 System.Void StickyNotes.StickyNotesMain::Update()
 extern void StickyNotesMain_Update_m25E8500E587A02DEA5D167A6D5B5940AF044C837 ();
-// 0x0000014C System.Void StickyNotes.StickyNotesMain::OnSearchMapsClick()
+// 0x00000153 System.Void StickyNotes.StickyNotesMain::OnSearchMapsClick()
 extern void StickyNotesMain_OnSearchMapsClick_m5436F510F7D5410D89D95F97A3368562D2BF638E ();
-// 0x0000014D System.Void StickyNotes.StickyNotesMain::OnCancelClick()
+// 0x00000154 System.Void StickyNotes.StickyNotesMain::OnCancelClick()
 extern void StickyNotesMain_OnCancelClick_m2A326DD920EAEA0DA883CDC42B120AE3F67BA088 ();
-// 0x0000014E System.Void StickyNotes.StickyNotesMain::OnExitClick()
+// 0x00000155 System.Void StickyNotes.StickyNotesMain::OnExitClick()
 extern void StickyNotesMain_OnExitClick_mF7DE05A7194AA99A60346DC4D4AF9C38C39F3A79 ();
-// 0x0000014F System.Void StickyNotes.StickyNotesMain::AddMapToList(LibPlacenote_MapInfo)
+// 0x00000156 System.Void StickyNotes.StickyNotesMain::AddMapToList(LibPlacenote_MapInfo)
 extern void StickyNotesMain_AddMapToList_mF41377C465E12D643A492255638295A51B629986 ();
-// 0x00000150 System.Void StickyNotes.StickyNotesMain::OnMapSelected(LibPlacenote_MapInfo)
+// 0x00000157 System.Void StickyNotes.StickyNotesMain::OnMapSelected(LibPlacenote_MapInfo)
 extern void StickyNotesMain_OnMapSelected_m492C5C08940EB36D828831EE6D53AB5C5CB98CBC ();
-// 0x00000151 System.Void StickyNotes.StickyNotesMain::OnLoadMapClick()
+// 0x00000158 System.Void StickyNotes.StickyNotesMain::OnLoadMapClick()
 extern void StickyNotesMain_OnLoadMapClick_m945E18584CC6B988F7633533113267AA025DF44C ();
-// 0x00000152 System.Void StickyNotes.StickyNotesMain::OnDeleteMapClick()
+// 0x00000159 System.Void StickyNotes.StickyNotesMain::OnDeleteMapClick()
 extern void StickyNotesMain_OnDeleteMapClick_m1D3A696870B0879DECE686AF49F14016BE64543D ();
-// 0x00000153 System.Void StickyNotes.StickyNotesMain::OnNewMapClick()
+// 0x0000015A System.Void StickyNotes.StickyNotesMain::OnNewMapClick()
 extern void StickyNotesMain_OnNewMapClick_m38207D3A162F0EDF318F069D21882AEF3C0C8020 ();
-// 0x00000154 System.Void StickyNotes.StickyNotesMain::OnUpdateNotesClick()
+// 0x0000015B System.Void StickyNotes.StickyNotesMain::OnUpdateNotesClick()
 extern void StickyNotesMain_OnUpdateNotesClick_m76EB68E69602ED9721C8D2B8A0553049B1E4FD24 ();
-// 0x00000155 System.Void StickyNotes.StickyNotesMain::OnSaveMapClick()
+// 0x0000015C System.Void StickyNotes.StickyNotesMain::OnSaveMapClick()
 extern void StickyNotesMain_OnSaveMapClick_m317EA0C8FEB6E3F50B0273BEE2C00F091CBA7B53 ();
-// 0x00000156 System.Void StickyNotes.StickyNotesMain::OnLocalized()
+// 0x0000015D System.Void StickyNotes.StickyNotesMain::OnLocalized()
 extern void StickyNotesMain_OnLocalized_m35F394EFBD94F3759162DD8A8433D7F05C8E34E0 ();
-// 0x00000157 System.Void StickyNotes.StickyNotesMain::OnPose(UnityEngine.Matrix4x4,UnityEngine.Matrix4x4)
+// 0x0000015E System.Void StickyNotes.StickyNotesMain::OnPose(UnityEngine.Matrix4x4,UnityEngine.Matrix4x4)
 extern void StickyNotesMain_OnPose_m3C565B3BF81C762C1030197357330EB696217A35 ();
-// 0x00000158 System.Void StickyNotes.StickyNotesMain::OnStatusChange(LibPlacenote_MappingStatus,LibPlacenote_MappingStatus)
+// 0x0000015F System.Void StickyNotes.StickyNotesMain::OnStatusChange(LibPlacenote_MappingStatus,LibPlacenote_MappingStatus)
 extern void StickyNotesMain_OnStatusChange_m411670DF9B18624010BC579C0E214CBC5147CC30 ();
-// 0x00000159 System.Void StickyNotes.StickyNotesMain::.ctor()
+// 0x00000160 System.Void StickyNotes.StickyNotesMain::.ctor()
 extern void StickyNotesMain__ctor_mDCAF22F3BC1F1B781BFA91AC5D427564EAE34EC3 ();
-// 0x0000015A System.Void StickyNotes.StickyNotesMain::<Start>b__21_0(UnityEngine.Texture2D)
+// 0x00000161 System.Void StickyNotes.StickyNotesMain::<Start>b__21_0(UnityEngine.Texture2D)
 extern void StickyNotesMain_U3CStartU3Eb__21_0_m8BA9FAB327181C0B7D630B76AF427AFDADC3FFFB ();
-// 0x0000015B System.Void StickyNotes.StickyNotesMain::<OnSearchMapsClick>b__23_0(LibPlacenote_MapInfo[])
+// 0x00000162 System.Void StickyNotes.StickyNotesMain::<OnSearchMapsClick>b__23_0(LibPlacenote_MapInfo[])
 extern void StickyNotesMain_U3COnSearchMapsClickU3Eb__23_0_m5F29A5D6583C91E3CA1C792B84C5EAFE78D4D5D0 ();
-// 0x0000015C System.Void StickyNotes.StickyNotesMain::<OnLoadMapClick>b__28_0(System.Boolean,System.Boolean,System.Single)
+// 0x00000163 System.Void StickyNotes.StickyNotesMain::<OnLoadMapClick>b__28_0(System.Boolean,System.Boolean,System.Single)
 extern void StickyNotesMain_U3COnLoadMapClickU3Eb__28_0_m70E82951B634E3BCAF00C4B30249059338AB31BE ();
-// 0x0000015D System.Void StickyNotes.StickyNotesMain::<OnDeleteMapClick>b__29_0(System.Boolean,System.String)
+// 0x00000164 System.Void StickyNotes.StickyNotesMain::<OnDeleteMapClick>b__29_0(System.Boolean,System.String)
 extern void StickyNotesMain_U3COnDeleteMapClickU3Eb__29_0_m6AE24825776115E45CABC8E74C5E1EB28A0043EC ();
-// 0x0000015E System.Void StickyNotes.StickyNotesMain::<OnUpdateNotesClick>b__31_0(System.Boolean)
+// 0x00000165 System.Void StickyNotes.StickyNotesMain::<OnUpdateNotesClick>b__31_0(System.Boolean)
 extern void StickyNotesMain_U3COnUpdateNotesClickU3Eb__31_0_m155B9C43DF610E61A2602B1BEDC50A141161A8DE ();
-// 0x0000015F System.Void BuildACity.BuildACity::Start()
+// 0x00000166 System.Void BuildACity.BuildACity::Start()
 extern void BuildACity_Start_mF1B6810B1D9258C3A82EE17EDFAEF6CAB4BC56FD ();
-// 0x00000160 System.Void BuildACity.BuildACity::OnNewMapClick()
+// 0x00000167 System.Void BuildACity.BuildACity::OnNewMapClick()
 extern void BuildACity_OnNewMapClick_m42EBBF14715305708CB842F1B978754021112B29 ();
-// 0x00000161 System.Void BuildACity.BuildACity::OnSaveMapClick()
+// 0x00000168 System.Void BuildACity.BuildACity::OnSaveMapClick()
 extern void BuildACity_OnSaveMapClick_m5D302DC426415F07FC3B9A8946737612AF4939BA ();
-// 0x00000162 LibPlacenote_MapMetadataSettable BuildACity.BuildACity::CreateMetaDataObject()
+// 0x00000169 LibPlacenote_MapMetadataSettable BuildACity.BuildACity::CreateMetaDataObject()
 extern void BuildACity_CreateMetaDataObject_m45C0337598453F601CB4940082A24D9D7E02A91E ();
-// 0x00000163 System.Void BuildACity.BuildACity::OnLoadMapClicked()
+// 0x0000016A System.Void BuildACity.BuildACity::OnLoadMapClicked()
 extern void BuildACity_OnLoadMapClicked_mDB7EF403295124DB0E195308E690E603CA02ECE9 ();
-// 0x00000164 System.Void BuildACity.BuildACity::OnExitClicked()
+// 0x0000016B System.Void BuildACity.BuildACity::OnExitClicked()
 extern void BuildACity_OnExitClicked_mF637D96C9C0BDB213E84BB6ABDAB9D623D0B65BF ();
-// 0x00000165 System.Void BuildACity.BuildACity::OnPose(UnityEngine.Matrix4x4,UnityEngine.Matrix4x4)
+// 0x0000016C System.Void BuildACity.BuildACity::OnPose(UnityEngine.Matrix4x4,UnityEngine.Matrix4x4)
 extern void BuildACity_OnPose_m80D32C4050E8237D78F5C19FFFA0C8E5D886CA8E ();
-// 0x00000166 System.Void BuildACity.BuildACity::OnStatusChange(LibPlacenote_MappingStatus,LibPlacenote_MappingStatus)
+// 0x0000016D System.Void BuildACity.BuildACity::OnStatusChange(LibPlacenote_MappingStatus,LibPlacenote_MappingStatus)
 extern void BuildACity_OnStatusChange_mC09FB11F719B2A3BAF5E9E4AB9D1AB0E978FA42A ();
-// 0x00000167 System.Void BuildACity.BuildACity::OnLocalized()
+// 0x0000016E System.Void BuildACity.BuildACity::OnLocalized()
 extern void BuildACity_OnLocalized_m0050B52794D23008441BE1D70F32D548D317F33B ();
-// 0x00000168 System.Void BuildACity.BuildACity::WriteMapIDToFile(System.String)
+// 0x0000016F System.Void BuildACity.BuildACity::WriteMapIDToFile(System.String)
 extern void BuildACity_WriteMapIDToFile_m54AF92011C6B17A2397629E5379353839B59FEF8 ();
-// 0x00000169 System.String BuildACity.BuildACity::ReadMapIDFromFile()
+// 0x00000170 System.String BuildACity.BuildACity::ReadMapIDFromFile()
 extern void BuildACity_ReadMapIDFromFile_mA11875D2DC3B92B79A9C8DE1B3988312659C798F ();
-// 0x0000016A System.Void BuildACity.BuildACity::.ctor()
+// 0x00000171 System.Void BuildACity.BuildACity::.ctor()
 extern void BuildACity__ctor_mC53CD6FBC2C069182B4CC1135F87F2B07AA8CF2D ();
-// 0x0000016B System.Void BuildACity.BuildACity::<OnSaveMapClick>b__13_0(System.String)
+// 0x00000172 System.Void BuildACity.BuildACity::<OnSaveMapClick>b__13_0(System.String)
 extern void BuildACity_U3COnSaveMapClickU3Eb__13_0_m4CD474E899A987CDD1C8E4AAEE61170456139087 ();
-// 0x0000016C System.Void BuildACity.BuildACity::<OnSaveMapClick>b__13_1(System.Boolean,System.Boolean,System.Single)
+// 0x00000173 System.Void BuildACity.BuildACity::<OnSaveMapClick>b__13_1(System.Boolean,System.Boolean,System.Single)
 extern void BuildACity_U3COnSaveMapClickU3Eb__13_1_m547BFF08586A88D9A9E583DAC6EA7FAF958F4876 ();
-// 0x0000016D System.Void BuildACity.BuildACity::<OnSaveMapClick>b__13_2(System.Boolean)
+// 0x00000174 System.Void BuildACity.BuildACity::<OnSaveMapClick>b__13_2(System.Boolean)
 extern void BuildACity_U3COnSaveMapClickU3Eb__13_2_m9A98C6A8B2A5796EDA93A1FF3DEE76126EDA8DDA ();
-// 0x0000016E System.Void BuildACity.BuildACity::<OnLoadMapClicked>b__15_0(System.Boolean,System.Boolean,System.Single)
+// 0x00000175 System.Void BuildACity.BuildACity::<OnLoadMapClicked>b__15_0(System.Boolean,System.Boolean,System.Single)
 extern void BuildACity_U3COnLoadMapClickedU3Eb__15_0_m4FD1A96BD6DFA1961F5EF52C751360007EE64C14 ();
-// 0x0000016F System.Void BuildACity.BuildACity::<OnLoadMapClicked>b__15_1(LibPlacenote_MapMetadata)
+// 0x00000176 System.Void BuildACity.BuildACity::<OnLoadMapClicked>b__15_1(LibPlacenote_MapMetadata)
 extern void BuildACity_U3COnLoadMapClickedU3Eb__15_1_mB4AF14D7C8FC56552D8F7213B702D213F578E9A4 ();
-// 0x00000170 System.Void BuildACity.ModelInfo::.ctor()
+// 0x00000177 System.Void BuildACity.ModelInfo::.ctor()
 extern void ModelInfo__ctor_m60264B1EC8D4BE46F359F6B393A784522E0F5448 ();
-// 0x00000171 System.Void BuildACity.ModelList::.ctor()
+// 0x00000178 System.Void BuildACity.ModelList::.ctor()
 extern void ModelList__ctor_mEFF05665BA5BE6078F17081D88B9C61D5D5CD101 ();
-// 0x00000172 System.Void BuildACity.ModelManager::AddModel(BuildACity.ModelInfo)
+// 0x00000179 System.Void BuildACity.ModelManager::AddModel(BuildACity.ModelInfo)
 extern void ModelManager_AddModel_mEFDA1A536658C45E1FF0F1EEC8D1357D10CFC821 ();
-// 0x00000173 System.Void BuildACity.ModelManager::OnModelButtonPressDown(System.Int32)
+// 0x0000017A System.Void BuildACity.ModelManager::OnModelButtonPressDown(System.Int32)
 extern void ModelManager_OnModelButtonPressDown_m2BDB2DD70E46401CEF5CF008B2CACCE5BA3FC7F0 ();
-// 0x00000174 System.Void BuildACity.ModelManager::OnModelButtonRelease(System.Int32)
+// 0x0000017B System.Void BuildACity.ModelManager::OnModelButtonRelease(System.Int32)
 extern void ModelManager_OnModelButtonRelease_m5FFB7727C9D4AC150BB4CE92B8331D486897CFFF ();
-// 0x00000175 System.Void BuildACity.ModelManager::ClearModels()
+// 0x0000017C System.Void BuildACity.ModelManager::ClearModels()
 extern void ModelManager_ClearModels_mDAF33BAEF964072BDDC1B152753B4D1C5A0508C4 ();
-// 0x00000176 Newtonsoft.Json.Linq.JObject BuildACity.ModelManager::Models2JSON()
+// 0x0000017D Newtonsoft.Json.Linq.JObject BuildACity.ModelManager::Models2JSON()
 extern void ModelManager_Models2JSON_m607AC291CC12659DFAFC6B76B7838276130EBDA2 ();
-// 0x00000177 System.Void BuildACity.ModelManager::LoadModelsFromJSON(Newtonsoft.Json.Linq.JToken)
+// 0x0000017E System.Void BuildACity.ModelManager::LoadModelsFromJSON(Newtonsoft.Json.Linq.JToken)
 extern void ModelManager_LoadModelsFromJSON_m012EAF08505414390FDC85BE9882C13B5FC9F846 ();
-// 0x00000178 System.Void BuildACity.ModelManager::.ctor()
+// 0x0000017F System.Void BuildACity.ModelManager::.ctor()
 extern void ModelManager__ctor_m673A3888C8CF57F54799429C40EAD2FB2FCD6870 ();
-// 0x00000179 System.Void BuildACity.PlacementReticleController::Start()
+// 0x00000180 System.Void BuildACity.PlacementReticleController::Start()
 extern void PlacementReticleController_Start_mB0E6E0EACD47CF035A7EE80BA8B1986600270B48 ();
-// 0x0000017A System.Void BuildACity.PlacementReticleController::StartReticle()
+// 0x00000181 System.Void BuildACity.PlacementReticleController::StartReticle()
 extern void PlacementReticleController_StartReticle_mCCE113289E80359C140C64996C920BD4626E607B ();
-// 0x0000017B System.Void BuildACity.PlacementReticleController::ObjReticleActivate(UnityEngine.GameObject)
+// 0x00000182 System.Void BuildACity.PlacementReticleController::ObjReticleActivate(UnityEngine.GameObject)
 extern void PlacementReticleController_ObjReticleActivate_m7C2C63008A3A59AE1E693B5CAA0C37EA37D21A9D ();
-// 0x0000017C System.Void BuildACity.PlacementReticleController::ObjReticleDeactivate()
+// 0x00000183 System.Void BuildACity.PlacementReticleController::ObjReticleDeactivate()
 extern void PlacementReticleController_ObjReticleDeactivate_m0197B9CC928491D529111C446D2176006A89A92B ();
-// 0x0000017D System.Void BuildACity.PlacementReticleController::StopReticle()
+// 0x00000184 System.Void BuildACity.PlacementReticleController::StopReticle()
 extern void PlacementReticleController_StopReticle_m6C5F70D1D2AC2CAB78671CF48A97CFAD4B5ED161 ();
-// 0x0000017E System.Collections.IEnumerator BuildACity.PlacementReticleController::ContinuousHittest()
+// 0x00000185 System.Collections.IEnumerator BuildACity.PlacementReticleController::ContinuousHittest()
 extern void PlacementReticleController_ContinuousHittest_m27A7850A020B74E26FC9E0FAD4F64AC6BF6D2405 ();
-// 0x0000017F System.Void BuildACity.PlacementReticleController::.ctor()
+// 0x00000186 System.Void BuildACity.PlacementReticleController::.ctor()
 extern void PlacementReticleController__ctor_m3A06991E0116B9DD9B146065FE1A48F49D39C4C3 ();
-// 0x00000180 System.Void BuildACity.PlacementReticleController::.cctor()
+// 0x00000187 System.Void BuildACity.PlacementReticleController::.cctor()
 extern void PlacementReticleController__cctor_mF6BC805F0DF5C4C236F22FA69BBA2726AD4432FB ();
-// 0x00000181 System.Void HelloWorld.FileReadWrite::WriteMapIDToFile(System.String)
+// 0x00000188 System.Void HelloWorld.FileReadWrite::WriteMapIDToFile(System.String)
 extern void FileReadWrite_WriteMapIDToFile_mD6CB2B89A3C25ED4F00BB1C3A5FE3DE6044E0CC1 ();
-// 0x00000182 System.String HelloWorld.FileReadWrite::ReadMapIDFromFile()
+// 0x00000189 System.String HelloWorld.FileReadWrite::ReadMapIDFromFile()
 extern void FileReadWrite_ReadMapIDFromFile_m61F584ABF75430EFE6386178DCA02E331AB91190 ();
-// 0x00000183 System.Void HelloWorld.FileReadWrite::WriteModelTransformToFile(UnityEngine.Vector3,UnityEngine.Quaternion)
+// 0x0000018A System.Void HelloWorld.FileReadWrite::WriteModelTransformToFile(UnityEngine.Vector3,UnityEngine.Quaternion)
 extern void FileReadWrite_WriteModelTransformToFile_mFE145E4D857C298D4EFBCFA267BA6A346C14B008 ();
-// 0x00000184 System.Boolean HelloWorld.FileReadWrite::ReadModelTransformFromFile(UnityEngine.Vector3&,UnityEngine.Quaternion&)
+// 0x0000018B System.Boolean HelloWorld.FileReadWrite::ReadModelTransformFromFile(UnityEngine.Vector3&,UnityEngine.Quaternion&)
 extern void FileReadWrite_ReadModelTransformFromFile_mA6062DB6E0234893DBC716FADB3B3A7DE9858DEE ();
-// 0x00000185 System.Void HelloWorld.FileReadWrite::.ctor()
+// 0x0000018C System.Void HelloWorld.FileReadWrite::.ctor()
 extern void FileReadWrite__ctor_mBA22614977BFBD7DD8A0E780FC63ABDBDAAB7B2E ();
-// 0x00000186 System.Void HelloWorld.HelloWorldMain::Start()
+// 0x0000018D System.Void HelloWorld.HelloWorldMain::Start()
 extern void HelloWorldMain_Start_m3512A65114488DDD381A528327C3957380C05046 ();
-// 0x00000187 System.Collections.IEnumerator HelloWorld.HelloWorldMain::WaitForARSessionThenStart()
+// 0x0000018E System.Collections.IEnumerator HelloWorld.HelloWorldMain::WaitForARSessionThenStart()
 extern void HelloWorldMain_WaitForARSessionThenStart_m4EA171F016420DAA5F7834AF1378BCF22D1829B7 ();
-// 0x00000188 System.Void HelloWorld.HelloWorldMain::OnNewMapClick()
+// 0x0000018F System.Void HelloWorld.HelloWorldMain::OnNewMapClick()
 extern void HelloWorldMain_OnNewMapClick_mE953A615BFDF366BDBADAC54AF0B987661A6B950 ();
-// 0x00000189 System.Void HelloWorld.HelloWorldMain::AddModelAtReticle(UnityEngine.GameObject)
+// 0x00000190 System.Void HelloWorld.HelloWorldMain::AddModelAtReticle(UnityEngine.GameObject)
 extern void HelloWorldMain_AddModelAtReticle_m853F4BB5D07FC7673488FE5E1C66C25D5DF8763A ();
-// 0x0000018A System.Void HelloWorld.HelloWorldMain::StartMapping()
+// 0x00000191 System.Void HelloWorld.HelloWorldMain::StartMapping()
 extern void HelloWorldMain_StartMapping_mD51ADE0AB400E7B4BDB972274083A47DC8A12E6A ();
-// 0x0000018B System.Void HelloWorld.HelloWorldMain::OnPose(UnityEngine.Matrix4x4,UnityEngine.Matrix4x4)
+// 0x00000192 System.Void HelloWorld.HelloWorldMain::OnPose(UnityEngine.Matrix4x4,UnityEngine.Matrix4x4)
 extern void HelloWorldMain_OnPose_m155EBCFB6A79956CC3E48B9BA0461D61A3BA1EFB ();
-// 0x0000018C System.Void HelloWorld.HelloWorldMain::OnResetClick()
+// 0x00000193 System.Void HelloWorld.HelloWorldMain::OnResetClick()
 extern void HelloWorldMain_OnResetClick_mDB4FE9A65FD7FEDFFF06EF8A488B7647C9FD1202 ();
-// 0x0000018D System.Void HelloWorld.HelloWorldMain::OnSaveMapClick()
+// 0x00000194 System.Void HelloWorld.HelloWorldMain::OnSaveMapClick()
 extern void HelloWorldMain_OnSaveMapClick_m7D6DB0FAA3BB64C429155186438DFD58488C656C ();
-// 0x0000018E System.Void HelloWorld.HelloWorldMain::OnLoadMapClicked()
+// 0x00000195 System.Void HelloWorld.HelloWorldMain::OnLoadMapClicked()
 extern void HelloWorldMain_OnLoadMapClicked_mDF16BCD9133735D636059E2A39489515EAED9C4D ();
-// 0x0000018F System.Void HelloWorld.HelloWorldMain::OnStatusChange(LibPlacenote_MappingStatus,LibPlacenote_MappingStatus)
+// 0x00000196 System.Void HelloWorld.HelloWorldMain::OnStatusChange(LibPlacenote_MappingStatus,LibPlacenote_MappingStatus)
 extern void HelloWorldMain_OnStatusChange_m50B12C80DD23F0127399F01ECA6A5AE218859686 ();
-// 0x00000190 System.Void HelloWorld.HelloWorldMain::OnLocalized()
+// 0x00000197 System.Void HelloWorld.HelloWorldMain::OnLocalized()
 extern void HelloWorldMain_OnLocalized_m5E1585E7E1EA095978E74AF2D6DDDD1EA8320538 ();
-// 0x00000191 System.Void HelloWorld.HelloWorldMain::.ctor()
+// 0x00000198 System.Void HelloWorld.HelloWorldMain::.ctor()
 extern void HelloWorldMain__ctor_m4F6BF876C2F9D12103075CD6A8DDB2F0E5A1427B ();
-// 0x00000192 System.Void HelloWorld.HelloWorldMain::<OnSaveMapClick>b__18_0(System.String)
+// 0x00000199 System.Void HelloWorld.HelloWorldMain::<OnSaveMapClick>b__18_0(System.String)
 extern void HelloWorldMain_U3COnSaveMapClickU3Eb__18_0_mC3B4ABA579C25166770BA441B1311D7FEE4DEFFB ();
-// 0x00000193 System.Void HelloWorld.HelloWorldMain::<OnSaveMapClick>b__18_1(System.Boolean,System.Boolean,System.Single)
+// 0x0000019A System.Void HelloWorld.HelloWorldMain::<OnSaveMapClick>b__18_1(System.Boolean,System.Boolean,System.Single)
 extern void HelloWorldMain_U3COnSaveMapClickU3Eb__18_1_m249D23F30A29F0948841489BBE7FF0E1F02952AC ();
-// 0x00000194 System.Void HelloWorld.HelloWorldMain::<OnLoadMapClicked>b__19_0(System.Boolean,System.Boolean,System.Single)
+// 0x0000019B System.Void HelloWorld.HelloWorldMain::<OnLoadMapClicked>b__19_0(System.Boolean,System.Boolean,System.Single)
 extern void HelloWorldMain_U3COnLoadMapClickedU3Eb__19_0_mA50753917DDAAAB938ED45C9EC44F27A42822EF1 ();
-// 0x00000195 System.Void HelloWorld.ReticleController::Start()
+// 0x0000019C System.Void HelloWorld.ReticleController::Start()
 extern void ReticleController_Start_m1CB3C5EE1437BBE66D98D2D1103388C2FD568A78 ();
-// 0x00000196 System.Void HelloWorld.ReticleController::StartReticle()
+// 0x0000019D System.Void HelloWorld.ReticleController::StartReticle()
 extern void ReticleController_StartReticle_mAA7F6C9E12A545A48CCBB8B9E35AE194A74EC2BF ();
-// 0x00000197 System.Void HelloWorld.ReticleController::StopReticle()
+// 0x0000019E System.Void HelloWorld.ReticleController::StopReticle()
 extern void ReticleController_StopReticle_m37CD0E94AC31784B7AC990BC57502C54EAF43C85 ();
-// 0x00000198 System.Collections.IEnumerator HelloWorld.ReticleController::ContinuousHittest()
+// 0x0000019F System.Collections.IEnumerator HelloWorld.ReticleController::ContinuousHittest()
 extern void ReticleController_ContinuousHittest_mD78BF932572342C976238C2EDB88D5BF0BAD8F46 ();
-// 0x00000199 System.Void HelloWorld.ReticleController::.ctor()
+// 0x000001A0 System.Void HelloWorld.ReticleController::.ctor()
 extern void ReticleController__ctor_m2C01C83546D25D57C73472505DFB15CC0D6E5895 ();
-// 0x0000019A System.Void HelloWorld.ReticleController::.cctor()
+// 0x000001A1 System.Void HelloWorld.ReticleController::.cctor()
 extern void ReticleController__cctor_m99FB802E66C55A89E6AB96F94024ED613CA17CFE ();
-// 0x0000019B System.Single FlexibleColorPicker_BufferedColor::get_r()
+// 0x000001A2 System.Single FlexibleColorPicker_BufferedColor::get_r()
 extern void BufferedColor_get_r_m32C0D06F97399EF63B669CE1877F630DCCA5EEC9 ();
-// 0x0000019C System.Single FlexibleColorPicker_BufferedColor::get_g()
+// 0x000001A3 System.Single FlexibleColorPicker_BufferedColor::get_g()
 extern void BufferedColor_get_g_m068784D1FB4ACA16A552E556978C904C95138C46 ();
-// 0x0000019D System.Single FlexibleColorPicker_BufferedColor::get_b()
+// 0x000001A4 System.Single FlexibleColorPicker_BufferedColor::get_b()
 extern void BufferedColor_get_b_mEDF85EAC07637BDE68954C4F5BEFB4517FFB9431 ();
-// 0x0000019E System.Single FlexibleColorPicker_BufferedColor::get_a()
+// 0x000001A5 System.Single FlexibleColorPicker_BufferedColor::get_a()
 extern void BufferedColor_get_a_m84569A0AA8F7C28F7B12D74EC476019571437E92 ();
-// 0x0000019F System.Single FlexibleColorPicker_BufferedColor::get_h()
+// 0x000001A6 System.Single FlexibleColorPicker_BufferedColor::get_h()
 extern void BufferedColor_get_h_m37974081D906A39AEAEAFCA6276FBD75C4F8B313 ();
-// 0x000001A0 System.Single FlexibleColorPicker_BufferedColor::get_s()
+// 0x000001A7 System.Single FlexibleColorPicker_BufferedColor::get_s()
 extern void BufferedColor_get_s_m053ACF64C643E97FABEA83F2EAD9F79B7D202D3F ();
-// 0x000001A1 System.Single FlexibleColorPicker_BufferedColor::get_v()
+// 0x000001A8 System.Single FlexibleColorPicker_BufferedColor::get_v()
 extern void BufferedColor_get_v_m4DFC146FC8190D46E0C9179C57E65371F17BB806 ();
-// 0x000001A2 System.Void FlexibleColorPicker_BufferedColor::.ctor()
+// 0x000001A9 System.Void FlexibleColorPicker_BufferedColor::.ctor()
 extern void BufferedColor__ctor_m7A27B8D82B365F55275B6AA9F077DF0D131DCFA6 ();
-// 0x000001A3 System.Void FlexibleColorPicker_BufferedColor::.ctor(UnityEngine.Color)
+// 0x000001AA System.Void FlexibleColorPicker_BufferedColor::.ctor(UnityEngine.Color)
 extern void BufferedColor__ctor_mB3EABB3D2294B185C2C6464570378EDB62672A6D ();
-// 0x000001A4 System.Void FlexibleColorPicker_BufferedColor::.ctor(UnityEngine.Color,System.Single,System.Single)
+// 0x000001AB System.Void FlexibleColorPicker_BufferedColor::.ctor(UnityEngine.Color,System.Single,System.Single)
 extern void BufferedColor__ctor_m6B8D8865C07B83002D2881FE37F28BF05BCA0674 ();
-// 0x000001A5 System.Void FlexibleColorPicker_BufferedColor::.ctor(UnityEngine.Color,FlexibleColorPicker_BufferedColor)
+// 0x000001AC System.Void FlexibleColorPicker_BufferedColor::.ctor(UnityEngine.Color,FlexibleColorPicker_BufferedColor)
 extern void BufferedColor__ctor_m47F3352653C75E43FFC2CA7BC19328C604C8A627 ();
-// 0x000001A6 System.Void FlexibleColorPicker_BufferedColor::Set(UnityEngine.Color)
+// 0x000001AD System.Void FlexibleColorPicker_BufferedColor::Set(UnityEngine.Color)
 extern void BufferedColor_Set_m16FA10FDEC26CB540EAA63D418983769BC374D60 ();
-// 0x000001A7 System.Void FlexibleColorPicker_BufferedColor::Set(UnityEngine.Color,System.Single,System.Single)
+// 0x000001AE System.Void FlexibleColorPicker_BufferedColor::Set(UnityEngine.Color,System.Single,System.Single)
 extern void BufferedColor_Set_m56A9E526970905D081010E3DD66C5064EFFC2F3D ();
-// 0x000001A8 FlexibleColorPicker_BufferedColor FlexibleColorPicker_BufferedColor::PickR(System.Single)
+// 0x000001AF FlexibleColorPicker_BufferedColor FlexibleColorPicker_BufferedColor::PickR(System.Single)
 extern void BufferedColor_PickR_m2251AB41AA552A1B0BCF30CBA29B7D88EDC3DFED ();
-// 0x000001A9 FlexibleColorPicker_BufferedColor FlexibleColorPicker_BufferedColor::PickG(System.Single)
+// 0x000001B0 FlexibleColorPicker_BufferedColor FlexibleColorPicker_BufferedColor::PickG(System.Single)
 extern void BufferedColor_PickG_m48EC965106A93BD8A1AD9215CD225FE3D4FEC07D ();
-// 0x000001AA FlexibleColorPicker_BufferedColor FlexibleColorPicker_BufferedColor::PickB(System.Single)
+// 0x000001B1 FlexibleColorPicker_BufferedColor FlexibleColorPicker_BufferedColor::PickB(System.Single)
 extern void BufferedColor_PickB_mC59F985353FD49CA6DEB72EC31447FC53266229C ();
-// 0x000001AB FlexibleColorPicker_BufferedColor FlexibleColorPicker_BufferedColor::PickA(System.Single)
+// 0x000001B2 FlexibleColorPicker_BufferedColor FlexibleColorPicker_BufferedColor::PickA(System.Single)
 extern void BufferedColor_PickA_m182EBAC322DAAB5D90AEE79A3DA0599941888C9E ();
-// 0x000001AC FlexibleColorPicker_BufferedColor FlexibleColorPicker_BufferedColor::PickH(System.Single)
+// 0x000001B3 FlexibleColorPicker_BufferedColor FlexibleColorPicker_BufferedColor::PickH(System.Single)
 extern void BufferedColor_PickH_mB79C247169D35976FF39CD3685F35DAB52AD0127 ();
-// 0x000001AD FlexibleColorPicker_BufferedColor FlexibleColorPicker_BufferedColor::PickS(System.Single)
+// 0x000001B4 FlexibleColorPicker_BufferedColor FlexibleColorPicker_BufferedColor::PickS(System.Single)
 extern void BufferedColor_PickS_m30964264BFF1FE766179B2C689512AE5A3F72F27 ();
-// 0x000001AE FlexibleColorPicker_BufferedColor FlexibleColorPicker_BufferedColor::PickV(System.Single)
+// 0x000001B5 FlexibleColorPicker_BufferedColor FlexibleColorPicker_BufferedColor::PickV(System.Single)
 extern void BufferedColor_PickV_mD221DED5244459F77FA640B5E0A8412EAF5FB34D ();
-// 0x000001AF System.Void LibPlacenote_PNResultCallback::.ctor(System.Object,System.IntPtr)
+// 0x000001B6 System.Void LibPlacenote_PNResultCallback::.ctor(System.Object,System.IntPtr)
 extern void PNResultCallback__ctor_m4369F95C48FE127E9506B5EC5BF51FE3C663F192 ();
-// 0x000001B0 System.Void LibPlacenote_PNResultCallback::Invoke(LibPlacenote_PNCallbackResultUnity&,System.IntPtr)
+// 0x000001B7 System.Void LibPlacenote_PNResultCallback::Invoke(LibPlacenote_PNCallbackResultUnity&,System.IntPtr)
 extern void PNResultCallback_Invoke_mC4EE7D07BF6CBEB4A641CE36893BC0D3D6B5DA2F ();
-// 0x000001B1 System.IAsyncResult LibPlacenote_PNResultCallback::BeginInvoke(LibPlacenote_PNCallbackResultUnity&,System.IntPtr,System.AsyncCallback,System.Object)
+// 0x000001B8 System.IAsyncResult LibPlacenote_PNResultCallback::BeginInvoke(LibPlacenote_PNCallbackResultUnity&,System.IntPtr,System.AsyncCallback,System.Object)
 extern void PNResultCallback_BeginInvoke_mBF46BCB602C0D3FB2FF68D53105FD41C6DFD6F2D ();
-// 0x000001B2 System.Void LibPlacenote_PNResultCallback::EndInvoke(LibPlacenote_PNCallbackResultUnity&,System.IAsyncResult)
+// 0x000001B9 System.Void LibPlacenote_PNResultCallback::EndInvoke(LibPlacenote_PNCallbackResultUnity&,System.IAsyncResult)
 extern void PNResultCallback_EndInvoke_m4F5EE608E4E8E2F49C82232561C49C9313513C84 ();
-// 0x000001B3 System.Void LibPlacenote_PNTransferMapCallback::.ctor(System.Object,System.IntPtr)
+// 0x000001BA System.Void LibPlacenote_PNTransferMapCallback::.ctor(System.Object,System.IntPtr)
 extern void PNTransferMapCallback__ctor_m3BB8793621CEF7395BE2D016321FFF256756234B ();
-// 0x000001B4 System.Void LibPlacenote_PNTransferMapCallback::Invoke(LibPlacenote_PNTransferStatusUnity&,System.IntPtr)
+// 0x000001BB System.Void LibPlacenote_PNTransferMapCallback::Invoke(LibPlacenote_PNTransferStatusUnity&,System.IntPtr)
 extern void PNTransferMapCallback_Invoke_mC3844F9A7C72BA8CDCB5692BE0F712BDE240D076 ();
-// 0x000001B5 System.IAsyncResult LibPlacenote_PNTransferMapCallback::BeginInvoke(LibPlacenote_PNTransferStatusUnity&,System.IntPtr,System.AsyncCallback,System.Object)
+// 0x000001BC System.IAsyncResult LibPlacenote_PNTransferMapCallback::BeginInvoke(LibPlacenote_PNTransferStatusUnity&,System.IntPtr,System.AsyncCallback,System.Object)
 extern void PNTransferMapCallback_BeginInvoke_m09EA3C64B28CA083EB6174F0321CC56BCFB0EBB2 ();
-// 0x000001B6 System.Void LibPlacenote_PNTransferMapCallback::EndInvoke(LibPlacenote_PNTransferStatusUnity&,System.IAsyncResult)
+// 0x000001BD System.Void LibPlacenote_PNTransferMapCallback::EndInvoke(LibPlacenote_PNTransferStatusUnity&,System.IAsyncResult)
 extern void PNTransferMapCallback_EndInvoke_mC290CE1AF710A4A774984779AAF74E77BD657BEA ();
-// 0x000001B7 System.Void LibPlacenote_PNPoseCallback::.ctor(System.Object,System.IntPtr)
+// 0x000001BE System.Void LibPlacenote_PNPoseCallback::.ctor(System.Object,System.IntPtr)
 extern void PNPoseCallback__ctor_m8387795FDE52517C4F2EC91437571B4C00A339AC ();
-// 0x000001B8 System.Void LibPlacenote_PNPoseCallback::Invoke(LibPlacenote_PNTransformUnity&,LibPlacenote_PNTransformUnity&,System.IntPtr)
+// 0x000001BF System.Void LibPlacenote_PNPoseCallback::Invoke(LibPlacenote_PNTransformUnity&,LibPlacenote_PNTransformUnity&,System.IntPtr)
 extern void PNPoseCallback_Invoke_mE7B761A4A92B247740A6D12BB409E1EE40A7714B ();
-// 0x000001B9 System.IAsyncResult LibPlacenote_PNPoseCallback::BeginInvoke(LibPlacenote_PNTransformUnity&,LibPlacenote_PNTransformUnity&,System.IntPtr,System.AsyncCallback,System.Object)
+// 0x000001C0 System.IAsyncResult LibPlacenote_PNPoseCallback::BeginInvoke(LibPlacenote_PNTransformUnity&,LibPlacenote_PNTransformUnity&,System.IntPtr,System.AsyncCallback,System.Object)
 extern void PNPoseCallback_BeginInvoke_m762A62C595A563EC67446AEAA20C7A7746D21B1F ();
-// 0x000001BA System.Void LibPlacenote_PNPoseCallback::EndInvoke(LibPlacenote_PNTransformUnity&,LibPlacenote_PNTransformUnity&,System.IAsyncResult)
+// 0x000001C1 System.Void LibPlacenote_PNPoseCallback::EndInvoke(LibPlacenote_PNTransformUnity&,LibPlacenote_PNTransformUnity&,System.IAsyncResult)
 extern void PNPoseCallback_EndInvoke_mFC793E5DE7225D584DAAE1C53AF5B4489AB91F7E ();
-// 0x000001BB System.Void LibPlacenote_MapLocation::.ctor()
+// 0x000001C2 System.Void LibPlacenote_MapLocation::.ctor()
 extern void MapLocation__ctor_m7DDC9B7DCD7804D04750BDDFDB88CE9D4D06B902 ();
-// 0x000001BC System.Void LibPlacenote_MapLocationSearch::.ctor()
+// 0x000001C3 System.Void LibPlacenote_MapLocationSearch::.ctor()
 extern void MapLocationSearch__ctor_m63C0AFF63B116E9BC5CA8795CA275E94DE81A21E ();
-// 0x000001BD System.Void LibPlacenote_MapMetadataSettable::.ctor()
+// 0x000001C4 System.Void LibPlacenote_MapMetadataSettable::.ctor()
 extern void MapMetadataSettable__ctor_m9F76CE0DE30EB06FD9A040DD1995A422E1D0D953 ();
-// 0x000001BE System.DateTime LibPlacenote_MapMetadata::Created()
+// 0x000001C5 System.DateTime LibPlacenote_MapMetadata::Created()
 extern void MapMetadata_Created_m45C8A2A4A0EBB01363D3C1533B03DFD2F82CB066 ();
-// 0x000001BF System.Void LibPlacenote_MapMetadata::.ctor()
+// 0x000001C6 System.Void LibPlacenote_MapMetadata::.ctor()
 extern void MapMetadata__ctor_m366F19738FCFAA3ED175646CC584AF6763FBE1BE ();
-// 0x000001C0 System.Void LibPlacenote_MapInfo::.ctor()
+// 0x000001C7 System.Void LibPlacenote_MapInfo::.ctor()
 extern void MapInfo__ctor_mBCB010F91AC012C78C006BDB0AC728B0FADED1DD ();
-// 0x000001C1 System.Void LibPlacenote_MapList::.ctor()
+// 0x000001C8 System.Void LibPlacenote_MapList::.ctor()
 extern void MapList__ctor_mCD469B9505097A8C040D198C301B66D3ED1DA65E ();
-// 0x000001C2 System.Void LibPlacenote_MapSearch::SetNewerThan(System.DateTime)
+// 0x000001C9 System.Void LibPlacenote_MapSearch::SetNewerThan(System.DateTime)
 extern void MapSearch_SetNewerThan_mDDE221A693D93DFB235D9BAB300A7918E4C3DA05 ();
-// 0x000001C3 System.Void LibPlacenote_MapSearch::SetOlderThan(System.DateTime)
+// 0x000001CA System.Void LibPlacenote_MapSearch::SetOlderThan(System.DateTime)
 extern void MapSearch_SetOlderThan_m96C9784476A07ECA52409A90AA336A5A3DAA331E ();
-// 0x000001C4 System.Void LibPlacenote_MapSearch::.ctor()
+// 0x000001CB System.Void LibPlacenote_MapSearch::.ctor()
 extern void MapSearch__ctor_m76D00E27602A59B2515F355201466944B9073845 ();
-// 0x000001C5 System.Void LibPlacenote_SaveLoadContext::.ctor()
+// 0x000001CC System.Void LibPlacenote_SaveLoadContext::.ctor()
 extern void SaveLoadContext__ctor_m111E694167962AEFA3F384532A92A7519758C538 ();
-// 0x000001C6 System.Void LibPlacenote_<>c__DisplayClass57_0::.ctor()
+// 0x000001CD System.Void LibPlacenote_<>c__DisplayClass57_0::.ctor()
 extern void U3CU3Ec__DisplayClass57_0__ctor_m50FC6CBB4A180AEFF849B34089A33E251480054C ();
-// 0x000001C7 System.Void LibPlacenote_<>c__DisplayClass57_0::<RegisterListener>b__0()
+// 0x000001CE System.Void LibPlacenote_<>c__DisplayClass57_0::<RegisterListener>b__0()
 extern void U3CU3Ec__DisplayClass57_0_U3CRegisterListenerU3Eb__0_m0006670C892E2D60A0B39078ACC5EE92B91F5270 ();
-// 0x000001C8 System.Void LibPlacenote_<>c__DisplayClass68_0::.ctor()
+// 0x000001CF System.Void LibPlacenote_<>c__DisplayClass68_0::.ctor()
 extern void U3CU3Ec__DisplayClass68_0__ctor_m0B3076E54BEBD14F4725B50BE3BC94D66F0FE463 ();
-// 0x000001C9 System.Void LibPlacenote_<>c__DisplayClass68_0::<OnPose>b__0()
+// 0x000001D0 System.Void LibPlacenote_<>c__DisplayClass68_0::<OnPose>b__0()
 extern void U3CU3Ec__DisplayClass68_0_U3COnPoseU3Eb__0_m4485DA5F23D31108A1080E51FF00CC5ECCFEB469 ();
-// 0x000001CA System.Void LibPlacenote_<>c__DisplayClass68_0::<OnPose>b__1()
+// 0x000001D1 System.Void LibPlacenote_<>c__DisplayClass68_0::<OnPose>b__1()
 extern void U3CU3Ec__DisplayClass68_0_U3COnPoseU3Eb__1_mBF3FF62AA41A5A7BF4B8880869F0701341170A85 ();
-// 0x000001CB System.Void LibPlacenote_<>c__DisplayClass68_0::<OnPose>b__2()
+// 0x000001D2 System.Void LibPlacenote_<>c__DisplayClass68_0::<OnPose>b__2()
 extern void U3CU3Ec__DisplayClass68_0_U3COnPoseU3Eb__2_m22963EAD64F36ACB3AFC8E981D04BF312FA51D8E ();
-// 0x000001CC System.Void LibPlacenote_<OnPoseInvokeRepeat>d__70::.ctor(System.Int32)
+// 0x000001D3 System.Void LibPlacenote_<OnPoseInvokeRepeat>d__70::.ctor(System.Int32)
 extern void U3COnPoseInvokeRepeatU3Ed__70__ctor_m3193A8ED0C39DB8D71D0DAE53C1F280758C9F181 ();
-// 0x000001CD System.Void LibPlacenote_<OnPoseInvokeRepeat>d__70::System.IDisposable.Dispose()
+// 0x000001D4 System.Void LibPlacenote_<OnPoseInvokeRepeat>d__70::System.IDisposable.Dispose()
 extern void U3COnPoseInvokeRepeatU3Ed__70_System_IDisposable_Dispose_m07A1A00054E60A5E711F8250365E31D663DBBBB6 ();
-// 0x000001CE System.Boolean LibPlacenote_<OnPoseInvokeRepeat>d__70::MoveNext()
+// 0x000001D5 System.Boolean LibPlacenote_<OnPoseInvokeRepeat>d__70::MoveNext()
 extern void U3COnPoseInvokeRepeatU3Ed__70_MoveNext_mDF387B34A8AA0E15D3E3FC40DA6B137783DF3BF0 ();
-// 0x000001CF System.Object LibPlacenote_<OnPoseInvokeRepeat>d__70::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x000001D6 System.Object LibPlacenote_<OnPoseInvokeRepeat>d__70::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3COnPoseInvokeRepeatU3Ed__70_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mCE2A417CDF06152EE10BADFB31AC299FE399C781 ();
-// 0x000001D0 System.Void LibPlacenote_<OnPoseInvokeRepeat>d__70::System.Collections.IEnumerator.Reset()
+// 0x000001D7 System.Void LibPlacenote_<OnPoseInvokeRepeat>d__70::System.Collections.IEnumerator.Reset()
 extern void U3COnPoseInvokeRepeatU3Ed__70_System_Collections_IEnumerator_Reset_m796154FD78C26B3F56B53B9BFC17561FFA6CFF70 ();
-// 0x000001D1 System.Object LibPlacenote_<OnPoseInvokeRepeat>d__70::System.Collections.IEnumerator.get_Current()
+// 0x000001D8 System.Object LibPlacenote_<OnPoseInvokeRepeat>d__70::System.Collections.IEnumerator.get_Current()
 extern void U3COnPoseInvokeRepeatU3Ed__70_System_Collections_IEnumerator_get_Current_m07F13B4B1B10834E6C374F8ECAA859ED9B2C8E80 ();
-// 0x000001D2 System.Void LibPlacenote_<>c__DisplayClass74_0::.ctor()
+// 0x000001D9 System.Void LibPlacenote_<>c__DisplayClass74_0::.ctor()
 extern void U3CU3Ec__DisplayClass74_0__ctor_mA50DC64EB02F4498A88534392B3C30E54BCD313E ();
-// 0x000001D3 System.Void LibPlacenote_<>c__DisplayClass74_0::<OnDatasetUpload>b__0()
+// 0x000001DA System.Void LibPlacenote_<>c__DisplayClass74_0::<OnDatasetUpload>b__0()
 extern void U3CU3Ec__DisplayClass74_0_U3COnDatasetUploadU3Eb__0_m5FA19F2CC6B9146A39679E9881DA90C10C41B7E2 ();
-// 0x000001D4 System.Void LibPlacenote_<>c__DisplayClass76_0::.ctor()
+// 0x000001DB System.Void LibPlacenote_<>c__DisplayClass76_0::.ctor()
 extern void U3CU3Ec__DisplayClass76_0__ctor_mBC883B39B0A27EEE69DE51A29FA6ABBD5BA24665 ();
-// 0x000001D5 System.Void LibPlacenote_<>c__DisplayClass76_0::<OnGetMetadata>b__0()
+// 0x000001DC System.Void LibPlacenote_<>c__DisplayClass76_0::<OnGetMetadata>b__0()
 extern void U3CU3Ec__DisplayClass76_0_U3COnGetMetadataU3Eb__0_m9AE31242E6808B83169E32007FFAAB4319A3BE94 ();
-// 0x000001D6 System.Void LibPlacenote_<>c__DisplayClass78_0::.ctor()
+// 0x000001DD System.Void LibPlacenote_<>c__DisplayClass78_0::.ctor()
 extern void U3CU3Ec__DisplayClass78_0__ctor_m1816FEB356AF4CDDEB25775BA6D926F825DE4A6B ();
-// 0x000001D7 System.Void LibPlacenote_<>c__DisplayClass78_0::<OnSetMetadata>b__0()
+// 0x000001DE System.Void LibPlacenote_<>c__DisplayClass78_0::<OnSetMetadata>b__0()
 extern void U3CU3Ec__DisplayClass78_0_U3COnSetMetadataU3Eb__0_mACBC1EC190A64FEFA8BA740F07FFC09F1DA610EC ();
-// 0x000001D8 System.Void LibPlacenote_<>c__DisplayClass80_0::.ctor()
+// 0x000001DF System.Void LibPlacenote_<>c__DisplayClass80_0::.ctor()
 extern void U3CU3Ec__DisplayClass80_0__ctor_mC96DED440A301C7A97AFEED91A1C48101E3996C5 ();
-// 0x000001D9 System.Void LibPlacenote_<>c__DisplayClass80_0::<OnMapList>b__0()
+// 0x000001E0 System.Void LibPlacenote_<>c__DisplayClass80_0::<OnMapList>b__0()
 extern void U3CU3Ec__DisplayClass80_0_U3COnMapListU3Eb__0_m23A18D0A9F6192A55B9ED4E7E1E0B48D4BA43C77 ();
-// 0x000001DA System.Void LibPlacenote_<>c__DisplayClass90_0::.ctor()
+// 0x000001E1 System.Void LibPlacenote_<>c__DisplayClass90_0::.ctor()
 extern void U3CU3Ec__DisplayClass90_0__ctor_mB89B223A0CB8DCD6C34F5B68DB97804F5C922B96 ();
-// 0x000001DB System.Void LibPlacenote_<>c__DisplayClass90_0::<UploadThumbnail>b__0(System.Boolean,System.Boolean,System.Single)
+// 0x000001E2 System.Void LibPlacenote_<>c__DisplayClass90_0::<UploadThumbnail>b__0(System.Boolean,System.Boolean,System.Single)
 extern void U3CU3Ec__DisplayClass90_0_U3CUploadThumbnailU3Eb__0_m5367D2BF9D73377A13912FFC853C21BB628BE05B ();
-// 0x000001DC System.Void LibPlacenote_<>c__DisplayClass91_0::.ctor()
+// 0x000001E3 System.Void LibPlacenote_<>c__DisplayClass91_0::.ctor()
 extern void U3CU3Ec__DisplayClass91_0__ctor_m445A6E8207766B3D6DC015819405CCECCA8BE762 ();
-// 0x000001DD System.Void LibPlacenote_<>c__DisplayClass91_0::<DownloadThumbnail>b__0(System.Boolean,System.Boolean,System.Single)
+// 0x000001E4 System.Void LibPlacenote_<>c__DisplayClass91_0::<DownloadThumbnail>b__0(System.Boolean,System.Boolean,System.Single)
 extern void U3CU3Ec__DisplayClass91_0_U3CDownloadThumbnailU3Eb__0_m67B9CC874FBBE43D90F5324A6C7B04099E71E8C4 ();
-// 0x000001DE System.Void LibPlacenote_<>c__DisplayClass92_0::.ctor()
+// 0x000001E5 System.Void LibPlacenote_<>c__DisplayClass92_0::.ctor()
 extern void U3CU3Ec__DisplayClass92_0__ctor_mAFA09CE63BBEA2CA85AFD52C88323752B5DB461D ();
-// 0x000001DF System.Void LibPlacenote_<>c__DisplayClass92_0::<OnMapUploaded>b__0()
+// 0x000001E6 System.Void LibPlacenote_<>c__DisplayClass92_0::<OnMapUploaded>b__0()
 extern void U3CU3Ec__DisplayClass92_0_U3COnMapUploadedU3Eb__0_mFDDDF6CF68DEA474EF67CDEC1B5DCE9236EEFD14 ();
-// 0x000001E0 System.Void LibPlacenote_<>c__DisplayClass93_0::.ctor()
+// 0x000001E7 System.Void LibPlacenote_<>c__DisplayClass93_0::.ctor()
 extern void U3CU3Ec__DisplayClass93_0__ctor_m85C4677005C405B8287E20258FCFDCC5D331E5B0 ();
-// 0x000001E1 System.Void LibPlacenote_<>c__DisplayClass93_0::<OnMapAdded>b__0()
+// 0x000001E8 System.Void LibPlacenote_<>c__DisplayClass93_0::<OnMapAdded>b__0()
 extern void U3CU3Ec__DisplayClass93_0_U3COnMapAddedU3Eb__0_m09EBF5B5295B5F9691DF3E94606A3697B19AA7B0 ();
-// 0x000001E2 System.Void LibPlacenote_<>c__DisplayClass95_0::.ctor()
+// 0x000001E9 System.Void LibPlacenote_<>c__DisplayClass95_0::.ctor()
 extern void U3CU3Ec__DisplayClass95_0__ctor_mB40CAA7134DDBBD775272F54A8BC70DE840CB8FC ();
-// 0x000001E3 System.Void LibPlacenote_<>c__DisplayClass95_0::<OnMapLoaded>b__0()
+// 0x000001EA System.Void LibPlacenote_<>c__DisplayClass95_0::<OnMapLoaded>b__0()
 extern void U3CU3Ec__DisplayClass95_0_U3COnMapLoadedU3Eb__0_m3AF46BB6512AE4219A4FF820D5CAD1CA362D53E5 ();
-// 0x000001E4 System.Void LibPlacenote_<>c__DisplayClass97_0::.ctor()
+// 0x000001EB System.Void LibPlacenote_<>c__DisplayClass97_0::.ctor()
 extern void U3CU3Ec__DisplayClass97_0__ctor_m94CDE009F29DD13059F5A949F77DB786E1C89EF2 ();
-// 0x000001E5 System.Void LibPlacenote_<>c__DisplayClass97_0::<OnMapDeleted>b__0()
+// 0x000001EC System.Void LibPlacenote_<>c__DisplayClass97_0::<OnMapDeleted>b__0()
 extern void U3CU3Ec__DisplayClass97_0_U3COnMapDeletedU3Eb__0_mECED8DF2713FBD1D7D9A8D9D97359107127A652A ();
-// 0x000001E6 System.Void LibPlacenote_<>c__DisplayClass99_0::.ctor()
+// 0x000001ED System.Void LibPlacenote_<>c__DisplayClass99_0::.ctor()
 extern void U3CU3Ec__DisplayClass99_0__ctor_mEE37EDDE7C650D205AED7678D06265D070DD5AFE ();
-// 0x000001E7 System.Void LibPlacenote_<>c__DisplayClass99_0::<OnThumbnailSyncProgress>b__0()
+// 0x000001EE System.Void LibPlacenote_<>c__DisplayClass99_0::<OnThumbnailSyncProgress>b__0()
 extern void U3CU3Ec__DisplayClass99_0_U3COnThumbnailSyncProgressU3Eb__0_m3734E03EA69DACB8D842594648BD30D4376D873C ();
-// 0x000001E8 System.Void LocalizationThumbnailSelector_<>c::.cctor()
+// 0x000001EF System.Void LocalizationThumbnailSelector_<>c::.cctor()
 extern void U3CU3Ec__cctor_m3AC8F1862BA02AAD87D5736055ECFECA20C8247B ();
-// 0x000001E9 System.Void LocalizationThumbnailSelector_<>c::.ctor()
+// 0x000001F0 System.Void LocalizationThumbnailSelector_<>c::.ctor()
 extern void U3CU3Ec__ctor_mC5FED4EBB8CD5BD14DA926A34138AA85635BCCAD ();
-// 0x000001EA System.Void LocalizationThumbnailSelector_<>c::<.ctor>b__19_0(UnityEngine.Texture2D)
+// 0x000001F1 System.Void LocalizationThumbnailSelector_<>c::<.ctor>b__19_0(UnityEngine.Texture2D)
 extern void U3CU3Ec_U3C_ctorU3Eb__19_0_m25251CF76F2B2921E8B68D5B937B33CB2AD1F145 ();
-// 0x000001EB System.Void MainThreadTaskQueue_Delegate::.ctor(System.Object,System.IntPtr)
+// 0x000001F2 System.Void MainThreadTaskQueue_Delegate::.ctor(System.Object,System.IntPtr)
 extern void Delegate__ctor_m1ECE12F777682B3A63AD9CA20C1051F323413754 ();
-// 0x000001EC System.Void MainThreadTaskQueue_Delegate::Invoke()
+// 0x000001F3 System.Void MainThreadTaskQueue_Delegate::Invoke()
 extern void Delegate_Invoke_m1BB14045147C6629DB596268278F03D203118BF7 ();
-// 0x000001ED System.IAsyncResult MainThreadTaskQueue_Delegate::BeginInvoke(System.AsyncCallback,System.Object)
+// 0x000001F4 System.IAsyncResult MainThreadTaskQueue_Delegate::BeginInvoke(System.AsyncCallback,System.Object)
 extern void Delegate_BeginInvoke_m28026098E32C1B6E6DB7FBA97B986F0C44333802 ();
-// 0x000001EE System.Void MainThreadTaskQueue_Delegate::EndInvoke(System.IAsyncResult)
+// 0x000001F5 System.Void MainThreadTaskQueue_Delegate::EndInvoke(System.IAsyncResult)
 extern void Delegate_EndInvoke_m058B924F03A3300145D2C8A0404E1CA9CDB9D369 ();
-// 0x000001EF System.Void DrawingHistoryManager_DrawingCommand::.ctor(System.Int32,System.Int32,UnityEngine.Vector3,UnityEngine.Color,System.Single)
+// 0x000001F6 System.Void DrawingHistoryManager_DrawingCommand::.ctor(System.Int32,System.Int32,UnityEngine.Vector3,UnityEngine.Color,System.Single)
 extern void DrawingCommand__ctor_mD2CE24580228274C4BF7DDD0AB50CEB73E91ED15 ();
-// 0x000001F0 System.Void DrawingHistoryManager_DrawingCommand::.ctor(System.String)
+// 0x000001F7 System.Void DrawingHistoryManager_DrawingCommand::.ctor(System.String)
 extern void DrawingCommand__ctor_m9F682159CB7796BB182505BCA273FD91679242AB ();
-// 0x000001F1 System.String DrawingHistoryManager_DrawingCommand::ToString()
+// 0x000001F8 System.String DrawingHistoryManager_DrawingCommand::ToString()
 extern void DrawingCommand_ToString_m01433F68D248FCCEDD3CCE8F9BA8726B2196F92A ();
-// 0x000001F2 System.Void DrawingHistoryManager_<renderCommands>d__11::.ctor(System.Int32)
-extern void U3CrenderCommandsU3Ed__11__ctor_mAC8ADA6E2DCCD485BCC41A2C68C362CF0BFA6376 ();
-// 0x000001F3 System.Void DrawingHistoryManager_<renderCommands>d__11::System.IDisposable.Dispose()
-extern void U3CrenderCommandsU3Ed__11_System_IDisposable_Dispose_mD52847BFCDA746E16A26EB39298910C7E6B0E557 ();
-// 0x000001F4 System.Boolean DrawingHistoryManager_<renderCommands>d__11::MoveNext()
-extern void U3CrenderCommandsU3Ed__11_MoveNext_m66993F27BC1F358588FE2F4EBA5F52839936BE57 ();
-// 0x000001F5 System.Void DrawingHistoryManager_<renderCommands>d__11::<>m__Finally1()
-extern void U3CrenderCommandsU3Ed__11_U3CU3Em__Finally1_mA57F1F86AC2809F2D8F0AD0135F40E1360DD6464 ();
-// 0x000001F6 System.Object DrawingHistoryManager_<renderCommands>d__11::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CrenderCommandsU3Ed__11_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m72948E5D3CBFF4BB343B90F7144AE1EC818A6334 ();
-// 0x000001F7 System.Void DrawingHistoryManager_<renderCommands>d__11::System.Collections.IEnumerator.Reset()
-extern void U3CrenderCommandsU3Ed__11_System_Collections_IEnumerator_Reset_mE62047F93894A63DF6386AE314E43292F0B18429 ();
-// 0x000001F8 System.Object DrawingHistoryManager_<renderCommands>d__11::System.Collections.IEnumerator.get_Current()
-extern void U3CrenderCommandsU3Ed__11_System_Collections_IEnumerator_get_Current_mDDA17C93D7B5865D56B3E19421FCFA181EC84CF6 ();
-// 0x000001F9 System.Void FeatureHighlightController_<ContinuousUpdate>d__11::.ctor(System.Int32)
+// 0x000001F9 System.Void DrawingHistoryManager_<renderCommands>d__20::.ctor(System.Int32)
+extern void U3CrenderCommandsU3Ed__20__ctor_mC2515A611690D0783D09FD8B8BCB4891B9D24710 ();
+// 0x000001FA System.Void DrawingHistoryManager_<renderCommands>d__20::System.IDisposable.Dispose()
+extern void U3CrenderCommandsU3Ed__20_System_IDisposable_Dispose_mD06CE3DA6905B65E55D911FDB24C1805345B9885 ();
+// 0x000001FB System.Boolean DrawingHistoryManager_<renderCommands>d__20::MoveNext()
+extern void U3CrenderCommandsU3Ed__20_MoveNext_mEE0E34700A2C129499DD8853B79416A15CFC6932 ();
+// 0x000001FC System.Void DrawingHistoryManager_<renderCommands>d__20::<>m__Finally1()
+extern void U3CrenderCommandsU3Ed__20_U3CU3Em__Finally1_mFE7328CCB0369C022A32642E366494F72CE1D9C9 ();
+// 0x000001FD System.Object DrawingHistoryManager_<renderCommands>d__20::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CrenderCommandsU3Ed__20_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mFAC153D88FA2FDD4374F5A9A595C586C7153DCC4 ();
+// 0x000001FE System.Void DrawingHistoryManager_<renderCommands>d__20::System.Collections.IEnumerator.Reset()
+extern void U3CrenderCommandsU3Ed__20_System_Collections_IEnumerator_Reset_m9F211CB55B69A65580B826AF0E02B8F7314DB168 ();
+// 0x000001FF System.Object DrawingHistoryManager_<renderCommands>d__20::System.Collections.IEnumerator.get_Current()
+extern void U3CrenderCommandsU3Ed__20_System_Collections_IEnumerator_get_Current_m552215C58DE391E44CB3E77A5B7EF424D65A873E ();
+// 0x00000200 System.Void FeatureHighlightController_<ContinuousUpdate>d__11::.ctor(System.Int32)
 extern void U3CContinuousUpdateU3Ed__11__ctor_m239F220853A30B20022F1CB5A4B08346C4EC9F08 ();
-// 0x000001FA System.Void FeatureHighlightController_<ContinuousUpdate>d__11::System.IDisposable.Dispose()
+// 0x00000201 System.Void FeatureHighlightController_<ContinuousUpdate>d__11::System.IDisposable.Dispose()
 extern void U3CContinuousUpdateU3Ed__11_System_IDisposable_Dispose_m34B79F1E2FA7F976F40B48055C8814CAD87A8609 ();
-// 0x000001FB System.Boolean FeatureHighlightController_<ContinuousUpdate>d__11::MoveNext()
+// 0x00000202 System.Boolean FeatureHighlightController_<ContinuousUpdate>d__11::MoveNext()
 extern void U3CContinuousUpdateU3Ed__11_MoveNext_m39D1147D5EA8AF8AB45BF58BF20F1D2FC48333F0 ();
-// 0x000001FC System.Object FeatureHighlightController_<ContinuousUpdate>d__11::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x00000203 System.Object FeatureHighlightController_<ContinuousUpdate>d__11::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CContinuousUpdateU3Ed__11_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mEA66E167F333A942A1161D133635AE62A21A2ECA ();
-// 0x000001FD System.Void FeatureHighlightController_<ContinuousUpdate>d__11::System.Collections.IEnumerator.Reset()
+// 0x00000204 System.Void FeatureHighlightController_<ContinuousUpdate>d__11::System.Collections.IEnumerator.Reset()
 extern void U3CContinuousUpdateU3Ed__11_System_Collections_IEnumerator_Reset_m0A4F9B7D5A9CB4C3B3050DF74910F66B14FF8838 ();
-// 0x000001FE System.Object FeatureHighlightController_<ContinuousUpdate>d__11::System.Collections.IEnumerator.get_Current()
+// 0x00000205 System.Object FeatureHighlightController_<ContinuousUpdate>d__11::System.Collections.IEnumerator.get_Current()
 extern void U3CContinuousUpdateU3Ed__11_System_Collections_IEnumerator_get_Current_mE53D26FC943555A4B9409636AE0F568F6F1D1A07 ();
-// 0x000001FF System.Void PaintPlacementReticleController_<ContinuousHittest>d__12::.ctor(System.Int32)
+// 0x00000206 System.Void PaintPlacementReticleController_<ContinuousHittest>d__12::.ctor(System.Int32)
 extern void U3CContinuousHittestU3Ed__12__ctor_m767BB3C9342E9C3F8B6B6D0B583331BA18A2BF46 ();
-// 0x00000200 System.Void PaintPlacementReticleController_<ContinuousHittest>d__12::System.IDisposable.Dispose()
+// 0x00000207 System.Void PaintPlacementReticleController_<ContinuousHittest>d__12::System.IDisposable.Dispose()
 extern void U3CContinuousHittestU3Ed__12_System_IDisposable_Dispose_m8AFD1686A17D26EFA43AC3AE71FEA8FF840CC5AD ();
-// 0x00000201 System.Boolean PaintPlacementReticleController_<ContinuousHittest>d__12::MoveNext()
+// 0x00000208 System.Boolean PaintPlacementReticleController_<ContinuousHittest>d__12::MoveNext()
 extern void U3CContinuousHittestU3Ed__12_MoveNext_m57404B7A3F5603A7A5BC1ADFFF9038E49CFB80C5 ();
-// 0x00000202 System.Object PaintPlacementReticleController_<ContinuousHittest>d__12::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x00000209 System.Object PaintPlacementReticleController_<ContinuousHittest>d__12::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CContinuousHittestU3Ed__12_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mA92B31420183F7F398937DE64913EC0247DAD9EA ();
-// 0x00000203 System.Void PaintPlacementReticleController_<ContinuousHittest>d__12::System.Collections.IEnumerator.Reset()
+// 0x0000020A System.Void PaintPlacementReticleController_<ContinuousHittest>d__12::System.Collections.IEnumerator.Reset()
 extern void U3CContinuousHittestU3Ed__12_System_Collections_IEnumerator_Reset_m008489E67533E9A4F6B7AF3FB9F8F4BB69561414 ();
-// 0x00000204 System.Object PaintPlacementReticleController_<ContinuousHittest>d__12::System.Collections.IEnumerator.get_Current()
+// 0x0000020B System.Object PaintPlacementReticleController_<ContinuousHittest>d__12::System.Collections.IEnumerator.get_Current()
 extern void U3CContinuousHittestU3Ed__12_System_Collections_IEnumerator_get_Current_m0CFC844931D04ACC9F8F7E45C3B17E5A8F4C660A ();
-// 0x00000205 System.Void ReticleController_<ContinuousHittest>d__16::.ctor(System.Int32)
+// 0x0000020C System.Void ReticleController_<ContinuousHittest>d__16::.ctor(System.Int32)
 extern void U3CContinuousHittestU3Ed__16__ctor_m227B13A70D574F09C29597B7D665B0DDD6B9CDC5 ();
-// 0x00000206 System.Void ReticleController_<ContinuousHittest>d__16::System.IDisposable.Dispose()
+// 0x0000020D System.Void ReticleController_<ContinuousHittest>d__16::System.IDisposable.Dispose()
 extern void U3CContinuousHittestU3Ed__16_System_IDisposable_Dispose_m7024E4AC81B37513B0D25CF12754A08F3EDDFF51 ();
-// 0x00000207 System.Boolean ReticleController_<ContinuousHittest>d__16::MoveNext()
+// 0x0000020E System.Boolean ReticleController_<ContinuousHittest>d__16::MoveNext()
 extern void U3CContinuousHittestU3Ed__16_MoveNext_mFA2EA667E91FFFD563E8A4F80F70E01F71741331 ();
-// 0x00000208 System.Object ReticleController_<ContinuousHittest>d__16::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x0000020F System.Object ReticleController_<ContinuousHittest>d__16::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CContinuousHittestU3Ed__16_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m375169B0825E3264217466DC30C189F746BDACD4 ();
-// 0x00000209 System.Void ReticleController_<ContinuousHittest>d__16::System.Collections.IEnumerator.Reset()
+// 0x00000210 System.Void ReticleController_<ContinuousHittest>d__16::System.Collections.IEnumerator.Reset()
 extern void U3CContinuousHittestU3Ed__16_System_Collections_IEnumerator_Reset_m44B7874E0B10CDF75C2049CBF4BAAA7EF11FA814 ();
-// 0x0000020A System.Object ReticleController_<ContinuousHittest>d__16::System.Collections.IEnumerator.get_Current()
+// 0x00000211 System.Object ReticleController_<ContinuousHittest>d__16::System.Collections.IEnumerator.get_Current()
 extern void U3CContinuousHittestU3Ed__16_System_Collections_IEnumerator_get_Current_m44A63FF31C009D74CC3562393185B9C22CC9F36D ();
-// 0x0000020B System.Void WanzyeeStudio.JsonNetUtility_<>c::.cctor()
+// 0x00000212 System.Void WanzyeeStudio.JsonNetUtility_<>c::.cctor()
 extern void U3CU3Ec__cctor_m82CB7C9DEA257CBA40DDFF79031F73AEAE5A2F6E ();
-// 0x0000020C System.Void WanzyeeStudio.JsonNetUtility_<>c::.ctor()
+// 0x00000213 System.Void WanzyeeStudio.JsonNetUtility_<>c::.ctor()
 extern void U3CU3Ec__ctor_m0F0315ACDA5C7D58B7C209CDA2904A9372428C86 ();
-// 0x0000020D Newtonsoft.Json.JsonSerializerSettings WanzyeeStudio.JsonNetUtility_<>c::<Initialize>b__1_0()
+// 0x00000214 Newtonsoft.Json.JsonSerializerSettings WanzyeeStudio.JsonNetUtility_<>c::<Initialize>b__1_0()
 extern void U3CU3Ec_U3CInitializeU3Eb__1_0_m13F11664D8DA44DFCE1C16F5604FA9F772DD79FE ();
-// 0x0000020E Newtonsoft.Json.JsonConverter WanzyeeStudio.JsonNetUtility_<>c::<CreateConverters>b__2_0(System.Type)
+// 0x00000215 Newtonsoft.Json.JsonConverter WanzyeeStudio.JsonNetUtility_<>c::<CreateConverters>b__2_0(System.Type)
 extern void U3CU3Ec_U3CCreateConvertersU3Eb__2_0_m7215399F81DC1BD8C80FAD229FD50D6606728951 ();
-// 0x0000020F System.Boolean WanzyeeStudio.JsonNetUtility_<>c::<CreateConverters>b__2_1(Newtonsoft.Json.JsonConverter)
+// 0x00000216 System.Boolean WanzyeeStudio.JsonNetUtility_<>c::<CreateConverters>b__2_1(Newtonsoft.Json.JsonConverter)
 extern void U3CU3Ec_U3CCreateConvertersU3Eb__2_1_m74C80667076D17B07DB08BA255707AAF19F7E256 ();
-// 0x00000210 System.Collections.Generic.IEnumerable`1<System.Type> WanzyeeStudio.JsonNetUtility_<>c::<FindConverterTypes>b__4_0(System.Reflection.Assembly)
+// 0x00000217 System.Collections.Generic.IEnumerable`1<System.Type> WanzyeeStudio.JsonNetUtility_<>c::<FindConverterTypes>b__4_0(System.Reflection.Assembly)
 extern void U3CU3Ec_U3CFindConverterTypesU3Eb__4_0_mF8C1C555438384B77F467B99F141B195FB606115 ();
-// 0x00000211 System.Boolean WanzyeeStudio.JsonNetUtility_<>c::<FindConverterTypes>b__4_1(System.Type)
+// 0x00000218 System.Boolean WanzyeeStudio.JsonNetUtility_<>c::<FindConverterTypes>b__4_1(System.Type)
 extern void U3CU3Ec_U3CFindConverterTypesU3Eb__4_1_m17AC0DDBB9C8B80349C4CFFC644E8D538BCD73CF ();
-// 0x00000212 System.Boolean WanzyeeStudio.JsonNetUtility_<>c::<FindConverterTypes>b__4_2(System.Type)
+// 0x00000219 System.Boolean WanzyeeStudio.JsonNetUtility_<>c::<FindConverterTypes>b__4_2(System.Type)
 extern void U3CU3Ec_U3CFindConverterTypesU3Eb__4_2_mEDB47F4CA501E57C5F080A67FB9BE855A03033DD ();
-// 0x00000213 System.Boolean WanzyeeStudio.JsonNetUtility_<>c::<FindConverterTypes>b__4_3(System.Type)
+// 0x0000021A System.Boolean WanzyeeStudio.JsonNetUtility_<>c::<FindConverterTypes>b__4_3(System.Type)
 extern void U3CU3Ec_U3CFindConverterTypesU3Eb__4_3_m95C9FF676F3EEC907E9BC92BF1A91568D3A3EB2F ();
-// 0x00000214 System.Boolean WanzyeeStudio.JsonNetUtility_<>c::<FindConverterTypes>b__4_4(System.Type)
+// 0x0000021B System.Boolean WanzyeeStudio.JsonNetUtility_<>c::<FindConverterTypes>b__4_4(System.Type)
 extern void U3CU3Ec_U3CFindConverterTypesU3Eb__4_4_mD61CA9DA00FFA79177A20677DD413DC368C0BC17 ();
-// 0x00000215 System.Boolean WanzyeeStudio.JsonNetUtility_<>c::<FindConverterTypes>b__4_5(System.Type)
+// 0x0000021C System.Boolean WanzyeeStudio.JsonNetUtility_<>c::<FindConverterTypes>b__4_5(System.Type)
 extern void U3CU3Ec_U3CFindConverterTypesU3Eb__4_5_m35528832404A8F9CC2D354EFE43FBF2397DFB2AF ();
-// 0x00000216 System.Void WanzyeeStudio.Json.Matrix4x4Converter_<>c__DisplayClass0_0::.ctor()
+// 0x0000021D System.Void WanzyeeStudio.Json.Matrix4x4Converter_<>c__DisplayClass0_0::.ctor()
 extern void U3CU3Ec__DisplayClass0_0__ctor_m16E391F6E7A3923A58BE70A6F4A696ECA59C9BF8 ();
-// 0x00000217 System.Collections.Generic.IEnumerable`1<System.String> WanzyeeStudio.Json.Matrix4x4Converter_<>c__DisplayClass0_0::<GetPropertyNames>b__0(System.String)
+// 0x0000021E System.Collections.Generic.IEnumerable`1<System.String> WanzyeeStudio.Json.Matrix4x4Converter_<>c__DisplayClass0_0::<GetPropertyNames>b__0(System.String)
 extern void U3CU3Ec__DisplayClass0_0_U3CGetPropertyNamesU3Eb__0_m46CCBA38324658C54D23C6A6224C030D1574CFBB ();
-// 0x00000218 System.Void WanzyeeStudio.Json.Matrix4x4Converter_<>c__DisplayClass0_1::.ctor()
+// 0x0000021F System.Void WanzyeeStudio.Json.Matrix4x4Converter_<>c__DisplayClass0_1::.ctor()
 extern void U3CU3Ec__DisplayClass0_1__ctor_m9EDF570CEAFF225BC08AB65F51CCC736F00783C5 ();
-// 0x00000219 System.String WanzyeeStudio.Json.Matrix4x4Converter_<>c__DisplayClass0_1::<GetPropertyNames>b__1(System.String)
+// 0x00000220 System.String WanzyeeStudio.Json.Matrix4x4Converter_<>c__DisplayClass0_1::<GetPropertyNames>b__1(System.String)
 extern void U3CU3Ec__DisplayClass0_1_U3CGetPropertyNamesU3Eb__1_mEB90724AB231044853006230C2A6362E4299CF00 ();
-// 0x0000021A System.Void WanzyeeStudio.Json.PartialConverter`1_<>c::.cctor()
-// 0x0000021B System.Void WanzyeeStudio.Json.PartialConverter`1_<>c::.ctor()
-// 0x0000021C System.Boolean WanzyeeStudio.Json.PartialConverter`1_<>c::<GetProperties>b__6_2(System.String)
-// 0x0000021D System.String WanzyeeStudio.Json.PartialConverter`1_<>c::<GetProperties>b__6_0(System.String)
-// 0x0000021E System.Reflection.MemberInfo WanzyeeStudio.Json.PartialConverter`1_<>c::<GetProperties>b__6_1(System.String)
-// 0x0000021F System.Void StickyNotes.NotesManager_<>c__DisplayClass13_0::.ctor()
+// 0x00000221 System.Void WanzyeeStudio.Json.PartialConverter`1_<>c::.cctor()
+// 0x00000222 System.Void WanzyeeStudio.Json.PartialConverter`1_<>c::.ctor()
+// 0x00000223 System.Boolean WanzyeeStudio.Json.PartialConverter`1_<>c::<GetProperties>b__6_0(System.String)
+// 0x00000224 System.String WanzyeeStudio.Json.PartialConverter`1_<>c::<GetProperties>b__6_1(System.String)
+// 0x00000225 System.Reflection.MemberInfo WanzyeeStudio.Json.PartialConverter`1_<>c::<GetProperties>b__6_2(System.String)
+// 0x00000226 System.Void StickyNotes.NotesManager_<>c__DisplayClass13_0::.ctor()
 extern void U3CU3Ec__DisplayClass13_0__ctor_m2559AB93123B2D62BAF651B4FCCB9FAD6F236EA5 ();
-// 0x00000220 System.Void StickyNotes.NotesManager_<>c__DisplayClass13_0::<EditCurrNote>b__0(System.String)
+// 0x00000227 System.Void StickyNotes.NotesManager_<>c__DisplayClass13_0::<EditCurrNote>b__0(System.String)
 extern void U3CU3Ec__DisplayClass13_0_U3CEditCurrNoteU3Eb__0_mF1EED194149B5115C4C09406B624F40D6B246C57 ();
-// 0x00000221 System.Void StickyNotes.StickyNotesMain_<>c__DisplayClass26_0::.ctor()
+// 0x00000228 System.Void StickyNotes.StickyNotesMain_<>c__DisplayClass26_0::.ctor()
 extern void U3CU3Ec__DisplayClass26_0__ctor_m28DF07CBB37C7C3C0DED55830E22686B89336F29 ();
-// 0x00000222 System.Void StickyNotes.StickyNotesMain_<>c__DisplayClass26_0::<AddMapToList>b__0(System.Boolean)
+// 0x00000229 System.Void StickyNotes.StickyNotesMain_<>c__DisplayClass26_0::<AddMapToList>b__0(System.Boolean)
 extern void U3CU3Ec__DisplayClass26_0_U3CAddMapToListU3Eb__0_m158E51BC20306362AAAFA6B7D13062286E2007F9 ();
-// 0x00000223 System.Void StickyNotes.StickyNotesMain_<>c__DisplayClass32_0::.ctor()
+// 0x0000022A System.Void StickyNotes.StickyNotesMain_<>c__DisplayClass32_0::.ctor()
 extern void U3CU3Ec__DisplayClass32_0__ctor_mCDF1F07C2E330B3825C1FA3285C997CD28B2685D ();
-// 0x00000224 System.Void StickyNotes.StickyNotesMain_<>c__DisplayClass32_0::<OnSaveMapClick>b__0(System.String)
+// 0x0000022B System.Void StickyNotes.StickyNotesMain_<>c__DisplayClass32_0::<OnSaveMapClick>b__0(System.String)
 extern void U3CU3Ec__DisplayClass32_0_U3COnSaveMapClickU3Eb__0_m54920007429F1A5C726431EFBD474033B5A6E963 ();
-// 0x00000225 System.Void StickyNotes.StickyNotesMain_<>c__DisplayClass32_0::<OnSaveMapClick>b__1(System.Boolean,System.Boolean,System.Single)
+// 0x0000022C System.Void StickyNotes.StickyNotesMain_<>c__DisplayClass32_0::<OnSaveMapClick>b__1(System.Boolean,System.Boolean,System.Single)
 extern void U3CU3Ec__DisplayClass32_0_U3COnSaveMapClickU3Eb__1_mFCA67632BC407ED7DC93130704C9E6CF6AFADA13 ();
-// 0x00000226 System.Void StickyNotes.StickyNotesMain_<>c::.cctor()
+// 0x0000022D System.Void StickyNotes.StickyNotesMain_<>c::.cctor()
 extern void U3CU3Ec__cctor_m6BE6A9350804FABFE4116F8C6C80B5C8595F17A4 ();
-// 0x00000227 System.Void StickyNotes.StickyNotesMain_<>c::.ctor()
+// 0x0000022E System.Void StickyNotes.StickyNotesMain_<>c::.ctor()
 extern void U3CU3Ec__ctor_mF67B1BE385E36BE5A5761E8E313387E486B529A8 ();
-// 0x00000228 System.Void StickyNotes.StickyNotesMain_<>c::<OnSaveMapClick>b__32_2(System.Boolean)
+// 0x0000022F System.Void StickyNotes.StickyNotesMain_<>c::<OnSaveMapClick>b__32_2(System.Boolean)
 extern void U3CU3Ec_U3COnSaveMapClickU3Eb__32_2_m01595600AC0BC522FB6619FC21081A4E0F76655E ();
-// 0x00000229 System.Void BuildACity.PlacementReticleController_<ContinuousHittest>d__11::.ctor(System.Int32)
+// 0x00000230 System.Void BuildACity.PlacementReticleController_<ContinuousHittest>d__11::.ctor(System.Int32)
 extern void U3CContinuousHittestU3Ed__11__ctor_m55B58CD7A171173BBE83B85312E7A22272859D12 ();
-// 0x0000022A System.Void BuildACity.PlacementReticleController_<ContinuousHittest>d__11::System.IDisposable.Dispose()
+// 0x00000231 System.Void BuildACity.PlacementReticleController_<ContinuousHittest>d__11::System.IDisposable.Dispose()
 extern void U3CContinuousHittestU3Ed__11_System_IDisposable_Dispose_m4B184FC23E0FBF1DC122FB3B70EA9B110C7108AF ();
-// 0x0000022B System.Boolean BuildACity.PlacementReticleController_<ContinuousHittest>d__11::MoveNext()
+// 0x00000232 System.Boolean BuildACity.PlacementReticleController_<ContinuousHittest>d__11::MoveNext()
 extern void U3CContinuousHittestU3Ed__11_MoveNext_m8A2CC66D57C6EC30891C5A5B2DFB3E221A6364CA ();
-// 0x0000022C System.Object BuildACity.PlacementReticleController_<ContinuousHittest>d__11::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x00000233 System.Object BuildACity.PlacementReticleController_<ContinuousHittest>d__11::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CContinuousHittestU3Ed__11_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m58B061D3C885B43084544FED1F11411F8B57F6DC ();
-// 0x0000022D System.Void BuildACity.PlacementReticleController_<ContinuousHittest>d__11::System.Collections.IEnumerator.Reset()
+// 0x00000234 System.Void BuildACity.PlacementReticleController_<ContinuousHittest>d__11::System.Collections.IEnumerator.Reset()
 extern void U3CContinuousHittestU3Ed__11_System_Collections_IEnumerator_Reset_m07C8E956BB784A563122101B4763D23F8E8966F7 ();
-// 0x0000022E System.Object BuildACity.PlacementReticleController_<ContinuousHittest>d__11::System.Collections.IEnumerator.get_Current()
+// 0x00000235 System.Object BuildACity.PlacementReticleController_<ContinuousHittest>d__11::System.Collections.IEnumerator.get_Current()
 extern void U3CContinuousHittestU3Ed__11_System_Collections_IEnumerator_get_Current_m11853FF5E9BF59EED8DBE202D2D4B472960C62BA ();
-// 0x0000022F System.Void HelloWorld.HelloWorldMain_<WaitForARSessionThenStart>d__12::.ctor(System.Int32)
+// 0x00000236 System.Void HelloWorld.HelloWorldMain_<WaitForARSessionThenStart>d__12::.ctor(System.Int32)
 extern void U3CWaitForARSessionThenStartU3Ed__12__ctor_m0996F1B3DE6776E13E2A37670D748D0AEA15502A ();
-// 0x00000230 System.Void HelloWorld.HelloWorldMain_<WaitForARSessionThenStart>d__12::System.IDisposable.Dispose()
+// 0x00000237 System.Void HelloWorld.HelloWorldMain_<WaitForARSessionThenStart>d__12::System.IDisposable.Dispose()
 extern void U3CWaitForARSessionThenStartU3Ed__12_System_IDisposable_Dispose_mE9D53C665D0A3547A51DEF1F69C4F3F105AF3A42 ();
-// 0x00000231 System.Boolean HelloWorld.HelloWorldMain_<WaitForARSessionThenStart>d__12::MoveNext()
+// 0x00000238 System.Boolean HelloWorld.HelloWorldMain_<WaitForARSessionThenStart>d__12::MoveNext()
 extern void U3CWaitForARSessionThenStartU3Ed__12_MoveNext_mFA6EB2A67551D5CF0E86215897421FE34CB8E2B1 ();
-// 0x00000232 System.Object HelloWorld.HelloWorldMain_<WaitForARSessionThenStart>d__12::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x00000239 System.Object HelloWorld.HelloWorldMain_<WaitForARSessionThenStart>d__12::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CWaitForARSessionThenStartU3Ed__12_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m4C5C988AA6F56FCE73EA636DD7C78128EF2F95DF ();
-// 0x00000233 System.Void HelloWorld.HelloWorldMain_<WaitForARSessionThenStart>d__12::System.Collections.IEnumerator.Reset()
+// 0x0000023A System.Void HelloWorld.HelloWorldMain_<WaitForARSessionThenStart>d__12::System.Collections.IEnumerator.Reset()
 extern void U3CWaitForARSessionThenStartU3Ed__12_System_Collections_IEnumerator_Reset_m7EFC141FFBD005E2DBEC4A5F96B4650F096B34DC ();
-// 0x00000234 System.Object HelloWorld.HelloWorldMain_<WaitForARSessionThenStart>d__12::System.Collections.IEnumerator.get_Current()
+// 0x0000023B System.Object HelloWorld.HelloWorldMain_<WaitForARSessionThenStart>d__12::System.Collections.IEnumerator.get_Current()
 extern void U3CWaitForARSessionThenStartU3Ed__12_System_Collections_IEnumerator_get_Current_mEB2302144E15FCAF4A07A9568F5C7EA4D501A21B ();
-// 0x00000235 System.Void HelloWorld.ReticleController_<ContinuousHittest>d__8::.ctor(System.Int32)
+// 0x0000023C System.Void HelloWorld.ReticleController_<ContinuousHittest>d__8::.ctor(System.Int32)
 extern void U3CContinuousHittestU3Ed__8__ctor_m441E975589181DE4FAB7C6951E7E190E90C510D5 ();
-// 0x00000236 System.Void HelloWorld.ReticleController_<ContinuousHittest>d__8::System.IDisposable.Dispose()
+// 0x0000023D System.Void HelloWorld.ReticleController_<ContinuousHittest>d__8::System.IDisposable.Dispose()
 extern void U3CContinuousHittestU3Ed__8_System_IDisposable_Dispose_m69B1662A7484BA22A4458AA07FF5EFE10CDD779A ();
-// 0x00000237 System.Boolean HelloWorld.ReticleController_<ContinuousHittest>d__8::MoveNext()
+// 0x0000023E System.Boolean HelloWorld.ReticleController_<ContinuousHittest>d__8::MoveNext()
 extern void U3CContinuousHittestU3Ed__8_MoveNext_mDD5B6B18761D009E62125BD4767C8814EE926A10 ();
-// 0x00000238 System.Object HelloWorld.ReticleController_<ContinuousHittest>d__8::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x0000023F System.Object HelloWorld.ReticleController_<ContinuousHittest>d__8::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CContinuousHittestU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m0B52EDA59051B1BB3D22E10A14B69D3817DAAD21 ();
-// 0x00000239 System.Void HelloWorld.ReticleController_<ContinuousHittest>d__8::System.Collections.IEnumerator.Reset()
+// 0x00000240 System.Void HelloWorld.ReticleController_<ContinuousHittest>d__8::System.Collections.IEnumerator.Reset()
 extern void U3CContinuousHittestU3Ed__8_System_Collections_IEnumerator_Reset_m5AAAB95202C60E0F0DF3D5B625FDB960FDA9267D ();
-// 0x0000023A System.Object HelloWorld.ReticleController_<ContinuousHittest>d__8::System.Collections.IEnumerator.get_Current()
+// 0x00000241 System.Object HelloWorld.ReticleController_<ContinuousHittest>d__8::System.Collections.IEnumerator.get_Current()
 extern void U3CContinuousHittestU3Ed__8_System_Collections_IEnumerator_get_Current_m2F14735D15449D25AFFC6871435DAAE91B17295C ();
-static Il2CppMethodPointer s_methodPointers[570] = 
+static Il2CppMethodPointer s_methodPointers[577] = 
 {
 	FCP_SpriteMeshEditor_Update_m792050B1B5A44A5CBE11F511446CEB2C9BCBBB05,
 	FCP_SpriteMeshEditor_GetSettingHash_m6B22C63A8A403D139AF4275522692D32D7901B57,
@@ -1334,6 +1348,7 @@ static Il2CppMethodPointer s_methodPointers[570] =
 	DrawLineManager_OnPaintBrushTypeClick_m7D0AA5DEA870BE39469DC6F7BB6906C8E6EA73B5,
 	DrawLineManager_OnLineWidthSliderChanged_m44ACCD7A979B3A95E24A34E1222C3269E034621F,
 	DrawLineManager_setBrushMaterial_mDAF26AEFCA5C1653A810ABBD50FF92A2D5E53989,
+	DrawLineManager_getNewPositionForLayer_mE7C1B1B635D33A504A4499E8FA28EDCA07967B99,
 	DrawLineManager_getRayEndPoint_mCF00F8778219FD4DC6D35815F0ABE3FB25EBD342,
 	DrawLineManager_getRayEndPointSurface_m96CD6A51A63187E3D4BE16315B60C442E9327102,
 	DrawLineManager_Start_m0EEA60EE3ED4F65833E365CFE233ACEC0879F30F,
@@ -1350,10 +1365,14 @@ static Il2CppMethodPointer s_methodPointers[570] =
 	DrawingHistoryManager_Start_mBF78A56E9BF484C39CF050797FF872DA28E96D91,
 	DrawingHistoryManager_Update_mF368FE8C58E3348BA994AF3519BFEAD4419593F5,
 	DrawingHistoryManager_resetHistory_m2C8CB1AF953BDF7D6930FAA9053BCB88BADC8C7E,
+	DrawingHistoryManager_getOrigin_mD08F026F4423D3BA260F408710695C7EC5DD3201,
+	DrawingHistoryManager_deleteAllInLayer_m9B0526746994616B892A6CA90B1CAB2A570D5A13,
 	DrawingHistoryManager_addDrawingCommand_m57D40781CB938EE38A12812171FDC206B265C24A,
 	DrawingHistoryManager_saveMapIDToFile_m98AA355BA46FAFD3C39956F311C88C2A8154D024,
 	DrawingHistoryManager_loadMapIDFromFile_m92B4B329DB7508BBFD12D3F8649EA27BB1DE4F20,
+	DrawingHistoryManager_moveLayer_mAE5066A505E18186C386521113D36BA0637FE805,
 	DrawingHistoryManager_saveLayer_mF126E3AA5A17353C1E9A54851710907CD9EAC862,
+	DrawingHistoryManager_setLayerActive_m2FBC2D52EB2E0583C16FB2DBB919990B26C0A384,
 	DrawingHistoryManager_loadLayer_mDC1C4AE89B2F828C6295985A365E99EBD8FE22C4,
 	DrawingHistoryManager_renderCommands_m752FE4EE5A6F1A1CA2365EA825FA652DCBFB7622,
 	DrawingHistoryManager__ctor_m52571A1343ED1F835F5159241E7C57BD77940576,
@@ -1378,9 +1397,11 @@ static Il2CppMethodPointer s_methodPointers[570] =
 	PaintController_OnToggleColorPaletteClick_mDB712BA268FC0CDDEA17222A9B562B884E12F3B1,
 	PaintController_Update_mFB29ACDD5415EAE9E01B6C771121864084DE111E,
 	PaintController_onStartPaintingClick_m774EC81CDB90E468FD9B98412A6CD7007799C099,
+	PaintController_TogglePanelMoveLayer_m05203E4FFBEA94583C6A72B069F8116C3D532660,
 	PaintController_TogglePanelSaveLayer_mDB0550CC0753C3D82D89338C304C71048532105B,
 	PaintController_TogglePanelLoadLayer_mCFD5472764497DA901F7AE82B28DECAB3CB0395C,
 	PaintController_TogglePanelMode_mF80DE9FB987FFE85ECF66226915390048DF3B547,
+	PaintController_OnMoveLayerClick_mD21E46C46E3CDA405786D62FA61696F1D342E295,
 	PaintController_OnSaveLayerClick_m39BB064ED6FA3285BF0685A0A609D915DA6461FD,
 	PaintController_OnLoadLayerClick_mB0645EFA00A4609CDE0C99AE5BB9D87775DB858C,
 	PaintController_OnModeClick_m527136A4D4BA6B6935DEB49BAAE77291AF5DE751,
@@ -1394,7 +1415,7 @@ static Il2CppMethodPointer s_methodPointers[570] =
 	PaintController_OnStatusChange_m935E882A373A8D6B0805181488E9A1170863C9EA,
 	PaintController_OnLocalized_m5A0B4C5902F637A071F0963E2A4FE6E5C82F775A,
 	PaintController__ctor_m818998C4946F96F96E83C961AF897F129CD0B884,
-	PaintController_U3CStartU3Eb__20_0_m16E6E91F52EDE90245F9956487F1A66EA571D562,
+	PaintController_U3CStartU3Eb__22_0_mA0222E905E4C05CDA1BFCA6F6483A747FDDA5E06,
 	PaintPlacementReticleController_Start_mF77725C328DE062AF1D6274C0D19DF6354AF92BA,
 	PaintPlacementReticleController_startStopReticle_mA5C0DD8081C0363472D00E7DA6E9EC95E8CF4C1A,
 	PaintPlacementReticleController_StartReticle_mD7BBCDD0BEEF9613B6BE51785127B86440B7B6A4,
@@ -1650,13 +1671,13 @@ static Il2CppMethodPointer s_methodPointers[570] =
 	DrawingCommand__ctor_mD2CE24580228274C4BF7DDD0AB50CEB73E91ED15,
 	DrawingCommand__ctor_m9F682159CB7796BB182505BCA273FD91679242AB,
 	DrawingCommand_ToString_m01433F68D248FCCEDD3CCE8F9BA8726B2196F92A,
-	U3CrenderCommandsU3Ed__11__ctor_mAC8ADA6E2DCCD485BCC41A2C68C362CF0BFA6376,
-	U3CrenderCommandsU3Ed__11_System_IDisposable_Dispose_mD52847BFCDA746E16A26EB39298910C7E6B0E557,
-	U3CrenderCommandsU3Ed__11_MoveNext_m66993F27BC1F358588FE2F4EBA5F52839936BE57,
-	U3CrenderCommandsU3Ed__11_U3CU3Em__Finally1_mA57F1F86AC2809F2D8F0AD0135F40E1360DD6464,
-	U3CrenderCommandsU3Ed__11_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m72948E5D3CBFF4BB343B90F7144AE1EC818A6334,
-	U3CrenderCommandsU3Ed__11_System_Collections_IEnumerator_Reset_mE62047F93894A63DF6386AE314E43292F0B18429,
-	U3CrenderCommandsU3Ed__11_System_Collections_IEnumerator_get_Current_mDDA17C93D7B5865D56B3E19421FCFA181EC84CF6,
+	U3CrenderCommandsU3Ed__20__ctor_mC2515A611690D0783D09FD8B8BCB4891B9D24710,
+	U3CrenderCommandsU3Ed__20_System_IDisposable_Dispose_mD06CE3DA6905B65E55D911FDB24C1805345B9885,
+	U3CrenderCommandsU3Ed__20_MoveNext_mEE0E34700A2C129499DD8853B79416A15CFC6932,
+	U3CrenderCommandsU3Ed__20_U3CU3Em__Finally1_mFE7328CCB0369C022A32642E366494F72CE1D9C9,
+	U3CrenderCommandsU3Ed__20_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mFAC153D88FA2FDD4374F5A9A595C586C7153DCC4,
+	U3CrenderCommandsU3Ed__20_System_Collections_IEnumerator_Reset_m9F211CB55B69A65580B826AF0E02B8F7314DB168,
+	U3CrenderCommandsU3Ed__20_System_Collections_IEnumerator_get_Current_m552215C58DE391E44CB3E77A5B7EF424D65A873E,
 	U3CContinuousUpdateU3Ed__11__ctor_m239F220853A30B20022F1CB5A4B08346C4EC9F08,
 	U3CContinuousUpdateU3Ed__11_System_IDisposable_Dispose_m34B79F1E2FA7F976F40B48055C8814CAD87A8609,
 	U3CContinuousUpdateU3Ed__11_MoveNext_m39D1147D5EA8AF8AB45BF58BF20F1D2FC48333F0,
@@ -1724,40 +1745,40 @@ static Il2CppMethodPointer s_methodPointers[570] =
 	U3CContinuousHittestU3Ed__8_System_Collections_IEnumerator_Reset_m5AAAB95202C60E0F0DF3D5B625FDB960FDA9267D,
 	U3CContinuousHittestU3Ed__8_System_Collections_IEnumerator_get_Current_m2F14735D15449D25AFFC6871435DAAE91B17295C,
 };
-static const int32_t s_InvokerIndices[570] = 
+static const int32_t s_InvokerIndices[577] = 
 {
 	23,
 	10,
 	162,
 	23,
-	1180,
-	1181,
+	1177,
+	1178,
 	23,
 	23,
 	23,
 	32,
 	26,
-	1180,
+	1177,
 	26,
 	26,
 	32,
 	32,
 	23,
+	1970,
+	1971,
+	1970,
+	1970,
 	1972,
 	1973,
-	1972,
-	1972,
-	1974,
-	1975,
 	34,
 	34,
 	23,
-	1976,
-	1977,
+	1974,
+	1975,
 	113,
-	1978,
-	1238,
-	1978,
+	1976,
+	1235,
+	1976,
 	31,
 	613,
 	37,
@@ -1770,26 +1791,26 @@ static const int32_t s_InvokerIndices[570] =
 	46,
 	94,
 	121,
+	1977,
+	1978,
+	1977,
 	1979,
 	1980,
-	1979,
 	1981,
 	1982,
-	1983,
-	1984,
 	23,
 	23,
 	23,
 	23,
-	1987,
+	1985,
 	3,
 	3,
-	1988,
+	1986,
 	169,
 	122,
 	23,
 	4,
-	831,
+	829,
 	23,
 	23,
 	23,
@@ -1798,74 +1819,74 @@ static const int32_t s_InvokerIndices[570] =
 	23,
 	23,
 	23,
-	1757,
+	1755,
 	23,
 	23,
 	26,
 	26,
-	1989,
+	1987,
 	23,
 	23,
 	114,
+	1988,
+	1989,
+	10,
+	10,
+	10,
 	1990,
-	1991,
-	10,
-	10,
-	10,
-	1992,
 	31,
 	14,
 	23,
 	23,
 	23,
-	1989,
+	1987,
 	26,
-	1989,
+	1987,
 	115,
-	1989,
-	887,
-	1989,
+	1987,
+	885,
+	1987,
 	26,
 	27,
-	1993,
-	1994,
+	1991,
+	1992,
 	27,
 	27,
 	26,
 	26,
 	26,
 	27,
-	1989,
-	1989,
+	1987,
+	1987,
 	27,
-	1989,
+	1987,
 	27,
-	1989,
+	1987,
 	27,
-	1989,
+	1987,
 	168,
 	34,
 	23,
 	34,
+	1993,
+	131,
+	1263,
+	1994,
 	1995,
-	131,
-	1266,
+	1994,
+	1995,
+	1995,
+	1995,
 	1996,
-	1997,
-	1996,
-	1997,
-	1997,
-	1997,
-	1998,
 	182,
 	182,
 	468,
 	468,
-	1999,
-	131,
-	1996,
 	1997,
-	1998,
+	131,
+	1994,
+	1995,
+	1996,
 	131,
 	23,
 	3,
@@ -1876,7 +1897,7 @@ static const int32_t s_InvokerIndices[570] =
 	23,
 	23,
 	23,
-	1988,
+	1986,
 	23,
 	169,
 	23,
@@ -1887,11 +1908,11 @@ static const int32_t s_InvokerIndices[570] =
 	122,
 	23,
 	23,
-	1988,
+	1986,
 	169,
 	23,
 	23,
-	1988,
+	1986,
 	169,
 	23,
 	23,
@@ -1902,46 +1923,51 @@ static const int32_t s_InvokerIndices[570] =
 	23,
 	23,
 	307,
-	1181,
+	1178,
 	26,
 	26,
 	23,
 	26,
-	1159,
-	1159,
+	1156,
+	1156,
+	1156,
 	23,
 	23,
 	23,
 	23,
 	23,
+	2003,
+	23,
+	1150,
+	2004,
 	2005,
 	23,
-	1153,
+	23,
+	23,
+	23,
 	2006,
+	32,
 	2007,
-	23,
-	23,
-	23,
-	23,
-	2008,
 	136,
 	34,
+	1176,
 	32,
+	613,
 	32,
 	28,
 	23,
 	23,
 	31,
-	1152,
-	1153,
+	1149,
+	1150,
 	23,
-	2005,
+	2003,
 	14,
 	23,
 	23,
 	307,
-	1153,
-	2009,
+	1150,
+	2008,
 	27,
 	58,
 	58,
@@ -1954,6 +1980,8 @@ static const int32_t s_InvokerIndices[570] =
 	31,
 	31,
 	31,
+	31,
+	32,
 	32,
 	32,
 	26,
@@ -1963,7 +1991,7 @@ static const int32_t s_InvokerIndices[570] =
 	23,
 	23,
 	23,
-	1988,
+	1986,
 	169,
 	23,
 	23,
@@ -1977,8 +2005,8 @@ static const int32_t s_InvokerIndices[570] =
 	14,
 	23,
 	3,
-	2010,
-	1152,
+	2009,
+	1149,
 	23,
 	31,
 	23,
@@ -2026,24 +2054,24 @@ static const int32_t s_InvokerIndices[570] =
 	23,
 	14,
 	23,
+	2010,
+	2011,
 	2011,
 	2012,
-	2012,
-	2013,
 	23,
 	414,
+	2013,
+	23,
+	23,
+	23,
+	23,
+	23,
 	2014,
 	23,
 	23,
 	23,
 	23,
-	23,
-	2015,
-	23,
-	23,
-	23,
-	23,
-	1153,
+	1150,
 	23,
 	26,
 	28,
@@ -2068,13 +2096,13 @@ static const int32_t s_InvokerIndices[570] =
 	23,
 	23,
 	23,
-	1988,
+	1986,
 	169,
 	23,
 	26,
 	26,
-	2004,
-	1042,
+	2002,
+	1040,
 	31,
 	23,
 	23,
@@ -2082,16 +2110,16 @@ static const int32_t s_InvokerIndices[570] =
 	14,
 	23,
 	23,
-	1988,
+	1986,
 	169,
 	23,
 	26,
 	14,
 	23,
 	26,
-	2004,
+	2002,
 	31,
-	2004,
+	2002,
 	26,
 	23,
 	23,
@@ -2112,7 +2140,7 @@ static const int32_t s_InvokerIndices[570] =
 	3,
 	26,
 	14,
-	1304,
+	1301,
 	771,
 	23,
 	23,
@@ -2120,7 +2148,7 @@ static const int32_t s_InvokerIndices[570] =
 	23,
 	26,
 	23,
-	1988,
+	1986,
 	23,
 	23,
 	23,
@@ -2128,8 +2156,8 @@ static const int32_t s_InvokerIndices[570] =
 	23,
 	23,
 	26,
-	2004,
-	2004,
+	2002,
+	2002,
 	23,
 	23,
 	23,
@@ -2144,29 +2172,29 @@ static const int32_t s_InvokerIndices[570] =
 	706,
 	706,
 	23,
-	1181,
-	1985,
-	1986,
-	1181,
-	1985,
-	1864,
-	1864,
-	1864,
-	1864,
-	1864,
-	1864,
-	1864,
+	1178,
+	1983,
+	1984,
+	1178,
+	1983,
+	1862,
+	1862,
+	1862,
+	1862,
+	1862,
+	1862,
+	1862,
 	102,
-	2000,
-	2001,
+	1998,
+	1999,
+	105,
+	102,
+	1998,
+	1999,
 	105,
 	102,
 	2000,
 	2001,
-	105,
-	102,
-	2002,
-	2003,
 	385,
 	23,
 	23,
@@ -2200,9 +2228,9 @@ static const int32_t s_InvokerIndices[570] =
 	23,
 	23,
 	23,
-	2004,
+	2002,
 	23,
-	2004,
+	2002,
 	23,
 	23,
 	23,
@@ -2220,7 +2248,7 @@ static const int32_t s_InvokerIndices[570] =
 	23,
 	113,
 	26,
-	2008,
+	2007,
 	26,
 	14,
 	32,
@@ -2274,7 +2302,7 @@ static const int32_t s_InvokerIndices[570] =
 	31,
 	23,
 	26,
-	2004,
+	2002,
 	3,
 	23,
 	31,
@@ -2318,32 +2346,32 @@ static const Il2CppTokenRangePair s_rgctxIndices[2] =
 };
 static const Il2CppRGCTXDefinition s_rgctxValues[20] = 
 {
-	{ (Il2CppRGCTXDataType)1, 19328 },
-	{ (Il2CppRGCTXDataType)3, 16604 },
-	{ (Il2CppRGCTXDataType)2, 19753 },
-	{ (Il2CppRGCTXDataType)3, 16605 },
-	{ (Il2CppRGCTXDataType)2, 19754 },
-	{ (Il2CppRGCTXDataType)3, 16606 },
-	{ (Il2CppRGCTXDataType)3, 16607 },
-	{ (Il2CppRGCTXDataType)3, 16608 },
-	{ (Il2CppRGCTXDataType)3, 16609 },
-	{ (Il2CppRGCTXDataType)3, 16610 },
-	{ (Il2CppRGCTXDataType)2, 19328 },
-	{ (Il2CppRGCTXDataType)3, 16611 },
-	{ (Il2CppRGCTXDataType)3, 16612 },
-	{ (Il2CppRGCTXDataType)3, 16613 },
-	{ (Il2CppRGCTXDataType)3, 16614 },
-	{ (Il2CppRGCTXDataType)2, 19755 },
-	{ (Il2CppRGCTXDataType)3, 16615 },
-	{ (Il2CppRGCTXDataType)2, 19755 },
-	{ (Il2CppRGCTXDataType)3, 16616 },
-	{ (Il2CppRGCTXDataType)2, 19756 },
+	{ (Il2CppRGCTXDataType)1, 19178 },
+	{ (Il2CppRGCTXDataType)3, 16471 },
+	{ (Il2CppRGCTXDataType)2, 19598 },
+	{ (Il2CppRGCTXDataType)3, 16472 },
+	{ (Il2CppRGCTXDataType)2, 19599 },
+	{ (Il2CppRGCTXDataType)3, 16473 },
+	{ (Il2CppRGCTXDataType)3, 16474 },
+	{ (Il2CppRGCTXDataType)3, 16475 },
+	{ (Il2CppRGCTXDataType)3, 16476 },
+	{ (Il2CppRGCTXDataType)3, 16477 },
+	{ (Il2CppRGCTXDataType)2, 19178 },
+	{ (Il2CppRGCTXDataType)3, 16478 },
+	{ (Il2CppRGCTXDataType)3, 16479 },
+	{ (Il2CppRGCTXDataType)3, 16480 },
+	{ (Il2CppRGCTXDataType)3, 16481 },
+	{ (Il2CppRGCTXDataType)2, 19600 },
+	{ (Il2CppRGCTXDataType)3, 16482 },
+	{ (Il2CppRGCTXDataType)2, 19600 },
+	{ (Il2CppRGCTXDataType)3, 16483 },
+	{ (Il2CppRGCTXDataType)2, 19601 },
 };
 extern const Il2CppCodeGenModule g_AssemblyU2DCSharpCodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharpCodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	570,
+	577,
 	s_methodPointers,
 	s_InvokerIndices,
 	11,
