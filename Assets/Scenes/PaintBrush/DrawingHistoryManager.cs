@@ -27,7 +27,7 @@ public class DrawingHistoryManager : MonoBehaviour {
 			position = _position;
 			color = _color;
 			lineWidth = _lineWidth;
-			layerNum = 1;
+			layerNum = -1;
 			primaryMaterialIndex = _primaryMaterialIndex;
 			secondaryMaterialIndex = _secondaryMaterialIndex;
 		}
@@ -95,8 +95,6 @@ public class DrawingHistoryManager : MonoBehaviour {
 
 	public void resetHistory()
 	{
-		for(int i = 1; i <= 4; ++i)
-			setLayerActive(i, false);
 		drawingHistory.Clear();
 	}
 
@@ -151,14 +149,15 @@ public class DrawingHistoryManager : MonoBehaviour {
 		return new Vector3(midPointX, midPointY, midPointZ);
 	}
 
-	public void deleteAllInLayer(int layerNum)
+	public void loadActiveLayers(int layerNum)
 	{
-		GetComponent<PaintController>().deleteAllObjects();
 		if(layer1Active){
+			GetComponent<PaintController>().OnLoadLayerClick(1);
 			loadLayer(1);
 			setLayerActive(1, false);
 		}
 		if(layer2Active){
+			GetComponent<PaintController>().OnLoadLayerClick(2);
 			loadLayer(2);
 			setLayerActive(2, false);
 		}
@@ -170,6 +169,18 @@ public class DrawingHistoryManager : MonoBehaviour {
 			loadLayer(4);
 			setLayerActive(4, false);
 		}
+	}
+
+	public bool isLayerActive(int layerNum)
+	{
+		GetComponent<PaintController>().deleteAllObjects();
+		if(layerNum == 1)
+			return layer1Active;
+		if(layerNum == 2)
+			return layer2Active;
+		if(layerNum == 3)
+			return layer3Active;
+		return layer4Active;
 	}
 
 	public void addDrawingCommand(int index, int objType, Vector3 position, Color color, float lineWidth, Material primaryMaterial, Material secondaryMaterial)
@@ -252,8 +263,12 @@ public class DrawingHistoryManager : MonoBehaviour {
 
 		foreach (DrawingCommand command in drawingHistory)
 		{
-			command.layerNum = layerNum;
-			writer.WriteLine (command.ToString());
+			// Only assign non-active layers.
+			if(command.layerNum < 0 || command.layerNum == layerNum)
+			{
+				command.layerNum = layerNum;
+				writer.WriteLine (command.ToString());
+			}
 		}
 		writer.Close();
 		setLayerActive(layerNum, true);
@@ -287,7 +302,7 @@ public class DrawingHistoryManager : MonoBehaviour {
 			commands.Add(new DrawingCommand(commandString));
 		}
 		StartCoroutine(renderCommands(commands));
-		//setLayerActive(layerNum, true);
+		//setLayerActive(layerNum, false);
 	}
 
 	// Renders a list of commands to the screen

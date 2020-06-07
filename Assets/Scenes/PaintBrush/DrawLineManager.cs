@@ -66,8 +66,8 @@ public class DrawLineManager : MonoBehaviour {
     public void OnColorChoiceClick(Image buttonImage)
     {
         // set line color to match color of the button
-		buttonImage.color = colorPicker.GetColor();
-		setLineColor(buttonImage.color);
+		//buttonImage.color = colorPicker.GetColor();
+		setLineColor(colorPicker.GetColor());
     }
 
     public void OnLineWidthSliderChanged()
@@ -118,6 +118,7 @@ public class DrawLineManager : MonoBehaviour {
 	void Start () {
 
         paintLineColor = new Color();
+		brushTrailMaterial.color = new Color();
         setLineColor(Color.red);
 
         setLineWidth(slider.value);
