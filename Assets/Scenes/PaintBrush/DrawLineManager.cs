@@ -262,8 +262,11 @@ public class DrawLineManager : MonoBehaviour {
 		go.AddComponent<MeshFilter> ();
 		go.AddComponent<MeshRenderer> ();
 
+		int layerNum = GetComponent<PaintController>().GetActiveLayerNum();
+
 		// Keep track of this line
-		currLine = go.AddComponent<GraphicsLineRenderer> ();
+		currLine = go.AddComponent<GraphicsLineRenderer>();
+		currLine.SetLayerNum(layerNum);
 
 		// Configure the color, etc. of the line
 		currLine.SetPrimaryMaterial(new Material(lMat));
@@ -282,7 +285,7 @@ public class DrawLineManager : MonoBehaviour {
 		index++;
 
 		Debug.Log ("Adding History 2");
-        paintBrushSceneObject.GetComponent<DrawingHistoryManager> ().addDrawingCommand (index, 0, firstPoint, currLine.GetColor(), paintLineThickness, lMat, lMat_texture);
+        paintBrushSceneObject.GetComponent<DrawingHistoryManager> ().addDrawingCommand (index, 0, firstPoint, currLine.GetColor(), paintLineThickness, lMat, lMat_texture, layerNum);
 
 		Debug.Log ("Adding History 3");
 		GetComponent<PaintController>().drawingHistoryIndex = index;
@@ -311,7 +314,8 @@ public class DrawLineManager : MonoBehaviour {
 
 		// add to history without incrementing index
 		int index = GetComponent<PaintController> ().drawingHistoryIndex;
-		paintBrushSceneObject.GetComponent<DrawingHistoryManager> ().addDrawingCommand (index, 0, pointToAdd, currLine.GetColor(), paintLineThickness, lMat, lMat_texture);
+		int layerNum = GetComponent<PaintController>().GetActiveLayerNum();
+		paintBrushSceneObject.GetComponent<DrawingHistoryManager> ().addDrawingCommand (index, 0, pointToAdd, currLine.GetColor(), paintLineThickness, lMat, lMat_texture, layerNum);
 
 		// Make sure the trail is off
         if(brushTipObject.activeSelf)
@@ -321,7 +325,7 @@ public class DrawLineManager : MonoBehaviour {
 
     // Allows a line to be redrawn from history
     // Used by DrawingHistoryManager
-	public void addReplayLineSegment(bool toContinue, float lineThickness, Vector3 position, Color color, Material primaryMaterial, Material secondaryMaterial)
+	public void addReplayLineSegment(bool toContinue, float lineThickness, Vector3 position, Color color, Material primaryMaterial, Material secondaryMaterial, int layerNum)
 	{
 		if (toContinue == false) {
 			// Start drawing a new line
@@ -332,6 +336,7 @@ public class DrawLineManager : MonoBehaviour {
 			go.AddComponent<MeshFilter> ();
 			go.AddComponent<MeshRenderer> ();
 			currLine = go.AddComponent<GraphicsLineRenderer> ();
+			currLine.SetLayerNum(layerNum);
 
 			currLine.SetPrimaryMaterial(new Material(primaryMaterial));
 			currLine.SetSecondaryMaterial(new Material(secondaryMaterial));

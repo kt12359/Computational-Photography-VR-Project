@@ -21,17 +21,20 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 
     private GameObject buttonPanel;
 	private bool snapToSurfaceEnabled;
-	private int currentLayer;
+	private int activeLayerNum = 1;
 
     [SerializeField] GameObject brushTipObject;
 	[SerializeField] GameObject brushTipGraphic;
 	[SerializeField] GameObject snapToSurfaceBrushTipObject;
     [SerializeField] GameObject colorPalette;
     [SerializeField] GameObject mainButtonPanel;
-    [SerializeField] GameObject saveLayerPanel;
-    [SerializeField] GameObject loadLayerPanel;
 	[SerializeField] GameObject moveLayerPanel;
     [SerializeField] GameObject modePanel;
+
+
+    [SerializeField] GameObject setActiveLayerPanel;
+    [SerializeField] GameObject showHideLayerPanel;
+    [SerializeField] GameObject saveLoadLayerPanel;
 
     public enum DrawingMode
     {
@@ -82,8 +85,6 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
         startPanel.SetActive (true);
         mainButtonPanel.SetActive(true);
 
-        saveLayerPanel.SetActive(false);
-        loadLayerPanel.SetActive(false);
         modePanel.SetActive(false);
 		paintPanel.SetActive (false);
 		colorPalette.SetActive(false);
@@ -91,12 +92,21 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 		snapToSurfaceBrushTipObject.SetActive(false);
 		snapToSurfaceEnabled = false;
 
+		setActiveLayerPanel.SetActive(false);
+        showHideLayerPanel.SetActive(false);
+        saveLoadLayerPanel.SetActive(false);
+
 		// Make sure this child is active for when its parent is active
 		buttonPanel = paintPanel.transform.Find("ButtonPanel").gameObject;
 		buttonPanel.SetActive(true);
-		currentLayer = 1;
 
 		currentDrawingMode = DrawingMode.normal;
+    }
+
+
+    public int GetActiveLayerNum()
+    {
+    	return activeLayerNum;
     }
 
 
@@ -139,28 +149,54 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
         textLabel.text = "Press and hold the screen to paint";
 	}
 
-	public void TogglePanelMoveLayer(bool moveLayerPanelActive)
+	public void TogglePanelSetActiveLayer(bool panelIsActive)
 	{
-		moveLayerPanel.SetActive(moveLayerPanelActive);
-		mainButtonPanel.SetActive(!moveLayerPanelActive);
+		setActiveLayerPanel.SetActive(panelIsActive);
+		mainButtonPanel.SetActive(!panelIsActive);
 	}
 
-	public void TogglePanelSaveLayer(bool saveLayerPanelActive)
+	public void TogglePanelShowHideLayer(bool panelIsActive)
 	{
-		saveLayerPanel.SetActive(saveLayerPanelActive);
-        mainButtonPanel.SetActive(!saveLayerPanelActive);
+		showHideLayerPanel.SetActive(panelIsActive);
+		mainButtonPanel.SetActive(!panelIsActive);
 	}
 
-	public void TogglePanelLoadLayer(bool loadLayerPanelActive)
+	public void TogglePanelSaveLoadLayer(bool panelIsActive)
 	{
-		loadLayerPanel.SetActive(loadLayerPanelActive);
-        mainButtonPanel.SetActive(!loadLayerPanelActive);
+		saveLoadLayerPanel.SetActive(panelIsActive);
+		mainButtonPanel.SetActive(!panelIsActive);
 	}
 
-	public void TogglePanelMode(bool modePanelActive)
+	public void TogglePanelMoveLayer(bool panelIsActive)
 	{
-		modePanel.SetActive(modePanelActive);
-        mainButtonPanel.SetActive(!modePanelActive);
+		moveLayerPanel.SetActive(panelIsActive);
+		mainButtonPanel.SetActive(!panelIsActive);
+	}
+
+	public void TogglePanelMode(bool panelIsActive)
+	{
+		modePanel.SetActive(panelIsActive);
+        mainButtonPanel.SetActive(!panelIsActive);
+	}
+
+
+	// Sets a layer as the active layer
+	public void OnSetActiveLayerClick(int layerNum) {
+		activeLayerNum = layerNum;
+	}
+
+
+	// Shows a particular layer
+	public void OnShowLayerClick(int layerNum) {
+		Debug.Log("OnShowLayerClick not yet implemented");
+		ShowLayer(layerNum);
+	}
+
+
+	// Hides a particular layer
+	public void OnHideLayerClick(int layerNum) {
+		Debug.Log("OnHideLayerClick not yet implemented");
+		HideLayer(layerNum);
 	}
 
 
@@ -173,14 +209,16 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 		}
 
 		textLabel.text = "Moving Layer " + layerNum;
+
+		// Clear from the screen
+		Clearlayer(layerNum);
+
+		// Get the new position
 		Vector3 pos = GetComponent<DrawLineManager>().getNewPositionForLayer(0.3f);
+
+		// Let the history move and re-redner it
 		GetComponent<DrawingHistoryManager>().moveLayer(layerNum, pos);
-		GetComponent<DrawingHistoryManager>().saveLayer(layerNum);
-		deleteAllObjects ();
-		GetComponent<DrawingHistoryManager>().resetHistory ();
-		GetComponent<DrawingHistoryManager>().loadActiveLayers(layerNum);
 		textLabel.text = "Layer " + layerNum + " moved!";
-		TogglePanelMoveLayer(false);
 	}
 
 
@@ -195,7 +233,6 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 		textLabel.text = "Saving Layer " + layerNum;
 		GetComponent<DrawingHistoryManager>().saveLayer(layerNum);
 		textLabel.text = "Layer " + layerNum + " saved!";
-		TogglePanelSaveLayer(false);
 	}
 
 
@@ -210,7 +247,6 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 		textLabel.text = "Loading Layer " + layerNum;
 		GetComponent<DrawingHistoryManager>().loadLayer(layerNum);
 		textLabel.text = "Layer " + layerNum + " loaded!";
-		TogglePanelLoadLayer(false);
 	}
 
 
@@ -312,6 +348,42 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 				Debug.Log ("Point Cloud Off");
 			}
 			GetComponent<FeatureHighlightController>().ToggleHighlight(false);
+		}
+	}
+
+
+	// Shows a layer
+	public void ShowLayer(int layerNum)
+	{
+		GraphicsLineRenderer[] lines = drawingRootSceneObject.transform.GetComponentsInChildren<GraphicsLineRenderer>(true);
+		for (int i = 0; i < lines.Length; i++) {
+			if (lines[i].GetLayerNum() == layerNum) {
+				lines[i].gameObject.SetActive(true);
+			}
+		}
+	}
+
+
+	// Hides a layer
+	public void HideLayer(int layerNum)
+	{
+		GraphicsLineRenderer[] lines = drawingRootSceneObject.transform.GetComponentsInChildren<GraphicsLineRenderer>(false);
+		for (int i = 0; i < lines.Length; i++) {
+			if (lines[i].GetLayerNum() == layerNum) {
+				lines[i].gameObject.SetActive(false);
+			}
+		}
+	}
+
+
+	// Removes a layer from the screen
+	private void Clearlayer(int layerNum)
+	{
+		GraphicsLineRenderer[] lines = drawingRootSceneObject.transform.GetComponentsInChildren<GraphicsLineRenderer>(false);
+		for (int i = 0; i < lines.Length; i++) {
+			if (lines[i].GetLayerNum() == layerNum) {
+				Destroy(lines[i].gameObject);
+			}
 		}
 	}
 

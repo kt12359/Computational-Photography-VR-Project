@@ -27,16 +27,16 @@ public class DrawingHistoryManager : MonoBehaviour {
 		public int secondaryMaterialIndex;
 
 		// A drawing command from individual values
-		public DrawingCommand(int _index, int _objType, Vector3 _position, Color _color, float _lineWidth, int _primaryMaterialIndex, int _secondaryMaterialIndex)
+		public DrawingCommand(int _index, int _objType, Vector3 _position, Color _color, float _lineWidth, int _primaryMaterialIndex, int _secondaryMaterialIndex, int _layerNum)
 		{
 			index = _index;
 			objType = _objType;
 			position = _position;
 			color = _color;
 			lineWidth = _lineWidth;
-			layerNum = -1;
 			primaryMaterialIndex = _primaryMaterialIndex;
 			secondaryMaterialIndex = _secondaryMaterialIndex;
+			layerNum = _layerNum;
 		}
 
 		// A drawing command from a single string representation
@@ -50,9 +50,9 @@ public class DrawingHistoryManager : MonoBehaviour {
 			Debug.Log("Loaded position: " + position);
 			color = new Color(Convert.ToSingle(values[5]), Convert.ToSingle(values[6]), Convert.ToSingle(values[7]));
 			lineWidth = Convert.ToSingle (values [8]);
-			layerNum = Int32.Parse(values[9]);
-			primaryMaterialIndex = Int32.Parse(values[10]);
-			secondaryMaterialIndex = Int32.Parse(values[11]);
+			primaryMaterialIndex = Int32.Parse(values[9]);
+			secondaryMaterialIndex = Int32.Parse(values[10]);
+			layerNum = Int32.Parse(values[11]);
 		}
 
 		// Comma-delimited string representation
@@ -68,9 +68,9 @@ public class DrawingHistoryManager : MonoBehaviour {
 				color.g.ToString() + "," + 
 				color.b.ToString() + "," + 
 				lineWidth.ToString() + "," +
-				layerNum.ToString() + "," +
 				primaryMaterialIndex.ToString() + "," +
-				secondaryMaterialIndex.ToString();
+				secondaryMaterialIndex.ToString() + "," +
+				layerNum.ToString();
 			return commandString;
 		}
 	} // class DrawingCommand
@@ -80,10 +80,6 @@ public class DrawingHistoryManager : MonoBehaviour {
 
 	private List<Material> materialIndex;
 
-	private bool layer1Active;
-	private bool layer2Active;
-	private bool layer3Active;
-	private bool layer4Active;
 	private float [] origin;
 
 
@@ -92,10 +88,6 @@ public class DrawingHistoryManager : MonoBehaviour {
 		drawingHistory = new List<DrawingCommand>();
 		materialIndex = new List<Material>();
 		origin = new float[6];
-		layer1Active = false;
-		layer2Active = false;
-		layer3Active = false;
-		layer4Active = false;
 	}
 
 
@@ -168,46 +160,8 @@ public class DrawingHistoryManager : MonoBehaviour {
 	}
 
 
-	// Load all layers that are marked as active
-	public void loadActiveLayers(int layerNum)
-	{
-		if(layer1Active){
-			GetComponent<PaintController>().OnLoadLayerClick(1);
-			loadLayer(1);
-			setLayerActive(1, false);
-		}
-		if(layer2Active){
-			GetComponent<PaintController>().OnLoadLayerClick(2);
-			loadLayer(2);
-			setLayerActive(2, false);
-		}
-		if(layer3Active){
-			loadLayer(3);
-			setLayerActive(3, false);
-		}
-		if(layer4Active){
-			loadLayer(4);
-			setLayerActive(4, false);
-		}
-	}
-
-
-	// Is this layer active or not?
-	public bool isLayerActive(int layerNum)
-	{
-		GetComponent<PaintController>().deleteAllObjects();
-		if(layerNum == 1)
-			return layer1Active;
-		if(layerNum == 2)
-			return layer2Active;
-		if(layerNum == 3)
-			return layer3Active;
-		return layer4Active;
-	}
-
-
 	// Add a command to the drawing history
-	public void addDrawingCommand(int index, int objType, Vector3 position, Color color, float lineWidth, Material primaryMaterial, Material secondaryMaterial)
+	public void addDrawingCommand(int index, int objType, Vector3 position, Color color, float lineWidth, Material primaryMaterial, Material secondaryMaterial, int layerNum)
 	{
 		int primaryMaterialIndex = getIndexFromMaterial(primaryMaterial);
 		int secondaryMaterialIndex;
@@ -215,8 +169,22 @@ public class DrawingHistoryManager : MonoBehaviour {
 			secondaryMaterialIndex = getIndexFromMaterial(secondaryMaterial);
 		else
 			secondaryMaterialIndex = getIndexFromMaterial(primaryMaterial);
-		DrawingCommand newCommand = new DrawingCommand (index, objType, position, color, lineWidth, primaryMaterialIndex, secondaryMaterialIndex);
+		DrawingCommand newCommand = new DrawingCommand (index, objType, position, color, lineWidth, primaryMaterialIndex, secondaryMaterialIndex, layerNum);
 		drawingHistory.Add (newCommand);
+	}
+
+
+	// Removes a layer from the history
+	// Does not remove the saved layer
+	public void ClearLayerFromHistory(int layerNum)
+	{
+		List<DrawingCommand> newHistory = new List<DrawingCommand>();
+		foreach(DrawingCommand command in drawingHistory){
+			if (command.layerNum != layerNum) {
+				newHistory.Add(command);
+			}
+		}
+		drawingHistory = newHistory;
 	}
 
 
@@ -227,6 +195,9 @@ public class DrawingHistoryManager : MonoBehaviour {
 		Debug.Log("Old origin: " + oldOrigin);
 		Debug.Log("Moving layer " + layerNum + " to position " + newPos);
 
+		List<DrawingCommand> layerCommands = new List<DrawingCommand>();
+
+		// Update all of the positions, saving a copy of each command
 		foreach(DrawingCommand command in drawingHistory)
 		{
 			Debug.Log("Command position: " + command.position);
@@ -236,10 +207,18 @@ public class DrawingHistoryManager : MonoBehaviour {
 				Debug.Log("Start position: " + command.position);
 				command.position = startPosition - oldOrigin + newPos;
 				Debug.Log("End position: " + command.position);
-
+				layerCommands.Add(command);
 			}
 		}
+
+		// Remove the layer from the current history
+		ClearLayerFromHistory(layerNum);
+
+		// Re-render with the new positions
+		StartCoroutine(renderCommands(layerCommands, layerNum));
 	}
+
+	
 
 
 	// Save a layer to a file called layer<layerNum>.txt
@@ -253,30 +232,14 @@ public class DrawingHistoryManager : MonoBehaviour {
 
 		foreach (DrawingCommand command in drawingHistory)
 		{
-			// Only assign non-active layers.
-			if(command.layerNum < 0 || command.layerNum == layerNum)
+			if (command.layerNum == layerNum)
 			{
-				command.layerNum = layerNum;
 				writer.WriteLine (command.ToString());
 			}
 		}
 		writer.Close();
-		setLayerActive(layerNum, true);
 	}
 
-
-	// Toggle a layer as active/inactive
-	public void setLayerActive(int layerNum, bool active)
-	{
-		if(layerNum == 1)
-			layer1Active = active;
-		else if(layerNum == 2)
-			layer2Active = active;
-		else if(layerNum == 3)
-			layer3Active = active;
-		else
-			layer4Active = active;
-	}
 
 
 	// Loads a saved layer from layer<layerNum>.txt and renders it to the screen
@@ -294,13 +257,13 @@ public class DrawingHistoryManager : MonoBehaviour {
 			if (commandString == null) break;
 			commands.Add(new DrawingCommand(commandString));
 		}
-		StartCoroutine(renderCommands(commands));
+		StartCoroutine(renderCommands(commands, layerNum));
 	}
 
 
 	// Renders a list of commands to the screen
 	// One command is rendered per frame
-	public IEnumerator renderCommands(List<DrawingCommand> commands)
+	public IEnumerator renderCommands(List<DrawingCommand> commands, int layerNum)
 	{
 		int currentIndex = -1;
 
@@ -314,7 +277,7 @@ public class DrawingHistoryManager : MonoBehaviour {
 			// Render the command
 			if (command.index == currentIndex) {
 				// Continue drawing the same object/line
-				paintBrushSceneObject.GetComponent<DrawLineManager>().addReplayLineSegment(true, command.lineWidth, command.position, command.color, primaryMaterial, secondaryMaterial);
+				paintBrushSceneObject.GetComponent<DrawLineManager>().addReplayLineSegment(true, command.lineWidth, command.position, command.color, primaryMaterial, secondaryMaterial, layerNum);
 				currentIndex = command.index;
 
 			} else if (command.index > currentIndex) {
@@ -322,7 +285,7 @@ public class DrawingHistoryManager : MonoBehaviour {
 				if (command.objType == 0)
 				{
 					// It's a line
-					paintBrushSceneObject.GetComponent<DrawLineManager>().addReplayLineSegment(false, command.lineWidth, command.position, command.color, primaryMaterial, secondaryMaterial);
+					paintBrushSceneObject.GetComponent<DrawLineManager>().addReplayLineSegment(false, command.lineWidth, command.position, command.color, primaryMaterial, secondaryMaterial, layerNum);
 					currentIndex = command.index;
 				}
 				else

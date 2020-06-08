@@ -20,11 +20,27 @@ public class GraphicsLineRenderer : MonoBehaviour {
 	private float lineSize = 0.03f;
 	private bool firstQuad = true;
 
+	private int myLayerNum = 1;
+
 
 	// Initialization
 	void Start ()
 	{
 		ml = GetComponent<MeshFilter>().mesh;
+	}
+
+
+	// Set the layer for this line
+	public void SetLayerNum(int layerNum)
+	{
+		myLayerNum = layerNum;
+	}
+
+
+	// Get the layer for this line
+	public int GetLayerNum()
+	{
+		return myLayerNum;
 	}
 
 
