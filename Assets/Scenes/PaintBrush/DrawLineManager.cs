@@ -8,6 +8,11 @@ using UnityEngine.UI;
 using System.Runtime.InteropServices;
 
 
+/*
+	This class handles the high-level of figuring out which points
+	to draw. It uses GraphicsLineRenderer to actually render the
+	lines on the screen.
+*/
 public class DrawLineManager : MonoBehaviour {
 
 	private float rayDist = 0.3f;
@@ -22,9 +27,6 @@ public class DrawLineManager : MonoBehaviour {
 	// To keep track of feature point drawing mode
 	private bool doKeepDrawingFeature = false;
 
-	private int numClicks = 0;
-	private int numReplayClicks = 0;
-
 	private Vector3 prevPaintPoint;
     private float paintLineThickness;
 	private Color paintLineColor;
@@ -32,7 +34,6 @@ public class DrawLineManager : MonoBehaviour {
     [SerializeField] Material brushTrailMaterial;
 
 	public Slider slider;
-
 
 	public EventSystem eventSystemManager;
 
@@ -45,12 +46,14 @@ public class DrawLineManager : MonoBehaviour {
 	public FlexibleColorPicker colorPicker;
 
 
+	// Set the width of the line to be drawn
     public void setLineWidth(float thickness)
 	{
 		paintLineThickness = thickness;
 	}
 
 
+	// Set the color of the line to be drawn
 	public void setLineColor(Color lineColor)
 	{
         // set the line color
@@ -63,10 +66,10 @@ public class DrawLineManager : MonoBehaviour {
 
 	}
 
+
+	// Set line color to match color of the button
     public void OnColorChoiceClick(Image buttonImage)
     {
-        // set line color to match color of the button
-		//buttonImage.color = colorPicker.GetColor();
 		setLineColor(colorPicker.GetColor());
     }
 
@@ -95,6 +98,8 @@ public class DrawLineManager : MonoBehaviour {
 		lMat_texture = selectedTexture;
 	}
 
+
+	// Returns the position of the user's center of view with respect to some offset
 	public Vector3 getNewPositionForLayer(float offset)
 	{
 		Vector3 camPosition = Camera.main.transform.position;
@@ -102,6 +107,8 @@ public class DrawLineManager : MonoBehaviour {
 		return camPosition + camAim * offset;
 	}
 
+
+	// Similar to getNewPositionForLayer, but gets the point along the line
     public Vector3 getRayEndPoint(float dist)
 	{
 		Ray ray = Camera.main.ViewportPointToRay (new Vector3 (0.5f, 0.5f, 0.5f));
@@ -109,24 +116,25 @@ public class DrawLineManager : MonoBehaviour {
 		return endPoint;
 	}
 
+
+	// Get the position of the snap to surface reticle
 	public Vector3 getRayEndPointSurface(float dist)
 	{
 		return snapToSurfaceBrushTipObject.transform.position;
 	}
 
-	// Use this for initialization
-	void Start () {
 
+	// Initialization
+	void Start () {
         paintLineColor = new Color();
 		brushTrailMaterial.color = new Color();
         setLineColor(Color.red);
-
         setLineWidth(slider.value);
-
     }
 
 
-    // Update is called once per frame
+    // This is called once per frame
+    // Handles drawing in the different modes
     void Update() {
     	PaintController.DrawingMode currentDrawingMode = GetComponent<PaintController>().currentDrawingMode;
 
@@ -145,22 +153,10 @@ public class DrawLineManager : MonoBehaviour {
 		}
     }
 	
-	// Update is called once per frame
-	void _UpdateNormal () {
-		draw();
-	}
 
-	public void draw() 
+	// Handles drawing for the normal or snap to surface modes
+	void _UpdateNormal()
 	{
-		Vector3 endPoint;
-		if(snapToSurfaceBrushTipObject.activeSelf)
-			endPoint = getRayEndPointSurface(rayDist);
-		else
-			endPoint = getRayEndPoint(rayDist);
-		paintLineColor = colorPicker.GetColor();
-		//renderSphereAsBrushTip (endPoint);
-
-
 		bool firstTouchCondition;
 		bool whileTouchedCondition;
 
@@ -170,32 +166,35 @@ public class DrawLineManager : MonoBehaviour {
         firstTouchCondition = (Input.touchCount == 1 && Input.GetTouch(0).phase == TouchPhase.Began && isPanelSelected);
         whileTouchedCondition = (Input.touchCount == 1 && isPanelSelected);
 
-        if (firstTouchCondition == true) {
-			startNewLine(endPoint);
-		} else if (whileTouchedCondition == true) {
-			addPointToLine(endPoint);
-        }
-        else
-        {
+        /*
+			Return immediately if there will be no updates
+        */
+        if (firstTouchCondition == false && whileTouchedCondition == false) {
         	if(brushTipObject.activeSelf)
             	brushTipObject.GetComponent<TrailRenderer>().enabled = true;
+        	return;
+        }
+
+
+		Vector3 endPoint;
+		if(snapToSurfaceBrushTipObject.activeSelf) {
+			endPoint = getRayEndPointSurface(rayDist);
+		}
+		else {
+			endPoint = getRayEndPoint(rayDist);
+		}
+		paintLineColor = colorPicker.GetColor();
+
+        if (firstTouchCondition == true) {
+			startNewLine(endPoint);
+		}
+		else if (whileTouchedCondition == true) {
+			addPointToLine(endPoint);
         }
     } // draw()
 
 
-    // TODO is this being used?
-	public void drawOnSurface()
-	{
-		Vector3 endPoint = getRayEndPointSurface(0.0f);
-		draw();
-	}
-
-	private float DistanceBetweenRayAndPoint(Ray ray, Vector3 point)
-	{
-		return Vector3.Cross(ray.direction, point - ray.origin).magnitude;
-	}
-
-	// Update for DrawingMode.feature
+	// Update for feature point drawing mode
     private void _UpdateFeature()
     {
     	// Check this first for performance
@@ -246,6 +245,7 @@ public class DrawLineManager : MonoBehaviour {
         }
     } // _UpdateFeature()
 
+
     // Starts drawing a new line with the given point
     private void startNewLine(Vector3 firstPoint) {
     	Debug.Log ("startNewLine()");
@@ -262,8 +262,11 @@ public class DrawLineManager : MonoBehaviour {
 		go.AddComponent<MeshFilter> ();
 		go.AddComponent<MeshRenderer> ();
 
+		int layerNum = GetComponent<PaintController>().GetActiveLayerNum();
+
 		// Keep track of this line
-		currLine = go.AddComponent<GraphicsLineRenderer> ();
+		currLine = go.AddComponent<GraphicsLineRenderer>();
+		currLine.SetLayerNum(layerNum);
 
 		// Configure the color, etc. of the line
 		currLine.SetPrimaryMaterial(new Material(lMat));
@@ -272,8 +275,6 @@ public class DrawLineManager : MonoBehaviour {
 		currLine.SetWidth (paintLineThickness);
 		currLine.SetColor(colorPicker.GetColor());
 
-		// TODO is this being used?
-		numClicks = 0;
 
 		// Keep track of the last point on the line
 		prevPaintPoint = firstPoint;
@@ -284,7 +285,7 @@ public class DrawLineManager : MonoBehaviour {
 		index++;
 
 		Debug.Log ("Adding History 2");
-        paintBrushSceneObject.GetComponent<DrawingHistoryManager> ().addDrawingCommand (index, 0, firstPoint, currLine.GetColor(), paintLineThickness, lMat, lMat_texture);
+        paintBrushSceneObject.GetComponent<DrawingHistoryManager> ().addDrawingCommand (index, 0, firstPoint, currLine.GetColor(), paintLineThickness, lMat, lMat_texture, layerNum);
 
 		Debug.Log ("Adding History 3");
 		GetComponent<PaintController>().drawingHistoryIndex = index;
@@ -309,12 +310,12 @@ public class DrawLineManager : MonoBehaviour {
     	}
 
 		currLine.AddPoint (pointToAdd);
-		numClicks++;
 		prevPaintPoint = pointToAdd;
 
 		// add to history without incrementing index
 		int index = GetComponent<PaintController> ().drawingHistoryIndex;
-		paintBrushSceneObject.GetComponent<DrawingHistoryManager> ().addDrawingCommand (index, 0, pointToAdd, currLine.GetColor(), paintLineThickness, lMat, lMat_texture);
+		int layerNum = GetComponent<PaintController>().GetActiveLayerNum();
+		paintBrushSceneObject.GetComponent<DrawingHistoryManager> ().addDrawingCommand (index, 0, pointToAdd, currLine.GetColor(), paintLineThickness, lMat, lMat_texture, layerNum);
 
 		// Make sure the trail is off
         if(brushTipObject.activeSelf)
@@ -322,11 +323,12 @@ public class DrawLineManager : MonoBehaviour {
     }
 
 
-	public void addReplayLineSegment(bool toContinue, float lineThickness, Vector3 position, Color color, Material primaryMaterial, Material secondaryMaterial)
+    // Allows a line to be redrawn from history
+    // Used by DrawingHistoryManager
+	public void addReplayLineSegment(bool toContinue, float lineThickness, Vector3 position, Color color, Material primaryMaterial, Material secondaryMaterial, int layerNum)
 	{
 		if (toContinue == false) {
-
-			// start drawing line
+			// Start drawing a new line
 			GameObject go = new GameObject ();
 			go.transform.position = position;
 			go.transform.parent = drawingRootSceneObject.transform;
@@ -334,22 +336,16 @@ public class DrawLineManager : MonoBehaviour {
 			go.AddComponent<MeshFilter> ();
 			go.AddComponent<MeshRenderer> ();
 			currLine = go.AddComponent<GraphicsLineRenderer> ();
+			currLine.SetLayerNum(layerNum);
 
 			currLine.SetPrimaryMaterial(new Material(primaryMaterial));
 			currLine.SetSecondaryMaterial(new Material(secondaryMaterial));
 			currLine.SetWidth (lineThickness);
 			currLine.SetColor(color);
-			numReplayClicks = 0;
-
 
 		} else {
-
-			// continue line
+			// Continue drawing on the same line
 			currLine.AddPoint (position);
-			numReplayClicks++;
-
 		}
-
 	}
-
 }

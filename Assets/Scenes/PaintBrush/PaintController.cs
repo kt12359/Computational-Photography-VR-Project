@@ -2,9 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
 using System.Runtime.InteropServices;
 
+
+/*
+	This class handles mostly all of the buttons and controls
+	for the application, including toggling between drawing modes,
+	changing colors and brush types, etc.
+*/
 public class PaintController : MonoBehaviour, PlacenoteListener {
 
 	public GameObject drawingRootSceneObject;
@@ -16,17 +21,20 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 
     private GameObject buttonPanel;
 	private bool snapToSurfaceEnabled;
-	private int currentLayer;
+	private int activeLayerNum = 1;
 
     [SerializeField] GameObject brushTipObject;
 	[SerializeField] GameObject brushTipGraphic;
 	[SerializeField] GameObject snapToSurfaceBrushTipObject;
     [SerializeField] GameObject colorPalette;
     [SerializeField] GameObject mainButtonPanel;
-    [SerializeField] GameObject saveLayerPanel;
-    [SerializeField] GameObject loadLayerPanel;
 	[SerializeField] GameObject moveLayerPanel;
     [SerializeField] GameObject modePanel;
+
+
+    [SerializeField] GameObject setActiveLayerPanel;
+    [SerializeField] GameObject showHideLayerPanel;
+    [SerializeField] GameObject saveLoadLayerPanel;
 
     public enum DrawingMode
     {
@@ -42,7 +50,8 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
     public int drawingHistoryIndex = 0;
     public DrawingMode currentDrawingMode;
 
-	// Use this for initialization
+
+	// Initialization
 	void Start () {
         LibPlacenote.Instance.RegisterListener (this);
 
@@ -76,8 +85,6 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
         startPanel.SetActive (true);
         mainButtonPanel.SetActive(true);
 
-        saveLayerPanel.SetActive(false);
-        loadLayerPanel.SetActive(false);
         modePanel.SetActive(false);
 		paintPanel.SetActive (false);
 		colorPalette.SetActive(false);
@@ -85,14 +92,25 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 		snapToSurfaceBrushTipObject.SetActive(false);
 		snapToSurfaceEnabled = false;
 
+		setActiveLayerPanel.SetActive(false);
+        showHideLayerPanel.SetActive(false);
+        saveLoadLayerPanel.SetActive(false);
+
 		// Make sure this child is active for when its parent is active
 		buttonPanel = paintPanel.transform.Find("ButtonPanel").gameObject;
 		buttonPanel.SetActive(true);
-		currentLayer = 1;
 
 		currentDrawingMode = DrawingMode.normal;
     }
 
+
+    public int GetActiveLayerNum()
+    {
+    	return activeLayerNum;
+    }
+
+
+    // Toggle the controls for color palette, brush types, etc.
     public void OnToggleColorPaletteClick()
     {
         if (colorPalette.activeInHierarchy)
@@ -106,14 +124,19 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
     }
 
 
-    // Update is called once per frame
-    void Update () {
-    
+    // Called every frame
+    // We have no need for this here
+    void Update () {}		
 
-    }		
 
+    // Start the drawing session
 	public void onStartPaintingClick ()
 	{
+		if (!LibPlacenote.Instance.Initialized()) {
+			textLabel.text = "Please wait for the SDK to be initialized...";
+			return;
+		}
+
 		startPanel.SetActive (false);
 		paintPanel.SetActive (true);
 
@@ -126,30 +149,58 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
         textLabel.text = "Press and hold the screen to paint";
 	}
 
-	public void TogglePanelMoveLayer(bool moveLayerPanelActive)
+	public void TogglePanelSetActiveLayer(bool panelIsActive)
 	{
-		moveLayerPanel.SetActive(moveLayerPanelActive);
-		mainButtonPanel.SetActive(!moveLayerPanelActive);
+		setActiveLayerPanel.SetActive(panelIsActive);
+		mainButtonPanel.SetActive(!panelIsActive);
 	}
 
-	public void TogglePanelSaveLayer(bool saveLayerPanelActive)
+	public void TogglePanelShowHideLayer(bool panelIsActive)
 	{
-		saveLayerPanel.SetActive(saveLayerPanelActive);
-        mainButtonPanel.SetActive(!saveLayerPanelActive);
+		showHideLayerPanel.SetActive(panelIsActive);
+		mainButtonPanel.SetActive(!panelIsActive);
 	}
 
-	public void TogglePanelLoadLayer(bool loadLayerPanelActive)
+	public void TogglePanelSaveLoadLayer(bool panelIsActive)
 	{
-		loadLayerPanel.SetActive(loadLayerPanelActive);
-        mainButtonPanel.SetActive(!loadLayerPanelActive);
+		saveLoadLayerPanel.SetActive(panelIsActive);
+		mainButtonPanel.SetActive(!panelIsActive);
 	}
 
-	public void TogglePanelMode(bool modePanelActive)
+	public void TogglePanelMoveLayer(bool panelIsActive)
 	{
-		modePanel.SetActive(modePanelActive);
-        mainButtonPanel.SetActive(!modePanelActive);
+		moveLayerPanel.SetActive(panelIsActive);
+		mainButtonPanel.SetActive(!panelIsActive);
 	}
 
+	public void TogglePanelMode(bool panelIsActive)
+	{
+		modePanel.SetActive(panelIsActive);
+        mainButtonPanel.SetActive(!panelIsActive);
+	}
+
+
+	// Sets a layer as the active layer
+	public void OnSetActiveLayerClick(int layerNum) {
+		activeLayerNum = layerNum;
+	}
+
+
+	// Shows a particular layer
+	public void OnShowLayerClick(int layerNum) {
+		Debug.Log("OnShowLayerClick not yet implemented");
+		ShowLayer(layerNum);
+	}
+
+
+	// Hides a particular layer
+	public void OnHideLayerClick(int layerNum) {
+		Debug.Log("OnHideLayerClick not yet implemented");
+		HideLayer(layerNum);
+	}
+
+
+	// Handle moving a layer
 	public void OnMoveLayerClick(int layerNum)
 	{
 		if (!LibPlacenote.Instance.Initialized()) {
@@ -158,17 +209,20 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 		}
 
 		textLabel.text = "Moving Layer " + layerNum;
+
+		// Clear from the screen
+		Clearlayer(layerNum);
+
+		// Get the new position
 		Vector3 pos = GetComponent<DrawLineManager>().getNewPositionForLayer(0.3f);
+
+		// Let the history move and re-redner it
 		GetComponent<DrawingHistoryManager>().moveLayer(layerNum, pos);
-		GetComponent<DrawingHistoryManager>().saveLayer(layerNum);
-		deleteAllObjects ();
-		GetComponent<DrawingHistoryManager>().resetHistory ();
-		GetComponent<DrawingHistoryManager>().loadActiveLayers(layerNum);
 		textLabel.text = "Layer " + layerNum + " moved!";
-		TogglePanelMoveLayer(false);
 	}
 
 
+	// Save this drawing as a layer
 	public void OnSaveLayerClick (int layerNum)
 	{
 		if (!LibPlacenote.Instance.Initialized()) {
@@ -179,9 +233,10 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 		textLabel.text = "Saving Layer " + layerNum;
 		GetComponent<DrawingHistoryManager>().saveLayer(layerNum);
 		textLabel.text = "Layer " + layerNum + " saved!";
-		TogglePanelSaveLayer(false);
 	}
 
+
+	// Load a saved drawing layer
 	public void OnLoadLayerClick (int layerNum)
 	{
 		if (!LibPlacenote.Instance.Initialized()) {
@@ -192,9 +247,10 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 		textLabel.text = "Loading Layer " + layerNum;
 		GetComponent<DrawingHistoryManager>().loadLayer(layerNum);
 		textLabel.text = "Layer " + layerNum + " loaded!";
-		TogglePanelLoadLayer(false);
 	}
 
+
+	// Handles changing the drawing mode
 	public void OnModeClick(string mode)
 	{
 		// Handle turning off the current mode
@@ -229,6 +285,8 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 		TogglePanelMode(false);
 	}
 
+
+	// Toggle the normal drawing mode
 	private void ToggleModeNormal(bool modeNormalOn) {
 		if (modeNormalOn) {
 			// Turn on
@@ -240,6 +298,8 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 		}
 	}
 
+
+	// Toggle the Snap to Surface drawing mode
 	// When user clicks snap to surface button, activate snap to surface panel
 	// and snap to surface brush tip object. On return to main click, deactivate.
 	private void ToggleModeSurface(bool modeSurfaceOn) {
@@ -266,6 +326,8 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 		}
 	}
 
+
+	// Toggle the Feature Point drawing mode
 	private void ToggleModeFeature(bool modeFeatureOn) {
 		if (modeFeatureOn) {
 			// Turn on
@@ -290,16 +352,43 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 	}
 
 
-    public void OnExitLoadedPaintingClick()
-    {
-        mLocalizationThumbnailContainer.gameObject.SetActive(false);
+	// Shows a layer
+	public void ShowLayer(int layerNum)
+	{
+		GraphicsLineRenderer[] lines = drawingRootSceneObject.transform.GetComponentsInChildren<GraphicsLineRenderer>(true);
+		for (int i = 0; i < lines.Length; i++) {
+			if (lines[i].GetLayerNum() == layerNum) {
+				lines[i].gameObject.SetActive(true);
+			}
+		}
+	}
 
-        LibPlacenote.Instance.StopSession();
-        FeaturesVisualizer.ClearPointcloud();
 
-        onClearAllClick();
-    }
+	// Hides a layer
+	public void HideLayer(int layerNum)
+	{
+		GraphicsLineRenderer[] lines = drawingRootSceneObject.transform.GetComponentsInChildren<GraphicsLineRenderer>(false);
+		for (int i = 0; i < lines.Length; i++) {
+			if (lines[i].GetLayerNum() == layerNum) {
+				lines[i].gameObject.SetActive(false);
+			}
+		}
+	}
 
+
+	// Removes a layer from the screen
+	private void Clearlayer(int layerNum)
+	{
+		GraphicsLineRenderer[] lines = drawingRootSceneObject.transform.GetComponentsInChildren<GraphicsLineRenderer>(false);
+		for (int i = 0; i < lines.Length; i++) {
+			if (lines[i].GetLayerNum() == layerNum) {
+				Destroy(lines[i].gameObject);
+			}
+		}
+	}
+
+
+	// Deletes all parts of the drawing
 	public void deleteAllObjects()
 	{
 		int numChildren = drawingRootSceneObject.transform.childCount;
@@ -316,6 +405,7 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 	}
 
 
+	// Clear the drawing and history of it
 	public void onClearAllClick()
 	{
 		deleteAllObjects ();
@@ -323,15 +413,11 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 	}
 
 
-	public void OnPose (Matrix4x4 outputPose, Matrix4x4 arkitPose) {}
-
-
 	// This function runs when LibPlacenote sends a status change message like Localized!
-
+	// This is mostly used for debugging
 	public void OnStatusChange (LibPlacenote.MappingStatus prevStatus, LibPlacenote.MappingStatus currStatus)
 	{
 		Debug.Log ("prevStatus: " + prevStatus.ToString() + " currStatus: " + currStatus.ToString());
-
 
 		if (currStatus == LibPlacenote.MappingStatus.RUNNING && prevStatus == LibPlacenote.MappingStatus.LOST) {
 
@@ -346,20 +432,9 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 		} else if (currStatus == LibPlacenote.MappingStatus.WAITING) {
 
 		}
-
 	}
 
-    public void OnLocalized()
-    {
-    	// Not being used right now
-    	return;
-        // textLabel.text = "Found It!";
-
-        // loadSavedScene();
-
-        // mLocalizationThumbnailContainer.gameObject.SetActive(false);
-
-        // // To increase tracking smoothness after localization
-        // LibPlacenote.Instance.StopSendingFrames();
-    }
+	// Some functions for LibPlacenote that we didn't have a use for
+	public void OnPose (Matrix4x4 outputPose, Matrix4x4 arkitPose) {}
+    public void OnLocalized() {}
 }
