@@ -2,9 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
 using System.Runtime.InteropServices;
 
+
+/*
+	This class handles mostly all of the buttons and controls
+	for the application, including toggling between drawing modes,
+	changing colors and brush types, etc.
+*/
 public class PaintController : MonoBehaviour, PlacenoteListener {
 
 	public GameObject drawingRootSceneObject;
@@ -42,7 +47,8 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
     public int drawingHistoryIndex = 0;
     public DrawingMode currentDrawingMode;
 
-	// Use this for initialization
+
+	// Initialization
 	void Start () {
         LibPlacenote.Instance.RegisterListener (this);
 
@@ -93,6 +99,8 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 		currentDrawingMode = DrawingMode.normal;
     }
 
+
+    // Toggle the controls for color palette, brush types, etc.
     public void OnToggleColorPaletteClick()
     {
         if (colorPalette.activeInHierarchy)
@@ -106,14 +114,19 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
     }
 
 
-    // Update is called once per frame
-    void Update () {
-    
+    // Called every frame
+    // We have no need for this here
+    void Update () {}		
 
-    }		
 
+    // Start the drawing session
 	public void onStartPaintingClick ()
 	{
+		if (!LibPlacenote.Instance.Initialized()) {
+			textLabel.text = "Please wait for the SDK to be initialized...";
+			return;
+		}
+
 		startPanel.SetActive (false);
 		paintPanel.SetActive (true);
 
@@ -150,6 +163,8 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
         mainButtonPanel.SetActive(!modePanelActive);
 	}
 
+
+	// Handle moving a layer
 	public void OnMoveLayerClick(int layerNum)
 	{
 		if (!LibPlacenote.Instance.Initialized()) {
@@ -169,6 +184,7 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 	}
 
 
+	// Save this drawing as a layer
 	public void OnSaveLayerClick (int layerNum)
 	{
 		if (!LibPlacenote.Instance.Initialized()) {
@@ -182,6 +198,8 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 		TogglePanelSaveLayer(false);
 	}
 
+
+	// Load a saved drawing layer
 	public void OnLoadLayerClick (int layerNum)
 	{
 		if (!LibPlacenote.Instance.Initialized()) {
@@ -195,6 +213,8 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 		TogglePanelLoadLayer(false);
 	}
 
+
+	// Handles changing the drawing mode
 	public void OnModeClick(string mode)
 	{
 		// Handle turning off the current mode
@@ -229,6 +249,8 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 		TogglePanelMode(false);
 	}
 
+
+	// Toggle the normal drawing mode
 	private void ToggleModeNormal(bool modeNormalOn) {
 		if (modeNormalOn) {
 			// Turn on
@@ -240,6 +262,8 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 		}
 	}
 
+
+	// Toggle the Snap to Surface drawing mode
 	// When user clicks snap to surface button, activate snap to surface panel
 	// and snap to surface brush tip object. On return to main click, deactivate.
 	private void ToggleModeSurface(bool modeSurfaceOn) {
@@ -266,6 +290,8 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 		}
 	}
 
+
+	// Toggle the Feature Point drawing mode
 	private void ToggleModeFeature(bool modeFeatureOn) {
 		if (modeFeatureOn) {
 			// Turn on
@@ -290,16 +316,7 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 	}
 
 
-    public void OnExitLoadedPaintingClick()
-    {
-        mLocalizationThumbnailContainer.gameObject.SetActive(false);
-
-        LibPlacenote.Instance.StopSession();
-        FeaturesVisualizer.ClearPointcloud();
-
-        onClearAllClick();
-    }
-
+	// Deletes all parts of the drawing
 	public void deleteAllObjects()
 	{
 		int numChildren = drawingRootSceneObject.transform.childCount;
@@ -316,6 +333,7 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 	}
 
 
+	// Clear the drawing and history of it
 	public void onClearAllClick()
 	{
 		deleteAllObjects ();
@@ -323,15 +341,11 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 	}
 
 
-	public void OnPose (Matrix4x4 outputPose, Matrix4x4 arkitPose) {}
-
-
 	// This function runs when LibPlacenote sends a status change message like Localized!
-
+	// This is mostly used for debugging
 	public void OnStatusChange (LibPlacenote.MappingStatus prevStatus, LibPlacenote.MappingStatus currStatus)
 	{
 		Debug.Log ("prevStatus: " + prevStatus.ToString() + " currStatus: " + currStatus.ToString());
-
 
 		if (currStatus == LibPlacenote.MappingStatus.RUNNING && prevStatus == LibPlacenote.MappingStatus.LOST) {
 
@@ -346,20 +360,9 @@ public class PaintController : MonoBehaviour, PlacenoteListener {
 		} else if (currStatus == LibPlacenote.MappingStatus.WAITING) {
 
 		}
-
 	}
 
-    public void OnLocalized()
-    {
-    	// Not being used right now
-    	return;
-        // textLabel.text = "Found It!";
-
-        // loadSavedScene();
-
-        // mLocalizationThumbnailContainer.gameObject.SetActive(false);
-
-        // // To increase tracking smoothness after localization
-        // LibPlacenote.Instance.StopSendingFrames();
-    }
+	// Some functions for LibPlacenote that we didn't have a use for
+	public void OnPose (Matrix4x4 outputPose, Matrix4x4 arkitPose) {}
+    public void OnLocalized() {}
 }

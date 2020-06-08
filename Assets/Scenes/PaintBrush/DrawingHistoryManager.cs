@@ -5,10 +5,17 @@ using System;
 using System.IO;
 using System.Linq;
 
+
+/*
+	This class keeps track of the drawing history and
+	manages saving and loading layers.
+*/
 public class DrawingHistoryManager : MonoBehaviour {
 
 	public GameObject paintBrushSceneObject;
 
+
+	// This is what makes up a drawing command
 	public class DrawingCommand{
 		public int index;
 		public int objType;
@@ -66,7 +73,8 @@ public class DrawingHistoryManager : MonoBehaviour {
 				secondaryMaterialIndex.ToString();
 			return commandString;
 		}
-	}
+	} // class DrawingCommand
+
 
 	public List<DrawingCommand> drawingHistory;
 
@@ -78,9 +86,9 @@ public class DrawingHistoryManager : MonoBehaviour {
 	private bool layer4Active;
 	private float [] origin;
 
-	// Use this for initialization
+
+	// Initialization
 	void Start () {
-		// initialize the queue.
 		drawingHistory = new List<DrawingCommand>();
 		materialIndex = new List<Material>();
 		origin = new float[6];
@@ -90,14 +98,20 @@ public class DrawingHistoryManager : MonoBehaviour {
 		layer4Active = false;
 	}
 
-	// Update is called once per frame
+
+	// Called once per frame
+	// We have no need for this here
 	void Update () {}
 
+
+	// Clear the drawign history
 	public void resetHistory()
 	{
 		drawingHistory.Clear();
 	}
 
+
+	// Returns the index associated with a cached material
 	private int getIndexFromMaterial(Material mat)
 	{
 		for (int i = 0; i < materialIndex.Count; i++) {
@@ -108,11 +122,15 @@ public class DrawingHistoryManager : MonoBehaviour {
 		return materialIndex.Count-1;
 	}
 
+
+	// Returns the material cached with a particular index
 	private Material getMaterialFromIndex(int index)
 	{
 		return materialIndex[index];
 	}
 
+
+	// Calculate the origin for a given layer
 	public Vector3 getOrigin(int layerNum)
 	{
 		int X_MIN = 0;
@@ -149,6 +167,8 @@ public class DrawingHistoryManager : MonoBehaviour {
 		return new Vector3(midPointX, midPointY, midPointZ);
 	}
 
+
+	// Load all layers that are marked as active
 	public void loadActiveLayers(int layerNum)
 	{
 		if(layer1Active){
@@ -171,6 +191,8 @@ public class DrawingHistoryManager : MonoBehaviour {
 		}
 	}
 
+
+	// Is this layer active or not?
 	public bool isLayerActive(int layerNum)
 	{
 		GetComponent<PaintController>().deleteAllObjects();
@@ -183,6 +205,8 @@ public class DrawingHistoryManager : MonoBehaviour {
 		return layer4Active;
 	}
 
+
+	// Add a command to the drawing history
 	public void addDrawingCommand(int index, int objType, Vector3 position, Color color, float lineWidth, Material primaryMaterial, Material secondaryMaterial)
 	{
 		int primaryMaterialIndex = getIndexFromMaterial(primaryMaterial);
@@ -196,41 +220,7 @@ public class DrawingHistoryManager : MonoBehaviour {
 	}
 
 
-	// TODO Either remove or use this
-	public void saveMapIDToFile(string mapid, int layerNum)
-	{
-		// string filePath = Application.persistentDataPath + "/mapIDFile" + layerNum + ".txt";
-		string filePath = Application.persistentDataPath + "/mapIDFile.txt";
-		StreamWriter sr = File.CreateText (filePath);
-		sr.WriteLine (mapid);
-		sr.Close ();
-	}
-
-	// TODO Either remove or use this
-	public string loadMapIDFromFile (int layerNum)
-	{
-		string savedMapID;
-
-		// read history file
-		FileInfo historyFile = new FileInfo(Application.persistentDataPath + "/mapIDFile.txt");
-		StreamReader sr = historyFile.OpenText ();
-		string text;
-
-		do {
-			text = sr.ReadLine();
-
-			if (text != null)
-			{
-				// Create drawing command structure from string.
-				savedMapID = text;
-				return savedMapID;
-			}
-
-		} while (text != null);
-
-		return null;
-	}
-
+	// Move a given layer to some new position
 	public void moveLayer(int layerNum, Vector3 newPos)
 	{
 		Vector3 oldOrigin = getOrigin(layerNum);
@@ -252,7 +242,7 @@ public class DrawingHistoryManager : MonoBehaviour {
 	}
 
 
-	// Save a layer to a file
+	// Save a layer to a file called layer<layerNum>.txt
 	public void saveLayer(int layerNum)
 	{
 		string layerFilepath = Application.persistentDataPath + "/layer" + layerNum + ".txt";
@@ -274,6 +264,8 @@ public class DrawingHistoryManager : MonoBehaviour {
 		setLayerActive(layerNum, true);
 	}
 
+
+	// Toggle a layer as active/inactive
 	public void setLayerActive(int layerNum, bool active)
 	{
 		if(layerNum == 1)
@@ -286,7 +278,8 @@ public class DrawingHistoryManager : MonoBehaviour {
 			layer4Active = active;
 	}
 
-	// Loads a saved layer and renders to the screen
+
+	// Loads a saved layer from layer<layerNum>.txt and renders it to the screen
 	public void loadLayer(int layerNum)
 	{
 		FileInfo layerFile = new FileInfo(Application.persistentDataPath + "/layer" + layerNum + ".txt");
@@ -302,10 +295,11 @@ public class DrawingHistoryManager : MonoBehaviour {
 			commands.Add(new DrawingCommand(commandString));
 		}
 		StartCoroutine(renderCommands(commands));
-		//setLayerActive(layerNum, false);
 	}
 
+
 	// Renders a list of commands to the screen
+	// One command is rendered per frame
 	public IEnumerator renderCommands(List<DrawingCommand> commands)
 	{
 		int currentIndex = -1;
@@ -331,15 +325,11 @@ public class DrawingHistoryManager : MonoBehaviour {
 					paintBrushSceneObject.GetComponent<DrawLineManager>().addReplayLineSegment(false, command.lineWidth, command.position, command.color, primaryMaterial, secondaryMaterial);
 					currentIndex = command.index;
 				}
-				else if (command.objType == 1)
+				else
 				{
-					// add cube
-					// TODO - do we need this? Right now only objType=0 is being used
-					//cubePanel.GetComponent<DrawCubeManager>().addReplayCubeAtEndpoint(command.position, command.color);
-					currentIndex = command.index;
+					Debug.Log("Unsupported object type: " + command.objType);
 				}
 			}
-
             yield return null;
 		}
 	}
