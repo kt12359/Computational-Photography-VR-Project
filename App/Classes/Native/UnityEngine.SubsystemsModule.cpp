@@ -18,6 +18,17 @@
 #include "codegen/il2cpp-codegen.h"
 #include "il2cpp-object-internals.h"
 
+template <typename R>
+struct VirtFuncInvoker0
+{
+	typedef R (*Func)(void*, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeObject* obj)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		return ((Func)invokeData.methodPtr)(obj, invokeData.method);
+	}
+};
 struct VirtActionInvoker0
 {
 	typedef void (*Action)(void*, const RuntimeMethod*);
@@ -1800,6 +1811,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IntegratedSubsystemDescriptor_UnityEngin
 		return;
 	}
 }
+// UnityEngine.ISubsystem UnityEngine.IntegratedSubsystemDescriptor::UnityEngine.ISubsystemDescriptor.Create()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* IntegratedSubsystemDescriptor_UnityEngine_ISubsystemDescriptor_Create_m0165412D68EC3B73E303F62E04BAE0EE5E69F514 (IntegratedSubsystemDescriptor_t56BB69721C25889FFD6A9FE635ED05BB94D683DA * __this, const RuntimeMethod* method)
+{
+	RuntimeObject* V_0 = NULL;
+	{
+		RuntimeObject* L_0 = VirtFuncInvoker0< RuntimeObject* >::Invoke(7 /* UnityEngine.ISubsystem UnityEngine.IntegratedSubsystemDescriptor::CreateImpl() */, __this);
+		V_0 = L_0;
+		goto IL_000a;
+	}
+
+IL_000a:
+	{
+		RuntimeObject* L_1 = V_0;
+		return L_1;
+	}
+}
 // System.Void UnityEngine.IntegratedSubsystemDescriptor::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IntegratedSubsystemDescriptor__ctor_m1D87F86FF3A30C3ECCD95D1797802B34B9194039 (IntegratedSubsystemDescriptor_t56BB69721C25889FFD6A9FE635ED05BB94D683DA * __this, const RuntimeMethod* method)
 {
@@ -2550,7 +2577,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Subsystem_Destroy_m1D65C2E3B540A9EC80E14
 		}
 	}
 	{
-		VirtActionInvoker0::Invoke(8 /* System.Void UnityEngine.Subsystem::OnDestroy() */, __this);
+		VirtActionInvoker0::Invoke(10 /* System.Void UnityEngine.Subsystem::OnDestroy() */, __this);
 	}
 
 IL_0019:
@@ -2606,6 +2633,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SubsystemDescriptor_set_subsystemImpleme
 		Type_t * L_0 = ___value0;
 		__this->set_U3CsubsystemImplementationTypeU3Ek__BackingField_1(L_0);
 		return;
+	}
+}
+// UnityEngine.ISubsystem UnityEngine.SubsystemDescriptor::UnityEngine.ISubsystemDescriptor.Create()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* SubsystemDescriptor_UnityEngine_ISubsystemDescriptor_Create_m0021F085A67DCFE702ED6F4A76BCF0E3C35CD3A9 (SubsystemDescriptor_tDE3D888281281BBD122D6D9E7B49F626E69340CA * __this, const RuntimeMethod* method)
+{
+	RuntimeObject* V_0 = NULL;
+	{
+		RuntimeObject* L_0 = VirtFuncInvoker0< RuntimeObject* >::Invoke(6 /* UnityEngine.ISubsystem UnityEngine.SubsystemDescriptor::CreateImpl() */, __this);
+		V_0 = L_0;
+		goto IL_000a;
+	}
+
+IL_000a:
+	{
+		RuntimeObject* L_1 = V_0;
+		return L_1;
 	}
 }
 // System.Void UnityEngine.SubsystemDescriptor::.ctor()

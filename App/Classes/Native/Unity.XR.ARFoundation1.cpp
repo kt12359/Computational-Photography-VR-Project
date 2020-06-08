@@ -6380,7 +6380,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARSession_StartSubsystem_m42E8B00D33524F
 		// subsystem.Start();
 		XRSessionSubsystem_t9B9C16B4BDB611559FB6FA728BE399001E47EFF0 * L_1 = SubsystemLifecycleManager_2_get_subsystem_mE467BEAFBC8308112E4BF5390B38F6A188CBC00B_inline(__this, /*hidden argument*/SubsystemLifecycleManager_2_get_subsystem_mE467BEAFBC8308112E4BF5390B38F6A188CBC00B_RuntimeMethod_var);
 		NullCheck(L_1);
-		VirtActionInvoker0::Invoke(4 /* System.Void UnityEngine.Subsystem::Start() */, L_1);
+		VirtActionInvoker0::Invoke(7 /* System.Void UnityEngine.Subsystem::Start() */, L_1);
 		// }
 		return;
 	}
@@ -6428,7 +6428,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARSession_Update_m6F6719EA3097AFA6826E34
 	{
 		XRSessionSubsystem_t9B9C16B4BDB611559FB6FA728BE399001E47EFF0 * L_1 = SubsystemLifecycleManager_2_get_subsystem_mE467BEAFBC8308112E4BF5390B38F6A188CBC00B_inline(__this, /*hidden argument*/SubsystemLifecycleManager_2_get_subsystem_mE467BEAFBC8308112E4BF5390B38F6A188CBC00B_RuntimeMethod_var);
 		NullCheck(L_1);
-		bool L_2 = VirtFuncInvoker0< bool >::Invoke(7 /* System.Boolean UnityEngine.Subsystem::get_running() */, L_1);
+		bool L_2 = VirtFuncInvoker0< bool >::Invoke(9 /* System.Boolean UnityEngine.Subsystem::get_running() */, L_1);
 		G_B3_0 = ((int32_t)(L_2));
 		goto IL_0017;
 	}

@@ -444,6 +444,14 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.Collider
 
+	//Start Registrations for type : UnityEngine.ColorUtility
+
+		//System.Boolean UnityEngine.ColorUtility::DoTryParseHtmlColor(System.String,UnityEngine.Color32&)
+		void Register_UnityEngine_ColorUtility_DoTryParseHtmlColor();
+		Register_UnityEngine_ColorUtility_DoTryParseHtmlColor();
+
+	//End Registrations for type : UnityEngine.ColorUtility
+
 	//Start Registrations for type : UnityEngine.Component
 
 		//System.Void UnityEngine.Component::GetComponentFastPath(System.Type,System.IntPtr)
@@ -1338,6 +1346,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Object_DestroyImmediate();
 		Register_UnityEngine_Object_DestroyImmediate();
 
+		//System.Void UnityEngine.Object::DontDestroyOnLoad(UnityEngine.Object)
+		void Register_UnityEngine_Object_DontDestroyOnLoad();
+		Register_UnityEngine_Object_DontDestroyOnLoad();
+
 		//System.Void UnityEngine.Object::SetName(UnityEngine.Object,System.String)
 		void Register_UnityEngine_Object_SetName();
 		Register_UnityEngine_Object_SetName();
@@ -1690,9 +1702,9 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Renderer_get_sortingOrder();
 		Register_UnityEngine_Renderer_get_sortingOrder();
 
-		//System.Void UnityEngine.Renderer::SetMaterial(UnityEngine.Material)
-		void Register_UnityEngine_Renderer_SetMaterial();
-		Register_UnityEngine_Renderer_SetMaterial();
+		//System.Void UnityEngine.Renderer::SetMaterialArray(UnityEngine.Material[])
+		void Register_UnityEngine_Renderer_SetMaterialArray();
+		Register_UnityEngine_Renderer_SetMaterialArray();
 
 		//System.Void UnityEngine.Renderer::set_enabled(System.Boolean)
 		void Register_UnityEngine_Renderer_set_enabled();
@@ -1701,6 +1713,10 @@ void RegisterAllStrippedInternalCalls()
 		//UnityEngine.Material UnityEngine.Renderer::GetSharedMaterial()
 		void Register_UnityEngine_Renderer_GetSharedMaterial();
 		Register_UnityEngine_Renderer_GetSharedMaterial();
+
+		//UnityEngine.Material[] UnityEngine.Renderer::GetMaterialArray()
+		void Register_UnityEngine_Renderer_GetMaterialArray();
+		Register_UnityEngine_Renderer_GetMaterialArray();
 
 	//End Registrations for type : UnityEngine.Renderer
 
@@ -1994,6 +2010,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Sprite_GetTextureRect_Injected();
 		Register_UnityEngine_Sprite_GetTextureRect_Injected();
 
+		//System.Void UnityEngine.Sprite::OverrideGeometry(UnityEngine.Vector2[],System.UInt16[])
+		void Register_UnityEngine_Sprite_OverrideGeometry();
+		Register_UnityEngine_Sprite_OverrideGeometry();
+
 		//System.Void UnityEngine.Sprite::get_border_Injected(UnityEngine.Vector4&)
 		void Register_UnityEngine_Sprite_get_border_Injected();
 		Register_UnityEngine_Sprite_get_border_Injected();
@@ -2065,6 +2085,10 @@ void RegisterAllStrippedInternalCalls()
 		//UnityEngine.OperatingSystemFamily UnityEngine.SystemInfo::GetOperatingSystemFamily()
 		void Register_UnityEngine_SystemInfo_GetOperatingSystemFamily();
 		Register_UnityEngine_SystemInfo_GetOperatingSystemFamily();
+
+		//UnityEngine.Rendering.GraphicsDeviceType UnityEngine.SystemInfo::GetGraphicsDeviceType()
+		void Register_UnityEngine_SystemInfo_GetGraphicsDeviceType();
+		Register_UnityEngine_SystemInfo_GetGraphicsDeviceType();
 
 	//End Registrations for type : UnityEngine.SystemInfo
 
@@ -2221,6 +2245,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Single UnityEngine.Time::get_realtimeSinceStartup()
 		void Register_UnityEngine_Time_get_realtimeSinceStartup();
 		Register_UnityEngine_Time_get_realtimeSinceStartup();
+
+		//System.Single UnityEngine.Time::get_time()
+		void Register_UnityEngine_Time_get_time();
+		Register_UnityEngine_Time_get_time();
 
 		//System.Single UnityEngine.Time::get_unscaledDeltaTime()
 		void Register_UnityEngine_Time_get_unscaledDeltaTime();
@@ -2385,6 +2413,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Transform::set_rotation_Injected(UnityEngine.Quaternion&)
 		void Register_UnityEngine_Transform_set_rotation_Injected();
 		Register_UnityEngine_Transform_set_rotation_Injected();
+
+		//UnityEngine.Transform UnityEngine.Transform::FindRelativeTransformWithPath(UnityEngine.Transform,System.String,System.Boolean)
+		void Register_UnityEngine_Transform_FindRelativeTransformWithPath();
+		Register_UnityEngine_Transform_FindRelativeTransformWithPath();
 
 		//UnityEngine.Transform UnityEngine.Transform::GetChild(System.Int32)
 		void Register_UnityEngine_Transform_GetChild();
